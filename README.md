@@ -13,19 +13,18 @@ Welcome to your complete A2 level English course designed specifically for Lithu
 5. **Travel and Directions** - Kelionės ir krypčių nurodymai
 6. **Future Plans** - Ateities planai
 
-### A2.2 Units (Antroji dalis)
-7. **Present Perfect Introduction** - Įvadas į Present Perfect
-8. **Comparatives and Superlatives** - Lyginamieji ir aukščiausiojo laipsnio būdvardžiai
-9. **Modal Verbs** - Modaliniai veiksmažodžiai
-10. **Present Tenses Contrast** - Esamojo laiko formų palyginimas
-11. **Past Continuous** - Būtasis tęstinis laikas
-12. **Review and Consolidation** - Kartojimas ir įtvirtinimas
+### A2.2 Units (Antroji dalis) ✅ COMPLETED
+7. **Present Perfect Introduction** - Įvadas į Present Perfect ✅
+8. **Comparatives and Superlatives** - Lyginamieji ir aukščiausiojo laipsnio būdvardžiai ✅
+9. **Modal Verbs** - Modaliniai veiksmažodžiai ✅
+10. **Present Tenses Contrast** - Esamojo laiko formų palyginimas ✅
+11. **Past Continuous** - Būtasis tęstinis laikas ✅
+12. **Review and Consolidation** - Kartojimas ir įtvirtinimas ✅
 
 ### Additional Resources / Papildomi ištekliai
-- Grammar Reference - Gramatikos vadovas
-- Vocabulary Lists - Žodyno sąrašai
-- Answer Keys (A2.1) - Atsakymų raktai (A2.1)
-- Answer Keys (A2.2) - Atsakymų raktai (A2.2)
+- Grammar Reference - Gramatikos vadovas ✅
+- Vocabulary Lists - Žodyno sąrašai ✅
+- Answer Keys (A2.1 & A2.2) - Atsakymų raktai (A2.1 & A2.2) ✅
 
 ## How to Use This Book / Kaip naudotis šia knyga
 

@@ -516,6 +516,559 @@ are, going to do, am going to visit, am not going to do, will watch, will be, wi
 
 ---
 
+## Unit 7: Present Perfect Introduction
+
+### Exercise 1: Complete with Present Perfect form
+1. have visited
+2. hasn't finished
+3. have bought
+4. haven't seen
+5. has lived
+6. Have you ever tried
+7. has just arrived
+8. have already eaten
+
+### Exercise 2: Choose Present Perfect or Past Simple
+1. saw (Past Simple - specific time)
+2. has never been
+3. moved (Past Simple - specific year)
+4. Have you finished
+5. have lived
+6. has just come
+7. met (Past Simple - specific time)
+8. have already visited
+
+### Exercise 3: Make questions with Present Perfect
+1. Have you ever been to London?
+2. Has she seen that movie?
+3. How long has he lived here?
+4. Has he finished his homework?
+5. Have you ever tried sushi?
+
+### Exercise 4: Life Experiences Dialogue
+A: Have you ever traveled abroad?
+B: Yes, I have visited France and Spain. I went to Paris last summer.
+A: Really? What did you do there?
+B: I have seen the Eiffel Tower and have eaten delicious food.
+A: Nice to meet you too!
+
+### Exercise 5: Translation Practice
+1. I have never been to America.
+2. They have just come back from the trip.
+3. Have you ever seen snow?
+4. She has lived here since 2010.
+5. We have already eaten lunch.
+6. When did you start learning English?
+7. I haven't finished my work yet.
+8. They have visited many countries.
+
+### Exercise 6: Reading Comprehension
+1. since he was born / for his whole life
+2. 15 countries
+3. No, she hasn't
+4. the Eiffel Tower
+5. started a new job last year
+6. No, she hasn't
+7. last month
+8. London
+
+---
+
+## Unit 8: Comparatives and Superlatives
+
+### Exercise 1: Form the comparative
+1. bigger
+2. more expensive
+3. happier
+4. better
+5. more difficult
+6. faster
+7. worse
+8. more interesting
+
+### Exercise 2: Form the superlative
+1. the tallest
+2. the most beautiful
+3. the easiest
+4. the worst
+5. the furthest
+6. the best
+7. the smallest
+8. the most expensive
+
+### Exercise 3: Complete the comparisons
+1. bigger
+2. more difficult
+3. hotter
+4. more expensive
+5. taller
+6. more interesting
+7. better
+8. worse
+
+### Exercise 4: Write superlatives
+1. the biggest
+2. the most beautiful
+3. the happiest
+4. the easiest
+5. the worst
+6. the best
+7. the furthest
+8. the most expensive
+
+### Exercise 5: As...as comparisons
+1. not as difficult as
+2. not as big as
+3. not as hot as
+4. not as tall as
+5. not as interesting as
+6. not as good as
+7. not as bad as
+8. not as expensive as
+
+### Exercise 6: Comparison Dialogue
+A: Which is bigger, Vilnius or Kaunas?
+B: Vilnius is bigger than Kaunas. It's the biggest city in Lithuania.
+A: Is Vilnius more beautiful than other cities?
+B: Yes, it's one of the most beautiful cities in Europe.
+A: Which is more expensive, living in the city or in the countryside?
+B: Living in the city is more expensive than in the countryside.
+A: Is the food in restaurants better than homemade food?
+B: Homemade food is better. Restaurant food is more expensive, but not always better.
+
+### Exercise 7: Reading Comprehension
+1. bigger
+2. the biggest
+3. warmer
+4. the warmest
+5. colder
+6. more popular
+7. the best
+8. Yes, it is
+
+### Exercise 8: Translation Practice
+1. Vilnius is bigger than Kaunas.
+2. This book is more interesting than that one.
+3. He is the best student in class.
+4. Winter is colder than summer.
+5. This is the most expensive restaurant in town.
+6. My sister is happier than me.
+7. English is not as difficult as Chinese.
+8. This is the most beautiful place I've ever seen.
+
+### Exercise 9: Error Correction
+1. Vilnius is bigger than Kaunas.
+2. This is the best book.
+3. She is happier than her sister.
+4. This car is more expensive than that one.
+5. He is the best student.
+6. Summer is hotter than winter.
+7. This is the most beautiful place.
+8. My house is bigger than yours.
+
+---
+
+## Unit 9: Modal Verbs
+
+### Exercise 1: Must or Can't?
+1. can't (impossible for a 3-year-old)
+2. must (sure based on evidence)
+3. must (sure based on evidence)
+4. can't (impossible)
+5. must (sure based on evidence)
+6. can't (impossible)
+7. must (sure based on evidence)
+8. must (sure based on evidence)
+
+### Exercise 2: May or Might?
+1. may/might
+2. may/might
+3. may/might
+4. may/might
+5. may/might
+6. may/might
+7. may/might
+8. may/might
+
+### Exercise 3: Should or Shouldn't?
+1. shouldn't eat so much chocolate
+2. should study harder/more
+3. should see a doctor
+4. should exercise more
+5. should arrive early
+6. should drink more water
+7. should eat healthier food
+8. shouldn't smoke
+
+### Exercise 4: Mixed Modal Verbs
+1. should
+2. must
+3. may/might
+4. shouldn't
+5. can't
+6. should
+7. must
+8. may/might
+
+### Exercise 5: Advice Dialogue
+A: You should see a doctor. It might be serious.
+B: You shouldn't drink coffee before bed. You should exercise more.
+A: You shouldn't watch TV in bed. You should read a book instead.
+B: You should follow your suggestions.
+
+### Exercise 6: Problem-Solving Scenarios
+Situation 1: He should study more. He shouldn't watch TV all day.
+Situation 2: She should eat more vegetables. She shouldn't eat fast food.
+Situation 3: He should go to bed earlier. He shouldn't work so late.
+Situation 4: I shouldn't buy expensive clothes. I should save money.
+
+### Exercise 7: Reading Comprehension
+1. exercise more and eat healthier food
+2. junk food
+3. go to bed earlier
+4. stressed
+5. she's very busy
+6. see a specialist
+7. might be serious
+8. work so late
+
+### Exercise 8: Translation Practice
+1. You should eat more vegetables.
+2. She can't be at home because the lights are off.
+3. It may rain tomorrow.
+4. You shouldn't smoke.
+5. He must be tired.
+6. May I use your phone?
+7. She may be late for the meeting.
+8. Students must do homework.
+
+### Exercise 9: Error Correction
+1. You must see a doctor.
+2. She may come tomorrow.
+3. I should study more.
+4. He mustn't smoke here.
+5. It may rain tomorrow.
+6. You should eat healthier food.
+7. She can't be hungry.
+8. They should arrive early.
+
+---
+
+## Unit 10: Present Tenses Contrast
+
+### Exercise 1: Present Simple or Present Continuous?
+1. go, am walking
+2. lives, has lived
+3. sits, sits
+4. am studying, study
+5. boils, is boiling
+6. works, is working
+7. play, are playing
+8. don't like, am not eating
+
+### Exercise 2: Present Perfect or Past Simple?
+1. saw (specific time)
+2. has visited
+3. bought (specific time)
+4. have never seen
+5. has just finished
+6. have lived
+7. met (specific time)
+8. have already visited
+
+### Exercise 3: All Three Tenses
+1. live, have lived, am sitting
+2. drinks, was drinking, has tried
+3. works, is working, has taught
+4. play, were playing, won
+5. don't like, am eating, have tried
+6. rises, is rising, has risen
+
+### Exercise 4: Stative Verbs
+1. I know the answer. (Present Simple)
+2. She wants a new phone. (Present Simple)
+3. He has a big house. (Present Simple)
+4. They seem happy. (Present Simple)
+5. I understand the lesson. (Present Simple)
+6. She prefers coffee. (Present Simple)
+7. It tastes good. (Present Simple)
+8. We belong to a club. (Present Simple)
+
+### Exercise 5: Time Expressions
+1. Present Continuous
+2. Present Simple
+3. Present Perfect
+4. Present Continuous
+5. Past Simple
+6. Present Perfect
+7. Present Simple
+8. Present Continuous
+
+### Exercise 6: Error Correction
+1. I have lived in Vilnius since 2010.
+2. She doesn't like coffee.
+3. I saw that movie yesterday.
+4. He has worked here for 3 years.
+5. They are always complaining.
+6. I know him very well.
+7. I have eaten breakfast already.
+8. The train leaves at 9 PM every day.
+
+### Exercise 7: Reading Comprehension
+1. studying for her exam
+2. for 4 years
+3. from home
+4. No, she hasn't
+5. Big Ben and the Thames River
+6. practiced speaking with native speakers and watched English films
+7. at 9 AM
+8. reading and playing tennis
+
+### Exercise 8: Mixed Practice
+My name is Tomas. I am a teacher and I work at a school. Every day I get up at 6 AM and have coffee. Right now I am sitting in my office and am preparing lessons.
+
+I have taught English for 8 years. I love my job, but sometimes it is stressful. I have never regretted becoming a teacher.
+
+This week I am planning a trip to Warsaw. I have already booked the hotel and have bought train tickets. I have visited Poland twice before, but I have not seen Warsaw yet.
+
+My students are studying hard for their exams. They are practicing English every day. Some of them have already improved a lot.
+
+### Exercise 9: Translation Practice
+1. I have lived in Vilnius for 5 years.
+2. She is studying English now.
+3. Have you ever been to Paris?
+4. He always drinks coffee in the morning.
+5. We have just finished eating lunch.
+6. Look! The child is crying.
+7. I understand this lesson.
+8. They play football every week.
+
+### Exercise 10: Situational Practice
+At a party:
+A: What are you doing these days?
+B: I am studying medicine at university.
+A: How long have you studied there?
+B: I have studied there for 3 years now.
+
+At work:
+A: Why aren't you working today?
+B: I am sick. I don't feel well.
+A: I hope you get better soon.
+
+Talking about hobbies:
+A: Have you ever played any sports?
+B: Yes, I have played tennis. I have played it since I was 10.
+A: Have you won any tournaments?
+B: I won one last year, but I don't play professionally.
+
+---
+
+## Unit 11: Past Continuous
+
+### Exercise 1: Form the Past Continuous
+1. I was walking home.
+2. She was studying English.
+3. They were playing football.
+4. He was eating dinner.
+5. We were watching TV.
+6. You were listening to music.
+7. It was raining all day.
+8. She was cooking lunch.
+
+### Exercise 2: Negative and Questions
+1. Neg: I wasn't eating. Ques: Was I eating?
+2. Neg: She wasn't studying. Ques: Was she studying?
+3. Neg: They weren't playing. Ques: Were they playing?
+4. Neg: He wasn't working. Ques: Was he working?
+5. Neg: We weren't watching. Ques: Were we watching?
+
+### Exercise 3: Past Simple or Past Continuous?
+1. was walking, saw
+2. was studying, went
+3. were playing, started
+4. was eating, rang
+5. were watching, rang
+6. were sleeping, called
+7. was raining, left
+8. was cooking, went
+
+### Exercise 4: Interrupted Actions
+1. was reading, rang
+2. was taking, knocked
+3. were playing, called
+4. was watching, went
+5. were talking, entered
+6. were sleeping, arrived
+7. was raining, left
+8. was writing, crashed
+
+### Exercise 5: Background Events
+1. was shining, woke
+2. was raining, were playing
+3. were singing, left
+4. was playing, entered
+5. were talking, was trying
+6. was blowing, arrived
+7. were laughing, appeared
+8. was moving, were waiting
+
+### Exercise 6: Story Completion
+was watching, rang, picked, heard, sounded, said, had won, didn't believe, insisted, was, were talking, arrived, had worked, decided, came, ordered, were eating, told, was
+
+### Exercise 7: What were you doing...?
+(Answers will vary - students should use Past Continuous)
+
+### Exercise 8: Reading Comprehension
+1. walking home from work
+2. trying to park
+3. shouting at each other
+4. talking to the drivers
+5. having dinner
+6. she was getting married next month
+7. getting cold
+8. watching a film
+
+### Exercise 9: Translation Practice
+1. At 8 PM yesterday I was eating dinner.
+2. She was reading a book when the phone rang.
+3. We were playing when it started to rain.
+4. While I was talking, he was listening to music.
+5. What were you doing last night?
+6. They were eating when mom came in.
+7. The sun was shining when we arrived at the beach.
+8. I was studying when the lights went out.
+
+### Exercise 10: Error Correction
+1. I was eating dinner when you called.
+2. She was studying English last night.
+3. They were playing football when it started to rain.
+4. He was working yesterday.
+5. We were watching TV when the phone rang.
+6. You were sleeping when I arrived.
+7. It was raining while we were playing tennis.
+8. She was writing a letter when the doorbell rang.
+
+---
+
+## Unit 12: Review and Consolidation
+
+### Part 1: Mixed Vocabulary Review
+1. went
+2. has lived, lives
+3. play, are playing
+4. have never seen, Have you ever seen
+5. has worked, started
+6. were waiting, started
+7. was, had studied
+8. have just finished, was doing
+
+9. more expensive, most expensive
+10. should
+11. may/might
+12. May
+13. can't
+
+### Part 2: Grammar - All Tenses Review
+1. don't like, prefer
+2. is studying, wants
+3. live, have lived
+4. works, is working
+5. have seen, saw
+6. have traveled, have been
+7. cooks, is cooking
+8. grew, did you grow
+
+Story: decided, traveled, arrived, was waiting, met, were talking, started, ran, had already left, offered, were listening, were laughing, arrived, was waiting, had prepared, looked
+
+### Part 3: Grammar - Mixed Structures Practice
+Comparatives and Superlatives:
+1. bigger, biggest
+2. more difficult, most difficult
+3. taller, tallest
+4. hotter, hottest
+5. more interesting, most interesting
+6. faster, fastest
+
+Modal Verbs:
+1. shouldn't eat so much junk food
+2. must
+3. should see a doctor
+4. can't
+5. should study harder
+6. may/might
+7. shouldn't smoke
+8. can't
+
+### Part 4: Comprehensive Exercises and Tests
+Exercise 1:
+1. have lived, have never lived
+2. has studied, started
+3. play, are playing
+4. works, teaches
+5. were waiting, came
+6. have seen, was
+7. was cooking, rang
+8. have grown, are
+
+Exercise 2:
+1. I have lived in Vilnius since 2010.
+2. She likes coffee.
+3. They visited Paris last year.
+4. He was working when I called.
+5. You should eat more vegetables.
+6. It may rain tomorrow.
+7. She is happier than her sister.
+8. I saw that film yesterday.
+
+Exercise 3: Reading Comprehension
+1. graphic designer
+2. for 4 years
+3. meeting a client in the city center
+4. No, she hasn't
+5. Big Ben and the Thames River
+6. practiced speaking with native speakers and watched English films
+7. at 9 AM
+8. reading and playing tennis
+
+Exercise 4: (Student writing - check for correct use of tenses)
+
+Exercise 5: Dialogue
+A: are you doing
+B: am studying, started
+A: have you studied
+B: have been learning, have already passed
+A: Have you ever been
+B: visited, was
+A: did you do
+B: saw, met
+A: have never traveled, may go
+B: should, more expensive
+
+### Part 5: Final Assessment
+Test 1:
+1. b) was listening
+2. c) has lived
+3. a) play
+4. a) hasn't finished
+5. b) was eating
+6. a) more expensive
+7. a) mustn't
+8. a) may
+
+Test 2:
+1. have lived, have lived
+2. was studying, arrived, studies
+3. were, had worked
+4. has never seen, Have you ever seen
+5. were waiting, started
+6. should, healthier
+7. more interesting, most interesting
+8. have just finished, was doing
+
+Test 3: (Student writing assessment - check grammar structures)
+
+---
+
 **End of Answer Key / Atsakymų raktų pabaiga**
 
-Use this to check your work after completing the exercises!
+Use this to check your work after completing the exercises! You have now completed the full A2 level English course.
