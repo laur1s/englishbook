@@ -1,7 +1,9 @@
 # Unit 1: Greetings and Introductions
+
 ## Skyrius 1: Pasisveikinimai ir prisistatymai
 
 ### Learning Objectives / Mokymosi tikslai
+
 - Learn basic greetings / Išmokti pagrindinių pasisveikinimų
 - Introduce yourself and others / Mokėti prisistatyti ir pristatyti kitus
 - Use "to be" verb / Naudoti veiksmažodį "būti"
@@ -12,6 +14,7 @@
 ## Part 1: Essential Vocabulary / Pagrindinis žodynas
 
 ### Greetings (Pasisveikinimai)
+
 - Hello / Hi - Labas, Sveiki
 - Good morning - Labas rytas
 - Good afternoon - Laba diena
@@ -21,6 +24,7 @@
 - See you later - Iki pasimatymo
 
 ### Introductions (Prisistatymai)
+
 - My name is... - Mano vardas...
 - I am... - Aš esu...
 - This is... - Tai yra...
@@ -45,6 +49,7 @@
 | They | are | jie/jos yra |
 
 ### Contractions (Sutrumpinimai)
+
 - I am = I'm
 - You are = You're
 - He is = He's
@@ -53,6 +58,7 @@
 - They are = They're
 
 ### Negative Form (Neigiamoji forma)
+
 - I am not = I'm not
 - You are not = You aren't / You're not
 - He is not = He isn't / He's not
@@ -60,6 +66,7 @@
 ---
 
 ## Exercise 1: Fill in the blanks with correct form of "to be"
+
 ## Pratimas 1: Užpildykite tuščias vietas tinkama "to be" forma
 
 1. I _____ from Lithuania. (Aš esu iš Lietuvos)
@@ -76,6 +83,7 @@
 ---
 
 ## Exercise 2: Complete the dialogues
+
 ## Pratimas 2: Užbaikite dialogus
 
 **Dialogue 1:**
@@ -96,6 +104,7 @@ C: Nice to meet you, Maria!
 ---
 
 ## Exercise 3: Write negative sentences
+
 ## Pratimas 3: Parašykite neigiamuosius sakinius
 
 Example: I am tired. → I am not tired. / I'm not tired.
@@ -112,9 +121,11 @@ Example: I am tired. → I am not tired. / I'm not tired.
 ---
 
 ## Exercise 4: Questions with "to be"
+
 ## Pratimas 4: Klausimai su "to be"
 
 ### Question form (Klausimo forma)
+
 - Am I...? - Ar aš esu...?
 - Are you...? - Ar tu esi...?
 - Is he/she/it...? - Ar jis/ji yra...?
@@ -132,6 +143,7 @@ Example: I am tired. → I am not tired. / I'm not tired.
 ---
 
 ## Exercise 5: Translation Practice
+
 ## Pratimas 5: Vertimo praktika
 
 Translate from Lithuanian to English:
@@ -148,6 +160,7 @@ Translate from Lithuanian to English:
 ---
 
 ## Exercise 6: Personal Information
+
 ## Pratimas 6: Asmeninė informacija
 
 Write about yourself using the prompts:
@@ -162,6 +175,7 @@ Write about yourself using the prompts:
 ---
 
 ## Exercise 7: Reading Comprehension
+
 ## Pratimas 7: Skaitymo suvokimas
 
 **Read the text:**
@@ -200,8 +214,8 @@ In English-speaking countries, greetings have subtle rules that are good to know
 
 - **Formality:** "Hello" is a neutral greeting suitable for anyone. "Hi" is a friendly, common greeting for most informal and semi-formal situations. "Hey" is very informal and best used with friends and people you know well.
 - **The "How are you?" Ritual:** "How are you?" is often a part of the greeting itself, not a deep question about your well-being.
-    - A typical, polite response is: "I'm good, thanks. And you?" or "Fine, thank you. How are you?"
-    - It's not common to respond with a long list of your problems unless you know the person very well.
+  - A typical, polite response is: "I'm good, thanks. And you?" or "Fine, thank you. How are you?"
+  - It's not common to respond with a long list of your problems unless you know the person very well.
 - **Handshakes:** A firm handshake is common when meeting someone for the first time in a professional or formal setting. It's usually brief. Among friends, handshakes are less common; a simple "hello" is enough.
 - **First Names:** Using first names (e.g., "John," "Mary") is very common, even with people in positions of authority like managers or teachers, after the initial introduction. This is different from Lithuania, where formal titles are used more often.
 - **Eye Contact:** Making eye contact when you greet someone shows that you are confident and sincere. Avoiding eye contact can be seen as impolite or shy.
@@ -219,10 +233,11 @@ These exercises are designed to be done with a partner or in a small group. The 
 Work with a partner. Imagine you are in one of the following situations. Introduce yourselves, ask at least four questions from the "Useful Phrases" section, and answer your partner's questions.
 
 **Situations:**
-1.  You are new students in an English class.
-2.  You are at a business conference.
-3.  You are tourists meeting in a hotel lobby.
-4.  You are at a friend's party and don't know each other.
+
+1. You are new students in an English class.
+2. You are at a business conference.
+3. You are tourists meeting in a hotel lobby.
+4. You are at a friend's party and don't know each other.
 
 **Example Dialogue:**
 A: Hello, I'm [Your Name]. I don't think we've met.
@@ -236,27 +251,29 @@ A: ...
 ### Activity 2: Discussion Questions
 
 Discuss these questions with your group.
-1.  What are the most common ways to greet people in Lithuania? Are they formal or informal?
-2.  Is it common to ask "How are you?" in Lithuania? What is a typical response?
-3.  When do people in your country use first names versus last names and titles (like *Ponas* or *Ponia*)?
-4.  Think of a famous person (actor, musician, etc.). Imagine you are introducing them to the class. What would you say? (e.g., "This is...")
+
+1. What are the most common ways to greet people in Lithuania? Are they formal or informal?
+2. Is it common to ask "How are you?" in Lithuania? What is a typical response?
+3. When do people in your country use first names versus last names and titles (like *Ponas* or *Ponia*)?
+4. Think of a famous person (actor, musician, etc.). Imagine you are introducing them to the class. What would you say? (e.g., "This is...")
 
 ### Activity 3: The Introduction Chain
 
 Sit in a circle.
-1.  The first person says their name: "My name is Anna."
-2.  The second person introduces the first person and then themselves: "This is Anna, and my name is Tomas."
-3.  The third person introduces the second person and then themselves: "This is Tomas, and my name is Ieva."
-4.  Continue until everyone has been introduced. For a bigger challenge, try to introduce everyone who came before you! ("This is Anna, this is Tomas, and I'm Ieva.")
+
+1. The first person says their name: "My name is Anna."
+2. The second person introduces the first person and then themselves: "This is Anna, and my name is Tomas."
+3. The third person introduces the second person and then themselves: "This is Tomas, and my name is Ieva."
+4. Continue until everyone has been introduced. For a bigger challenge, try to introduce everyone who came before you! ("This is Anna, this is Tomas, and I'm Ieva.")
 
 ---
 
 ### Digital Version: Interactive Ideas
 
 For a digital version of this book, these exercises could be even more engaging:
-*   **Interactive Dialogues:** Clickable dialogues where you choose the correct response.
-*   **Pronunciation Practice:** Listen to a native speaker's pronunciation of the greetings and record your own to compare.
-*   **Virtual Role-Play:** An interactive scenario where you have a conversation with an AI character.
+- **Interactive Dialogues:** Clickable dialogues where you choose the correct response.
+- **Pronunciation Practice:** Listen to a native speaker's pronunciation of the greetings and record your own to compare.
+- **Virtual Role-Play:** An interactive scenario where you have a conversation with an AI character.
 
 ---
 
@@ -265,6 +282,7 @@ For a digital version of this book, these exercises could be even more engaging:
 ## Exercise 8: Extended Vocabulary / Pratimas 8: Išplėstas žodynas
 
 ### Occupations (Profesijos)
+
 - Teacher - Mokytojas/mokytoja
 - Doctor - Gydytojas/gydytoja
 - Engineer - Inžinierius/inžinierė
@@ -273,6 +291,7 @@ For a digital version of this book, these exercises could be even more engaging:
 - Artist - Menininkas/menininkė
 
 ### Countries and Nationalities (Šalys ir tautybės)
+
 - Lithuania - Lithuanian - Lietuva - lietuvis/lietuvis
 - Poland - Polish - Lenkija - lenkas/lenkė
 - Germany - German - Vokietija - vokietis/vokietė
@@ -281,6 +300,7 @@ For a digital version of this book, these exercises could be even more engaging:
 - Italy - Italian - Italija - italas/italė
 
 ### Adjectives for Descriptions (Būdvardžiai aprašymams)
+
 - Tall - Aukštas/aukšta
 - Short - Žemas/žema
 - Friendly - Draugiškas/draugiška
@@ -321,6 +341,7 @@ C: Nice to meet you, Peter. And this is our son, Lukas. He is 10 years old.
 B: Hi, Lukas. I'm happy to meet you all!
 
 **Questions:**
+
 1. Who is Maria?
 2. What is her job?
 3. How old is Lukas?
@@ -335,6 +356,7 @@ B: Hi, Lukas. I'm happy to meet you all!
 My name is Elena. I am 35 years old. I am from Klaipėda, Lithuania. I am a chef. I work in a restaurant. I am married. My husband's name is Darius. He is a teacher. We have two children: a daughter named Greta and a son named Marius. Greta is 8 years old and Marius is 5. We are a happy family. We live in a big house near the sea. Klaipėda is beautiful. I love my job and my family.
 
 **Answer the questions:**
+
 1. What is Elena's job?
 2. Where is she from?
 3. How old is she?
@@ -349,6 +371,7 @@ My name is Elena. I am 35 years old. I am from Klaipėda, Lithuania. I am a chef
 ## Exercise 11: Writing Practice / Pratimas 11: Rašymo praktika
 
 Write a short paragraph introducing yourself. Include:
+
 - Your name and age
 - Where you are from
 - Your job or what you study
@@ -366,13 +389,17 @@ My name is Jonas. I am 25 years old. I am from Vilnius. I am a student. My siste
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 4: Speed Introductions
+
 In pairs, introduce yourselves as quickly as possible, then switch partners. Try to remember and introduce your previous partner's information to the new one.
 
 ### Activity 5: Cultural Exchange
+
 Discuss: How do people greet each other in different countries? Share what you know about Lithuanian greetings vs. other cultures.
 
 ### Activity 6: Pronunciation Practice
+
 Practice saying these phrases with correct stress:
+
 - My name is [Name]
 - Nice to meet you
 - Where are you from?
@@ -388,16 +415,6 @@ Practice saying these phrases with correct stress:
 - **Follow-up:** After meeting someone, it's polite to say "It was great meeting you" or "Let's stay in touch" if you want to continue the connection.
 
 ---
-
-### Digital Version: Enhanced Interactive Ideas / Skaitmeninė versija: Išplėstos interaktyvios idėjos
-
-- **Virtual Introductions:** Record yourself introducing someone and get AI feedback on pronunciation and grammar.
-- **Cultural Videos:** Watch short videos about greetings in different English-speaking countries and discuss differences.
-- **Online Role-Play:** Use platforms to practice introductions with people from other countries.
-- **Flashcard Apps:** Interactive flashcards for vocabulary with audio pronunciation.
-
----
-
 **End of Expanded Unit 1 / Išplėsto pirmojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section!
