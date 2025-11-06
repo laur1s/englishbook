@@ -308,6 +308,132 @@ Find and correct the mistakes:
 
 ---
 
-**End of Unit 2 / Antrojo skyriaus pabaiga**
+---
+
+## Exercise 10: Extended Vocabulary / Pratimas 10: Išplėstas žodynas
+
+### Hobbies and Free Time Activities (Pomėgiai ir laisvalaikio veikla)
+
+- read a book - skaityti knygą
+- listen to music - klausytis muzikos
+- play sports - žaisti sportą
+- watch movies - žiūrėti filmus
+- cook dinner - gaminti vakarienę
+- go for a walk - eiti pasivaikščioti
+- meet friends - susitikti su draugais
+- do housework - dirbti namų darbus
+
+### Meals and Food (Valgiai ir maistas)
+
+- breakfast - pusryčiai
+- lunch - pietūs
+- dinner - vakarienė
+- snack - užkandis
+- coffee - kava
+- tea - arbata
+- juice - sultys
+- water - vanduo
+
+**Exercise:** Match the activities to frequencies. (Use adverbs of frequency)
+
+1. I read a book. (often) → _____________________
+2. She cooks dinner. (usually) → _____________________
+3. They watch movies. (sometimes) → _____________________
+4. He plays sports. (always) → _____________________
+5. We meet friends. (rarely) → _____________________
+
+---
+
+## Exercise 11: Reading Comprehension 2 / Pratimas 11: Skaitymo suvokimas 2
+
+**Read about Tomas's weekend routine:**
+
+Tomas is a student. He lives in Kaunas. On Saturdays, he wakes up at 10 AM. He doesn't get up immediately. He stays in bed for 30 minutes. Then he has a big breakfast: eggs, toast, and coffee.
+
+After breakfast, Tomas goes to the gym. He exercises for one hour. He usually plays basketball with his friends. After the gym, he goes home and takes a shower. He has lunch at 2 PM. He often eats soup and salad.
+
+In the afternoon, Tomas does his homework. He studies for 2-3 hours. Sometimes he listens to music while studying. At 6 PM, he meets his girlfriend. They go for a walk in the park or watch a movie.
+
+For dinner, Tomas cooks pasta. He likes cooking Italian food. After dinner, he watches TV or reads a book. He goes to bed at 11 PM. On Sundays, his routine is similar, but he sometimes visits his family.
+
+**Answer the questions:**
+
+1. What does Tomas do?
+2. What time does he wake up on Saturdays?
+3. What does he have for breakfast?
+4. What does he do after breakfast?
+5. What time does he have lunch?
+6. What does he do in the afternoon?
+7. Who does he meet at 6 PM?
+8. What does he do after dinner?
+9. What time does he go to bed?
+10. What does he sometimes do on Sundays?
+
+**True or False:**
+
+1. Tomas wakes up at 9 AM. _____
+2. He has coffee for breakfast. _____
+3. He goes to the gym on Saturdays. _____
+4. He studies in the morning. _____
+5. He cooks dinner every day. _____
+
+---
+
+## Exercise 12: Writing - Partner's Routine / Pratimas 12: Rašymas - Partnerio rutina
+
+Interview a partner about their daily routine. Ask at least 8 questions. Then write a paragraph about their routine.
+
+Example questions:
+
+- What time do you wake up?
+- Do you have breakfast at home?
+- How do you go to work/school?
+- What do you usually do after work/school?
+- Do you watch TV in the evening?
+
+**Write the paragraph:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Routine Comparison
+
+In pairs, compare your daily routines. Use phrases like:
+
+- I usually... but my partner always...
+- We both... every day.
+- I never... but he/she often...
+
+### Activity 2: Time Management Discussion
+
+Discuss: How do you manage your time? What routines help you stay organized? Share tips with the group.
+
+### Activity 3: Cultural Routines
+
+Talk about routines in different countries. For example:
+
+- In Spain, people have lunch late (around 2-3 PM).
+- In the UK, afternoon tea is common.
+- In Japan, people often work long hours.
+
+What are some differences from Lithuanian routines?
+
+### Activity 4: Role-Play - Daily Schedule
+
+Pretend you are a personal assistant. Create a daily schedule for a busy person (actor, doctor, student). Present it to the group.
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Work-Life Balance:** In many English-speaking countries, especially Nordic countries and the Netherlands, people value work-life balance. They often finish work by 5 PM and spend evenings with family. In contrast, in some Asian countries, long working hours are common.
+- **Meal Times:** Breakfast is light (cereal, toast), lunch is at noon, dinner around 6-7 PM. In the US, people eat dinner early compared to Europeans.
+- **Weekends:** Saturdays and Sundays are for relaxation, family, and hobbies. Shopping and chores are done on weekends.
+- **Health Focus:** Many people include exercise in their routines. Gyms and running are popular. "Healthy eating" is emphasized, with more salads and less fried food.
+
+---
+
+**End of Expanded Unit 2 / Išplėsto antrojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section!

@@ -59,6 +59,36 @@
 7. Teacher
 8. Kaunas
 
+### Exercise 8: Extended Vocabulary
+1. a) mokytojas
+2. b) gydytojas
+3. c) Lenkija
+4. d) draugiškas
+5. e) aukštas
+
+### Exercise 9: Extended Dialogues
+**Complete the dialogue:**
+My name, I am, Nice, Nice, Where, I'm, And, I'm
+
+**Questions:**
+1. Maria is Tomas's wife. / She is Tomas's wife.
+2. She is a doctor.
+3. He is 10 years old. / Lukas is 10 years old.
+4. He is meeting Peter's family. / Peter is meeting the family.
+
+### Exercise 10: Reading Comprehension 2
+1. She is a chef. / Chef
+2. Klaipėda, Lithuania
+3. 35 years old / 35
+4. Darius
+5. Teacher
+6. Two
+7. Greta (8 years old), Marius (5 years old)
+8. In a big house near the sea.
+
+### Exercise 11: Writing Practice
+(Answers will vary; check for correct use of "to be", introductions, and structure.)
+
 ---
 
 ## Unit 2: Daily Routines and Present Simple
@@ -142,6 +172,36 @@
 6. Do you speak English?
 7. We watch TV every day.
 8. She doesn't have a car.
+
+### Exercise 10: Extended Vocabulary
+1. I often read a book.
+2. She usually cooks dinner.
+3. They sometimes watch movies.
+4. He always plays sports.
+5. We rarely meet friends.
+
+### Exercise 11: Reading Comprehension 2
+**Questions:**
+1. He is a student.
+2. At 10 AM.
+3. Eggs, toast, and coffee. / A big breakfast: eggs, toast, and coffee.
+4. He goes to the gym.
+5. At 2 PM.
+6. He does his homework. / He studies.
+7. His girlfriend.
+8. He watches TV or reads a book.
+9. At 11 PM.
+10. He visits his family.
+
+**True or False:**
+1. False
+2. True
+3. True
+4. False
+5. False
+
+### Exercise 12: Writing - Partner's Routine
+(Answers will vary; check for correct use of Present Simple, time expressions, and adverbs of frequency.)
 
 ---
 

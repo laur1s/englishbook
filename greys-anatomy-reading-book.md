@@ -69,6 +69,20 @@ Little did she know that her life at Seattle Grace would change everything she t
 4. If you could ask Dr. Webber one question about being a doctor, what would it be?
 5. How do you think Meredith's life will change because of working at the hospital?
 
+### Word Bank / Žodžių Bankas
+- White coat: baltas chalatas
+- Scrubs: chirurginiai drabužiai
+- Interns: rezidentai
+- Locker room: rūbinė
+- Chief of surgery: chirurgijos viršininkas
+- Vital signs: gyvybiniai požymiai
+- Hip surgery: klubo operacija
+- Temperature: temperatūra
+- Blood pressure: kraujo spaudimas
+- Pulse: pulsas
+- Cafeteria: valgykla
+- Specialty: specialybė
+
 ---
 
 ## Chapter 2: The Emergency Room
@@ -143,6 +157,21 @@ Little did she know that this was just the beginning of the challenges she would
 4. If you could thank the doctors who saved someone's life, what would you say?
 5. How do you think Sarah's accident will change her family's life?
 
+### Word Bank / Žodžių Bankas
+- Emergency room: skubios pagalbos skyrius
+- Stretcher: neštuvai
+- Drunk driver: girtas vairuotojas
+- Shock: šokas
+- Trauma room: traumos kambarys
+- Ortho surgery: ortopedinė chirurgija
+- X-rays: rentgeno nuotraukos
+- Compound fracture: atviras lūžis
+- Tibia: blauzdikaulis
+- Fibula: žastikaulis
+- Recovery room: atsigavimo palata
+- Anesthesia: anestezija
+- Physical therapy: fizinė terapija
+
 ---
 
 ## Chapter 3: Love in the Hospital
@@ -214,6 +243,16 @@ Yet Meredith wouldn't trade it for anything. Derek made her happier than she'd e
 3. What would you do if you suspected two colleagues were dating?
 4. How do you think secret relationships affect people's happiness?
 5. If you were Meredith, would you risk your job for love? Why or why not?
+
+### Word Bank / Žodžių Bankas
+- Brain surgeons: neurochirurgai
+- Brain tumor: smegenų auglys
+- Brain stem: smegenų kamienas
+- Paralysis: paralyžius
+- Operating room: operacinė
+- Incision: pjūvis
+- Waiting room: laukiamasis
+- Doctors' lounge: gydytojų poilsio kambarys
 
 ---
 
@@ -287,6 +326,17 @@ Hospital life has both joy and sorrow (liūdesys).
 4. How do you think premature babies change over time?
 5. If you could thank someone who saved a life, what would be the most meaningful way?
 
+### Word Bank / Žodžių Bankas
+- Neonatal specialist: naujagimių specialistas
+- High-risk pregnancies: didelės rizikos nėštumai
+- Intrauterine growth restriction: gimdos augimo apribojimas
+- Ultrasound: ultragarsas
+- Cesarean section: cezario pjūvis
+- Premature: priešlaikinis
+- NICU: naujagimių intensyvios priežiūros skyrius
+- Ventilator: ventiliatorius
+- Breast milk: motinos pienas
+
 ---
 
 ## Chapter 5: Friendship and Support
@@ -344,6 +394,10 @@ In the world of medicine, losses were inevitable. But so was the support that ma
 3. What would you say to comfort someone who blames themselves for something?
 4. How do you think sharing personal stories helps people heal?
 5. If you could create a support system for doctors, what would it include?
+
+### Word Bank / Žodžių Bankas
+- Open-heart surgery: atviro širdies operacija
+- CPR: gaivinimas
 
 ---
 
@@ -407,6 +461,13 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 4. How do you think family relationships affect doctors' work?
 5. If you could witness any family reunion, what would it be and why?
 
+### Word Bank / Žodžių Bankas
+- Infectious enthusiasm: užkrečiamas entuziazmas
+- Half-sister: įseserė
+- Maid of honor: vyriausioji pamergė
+- Appendectomy: apendicito pašalinimas
+- Military trauma surgeon: karinis traumos chirurgas
+
 ---
 
 ## Chapter 7: The Big Storm
@@ -465,6 +526,18 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 4. How do you think natural disasters change communities?
 5. If you could prepare a hospital for any disaster, what would you do?
 
+### Word Bank / Žodžių Bankas
+- Hurricane-force winds: uragano stiprumo vėjai
+- Scaffolding: pastoliai
+- Hypothermia: hipotermija
+- Prioritize: suteikti prioritetą
+- Brachial artery: peties arterija
+- Severed: perpjauta
+- Backup generators: atsarginiai generatoriai
+- Flashlight: žibintuvėlis
+- Rehabilitation: reabilitacija
+- Beacon: švyturys
+
 ---
 
 ## Chapter 8: Dreams and Reality
@@ -520,6 +593,17 @@ Meredith learned that being a doctor means balancing dreams and reality.
 3. What would you do if your career dreams changed over time?
 4. How do you think balancing work and personal life affects success?
 5. If you could tell your younger self one thing about dreams and reality, what would it be?
+
+### Word Bank / Žodžių Bankas
+- Crossroads: kryžkelė
+- Liver resection: kepenų rezekcija
+- Impeccable: nepriekaištingas
+- Compassion: užuojauta
+- Single-minded dedication: vienpusis atsidavimas
+- Cardiac surgery: širdies chirurgija
+- Trauma surgeon: traumos chirurgas
+- Imposter: apsimetėlis
+- Medical missions: medicininės misijos
 
 ---
 

@@ -196,14 +196,208 @@ Hello! My name is Lukas. I am from Kaunas, Lithuania. I am 28 years old. I am a 
 
 ## Cultural Notes / Kultūrinės pastabos
 
-In English-speaking countries:
-- People shake hands when meeting for the first time
-- "How are you?" is often a greeting, not always a real question
-- First names are used more commonly than in Lithuania
-- Eye contact is important during greetings
+In English-speaking countries, greetings have subtle rules that are good to know.
+
+- **Formality:** "Hello" is a neutral greeting suitable for anyone. "Hi" is a friendly, common greeting for most informal and semi-formal situations. "Hey" is very informal and best used with friends and people you know well.
+- **The "How are you?" Ritual:** "How are you?" is often a part of the greeting itself, not a deep question about your well-being.
+    - A typical, polite response is: "I'm good, thanks. And you?" or "Fine, thank you. How are you?"
+    - It's not common to respond with a long list of your problems unless you know the person very well.
+- **Handshakes:** A firm handshake is common when meeting someone for the first time in a professional or formal setting. It's usually brief. Among friends, handshakes are less common; a simple "hello" is enough.
+- **First Names:** Using first names (e.g., "John," "Mary") is very common, even with people in positions of authority like managers or teachers, after the initial introduction. This is different from Lithuania, where formal titles are used more often.
+- **Eye Contact:** Making eye contact when you greet someone shows that you are confident and sincere. Avoiding eye contact can be seen as impolite or shy.
 
 ---
 
-**End of Unit 1 / Pirmojo skyriaus pabaiga**
+---
+
+## Part 8: Speaking Practice / Kalbėjimo praktika
+
+These exercises are designed to be done with a partner or in a small group. The goal is to use the vocabulary and grammar from this unit in a real conversation.
+
+### Activity 1: Role-Play - First Meeting
+
+Work with a partner. Imagine you are in one of the following situations. Introduce yourselves, ask at least four questions from the "Useful Phrases" section, and answer your partner's questions.
+
+**Situations:**
+1.  You are new students in an English class.
+2.  You are at a business conference.
+3.  You are tourists meeting in a hotel lobby.
+4.  You are at a friend's party and don't know each other.
+
+**Example Dialogue:**
+A: Hello, I'm [Your Name]. I don't think we've met.
+B: Hi, [Your Name]. I'm [Partner's Name]. It's nice to meet you.
+A: Nice to meet you too. Where are you from?
+B: I'm from [Your City/Country]. And you?
+A: I'm from [Your City/Country]. What do you do?
+B: I'm a [Your Job/Student]. What about you?
+A: ...
+
+### Activity 2: Discussion Questions
+
+Discuss these questions with your group.
+1.  What are the most common ways to greet people in Lithuania? Are they formal or informal?
+2.  Is it common to ask "How are you?" in Lithuania? What is a typical response?
+3.  When do people in your country use first names versus last names and titles (like *Ponas* or *Ponia*)?
+4.  Think of a famous person (actor, musician, etc.). Imagine you are introducing them to the class. What would you say? (e.g., "This is...")
+
+### Activity 3: The Introduction Chain
+
+Sit in a circle.
+1.  The first person says their name: "My name is Anna."
+2.  The second person introduces the first person and then themselves: "This is Anna, and my name is Tomas."
+3.  The third person introduces the second person and then themselves: "This is Tomas, and my name is Ieva."
+4.  Continue until everyone has been introduced. For a bigger challenge, try to introduce everyone who came before you! ("This is Anna, this is Tomas, and I'm Ieva.")
+
+---
+
+### Digital Version: Interactive Ideas
+
+For a digital version of this book, these exercises could be even more engaging:
+*   **Interactive Dialogues:** Clickable dialogues where you choose the correct response.
+*   **Pronunciation Practice:** Listen to a native speaker's pronunciation of the greetings and record your own to compare.
+*   **Virtual Role-Play:** An interactive scenario where you have a conversation with an AI character.
+
+---
+
+---
+
+## Exercise 8: Extended Vocabulary / Pratimas 8: Išplėstas žodynas
+
+### Occupations (Profesijos)
+- Teacher - Mokytojas/mokytoja
+- Doctor - Gydytojas/gydytoja
+- Engineer - Inžinierius/inžinierė
+- Student - Studentas/studentė
+- Chef - Virėjas/virėja
+- Artist - Menininkas/menininkė
+
+### Countries and Nationalities (Šalys ir tautybės)
+- Lithuania - Lithuanian - Lietuva - lietuvis/lietuvis
+- Poland - Polish - Lenkija - lenkas/lenkė
+- Germany - German - Vokietija - vokietis/vokietė
+- France - French - Prancūzija - prancūzas/prancūzė
+- Spain - Spanish - Ispanija - ispanas/ispanė
+- Italy - Italian - Italija - italas/italė
+
+### Adjectives for Descriptions (Būdvardžiai aprašymams)
+- Tall - Aukštas/aukšta
+- Short - Žemas/žema
+- Friendly - Draugiškas/draugiška
+- Kind - Malonus/maloni
+- Happy - Laimingas/laiminga
+- Excited - Susijaudinęs/susijaudinusi
+
+**Exercise:** Match the words with their Lithuanian translations.
+
+1. Teacher - a) mokytojas
+2. Doctor - b) gydytojas
+3. Poland - c) Lenkija
+4. Friendly - d) draugiškas
+5. Tall - e) aukštas
+
+---
+
+## Exercise 9: Extended Dialogues / Pratimas 9: Išplėsti dialogai
+
+**Dialogue 1: Meeting at Work**
+A: Hello! I'm new here. My name is Tomas. I'm an engineer.
+B: Hi, Tomas! I'm Lina, the manager. Nice to meet you.
+A: Nice to meet you too. Where are you from?
+B: I'm from Vilnius. And you?
+A: I'm from Kaunas. I'm excited to work here!
+
+**Complete the dialogue:**
+A: Good morning! _____________ is Anna. _____________ a teacher.
+B: Hello, Anna. I'm John. _____________ to meet you.
+A: _____________ to meet you too. _____________ are you from?
+B: _____________ from London. _____________ you?
+A: _____________ from Lithuania.
+
+**Dialogue 2: Family Introduction**
+A: This is my family. This is my wife, Maria. She is a doctor.
+B: Hello, Maria. I'm Peter.
+C: Nice to meet you, Peter. And this is our son, Lukas. He is 10 years old.
+B: Hi, Lukas. I'm happy to meet you all!
+
+**Questions:**
+1. Who is Maria?
+2. What is her job?
+3. How old is Lukas?
+4. Who is Peter meeting?
+
+---
+
+## Exercise 10: Reading Comprehension 2 / Pratimas 10: Skaitymo suvokimas 2
+
+**Read the text:**
+
+My name is Elena. I am 35 years old. I am from Klaipėda, Lithuania. I am a chef. I work in a restaurant. I am married. My husband's name is Darius. He is a teacher. We have two children: a daughter named Greta and a son named Marius. Greta is 8 years old and Marius is 5. We are a happy family. We live in a big house near the sea. Klaipėda is beautiful. I love my job and my family.
+
+**Answer the questions:**
+1. What is Elena's job?
+2. Where is she from?
+3. How old is she?
+4. What is her husband's name?
+5. What is his job?
+6. How many children do they have?
+7. What are their names and ages?
+8. Where do they live?
+
+---
+
+## Exercise 11: Writing Practice / Pratimas 11: Rašymo praktika
+
+Write a short paragraph introducing yourself. Include:
+- Your name and age
+- Where you are from
+- Your job or what you study
+- One family member
+- One hobby
+- How you feel today
+
+Example:
+My name is Jonas. I am 25 years old. I am from Vilnius. I am a student. My sister is a doctor. My hobby is reading. I am happy today.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 4: Speed Introductions
+In pairs, introduce yourselves as quickly as possible, then switch partners. Try to remember and introduce your previous partner's information to the new one.
+
+### Activity 5: Cultural Exchange
+Discuss: How do people greet each other in different countries? Share what you know about Lithuanian greetings vs. other cultures.
+
+### Activity 6: Pronunciation Practice
+Practice saying these phrases with correct stress:
+- My name is [Name]
+- Nice to meet you
+- Where are you from?
+- What do you do?
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Personal Space:** In English-speaking countries, people usually stand about an arm's length apart when talking. This is closer than in some other cultures, but farther than in very close relationships.
+- **Small Talk:** After introductions, people often make small talk about weather, work, or hobbies. Questions like "How's the weather?" or "Did you have a good weekend?" are common.
+- **Business Cards:** In professional settings, especially in Asia-influenced English contexts, exchanging business cards is important. In Western countries, it's less formal, but having a card ready is good.
+- **Follow-up:** After meeting someone, it's polite to say "It was great meeting you" or "Let's stay in touch" if you want to continue the connection.
+
+---
+
+### Digital Version: Enhanced Interactive Ideas / Skaitmeninė versija: Išplėstos interaktyvios idėjos
+
+- **Virtual Introductions:** Record yourself introducing someone and get AI feedback on pronunciation and grammar.
+- **Cultural Videos:** Watch short videos about greetings in different English-speaking countries and discuss differences.
+- **Online Role-Play:** Use platforms to practice introductions with people from other countries.
+- **Flashcard Apps:** Interactive flashcards for vocabulary with audio pronunciation.
+
+---
+
+**End of Expanded Unit 1 / Išplėsto pirmojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section!
