@@ -273,6 +273,130 @@ B: I _____ (win) one last year, but I _____ (not/play) professionally.
 
 ---
 
+## Exercise 10: Extended Vocabulary / Pratimas 10: Išplėstas žodynas
+
+### Tense Time Expressions (Laiko išraiškos laikams)
+
+- Present Simple: always, usually, every day - Visada, paprastai, kasdien
+- Present Continuous: now, at the moment, today - Dabar, šiuo metu, šiandien
+- Present Perfect: ever, never, since, for - Kada nors, niekada, nuo, (laikotarpiui)
+
+### Stative vs Dynamic Verbs (Statiniai vs dinaminiai veiksmažodžiai)
+
+- Stative: know, like, believe, have (possess) - Žinoti, patikti, tikėti, turėti
+- Dynamic: run, eat, study, work - Bėgti, valgyti, studijuoti, dirbti
+
+**Exercise:** Choose the correct tense.
+
+1. I _____ (live) in Vilnius. (Present Simple/Continuous)
+2. She _____ (cook) dinner now. (Present Simple/Continuous)
+3. Have you _____ (see) that movie? (Present Simple/Perfect)
+4. He _____ (work) here since 2010. (Present Simple/Perfect)
+5. They _____ (play) football at the moment. (Present Simple/Continuous)
+
+---
+
+## Exercise 11: Extended Dialogues / Pratimas 11: Išplėsti dialogai
+
+**Dialogue 1: Mixed Tenses**
+
+A: What do you usually do on weekends?
+B: I usually relax at home. Today I'm visiting my friends.
+A: Have you ever been to their house?
+B: Yes, I have. I go there often.
+
+**Complete the dialogue:**
+
+A: What _____ you _____ (do) now?
+B: I _____ (study) English.
+A: How long _____ you _____ (study) it?
+B: I _____ (study) it for two years.
+
+**Dialogue 2: Stative Verbs**
+
+A: Do you like chocolate?
+B: Yes, I love it. I don't like coffee.
+A: Have you tried Lithuanian coffee?
+B: No, I haven't.
+
+**Questions:**
+1. What does the person usually do on weekends?
+2. What is she doing today?
+3. What has she done before?
+4. What does she like?
+5. What hasn't she tried?
+
+---
+
+## Exercise 12: Extended Reading Comprehension 2 / Pratimas 12: Skaitymo suvokimas 2
+
+**Read the text:**
+
+Anna is a student. She usually studies in the library, but today she is working on a project at home. She has studied English for 5 years. She knows many words, but she is learning new grammar now.
+
+Her brother works in an office. He usually starts at 9 AM. At the moment, he is having lunch. He has worked there for 3 years. He likes his job, but he doesn't like the long hours.
+
+**Answer the questions:**
+
+1. What does Anna usually do?
+2. What is she doing today?
+3. How long has she studied English?
+4. What is she learning now?
+5. Where does her brother work?
+6. What is he doing at the moment?
+7. How long has he worked there?
+8. What doesn't he like?
+
+**True or False:**
+
+1. Anna studies at home usually. _____
+2. She has studied English for 5 years. _____
+3. Her brother starts work at 8 AM. _____
+4. He is working now. _____
+5. He likes long hours. _____
+
+---
+
+## Exercise 13: Writing Practice / Pratimas 13: Rašymo praktika
+
+Write about your daily routine using different present tenses.
+
+Include:
+- Habits (Present Simple)
+- Current activities (Present Continuous)
+- Experiences (Present Perfect)
+
+Example:
+I usually wake up at 7 AM. Today I'm sleeping late. I have woken up early for years.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Tense Mix
+
+Describe a friend using all three tenses.
+
+### Activity 2: Current vs Habit
+
+Compare what you usually do vs what you're doing now.
+
+### Activity 3: Experience Sharing
+
+Talk about things you've never done but want to try.
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Temporary Actions:** English uses Present Continuous for temporary situations, unlike Lithuanian.
+- **Life Experiences:** Present Perfect is used for personal achievements and stories.
+- **Polite Questions:** "Have you ever...?" shows interest in the other person.
+
+---
+
 ## Useful Phrases / Naudingi posakiai
 
 - What are you doing? - Ką tu darai?
@@ -295,6 +419,6 @@ B: I _____ (win) one last year, but I _____ (not/play) professionally.
 
 ---
 
-**End of Unit 10 / Dešimtojo skyriaus pabaiga**
+**End of Expanded Unit 10 / Išplėsto dešimtojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section! This unit is challenging because it combines three tenses. Review the time expressions carefully - they often determine which tense to use.

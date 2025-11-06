@@ -343,6 +343,142 @@ _____________________________________________
 
 ---
 
+## Exercise 11: Extended Vocabulary / Pratimas 11: Išplėstas žodynas
+
+### Transportation Vocabulary (Transporto žodynas)
+
+- Airplane - Lėktuvas
+- Train - Traukinys
+- Bus - Autobusas
+- Taxi - Taksi
+- Bicycle - Dviratis
+- Ferry - Keltas
+- Subway/Metro - Metro
+- Car rental - Automobilio nuoma
+
+### Travel Terms (Kelionių terminai)
+
+- Departure - Išvykimas
+- Arrival - Atvykimas
+- Delay - Delsti
+- Luggage - Bagažas
+- Passport - Pasas
+- Visa - Viza
+- Boarding pass - Įlaipinimo kortelė
+- Gate - Išvykimo vartai
+
+**Exercise:** Match the words with their Lithuanian translations.
+
+1. Airplane - a) Traukinys
+2. Train - b) Lėktuvas
+3. Delay - c) Atvykimas
+4. Arrival - d) Vėlavimas
+5. Luggage - e) Bagažas
+
+---
+
+## Exercise 12: Extended Dialogues / Pratimas 12: Išplėsti dialogai
+
+**Dialogue 1: At the Airport**
+
+A: Excuse me, where is the check-in for flight LT101?
+B: It's at counter 5, over there.
+A: Thank you. And where is the gate?
+B: The gate number will be on your boarding pass. It's usually announced 30 minutes before departure.
+
+**Complete the dialogue:**
+
+A: Hi, I need to get to the city center.
+B: You can take the _____________ or a taxi.
+A: How much is the bus?
+B: It's _____________ euros. The taxi is more expensive.
+A: I'll take the bus. _____________ does it leave?
+B: Every 15 minutes from platform 3.
+
+**Dialogue 2: Asking for Directions**
+
+A: Excuse me, how do I get to the museum?
+B: Go straight ahead for two blocks, then turn left on Museum Street. The museum is on your right.
+A: Is it far?
+B: No, it's about 10 minutes walk.
+
+**Questions:**
+1. Where does the person want to go?
+2. What directions does he get?
+3. How long will it take?
+
+---
+
+## Exercise 13: Extended Reading Comprehension 2 / Pratimas 13: Skaitymo suvokimas 2
+
+**Read the text:**
+
+Last summer, I traveled to Paris with my family. We flew from Vilnius to Paris. The flight was three hours long. At the airport, we took a taxi to our hotel. The hotel was near the Eiffel Tower.
+
+In Paris, we visited many places. We saw the Louvre Museum and walked along the Seine River. We ate French food like croissants and cheese. The weather was nice, and we enjoyed the cafes.
+
+We stayed for a week. On the last day, we shopped for souvenirs. Then we flew back home. It was a great trip.
+
+**Answer the questions:**
+
+1. How did the family travel to Paris?
+2. How long was the flight?
+3. Where was their hotel?
+4. What places did they visit?
+5. What did they eat?
+6. How long did they stay?
+7. What did they do on the last day?
+
+**True or False:**
+
+1. They traveled by train. _____
+2. The hotel was far from the Eiffel Tower. _____
+3. They visited the Louvre. _____
+4. They ate Lithuanian food. _____
+5. They stayed for two weeks. _____
+
+---
+
+## Exercise 14: Writing Practice / Pratimas 14: Rašymo praktika
+
+Write a short paragraph about a memorable trip. Include:
+
+- Where you went
+- How you traveled
+- What you did
+- Why it was memorable
+
+Example:
+Last year I went to the seaside by train. I swam in the sea and ate ice cream. It was memorable because the weather was perfect.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Directions Game
+
+In pairs, give directions to a place in the classroom or school. The other person follows the directions.
+
+### Activity 2: Travel Stories
+
+Share a travel story with the group. Describe the journey, places visited, and any interesting events.
+
+### Activity 3: Transportation Debate
+
+Discuss: Which is better, traveling by car or by train? Why?
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Punctuality:** In many English-speaking countries, especially Germany and Switzerland, trains and buses are very punctual. In the US, flights can be delayed.
+- **Tipping:** In the US, tipping taxi drivers and waiters is common (15-20%). In the UK, tipping is less expected but appreciated.
+- **Driving:** In the UK, people drive on the left. In Lithuania and most countries, on the right. Be careful when renting a car abroad.
+
+---
+
 ## Useful Phrases / Naudingi posakiai
 
 **Asking for help:**
@@ -397,6 +533,6 @@ _____________________________________________
 
 ---
 
-**End of Unit 5 / Penktojo skyriaus pabaiga**
+**End of Expanded Unit 5 / Išplėsto penktojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section!

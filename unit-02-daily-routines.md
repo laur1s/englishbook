@@ -58,6 +58,15 @@
 
 ⚠️ **Important:** Add -s/-es to the verb for he/she/it!
 
+**More Examples:**
+- I eat breakfast at 7 AM. - Aš pusryčiauju 7 valandą.
+- You study English. - Tu studijuoji anglų kalbą.
+- We live in Vilnius. - Mes gyvename Vilniuje.
+- They play football. - Jie žaidžia futbolą.
+- He cooks dinner. - Jis gamina vakarienę.
+- She reads books. - Ji skaito knygas.
+- It rains in autumn. - Rudeniui lyja.
+
 ### Spelling Rules (Rašybos taisyklės)
 
 - Most verbs: add -s → work**s**, play**s**, eat**s**
@@ -71,12 +80,29 @@
 | I/You/We/They | don't + verb | I don't work on Sundays |
 | He/She/It | doesn't + verb | He doesn't like coffee |
 
+**More Examples:**
+- I don't eat meat. - Aš nevalgau mėsos.
+- You don't live here. - Tu čia negyveni.
+- We don't study French. - Mes nestudijuojame prancūzų kalbos.
+- They don't play tennis. - Jie nežaidžia teniso.
+- He doesn't drink coffee. - Jis negeria kavos.
+- She doesn't watch TV. - Ji nežiūri televizoriaus.
+- It doesn't snow in summer. - Vasarą nesninga.
+
 ### Questions (Klausimai)
 
 | Auxiliary | Subject | Verb | Example |
 |-----------|---------|------|---------|
 | Do | I/you/we/they | work? | Do you work here? |
 | Does | he/she/it | work? | Does she work here? |
+
+**More Examples:**
+- Do you eat breakfast? - Ar tu pusryčiauji?
+- Does he live in Kaunas? - Ar jis gyvena Kaune?
+- Do we study together? - Ar mes studijuojame kartu?
+- Does she work hard? - Ar ji sunkiai dirba?
+- Do they play games? - Ar jie žaidžia žaidimus?
+- Does it rain often? - Ar dažnai lyja?
 
 ---
 
@@ -92,6 +118,14 @@
 | never | niekada | 0% |
 
 **Position:** Usually before the main verb, but after "to be"
+
+**More Examples:**
+- I always brush my teeth. - Aš visada valausi dantis.
+- She usually wakes up early. - Ji paprastai keliasi anksti.
+- We often go shopping. - Mes dažnai einame apsipirkti.
+- They sometimes watch movies. - Jie kartais žiūri filmus.
+- He rarely eats fast food. - Jis retai valgo greitą maistą.
+- It never rains in July. - Liepą niekada nelyja.
 
 - I **always** wake up early.
 - She is **usually** happy.

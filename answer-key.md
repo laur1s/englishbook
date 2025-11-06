@@ -300,6 +300,32 @@ was, was, went, was, did you eat, had, tried, Was it, wasn't
 7. Did she like the film?
 8. I didn't see you.
 
+### Exercise 11: Extended Vocabulary
+1. a) Eiti
+2. b) Vakar
+3. c) Susijaudinęs
+4. d) Imti
+5. e) Prieš
+
+### Exercise 12: Extended Dialogues
+**Dialogue 1:** did, do, played, played, Did, have, did, drew
+**Complete the dialogue:** did, go, went, was, did, do, visited, took, ate
+**Dialogue 2:** went, woke, missed, left, did, do, went, was
+**Questions:** (Answers will vary; check for logical responses about the bad day events)
+
+### Exercise 13: Extended Reading Comprehension 2
+1. Vilnius
+2. Two
+3. English
+4. 2017
+5. Teacher
+6. Two years
+7. France, Germany, and Italy
+8. Came back to Lithuania and started her own business
+
+### Exercise 14: Writing Practice
+(Answers will vary; check for correct use of Past Simple, logical structure, and inclusion of required elements)
+
 ---
 
 ## Unit 4: Food and Shopping

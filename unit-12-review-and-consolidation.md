@@ -271,6 +271,134 @@ This book has covered:
 - Essential vocabulary for daily communication
 - Cultural aspects of English-speaking countries
 
+## Exercise 11: Extended Vocabulary Review / Pratimas 11: Išplėstas žodyno peržiūra
+
+### All Topics Vocabulary (Visų temų žodynas)
+
+- Greetings and introductions - Pasisveikinimai ir prisistatymai
+- Daily routines - Kasdieninė rutina
+- Past events - Praeities įvykiai
+- Food and shopping - Maistas ir apsipirkimas
+- Travel and directions - Kelionės ir kryptys
+- Future plans - Ateities planai
+- Comparisons - Palyginimai
+- Advice and possibility - Patarimai ir galimybė
+- Present tenses - Esamieji laikai
+- Past continuous - Būtasis tęstinis
+
+**Exercise:** Match the topics with key phrases.
+
+1. Greetings - a) I was doing when...
+2. Daily routines - b) Hello, nice to meet you
+3. Past events - c) I wake up at 7 AM
+4. Comparisons - d) Bigger than, the best
+5. Future plans - e) I will travel next year
+
+---
+
+## Exercise 12: Extended Dialogues Review / Pratimas 12: Išplėsti dialogai peržiūra
+
+**Dialogue 1: Mixed Review**
+
+A: Hi, what did you do last weekend?
+B: I was shopping when I met my friend. We had coffee.
+A: Have you ever been to Paris?
+B: No, but I want to go. It should be amazing.
+
+**Complete the dialogue:**
+
+A: What _____ you _____ (do) yesterday?
+B: I _____ (study) English. I usually _____ (study) in the evening.
+A: _____ you _____ (finish) your homework?
+B: Yes, I _____ (do) it before dinner.
+
+**Dialogue 2: Future and Advice**
+
+A: I'm planning a trip. What should I do?
+B: You should book tickets early. You might need a visa.
+A: How much does it cost?
+B: It depends, but it could be expensive.
+
+**Questions:**
+1. What was the person doing when they met a friend?
+2. What does the friend want to do?
+3. What should the traveler do?
+4. What might they need?
+
+---
+
+## Exercise 13: Extended Reading Comprehension 2 / Pratimas 13: Skaitymo suvokimas 2
+
+**Read the text:**
+
+Laura has lived in Lithuania all her life. She usually wakes up early and goes to work. Yesterday, she was working when her boss called a meeting. She has worked there for 5 years. She likes her job, but she wants to travel more.
+
+In the future, she will visit new countries. She has never been to Asia, but she might go next year. She should save money first. Her friend advised her to learn some basic phrases.
+
+Laura's daily routine includes breakfast at home and dinner with family. She often reads books in the evening. Last week, she was reading when her phone rang.
+
+**Answer the questions:**
+
+1. Where has Laura lived all her life?
+2. What was she doing when her boss called?
+3. How long has she worked there?
+4. What does she want to do more?
+5. Where has she never been?
+6. What should she do first?
+7. What does her daily routine include?
+8. What was she doing when her phone rang?
+
+**True or False:**
+
+1. Laura lives in France. _____
+2. She was sleeping when called. _____
+3. She has worked for 10 years. _____
+4. She wants to travel less. _____
+5. She often watches TV. _____
+
+---
+
+## Exercise 14: Writing Practice / Pratimas 14: Rašymo praktika
+
+Write a comprehensive paragraph about yourself using all grammar from A2.
+
+Include:
+- Introduction and daily routine
+- Past experiences
+- Future plans
+- Comparisons and advice
+
+Example:
+My name is Jonas. I live in Vilnius and work as a teacher. I usually start work at 8 AM. Yesterday I was teaching when the bell rang. I have taught for 3 years. In the future, I will travel to London. It should be more exciting than staying home.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Full Review Conversation
+
+Have a conversation using all tenses and structures.
+
+### Activity 2: Advice Session
+
+Give and receive advice on various topics.
+
+### Activity 3: Story Telling
+
+Tell a complete story from past to future.
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Integrated Communication:** English speakers mix tenses naturally in conversation.
+- **Politeness Levels:** Use different structures for formal vs informal situations.
+- **Cultural Awareness:** Understanding cultural differences helps communication.
+
+---
+
 **Next steps:**
 - Practice speaking with native speakers
 - Read English books and watch English films
@@ -281,6 +409,6 @@ This book has covered:
 
 ---
 
-**End of Unit 12 and Complete A2 Course / Dvyliktojo skyriaus ir viso A2 kurso pabaiga**
+**End of Expanded Unit 12 and Complete A2 Course / Išplėsto dvyliktojo skyriaus ir viso A2 kurso pabaiga**
 
 Thank you for using this English learning book! Good luck with your English studies.

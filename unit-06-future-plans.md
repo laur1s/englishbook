@@ -400,6 +400,140 @@ Find and correct the mistakes:
 
 ---
 
+## Exercise 13: Extended Vocabulary / Pratimas 13: Išplėstas žodynas
+
+### Future Plans Vocabulary (Ateities planų žodynas)
+
+- Career - Karjera
+- Education - Švietimas
+- Marriage - Santuoka
+- Family - Šeima
+- Travel - Kelionės
+- Retirement - Pensija
+- Promotion - Paaukštinimas
+- Success - Sėkmė
+
+### Future Actions (Ateities veiksmai)
+
+- Graduate - Baigti studijas
+- Get married - Vesti/tekėti
+- Have children - Turėti vaikų
+- Buy a house - Nusipirkti namą
+- Change job - Pakeisti darbą
+- Learn a language - Išmokti kalbą
+- Start a business - Pradėti verslą
+- Move abroad - Išvykti į užsienį
+
+**Exercise:** Match the words with their Lithuanian translations.
+
+1. Career - a) Kelionės
+2. Travel - b) Karjera
+3. Graduate - c) Santuoka
+4. Marriage - d) Baigti studijas
+5. Success - e) Sėkmė
+
+---
+
+## Exercise 14: Extended Dialogues / Pratimas 14: Išplėsti dialogai
+
+**Dialogue 1: Career Plans**
+
+A: What are your plans for the future?
+B: I want to become a doctor. I'm going to study medicine at university.
+A: That's great! When will you start?
+B: Next year. I'll apply for scholarships too.
+
+**Complete the dialogue:**
+
+A: What _____ you _____ after school?
+B: I _____ going to travel. I want to visit Asia.
+A: How long _____ you _____ there?
+B: For three months. Then I _____ start university.
+
+**Dialogue 2: Family Plans**
+
+A: Do you want to get married someday?
+B: Yes, I hope to get married in a few years.
+A: And children?
+B: Maybe two children. What about you?
+
+**Questions:**
+1. What does the first person want to become?
+2. What will the second person do after school?
+3. How long will they travel?
+4. What does the second person hope for?
+
+---
+
+## Exercise 15: Extended Reading Comprehension 2 / Pratimas 15: Skaitymo suvokimas 2
+
+**Read the text:**
+
+Anna is 25 years old. She works as a teacher in Vilnius. In the future, she wants to improve her life. She plans to take English courses to speak better. She hopes to travel to England next summer.
+
+Anna thinks about her career. She wants to become a school director one day. She will study for a master's degree. After that, she will apply for better jobs.
+
+In ten years, Anna wants to have a family. She will get married and have children. She believes life will be happy with a good job and family.
+
+**Answer the questions:**
+
+1. What does Anna do now?
+2. What courses does she plan to take?
+3. Where does she want to travel?
+4. What does she want to become?
+5. What degree will she study for?
+6. What does she want in ten years?
+
+**True or False:**
+
+1. Anna is 20 years old. _____
+2. She wants to learn French. _____
+3. She will travel to France. _____
+4. She wants to be a doctor. _____
+5. She wants children. _____
+
+---
+
+## Exercise 16: Writing Practice / Pratimas 16: Rašymo praktika
+
+Write a short paragraph about your future dreams. Include:
+
+- What you want to do in 5 years
+- Where you want to live
+- What job you want
+- Why these dreams are important
+
+Example:
+In five years, I want to be a teacher. I will live in a big city. My dream is important because I love helping children.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Future Predictions
+
+In pairs, make predictions about each other's future. Use "I think you will..." and "You might..."
+
+### Activity 2: Goal Sharing
+
+Share your goals with the group. Discuss how you will achieve them.
+
+### Activity 3: Dream Job Interview
+
+Role-play an interview for your dream job. Describe why you want it and your plans.
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Education Goals:** In many countries, people plan their education carefully. In the US, community college is common before university. In Lithuania, direct university entry is more typical.
+- **Career Planning:** English speakers often have "career paths" and change jobs frequently. In some cultures, people stay in one job for life.
+- **Family Timing:** In Western countries, people often have children later (30s), while in some cultures, earlier marriage is common.
+
+---
+
 ## Useful Phrases / Naudingi posakiai
 
 **Talking about plans:**
@@ -446,7 +580,7 @@ Find and correct the mistakes:
 
 ---
 
-**End of Unit 6 / Šeštojo skyriaus pabaiga**
+**End of Expanded Unit 6 / Išplėsto šeštojo skyriaus pabaiga**
 
 Congratulations! You've completed all 6 units! / Sveikiname! Baigėte visus 6 skyrius!
 

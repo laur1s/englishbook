@@ -63,6 +63,15 @@
 - You are not = You aren't / You're not
 - He is not = He isn't / He's not
 
+**More Examples:**
+- I am not tired. - Aš nesu pavargęs.
+- You are not a student. - Tu nesi studentas.
+- He is not happy. - Jis nėra laimingas.
+- She is not from Vilnius. - Ji nėra iš Vilniaus.
+- It is not cold today. - Šiandien nėra šalta.
+- We are not late. - Mes nevėluojame.
+- They are not friends. - Jie nėra draugai.
+
 ---
 
 ## Exercise 1: Fill in the blanks with correct form of "to be"
@@ -131,6 +140,15 @@ Example: I am tired. → I am not tired. / I'm not tired.
 - Is he/she/it...? - Ar jis/ji yra...?
 - Are we...? - Ar mes esame...?
 - Are they...? - Ar jie yra...?
+
+**More Examples:**
+- Am I late? - Ar aš vėluoju?
+- Are you from Lithuania? - Ar tu iš Lietuvos?
+- Is he a teacher? - Ar jis yra mokytojas?
+- Is she happy? - Ar ji laiminga?
+- Is it raining? - Ar lyja?
+- Are we ready? - Ar mes pasiruošę?
+- Are they students? - Ar jie studentai?
 
 **Make questions:**
 

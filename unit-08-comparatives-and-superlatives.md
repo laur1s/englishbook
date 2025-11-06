@@ -289,6 +289,139 @@ Correct the mistakes:
 
 ---
 
+## Exercise 9: Extended Vocabulary / Pratimas 9: Išplėstas žodynas
+
+### Comparative and Superlative Adjectives (Palyginimo ir aukščiausiojo laipsnio būdvardžiai)
+
+- Big - Bigger - Biggest - Didelis/didesnis/didžiausias
+- Small - Smaller - Smallest - Mažas/mažesnis/mažiausias
+- Fast - Faster - Fastest - Greitas/greitesnis/greitesnis
+- Slow - Slower - Slowest - Lėtas/lėtesnis/lėčiausias
+- Easy - Easier - Easiest - Lengvas/lengvesnis/lengviausias
+- Difficult - More difficult - Most difficult - Sunkus/sunkesnis/sunkiausias
+
+### Comparison Structures (Palyginimo struktūros)
+
+- As...as - Toks...kaip
+- Not as...as - Ne toks...kaip
+- Much more... - Daug daugiau...
+- A little more... - Šiek tiek daugiau...
+- The same as - Tas pats kaip
+- Different from - Skirtingas nuo
+
+**Exercise:** Form the comparative and superlative.
+
+1. Tall (aukštas) → comparative: _________ , superlative: _________
+2. Good (geras) → comparative: _________ , superlative: _________
+3. Bad (blogas) → comparative: _________ , superlative: _________
+4. Interesting (įdomus) → comparative: _________ , superlative: _________
+5. Expensive (brangus) → comparative: _________ , superlative: _________
+
+---
+
+## Exercise 10: Extended Dialogues / Pratimas 10: Išplėsti dialogai
+
+**Dialogue 1: Comparing Cities**
+
+A: Which city is bigger, Vilnius or Kaunas?
+B: Vilnius is bigger than Kaunas.
+A: Is Vilnius the biggest city in Lithuania?
+B: Yes, it's the biggest.
+
+**Complete the dialogue:**
+
+A: Which is _________, summer or winter?
+B: Summer is _________ than winter.
+A: What's the _________ season?
+B: I think autumn is the _________.
+
+**Dialogue 2: Product Comparison**
+
+A: This phone is better than that one.
+B: Why? Is it more expensive?
+A: No, it's cheaper but has more features.
+
+**Questions:**
+1. Which city is bigger?
+2. Which season is hotter?
+3. What is the most beautiful season?
+4. Why is the phone better?
+
+---
+
+## Exercise 11: Extended Reading Comprehension 2 / Pratimas 11: Skaitymo suvokimas 2
+
+**Read the text:**
+
+Lithuania has many beautiful places. Vilnius is the biggest city with about 500,000 people. Kaunas is smaller but has more parks. Klaipėda is the smallest of the three main cities but is closer to the sea.
+
+The weather in Lithuania varies. Summer is the warmest season. Winter is colder than summer but more beautiful with snow. Autumn is wetter than spring. Spring is the most colorful with flowers.
+
+Lithuanian food is delicious. Cepelinai are bigger than kibinai. Beer is cheaper than wine. The traditional dish is the most popular among tourists.
+
+**Answer the questions:**
+
+1. Which is the biggest city?
+2. Which city has more parks?
+3. Which city is closest to the sea?
+4. Which season is the warmest?
+5. Which season is colder than summer?
+6. Which season is the most colorful?
+7. What is bigger than kibinai?
+8. What is cheaper than wine?
+
+**True or False:**
+
+1. Vilnius has 500,000 people. _____
+2. Kaunas is the smallest city. _____
+3. Winter is warmer than summer. _____
+4. Spring is wetter than autumn. _____
+5. Wine is cheaper than beer. _____
+
+---
+
+## Exercise 12: Writing Practice / Pratimas 12: Rašymo praktika
+
+Write a short paragraph comparing two things you know well. For example:
+
+- Two cities
+- Two jobs
+- Two hobbies
+- Two foods
+
+Use comparatives and superlatives.
+
+Example:
+Paris is more beautiful than London. London is bigger than Paris. Paris has the best museums in the world.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Preference Discussions
+
+Discuss preferences: "Which is better, X or Y? Why?"
+
+### Activity 2: Comparison Games
+
+Compare objects in the room: "This is bigger than that..."
+
+### Activity 3: Cultural Comparisons
+
+Compare Lithuanian culture with another country's culture.
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Politeness in Comparisons:** English speakers avoid direct negative comparisons to be polite. Instead of "Your car is worse," say "My car is different."
+- **Advertising:** Superlatives are common in ads: "The best," "The fastest," "The cheapest."
+- **Sports Commentary:** Comparisons are frequent: "He runs faster than...," "This is the best team ever."
+
+---
+
 ## Useful Phrases / Naudingi posakiai
 
 - Which is bigger/better...? - Kuris yra didesnis/geresnis...?
@@ -311,6 +444,6 @@ Correct the mistakes:
 
 ---
 
-**End of Unit 8 / Aštuntojo skyriaus pabaiga**
+**End of Expanded Unit 8 / Išplėsto aštuntojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section! Practice making comparisons about your life and surroundings to master these structures.

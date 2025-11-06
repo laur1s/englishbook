@@ -279,6 +279,129 @@ Correct the mistakes:
 
 ---
 
+## Exercise 8: Extended Vocabulary / Pratimas 8: Išplėstas žodynas
+
+### Past Continuous Time Expressions (Būtojo tęstinio laiko išraiškos)
+
+- While - Kol
+- When - Kai
+- At 5 PM yesterday - Vakar 5 valandą
+- All day - Visą dieną
+- From 2 to 4 - Nuo 2 iki 4
+
+### Interrupted Actions (Pertrauktos veiklos)
+
+- I was eating when the phone rang - Aš valgiau, kai suskambo telefonas
+- She was sleeping when it started raining - Ji miegojo, kai pradėjo lyti
+
+**Exercise:** Form Past Continuous.
+
+1. I _____ (walk) home when I saw you. (walk)
+2. What _____ you _____ (do) at 8 PM? (do)
+3. They _____ (play) football when it rained. (play)
+4. She _____ (study) while he worked. (study)
+5. We _____ (watch) TV all evening. (watch)
+
+---
+
+## Exercise 9: Extended Dialogues / Pratimas 9: Išplėsti dialogai
+
+**Dialogue 1: Interrupted Actions**
+
+A: What were you doing when I called?
+B: I was having dinner with my family.
+A: Did the phone interrupt you?
+B: Yes, I was eating when it rang.
+
+**Complete the dialogue:**
+
+A: Where were you yesterday at 3 PM?
+B: I _____ (shop) in the city center.
+A: What happened?
+B: I _____ (buy) clothes when I met an old friend.
+
+**Dialogue 2: Background Events**
+
+A: What was happening when you arrived?
+B: People were dancing and music was playing.
+A: Were you enjoying it?
+B: Yes, everyone was having fun.
+
+**Questions:**
+1. What was the person doing when called?
+2. What was happening when the friend arrived?
+3. Was everyone having fun?
+
+---
+
+## Exercise 10: Extended Reading Comprehension 2 / Pratimas 10: Skaitymo suvokimas 2
+
+**Read the text:**
+
+Last night, I was watching TV when the power went out. I was sitting on the couch and eating popcorn. Suddenly, everything went dark. I couldn't see anything. I was trying to find my phone when my sister came home.
+
+She was walking home from work when it happened. She was listening to music and didn't notice at first. When she arrived, she was surprised to see the dark house. We were laughing about it later.
+
+**Answer the questions:**
+
+1. What was the person doing when the power went out?
+2. What was he eating?
+3. What was he trying to do?
+4. What was his sister doing when it happened?
+5. What was she listening to?
+6. What was she surprised to see?
+7. What were they doing later?
+
+**True or False:**
+
+1. The person was sleeping when the power went out. _____
+2. He was eating chips. _____
+3. His sister was driving home. _____
+4. She was listening to music. _____
+5. They were crying later. _____
+
+---
+
+## Exercise 11: Writing Practice / Pratimas 11: Rašymo praktika
+
+Write about an interrupted event from your past.
+
+Include:
+- What you were doing
+- What happened to interrupt
+- How you felt
+
+Example:
+I was sleeping when the alarm rang. I jumped up quickly. I was tired.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Story Interruption
+
+Tell a story with Past Continuous for background and Past Simple for interruption.
+
+### Activity 2: Memory Recall
+
+Ask "What were you doing when...?" for important events.
+
+### Activity 3: Simultaneous Actions
+
+Describe two things happening at the same time.
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Storytelling:** Past Continuous sets the scene, Past Simple advances the plot.
+- **Emphasis:** It shows actions were in progress, not completed.
+- **Lithuanian Difference:** Lithuanian often uses present for vivid past narration.
+
+---
+
 ## Cultural Notes / Kultūrinės pastabos
 
 - English speakers use Past Continuous to set the scene in stories
@@ -288,6 +411,6 @@ Correct the mistakes:
 
 ---
 
-**End of Unit 11 / Vienuoliktojo skyriaus pabaiga**
+**End of Expanded Unit 11 / Išplėsto vienuoliktojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section! Past Continuous can be confusing at first. Remember: it describes actions in progress in the past, often interrupted by Past Simple actions.

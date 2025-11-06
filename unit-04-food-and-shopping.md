@@ -409,6 +409,145 @@ Example: I'd like a bottle of water, please.
 
 ---
 
+## Exercise 11: Extended Vocabulary / Pratimas 11: Išplėstas žodynas
+
+### More Food and Shopping Vocabulary (Daugiau maisto ir apsipirkimo žodyno)
+
+- Groceries - Maisto produktai
+- Supermarket - Supermarketas
+- Checkout - Kasos aparatas
+- Receipt - Čekis
+- Bargain - Pigi prekė
+- Expensive - Brangus
+- Cheap - Pigus
+- Fresh - Šviežias
+- Frozen - Šaldytas
+- Organic - Ekologiškas
+
+### Quantities and Containers (Kiekiai ir talpyklos)
+
+- A bag of... - Maišas...
+- A box of... - Dėžutė...
+- A tin/can of... - Skardinė...
+- A packet of... - Pakelis...
+- A jar of... - Stiklainis...
+- A slice of... - Riekė...
+- A piece of... - Gabalas...
+
+**Exercise:** Match the words with their Lithuanian translations.
+
+1. Supermarket - a) Šviežias
+2. Checkout - b) Supermarketas
+3. Fresh - c) Kasos aparatas
+4. Bargain - d) Brangus
+5. Expensive - e) Pigi prekė
+
+---
+
+## Exercise 12: Extended Dialogues / Pratimas 12: Išplėsti dialogai
+
+**Dialogue 1: At the Supermarket**
+
+A: Excuse me, where can I find the milk?
+B: It's in aisle 5, next to the cheese.
+A: Thank you. How much is a litre of milk?
+B: It's 1.50 euros.
+A: I'll take two, please.
+
+**Complete the dialogue:**
+
+A: Hi, I'm looking for some bread.
+B: _____________ is in aisle 3.
+A: _____________ does it cost?
+B: _____________ 2 euros.
+A: _____________ I have some cheese too?
+B: Yes, _____________ in aisle 5.
+
+**Dialogue 2: At a Restaurant**
+
+A: Can I see the menu, please?
+B: Here you are. What would you like to drink?
+A: I'd like some water, please.
+B: Still or sparkling?
+A: Sparkling, please. And for food, I'd like the pasta.
+B: Would you like anything else?
+A: No, that's all. Thank you.
+
+**Questions:**
+1. Where is the conversation taking place?
+2. What does the customer order?
+3. What kind of water does he want?
+
+---
+
+## Exercise 13: Extended Reading Comprehension 2 / Pratimas 13: Skaitymo suvokimas 2
+
+**Read the text:**
+
+My name is Laura. I love shopping for food. Every Saturday, I go to the local market. I buy fresh vegetables like tomatoes, cucumbers, and lettuce. The prices are good, and the food is very fresh.
+
+I also go to the supermarket for other things. I buy milk, bread, and cheese. Sometimes I buy special items like organic honey or imported chocolate. I always check the prices because I like to find bargains.
+
+At home, I cook Lithuanian dishes. My favorite is cepelinai. I need potatoes, meat, and onions. I also make soup with fresh vegetables. Cooking is relaxing for me.
+
+**Answer the questions:**
+
+1. Where does Laura shop for vegetables?
+2. What vegetables does she buy?
+3. What does she buy at the supermarket?
+4. What is her favorite Lithuanian dish?
+5. Why does she check prices?
+
+**True or False:**
+
+1. Laura shops every day. _____
+2. She buys frozen vegetables. _____
+3. She likes finding bargains. _____
+4. She cooks Italian food. _____
+5. Cooking is stressful for her. _____
+
+---
+
+## Exercise 14: Writing Practice / Pratimas 14: Rašymo praktika
+
+Write a short paragraph about your shopping habits. Include:
+
+- Where you usually shop
+- What you buy
+- How often you shop
+- Your favorite food item
+
+Example:
+I usually shop at the supermarket twice a week. I buy vegetables, milk, and bread. My favorite item is chocolate.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Shopping Role-Play
+
+In pairs, role-play a shopping scenario. One person is the customer, the other is the shop assistant. Use phrases like "How much is...?" and "I'd like..."
+
+### Activity 2: Food Preferences Discussion
+
+Discuss your food preferences with a partner. Use expressions like "I love...", "I hate...", "My favorite is...". Ask questions like "What do you like to eat?"
+
+### Activity 3: Cultural Food Exchange
+
+Talk about traditional Lithuanian foods vs. foods from other countries. What are the differences?
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Shopping Culture:** In Lithuania, people often shop at local markets for fresh produce. In the UK, supermarkets are more common, and people use shopping lists. In the US, big stores like Walmart are popular.
+- **Food Etiquette:** In many countries, it's polite to try everything on your plate. In some Asian cultures, leaving a little food shows you're full. In Lithuania, finishing everything is appreciated.
+- **Organic and Healthy Eating:** In Western countries, organic food is more expensive and popular. People read labels for ingredients and nutrition facts.
+
+---
+
 ## Useful Phrases / Naudingi posakiai
 
 **Asking about price:**
@@ -448,6 +587,6 @@ Example: I'd like a bottle of water, please.
 
 ---
 
-**End of Unit 4 / Ketvirtojo skyriaus pabaiga**
+**End of Expanded Unit 4 / Išplėsto ketvirtojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section!

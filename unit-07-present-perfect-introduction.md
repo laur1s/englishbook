@@ -205,6 +205,141 @@ Correct the mistakes in these sentences:
 
 ---
 
+## Exercise 8: Extended Vocabulary / Pratimas 8: Išplėstas žodynas
+
+### Life Experiences (Gyvenimo patirtys)
+
+- Travel abroad - Kelionės į užsienį
+- Learn a skill - Išmokti įgūdžio
+- Meet famous people - Susitikti su žinomais žmonėmis
+- Win a prize - Laimėti prizą
+- Break a record - Sulaužyti rekordą
+- Start a hobby - Pradėti pomėgį
+- Change career - Pakeisti karjerą
+- Volunteer - Savanoriauti
+
+### Time Expressions with Present Perfect (Laiko išraiškos su esamuoju atliktuoju)
+
+- Ever - Kada nors
+- Never - Niekada
+- Just - Ką tik
+- Already - Jau
+- Yet - Dar
+- For - (laikotarpiui)
+- Since - Nuo
+
+**Exercise:** Complete with the correct time expression.
+
+1. I have _____ been to London. (never)
+2. She has _____ finished her homework. (just)
+3. Have you _____ seen that movie? (ever)
+4. We haven't eaten _____ lunch. (yet)
+5. He has lived here _____ 2010. (since)
+
+---
+
+## Exercise 9: Extended Dialogues / Pratimas 9: Išplėsti dialogai
+
+**Dialogue 1: Sharing Experiences**
+
+A: Have you ever traveled to another country?
+B: Yes, I've been to France and Italy.
+A: That's great! What did you do there?
+B: I visited museums and ate delicious food.
+
+**Complete the dialogue:**
+
+A: _____ you _____ ridden a horse?
+B: No, I _____ never _____.
+A: I _____ once when I was young.
+B: That sounds fun!
+
+**Dialogue 2: Life Achievements**
+
+A: What have you achieved in life?
+B: I've graduated from university and got a good job.
+A: Have you won any awards?
+B: Yes, I won a prize for best student.
+
+**Questions:**
+1. What countries has the first person visited?
+2. Has the second person ridden a horse?
+3. What has the second person achieved?
+4. Has the second person won awards?
+
+---
+
+## Exercise 10: Extended Reading Comprehension 2 / Pratimas 10: Skaitymo suvokimas 2
+
+**Read the text:**
+
+Marius is 30 years old. He has lived in many places. He has been to 15 countries. He has climbed mountains in the Alps and swam in the Mediterranean Sea. He has learned three languages: English, French, and Spanish.
+
+Marius has never broken a bone, but he has had many adventures. He has ridden a camel in the desert and skied in the mountains. He has met interesting people from different cultures.
+
+Now, Marius works as a travel guide. He has helped hundreds of tourists. He has just returned from a trip to Japan. He hasn't decided where to go next.
+
+**Answer the questions:**
+
+1. How old is Marius?
+2. How many countries has he been to?
+3. What mountains has he climbed?
+4. How many languages has he learned?
+5. What has he never done?
+6. What has he ridden in the desert?
+7. What does he do for work?
+8. Where has he just returned from?
+
+**True or False:**
+
+1. Marius is 25 years old. _____
+2. He has been to 20 countries. _____
+3. He has learned two languages. _____
+4. He has broken a bone. _____
+5. He works as a teacher. _____
+
+---
+
+## Exercise 11: Writing Practice / Pratimas 11: Rašymo praktika
+
+Write a short paragraph about your life experiences. Include:
+
+- Three places you've visited
+- Two skills you've learned
+- One thing you've never done
+- Why these experiences are important
+
+Example:
+I have visited Paris, Rome, and London. I have learned to cook and play guitar. I have never skydived. These experiences have made me more open-minded.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Experience Sharing
+
+In pairs, ask each other "Have you ever...?" questions. Share your answers.
+
+### Activity 2: Bucket List
+
+Discuss things you want to do in life. Use "I haven't... yet, but I want to..."
+
+### Activity 3: Life Timeline
+
+Draw a timeline of your life achievements and experiences.
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Conversation Starters:** "Have you ever...?" is very common in English to break the ice and find common ground.
+- **Bragging Culture:** In some cultures, sharing achievements is seen as bragging, but in English-speaking countries, it's normal to share positive experiences.
+- **Life Stories:** English speakers often tell stories using Present Perfect for background experiences, then Past Simple for specific events.
+
+---
+
 ## Useful Phrases / Naudingi posakiai
 
 - Have you ever...? - Ar kada nors...?
@@ -228,6 +363,6 @@ Correct the mistakes in these sentences:
 
 ---
 
-**End of Unit 7 / Septintojo skyriaus pabaiga**
+**End of Expanded Unit 7 / Išplėsto septintojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section! Practice the Present Perfect regularly - it takes time to master the difference from Past Simple!

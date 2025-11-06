@@ -4,15 +4,15 @@
 Complete A2 level English learning book for Lithuanian speakers, structured into A2.1 (units 1-6) and A2.2 (units 7-12).
 
 ## Current Status
-- ✅ A2.1 Units 1-6: Completed with exercises, grammar, vocabulary, and reading comprehension
-- ✅ A2.2 Units 7-12: Completed with exercises, grammar, vocabulary, and reading comprehension
+- ✅ A2.1 Units 1-6: Completed and expanded with additional exercises, speaking activities, and cultural notes
+- ✅ A2.2 Units 7-12: Completed and expanded with additional exercises, speaking activities, and cultural notes
 - ✅ Answer Keys (A2.1 & A2.2): All units have detailed answer keys
 - ✅ Grammar Reference: Complete reference guide for A2 level
 - ✅ Vocabulary Lists: Comprehensive topic-based vocabulary lists
 
 ## Project Complete! 🎉
 
-The full A2 level English learning book for Lithuanian speakers is now complete! All units, exercises, answer keys, grammar reference, and vocabulary lists have been created.
+The full A2 level English learning book for Lithuanian speakers is now complete and expanded! All units include additional exercises, dialogues, reading comprehension, writing practice, speaking activities, and cultural notes for comprehensive learning.
 
 ## Completed Units Summary
 

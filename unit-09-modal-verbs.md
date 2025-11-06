@@ -290,6 +290,141 @@ Correct the mistakes:
 
 ---
 
+## Exercise 8: Extended Vocabulary / Pratimas 8: Išplėstas žodynas
+
+### Modal Verbs and Their Uses (Modaliniai veiksmažodžiai ir jų naudojimas)
+
+- Must - Obligation/strong advice - Turi/privalai
+- Should - Advice - Turėtum
+- May/Might - Possibility - Gali
+- Can - Ability/permission - Gali
+- Could - Past ability/polite request - Galėjai/galėčiau
+- Mustn't - Prohibition - Negali
+- Can't - Impossibility - Negali
+
+### Situations for Modals (Situacijos modalams)
+
+- Health advice - Sveikatos patarimai
+- Travel permissions - Kelionių leidimai
+- Study obligations - Studijų įsipareigojimai
+- Weather possibilities - Oro galimybės
+- Polite requests - Mandagūs prašymai
+
+**Exercise:** Choose the correct modal verb.
+
+1. You _____ eat more vegetables. (should/must)
+2. _____ I use your phone? (May/Can)
+3. She _____ be at home now. (may/can't)
+4. You _____ smoke here. (mustn't/shouldn't)
+5. He _____ swim when he was 5. (could/can)
+
+---
+
+## Exercise 9: Extended Dialogues / Pratimas 9: Išplėsti dialogai
+
+**Dialogue 1: Giving Advice**
+
+A: I have a headache.
+B: You should take some medicine and rest.
+A: What else should I do?
+B: You shouldn't drink coffee.
+
+**Complete the dialogue:**
+
+A: I'm not sure what to wear.
+B: You _____ wear a coat. It _____ be cold.
+A: _____ I wear jeans?
+B: Yes, you _____.
+
+**Dialogue 2: Possibilities**
+
+A: Do you think it will rain?
+B: It might rain later. You should take an umbrella.
+A: Can I borrow yours?
+B: Yes, you may.
+
+**Questions:**
+1. What should the person do for headache?
+2. What shouldn't they do?
+3. What might happen to the weather?
+4. What can the person borrow?
+
+---
+
+## Exercise 10: Extended Reading Comprehension 2 / Pratimas 10: Skaitymo suvokimas 2
+
+**Read the text:**
+
+When traveling to England, there are some rules you should follow. You must drive on the left side. You shouldn't use your phone while driving. You may need an adapter for electricity.
+
+For health, you should drink plenty of water. You might get jet lag, so you should rest. You can't smoke in public places.
+
+At work, you should be punctual. You may have meetings. You shouldn't interrupt others.
+
+In restaurants, you may tip 10-15%. You should try traditional food.
+
+**Answer the questions:**
+
+1. How should you drive in England?
+2. What shouldn't you do while driving?
+3. What might you need for electricity?
+4. What should you drink for health?
+5. What can't you do in public places?
+6. What should you be at work?
+7. What may you have at work?
+8. How much should you tip in restaurants?
+
+**True or False:**
+
+1. You must drive on the right in England. _____
+2. You may use your phone while driving. _____
+3. You should drink coffee for health. _____
+4. You can smoke in public places. _____
+5. You shouldn't tip in restaurants. _____
+
+---
+
+## Exercise 11: Writing Practice / Pratimas 11: Rašymo praktika
+
+Write advice for a friend who is:
+
+- Going on a trip
+- Starting a new job
+- Learning English
+
+Use modal verbs.
+
+Example:
+For a trip: You should pack light. You might need warm clothes. You must have a passport.
+
+**Your turn:**
+
+---
+
+## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
+
+### Activity 1: Advice Column
+
+Give advice to classmates about problems. Use "You should..."
+
+### Activity 2: Permission Requests
+
+Practice polite requests: "May I...?" "Could you...?"
+
+### Activity 3: Possibility Discussions
+
+Discuss future possibilities: "It might..." "It could..."
+
+---
+
+## Additional Cultural Notes / Papildomos kultūrinės pastabos
+
+- **Politeness:** English uses "could" and "may" for polite requests, unlike Lithuanian directness.
+- **Advice Giving:** In English-speaking cultures, advice is often given indirectly with "should" rather than commands.
+- **Prohibition:** "Mustn't" is stronger than "shouldn't" for rules.
+
+---
+
 ## Useful Phrases / Naudingi posakiai
 
 - You should... - Turėtum...
@@ -313,6 +448,6 @@ Correct the mistakes:
 
 ---
 
-**End of Unit 9 / Devintojo skyriaus pabaiga**
+**End of Expanded Unit 9 / Išplėsto devintojo skyriaus pabaiga**
 
 Check your answers in the Answer Key section! Modal verbs can be tricky - practice them in real situations by giving advice to friends and family.
