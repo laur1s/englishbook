@@ -1,52 +1,72 @@
 # Grey's Anatomy: Hospital Stories
+
 ## Pilkoji Anatomija: Ligoninės Istorijos
 
-**Reading Level: A2-B1 English with Lithuanian translations for difficult words**
+**Reading Level: A2.2 English with Lithuanian translations**
 
-Welcome to Seattle Grace Hospital! This book tells stories about doctors, nurses, and patients. You'll learn English while following exciting hospital adventures. Difficult words have Lithuanian translations in parentheses (lietuviškas vertimas).
+Welcome to Seattle Grace Hospital! This book tells stories about doctors, nurses, and patients. You'll learn English while reading exciting hospital dramas. All difficult words have Lithuanian translations.
 
 ---
 
 ## Chapter 1: First Day at the Hospital
+
 ## 1 Skyrius: Pirmoji Diena Ligoninėje
 
-Dr. Meredith Grey woke up early on her first day at Seattle Grace Hospital. Her heart was beating fast. She had studied medicine for years, but now it was real. She put on her white coat and looked in the mirror. "You can do this," she told herself.
+### Word Bank / Žodžių Bankas
 
-The hospital was huge and busy. People in blue and green scrubs walked quickly through the halls. Nurses pushed beds with patients. Doctors talked on phones. The air smelled like cleaning products and medicine.
+- **white coat** - baltas chalatas
+- **scrubs** - chirurginiai drabužiai
+- **intern** - rezidentas/praktikantas
+- **locker room** - rūbinė
+- **chief** - viršininkas
+- **patient** - pacientas
+- **surgery** - operacija
+- **temperature** - temperatūra
+- **blood pressure** - kraujo spaudimas
+- **pulse** - pulsas
+- **cafeteria** - valgykla
+- **nervous** - nervinga
+- **exhausted** - išsekęs
 
-Meredith found her way to the interns' locker room. She was one of five new interns starting today. They all looked nervous. A tall man with gray hair walked in. It was Dr. Richard Webber, the chief of surgery.
+---
 
-"Welcome to Seattle Grace," Dr. Webber said in a deep voice. "You will work harder than you ever have. You will make mistakes. But if you care about patients, you will become good doctors."
+Dr. Meredith Grey woke up very early. Today was her first day at Seattle Grace Hospital. Her heart was beating fast. She was very nervous. She put on her white coat and looked in the mirror. "You can do this," she said to herself.
 
-Meredith's first task was simple but important. She had to check vital signs on patients. Her first patient was Mr. Johnson, an old man with white hair. He was recovering from hip surgery.
+When she arrived, the hospital was huge and very busy. People in blue and green scrubs were walking fast everywhere. Nurses were pushing beds. Doctors were talking loudly on phones. Everything smelled like medicine and cleaning products.
 
-"Hello, Mr. Johnson," Meredith said, trying to sound confident. "I'm Dr. Grey. How are you feeling today?"
+Meredith walked to the locker room. Five new interns were starting today. Everyone looked scared and nervous. Suddenly, a tall man with gray hair came in. It was Dr. Webber, the chief of surgery.
 
-Mr. Johnson looked at her over his glasses. "You look about twelve years old. Are you really a doctor?"
+"Welcome to Seattle Grace," Dr. Webber said in a serious voice. "You will work very, very hard here. You will make mistakes. But you can become good doctors."
 
-Meredith laughed. "I get that a lot. I'm 26, and yes, I'm a real doctor. I've been training for years."
+Meredith's first job was to check patients. Her first patient was Mr. Johnson. He was an old man with white hair. He had hip surgery yesterday.
 
-Mr. Johnson smiled. "Well, good luck to you. Don't let the old nurses scare you. They're tougher than the doctors."
+"Hello, Mr. Johnson," Meredith said. She tried to speak with confidence (pasitikėjimas savimi). "I'm Dr. Grey. How do you feel?"
 
-Meredith checked his temperature, blood pressure, and pulse. Everything looked good. "You're doing well, Mr. Johnson. The surgery was successful."
+Mr. Johnson looked at her. "You look very young. Are you really a doctor?"
 
-During her break, Meredith went to the cafeteria. She saw other doctors eating lunch. A serious-looking woman with dark hair waved her over. "Hi, I'm Cristina Yang. You must be new."
+Meredith smiled. "Yes, I'm 26. I'm a real doctor."
 
-"I'm Meredith Grey," she replied. "Yes, first day."
+Mr. Johnson laughed. "OK, good luck. Be careful - the old nurses here are very tough!"
 
-Cristina pointed to a handsome man making jokes. "That's Alex Karev. He's funny but can be rude. And that's Izzie Stevens. She's kind and loves helping people."
+Meredith checked his temperature, blood pressure, and pulse. Everything was good. "You're doing well," she told him.
 
-Izzie smiled warmly. "Welcome to the team! Don't worry, we all started somewhere. What's your specialty?"
+Later, Meredith went to the cafeteria for lunch. She saw other doctors there. A woman with dark hair called her over. "Hi, I'm Cristina Yang. You're new, right?"
 
-"General surgery," Meredith said. "I want to learn everything."
+"Yes, I'm Meredith Grey. First day," she answered.
 
-Alex leaned over. "Good luck with that. This place will chew you up and spit you out."
+Cristina pointed at a handsome man. "That's Alex Karev. He makes jokes but he can be mean (nemalonus). And that's Izzie Stevens. She's very nice."
 
-The day continued with more patient checks and paperwork. Meredith learned how to write in medical charts and use the hospital computer system. By evening, she was exhausted but excited.
+Izzie smiled. "Welcome! Don't worry. We were all new once. What do you want to study?"
 
-As she drove home, Meredith thought about her day. The hospital was overwhelming, but she felt like she belonged there. "This is just the beginning," she thought. "Tomorrow will be better."
+"Surgery," Meredith said. "I want to learn everything."
 
-Little did she know that her life at Seattle Grace would change everything she thought about medicine, friendship, and love.
+Alex laughed. "Good luck. This hospital is very difficult."
+
+The day was very long. Meredith checked more patients. She wrote reports (ataskaitos). She learned how to use the computer. By evening, she was so tired. But she was also excited.
+
+When she drove home, Meredith thought about her day. The hospital was difficult and big. But she felt happy there. "This is just the beginning," she thought. "Tomorrow will be better."
+
+But she didn't know that her life at Seattle Grace was going to change everything.
 
 ---
 
@@ -70,6 +90,7 @@ Little did she know that her life at Seattle Grace would change everything she t
 5. How do you think Meredith's life will change because of working at the hospital?
 
 ### Word Bank / Žodžių Bankas
+
 - White coat: baltas chalatas
 - Scrubs: chirurginiai drabužiai
 - Interns: rezidentai
@@ -85,54 +106,90 @@ Little did she know that her life at Seattle Grace would change everything she t
 
 ---
 
-## Chapter 2: The Emergency Room
-## 2 Skyrius: Skubios Pagalbos Skyrius
+## Chapter 2: The Emergency Room - A Life or Death Night
 
-The emergency room at Seattle Grace Hospital was always busy, but this Friday night was especially chaotic. Sirens wailed outside as ambulances pulled up one after another. Dr. Meredith Grey was finishing her shift when the doors burst open.
+## 2 Skyrius: Skubios Pagalbos Skyrius - Gyvenimo ir Mirties Naktis
 
-A young woman named Sarah was rushed in on a stretcher. She was 28 years old, a teacher with two young children. Her car had been hit by a drunk driver. Blood covered her clothes, and she was screaming in pain.
+### Word Bank / Žodžių Bankas
 
-"My leg! Oh God, my leg hurts so much!" Sarah cried. Tears streamed down her face.
+- **emergency room** - skubios pagalbos skyrius
+- **ambulance** - greitoji pagalba
+- **stretcher** - neštuvai
+- **blood** - kraujas
+- **pain** - skausmas
+- **broken** - sulaužytas
+- **X-ray** - rentgeno nuotrauka
+- **surgery** - operacija
+- **scared** - išsigandęs
+- **tears** - ašaros
+- **accident** - avarija
+- **hurt** - sužeistas
+- **save** - gelbėti
+- **worried** - susirūpinęs
 
-Meredith rushed to her side. "I'm Dr. Grey. You're safe now. Can you tell me what happened?"
+---
 
-"A car... hit me... I was driving home from work," Sarah gasped. "Please, help my babies. Tell them Mommy's okay."
+It was Friday night. The emergency room was always busy on Fridays, but tonight was crazy. Ambulances were arriving one after another. Sirens were screaming outside. Dr. Meredith Grey was very tired. She wanted to go home. But then the doors opened fast.
 
-Meredith quickly assessed the situation. Sarah's right leg was clearly broken - it bent at an unnatural angle. There were also deep cuts on her arms and face from the broken glass. Her blood pressure was dropping, and she was going into shock.
+"We need help NOW!" a nurse shouted.
 
-"We need to get her to trauma room 2!" Meredith called out. "Page Dr. Yang for ortho surgery!"
+A young woman was on a stretcher. Her name was Sarah. She was only 28 years old. She was a teacher. She had two small children at home. Blood was everywhere - on her clothes, on her face, on the stretcher. She was screaming.
 
-Dr. Cristina Yang arrived within minutes. She was the best orthopedic surgeon at the hospital. Cristina examined Sarah's X-rays. "Compound fracture of the tibia and fibula. We'll need to operate immediately to save the leg."
+"My leg! Oh God, my leg!" Sarah was crying so hard. "Please help me! It hurts so much!"
 
-Sarah's husband, Mark, arrived just as they were preparing her for surgery. He was frantic, his face pale with worry. Their two children, ages 5 and 7, waited in the waiting room with a nurse.
+Meredith ran to her. Her heart was beating fast. "I'm Dr. Grey. You're safe now. What happened?"
 
-"Will she be okay?" Mark asked, his voice shaking. "The police said it was bad."
+Sarah could barely speak. "A drunk driver... hit my car... I was driving home from work... Please... my babies... tell my babies Mommy is OK!"
 
-Meredith put her hand on his shoulder. "We're taking her to surgery now. Dr. Yang is the best. Sarah is in good hands. Your children are safe with our nurses."
+Meredith looked at Sarah's leg. It was very, very bad. The leg was broken in a terrible way. It was bent wrong. There was so much blood. Sarah also had deep cuts on her arms and face from the broken glass.
 
-The surgery lasted three hours. Cristina worked carefully to repair the broken bones. Meredith assisted, handing instruments and monitoring Sarah's vital signs. It was intense work, but they worked as a team.
+"We need surgery NOW!" Meredith shouted. "Call Dr. Yang immediately!"
 
-When Sarah woke up in the recovery room, she was groggy from anesthesia but relieved. "My leg?" she whispered.
+Dr. Cristina Yang ran into the room. She looked at Sarah's X-rays. Her face became very serious. "This is bad. The leg is broken in two places. We need to operate now or she will lose her leg."
 
-"It's fixed," Cristina said. "You'll need physical therapy, but you'll walk again. You're lucky - it could have been much worse."
+Suddenly, a man ran into the emergency room. It was Mark, Sarah's husband. His face was white. He looked terrified. "Where is my wife? Is she alive? The police called me... they said it was very bad!"
 
-Mark brought the children to see their mother. The little girl climbed carefully onto the bed and hugged Sarah gently. "Mommy, I was scared," she said.
+"She's alive," Meredith said. "But we need to do surgery right now. Your wife's leg is badly broken. We're going to try to save it."
 
-"I'm okay, sweetheart," Sarah replied, tears in her eyes. "The doctors saved me."
+Mark started crying. "Can I see her? Our children... they're so scared. They don't understand what happened."
 
-Meredith watched from the doorway, feeling a deep sense of accomplishment. This was why she became a doctor - to help families through their darkest moments.
+"You can see her for one minute," Meredith said. "Then we must take her to surgery."
 
-Later that night, as Meredith was leaving the hospital, Dr. Alex Karev caught up with her. "Hey, Grey. Heard you handled that trauma case well. Not bad for someone who's only been here a week."
+Mark held Sarah's hand. "I'm here, honey. The doctors are going to help you. The kids are OK. They're with your mother. You're going to be OK."
 
-Meredith smiled tiredly. "Thanks, Karev. It was intense, but we saved her leg."
+Sarah looked at him with scared eyes. "Promise me... if something happens... promise you'll take care of our babies..."
 
-Alex nodded. "That's what we do here. Patch people up and send them home. Sometimes we even get it right."
+"Don't talk like that!" Mark was crying harder now. "You're going to be fine! You have to be fine!"
 
-Meredith laughed despite her exhaustion. "You're impossible, but thanks for the compliment."
+They took Sarah to the operating room. The surgery was very difficult. It took three long hours. Cristina worked very carefully. Meredith helped her. They had to work fast but also very carefully. One wrong move and Sarah could lose her leg forever.
 
-As she drove home under the city lights, Meredith reflected on her day. The emergency room was exhausting and emotional, but it was also where she felt most alive. Every patient was a story, every surgery a battle. She was beginning to understand that medicine wasn't just about science - it was about compassion, teamwork, and never giving up.
+Inside the operating room, suddenly something went wrong. Sarah's blood pressure dropped very fast.
 
-Little did she know that this was just the beginning of the challenges she would face at Seattle Grace.
+"We're losing her!" Cristina shouted. "Give me more blood! NOW!"
+
+Meredith's hands were shaking. This was life or death. "Come on, Sarah," she whispered. "Fight! Your children need you!"
+
+After three terrible hours, the surgery was finished. They saved Sarah's leg. When Sarah woke up, she was confused and very tired from the medicine.
+
+"My leg?" she asked quietly. "Do I still have my leg?"
+
+Cristina smiled. "Yes. Your leg is fixed. You'll need to work hard in physical therapy (fizinė terapija), but you will walk again."
+
+Sarah started crying - but this time, these were happy tears.
+
+Mark brought their children to see her. The little girl, only 5 years old, climbed very carefully onto the bed. "Mommy! You're OK!" She hugged her mother so gently.
+
+"The doctors saved Mommy," Sarah said, crying. "I'm going to be OK."
+
+Meredith watched them from the door. She was so tired. But she felt wonderful. This family was together again because of what they did tonight.
+
+Later, Alex Karev found Meredith in the hallway. "Hey, Grey. You did great tonight. That woman almost died. You saved her life."
+
+Meredith was too tired to even smile. "We saved her together. That's what we do here."
+
+When Meredith finally drove home, it was 3 AM. She thought about Sarah and her family. The emergency room was difficult and emotional. But tonight, they won. They saved a mother's life.
+
+But tomorrow, there would be another emergency. Another life to save. Another battle to fight.
 
 ---
 
@@ -158,6 +215,7 @@ Little did she know that this was just the beginning of the challenges she would
 5. How do you think Sarah's accident will change her family's life?
 
 ### Word Bank / Žodžių Bankas
+
 - Emergency room: skubios pagalbos skyrius
 - Stretcher: neštuvai
 - Drunk driver: girtas vairuotojas
@@ -175,6 +233,7 @@ Little did she know that this was just the beginning of the challenges she would
 ---
 
 ## Chapter 3: Love in the Hospital
+
 ## 3 Skyrius: Meilė Ligoninėje
 
 Dr. Meredith Grey had been keeping a big secret for months. She was in love with Dr. Derek Shepherd, one of the most talented brain surgeons at Seattle Grace Hospital. Derek was handsome, intelligent, and kind. They met when Meredith was still a medical student, and their connection was immediate.
@@ -245,6 +304,7 @@ Yet Meredith wouldn't trade it for anything. Derek made her happier than she'd e
 5. If you were Meredith, would you risk your job for love? Why or why not?
 
 ### Word Bank / Žodžių Bankas
+
 - Brain surgeons: neurochirurgai
 - Brain tumor: smegenų auglys
 - Brain stem: smegenų kamienas
@@ -257,6 +317,7 @@ Yet Meredith wouldn't trade it for anything. Derek made her happier than she'd e
 ---
 
 ## Chapter 4: The Miracle Baby
+
 ## 4 Skyrius: Stebuklingas Kūdikis
 
 Dr. Addison Montgomery was a world-renowned neonatal specialist who had recently joined Seattle Grace Hospital. She was brilliant, sophisticated, and brought a wealth of experience from treating the tiniest and most fragile patients. Addison specialized in high-risk pregnancies and complicated deliveries.
@@ -327,6 +388,7 @@ Hospital life has both joy and sorrow (liūdesys).
 5. If you could thank someone who saved a life, what would be the most meaningful way?
 
 ### Word Bank / Žodžių Bankas
+
 - Neonatal specialist: naujagimių specialistas
 - High-risk pregnancies: didelės rizikos nėštumai
 - Intrauterine growth restriction: gimdos augimo apribojimas
@@ -340,6 +402,7 @@ Hospital life has both joy and sorrow (liūdesys).
 ---
 
 ## Chapter 5: Friendship and Support
+
 ## 5 Skyrius: Draugystė ir Palaikymas
 
 Dr. Cristina Yang had always been the strongest person Meredith knew. Cristina was brilliant, focused, and never showed weakness. But today, everything changed. Cristina's patient, a 55-year-old man named George, died on the operating table during open-heart surgery.
@@ -396,12 +459,14 @@ In the world of medicine, losses were inevitable. But so was the support that ma
 5. If you could create a support system for doctors, what would it include?
 
 ### Word Bank / Žodžių Bankas
+
 - Open-heart surgery: atviro širdies operacija
 - CPR: gaivinimas
 
 ---
 
 ## Chapter 6: New Beginnings
+
 ## 6 Skyrius: Nauji Pradžiai
 
 Two years had passed since Meredith's first day at Seattle Grace Hospital. The nervous intern had become a confident surgeon. She had faced countless emergencies, lost patients she couldn't save, and celebrated victories that seemed miraculous. Through it all, Meredith had grown stronger, more compassionate, and deeply committed to her calling.
@@ -462,6 +527,7 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 5. If you could witness any family reunion, what would it be and why?
 
 ### Word Bank / Žodžių Bankas
+
 - Infectious enthusiasm: užkrečiamas entuziazmas
 - Half-sister: įseserė
 - Maid of honor: vyriausioji pamergė
@@ -471,6 +537,7 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 ---
 
 ## Chapter 7: The Big Storm
+
 ## 7 Skyrius: Didžioji Audra
 
 Seattle was hit by the worst storm in decades. Hurricane-force winds howled through the city, rain lashed against windows, and power lines snapped like twigs. Seattle Grace Hospital became a beacon in the chaos, its emergency generators humming as the main power grid failed.
@@ -527,6 +594,7 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 5. If you could prepare a hospital for any disaster, what would you do?
 
 ### Word Bank / Žodžių Bankas
+
 - Hurricane-force winds: uragano stiprumo vėjai
 - Scaffolding: pastoliai
 - Hypothermia: hipotermija
@@ -541,6 +609,7 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 ---
 
 ## Chapter 8: Dreams and Reality
+
 ## 8 Skyrius: Svajonės ir Tikrovė
 
 Dr. Meredith Grey stood at the crossroads of her career. She had dreamed of becoming a surgeon since childhood, inspired by stories of her mother's medical brilliance. Now, three years into her career, she wondered if she measured up to her own expectations.
@@ -595,6 +664,7 @@ Meredith learned that being a doctor means balancing dreams and reality.
 5. If you could tell your younger self one thing about dreams and reality, what would it be?
 
 ### Word Bank / Žodžių Bankas
+
 - Crossroads: kryžkelė
 - Liver resection: kepenų rezekcija
 - Impeccable: nepriekaištingas
@@ -609,7 +679,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 
 ## Answer Key / Atsakymų Raktas
 
-### Chapter 1 Understanding:
+### Chapter 1 Understanding
+
 1. Nervous but excited
 2. "You will work harder than you ever have. You will make mistakes. But if you care about patients, you will become good doctors."
 3. Hip surgery
@@ -619,7 +690,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 7. "This place will chew you up and spit you out."
 8. The hospital was overwhelming, but she felt like she belonged there. "This is just the beginning. Tomorrow will be better."
 
-### Chapter 2 Understanding:
+### Chapter 2 Understanding
+
 1. A car accident caused by a drunk driver
 2. "Please, help my babies. Tell them Mommy's okay."
 3. Compound fracture of the tibia and fibula
@@ -631,7 +703,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. The emergency room was exhausting and emotional, but it was also where she felt most alive
 10. To help families through their darkest moments
 
-### Chapter 3 Understanding:
+### Chapter 3 Understanding
+
 1. For months
 2. Hospital rules strictly forbade doctors from dating each other
 3. A large brain tumor pressing on his brain stem
@@ -643,7 +716,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. It was worth it because Derek made her happier than she'd ever been
 10. Their love felt stolen and fragile
 
-### Chapter 4 Understanding:
+### Chapter 4 Understanding
+
 1. A world-renowned neonatal specialist
 2. Five years
 3. Intrauterine growth restriction
@@ -655,7 +729,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. A deep sense of accomplishment
 10. Birth and death are two sides of the same coin in medicine
 
-### Chapter 5 Understanding:
+### Chapter 5 Understanding
+
 1. Open-heart surgery
 2. She slumped against the wall, sobbing uncontrollably
 3. She killed him, she was too slow, she missed something
@@ -665,7 +740,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 7. Hospital work was brutal but having people who understood made it bearable
 8. To honor George's memory by becoming an even better surgeon
 
-### Chapter 6 Understanding:
+### Chapter 6 Understanding
+
 1. Two years
 2. By reviewing the interns' files and seeing "Lexie Grey"
 3. About their mother's brilliance and occasional coldness, and how Ellis's abandonment shaped Meredith's life
@@ -677,7 +753,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. It had taken her in as a stranger and given her a family
 10. "I love this place. It's where I found myself."
 
-### Chapter 7 Understanding:
+### Chapter 7 Understanding
+
 1. The worst storm in decades with hurricane-force winds and power outages
 2. The main power failed completely
 3. Construction worker fell from scaffolding (arm mangled), mother and daughter severe hypothermia from car accident, elderly man heart attack from stress
@@ -689,7 +766,8 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. Storms destroyed and storms healed
 10. Their bonds were forged in crisis and became unbreakable
 
-### Chapter 8 Understanding:
+### Chapter 8 Understanding
+
 1. Three years
 2. The first woman to chair surgery at a major teaching hospital
 3. "Your technique is impeccable. You have natural talent."
@@ -706,6 +784,7 @@ Meredith learned that being a doctor means balancing dreams and reality.
 **Vocabulary List / Žodynas:**
 
 **Medical Terms / Medicininiai Terminai:**
+
 - Surgery (chirurgija)
 - Emergency room (skubios pagalbos skyrius)
 - Blood pressure (kraujo spaudimas)
@@ -714,6 +793,7 @@ Meredith learned that being a doctor means balancing dreams and reality.
 - Delivery (gimdymas)
 
 **Emotions / Emocijos:**
+
 - Nervous (nervinga)
 - Excited (susijaudinęs)
 - Worried (susirūpinęs)
@@ -722,6 +802,7 @@ Meredith learned that being a doctor means balancing dreams and reality.
 - Confident (pasitikintis savimi)
 
 **Hospital Terms / Ligoninės Terminai:**
+
 - Ambulance (greitoji pagalba)
 - Operating room (operacinė)
 - Patient (pacientas)
@@ -730,6 +811,7 @@ Meredith learned that being a doctor means balancing dreams and reality.
 - Surgery (operacija)
 
 **Relationships / Santykiai:**
+
 - Dating (susitikinėti)
 - Friendship (draugystė)
 - Family (šeima)
