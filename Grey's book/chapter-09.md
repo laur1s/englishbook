@@ -1,7 +1,9 @@
 ## Chapter 9: A Father's Heart
+
 ## IX Skyrius: Tėvo Širdis
 
 ### Phrasal Verbs
+
 - look into — to investigate (ištirti, išsiaiškinti)
 - rule out — to eliminate a possibility (atmesti galimybę)
 - step in — to intervene or get involved (įsikišti)
@@ -9,6 +11,7 @@
 - count on — to rely on or trust (pasikliauti)
 
 ### Word Bank
+
 - transplant — transplantacija
 - donor — donoras
 - waiting list — laukiančiųjų sąrašas
@@ -74,6 +77,7 @@ Cristina finally looked at her. A small, tired smile touched her lips. "We make 
 As she walked out of the hospital with Derek that night, Meredith felt a deep sense of satisfaction. It was days like this that reminded her why she chose this life. It was a life of impossible choices, of fear, and of exhaustion. But it was also a life of hope, of teamwork, and of miracles. She was exactly where she was supposed to be.
 
 ### Understanding Questions
+
 1. What was wrong with Mr. Evans?
 2. What was his only hope for survival?
 3. Who was in charge of Mr. Evans's case?
@@ -86,6 +90,7 @@ As she walked out of the hospital with Derek that night, Meredith felt a deep se
 10. How did Meredith feel at the end of the chapter?
 
 ### Creative Questions
+
 1. If you were in Sarah's position, would you accept the heart with the 5% risk? Why or why not?
    - Example answer: Yes, I would accept the heart because a small risk is better than certain death. I would want to give my loved one any chance to live.
    - Your answer: Yes/No, I would/wouldn't accept the heart because...
@@ -98,9 +103,33 @@ As she walked out of the hospital with Derek that night, Meredith felt a deep se
 5. Imagine you are Mr. Evans after the surgery. What would you say to Dr. Yang?
    - I would say...
 
+### Fun Activities / Smagios Užduotys
+
+**Activity 1: Role-Play — The Ethical Discussion (Etinė Diskusija)**
+
+Work in pairs. One person is the doctor, and the other is a patient's family member. The doctor must explain a difficult medical situation with a small risk. The family member must ask questions and make a decision.
+
+*Example dialogue:*
+
+- Doctor: "We have good news. We found a match, but there is a small risk."
+- Family: "What kind of risk? Can you explain?"
+- Doctor: "There is a 5% chance of complications. But without this, the risk is 100%."
+- Family: "I understand. Let's do it."
+
+**Activity 2: Vocabulary Matching Game**
+
+Match the medical situations with the correct phrasal verb from this chapter:
+
+1. When a doctor investigates a problem → _______
+2. When a doctor removes a possibility → _______
+3. When a doctor helps in an emergency → _______
+4. When you trust someone completely → _______
+5. When you stop yourself from acting → _______
+
 ### Grammar Exercises: Past Continuous
 
 **1. Complete the sentences using the Past Continuous form of the verb in parentheses.**
+
 1. Mr. Evans's heart _______ (get) weaker every day.
 2. The whole family _______ (live) in fear.
 3. Alex _______ (look) into the donor's history when he found the problem.
@@ -109,6 +138,7 @@ As she walked out of the hospital with Derek that night, Meredith felt a deep se
 
 **2. Write a sentence using the Past Continuous and Past Simple.**
 *Example: I was studying (Past Continuous) when my friend called (Past Simple).*
+
 1. (Cristina / work) when (her pager / go off).
 2. (Meredith / talk) to the family when (Alex / rush in).
 3. While they _______ (prepare) for surgery, the problem _______ (arise).
@@ -116,6 +146,7 @@ As she walked out of the hospital with Derek that night, Meredith felt a deep se
 ## Answer Key / Atsakymų Raktas
 
 ### Understanding Questions
+
 1. Mr. Evans had severe heart failure.
 2. His only hope was a heart transplant.
 3. Dr. Cristina Yang was in charge of his case.
@@ -128,7 +159,9 @@ As she walked out of the hospital with Derek that night, Meredith felt a deep se
 10. Meredith felt a deep sense of satisfaction and that she was in the right place.
 
 ### Grammar Exercises
+
 **1. Past Continuous**
+
 1. was getting
 2. was living
 3. was looking
@@ -136,6 +169,17 @@ As she walked out of the hospital with Derek that night, Meredith felt a deep se
 5. were crying
 
 **2. Past Continuous and Past Simple**
+
 1. Cristina was working when her pager went off.
 2. Meredith was talking to the family when Alex rushed in.
 3. While they were preparing for surgery, the problem arose.
+
+### Fun Activities
+
+**Activity 2: Vocabulary Matching Game**
+
+1. look into
+2. rule out
+3. step in
+4. count on
+5. hold back
