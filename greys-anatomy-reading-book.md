@@ -33,6 +33,8 @@ Use just / already / yet or the correct present perfect form:
 5) Lisa hasn’t seen the baby ___.
 6) The team ___ (work) for two days without sleep.
 
+---
+
 - white coat — baltas chalatas
 - scrubs — chirurginiai drabužiai
 - intern — rezidentas/praktikantas
@@ -317,61 +319,6 @@ Choose the correct form (Present Simple or Present Continuous):
 
 ### Word Bank
 
-### Grammar Practice
-
-Choose the correct form:
-
-1) Cristina is ___ dedicated than most residents. (more/most)
-2) Derek is one of the ___ experienced surgeons. (more/most)
-3) Alex is ___ confident now than before. (more/most)
-4) Meredith feels ___ after finding balance. (happier/more happy)
-5) Medical missions can be ___ challenging than regular work. (more/most)
-6) The conference was the ___ inspiring event this year. (more/most)
-
-### Grammar Practice
-
-Choose can / can’t and write imperatives:
-
-1) The OR lights ___ power all devices.
-2) We ___ use backup generators.
-3) Izzie ___ comfort patients during the storm.
-4) You ___ enter the OR without permission.
-5) ___ the trauma patient to room 1.
-6) ___ calm and work as a team.
-
-### Grammar Practice
-
-Complete with Present Perfect:
-
-1) Meredith ___ (become) more confident over the years.
-2) She ___ (mentor) Lexie since her arrival.
-3) Derek ___ (plan) the perfect proposal.
-4) They ___ (face) many emergencies together.
-5) Owen ___ (take) the role of chief.
-6) Meredith ___ (find) a family at Seattle Grace.
-
-### Grammar Practice
-
-Choose the correct modal (should / must / mustn’t / can’t / might):
-
-1) They ___ be careful at work.
-2) Meredith ___ tell everyone about the relationship.
-3) Derek ___ feel tired after a 7-hour surgery.
-4) Izzie thinks Meredith ___ be careful.
-5) They ___ talk in private places.
-6) Doctors ___ date at the hospital, according to the rules.
-
-### Grammar Practice
-
-Put the verbs in Past Simple:
-
-1) The drunk driver ___ (hit) Sarah’s car.
-2) Sarah ___ (scream) in pain.
-3) Cristina ___ (look) at the X-rays.
-4) They ___ (operate) for three hours.
-5) Mark ___ (cry) in the ER.
-6) The team ___ (save) Sarah’s leg.
-
 - emergency room — skubios pagalbos skyrius
 - ambulance — greitoji pagalba
 - stretcher — neštuvai
@@ -386,6 +333,19 @@ Put the verbs in Past Simple:
 - hurt — sužeistas
 - save — gelbėti
 - worried — susirūpinęs
+
+---
+
+### Grammar Practice
+
+Put the verbs in Past Simple:
+
+1) The drunk driver ___ (hit) Sarah’s car.
+2) Sarah ___ (scream) in pain.
+3) Cristina ___ (look) at the X-rays.
+4) They ___ (operate) for three hours.
+5) Mark ___ (cry) in the ER.
+6) The team ___ (save) Sarah’s leg.
 
 ---
 
@@ -1141,6 +1101,8 @@ Past Continuous vs Past Simple:
 3) Meredith ***(walk) past when she*** (hear) the crying.
 4) They ***(sit) together and*** (talk) about fears.
 5) Later, Cristina ***(go) back to work, but she*** (feel) sad.
+
+---
 
 ## Chapter 6: New Beginnings
 
