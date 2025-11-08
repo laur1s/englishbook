@@ -121,6 +121,16 @@
 - The hotel is **between** the restaurant and the shop.
 - The park is **behind** the church.
 
+**More Examples:**
+- The keys are in the drawer. - Raktai yra stalčiuje.
+- The picture is on the wall. - Paveikslas yra ant sienos.
+- She is at the door. - Ji yra prie durų.
+- The ball is under the bed. - Kamuolys yra po lova.
+- My house is next to the river. - Mano namas yra šalia upės.
+- The cat is between the chairs. - Katė yra tarp kėdžių.
+- The teacher is in front of the class. - Mokytojas yra priešais klasę.
+- The garden is behind the house. - Sodas yra už namo.
+
 ---
 
 ## Part 4: There is / There are

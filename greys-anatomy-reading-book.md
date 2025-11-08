@@ -12,21 +12,40 @@ Welcome to Seattle Grace Hospital! This book tells stories about doctors, nurses
 
 ## 1 Skyrius: Pirmoji Diena Ligoninėje
 
-### Word Bank / Žodžių Bankas
+### Phrasal Verbs
 
-- **white coat** - baltas chalatas
-- **scrubs** - chirurginiai drabužiai
-- **intern** - rezidentas/praktikantas
-- **locker room** - rūbinė
-- **chief** - viršininkas
-- **patient** - pacientas
-- **surgery** - operacija
-- **temperature** - temperatūra
-- **blood pressure** - kraujo spaudimas
-- **pulse** - pulsas
-- **cafeteria** - valgykla
-- **nervous** - nervinga
-- **exhausted** - išsekęs
+- wake up — become awake (atsibusti)
+- put on — start wearing (apsivilkti)
+- check in — register at a place (užsiregistruoti)
+- look after — take care of (prižiūrėti)
+- calm down — become calmer (nusiraminti)
+
+### Word Bank
+
+### Grammar Practice
+
+Use just / already / yet or the correct present perfect form:
+
+1) The baby has ___ started breathing.
+2) They haven’t taken him off the machine ___.
+3) The parents have ___ waited for five years.
+4) Addison has ___ decided to deliver.
+5) Lisa hasn’t seen the baby ___.
+6) The team ___ (work) for two days without sleep.
+
+- white coat — baltas chalatas
+- scrubs — chirurginiai drabužiai
+- intern — rezidentas/praktikantas
+- locker room — rūbinė
+- chief — viršininkas
+- patient — pacientas
+- surgery — operacija
+- temperature — temperatūra
+- blood pressure — kraujo spaudimas
+- pulse — pulsas
+- cafeteria — valgykla
+- nervous — nervinga
+- exhausted — išsekęs
 
 ---
 
@@ -70,7 +89,7 @@ But she didn't know that her life at Seattle Grace was going to change everythin
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. How did Meredith feel when she woke up on her first day?
 2. What did Dr. Webber tell the new interns about working at the hospital?
@@ -81,7 +100,7 @@ But she didn't know that her life at Seattle Grace was going to change everythin
 7. What did Alex say about the hospital?
 8. What did Meredith think about as she drove home?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
@@ -105,20 +124,182 @@ But she didn't know that her life at Seattle Grace was going to change everythin
    - *Example answer:* "I think Meredith's life will change a lot. She will make new friends, learn many things, and help people. But she will also be very tired."
    - *Your answer:* "I think Meredith's life will _______________. She will _______________."
 
-### Word Bank / Žodžių Bankas
+### Fun Activities
 
-- White coat: baltas chalatas
-- Scrubs: chirurginiai drabužiai
-- Interns: rezidentai
-- Locker room: rūbinė
-- Chief of surgery: chirurgijos viršininkas
-- Vital signs: gyvybiniai požymiai
-- Hip surgery: klubo operacija
-- Temperature: temperatūra
-- Blood pressure: kraujo spaudimas
-- Pulse: pulsas
-- Cafeteria: valgykla
-- Specialty: specialybė
+#### Activity 1: True or False?
+
+1. It was Friday night in the ER. (T)
+2. Sarah had a simple leg sprain. (F)
+3. Cristina performed the surgery. (T)
+4. Mark is Sarah’s brother. (F)
+5. The surgery took three hours. (T)
+6. They saved Sarah’s leg. (T)
+
+#### Activity 2: Fill in the Blanks
+
+An __________ brought Sarah on a __________. The __________ showed a bad break. She needed __________ quickly. There was a lot of __________. She cried about her __________.
+
+Word Bank: ambulance, stretcher, X-rays, surgery, blood, children
+
+#### Activity 3: Role-Play - Comforting a Family Member
+
+Student A (Doctor): Explain the plan to save Sarah’s leg.
+Student B (Mark): Ask questions about risks and recovery.
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Meredith and Derek could date openly at work. (F)
+2. Derek’s surgery lasted seven hours. (T)
+3. Izzie accidentally saw them being very close. (T)
+4. The surgery failed. (F)
+5. Meredith and Derek met in the crowded cafeteria to talk privately. (F)
+
+#### Activity 2: Vocabulary Matching
+
+1. brain surgeon ___
+2. operating room ___
+3. waiting room ___
+4. rules ___
+5. secret ___
+
+a) taisyklės  b) operacinė  c) neurochirurgas  d) laukiamasis  e) paslaptis
+
+#### Activity 3: Fill in the Blanks
+
+Their relationship was a __________ because hospital __________ forbade dating. Meredith watched Derek’s __________ through the __________. Later they shared a quick __________ but had to be __________.
+
+Word Bank: secret, rules, surgery, window, kiss, careful
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Lexie is Meredith’s half-sister. (T)
+2. Derek proposed in the cafeteria. (F)
+3. Dr. Webber officiated their wedding. (T)
+4. Owen Hunt became chief after Webber retired. (T)
+5. There were no emergencies on their wedding day. (F)
+
+#### Activity 2: Character Feelings Matching
+
+Match the character to the feeling:
+
+1. Lexie ___
+2. Meredith ___
+3. Derek ___
+4. Owen ___
+5. Cristina ___
+
+a) excited  b) blessed  c) supportive  d) intimidating  e) proud
+
+#### Activity 3: Write a Welcome Message
+
+Write 3–4 sentences welcoming a new intern to the hospital team.
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. The storm caused a complete power failure. (T)
+2. Cristina refused to operate during the storm. (F)
+3. Izzie comforted a lost boy. (T)
+4. Alex helped a man with hypothermia. (F)
+5. Every patient survived. (T)
+
+#### Activity 2: Fill in the Blanks
+
+The backup __________ kept essential machines on. Cristina operated by __________. A mother and daughter had __________. An elderly woman was rescued from her __________ basement. Meredith had to __________ patients in the ER.
+
+Word Bank: generators, flashlight, hypothermia, flooded, prioritize
+
+#### Activity 3: Role-Play - Triage Calls
+
+Student A: Assign patients to rooms.
+Student B: Report injuries and urgency.
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Catherine Avery is Derek’s mother. (T)
+2. She said perfection is necessary for greatness. (F)
+3. Cristina wanted an ordinary career. (F)
+4. Alex grew into a skilled trauma surgeon. (T)
+5. Meredith felt content at the end. (T)
+
+#### Activity 2: Vocabulary Matching
+
+1. crossroads ___
+2. compassion ___
+3. impostor ___
+4. medical missions ___
+5. liver resection ___
+
+a) kepenų rezekcija  b) medicininės misijos  c) apsimetėlis  d) užuojauta  e) kryžkelė
+
+#### Activity 3: Fill in the Blanks
+
+Catherine said that __________ teaches us that __________ is impossible and __________ comes from accepting imperfection. Medicine is about being present for __________ and finding a healthy __________ between work and life.
+
+Word Bank: dreams, reality, perfection, excellence, patients, balance
+
+### Word Bank
+
+- white coat — baltas chalatas
+- scrubs — chirurginiai drabužiai
+- interns — rezidentai
+- locker room — rūbinė
+- chief of surgery — chirurgijos viršininkas
+- vital signs — gyvybiniai požymiai
+- hip surgery — klubo operacija
+- temperature — temperatūra
+- blood pressure — kraujo spaudimas
+- pulse — pulsas
+- cafeteria — valgykla
+- specialty — specialybė
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Meredith was nervous on her first day. (T)
+2. Dr. Webber is the chief of surgery. (T)
+3. Meredith’s first patient had a broken leg. (F)
+4. Cristina was unfriendly to Meredith in the cafeteria. (F)
+5. Meredith felt happy at the end of the day. (T)
+
+#### Activity 2: Vocabulary Matching
+
+Match the English word to the Lithuanian meaning:
+
+1. locker room ___
+2. cafeteria ___
+3. pulse ___
+4. chief ___
+5. intern ___
+
+a) pulsas  b) viršininkas  c) rezidentas/praktikantas  d) rūbinė  e) valgykla
+
+#### Activity 3: Fill in the Blanks
+
+Complete the summary using the Word Bank:
+
+Meredith put on her __________ and walked past people in __________. Her first __________ was Mr. Johnson. She felt __________ but tried to smile. At lunch, she went to the __________ and later wrote __________ on the computer.
+
+Word Bank: white coat, scrubs, patient, nervous, cafeteria, reports
+
+### Grammar Practice
+
+Choose the correct form (Present Simple or Present Continuous):
+
+1) Meredith usually ___ (check) patients in the morning.
+2) She ___ (feel) nervous today.
+3) Nurses ___ (push) beds right now.
+4) Alex often ___ (make) jokes.
+5) Izzie ___ (help) Meredith at the moment.
+6) Mr. Johnson ___ (recover) well.
 
 ---
 
@@ -126,22 +307,85 @@ But she didn't know that her life at Seattle Grace was going to change everythin
 
 ## 2 Skyrius: Skubios Pagalbos Skyrius - Gyvenimo ir Mirties Naktis
 
-### Word Bank / Žodžių Bankas
+### Phrasal Verbs
 
-- **emergency room** - skubios pagalbos skyrius
-- **ambulance** - greitoji pagalba
-- **stretcher** - neštuvai
-- **blood** - kraujas
-- **pain** - skausmas
-- **broken** - sulaužytas
-- **X-ray** - rentgeno nuotrauka
-- **surgery** - operacija
-- **scared** - išsigandęs
-- **tears** - ašaros
-- **accident** - avarija
-- **hurt** - sužeistas
-- **save** - gelbėti
-- **worried** - susirūpinęs
+- rush in — enter quickly (įbėgti)
+- pass out — lose consciousness (apalpti)
+- come around — regain consciousness (atgauti sąmonę)
+- hold on — wait briefly (palaukti)
+- set up — prepare equipment (paruošti įrangą)
+
+### Word Bank
+
+### Grammar Practice
+
+Choose the correct form:
+
+1) Cristina is ___ dedicated than most residents. (more/most)
+2) Derek is one of the ___ experienced surgeons. (more/most)
+3) Alex is ___ confident now than before. (more/most)
+4) Meredith feels ___ after finding balance. (happier/more happy)
+5) Medical missions can be ___ challenging than regular work. (more/most)
+6) The conference was the ___ inspiring event this year. (more/most)
+
+### Grammar Practice
+
+Choose can / can’t and write imperatives:
+
+1) The OR lights ___ power all devices.
+2) We ___ use backup generators.
+3) Izzie ___ comfort patients during the storm.
+4) You ___ enter the OR without permission.
+5) ___ the trauma patient to room 1.
+6) ___ calm and work as a team.
+
+### Grammar Practice
+
+Complete with Present Perfect:
+
+1) Meredith ___ (become) more confident over the years.
+2) She ___ (mentor) Lexie since her arrival.
+3) Derek ___ (plan) the perfect proposal.
+4) They ___ (face) many emergencies together.
+5) Owen ___ (take) the role of chief.
+6) Meredith ___ (find) a family at Seattle Grace.
+
+### Grammar Practice
+
+Choose the correct modal (should / must / mustn’t / can’t / might):
+
+1) They ___ be careful at work.
+2) Meredith ___ tell everyone about the relationship.
+3) Derek ___ feel tired after a 7-hour surgery.
+4) Izzie thinks Meredith ___ be careful.
+5) They ___ talk in private places.
+6) Doctors ___ date at the hospital, according to the rules.
+
+### Grammar Practice
+
+Put the verbs in Past Simple:
+
+1) The drunk driver ___ (hit) Sarah’s car.
+2) Sarah ___ (scream) in pain.
+3) Cristina ___ (look) at the X-rays.
+4) They ___ (operate) for three hours.
+5) Mark ___ (cry) in the ER.
+6) The team ___ (save) Sarah’s leg.
+
+- emergency room — skubios pagalbos skyrius
+- ambulance — greitoji pagalba
+- stretcher — neštuvai
+- blood — kraujas
+- pain — skausmas
+- broken — sulaužytas
+- X-ray — rentgeno nuotrauka
+- surgery — operacija
+- scared — išsigandęs
+- tears — ašaros
+- accident — avarija
+- hurt — sužeistas
+- save — gelbėti
+- worried — susirūpinęs
 
 ---
 
@@ -209,7 +453,7 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. How was Sarah injured?
 2. What did Sarah say about her children?
@@ -222,7 +466,7 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 9. What did Meredith think about working in the emergency room?
 10. Why did Meredith become a doctor?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
@@ -246,21 +490,21 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
    - *Example answer:* "I think Sarah's family will be more careful when driving. They will be happy to be together. Sarah might be scared to drive again."
    - *Your answer:* "I think Sarah's family will _______________. They will _______________. Sarah might _______________."
 
-### Word Bank / Žodžių Bankas
+### Word Bank
 
-- Emergency room: skubios pagalbos skyrius
-- Stretcher: neštuvai
-- Drunk driver: girtas vairuotojas
-- Shock: šokas
-- Trauma room: traumos kambarys
-- Ortho surgery: ortopedinė chirurgija
-- X-rays: rentgeno nuotraukos
-- Compound fracture: atviras lūžis
-- Tibia: blauzdikaulis
-- Fibula: žastikaulis
-- Recovery room: atsigavimo palata
-- Anesthesia: anestezija
-- Physical therapy: fizinė terapija
+- emergency room — skubios pagalbos skyrius
+- stretcher — neštuvai
+- drunk driver — girtas vairuotojas
+- shock — šokas
+- trauma room — traumos kambarys
+- ortho surgery — ortopedinė chirurgija
+- X-rays — rentgeno nuotraukos
+- compound fracture — atviras lūžis
+- tibia — blauzdikaulis
+- fibula — žastikaulis
+- recovery room — atsigavimo palata
+- anesthesia — anestezija
+- physical therapy — fizinė terapija
 
 ---
 
@@ -268,22 +512,30 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 
 ## 3 Skyrius: Slapta Meilė - Pavojingas Romanas
 
-### Word Bank / Žodžių Bankas
+### Phrasal Verbs
 
-- **secret** - paslaptis
-- **in love** - įsimylėjęs
-- **brain surgeon** - neurochirurgas
-- **tumor** - auglys
-- **forbidden** - draudžiamas
-- **rules** - taisyklės
-- **kiss** - bučinys
-- **caught** - pagautas
-- **operating room** - operacinė
-- **dangerous** - pavojingas
-- **relationship** - santykiai
-- **hiding** - slapstymasis
-- **afraid** - bijantis
-- **discover** - atrasti
+- go out — date (susitikinėti)
+- find out — discover (sužinoti)
+- cover up — hide the truth (nuslėpti)
+- make up — reconcile after a problem (susitaikyti)
+- split up — end a relationship (išsiskirti)
+
+### Word Bank
+
+- secret — paslaptis
+- in love — įsimylėjęs
+- brain surgeon — neurochirurgas
+- tumor — auglys
+- forbidden — draudžiamas
+- rules — taisyklės
+- kiss — bučinys
+- caught — pagautas
+- operating room — operacinė
+- dangerous — pavojingas
+- relationship — santykiai
+- hiding — slapstymasis
+- afraid — bijantis
+- discover — atrasti
 
 ---
 
@@ -363,7 +615,7 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. How long had Meredith and Derek been dating?
 2. Why did they keep their relationship secret?
@@ -376,7 +628,7 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
 9. Why did Meredith think the secrecy was worth it?
 10. What made their love feel fragile?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
@@ -400,16 +652,16 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
    - *Example answer:* "Yes, I would risk my job for love because true love is more important than work. / No, I wouldn't risk my job because I worked hard to become a doctor."
    - *Your answer:* "Yes/No, I would/wouldn't risk my job for love because _______________."
 
-### Word Bank / Žodžių Bankas
+### Word Bank
 
-- Brain surgeons: neurochirurgai
-- Brain tumor: smegenų auglys
-- Brain stem: smegenų kamienas
-- Paralysis: paralyžius
-- Operating room: operacinė
-- Incision: pjūvis
-- Waiting room: laukiamasis
-- Doctors' lounge: gydytojų poilsio kambarys
+- brain surgeons — neurochirurgai
+- brain tumor — smegenų auglys
+- brain stem — smegenų kamienas
+- paralysis — paralyžius
+- operating room — operacinė
+- incision — pjūvis
+- waiting room — laukiamasis
+- doctors' lounge — gydytojų poilsio kambarys
 
 ---
 
@@ -417,22 +669,30 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
 
 ## 4 Skyrius: Stebuklingas Kūdikis - Ar Jis Išgyvens?
 
-### Word Bank / Žodžių Bankas
+### Phrasal Verbs
 
-- **baby** - kūdikis
-- **pregnant** - nėščia
-- **birth/deliver** - gimti/gimdyti
-- **premature** - priešlaikinis
-- **tiny** - mažytis
-- **breathing** - kvėpavimas
-- **ultrasound** - ultragarsas
-- **crying/tears** - verkimas/ašaros
-- **miracle** - stebuklas
-- **survive** - išgyventi
-- **hope** - viltis
-- **fight** - kovoti
-- **alive** - gyvas
-- **prayer** - malda
+- hold on — wait (palaukti)
+- pull through — survive a serious illness (išgyventi)
+- set up — prepare equipment (paruošti įrangą)
+- take off — remove (nuimti)
+- check on — check someone’s condition (patikrinti būklę)
+
+### Word Bank
+
+- baby — kūdikis
+- pregnant — nėščia
+- birth/deliver — gimti/gimdyti
+- premature — priešlaikinis
+- tiny — mažytis
+- breathing — kvėpavimas
+- ultrasound — ultragarsas
+- crying/tears — verkimas/ašaros
+- miracle — stebuklas
+- survive — išgyventi
+- hope — viltis
+- fight — kovoti
+- alive — gyvas
+- prayer — malda
 
 ---
 
@@ -520,7 +780,7 @@ As Meredith walked home that night, she thought about Lisa's miracle baby. She t
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. What kind of doctor was Addison Montgomery?
 2. How long had Lisa been trying to have a baby?
@@ -533,7 +793,7 @@ As Meredith walked home that night, she thought about Lisa's miracle baby. She t
 9. How did Meredith feel about her work?
 10. What did Meredith learn about medicine that day?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
@@ -559,7 +819,7 @@ As Meredith walked home that night, she thought about Lisa's miracle baby. She t
 
 ---
 
-### Fun Activities / Linksmos Veiklos
+### Fun Activities
 
 #### Activity 1: True or False? / Tiesa ar Melas?
 
@@ -571,8 +831,6 @@ As Meredith walked home that night, she thought about Lisa's miracle baby. She t
 4. Tom could go into the operating room with Lisa. **T / F**
 5. The baby started breathing on his own on the third day. **T / F**
 6. Mrs. Patterson was 75 years old. **T / F**
-
-*Answers: 1-T, 2-F (35 weeks), 3-T, 4-F, 5-T, 6-F (87 years)*
 
 #### Activity 2: Role-Play Dialog / Vaidmenų Žaidimas
 
@@ -640,17 +898,17 @@ Lisa wanted to have a __________ for five years. When the baby was born, he was 
 
 **Write your prediction:** "I think _______________ because _______________."
 
-### Word Bank / Žodžių Bankas
+### Word Bank
 
-- Neonatal specialist: naujagimių specialistas
-- High-risk pregnancies: didelės rizikos nėštumai
-- Intrauterine growth restriction: gimdos augimo apribojimas
-- Ultrasound: ultragarsas
-- Cesarean section: cezario pjūvis
-- Premature: priešlaikinis
-- NICU: naujagimių intensyvios priežiūros skyrius
-- Ventilator: ventiliatorius
-- Breast milk: motinos pienas
+- neonatal specialist — naujagimių specialistas
+- high-risk pregnancies — didelės rizikos nėštumai
+- intrauterine growth restriction — gimdos augimo apribojimas
+- ultrasound — ultragarsas
+- cesarean section — cezario pjūvis
+- premature — priešlaikinis
+- NICU — naujagimių intensyvios priežiūros skyrius
+- ventilator — ventiliatorius
+- breast milk — motinos pienas
 
 ---
 
@@ -658,22 +916,30 @@ Lisa wanted to have a __________ for five years. When the baby was born, he was 
 
 ## 5 Skyrius: Kai Pacientas Miršta - Blogiausia Diena
 
-### Word Bank / Žodžių Bankas
+### Phrasal Verbs
 
-- **heart surgery** - širdies operacija
-- **patient** - pacientas
-- **die/died** - mirti/mirė
-- **crying/sobbing** - verkimas/aimanuoja
-- **fault** - kaltė
-- **blame** - kaltinti
-- **failure** - nesėkmė
-- **support** - palaikymas
-- **friend/friendship** - draugas/draugystė
-- **comfort** - paguosti
-- **mistake** - klaida
-- **help** - padėti
-- **tissue** - nosinė
-- **hug** - apkabinti
+- break down — start crying (pratrūkti verkti)
+- calm down — become calm (nusiraminti)
+- open up — share personal feelings (atsiverti)
+- get over — recover emotionally (atsitiesti)
+- carry on — continue (tęsti)
+
+### Word Bank
+
+- heart surgery — širdies operacija
+- patient — pacientas
+- die/died — mirti/mirė
+- crying/sobbing — verkimas/aimanuoja
+- fault — kaltė
+- blame — kaltinti
+- failure — nesėkmė
+- support — palaikymas
+- friend/friendship — draugas/draugystė
+- comfort — paguosti
+- mistake — klaida
+- help — padėti
+- tissue — nosinė
+- hug — apkabinti
 
 ---
 
@@ -743,7 +1009,7 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. What was wrong with George?
 2. What happened during Cristina's surgery?
@@ -756,7 +1022,7 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
 9. What did Meredith think about as she drove home?
 10. What did Meredith learn about friendship?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
@@ -782,7 +1048,7 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
 
 ---
 
-### Fun Activities / Linksmos Veiklos
+### Fun Activities
 
 #### Activity 1: Emotions Vocabulary / Emocijų Žodynas
 
@@ -809,8 +1075,6 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
 5. All four friends sat on the floor together. **T / F**
 6. Alex usually makes jokes. **T / F**
 7. Cristina's parents worked three jobs. **T / F**
-
-*Answers: 1-T, 2-F (55), 3-F (CPR took 45 min), 4-F (scrub room), 5-T, 6-T, 7-T*
 
 #### Activity 3: Role-Play - Comforting a Friend / Draugo Guodimas
 
@@ -868,9 +1132,27 @@ _______________________________________________________"
 
 ---
 
+### Grammar Practice
+
+Past Continuous vs Past Simple:
+
+1) Cristina ***(operate) when George’s heart*** (stop).
+2) Nurses ***(prepare) medicine while Cristina*** (do) CPR.
+3) Meredith ***(walk) past when she*** (hear) the crying.
+4) They ***(sit) together and*** (talk) about fears.
+5) Later, Cristina ***(go) back to work, but she*** (feel) sad.
+
 ## Chapter 6: New Beginnings
 
 ## 6 Skyrius: Nauji Pradžiai
+
+### Phrasal Verbs
+
+- find out — discover (sužinoti)
+- look up to — admire (gerbti)
+- settle down — start a stable life (kurti pastovų gyvenimą)
+- take over — assume control (perimti vadovavimą)
+- show up — arrive (pasirodyti)
 
 Two years had passed since Meredith's first day at Seattle Grace Hospital. The nervous intern had become a confident surgeon. She had faced countless emergencies, lost patients she couldn't save, and celebrated victories that seemed miraculous. Through it all, Meredith had grown stronger, more compassionate, and deeply committed to her calling.
 
@@ -908,7 +1190,7 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. How long had passed since Meredith's first day at the hospital?
 2. How did Meredith discover Lexie was her sister?
@@ -921,7 +1203,7 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 9. How had Seattle Grace changed Meredith's life?
 10. What did Meredith say about the hospital?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 1. If you discovered you had a sibling you never knew about, how would you feel?
 2. Imagine planning your wedding during a busy job. What challenges would you face?
@@ -929,19 +1211,27 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 4. How do you think family relationships affect doctors' work?
 5. If you could witness any family reunion, what would it be and why?
 
-### Word Bank / Žodžių Bankas
+### Word Bank
 
-- Infectious enthusiasm: užkrečiamas entuziazmas
-- Half-sister: įseserė
-- Maid of honor: vyriausioji pamergė
-- Appendectomy: apendicito pašalinimas
-- Military trauma surgeon: karinis traumos chirurgas
+- infectious enthusiasm — užkrečiamas entuziazmas
+- half-sister — įseserė
+- maid of honor — vyriausioji pamergė
+- appendectomy — apendicito pašalinimas
+- military trauma surgeon — karinis traumos chirurgas
 
 ---
 
 ## Chapter 7: The Big Storm
 
 ## 7 Skyrius: Didžioji Audra
+
+### Phrasal Verbs
+
+- go out — stop working (išsijungti)
+- run out of — have no more (pritrūkti)
+- set up — prepare (paruošti)
+- keep going — continue (nenustoti dirbti)
+- take in — receive/admit (priimti)
 
 Seattle was hit by the worst storm in decades. Hurricane-force winds howled through the city, rain lashed against windows, and power lines snapped like twigs. Seattle Grace Hospital became a beacon in the chaos, its emergency generators humming as the main power grid failed.
 
@@ -975,7 +1265,7 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. What kind of storm hit Seattle?
 2. What happened to the hospital's power?
@@ -988,7 +1278,7 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 9. What did Meredith reflect on about storms?
 10. How did the storm affect the doctors' relationships?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 1. If you were caught in a major storm, what would you want emergency workers to do?
 2. Imagine you're a hospital administrator during a crisis. What would be your priorities?
@@ -996,24 +1286,32 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 4. How do you think natural disasters change communities?
 5. If you could prepare a hospital for any disaster, what would you do?
 
-### Word Bank / Žodžių Bankas
+### Word Bank
 
-- Hurricane-force winds: uragano stiprumo vėjai
-- Scaffolding: pastoliai
-- Hypothermia: hipotermija
-- Prioritize: suteikti prioritetą
-- Brachial artery: peties arterija
-- Severed: perpjauta
-- Backup generators: atsarginiai generatoriai
-- Flashlight: žibintuvėlis
-- Rehabilitation: reabilitacija
-- Beacon: švyturys
+- hurricane-force winds — uragano stiprumo vėjai
+- scaffolding — pastoliai
+- hypothermia — hipotermija
+- prioritize — suteikti prioritetą
+- brachial artery — peties arterija
+- severed — perpjauta
+- backup generators — atsarginiai generatoriai
+- flashlight — žibintuvėlis
+- rehabilitation — reabilitacija
+- beacon — švyturys
 
 ---
 
 ## Chapter 8: Dreams and Reality
 
 ## 8 Skyrius: Svajonės ir Tikrovė
+
+### Phrasal Verbs
+
+- work on — try to improve (tobulinti)
+- aim for — try to achieve (siekti)
+- give up — stop trying (pasiduoti)
+- figure out — understand/solve (išsiaiškinti)
+- balance out — make equal or stable (subalansuoti)
 
 Dr. Meredith Grey stood at the crossroads of her career. She had dreamed of becoming a surgeon since childhood, inspired by stories of her mother's medical brilliance. Now, three years into her career, she wondered if she measured up to her own expectations.
 
@@ -1045,7 +1343,7 @@ Meredith learned that being a doctor means balancing dreams and reality.
 
 ---
 
-### Understanding Questions / Supratimo Klausimai
+### Understanding Questions
 
 1. How long had Meredith been working at the hospital?
 2. What was Dr. Catherine Avery known for?
@@ -1058,7 +1356,7 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. What did Meredith learn about success?
 10. How did Meredith feel at the end of the chapter?
 
-### Creative Questions / Kūrybiniai Klausimai
+### Creative Questions
 
 1. If you could receive advice from someone successful in your field, what would you want to know?
 2. Imagine you're mentoring a young professional. What would be your most important advice?
@@ -1066,17 +1364,17 @@ Meredith learned that being a doctor means balancing dreams and reality.
 4. How do you think balancing work and personal life affects success?
 5. If you could tell your younger self one thing about dreams and reality, what would it be?
 
-### Word Bank / Žodžių Bankas
+### Word Bank
 
-- Crossroads: kryžkelė
-- Liver resection: kepenų rezekcija
-- Impeccable: nepriekaištingas
-- Compassion: užuojauta
-- Single-minded dedication: vienpusis atsidavimas
-- Cardiac surgery: širdies chirurgija
-- Trauma surgeon: traumos chirurgas
-- Imposter: apsimetėlis
-- Medical missions: medicininės misijos
+- crossroads — kryžkelė
+- liver resection — kepenų rezekcija
+- impeccable — nepriekaištingas
+- compassion — užuojauta
+- single-minded dedication — vienpusis atsidavimas
+- cardiac surgery — širdies chirurgija
+- trauma surgeon — traumos chirurgas
+- imposter — apsimetėlis
+- medical missions — medicininės misijos
 
 ---
 
@@ -1093,6 +1391,21 @@ Meredith learned that being a doctor means balancing dreams and reality.
 7. "This place will chew you up and spit you out."
 8. The hospital was overwhelming, but she felt like she belonged there. "This is just the beginning. Tomorrow will be better."
 
+### Chapter 1 Fun Activities
+
+- Activity 1 (True/False): 1 T, 2 T, 3 F, 4 F, 5 T
+- Activity 2 (Matching): 1 d, 2 e, 3 a, 4 b, 5 c
+- Activity 3 (Fill in the Blanks): white coat; scrubs; patient; nervous; cafeteria; reports
+
+### Chapter 1 Grammar Practice
+
+1) checks
+2) is feeling
+3) are pushing
+4) makes
+5) is helping
+6) is recovering
+
 ### Chapter 2 Understanding
 
 1. A car accident caused by a drunk driver
@@ -1105,6 +1418,21 @@ Meredith learned that being a doctor means balancing dreams and reality.
 8. "Hey, Grey. Heard you handled that trauma case well. Not bad for someone who's only been here a week."
 9. The emergency room was exhausting and emotional, but it was also where she felt most alive
 10. To help families through their darkest moments
+
+### Chapter 2 Fun Activities
+
+- Activity 1 (True/False): 1 T, 2 F, 3 T, 4 F, 5 T, 6 T
+- Activity 2 (Fill in the Blanks): ambulance; stretcher; X-rays; surgery; blood; children
+- Activity 3 (Role-Play): model answers will vary (clear explanation + reassurance)
+
+### Chapter 2 Grammar Practice
+
+1) hit
+2) screamed
+3) looked
+4) operated
+5) cried
+6) saved
 
 ### Chapter 3 Understanding
 
@@ -1119,6 +1447,21 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. It was worth it because Derek made her happier than she'd ever been
 10. Their love felt stolen and fragile
 
+### Chapter 3 Fun Activities
+
+- Activity 1 (True/False): 1 F, 2 T, 3 T, 4 F, 5 F
+- Activity 2 (Matching): 1 c, 2 b, 3 d, 4 a, 5 e
+- Activity 3 (Fill in the Blanks): secret; rules; surgery; window; kiss; careful
+
+### Chapter 3 Grammar Practice
+
+1) must
+2) mustn’t
+3) might
+4) should
+5) should
+6) can’t
+
 ### Chapter 4 Understanding
 
 1. A world-renowned neonatal specialist
@@ -1132,6 +1475,22 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. A deep sense of accomplishment
 10. Birth and death are two sides of the same coin in medicine
 
+### Chapter 4 Fun Activities
+
+- Activity 1 (True/False): 1 T, 2 F, 3 T, 4 F, 5 T, 6 F
+- Activity 2 (Role-Play): model answers will vary
+- Activity 3 (Fill in the Blanks): baby; tiny; breathing; cry; breathe; miracle
+- Activity 6 (Vocabulary Matching): 1 c, 2 d, 3 a, 4 b, 5 e
+
+### Chapter 4 Grammar Practice
+
+1) just
+2) yet
+3) already
+4) already
+5) yet
+6) has worked
+
 ### Chapter 5 Understanding
 
 1. Open-heart surgery
@@ -1142,6 +1501,21 @@ Meredith learned that being a doctor means balancing dreams and reality.
 6. Her sobs turned to quiet tears, then to steady breathing
 7. Hospital work was brutal but having people who understood made it bearable
 8. To honor George's memory by becoming an even better surgeon
+
+### Chapter 5 Fun Activities
+
+- Activity 2 (True/False): 1 T, 2 F, 3 F, 4 F, 5 T, 6 T, 7 T
+- Activity 4 (Complete the Rules): listen; comfort; understand; blame; help; bad
+- Activity 5 (Timeline): sample answers will vary
+- Activity 6 (Supportive Message): model answer will vary
+
+### Chapter 5 Grammar Practice
+
+1) was operating, stopped
+2) were preparing, was doing
+3) was walking, heard
+4) sat, talked
+5) went, felt
 
 ### Chapter 6 Understanding
 
@@ -1156,6 +1530,21 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. It had taken her in as a stranger and given her a family
 10. "I love this place. It's where I found myself."
 
+### Chapter 6 Fun Activities
+
+- Activity 1 (True/False): 1 T, 2 F, 3 T, 4 T, 5 F
+- Activity 2 (Matching): 1 a, 2 b, 3 c, 4 d, 5 e
+- Activity 3 (Welcome Message): sample answers will vary
+
+### Chapter 6 Grammar Practice
+
+1) has become
+2) has mentored
+3) has planned
+4) have faced
+5) has taken
+6) has found
+
 ### Chapter 7 Understanding
 
 1. The worst storm in decades with hurricane-force winds and power outages
@@ -1169,6 +1558,21 @@ Meredith learned that being a doctor means balancing dreams and reality.
 9. Storms destroyed and storms healed
 10. Their bonds were forged in crisis and became unbreakable
 
+### Chapter 7 Fun Activities
+
+- Activity 1 (True/False): 1 T, 2 F, 3 T, 4 F, 5 T
+- Activity 2 (Fill in the Blanks): generators; flashlight; hypothermia; flooded; prioritize
+- Activity 3 (Role-Play): model answers will vary
+
+### Chapter 7 Grammar Practice
+
+1) can’t
+2) can
+3) can
+4) can’t
+5) Take
+6) Stay
+
 ### Chapter 8 Understanding
 
 1. Three years
@@ -1181,6 +1585,21 @@ Meredith learned that being a doctor means balancing dreams and reality.
 8. Medical missions in developing countries to help people who can't afford care
 9. True success wasn't about achieving perfection, but about striving for excellence while embracing humanity
 10. Content, living her dream even as it evolved
+
+### Chapter 8 Fun Activities
+
+- Activity 1 (True/False): 1 T, 2 F, 3 F, 4 T, 5 T
+- Activity 2 (Matching): 1 e, 2 d, 3 c, 4 b, 5 a
+- Activity 3 (Fill in the Blanks): reality; perfection; excellence; patients; balance
+
+### Chapter 8 Grammar Practice
+
+1) more
+2) most
+3) more
+4) happier
+5) more
+6) most
 
 ---
 

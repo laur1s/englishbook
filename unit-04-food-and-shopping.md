@@ -139,6 +139,15 @@ bread, rice, pasta, flour, meat, fish, cheese, butter, milk, water, juice, coffe
 - I have **a lot of** friends. (NOT many friends in affirmative)
 - There is **a lot of** water. (NOT much water in affirmative)
 
+**More Examples:**
+- Do you have any bread? - Ar turi duonos?
+- I need some sugar. - Man reikia cukraus.
+- How many oranges? - Kiek apelsinų?
+- How much cheese? - Kiek sūrio?
+- She has many hobbies. - Ji turi daug pomėgių.
+- He doesn't have much money. - Jis neturi daug pinigų.
+- We bought a lot of vegetables. - Mes nusipirkome daug daržovių.
+
 ### A lot of / Lots of
 - Can be used with both countable and uncountable
 - Usually in affirmative sentences
