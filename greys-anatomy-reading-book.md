@@ -83,11 +83,27 @@ But she didn't know that her life at Seattle Grace was going to change everythin
 
 ### Creative Questions / Kūrybiniai Klausimai
 
+**Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
+
 1. If you were starting your first day at a new job, what would make you most nervous?
+   - *Example answer:* "If I was starting a new job, I would be most nervous about making mistakes and meeting new people."
+   - *Your answer:* "If I was starting a new job, I would be most nervous about _______________."
+
 2. Imagine you're Mr. Johnson. What would you tell a new young doctor?
+   - *Example answer:* "Don't be scared. You studied hard and you can do this. Just be kind to your patients."
+   - *Your answer:* "_______________. You can _______________. Just _______________."
+
 3. What would you say to welcome someone to your work team?
+   - *Example answer:* "Welcome to our team! Don't worry, we will help you learn everything. If you have questions, just ask me."
+   - *Your answer:* "Welcome to _______________! Don't worry, _______________. If you _______________."
+
 4. If you could ask Dr. Webber one question about being a doctor, what would it be?
+   - *Example answer:* "How do you stay calm when something goes wrong?"
+   - *Your answer:* "How do you _______________?"
+
 5. How do you think Meredith's life will change because of working at the hospital?
+   - *Example answer:* "I think Meredith's life will change a lot. She will make new friends, learn many things, and help people. But she will also be very tired."
+   - *Your answer:* "I think Meredith's life will _______________. She will _______________."
 
 ### Word Bank / Žodžių Bankas
 
@@ -208,11 +224,27 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 
 ### Creative Questions / Kūrybiniai Klausimai
 
+**Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
+
 1. If you were Sarah's husband, what would you tell your children while waiting?
+   - *Example answer:* "Mommy is sick, but the doctors are helping her. She loves you very much. Everything will be OK. We need to be brave."
+   - *Your answer:* "Mommy is _______________. The doctors are _______________. Everything will _______________."
+
 2. Imagine you're a nurse comforting scared children in the hospital. What would you say?
+   - *Example answer:* "I know you're scared, but you're safe here. The doctors are very good. Your mommy will get better soon. Would you like to draw a picture for her?"
+   - *Your answer:* "I know you're _______________, but _______________. The doctors _______________."
+
 3. What would be the most difficult part of working in an emergency room?
+   - *Example answer:* "I think the most difficult part would be seeing people hurt and in pain. I would be very tired and stressed. But helping people would feel good."
+   - *Your answer:* "I think the most difficult part would be _______________. I would _______________. But _______________."
+
 4. If you could thank the doctors who saved someone's life, what would you say?
+   - *Example answer:* "Thank you so much for saving my family member. You worked so hard. I will never forget what you did for us."
+   - *Your answer:* "Thank you for _______________. You _______________. I will never forget _______________."
+
 5. How do you think Sarah's accident will change her family's life?
+   - *Example answer:* "I think Sarah's family will be more careful when driving. They will be happy to be together. Sarah might be scared to drive again."
+   - *Your answer:* "I think Sarah's family will _______________. They will _______________. Sarah might _______________."
 
 ### Word Bank / Žodžių Bankas
 
@@ -232,53 +264,102 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 
 ---
 
-## Chapter 3: Love in the Hospital
+## Chapter 3: Secret Love - A Dangerous Romance
 
-## 3 Skyrius: Meilė Ligoninėje
+## 3 Skyrius: Slapta Meilė - Pavojingas Romanas
 
-Dr. Meredith Grey had been keeping a big secret for months. She was in love with Dr. Derek Shepherd, one of the most talented brain surgeons at Seattle Grace Hospital. Derek was handsome, intelligent, and kind. They met when Meredith was still a medical student, and their connection was immediate.
+### Word Bank / Žodžių Bankas
 
-Their relationship was passionate but complicated. Hospital rules strictly forbade doctors from dating each other. If their bosses found out, they could both lose their jobs or be transferred to different hospitals. So they kept their love hidden from everyone - their colleagues, friends, and even family.
+- **secret** - paslaptis
+- **in love** - įsimylėjęs
+- **brain surgeon** - neurochirurgas
+- **tumor** - auglys
+- **forbidden** - draudžiamas
+- **rules** - taisyklės
+- **kiss** - bučinys
+- **caught** - pagautas
+- **operating room** - operacinė
+- **dangerous** - pavojingas
+- **relationship** - santykiai
+- **hiding** - slapstymasis
+- **afraid** - bijantis
+- **discover** - atrasti
 
-Every day at work, Meredith and Derek had to act like professional colleagues only. They couldn't hold hands in the hallway or steal kisses in the elevator. But their eyes would meet across crowded rooms, and they shared secret smiles that only they understood.
+---
 
-One Wednesday morning, Derek was scheduled for a very difficult surgery. His patient was a 45-year-old man named Robert, who had a large brain tumor pressing on his brain stem. The tumor was in a dangerous location - one wrong move during surgery could cause paralysis or death.
+Meredith had a big secret. A very big secret. She was in love with Dr. Derek Shepherd. Derek was a brain surgeon - the best brain surgeon at Seattle Grace Hospital. He was handsome, smart, and kind. But there was a huge problem.
 
-Meredith wasn't assigned to the case, but she couldn't stay away. She stood outside the operating room, watching through the glass window. Her heart pounded as she saw Derek make the first incision. The surgery was delicate and complex. Derek worked with steady hands, removing the tumor millimeter by millimeter.
+Hospital rules said doctors cannot date other doctors. If their boss found out, Meredith and Derek could lose their jobs. They could be fired. So they kept their love secret. Nobody knew - not their friends, not their family, nobody.
 
-"Please be careful," Meredith whispered to herself. "Come back to me."
+Every day at work was so hard. They had to act like they were just colleagues. They couldn't hold hands. They couldn't kiss. They couldn't even stand too close to each other. But sometimes, their eyes met across the room. And in those moments, Meredith felt her heart beat faster.
 
-The surgery lasted seven hours. Meredith paced the waiting room, drinking coffee and trying not to worry. She thought about how much Derek meant to her. He made her feel alive, special, and loved. But their secret relationship also made her anxious. What if someone found out? What if they got caught?
+One Wednesday morning, Derek had a very dangerous surgery. His patient was Robert, a 45-year-old man. Robert had a big brain tumor. The tumor was growing in a very bad place. If Derek made even one small mistake, Robert could die or never walk again.
 
-Finally, the doors opened. Derek emerged, looking exhausted but triumphant. "The tumor is out," he announced to the waiting family. "Robert should make a full recovery."
+Meredith wasn't working on this surgery. But she was so worried about Derek. She stood outside the operating room and watched through the glass window. Her hands were shaking. Her heart was beating so fast.
 
-Meredith wanted to hug him right there in the hallway, but she couldn't. Instead, she found him later in the doctors' lounge, a quiet room where doctors could relax between cases.
+Derek made the first cut. The surgery began. It was so dangerous. One wrong move and everything could go wrong.
 
-"You were amazing today," Meredith said softly, closing the door behind her.
+"Please, Derek," Meredith whispered to the window. "Please be careful. Please come back to me safely."
 
-Derek smiled wearily. "Thanks. It was touch and go for a while there. I kept thinking about you the whole time."
+The surgery took seven long hours. Meredith couldn't leave. She walked back and forth in the hallway. She drank five cups of coffee. She was so scared. What if something happened to Derek? What if the surgery went wrong?
 
-They shared a brief, stolen kiss. It was risky - anyone could walk in. But in that moment, it was worth it.
+She loved Derek so much. He made her feel alive. He made her feel special. But their secret love was also making her crazy with worry. What if someone discovered their secret? What if they got caught?
 
-Their relationship wasn't just about romance. Derek supported Meredith's career goals. He encouraged her to pursue difficult cases and believed in her abilities. Meredith helped Derek stay grounded. She reminded him that patients were people, not just medical puzzles.
+Finally, after seven hours, the operating room doors opened. Derek walked out. He looked so tired. But he was smiling!
 
-But secrets have a way of coming out. Dr. Izzie Stevens, who was perceptive and caring, started to notice the way Meredith and Derek looked at each other. During lunch one day, Izzie pulled Meredith aside.
+"The surgery was successful," Derek told Robert's family. "The tumor is out. He's going to be OK."
 
-"Are you and Derek... you know... together?" Izzie asked quietly.
+Meredith wanted to run to Derek and hug him. She wanted to kiss him. But she couldn't. Not here. Not in front of everyone. So she waited.
 
-Meredith's heart skipped a beat. "What? No! We're just colleagues. Why would you think that?"
+Later, Meredith found Derek in the doctors' lounge. She quickly closed the door behind her. They were finally alone.
 
-Izzie raised an eyebrow. "The way you look at each other. It's not just professional. And I saw you coming out of the lounge together yesterday."
+"You were amazing today," Meredith said. She was almost crying. "I was so scared."
 
-"We're just friends," Meredith insisted, but her voice shook slightly. "Please don't say anything. It could ruin everything."
+"I was scared too," Derek said. "But I kept thinking about you. I kept thinking about us. And that gave me strength."
 
-Izzie nodded slowly. "I won't tell anyone. But be careful, Meredith. Hospital romances can be dangerous."
+They kissed. It was a beautiful kiss. But it was also a dangerous kiss. Anyone could open the door and see them. Anyone could discover their secret.
 
-Meredith knew Izzie was right. She and Derek decided to be even more careful. They met outside the hospital sometimes, in quiet parks or restaurants far from work. But the secrecy was hard. It made their love feel stolen and fragile.
+Suddenly, the door handle moved! Someone was coming in! Meredith and Derek jumped away from each other fast. It was Dr. Izzie Stevens. She looked at them strangely.
 
-As Meredith walked home that evening, she wondered how long they could keep their relationship hidden. Love in a hospital was beautiful but risky. Every day brought new challenges - medical emergencies, ethical dilemmas, and now the constant fear of discovery.
+"Oh, sorry," Izzie said. "I didn't know anyone was here."
 
-Yet Meredith wouldn't trade it for anything. Derek made her happier than she'd ever been. Their love gave her strength to face the difficulties of being a doctor. And that was worth any risk.
+"We were just talking about the surgery," Derek said quickly. Too quickly.
+
+Izzie smiled, but her smile was strange. "OK. See you later." She left.
+
+Meredith's heart was beating crazy fast. "Do you think she knows?" she asked Derek.
+
+"I don't know," Derek said. "But we need to be more careful."
+
+The next day at lunch, Izzie sat down next to Meredith. "We need to talk," Izzie said quietly.
+
+Meredith felt sick. "About what?"
+
+"About you and Derek," Izzie said. "I know you're together. I can see it in the way you look at each other. I saw you in the lounge yesterday. You two were very close."
+
+Meredith's face went red. "Izzie, please... we're not... it's not..."
+
+"Stop lying," Izzie said, but she wasn't angry. "I'm not going to tell anyone. But you need to be careful. If the chief finds out, you could both lose everything."
+
+Meredith started crying. "I know. I know it's dangerous. But I love him, Izzie. I really love him. What should I do?"
+
+Izzie took Meredith's hand. "I don't know. Love in a hospital is always complicated. Just be careful, OK?"
+
+That night, Meredith met Derek at a restaurant far from the hospital. They sat in a dark corner where nobody could see them.
+
+"This is so hard," Meredith said. "I hate hiding. I hate lying to everyone."
+
+"I know," Derek said. "But we'll find a way. Maybe I can transfer to a different department. Or maybe hospital rules will change."
+
+"But what if they never change?" Meredith asked. "What if we have to choose between our jobs and each other?"
+
+Derek took her hand. "Then we'll make that choice when we need to. But right now, all I know is that I love you. And I'm not going to give up on us."
+
+Meredith looked into his eyes. She was scared. Their love was dangerous. Their love was forbidden. But it was also real. And beautiful.
+
+"I love you too," she said. "No matter what happens."
+
+But as they left the restaurant, Meredith had a bad feeling. How long could they keep this secret? And what would happen when the secret came out?
 
 ---
 
@@ -297,11 +378,27 @@ Yet Meredith wouldn't trade it for anything. Derek made her happier than she'd e
 
 ### Creative Questions / Kūrybiniai Klausimai
 
+**Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
+
 1. If you had to keep your relationship secret at work, how would you communicate with your partner?
+   - *Example answer:* "I would send text messages. We could meet outside of work. We could talk on the phone in private. It would be very difficult."
+   - *Your answer:* "I would _______________. We could _______________. It would be _______________."
+
 2. Imagine you're a hospital administrator. What would you do about doctor relationships?
+   - *Example answer:* "I think doctors can date if they don't work in the same department. They should tell the hospital about their relationship. Love is important."
+   - *Your answer:* "I think doctors can _______________ if _______________. They should _______________."
+
 3. What would you do if you suspected two colleagues were dating?
+   - *Example answer:* "I wouldn't tell anyone. It's their private life. If they're doing their job well, it's OK. I would just be a good friend."
+   - *Your answer:* "I wouldn't _______________. It's _______________. If they're _______________, _______________."
+
 4. How do you think secret relationships affect people's happiness?
+   - *Example answer:* "Secret relationships are very stressful. People always worry about getting caught. They can't be honest with friends. I think it makes them unhappy and tired."
+   - *Your answer:* "Secret relationships are _______________. People always _______________. They can't _______________."
+
 5. If you were Meredith, would you risk your job for love? Why or why not?
+   - *Example answer:* "Yes, I would risk my job for love because true love is more important than work. / No, I wouldn't risk my job because I worked hard to become a doctor."
+   - *Your answer:* "Yes/No, I would/wouldn't risk my job for love because _______________."
 
 ### Word Bank / Žodžių Bankas
 
@@ -316,53 +413,110 @@ Yet Meredith wouldn't trade it for anything. Derek made her happier than she'd e
 
 ---
 
-## Chapter 4: The Miracle Baby
+## Chapter 4: The Miracle Baby - Will He Survive?
 
-## 4 Skyrius: Stebuklingas Kūdikis
+## 4 Skyrius: Stebuklingas Kūdikis - Ar Jis Išgyvens?
 
-Dr. Addison Montgomery was a world-renowned neonatal specialist who had recently joined Seattle Grace Hospital. She was brilliant, sophisticated, and brought a wealth of experience from treating the tiniest and most fragile patients. Addison specialized in high-risk pregnancies and complicated deliveries.
+### Word Bank / Žodžių Bankas
 
-One Tuesday morning, Addison received an urgent case. Lisa Thompson, a 32-year-old first-time mother, was brought to the maternity ward. Lisa was 35 weeks pregnant, but something was terribly wrong. Her baby wasn't growing properly in the womb. The fetus was severely underdeveloped, and Lisa's amniotic fluid was low.
+- **baby** - kūdikis
+- **pregnant** - nėščia
+- **birth/deliver** - gimti/gimdyti
+- **premature** - priešlaikinis
+- **tiny** - mažytis
+- **breathing** - kvėpavimas
+- **ultrasound** - ultragarsas
+- **crying/tears** - verkimas/ašaros
+- **miracle** - stebuklas
+- **survive** - išgyventi
+- **hope** - viltis
+- **fight** - kovoti
+- **alive** - gyvas
+- **prayer** - malda
 
-"I've been trying to have a baby for five years," Lisa sobbed when Addison examined her. "This is my last chance. Please save my baby!"
+---
 
-Addison performed an emergency ultrasound. The results were concerning. The baby had intrauterine growth restriction - it wasn't getting enough nutrients. "The baby is in distress," Addison explained gently. "We need to deliver immediately. There's a risk the baby won't survive outside the womb."
+Dr. Addison Montgomery was a baby doctor - the best baby doctor at Seattle Grace Hospital. She helped mothers have babies. Usually, she helped when something was very wrong with the pregnancy.
 
-Lisa's husband, Tom, held her hand tightly. "Whatever it takes," he said. "Just save our baby."
+On Tuesday morning, a woman arrived at the hospital. Her name was Lisa Thompson. She was 32 years old and pregnant. But something was very wrong. Very, very wrong.
 
-Dr. Meredith Grey was assigned to assist Addison. Meredith had always been fascinated by obstetrics, though it could be heartbreaking work. The team prepared for an emergency cesarean section.
+Lisa had tried to have a baby for five years. Five long years. She had many problems. She had lost two babies before they were born. This baby was her last chance. Her only chance.
 
-In the operating room, the atmosphere was tense. Addison made the incision carefully. "The baby is very small," she said. "Heart rate is dropping."
+When Addison looked at the ultrasound, her face became serious. The baby was too small. Much too small. The baby wasn't growing. The baby was in danger.
 
-Meredith monitored the fetal heart rate closely. "Come on, little one," she whispered. "Fight for us."
+"Please," Lisa was crying so hard. "Please save my baby. I've been waiting for five years. Five years! This is my last chance. Please, doctor, please!"
 
-Addison delivered the baby - a tiny boy weighing just 1.8 kilograms. He was premature and needed immediate intensive care. His skin was translucent, his breathing shallow. The neonatal team rushed him to the NICU (intensive care unit for newborns).
+Lisa's husband, Tom, was holding her hand. He was crying too. "We can't lose another baby," he said. "We just can't. Please help us."
 
-Lisa woke up from anesthesia desperate for news. "My baby? Is he okay?"
+Addison looked at Meredith. "We need to deliver this baby now. Right now. If we wait, the baby will die inside the mother."
 
-Addison sat beside her. "He's alive, but critical. We're doing everything we can. He's a fighter."
+"But the baby is only 35 weeks old," Meredith said. "That's too early. The baby is too small. Can the baby survive?"
 
-For the next 48 hours, it was touch and go. The baby had breathing difficulties and needed a ventilator. Addison and Meredith took turns monitoring him around the clock. Meredith brought Lisa breast milk every few hours, even when Lisa was exhausted.
+"I don't know," Addison said honestly. "But if we don't try, the baby will definitely die."
 
-On the third day, a miracle happened. The baby began breathing on his own. His vital signs stabilized. Addison removed the ventilator. "He's going to make it," she announced.
+They took Lisa to the operating room. Tom couldn't come with them. He had to wait outside. He sat in the waiting room and cried. He prayed (meldėsi). He hoped for a miracle.
 
-Lisa was allowed to hold her son for the first time. She wept tears of joy as she cradled the tiny baby against her chest. "Hello, my little miracle," she whispered. "You're perfect."
+In the operating room, Addison began the surgery. She cut very carefully. "The baby is coming," she said. "The baby is so small. So, so small."
 
-Tom joined them, his eyes filled with tears. "Thank you," he told the doctors. "You gave us our family."
+The baby came out. It was a boy. But he was so tiny. So tiny that he looked like a little doll. His skin was almost see-through (permatomna). His eyes were still closed. And he wasn't breathing.
 
-Addison hugged Meredith tightly. "We did it! We saved two lives today."
+"He's not breathing!" Meredith shouted. "The baby isn't breathing!"
 
-Meredith felt a deep sense of accomplishment. This was why she became a doctor - to witness miracles and help create families.
+Addison worked fast. She cleaned the baby's mouth. She rubbed his chest. "Come on, baby. Breathe. Please breathe!"
 
-But medicine isn't always about happy endings. Later that afternoon, Meredith was called to comfort an elderly woman named Mrs. Patterson. Mrs. Patterson had lived a full 87 years, but cancer had finally taken its toll. Her children gathered around her bed as she took her last breath.
+For three terrible seconds, nothing happened. The room was silent. Everyone was holding their breath.
 
-"I'm so sorry," Meredith said softly, holding the family's hands. "She was a remarkable woman. She lived a long, loving life."
+Then - suddenly - the baby made a small sound. A tiny cry.
 
-One of the daughters nodded through tears. "She was our miracle too. Thank you for being here."
+"He's breathing!" Meredith almost screamed. "He's alive!"
 
-As Meredith left the room, she reflected on the day. Birth and death, joy and sorrow - they were two sides of the same coin in medicine. But moments like saving the miracle baby made all the difficult days worthwhile.
+But the baby was still in danger. He was too small. Too weak. They rushed him to the NICU - the special room for very sick babies. The baby needed machines to help him breathe. He needed special care.
 
-Hospital life has both joy and sorrow (liūdesys).
+When Lisa woke up from the surgery, the first thing she said was: "My baby? Where is my baby? Is he alive?"
+
+Addison sat next to her bed. "Your baby is alive. But he's very sick, Lisa. He's very, very small. The next two days will be critical (kritiški). We don't know if he will survive."
+
+Lisa started crying. "Can I see him?"
+
+"Not yet," Addison said. "He's too sick. But we're doing everything we can."
+
+For two days and two nights, the baby was in critical condition. Addison and Meredith didn't go home. They stayed at the hospital. They watched the baby every minute. The baby needed a breathing machine. His heart was weak. He was so small - only 1.8 kilograms.
+
+"Fight, little one," Meredith whispered to the baby. "Your mother is waiting for you. Your father is waiting for you. Please fight."
+
+Tom and Lisa stayed in the hospital too. They couldn't sleep. They couldn't eat. They just waited and prayed.
+
+On the morning of the third day, something amazing happened. The baby opened his eyes. His breathing got stronger. His heart rate got better.
+
+"I think we can take him off the breathing machine," Addison said. Her hands were shaking. "Let's try."
+
+They turned off the machine. Everyone held their breath. Would the baby breathe on his own?
+
+One second. Two seconds. Three seconds.
+
+And then - the baby took a breath! All by himself! And another breath! He was breathing alone!
+
+"It's a miracle!" Meredith said. She was crying happy tears.
+
+Addison ran to tell Lisa and Tom. "Your baby is breathing on his own! He's going to be OK! He's going to survive!"
+
+Lisa couldn't stop crying. "Can I hold him now? Please, can I hold my baby?"
+
+They brought the tiny baby to Lisa. She held him for the first time. He was so small that he fit in her two hands. But he was alive. Her baby was alive.
+
+"Hello, my miracle baby," Lisa whispered. "I waited so long for you. Welcome to the world, my little fighter."
+
+Tom was crying and smiling at the same time. "Thank you," he told the doctors. "You gave us our family. You gave us our dream."
+
+Meredith felt so happy. This was why she became a doctor. To save lives. To make miracles happen.
+
+But that same afternoon, something sad happened. An old woman in the hospital died. Her name was Mrs. Patterson. She was 87 years old. She had cancer. The doctors couldn't save her.
+
+Meredith held the old woman's hand as she died. The woman's children were crying.
+
+"Life and death," Meredith thought. "Both in the same day. A baby is born. An old woman dies. This is a hospital. This is medicine."
+
+As Meredith walked home that night, she thought about Lisa's miracle baby. She thought about Mrs. Patterson. Hospitals have happy stories and sad stories. But today, at least one story had a happy ending. And that was enough.
 
 ---
 
@@ -381,11 +535,110 @@ Hospital life has both joy and sorrow (liūdesys).
 
 ### Creative Questions / Kūrybiniai Klausimai
 
+**Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
+
 1. If you were a parent waiting for news about your premature baby, what would you want to hear from the doctors?
+   - *Example answer:* "I would want to hear that my baby is alive and fighting. I would want the doctor to tell me the truth. I would also want to know when I can see my baby."
+   - *Your answer:* "I would want to hear _______________. I would want the doctor to _______________."
+
 2. Imagine you're a neonatal nurse. What would be the most rewarding part of your job?
+   - *Example answer:* "The most rewarding part would be seeing tiny babies get healthy and go home with their families. I would love helping families during difficult times."
+   - *Your answer:* "The most rewarding part would be _______________. I would love _______________."
+
 3. What would you do to support a family going through a difficult pregnancy?
+   - *Example answer:* "I would visit them at the hospital. I would bring them food. I would listen to their worries. I would tell them to stay positive."
+   - *Your answer:* "I would _______________. I would bring _______________. I would tell them _______________."
+
 4. How do you think premature babies change over time?
+   - *Example answer:* "Premature babies get bigger and stronger every day. They learn to breathe on their own. Their skin becomes less see-through. They start to look like regular babies."
+   - *Your answer:* "Premature babies get _______________. They learn _______________. They start to _______________."
+
 5. If you could thank someone who saved a life, what would be the most meaningful way?
+   - *Example answer:* "I would write them a letter telling them how much they mean to my family. I would hug them and cry happy tears. Maybe I would bring them flowers."
+   - *Your answer:* "I would _______________. I would hug them and _______________. Maybe I would _______________."
+
+---
+
+### Fun Activities / Linksmos Veiklos
+
+#### Activity 1: True or False? / Tiesa ar Melas?
+
+*Read the statements and circle T (True) or F (False):*
+
+1. Lisa had been trying to have a baby for 5 years. **T / F**
+2. The baby was born at 40 weeks. **T / F**
+3. The baby wasn't breathing when he was born. **T / F**
+4. Tom could go into the operating room with Lisa. **T / F**
+5. The baby started breathing on his own on the third day. **T / F**
+6. Mrs. Patterson was 75 years old. **T / F**
+
+*Answers: 1-T, 2-F (35 weeks), 3-T, 4-F, 5-T, 6-F (87 years)*
+
+#### Activity 2: Role-Play Dialog / Vaidmenų Žaidimas
+
+**Practice this conversation with a partner:**
+
+**Student A (Lisa):** "Doctor, will my baby be OK? I'm so scared."
+
+**Student B (Doctor):** "Your baby is very small, but we're doing everything we can. He's a fighter."
+
+**Student A:** "Can I see him? Please, I need to see my baby."
+
+**Student B:** "Soon. Right now he needs special care. But you can see him very soon."
+
+**Now create your own dialog:** Imagine you're Tom talking to his children about their new baby brother.
+
+#### Activity 3: Fill in the Blanks / Užpildykite Tuščias Vietas
+
+*Complete the summary using words from the Word Bank:*
+
+Lisa wanted to have a __________ for five years. When the baby was born, he was very __________. He wasn't __________ at first. The doctors worked very fast. Finally, the baby made a tiny __________. After three days, the baby could __________ on his own. It was a __________!
+
+*Word Bank: baby, tiny, breathing, cry, breathe, miracle*
+
+#### Activity 4: Retelling Challenge / Pasakojimo Užduotis
+
+**Tell the story in your own words using these prompts:**
+
+- Lisa wanted...
+- The baby was born, but...
+- The doctors were worried because...
+- After three days...
+- In the end...
+
+#### Activity 5: Character Feelings Chart / Veikėjų Jausmų Lentelė
+
+**Match the character with how they felt and why:**
+
+| Character | Feeling | Why? |
+|-----------|---------|------|
+| Lisa | scared and worried | Her baby was too small and sick |
+| Tom | ___________ | ___________ |
+| Meredith | ___________ | ___________ |
+| The baby | fighting/strong | ___________ |
+
+**Your turn:** Complete the chart!
+
+#### Activity 6: Vocabulary Matching Game / Žodžių Atitikmenų Žaidimas
+
+**Match the English word with the Lithuanian meaning:**
+
+1. tiny __________          a. išgyventi
+2. miracle __________       b. kvėpavimas
+3. survive __________       c. mažytis
+4. breathing __________     d. stebuklas
+5. tears __________         e. ašaros
+
+#### Activity 7: What Happens Next? / Kas Nutiks Toliau?
+
+**Prediction activity - discuss with your partner:**
+
+- Will Lisa's baby grow up healthy?
+- How will this experience change Lisa and Tom?
+- Will Meredith want to have children after this experience?
+- Do you think Meredith will become a baby doctor like Addison?
+
+**Write your prediction:** "I think _______________ because _______________."
 
 ### Word Bank / Žodžių Bankas
 
@@ -401,67 +654,217 @@ Hospital life has both joy and sorrow (liūdesys).
 
 ---
 
-## Chapter 5: Friendship and Support
+## Chapter 5: When a Patient Dies - The Worst Day
 
-## 5 Skyrius: Draugystė ir Palaikymas
+## 5 Skyrius: Kai Pacientas Miršta - Blogiausia Diena
 
-Dr. Cristina Yang had always been the strongest person Meredith knew. Cristina was brilliant, focused, and never showed weakness. But today, everything changed. Cristina's patient, a 55-year-old man named George, died on the operating table during open-heart surgery.
+### Word Bank / Žodžių Bankas
 
-The surgery had started well. Cristina and her team worked perfectly, repairing George's damaged heart valve. But during the final stages, George's heart stopped. Despite 45 minutes of CPR and every medical intervention, they couldn't bring him back.
+- **heart surgery** - širdies operacija
+- **patient** - pacientas
+- **die/died** - mirti/mirė
+- **crying/sobbing** - verkimas/aimanuoja
+- **fault** - kaltė
+- **blame** - kaltinti
+- **failure** - nesėkmė
+- **support** - palaikymas
+- **friend/friendship** - draugas/draugystė
+- **comfort** - paguosti
+- **mistake** - klaida
+- **help** - padėti
+- **tissue** - nosinė
+- **hug** - apkabinti
 
-Cristina stood frozen in the OR, staring at the flat line on the monitor. "No," she whispered. "This can't be happening." Tears streamed down her face as she realized she had lost her first patient.
+---
 
-In the scrub room, Cristina broke down completely. She slumped against the wall, sobbing uncontrollably. "I killed him," she gasped. "I was too slow. I missed something."
+Cristina Yang was always the strongest doctor at the hospital. She never cried. She never showed fear. She was like a machine - strong, smart, and perfect. But today, everything changed.
 
-Dr. Meredith Grey found her friend and immediately knew something was wrong. Cristina's eyes were red, her hands were shaking. Without a word, Meredith led Cristina to the empty doctors' lounge and closed the door.
+Today, Cristina's patient died.
 
-"What happened?" Meredith asked gently, handing Cristina a tissue.
+His name was George. He was 55 years old. He had heart problems. Cristina was doing heart surgery on him. The surgery started well. Everything was going perfectly. Cristina was confident. "This will be easy," she thought.
 
-Cristina could barely speak through her sobs. "George died. On my table. I tried everything, but it wasn't enough. What if I'm not cut out for this? What if I hurt more people?"
+But then, suddenly, George's heart stopped.
 
-Meredith pulled Cristina into a tight hug. "Listen to me. You're an amazing surgeon. Everyone loses patients sometimes. It's not your fault. You did everything right."
+"His heart stopped!" a nurse shouted. "We're losing him!"
 
-Dr. Alex Karev walked in and saw the scene. Alex was usually sarcastic and kept his distance, but today he sat down beside them. "Cristina, you were incredible in there. The valve was too damaged. No one could have saved him. Don't blame yourself."
+Cristina worked fast. She did CPR. She tried everything. Forty-five minutes passed. Cristina was sweating. Her hands were shaking. But nothing worked.
 
-Just then, Dr. Izzie Stevens entered with a tray of coffee and sandwiches. She had heard what happened and wanted to help. "We're all here for you," Izzie said, handing Cristina a cup. "Remember when I lost my first patient? You helped me through it. Now it's our turn."
+George was dead.
 
-The four friends sat together for over an hour. They shared stories of their own failures and fears. Cristina talked about her immigrant parents who sacrificed everything so she could become a doctor. Meredith confessed her insecurities about being "the daughter of a famous surgeon." Alex admitted he sometimes felt like an imposter. Izzie shared her worries about balancing medicine with her personal life.
+"Time of death: 3:47 PM," Cristina said quietly. Her voice was shaking.
 
-Gradually, Cristina's sobs turned to quiet tears, then to steady breathing. "Thank you," she said finally. "I don't know what I'd do without you all."
+She stood there, looking at George's body. The monitor showed a flat line. No heartbeat. Just silence. Cristina couldn't move. She couldn't breathe. This was her patient. And now he was dead.
 
-"That's what friends are for," Meredith replied. "We're a family here."
+In the scrub room, Cristina finally broke down. She fell against the wall and started crying. She was crying so hard that she couldn't stand up. She slid down to the floor.
 
-As the group dispersed back to work, Meredith reflected on how important these friendships were. Hospital work was brutal - long hours, life-and-death decisions, constant stress. But having people who understood made it bearable.
+"I killed him!" Cristina was sobbing. "It's my fault! I did something wrong! I killed him!"
 
-Cristina returned to her duties with renewed determination. She would honor George's memory by becoming an even better surgeon. And she knew that no matter what challenges came next, she had friends who would be there.
+Her hands were shaking. She couldn't stop crying. Strong, perfect Cristina was completely broken.
 
-In the world of medicine, losses were inevitable. But so was the support that made healing possible.
+Meredith was walking past when she heard the crying. She ran into the scrub room and saw her best friend on the floor, crying like a child.
+
+"Cristina!" Meredith sat down next to her on the floor. "What happened?"
+
+Cristina could barely speak. "He died... George died... on my table... I tried everything... but I couldn't save him..." She looked at Meredith with terrified eyes. "What if I'm a bad doctor? What if I kill more people? Maybe I should quit!"
+
+Meredith grabbed Cristina's hands. "No! Listen to me! You're an amazing doctor! Sometimes patients die. It's not always your fault. You did everything right."
+
+"But he's DEAD!" Cristina screamed. "He came here to get better, and now he's DEAD because of me!"
+
+Just then, Alex walked in. He saw Cristina crying on the floor. Usually, Alex made jokes about everything. But not today. Today, he sat down next to them.
+
+"Cristina," Alex said gently. "I looked at George's chart. His heart was too damaged. No doctor in the world could have saved him. Not even the best surgeon. You gave him a chance. That's all anyone could do."
+
+Izzie came in with coffee and sandwiches. She heard what happened and wanted to help. She sat down on the floor with them. Now all four friends were sitting on the floor together.
+
+"We're here for you," Izzie said softly. "Remember two months ago when I lost my first patient? I cried for three days. You helped me then. Now we're going to help you."
+
+They sat together for a long time. They talked about their fears. They talked about their failures.
+
+Cristina told them about her parents. "My parents moved to America with nothing. They worked three jobs so I could go to medical school. They believed in me. What will I tell them now? That I failed?"
+
+Meredith shared her own fears. "My mother was a famous surgeon. Everyone expects me to be perfect like her. But I'm not perfect. I make mistakes every day. I'm scared I'll never be good enough."
+
+Alex surprised everyone. "Sometimes I feel like a fake," he said quietly. "Like one day, everyone will discover I'm not really smart enough to be a doctor."
+
+Izzie added, "I worry that being a doctor is taking over my whole life. I have no time for anything else. No time for friends. No time for love. Just work, work, work."
+
+Slowly, Cristina stopped crying. Her friends' words were helping. She wasn't alone. They all had fears. They all had failures. But they had each other.
+
+"Thank you," Cristina said finally. Her voice was still shaking, but she wasn't crying anymore. "I don't know what I would do without you."
+
+"That's what friends are for," Meredith said, hugging her. "We're not just colleagues. We're family."
+
+Later, Cristina went back to work. She was still sad. George's death still hurt. But she felt stronger. She had friends who understood. She had friends who cared.
+
+That night, as Meredith drove home, she thought about friendship. Being a doctor was so hard. Patients died. Mistakes happened. But having good friends made it possible to continue.
+
+"Friendship saves us," Meredith thought. "Not just patients. But us too."
 
 ---
 
 ### Understanding Questions / Supratimo Klausimai
 
-1. What surgery was Cristina performing when her patient died?
-2. How did Cristina react immediately after the surgery?
-3. What did Cristina blame herself for?
-4. What did Meredith do when she found Cristina?
-5. What stories did the friends share with each other?
-6. How did Cristina feel after talking with her friends?
-7. What did Meredith think about hospital friendships?
-8. What did Cristina decide to do in honor of her patient?
+1. What was wrong with George?
+2. What happened during Cristina's surgery?
+3. Where did Cristina cry?
+4. What did Cristina say was her fault?
+5. Who found Cristina crying?
+6. What did Alex tell Cristina about George's heart?
+7. What did each friend share about their fears?
+8. How did Cristina feel after talking with her friends?
+9. What did Meredith think about as she drove home?
+10. What did Meredith learn about friendship?
 
 ### Creative Questions / Kūrybiniai Klausimai
 
-1. If you lost someone important to you, what would your friends do to help?
-2. Imagine you're a counselor for doctors. What advice would you give after a loss?
-3. What would you say to comfort someone who blames themselves for something?
-4. How do you think sharing personal stories helps people heal?
-5. If you could create a support system for doctors, what would it include?
+**Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
-### Word Bank / Žodžių Bankas
+1. If your friend was very sad, what would you do to help them?
+   - *Example answer:* "I would sit with them and listen. I would hug them and tell them everything will be OK. I would bring them their favorite food or drink."
+   - *Your answer:* "I would sit with them and _______________. I would hug them and _______________. I would bring _______________."
 
-- Open-heart surgery: atviro širdies operacija
-- CPR: gaivinimas
+2. Imagine someone blames themselves for a mistake. What would you say to comfort them?
+   - *Example answer:* "It's not your fault. Everyone makes mistakes. You did your best. Don't be so hard on yourself."
+   - *Your answer:* "It's not your fault. Everyone _______________. You did _______________. Don't _______________."
+
+3. Why do you think sharing fears with friends helps people feel better?
+   - *Example answer:* "When you share your fears, you realize you're not alone. Your friends understand you. Talking about problems makes them feel smaller."
+   - *Your answer:* "When you share your fears, you _______________. Your friends _______________. Talking about _______________."
+
+4. Who is your best friend? How do they help you when you're sad?
+   - *Example answer:* "My best friend is Maria. When I'm sad, she listens to me. She makes me laugh. She tells me that tomorrow will be better."
+   - *Your answer:* "My best friend is _______________. When I'm sad, _______________. She/He _______________."
+
+5. If you could say something to Cristina after her patient died, what would you say?
+   - *Example answer:* "Cristina, you're a great doctor. Sometimes bad things happen, but it's not your fault. Your friends love you and we're here to help you."
+   - *Your answer:* "Cristina, you're _______________. Sometimes _______________, but _______________. Your friends _______________."
+
+---
+
+### Fun Activities / Linksmos Veiklos
+
+#### Activity 1: Emotions Vocabulary / Emocijų Žodynas
+
+**Match the feeling with the situation from the story:**
+
+| Feeling | Situation |
+|---------|-----------|
+| shocked (šokiruotas) | When George's heart stopped |
+| guilty (kaltas) | When Cristina thought it was her fault |
+| supportive (palaikantis) | When friends sat with Cristina |
+| broken (sudužęs) | When Cristina cried on the floor |
+| grateful (dėkingas) | When Cristina thanked her friends |
+
+**Now write your own:** "I feel _______________ when _______________."
+
+#### Activity 2: True or False? / Tiesa ar Melas?
+
+*Circle T (True) or F (False):*
+
+1. Cristina never cried before this day. **T / F**
+2. George was 45 years old. **T / F**
+3. The surgery took 45 minutes. **T / F**
+4. Meredith found Cristina crying in the cafeteria. **T / F**
+5. All four friends sat on the floor together. **T / F**
+6. Alex usually makes jokes. **T / F**
+7. Cristina's parents worked three jobs. **T / F**
+
+*Answers: 1-T, 2-F (55), 3-F (CPR took 45 min), 4-F (scrub room), 5-T, 6-T, 7-T*
+
+#### Activity 3: Role-Play - Comforting a Friend / Draugo Guodimas
+
+**Practice with a partner:**
+
+**Student A (Sad friend):** "I failed my test. I studied so hard, but I still failed. I'm so stupid!"
+
+**Student B (Comforting friend):** "You're not stupid! Everyone fails sometimes. You can try again. I'll help you study."
+
+**Student A:** "Really? You'll help me?"
+
+**Student B:** "Of course! That's what friends do. We help each other."
+
+**Now create your own dialog:** Your friend is crying because something bad happened. What do you say?
+
+#### Activity 4: Complete the Friendship Rules / Draugystės Taisyklės
+
+**Fill in the blanks with words from the box:**
+
+Good friends always _______________ to each other. When your friend is sad, you should _______________ them. Friends _______________ each other's problems. If your friend makes a mistake, don't _______________ them. Instead, offer to _______________. True friendship means being there in _______________ times and good times.
+
+*Word Box: listen, comfort, understand, blame, help, bad*
+
+#### Activity 5: Character Feelings Timeline / Jausmų Linija
+
+**Show how Cristina's feelings changed:**
+
+1. During surgery → _______________ (confident/sure)
+2. When George died → _______________
+3. In the scrub room → _______________
+4. When friends came → _______________
+5. At the end → _______________
+
+#### Activity 6: Write a Supportive Message / Parašykite Palaikantį Laišką
+
+**Imagine you're texting Cristina. Write a short message to make her feel better:**
+
+*Example:*
+"Hi Cristina. I heard what happened. I'm so sorry. You're an amazing doctor. It's not your fault. Do you want to talk? I'm here for you. ❤️"
+
+*Your message:*
+"_______________________________________________________
+_______________________________________________________"
+
+#### Activity 7: Discussion - Friendship is Important / Diskusija
+
+**Discuss with your partner:**
+
+- Why is friendship important in difficult jobs?
+- How do friends help each other during hard times?
+- Have you ever helped a friend who was very sad? What did you do?
+- What makes a good friend?
+
+**Write one sentence:** "A good friend is someone who _______________."
 
 ---
 
