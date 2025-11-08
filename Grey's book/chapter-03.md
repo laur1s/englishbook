@@ -1,13 +1,3 @@
-# Grey's Anatomy: Hospital Stories
-
-## Pilkoji Anatomija: Ligoninės Istorijos
-
-**Reading Level: A2.2 English with Lithuanian translations**
-
-Welcome to Seattle Grace Hospital! This book tells stories about doctors, nurses, and patients. You'll learn English while reading exciting hospital dramas. All difficult words have Lithuanian translations.
-
----
-
 ## Chapter 3: Secret Love - A Dangerous Romance
 
 ## 3 Skyrius: Slapta Meilė - Pavojingas Romanas
@@ -162,33 +152,5 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
 - incision — pjūvis
 - waiting room — laukiamasis
 - doctors' lounge — gydytojų poilsio kambarys
-
----
-
-### Fun Activities
-
-#### Activity 1: True or False?
-
-1. Meredith and Derek could date openly at work. (F)
-2. Derek's surgery lasted seven hours. (T)
-3. Izzie accidentally saw them being very close. (T)
-4. The surgery failed. (F)
-5. Meredith and Derek met in the crowded cafeteria to talk privately. (F)
-
-#### Activity 2: Vocabulary Matching
-
-1. brain surgeon ___
-2. operating room ___
-3. waiting room ___
-4. rules ___
-5. secret ___
-
-a) taisyklės  b) operacinė  c) neurochirurgas  d) laukiamasis  e) paslaptis
-
-#### Activity 3: Fill in the Blanks
-
-Their relationship was a __________ because hospital __________ forbade dating. Meredith watched Derek's __________ through the __________. Later they shared a quick __________ but had to be __________.
-
-Word Bank: secret, rules, surgery, window, kiss, careful
 
 ---

@@ -1,13 +1,3 @@
-# Grey's Anatomy: Hospital Stories
-
-## Pilkoji Anatomija: Ligoninės Istorijos
-
-**Reading Level: A2.2 English with Lithuanian translations**
-
-Welcome to Seattle Grace Hospital! This book tells stories about doctors, nurses, and patients. You'll learn English while reading exciting hospital dramas. All difficult words have Lithuanian translations.
-
----
-
 ## Chapter 2: The Emergency Room - A Life or Death Night
 
 ## 2 Skyrius: Skubios Pagalbos Skyrius - Gyvenimo ir Mirties Naktis
@@ -43,12 +33,12 @@ Welcome to Seattle Grace Hospital! This book tells stories about doctors, nurses
 
 Put the verbs in Past Simple:
 
-1) The drunk driver ___ (hit) Sarah's car.
+1) The drunk driver ___ (hit) Sarah’s car.
 2) Sarah ___ (scream) in pain.
 3) Cristina ___ (look) at the X-rays.
 4) They ___ (operate) for three hours.
 5) Mark ___ (cry) in the ER.
-6) The team ___ (save) Sarah's leg.
+6) The team ___ (save) Sarah’s leg.
 
 ---
 
@@ -168,29 +158,5 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 - recovery room — atsigavimo palata
 - anesthesia — anestezija
 - physical therapy — fizinė terapija
-
----
-
-### Fun Activities
-
-#### Activity 1: True or False?
-
-1. It was Friday night in the ER. (T)
-2. Sarah had a simple leg sprain. (F)
-3. Cristina performed the surgery. (T)
-4. Mark is Sarah's brother. (F)
-5. The surgery took three hours. (T)
-6. They saved Sarah's leg. (T)
-
-#### Activity 2: Fill in the Blanks
-
-An __________ brought Sarah on a __________. The __________ showed a bad break. She needed __________ quickly. There was a lot of __________. She cried about her __________.
-
-Word Bank: ambulance, stretcher, X-rays, surgery, blood, children
-
-#### Activity 3: Role-Play - Comforting a Family Member
-
-Student A (Doctor): Explain the plan to save Sarah's leg.
-Student B (Mark): Ask questions about risks and recovery.
 
 ---
