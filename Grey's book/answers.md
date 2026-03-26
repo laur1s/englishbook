@@ -222,6 +222,52 @@
 5) more
 6) most
 
+### Chapter 9 Understanding
+
+1. Mr. Evans had severe heart failure
+2. His only hope was a heart transplant
+3. Dr. Cristina Yang
+4. A donor heart was available
+5. The donor had a rare genetic condition that created a small long-term risk
+6. Whether to use the heart with a small risk or let him die waiting
+7. She accepted the risk and agreed to the transplant
+8. Eight hours
+9. She said Cristina was amazing and needed to count on her skills and her team
+10. Meredith felt satisfied and sure she was where she belonged
+
+### Chapter 9 Fun Activities
+
+- Activity 1 (Role-Play): model answers will vary (clear explanation, questions, informed decision)
+- Activity 2 (Vocabulary Matching): 1 look into, 2 rule out, 3 step in, 4 count on, 5 hold back
+
+### Chapter 9 Grammar Practice
+
+- Past Continuous: 1 was getting, 2 was living, 3 was looking, 4 was observing, 5 were crying
+- Mixed tense sentences: 1 Cristina was working when her pager went off. 2 Meredith was talking to the family when Alex rushed in. 3 While they were preparing for surgery, the problem arose.
+
+### Chapter 10 Understanding
+
+1. Dr. Elena Marquez was a visiting surgeon who worked on medical missions
+2. Because Elena helped people with very few resources and inspired her
+3. She collapsed after returning from a volunteer trip and feeling pain on the plane
+4. Alex thought it might be an infection, Cristina thought she might have hurt herself, and Elena believed it couldn't have been only food poisoning
+5. She had hit her side in a jeep accident while delivering supplies
+6. She did not want to leave the trip early and wanted to keep helping
+7. Her spleen
+8. Alex Karev
+9. She offered Izzie the chance to consider a six-week medical mission in the summer
+10. Izzie realized she had to stop being afraid of the question about what kind of doctor she wanted to be
+
+### Chapter 10 Fun Activities
+
+- Activity 1 (Role-Play): model answers will vary (calm questions, honest answers, reassurance)
+- Activity 2 (Story Detective Timeline): correct order is 3, 1, 2, 4; sample sentences will vary
+
+### Chapter 10 Grammar Practice
+
+- Complete the sentences: 1 must have hurt, 2 might have eaten, 3 couldn't have been, 4 might have made, 5 must have seen, 6 must have known
+- Rewrite the clues: 1 Lily must have kept the secret because she wanted to continue helping. 2 Her mother couldn't have understood the real problem before Lily spoke. 3 The doctors must have needed more information before surgery. 4 The pain might have gotten worse during the flight. 5 The team couldn't have found the answer without Lily's honesty.
+
 ---
 
 **Vocabulary List / Žodynas:**

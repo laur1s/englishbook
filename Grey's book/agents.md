@@ -98,6 +98,7 @@ This section provides a structured overview of the grammar topics for the A2 lev
 - **Past Continuous vs. Past Simple**: Contrasted and practiced. (Chapter 5 & 9)
 - **Modal Verbs for Advice (`should`/`shouldn't`)**: Introduced in the context of exercises. (Implicitly in Chapter 5, more formally can be reinforced).
 - **Modal Verbs for Deduction (`must`/`can't`)**: Introduced in the context of exercises. (Implicitly in Chapter 9).
+- **Modals of speculation about the past (`must have`, `might have`, `couldn't have`)**: Introduced and practiced. (Chapter 10)
 
 #### A2 Grammar Remaining
 
@@ -114,7 +115,6 @@ The following topics are planned for upcoming chapters to complete the A2 syllab
 
 - **`have to` / `don't have to` (external obligation/necessity).**
 - **`may` / `might` (possibility).**
-- **Modals of speculation about the past (`must have`, `might have`, `couldn't have`)** (Suggested for Chapter 10).
 
 **Nouns, Pronouns, and Determiners:**
 
@@ -216,7 +216,7 @@ The following topics are planned for upcoming chapters to complete the A2 syllab
 
 ## Story Continuity Guide
 
-### Story Arc So Far (Chapters 1-9)
+### Story Arc So Far (Chapters 1-10)
 
 The story follows Meredith Grey and her friends from their first day as nervous interns at Seattle Grace Hospital to becoming confident surgeons.
 
@@ -224,24 +224,26 @@ The story follows Meredith Grey and her friends from their first day as nervous 
 - **Chapters 4-5:** The team faces high-stakes medical cases, including a "miracle baby" and the emotional trauma of losing a patient on the operating table, which tests Cristina's confidence but strengthens the friends' bond.
 - **Chapters 6-8:** Focus on personal growth and new beginnings. Meredith discovers her half-sister, Lexie Grey, among the new interns. Meredith and Derek get married. The hospital endures a massive storm, forcing the doctors to work under extreme pressure. The characters reflect on their dreams versus the reality of being a doctor.
 - **Chapter 9:** The team handles a difficult heart transplant case with an ethical dilemma, reinforcing the theme of teamwork and difficult choices.
+- **Chapter 10:** A visiting mission doctor inspires Izzie while the team treats a teenager with a hidden spleen injury. The case connects honesty, service, and Izzie's growing wish to do humanitarian work.
 
-### Character Status (as of end of Chapter 9)
+### Character Status (as of end of Chapter 10)
 
 - **Meredith Grey:** Married to Derek Shepherd. She is a capable and reflective surgeon, balancing her demanding career with her new family life. She serves as the emotional core of the group.
 - **Derek Shepherd:** A world-class neurosurgeon, now married to Meredith. He is a supportive husband and a mentor to the younger doctors.
 - **Cristina Yang:** A highly ambitious and competitive cardiac surgeon. She is brilliant and driven, and her friendship with Meredith is a key source of support.
 - **Alex Karev:** Has evolved from an arrogant and cynical intern into a surprisingly compassionate and skilled trauma surgeon. He often shows a tough exterior but cares deeply.
-- **Izzie Stevens:** A deeply empathetic doctor who values the connection with her patients. She dreams of using her skills for humanitarian work, like medical missions.
+- **Izzie Stevens:** A deeply empathetic doctor who values the connection with her patients. After meeting a visiting mission surgeon, she is now thinking seriously about humanitarian work.
 - **Lexie Grey:** Meredith's half-sister. She is a bright, eager, and enthusiastic intern, looking up to Meredith.
 
-### Ideas for Chapter 10
+### Ideas for Chapter 11
 
 - **Focus on Alex:** A challenging pediatric case (a case with a child patient) that forces Alex to confront his own difficult childhood. This would be a good opportunity to show his compassionate side.
-- **Focus on Izzie:** Izzie could be inspired by a visiting doctor who works on medical missions, leading her to a decision about her future. This could create a conflict between her dreams and her life at Seattle Grace.
+- **Focus on Izzie:** Izzie could now decide whether to accept a mission offer, delay it, or bring that dream into her work at Seattle Grace. This could create a conflict between her future plans and her current responsibilities.
 - **A Professional Rivalry:** A complex and prestigious surgery is available, and both Cristina and Meredith are candidates to lead it. This could test their friendship and professional ambitions.
 - **A Personal Storyline:** A personal crisis for one of the secondary characters (e.g., Lexie Grey) that requires the team to rally around them, showing the "family" aspect of the hospital.
 
 ### Grammar Progression
 
 - **Chapter 9 Grammar:** Past Continuous.
-- **Suggested Grammar for Chapter 10:** Modals of speculation about the past (e.g., `must have`, `might have`, `couldn't have`). This is a logical next step in A2-level grammar, allowing for more complex sentences and reasoning in the story and exercises. For example, the doctors could speculate about what caused a patient's mysterious symptoms.
+- **Chapter 10 Grammar:** Modals of speculation about the past (e.g., `must have`, `might have`, `couldn't have`).
+- **Suggested Grammar for Chapter 11:** `be going to` and `will` for future plans, promises, and decisions. This would fit naturally if the story follows Izzie's possible mission plans or another major personal choice.
