@@ -32,6 +32,10 @@ const ENGLISH_STOP_WORDS = new Set([
   "from",
 ]);
 
+const LITHUANIAN_CHARACTER_PATTERN = /[ąčęėįšųūž]/i;
+const LITHUANIAN_WORD_HINTS =
+  /\b(rytas|diena|vakaras|ligoninė|mokytojas|gydytojas|pacientas|valgykla|chirurgija|skausmas|kraujas|kambarys|šeima|draugas|sąžiningas|misija|kelionė|širdis|audra|brolis|sesuo|operacija|klausimas|atsakymas|atsibusti|apsivilkti|užsiregistruoti|prižiūrėti|nusiraminti|nemalonus|ataskaitos|pabusti|rezidentas|praktikantas|viršininkas|rūbinė|išsekęs|nervinga|blužnis|mėlynė)\b/i;
+
 const stripFrontmatter = (value: string) => value.replace(/^---[\s\S]*?---\s*/, "");
 
 const normalizeEnglish = (value: string) =>
@@ -49,8 +53,18 @@ const normalizeEnglish = (value: string) =>
 const normalizeLithuanian = (value: string) =>
   value
     .replace(/[`*_"]/g, "")
+    .replace(/^[a-z]\)\s*/i, "")
+    .replace(/^\((.*)\)$/,"$1")
     .replace(/\s+/g, " ")
     .trim();
+
+const looksLithuanian = (value: string) =>
+  LITHUANIAN_CHARACTER_PATTERN.test(value) || LITHUANIAN_WORD_HINTS.test(value);
+
+const looksLikeLowercaseGloss = (value: string) =>
+  /[a-z]/.test(value) &&
+  value === value.toLowerCase() &&
+  !/\b(example|answer|doctor|patient|simple|continuous|grammar|word bank|activity|true|false)\b/i.test(value);
 
 const singularize = (value: string) => {
   if (value.endsWith("ies") && value.length > 4) {
@@ -74,6 +88,21 @@ const splitEnglishVariants = (value: string) =>
     .map(normalizeEnglish)
     .filter(Boolean)
     .filter((item) => !ENGLISH_STOP_WORDS.has(item));
+
+const trailingEnglishVariants = (value: string) => {
+  const words = normalizeEnglish(value).split(" ").filter(Boolean);
+  const variants = new Set<string>();
+
+  for (let length = 1; length <= Math.min(3, words.length); length += 1) {
+    const candidate = words.slice(-length).join(" ");
+
+    if (candidate && !ENGLISH_STOP_WORDS.has(candidate)) {
+      variants.add(candidate);
+    }
+  }
+
+  return [...variants];
+};
 
 const addEntry = (dictionary: Map<string, Set<string>>, english: string, lithuanian: string) => {
   const normalizedEnglish = normalizeEnglish(english);
@@ -109,10 +138,38 @@ const extractBulletTranslation = (line: string) => {
     return null;
   }
 
-  return {
-    english: match[1],
-    lithuanian: match[2],
-  };
+  const english = match[1];
+  const rightSide = match[2];
+  const parentheticalTranslation = rightSide.match(/\(([^)\n]+)\)\s*$/)?.[1];
+  const lithuanian = parentheticalTranslation && (looksLithuanian(parentheticalTranslation) || looksLikeLowercaseGloss(parentheticalTranslation))
+    ? parentheticalTranslation
+    : looksLithuanian(rightSide)
+      ? rightSide
+      : null;
+
+  if (!lithuanian) {
+    return null;
+  }
+
+  return { english, lithuanian };
+};
+
+const extractParentheticalGlosses = (line: string) => {
+  const pairs: Array<{ english: string; lithuanian: string }> = [];
+  const pattern = /([A-Za-z][A-Za-z' -]{1,40}?)\s*\(([^)\n]{2,60})\)/g;
+
+  for (const match of line.matchAll(pattern)) {
+    const english = match[1].trim();
+    const lithuanian = match[2].trim();
+
+    if (english && (looksLithuanian(lithuanian) || looksLikeLowercaseGloss(lithuanian))) {
+      for (const variant of trailingEnglishVariants(english)) {
+        pairs.push({ english: variant, lithuanian });
+      }
+    }
+  }
+
+  return pairs;
 };
 
 const extractTranslationPairs = (markdown: string) => {
@@ -128,14 +185,7 @@ const extractTranslationPairs = (markdown: string) => {
       continue;
     }
 
-    const sentencePair = line.match(/^\s*\d+\.\s+(.+?)\s(?:—|-)\s(.+?)\s*$/);
-
-    if (sentencePair) {
-      pairs.push({
-        english: sentencePair[1],
-        lithuanian: sentencePair[2],
-      });
-    }
+    pairs.push(...extractParentheticalGlosses(line));
   }
 
   return pairs;

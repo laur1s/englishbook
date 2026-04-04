@@ -222,7 +222,7 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
         return null;
       };
 
-      const getWordFromPoint = (x, y) => {
+      const getTermsFromPoint = (x, y) => {
         const caret = getCaretPoint(x, y);
 
         if (!caret || caret.node?.nodeType !== Node.TEXT_NODE) {
@@ -262,7 +262,20 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
           end += 1;
         }
 
-        return text.slice(start, end);
+        const selectedWord = text.slice(start, end);
+        const before = text.slice(0, start).match(/([A-Za-z'-]+)\s+$/)?.[1];
+        const after = text.slice(end).match(/^\s+([A-Za-z'-]+)/)?.[1];
+        const terms = [
+          selectedWord,
+          before ? `${before} ${selectedWord}` : null,
+          after ? `${selectedWord} ${after}` : null,
+          before && after ? `${before} ${selectedWord} ${after}` : null,
+        ].filter(Boolean);
+
+        return {
+          displayWord: selectedWord,
+          terms: [...new Set(terms)],
+        };
       };
 
       const closeTranslationPopover = () => {
@@ -299,12 +312,17 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
         translationPopover.style.top = `${top}px`;
       };
 
-      const lookupTranslation = (word) => {
-        for (const candidate of wordCandidates(word)) {
-          const translations = translationDictionary[candidate];
+      const lookupTranslation = (terms) => {
+        for (const term of terms) {
+          for (const candidate of wordCandidates(term)) {
+            const translations = translationDictionary[candidate];
 
-          if (translations?.length) {
-            return translations;
+            if (translations?.length) {
+              return {
+                matchedTerm: term,
+                translations,
+              };
+            }
           }
         }
 
@@ -329,14 +347,14 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
         };
 
         longPressTimer = window.setTimeout(() => {
-          const word = getWordFromPoint(event.clientX, event.clientY);
-          const translations = word ? lookupTranslation(word) : null;
+          const termLookup = getTermsFromPoint(event.clientX, event.clientY);
+          const translationResult = termLookup ? lookupTranslation(termLookup.terms) : null;
 
-          if (word && translations) {
+          if (termLookup && translationResult) {
             longPressTriggered = true;
             showTranslationPopover({
-              word,
-              translations,
+              word: translationResult.matchedTerm || termLookup.displayWord,
+              translations: translationResult.translations,
               x: event.clientX,
               y: event.clientY,
             });
