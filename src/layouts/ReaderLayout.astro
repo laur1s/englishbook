@@ -1,0 +1,125 @@
+---
+import type { LibraryEntry } from "../lib/content";
+import type { ParsedSection } from "../lib/markdown";
+
+import BaseLayout from "./BaseLayout.astro";
+import { getEntryHref } from "../lib/content";
+
+type Props = {
+  entry: LibraryEntry;
+  description?: string;
+  introHtml: string;
+  sections: ParsedSection[];
+  previous?: LibraryEntry;
+  next?: LibraryEntry;
+  answerHref?: string;
+  answerSnippetHtml?: string;
+};
+
+const {
+  entry,
+  description,
+  introHtml,
+  sections,
+  previous,
+  next,
+  answerHref,
+  answerSnippetHtml,
+} = Astro.props;
+---
+
+<BaseLayout title={`${entry.data.title} | English Library`} description={description}>
+  <section class="reader-hero">
+    <p class="eyebrow">{entry.data.collection.replace("-", " ")}</p>
+    <h1>{entry.data.title}</h1>
+    <p class="hero-subtitle lt-text">{entry.data.ltTitle}</p>
+
+    <div class="badge-row">
+      <span class="badge">{entry.data.level}</span>
+      <span class="badge">{entry.data.contentType}</span>
+      {entry.data.grammarFocus.map((focus) => <span class="badge soft">{focus}</span>)}
+    </div>
+
+    <p class="topic-row">
+      {entry.data.topics.map((topic) => <span>{topic}</span>)}
+    </p>
+  </section>
+
+  <div class="reader-shell">
+    <aside class="reader-sidebar">
+      <div class="toc-card">
+        <h2>On this page</h2>
+        <p class="lt-text sidebar-subtitle">Šio puslapio turinys</p>
+        <ul>
+          {sections.map((section) => (
+            <li>
+              <a href={`#${section.id}`}>{section.title}</a>
+            </li>
+          ))}
+          {answerSnippetHtml && <li><a href="#answer-preview">Answer preview</a></li>}
+        </ul>
+      </div>
+    </aside>
+
+    <article class="reader-content">
+      {introHtml && <div class="prose intro-block" set:html={introHtml} />}
+
+      {sections.map((section) =>
+        section.collapsible ? (
+          <details
+            class="content-panel collapsible"
+            id={section.id}
+            data-persist-key={`${entry.data.slug}:${section.id}`}
+          >
+            <summary set:html={section.titleHtml} />
+            <div class="prose" set:html={section.html} />
+          </details>
+        ) : (
+          <section class="content-panel" id={section.id}>
+            <h2 set:html={section.titleHtml} />
+            <div class="prose" set:html={section.html} />
+          </section>
+        ),
+      )}
+
+      {answerSnippetHtml && (
+        <details
+          class="content-panel collapsible answer-preview"
+          id="answer-preview"
+          data-persist-key={`${entry.data.slug}:answer-preview`}
+        >
+          <summary>Answer preview <span class="lt-text">Atsakymų peržiūra</span></summary>
+          <div class="prose" set:html={answerSnippetHtml} />
+          {answerHref && (
+            <p class="answer-link-row">
+              <a class="inline-link" href={answerHref}>
+                Open full answer key
+                <span class="lt-text">Atidaryti pilną atsakymų raktą</span>
+              </a>
+            </p>
+          )}
+        </details>
+      )}
+
+      <nav class="pager-nav" aria-label="Adjacent content">
+        {previous ? (
+          <a class="pager-link" href={getEntryHref(previous)}>
+            <span class="pager-label">Previous</span>
+            <strong>{previous.data.title}</strong>
+          </a>
+        ) : (
+          <span />
+        )}
+
+        {next ? (
+          <a class="pager-link align-right" href={getEntryHref(next)}>
+            <span class="pager-label">Next</span>
+            <strong>{next.data.title}</strong>
+          </a>
+        ) : (
+          <span />
+        )}
+      </nav>
+    </article>
+  </div>
+</BaseLayout>

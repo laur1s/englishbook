@@ -1,3 +1,21 @@
+---
+title: "Chapter 5: When a Patient Dies - The Worst Day"
+ltTitle: "5 Skyrius: Kai Pacientas Miršta - Blogiausia Diena"
+slug: "chapter-05"
+collection: "grey-book"
+order: 5
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Past Continuous vs Past Simple"
+topics:
+  - "loss"
+  - "friendship"
+  - "support"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 5: When a Patient Dies - The Worst Day
 
 ## 5 Skyrius: Kai Pacientas Miršta - Blogiausia Diena
@@ -28,6 +46,8 @@
 - hug — apkabinti
 
 ---
+
+### Story
 
 Cristina Yang was always the strongest doctor at the hospital. She never cried. She never showed fear. She was like a machine - strong, smart, and perfect. But today, everything changed.
 

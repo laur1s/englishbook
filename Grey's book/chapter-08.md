@@ -1,3 +1,21 @@
+---
+title: "Chapter 8: Dreams and Reality"
+ltTitle: "8 Skyrius: Svajonės ir Tikrovė"
+slug: "chapter-08"
+collection: "grey-book"
+order: 8
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Comparatives and superlatives"
+topics:
+  - "career"
+  - "ambition"
+  - "mentorship"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 8: Dreams and Reality
 
 ## 8 Skyrius: Svajonės ir Tikrovė
@@ -9,6 +27,20 @@
 - give up — stop trying (pasiduoti)
 - figure out — understand/solve (išsiaiškinti)
 - balance out — make equal or stable (subalansuoti)
+
+### Word Bank
+
+- crossroads — kryžkelė
+- liver resection — kepenų rezekcija
+- impeccable — nepriekaištingas
+- compassion — užuojauta
+- single-minded dedication — vienpusis atsidavimas
+- cardiac surgery — širdies chirurgija
+- trauma surgeon — traumos chirurgas
+- imposter — apsimetėlis
+- medical missions — medicininės misijos
+
+### Story
 
 Dr. Meredith Grey stood at the crossroads of her career. She had dreamed of becoming a surgeon since childhood, inspired by stories of her mother's medical brilliance. Now, three years into her career, she wondered if she measured up to her own expectations.
 
@@ -38,8 +70,6 @@ As she watched the sun set over Puget Sound, Meredith felt content. She was livi
 
 Meredith learned that being a doctor means balancing dreams and reality.
 
----
-
 ### Understanding Questions
 
 1. How long had Meredith been working at the hospital?
@@ -60,17 +90,3 @@ Meredith learned that being a doctor means balancing dreams and reality.
 3. What would you do if your career dreams changed over time?
 4. How do you think balancing work and personal life affects success?
 5. If you could tell your younger self one thing about dreams and reality, what would it be?
-
-### Word Bank
-
-- crossroads — kryžkelė
-- liver resection — kepenų rezekcija
-- impeccable — nepriekaištingas
-- compassion — užuojauta
-- single-minded dedication — vienpusis atsidavimas
-- cardiac surgery — širdies chirurgija
-- trauma surgeon — traumos chirurgas
-- imposter — apsimetėlis
-- medical missions — medicininės misijos
-
----

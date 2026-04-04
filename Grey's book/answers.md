@@ -1,3 +1,21 @@
+---
+title: "Grey's Book Answer Key"
+ltTitle: "Grey knygos atsakymų raktas"
+slug: "grey-book"
+collection: "answer-keys"
+order: 2
+contentType: "answer-key"
+level: "A2"
+grammarFocus:
+  - "Grey's Book chapters"
+topics:
+  - "answers"
+  - "grey's book"
+  - "self-check"
+hasAnswerKey: false
+status: "published"
+---
+
 
 ## Answer Key / Atsakymų Raktas
 

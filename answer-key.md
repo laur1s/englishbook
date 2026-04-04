@@ -1,3 +1,21 @@
+---
+title: "Answer Key - All Units"
+ltTitle: "Atsakymų raktai - Visi skyriai"
+slug: "a2"
+collection: "answer-keys"
+order: 1
+contentType: "answer-key"
+level: "A2"
+grammarFocus:
+  - "All A2 units"
+topics:
+  - "answers"
+  - "a2 course"
+  - "self-check"
+hasAnswerKey: false
+status: "published"
+---
+
 # Answer Key - All Units
 ## Atsakymų raktai - Visi skyriai
 

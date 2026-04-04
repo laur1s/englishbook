@@ -1,3 +1,22 @@
+---
+title: "Unit 8: Comparatives and Superlatives"
+ltTitle: "Skyrius 8: Lyginamieji ir aukščiausiojo laipsnio būdvardžiai"
+slug: "unit-08"
+collection: "a2-units"
+order: 8
+contentType: "unit"
+level: "A2.2"
+grammarFocus:
+  - "Comparatives"
+  - "Superlatives"
+topics:
+  - "comparison"
+  - "describing people"
+  - "describing places"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 8: Comparatives and Superlatives
 ## Skyrius 8: Lyginamieji ir aukščiausiojo laipsnio būdvardžiai
 

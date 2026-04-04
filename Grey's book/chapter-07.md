@@ -1,3 +1,21 @@
+---
+title: "Chapter 7: The Big Storm"
+ltTitle: "7 Skyrius: Didžioji Audra"
+slug: "chapter-07"
+collection: "grey-book"
+order: 7
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Can / can't"
+topics:
+  - "storm"
+  - "crisis"
+  - "teamwork"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 7: The Big Storm
 
 ## 7 Skyrius: Didžioji Audra
@@ -9,6 +27,21 @@
 - set up — prepare (paruošti)
 - keep going — continue (nenustoti dirbti)
 - take in — receive/admit (priimti)
+
+### Word Bank
+
+- hurricane-force winds — uragano stiprumo vėjai
+- scaffolding — pastoliai
+- hypothermia — hipotermija
+- prioritize — suteikti prioritetą
+- brachial artery — peties arterija
+- severed — perpjauta
+- backup generators — atsarginiai generatoriai
+- flashlight — žibintuvėlis
+- rehabilitation — reabilitacija
+- beacon — švyturys
+
+### Story
 
 Seattle was hit by the worst storm in decades. Hurricane-force winds howled through the city, rain lashed against windows, and power lines snapped like twigs. Seattle Grace Hospital became a beacon in the chaos, its emergency generators humming as the main power grid failed.
 
@@ -40,8 +73,6 @@ The storm tested their limits, but it also revealed their strength. In the face 
 
 As cleanup crews repaired the damage, Meredith reflected on the night's events. Storms destroyed and storms healed. This one had brought her team closer than ever.
 
----
-
 ### Understanding Questions
 
 1. What kind of storm hit Seattle?
@@ -62,18 +93,3 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 3. What would you say to comfort someone who survived a traumatic event?
 4. How do you think natural disasters change communities?
 5. If you could prepare a hospital for any disaster, what would you do?
-
-### Word Bank
-
-- hurricane-force winds — uragano stiprumo vėjai
-- scaffolding — pastoliai
-- hypothermia — hipotermija
-- prioritize — suteikti prioritetą
-- brachial artery — peties arterija
-- severed — perpjauta
-- backup generators — atsarginiai generatoriai
-- flashlight — žibintuvėlis
-- rehabilitation — reabilitacija
-- beacon — švyturys
-
----

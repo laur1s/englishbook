@@ -1,3 +1,22 @@
+---
+title: "Unit 2: Daily Routines and Present Simple"
+ltTitle: "Skyrius 2: Kasdieninės rutinos ir esamasis laikas"
+slug: "unit-02"
+collection: "a2-units"
+order: 2
+contentType: "unit"
+level: "A2.1"
+grammarFocus:
+  - "Present Simple"
+  - "Adverbs of frequency"
+topics:
+  - "daily routines"
+  - "time expressions"
+  - "habits"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 2: Daily Routines and Present Simple
 
 ## Skyrius 2: Kasdieninės rutinos ir esamasis laikas

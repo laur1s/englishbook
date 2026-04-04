@@ -1,3 +1,21 @@
+---
+title: "Chapter 4: The Miracle Baby - Will He Survive?"
+ltTitle: "4 Skyrius: Stebuklingas Kūdikis - Ar Jis Išgyvens?"
+slug: "chapter-04"
+collection: "grey-book"
+order: 4
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Present Perfect with just / already / yet"
+topics:
+  - "neonatal care"
+  - "hope"
+  - "family"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 4: The Miracle Baby - Will He Survive?
 
 ## 4 Skyrius: Stebuklingas Kūdikis - Ar Jis Išgyvens?
@@ -28,6 +46,8 @@
 - prayer — malda
 
 ---
+
+### Story
 
 Dr. Addison Montgomery was a baby doctor - the best baby doctor at Seattle Grace Hospital. She helped mothers have babies. Usually, she helped when something was very wrong with the pregnancy.
 

@@ -1,3 +1,22 @@
+---
+title: "Unit 5: Travel and Directions"
+ltTitle: "Skyrius 5: Kelionės ir krypčių nurodymai"
+slug: "unit-05"
+collection: "a2-units"
+order: 5
+contentType: "unit"
+level: "A2.1"
+grammarFocus:
+  - "Prepositions of place"
+  - "There is / There are"
+topics:
+  - "travel"
+  - "directions"
+  - "city navigation"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 5: Travel and Directions
 ## Skyrius 5: Kelionės ir krypčių nurodymai
 

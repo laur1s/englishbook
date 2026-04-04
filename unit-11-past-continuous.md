@@ -1,3 +1,22 @@
+---
+title: "Unit 11: Past Continuous"
+ltTitle: "Skyrius 11: Būtasis tęstinis laikas"
+slug: "unit-11"
+collection: "a2-units"
+order: 11
+contentType: "unit"
+level: "A2.2"
+grammarFocus:
+  - "Past Continuous"
+  - "Past Continuous vs Past Simple"
+topics:
+  - "background events"
+  - "interrupted actions"
+  - "storytelling"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 11: Past Continuous
 ## Skyrius 11: Būtasis tęstinis laikas
 

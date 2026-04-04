@@ -1,3 +1,21 @@
+---
+title: "Vocabulary Lists - Complete A2 Level"
+ltTitle: "Žodyno sąrašai - Pilnas A2 lygis"
+slug: "vocabulary-lists"
+collection: "resources"
+order: 2
+contentType: "reference"
+level: "A2"
+grammarFocus:
+  - "Vocabulary building"
+topics:
+  - "vocabulary"
+  - "reference"
+  - "topics"
+hasAnswerKey: false
+status: "published"
+---
+
 # Vocabulary Lists - Complete A2 Level
 ## Žodyno sąrašai - Pilnas A2 lygis
 

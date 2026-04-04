@@ -1,3 +1,22 @@
+---
+title: "Unit 12: Review and Consolidation"
+ltTitle: "Skyrius 12: Kartojimas ir įtvirtinimas"
+slug: "unit-12"
+collection: "a2-units"
+order: 12
+contentType: "unit"
+level: "A2.2"
+grammarFocus:
+  - "Mixed A2 grammar"
+  - "Revision"
+topics:
+  - "review"
+  - "consolidation"
+  - "B1 preparation"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 12: Review and Consolidation
 ## Skyrius 12: Kartojimas ir įtvirtinimas
 

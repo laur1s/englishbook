@@ -1,0 +1,36 @@
+---
+import type { LibraryEntry } from "../lib/content";
+
+import { getEntryBody, getEntryHref } from "../lib/content";
+import { parseDocument } from "../lib/markdown";
+
+type Props = {
+  entry: LibraryEntry;
+};
+
+const { entry } = Astro.props;
+const parsed = parseDocument({
+  markdown: getEntryBody(entry),
+  title: entry.data.title,
+  ltTitle: entry.data.ltTitle,
+});
+---
+
+<article
+  class="library-card"
+  data-card
+  data-levels={entry.data.level}
+  data-grammar={entry.data.grammarFocus.join("|")}
+  data-topics={entry.data.topics.join("|")}
+>
+  <p class="card-kicker">{entry.data.contentType}</p>
+  <h2>
+    <a href={getEntryHref(entry)}>{entry.data.title}</a>
+  </h2>
+  <p class="card-subtitle lt-text">{entry.data.ltTitle}</p>
+  <p class="card-excerpt">{parsed.excerpt}</p>
+  <div class="badge-row compact">
+    <span class="badge">{entry.data.level}</span>
+    {entry.data.grammarFocus.slice(0, 2).map((focus) => <span class="badge soft">{focus}</span>)}
+  </div>
+</article>

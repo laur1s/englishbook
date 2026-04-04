@@ -1,0 +1,386 @@
+---
+import "../styles/global.css";
+
+import { NAV_LINKS, withBase } from "../lib/constants";
+import { getTranslationDictionary } from "../lib/translation-dictionary";
+
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const { title, description = "Bilingual English learning library for Lithuanian learners." } =
+  Astro.props;
+const currentPath = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ""), "") || "/";
+const translationDictionary = JSON.stringify(getTranslationDictionary());
+---
+
+<!doctype html>
+<html lang="en" data-lt="shown">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={withBase("/")}>
+        <span class="brand-mark">ENG</span>
+        <span class="brand-copy">
+          <strong>English Library</strong>
+          <span class="lt-text">Anglų kalbos biblioteka</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        {NAV_LINKS.map((link) => (
+          <a
+            class:list={[currentPath === link.href || currentPath.startsWith(`${link.href}/`) ? "active" : ""]}
+            href={withBase(link.href)}
+          >
+            <span>{link.label}</span>
+            <span class="lt-text nav-lt">{link.ltLabel}</span>
+          </a>
+        ))}
+      </nav>
+
+      <button class="toggle-button" type="button" data-lt-toggle>
+        <span>LT notes</span>
+        <span class="toggle-state" data-lt-state>On</span>
+      </button>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <div class="translation-popover" data-translation-popover hidden>
+      <p class="translation-kicker">Lithuanian translation</p>
+      <strong data-translation-word></strong>
+      <ul data-translation-list></ul>
+      <p class="translation-hint">
+        Long-press another word to translate it.
+        <span class="lt-text">Palaikykite paspaudę kitą žodį kitam vertimui.</span>
+      </p>
+    </div>
+
+    <script is:inline type="application/json" id="translation-dictionary-data" set:html={translationDictionary} />
+
+    <script is:inline>
+      const storageKey = "english-library.lt-visible";
+      const root = document.documentElement;
+      const button = document.querySelector("[data-lt-toggle]");
+      const state = document.querySelector("[data-lt-state]");
+      const translationDictionary = JSON.parse(
+        document.getElementById("translation-dictionary-data")?.textContent || "{}",
+      );
+      const translationPopover = document.querySelector("[data-translation-popover]");
+      const translationWord = document.querySelector("[data-translation-word]");
+      const translationList = document.querySelector("[data-translation-list]");
+      const setState = (isVisible) => {
+        root.dataset.lt = isVisible ? "shown" : "hidden";
+        localStorage.setItem(storageKey, String(isVisible));
+        if (state) state.textContent = isVisible ? "On" : "Off";
+      };
+
+      const savedState = localStorage.getItem(storageKey);
+      setState(savedState === null ? true : savedState === "true");
+
+      button?.addEventListener("click", () => {
+        setState(root.dataset.lt !== "shown");
+      });
+
+      document.querySelectorAll("details[data-persist-key]").forEach((element) => {
+        const key = `english-library.details.${element.dataset.persistKey}`;
+        const saved = localStorage.getItem(key);
+
+        if (saved !== null) {
+          element.open = saved === "true";
+        }
+
+        element.addEventListener("toggle", () => {
+          localStorage.setItem(key, String(element.open));
+        });
+      });
+
+      document.querySelectorAll("[data-filter-root]").forEach((rootElement) => {
+        const cards = [...rootElement.querySelectorAll("[data-card]")];
+        const buttons = [...rootElement.querySelectorAll("[data-filter-button]")];
+        const active = {
+          level: new Set(),
+          grammar: new Set(),
+          topic: new Set(),
+        };
+
+        const applyFilters = () => {
+          cards.forEach((card) => {
+            const levels = (card.dataset.levels || "").split("|").filter(Boolean);
+            const grammar = (card.dataset.grammar || "").split("|").filter(Boolean);
+            const topics = (card.dataset.topics || "").split("|").filter(Boolean);
+
+            const levelMatch = !active.level.size || levels.some((value) => active.level.has(value));
+            const grammarMatch =
+              !active.grammar.size || grammar.some((value) => active.grammar.has(value));
+            const topicMatch = !active.topic.size || topics.some((value) => active.topic.has(value));
+
+            card.hidden = !(levelMatch && grammarMatch && topicMatch);
+          });
+        };
+
+        buttons.forEach((buttonElement) => {
+          buttonElement.addEventListener("click", () => {
+            const group = buttonElement.dataset.filterGroup;
+            const value = buttonElement.dataset.filterValue;
+
+            if (!group || !value || !(group in active)) return;
+
+            if (active[group].has(value)) {
+              active[group].delete(value);
+              buttonElement.classList.remove("selected");
+            } else {
+              active[group].add(value);
+              buttonElement.classList.add("selected");
+            }
+
+            applyFilters();
+          });
+        });
+      });
+
+      const WORD_CHARACTER = /[A-Za-z'-]/;
+      let longPressTimer = null;
+      let longPressTriggered = false;
+      let pointerState = null;
+
+      const normalizeWord = (value) =>
+        value
+          .toLowerCase()
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/(^[^a-z]+|[^a-z]+$)/g, "");
+
+      const wordCandidates = (value) => {
+        const normalized = normalizeWord(value);
+        const variants = [normalized];
+
+        if (normalized.endsWith("ies") && normalized.length > 4) {
+          variants.push(`${normalized.slice(0, -3)}y`);
+        }
+
+        if (normalized.endsWith("es") && normalized.length > 4) {
+          variants.push(normalized.slice(0, -2));
+        }
+
+        if (normalized.endsWith("s") && normalized.length > 3) {
+          variants.push(normalized.slice(0, -1));
+        }
+
+        return [...new Set(variants.filter(Boolean))];
+      };
+
+      const isEligibleTarget = (target) => {
+        if (!target || !(target instanceof Node)) {
+          return false;
+        }
+
+        const element =
+          target instanceof Element ? target : target.parentElement;
+
+        if (!element) {
+          return false;
+        }
+
+        return !element.closest(
+          "a, button, summary, input, textarea, select, code, pre, .lt-text, .translation-popover",
+        );
+      };
+
+      const getCaretPoint = (x, y) => {
+        if (document.caretPositionFromPoint) {
+          const caretPosition = document.caretPositionFromPoint(x, y);
+
+          if (caretPosition) {
+            return {
+              node: caretPosition.offsetNode,
+              offset: caretPosition.offset,
+            };
+          }
+        }
+
+        if (document.caretRangeFromPoint) {
+          const range = document.caretRangeFromPoint(x, y);
+
+          if (range) {
+            return {
+              node: range.startContainer,
+              offset: range.startOffset,
+            };
+          }
+        }
+
+        return null;
+      };
+
+      const getWordFromPoint = (x, y) => {
+        const caret = getCaretPoint(x, y);
+
+        if (!caret || caret.node?.nodeType !== Node.TEXT_NODE) {
+          return null;
+        }
+
+        const parentElement = caret.node.parentElement;
+
+        if (!parentElement || parentElement.closest(".lt-text, .translation-popover")) {
+          return null;
+        }
+
+        const text = caret.node.textContent || "";
+
+        if (!text) {
+          return null;
+        }
+
+        let index = Math.min(caret.offset, text.length - 1);
+
+        if (!WORD_CHARACTER.test(text[index] || "") && WORD_CHARACTER.test(text[index - 1] || "")) {
+          index -= 1;
+        }
+
+        if (!WORD_CHARACTER.test(text[index] || "")) {
+          return null;
+        }
+
+        let start = index;
+        let end = index;
+
+        while (start > 0 && WORD_CHARACTER.test(text[start - 1])) {
+          start -= 1;
+        }
+
+        while (end < text.length && WORD_CHARACTER.test(text[end])) {
+          end += 1;
+        }
+
+        return text.slice(start, end);
+      };
+
+      const closeTranslationPopover = () => {
+        translationPopover?.setAttribute("hidden", "");
+      };
+
+      const showTranslationPopover = ({ word, translations, x, y }) => {
+        if (!translationPopover || !translationWord || !translationList) {
+          return;
+        }
+
+        translationWord.textContent = word;
+        translationList.innerHTML = "";
+
+        translations.slice(0, 6).forEach((translation) => {
+          const item = document.createElement("li");
+          item.textContent = translation;
+          translationList.appendChild(item);
+        });
+
+        translationPopover.removeAttribute("hidden");
+
+        const rect = translationPopover.getBoundingClientRect();
+        const left = Math.min(
+          Math.max(12, x - rect.width / 2),
+          window.innerWidth - rect.width - 12,
+        );
+        const top = Math.min(
+          Math.max(12, y + 18),
+          window.innerHeight - rect.height - 12,
+        );
+
+        translationPopover.style.left = `${left}px`;
+        translationPopover.style.top = `${top}px`;
+      };
+
+      const lookupTranslation = (word) => {
+        for (const candidate of wordCandidates(word)) {
+          const translations = translationDictionary[candidate];
+
+          if (translations?.length) {
+            return translations;
+          }
+        }
+
+        return null;
+      };
+
+      const clearLongPress = () => {
+        window.clearTimeout(longPressTimer);
+        longPressTimer = null;
+        pointerState = null;
+      };
+
+      document.addEventListener("pointerdown", (event) => {
+        if (event.button !== 0 || !isEligibleTarget(event.target)) {
+          return;
+        }
+
+        longPressTriggered = false;
+        pointerState = {
+          x: event.clientX,
+          y: event.clientY,
+        };
+
+        longPressTimer = window.setTimeout(() => {
+          const word = getWordFromPoint(event.clientX, event.clientY);
+          const translations = word ? lookupTranslation(word) : null;
+
+          if (word && translations) {
+            longPressTriggered = true;
+            showTranslationPopover({
+              word,
+              translations,
+              x: event.clientX,
+              y: event.clientY,
+            });
+          }
+
+          clearLongPress();
+        }, 420);
+      });
+
+      document.addEventListener("pointermove", (event) => {
+        if (!pointerState) {
+          return;
+        }
+
+        const distance = Math.hypot(event.clientX - pointerState.x, event.clientY - pointerState.y);
+
+        if (distance > 12) {
+          clearLongPress();
+        }
+      });
+
+      ["pointerup", "pointercancel", "scroll"].forEach((eventName) => {
+        window.addEventListener(eventName, () => {
+          clearLongPress();
+        }, { passive: true });
+      });
+
+      document.addEventListener("click", (event) => {
+        if (longPressTriggered) {
+          longPressTriggered = false;
+          event.preventDefault();
+          return;
+        }
+
+        if (!translationPopover?.contains(event.target)) {
+          closeTranslationPopover();
+        }
+      });
+
+      document.addEventListener("contextmenu", (event) => {
+        if (!translationPopover?.hasAttribute("hidden")) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>

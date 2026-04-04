@@ -1,3 +1,22 @@
+---
+title: "Unit 3: Past Simple and Personal History"
+ltTitle: "Skyrius 3: Būtasis laikas ir asmeninė istorija"
+slug: "unit-03"
+collection: "a2-units"
+order: 3
+contentType: "unit"
+level: "A2.1"
+grammarFocus:
+  - "Past Simple"
+  - "Regular and irregular verbs"
+topics:
+  - "personal history"
+  - "past events"
+  - "life stories"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 3: Past Simple and Personal History
 ## Skyrius 3: Būtasis laikas ir asmeninė istorija
 

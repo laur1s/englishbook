@@ -1,3 +1,23 @@
+---
+title: "Unit 9: Modal Verbs"
+ltTitle: "Skyrius 9: Modaliniai veiksmažodžiai"
+slug: "unit-09"
+collection: "a2-units"
+order: 9
+contentType: "unit"
+level: "A2.2"
+grammarFocus:
+  - "must / can't"
+  - "may / might"
+  - "should / shouldn't"
+topics:
+  - "advice"
+  - "possibility"
+  - "deduction"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 9: Modal Verbs
 ## Skyrius 9: Modaliniai veiksmažodžiai
 

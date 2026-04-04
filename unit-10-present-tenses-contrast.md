@@ -1,3 +1,23 @@
+---
+title: "Unit 10: Present Tenses Contrast"
+ltTitle: "Skyrius 10: Esamojo laiko formų palyginimas"
+slug: "unit-10"
+collection: "a2-units"
+order: 10
+contentType: "unit"
+level: "A2.2"
+grammarFocus:
+  - "Present Simple"
+  - "Present Continuous"
+  - "Present Perfect"
+topics:
+  - "tense contrast"
+  - "stative verbs"
+  - "time expressions"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 10: Present Tenses Contrast
 ## Skyrius 10: Esamojo laiko formų palyginimas
 

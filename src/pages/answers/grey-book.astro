@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getAnswerKeyEntries, getGreyBookEntries } from "../../lib/content";
+import { extractGreyAnswerSnippet } from "../../lib/answers";
+import { renderMarkdown } from "../../lib/markdown";
+import { withBase } from "../../lib/constants";
+
+const [chapters, answerEntries] = await Promise.all([
+  getGreyBookEntries(),
+  getAnswerKeyEntries(),
+]);
+const answerEntry = answerEntries.find((entry) => entry.data.slug === "grey-book");
+---
+
+<BaseLayout title="Grey's Book Answers | English Library">
+  <section class="collection-hero">
+    <p class="eyebrow">Answer key</p>
+    <h1>Grey's Book Answers</h1>
+    <p class="hero-subtitle lt-text">Grey knygos atsakymai</p>
+    <p class="collection-description">
+      Chapter answers are grouped here by chapter so students can reveal them only when they need them.
+    </p>
+  </section>
+
+  <section class="answer-stack">
+    {answerEntry &&
+      chapters.map((chapter) => {
+        const snippet = extractGreyAnswerSnippet(answerEntry, chapter);
+        return (
+          <details
+            class="content-panel collapsible"
+            id={chapter.data.slug}
+            data-persist-key={`answers:${chapter.data.slug}`}
+          >
+            <summary>
+              {chapter.data.title}
+              <span class="lt-text summary-subtitle">{chapter.data.ltTitle}</span>
+            </summary>
+            <div class="prose" set:html={renderMarkdown(snippet)} />
+            <p class="answer-link-row">
+              <a class="inline-link" href={withBase(`/grey-book/${chapter.data.slug}`)}>
+                Back to chapter
+                <span class="lt-text">Grįžti į skyrių</span>
+              </a>
+            </p>
+          </details>
+        );
+      })}
+  </section>
+</BaseLayout>

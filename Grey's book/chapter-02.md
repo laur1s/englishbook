@@ -1,3 +1,21 @@
+---
+title: "Chapter 2: The Emergency Room - A Life or Death Night"
+ltTitle: "2 Skyrius: Skubios Pagalbos Skyrius - Gyvenimo ir Mirties Naktis"
+slug: "chapter-02"
+collection: "grey-book"
+order: 2
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Past Simple"
+topics:
+  - "emergency room"
+  - "trauma"
+  - "family"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 2: The Emergency Room - A Life or Death Night
 
 ## 2 Skyrius: Skubios Pagalbos Skyrius - Gyvenimo ir Mirties Naktis
@@ -41,6 +59,8 @@ Put the verbs in Past Simple:
 6) The team ___ (save) Sarah’s leg.
 
 ---
+
+### Story
 
 It was Friday night. The emergency room was always busy on Fridays, but tonight was crazy. Ambulances were arriving one after another. Sirens were screaming outside. Dr. Meredith Grey was very tired. She wanted to go home. But then the doors opened fast.
 

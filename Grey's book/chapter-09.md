@@ -1,3 +1,21 @@
+---
+title: "Chapter 9: A Father's Heart"
+ltTitle: "IX Skyrius: Tėvo Širdis"
+slug: "chapter-09"
+collection: "grey-book"
+order: 9
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Past Continuous"
+topics:
+  - "heart transplant"
+  - "ethics"
+  - "teamwork"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 9: A Father's Heart
 
 ## IX Skyrius: Tėvo Širdis
@@ -28,6 +46,8 @@
 - proud — didžiuojasi
 
 ---
+
+### Story
 
 A few weeks after Catherine Avery's visit, the hospital was buzzing with a new, high-stakes case. A 45-year-old man named Mr. Evans was admitted with severe heart failure. He was a kind man, a father of two young girls, and he was running out of time. His only hope was a heart transplant.
 
@@ -142,44 +162,3 @@ Match the medical situations with the correct phrasal verb from this chapter:
 1. (Cristina / work) when (her pager / go off).
 2. (Meredith / talk) to the family when (Alex / rush in).
 3. While they _______ (prepare) for surgery, the problem _______ (arise).
-
-## Answer Key / Atsakymų Raktas
-
-### Understanding Questions
-
-1. Mr. Evans had severe heart failure.
-2. His only hope was a heart transplant.
-3. Dr. Cristina Yang was in charge of his case.
-4. The good news was that a donor heart was available.
-5. Alex discovered that the donor had a rare genetic condition that could pose a small long-term risk to the new heart.
-6. The dilemma was whether to use the heart with a small risk or to let the patient die while waiting for a perfect heart.
-7. She decided to go ahead with the transplant, accepting the risk.
-8. The surgery took eight hours.
-9. Meredith told Cristina that she was amazing, that the team did the right thing, and that she has to count on her skills and her team.
-10. Meredith felt a deep sense of satisfaction and that she was in the right place.
-
-### Grammar Exercises
-
-**1. Past Continuous**
-
-1. was getting
-2. was living
-3. was looking
-4. was observing
-5. were crying
-
-**2. Past Continuous and Past Simple**
-
-1. Cristina was working when her pager went off.
-2. Meredith was talking to the family when Alex rushed in.
-3. While they were preparing for surgery, the problem arose.
-
-### Fun Activities
-
-**Activity 2: Vocabulary Matching Game**
-
-1. look into
-2. rule out
-3. step in
-4. count on
-5. hold back

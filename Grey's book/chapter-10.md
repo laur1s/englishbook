@@ -1,3 +1,21 @@
+---
+title: "Chapter 10: A Different Calling"
+ltTitle: "10 Skyrius: Kitoks Pašaukimas"
+slug: "chapter-10"
+collection: "grey-book"
+order: 10
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Modals of speculation about the past"
+topics:
+  - "medical missions"
+  - "honesty"
+  - "future plans"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 10: A Different Calling
 
 ## 10 Skyrius: Kitoks Pašaukimas
@@ -29,6 +47,8 @@
 - relieved — palengvėjęs
 
 ---
+
+### Story
 
 Seattle Grace was unusually quiet on Monday morning. That changed when a visiting surgeon, Dr. Elena Marquez, arrived to speak about her work in remote clinics around the world. She had spent years traveling with medical teams to places where people had very little equipment and almost no access to doctors.
 
@@ -225,53 +245,3 @@ Use `must have` for a strong conclusion, `might have` for a possible idea, and `
 3. The doctors / need more information / before surgery. (`must have`)
 4. The pain / get worse / during the flight. (`might have`)
 5. The team / find the answer / without Lily's honesty. (`couldn't have`)
-
-## Answer Key / Atsakymų Raktas
-
-### Understanding Questions
-
-1. Dr. Elena Marquez was a visiting surgeon who worked on medical missions in remote clinics around the world.
-2. Izzie was interested because Elena helped people with very few resources, and that work inspired her.
-3. Lily collapsed after returning from a volunteer trip and feeling pain on the plane.
-4. Alex thought she might have an infection, Cristina thought she might have hurt herself, and Elena believed it couldn't have been only food poisoning.
-5. She had hit her side in a jeep accident while delivering supplies.
-6. She hid the truth because she did not want to leave the trip early and wanted to keep helping people.
-7. She had injured her spleen.
-8. Alex led the surgery.
-9. Elena offered Izzie a chance to think about joining a six-week medical mission in the summer.
-10. Izzie realized she had to stop being afraid of asking herself what kind of doctor she wanted to be.
-
-### Grammar Exercises
-
-**1. Complete the sentences**
-
-1. must have hurt
-2. might have eaten
-3. couldn't have been
-4. might have made
-5. must have seen
-6. must have known
-
-**2. Rewrite the clues**
-
-1. Lily must have kept the secret because she wanted to continue helping.
-2. Her mother couldn't have understood the real problem before Lily spoke.
-3. The doctors must have needed more information before surgery.
-4. The pain might have gotten worse during the flight.
-5. The team couldn't have found the answer without Lily's honesty.
-
-### Fun Activities
-
-**Activity 2: Story Detective Timeline**
-
-Correct order:
-3. The jeep hit a hole in the road.
-1. Lily collapsed at the airport.
-2. The doctors saw the bruise.
-4. Surgery stopped the bleeding.
-
-Sample sentences:
-
-- The injury must have started in the jeep.
-- The bleeding might have become worse during the flight.
-- The doctors couldn't have solved the case without Lily's story.

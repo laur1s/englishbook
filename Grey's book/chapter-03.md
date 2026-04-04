@@ -1,3 +1,21 @@
+---
+title: "Chapter 3: Secret Love - A Dangerous Romance"
+ltTitle: "3 Skyrius: Slapta Meilė - Pavojingas Romanas"
+slug: "chapter-03"
+collection: "grey-book"
+order: 3
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Modal verbs"
+topics:
+  - "relationships"
+  - "hospital rules"
+  - "secrets"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 3: Secret Love - A Dangerous Romance
 
 ## 3 Skyrius: Slapta Meilė - Pavojingas Romanas
@@ -28,6 +46,8 @@
 - discover — atrasti
 
 ---
+
+### Story
 
 Meredith had a big secret. A very big secret. She was in love with Dr. Derek Shepherd. Derek was a brain surgeon - the best brain surgeon at Seattle Grace Hospital. He was handsome, smart, and kind. But there was a huge problem.
 

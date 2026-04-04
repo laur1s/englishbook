@@ -1,0 +1,44 @@
+---
+import ReaderLayout from "../../layouts/ReaderLayout.astro";
+import {
+  getAnswerKeyEntries,
+  getEntryBody,
+  getGreyBookEntries,
+  getPrevNextEntries,
+} from "../../lib/content";
+import { extractGreyAnswerSnippet } from "../../lib/answers";
+import { parseDocument, renderMarkdown } from "../../lib/markdown";
+import { withBase } from "../../lib/constants";
+
+export async function getStaticPaths() {
+  const entries = await getGreyBookEntries();
+
+  return entries.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry, entries },
+  }));
+}
+
+const { entry, entries } = Astro.props;
+const parsed = parseDocument({
+  markdown: getEntryBody(entry),
+  title: entry.data.title,
+  ltTitle: entry.data.ltTitle,
+});
+const { previous, next } = getPrevNextEntries(entries, entry.data.slug);
+const answerEntry = (await getAnswerKeyEntries()).find(
+  (item) => item.data.slug === "grey-book",
+);
+const answerSnippet = answerEntry ? extractGreyAnswerSnippet(answerEntry, entry) : "";
+---
+
+<ReaderLayout
+  entry={entry}
+  description={parsed.excerpt}
+  introHtml={parsed.introHtml}
+  sections={parsed.sections}
+  previous={previous}
+  next={next}
+  answerHref={`${withBase("/answers/grey-book")}#${entry.data.slug}`}
+  answerSnippetHtml={answerSnippet ? renderMarkdown(answerSnippet) : ""}
+/>

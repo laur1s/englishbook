@@ -1,3 +1,22 @@
+---
+title: "Unit 6: Future Plans"
+ltTitle: "Skyrius 6: Ateities planai"
+slug: "unit-06"
+collection: "a2-units"
+order: 6
+contentType: "unit"
+level: "A2.1"
+grammarFocus:
+  - "Going to"
+  - "Will"
+topics:
+  - "future plans"
+  - "predictions"
+  - "intentions"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 6: Future Plans
 ## Skyrius 6: Ateities planai
 

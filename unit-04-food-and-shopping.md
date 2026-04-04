@@ -1,3 +1,22 @@
+---
+title: "Unit 4: Food and Shopping"
+ltTitle: "Skyrius 4: Maistas ir apsipirkimas"
+slug: "unit-04"
+collection: "a2-units"
+order: 4
+contentType: "unit"
+level: "A2.1"
+grammarFocus:
+  - "Countable and uncountable nouns"
+  - "Quantifiers"
+topics:
+  - "food"
+  - "shopping"
+  - "restaurants"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 4: Food and Shopping
 ## Skyrius 4: Maistas ir apsipirkimas
 

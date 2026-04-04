@@ -1,3 +1,22 @@
+---
+title: "Unit 1: Greetings and Introductions"
+ltTitle: "Skyrius 1: Pasisveikinimai ir prisistatymai"
+slug: "unit-01"
+collection: "a2-units"
+order: 1
+contentType: "unit"
+level: "A2.1"
+grammarFocus:
+  - "Verb to be"
+  - "Basic introductions"
+topics:
+  - "greetings"
+  - "introductions"
+  - "identity"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 1: Greetings and Introductions
 
 ## Skyrius 1: Pasisveikinimai ir prisistatymai

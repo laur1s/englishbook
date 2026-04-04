@@ -1,0 +1,35 @@
+---
+import ReaderLayout from "../../layouts/ReaderLayout.astro";
+import {
+  getEntryBody,
+  getPrevNextEntries,
+  getResourceEntries,
+} from "../../lib/content";
+import { parseDocument } from "../../lib/markdown";
+
+export async function getStaticPaths() {
+  const entries = await getResourceEntries();
+
+  return entries.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry, entries },
+  }));
+}
+
+const { entry, entries } = Astro.props;
+const parsed = parseDocument({
+  markdown: getEntryBody(entry),
+  title: entry.data.title,
+  ltTitle: entry.data.ltTitle,
+});
+const { previous, next } = getPrevNextEntries(entries, entry.data.slug);
+---
+
+<ReaderLayout
+  entry={entry}
+  description={parsed.excerpt}
+  introHtml={parsed.introHtml}
+  sections={parsed.sections}
+  previous={previous}
+  next={next}
+/>

@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CollectionFilters from "../../components/CollectionFilters.astro";
+import { getA2Entries } from "../../lib/content";
+
+const entries = await getA2Entries();
+---
+
+<BaseLayout title="A2 Course | English Library">
+  <CollectionFilters
+    title="A2 Course"
+    ltTitle="A2 kursas"
+    description="The full Lithuanian-supported A2 sequence with grammar, vocabulary, reading, writing, and speaking practice."
+    entries={entries}
+  />
+</BaseLayout>

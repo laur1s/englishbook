@@ -1,3 +1,21 @@
+---
+title: "Chapter 1: First Day at the Hospital"
+ltTitle: "1 Skyrius: Pirmoji Diena Ligoninėje"
+slug: "chapter-01"
+collection: "grey-book"
+order: 1
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Present Simple vs Present Continuous"
+topics:
+  - "hospital"
+  - "first day"
+  - "introductions"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 1: First Day at the Hospital
 
 ## 1 Skyrius: Pirmoji Diena Ligoninėje
@@ -12,24 +30,11 @@
 
 ### Word Bank
 
-### Grammar Practice
-
-Use just / already / yet or the correct present perfect form:
-
-1) The baby has ___ started breathing.
-2) They haven’t taken him off the machine ___.
-3) The parents have ___ waited for five years.
-4) Addison has ___ decided to deliver.
-5) Lisa hasn’t seen the baby ___.
-6) The team ___ (work) for two days without sleep.
-
----
-
 - white coat — baltas chalatas
 - scrubs — chirurginiai drabužiai
 - intern — rezidentas/praktikantas
 - locker room — rūbinė
-- chief — viršininkas
+- chief of surgery — chirurgijos viršininkas
 - patient — pacientas
 - surgery — operacija
 - temperature — temperatūra
@@ -39,7 +44,7 @@ Use just / already / yet or the correct present perfect form:
 - nervous — nervinga
 - exhausted — išsekęs
 
----
+### Story
 
 Dr. Meredith Grey woke up very early. Today was her first day at Seattle Grace Hospital. Her heart was beating fast. She was very nervous. She put on her white coat and looked in the mirror. "You can do this," she said to herself.
 
@@ -78,8 +83,6 @@ The day was very long. Meredith checked more patients. She wrote reports (ataska
 When she drove home, Meredith thought about her day. The hospital was difficult and big. But she felt happy there. "This is just the beginning," she thought. "Tomorrow will be better."
 
 But she didn't know that her life at Seattle Grace was going to change everything.
-
----
 
 ### Understanding Questions
 
@@ -120,142 +123,6 @@ But she didn't know that her life at Seattle Grace was going to change everythin
 
 #### Activity 1: True or False?
 
-1. It was Friday night in the ER. (T)
-2. Sarah had a simple leg sprain. (F)
-3. Cristina performed the surgery. (T)
-4. Mark is Sarah’s brother. (F)
-5. The surgery took three hours. (T)
-6. They saved Sarah’s leg. (T)
-
-#### Activity 2: Fill in the Blanks
-
-An __________ brought Sarah on a __________. The __________ showed a bad break. She needed __________ quickly. There was a lot of __________. She cried about her __________.
-
-Word Bank: ambulance, stretcher, X-rays, surgery, blood, children
-
-#### Activity 3: Role-Play - Comforting a Family Member
-
-Student A (Doctor): Explain the plan to save Sarah’s leg.
-Student B (Mark): Ask questions about risks and recovery.
-
-### Fun Activities
-
-#### Activity 1: True or False?
-
-1. Meredith and Derek could date openly at work. (F)
-2. Derek’s surgery lasted seven hours. (T)
-3. Izzie accidentally saw them being very close. (T)
-4. The surgery failed. (F)
-5. Meredith and Derek met in the crowded cafeteria to talk privately. (F)
-
-#### Activity 2: Vocabulary Matching
-
-1. brain surgeon ___
-2. operating room ___
-3. waiting room ___
-4. rules ___
-5. secret ___
-
-a) taisyklės  b) operacinė  c) neurochirurgas  d) laukiamasis  e) paslaptis
-
-#### Activity 3: Fill in the Blanks
-
-Their relationship was a __________ because hospital __________ forbade dating. Meredith watched Derek’s __________ through the __________. Later they shared a quick __________ but had to be __________.
-
-Word Bank: secret, rules, surgery, window, kiss, careful
-
-### Fun Activities
-
-#### Activity 1: True or False?
-
-1. Lexie is Meredith’s half-sister. (T)
-2. Derek proposed in the cafeteria. (F)
-3. Dr. Webber officiated their wedding. (T)
-4. Owen Hunt became chief after Webber retired. (T)
-5. There were no emergencies on their wedding day. (F)
-
-#### Activity 2: Character Feelings Matching
-
-Match the character to the feeling:
-
-1. Lexie ___
-2. Meredith ___
-3. Derek ___
-4. Owen ___
-5. Cristina ___
-
-a) excited  b) blessed  c) supportive  d) intimidating  e) proud
-
-#### Activity 3: Write a Welcome Message
-
-Write 3–4 sentences welcoming a new intern to the hospital team.
-
-### Fun Activities
-
-#### Activity 1: True or False?
-
-1. The storm caused a complete power failure. (T)
-2. Cristina refused to operate during the storm. (F)
-3. Izzie comforted a lost boy. (T)
-4. Alex helped a man with hypothermia. (F)
-5. Every patient survived. (T)
-
-#### Activity 2: Fill in the Blanks
-
-The backup __________ kept essential machines on. Cristina operated by __________. A mother and daughter had __________. An elderly woman was rescued from her __________ basement. Meredith had to __________ patients in the ER.
-
-Word Bank: generators, flashlight, hypothermia, flooded, prioritize
-
-#### Activity 3: Role-Play - Triage Calls
-
-Student A: Assign patients to rooms.
-Student B: Report injuries and urgency.
-
-### Fun Activities
-
-#### Activity 1: True or False?
-
-1. Catherine Avery is Derek’s mother. (T)
-2. She said perfection is necessary for greatness. (F)
-3. Cristina wanted an ordinary career. (F)
-4. Alex grew into a skilled trauma surgeon. (T)
-5. Meredith felt content at the end. (T)
-
-#### Activity 2: Vocabulary Matching
-
-1. crossroads ___
-2. compassion ___
-3. impostor ___
-4. medical missions ___
-5. liver resection ___
-
-a) kepenų rezekcija  b) medicininės misijos  c) apsimetėlis  d) užuojauta  e) kryžkelė
-
-#### Activity 3: Fill in the Blanks
-
-Catherine said that __________ teaches us that __________ is impossible and __________ comes from accepting imperfection. Medicine is about being present for __________ and finding a healthy __________ between work and life.
-
-Word Bank: dreams, reality, perfection, excellence, patients, balance
-
-### Word Bank
-
-- white coat — baltas chalatas
-- scrubs — chirurginiai drabužiai
-- interns — rezidentai
-- locker room — rūbinė
-- chief of surgery — chirurgijos viršininkas
-- vital signs — gyvybiniai požymiai
-- hip surgery — klubo operacija
-- temperature — temperatūra
-- blood pressure — kraujo spaudimas
-- pulse — pulsas
-- cafeteria — valgykla
-- specialty — specialybė
-
-### Fun Activities
-
-#### Activity 1: True or False?
-
 1. Meredith was nervous on her first day. (T)
 2. Dr. Webber is the chief of surgery. (T)
 3. Meredith’s first patient had a broken leg. (F)
@@ -286,11 +153,9 @@ Word Bank: white coat, scrubs, patient, nervous, cafeteria, reports
 
 Choose the correct form (Present Simple or Present Continuous):
 
-1) Meredith usually ___ (check) patients in the morning.
-2) She ___ (feel) nervous today.
-3) Nurses ___ (push) beds right now.
-4) Alex often ___ (make) jokes.
-5) Izzie ___ (help) Meredith at the moment.
-6) Mr. Johnson ___ (recover) well.
-
----
+1. Meredith usually ___ (check) patients in the morning.
+2. She ___ (feel) nervous today.
+3. Nurses ___ (push) beds right now.
+4. Dr. Webber often ___ (make) serious speeches to interns.
+5. Izzie ___ (help) Meredith at the moment.
+6. Mr. Johnson ___ (recover) well after surgery.

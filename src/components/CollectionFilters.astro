@@ -1,0 +1,67 @@
+---
+import type { LibraryEntry } from "../lib/content";
+
+import { uniqueListValues, uniqueValues } from "../lib/content";
+import ContentCard from "./ContentCard.astro";
+
+type Props = {
+  title: string;
+  ltTitle: string;
+  description: string;
+  entries: LibraryEntry[];
+};
+
+const { title, ltTitle, description, entries } = Astro.props;
+
+const levels = uniqueValues(entries, "level");
+const grammarFocus = uniqueListValues(entries, "grammarFocus");
+const topics = uniqueListValues(entries, "topics");
+---
+
+<section class="collection-hero">
+  <p class="eyebrow">Library track</p>
+  <h1>{title}</h1>
+  <p class="hero-subtitle lt-text">{ltTitle}</p>
+  <p class="collection-description">{description}</p>
+</section>
+
+<section class="filter-shell" data-filter-root>
+  <div class="filter-bar">
+    <div class="filter-group">
+      <p>Level</p>
+      <div class="chip-row">
+        {levels.map((level) => (
+          <button type="button" class="chip" data-filter-button data-filter-group="level" data-filter-value={level}>
+            {level}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <p>Grammar</p>
+      <div class="chip-row">
+        {grammarFocus.map((item) => (
+          <button type="button" class="chip" data-filter-button data-filter-group="grammar" data-filter-value={item}>
+            {item}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <p>Topics</p>
+      <div class="chip-row">
+        {topics.map((item) => (
+          <button type="button" class="chip" data-filter-button data-filter-group="topic" data-filter-value={item}>
+            {item}
+          </button>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="library-grid">
+    {entries.map((entry) => <ContentCard entry={entry} />)}
+  </div>
+</section>

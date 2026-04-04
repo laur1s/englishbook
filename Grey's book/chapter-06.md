@@ -1,3 +1,21 @@
+---
+title: "Chapter 6: New Beginnings"
+ltTitle: "6 Skyrius: Nauji Pradžiai"
+slug: "chapter-06"
+collection: "grey-book"
+order: 6
+contentType: "chapter"
+level: "A2"
+grammarFocus:
+  - "Present Perfect review"
+topics:
+  - "family"
+  - "marriage"
+  - "change"
+hasAnswerKey: true
+status: "published"
+---
+
 ## Chapter 6: New Beginnings
 
 ## 6 Skyrius: Nauji Pradžiai
@@ -9,6 +27,16 @@
 - settle down — start a stable life (kurti pastovų gyvenimą)
 - take over — assume control (perimti vadovavimą)
 - show up — arrive (pasirodyti)
+
+### Word Bank
+
+- infectious enthusiasm — užkrečiamas entuziazmas
+- half-sister — įseserė
+- maid of honor — vyriausioji pamergė
+- appendectomy — apendicito pašalinimas
+- military trauma surgeon — karinis traumos chirurgas
+
+### Story
 
 Two years had passed since Meredith's first day at Seattle Grace Hospital. The nervous intern had become a confident surgeon. She had faced countless emergencies, lost patients she couldn't save, and celebrated victories that seemed miraculous. Through it all, Meredith had grown stronger, more compassionate, and deeply committed to her calling.
 
@@ -44,8 +72,6 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 
 "I love this place," Meredith said. "It's where I found myself."
 
----
-
 ### Understanding Questions
 
 1. How long had passed since Meredith's first day at the hospital?
@@ -66,13 +92,3 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 3. What would you do to help new interns feel welcome?
 4. How do you think family relationships affect doctors' work?
 5. If you could witness any family reunion, what would it be and why?
-
-### Word Bank
-
-- infectious enthusiasm — užkrečiamas entuziazmas
-- half-sister — įseserė
-- maid of honor — vyriausioji pamergė
-- appendectomy — apendicito pašalinimas
-- military trauma surgeon — karinis traumos chirurgas
-
----

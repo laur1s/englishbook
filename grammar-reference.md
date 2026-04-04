@@ -1,3 +1,21 @@
+---
+title: "Grammar Reference Guide - A2 Level"
+ltTitle: "Gramatikos vadovas - A2 lygis"
+slug: "grammar-reference"
+collection: "resources"
+order: 1
+contentType: "reference"
+level: "A2"
+grammarFocus:
+  - "Mixed A2 grammar"
+topics:
+  - "grammar"
+  - "reference"
+  - "self-study"
+hasAnswerKey: false
+status: "published"
+---
+
 # Grammar Reference Guide - A2 Level
 ## Gramatikos vadovas - A2 lygis
 

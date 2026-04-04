@@ -1,3 +1,22 @@
+---
+title: "Unit 7: Present Perfect Introduction"
+ltTitle: "Skyrius 7: Įvadas į Present Perfect"
+slug: "unit-07"
+collection: "a2-units"
+order: 7
+contentType: "unit"
+level: "A2.2"
+grammarFocus:
+  - "Present Perfect"
+  - "Present Perfect vs Past Simple"
+topics:
+  - "life experiences"
+  - "achievements"
+  - "time expressions"
+hasAnswerKey: true
+status: "published"
+---
+
 # Unit 7: Present Perfect Introduction
 ## Skyrius 7: Įvadas į Present Perfect
 

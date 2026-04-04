@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CollectionFilters from "../../components/CollectionFilters.astro";
+import { getGreyBookEntries } from "../../lib/content";
+
+const entries = await getGreyBookEntries();
+---
+
+<BaseLayout title="Grey's Book | English Library">
+  <CollectionFilters
+    title="Grey's Book"
+    ltTitle="Grey knyga"
+    description="A2-level hospital drama chapters with bilingual support, guided questions, and linked answer previews."
+    entries={entries}
+  />
+</BaseLayout>
