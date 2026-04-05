@@ -53,6 +53,21 @@ const [greyBookEntries, a2Entries, resources] = await Promise.all([
     </div>
   </section>
 
+  <section class="resume-strip" aria-label="Resume reading">
+    <article class="feature-card resume-card" data-resume-card>
+      <p class="eyebrow">Resume reading</p>
+      <h2 data-resume-title>Start Chapter 1</h2>
+      <p class="lt-text" data-resume-track>Grey's Book</p>
+      <p data-resume-copy>
+        Continue from the last chapter you opened, or start Chapter 1 if this is your first visit.
+      </p>
+      <div class="hero-actions">
+        <a class="primary-button" data-resume-link href={withBase("/grey-book/chapter-01")}>Start Chapter 1</a>
+        <a class="secondary-button" href={withBase("/grey-book")}>Open Grey's Book</a>
+      </div>
+    </article>
+  </section>
+
   <section class="path-strip" aria-label="Recommended study path">
     <article class="path-step">
       <p class="eyebrow">Step 1</p>
@@ -101,4 +116,22 @@ const [greyBookEntries, a2Entries, resources] = await Promise.all([
       <p>Check answers only after you try the work yourself, with sections kept collapsed until you open them.</p>
     </a>
   </section>
+
+  <script is:inline>
+    const resumeCard = document.querySelector("[data-resume-card]");
+    const resumeTitle = document.querySelector("[data-resume-title]");
+    const resumeTrack = document.querySelector("[data-resume-track]");
+    const resumeCopy = document.querySelector("[data-resume-copy]");
+    const resumeLink = document.querySelector("[data-resume-link]");
+    const resumeData = JSON.parse(localStorage.getItem("english-library.resume") || "null");
+
+    if (resumeCard && resumeData && resumeLink && resumeTitle && resumeTrack && resumeCopy) {
+      const lessonTitle = resumeData.title || "your last lesson";
+      resumeTitle.textContent = `Resume ${lessonTitle}`;
+      resumeTrack.textContent = resumeData.track || "Recent lesson";
+      resumeCopy.textContent = `You last read ${lessonTitle}. Pick up where you left off or start Chapter 1 again.`;
+      resumeLink.textContent = `Resume ${lessonTitle}`;
+      resumeLink.href = resumeData.href || resumeLink.href;
+    }
+  </script>
 </BaseLayout>

@@ -13,6 +13,15 @@ const { title, description = "Bilingual English learning library for Lithuanian 
   Astro.props;
 const currentPath = Astro.url.pathname.replace(import.meta.env.BASE_URL.replace(/\/$/, ""), "") || "/";
 const translationDictionary = JSON.stringify(getTranslationDictionary());
+const resumeContext =
+  currentPath.startsWith("/grey-book/") || currentPath.startsWith("/a2/")
+    ? {
+        key: "english-library.resume",
+        href: withBase(currentPath),
+        title: title.replace(/\s+\|\s+English Library$/, ""),
+        track: currentPath.startsWith("/grey-book/") ? "Grey's Book" : "A2 Course",
+      }
+    : null;
 ---
 
 <!doctype html>
@@ -66,6 +75,7 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
     </div>
 
     <script is:inline type="application/json" id="translation-dictionary-data" set:html={translationDictionary} />
+    <script is:inline type="application/json" id="resume-context-data" set:html={JSON.stringify(resumeContext)} />
 
     <script is:inline>
       const storageKey = "english-library.lt-visible";
@@ -74,6 +84,9 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
       const state = document.querySelector("[data-lt-state]");
       const translationDictionary = JSON.parse(
         document.getElementById("translation-dictionary-data")?.textContent || "{}",
+      );
+      const resumeContext = JSON.parse(
+        document.getElementById("resume-context-data")?.textContent || "null",
       );
       const translationPopover = document.querySelector("[data-translation-popover]");
       const translationWord = document.querySelector("[data-translation-word]");
@@ -90,6 +103,10 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
       button?.addEventListener("click", () => {
         setState(root.dataset.lt !== "shown");
       });
+
+      if (resumeContext) {
+        localStorage.setItem(resumeContext.key, JSON.stringify(resumeContext));
+      }
 
       document.querySelectorAll("details[data-persist-key]").forEach((element) => {
         const key = `english-library.details.${element.dataset.persistKey}`;

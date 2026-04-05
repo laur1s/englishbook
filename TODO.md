@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 10. Add a "resume reading" entry point on the home page.
+- [ ] 11. Normalize Chapter 1 structure and remove duplicate sections.
 
 ## Next
 
-- [ ] 11. Normalize Chapter 1 structure and remove duplicate sections.
 - [ ] 12. Normalize Chapter 2 structure and heading order.
 - [ ] 13. Normalize Chapter 3 structure and heading order.
 - [ ] 14. Normalize Chapter 4 structure and heading order.
@@ -16,6 +15,7 @@
 - [ ] 18. Normalize Chapter 6 structure and answer coverage to match the canonical lesson shape.
 - [ ] 19. Normalize Chapter 7 structure and answer coverage to match the canonical lesson shape.
 - [ ] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
+- [ ] 21. Normalize Chapter 9 structure and heading order.
 
 ## Done
 
@@ -28,6 +28,7 @@
 - [x] 7. Define the canonical chapter structure for Grey's Book pages.
 - [x] 8. Replace weak landing-page CTA copy with learner-task copy.
 - [x] 9. Add a short learner-facing product promise for Lithuanian readers.
+- [x] 10. Add a "resume reading" entry point on the home page.
 
 ## Rules
 
