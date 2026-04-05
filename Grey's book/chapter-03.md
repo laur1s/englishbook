@@ -162,15 +162,5 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
    - *Example answer:* "Yes, I would risk my job for love because true love is more important than work. / No, I wouldn't risk my job because I worked hard to become a doctor."
    - *Your answer:* "Yes/No, I would/wouldn't risk my job for love because _______________."
 
-### Word Bank
-
-- brain surgeons — neurochirurgai
-- brain tumor — smegenų auglys
-- brain stem — smegenų kamienas
-- paralysis — paralyžius
-- operating room — operacinė
-- incision — pjūvis
-- waiting room — laukiamasis
-- doctors' lounge — gydytojų poilsio kambarys
 
 ---
