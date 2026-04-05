@@ -573,6 +573,7 @@ html[data-lt="hidden"] .lt-text {
   border-collapse: collapse;
   overflow: hidden;
   border-radius: 1rem;
+  table-layout: fixed;
 }
 
 .prose th,
@@ -581,6 +582,8 @@ html[data-lt="hidden"] .lt-text {
   border: 1px solid var(--line);
   text-align: left;
   vertical-align: top;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .prose hr {
@@ -611,10 +614,38 @@ html[data-lt="hidden"] .lt-text {
   text-align: right;
 }
 
+.reader-nav-bar {
+  max-width: 76rem;
+  margin: 0 auto 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+}
+
+.reader-nav-link,
+.reader-nav-empty {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--line);
+  min-height: 100%;
+}
+
+.reader-nav-link strong {
+  line-height: 1.2;
+}
+
+.reader-nav-empty {
+  visibility: hidden;
+}
+
 @media (max-width: 960px) {
   .site-header,
   .landing-hero,
   .reader-shell,
+  .reader-nav-bar,
   .feature-grid,
   .path-strip,
   .library-grid,
@@ -645,6 +676,10 @@ html[data-lt="hidden"] .lt-text {
   .feature-card.flagship-card {
     grid-column: span 1;
   }
+
+  .reader-nav-link.align-right {
+    text-align: left;
+  }
 }
 
 @media (max-width: 680px) {
@@ -663,5 +698,17 @@ html[data-lt="hidden"] .lt-text {
   .collection-hero h1,
   .reader-hero h1 {
     font-size: clamp(2.2rem, 9vw, 3.2rem);
+  }
+
+  .reader-nav-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .reader-nav-empty {
+    display: none;
+  }
+
+  .prose table {
+    font-size: 0.95rem;
   }
 }

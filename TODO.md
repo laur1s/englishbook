@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 16. Make Grey's Book tables and chapter navigation work cleanly on mobile.
+- [ ] 17. Normalize Chapter 5 structure and answer coverage to match the canonical lesson shape.
 
 ## Next
 
-- [ ] 17. Normalize Chapter 5 structure and answer coverage to match the canonical lesson shape.
 - [ ] 18. Normalize Chapter 6 structure and answer coverage to match the canonical lesson shape.
 - [ ] 19. Normalize Chapter 7 structure and answer coverage to match the canonical lesson shape.
 - [ ] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
@@ -16,6 +15,7 @@
 - [ ] 24. Normalize the Chapter 3 support sections to match the canonical lesson shape.
 - [ ] 25. Normalize Chapter 4 support sections to match the canonical lesson shape.
 - [ ] 26. Align the shared Grey's Book answer key with the normalized Chapter 5 lesson shape.
+- [ ] 27. Normalize Chapter 10 answer coverage to match the canonical lesson shape.
 
 ## Done
 
@@ -34,6 +34,7 @@
 - [x] 13. Normalize Chapter 3 structure and heading order.
 - [x] 14. Normalize Chapter 4 structure and heading order.
 - [x] 15. Remove current Astro deprecation hints from content schema and pointer lookup code.
+- [x] 16. Make Grey's Book tables and chapter navigation work cleanly on mobile.
 
 ## Rules
 

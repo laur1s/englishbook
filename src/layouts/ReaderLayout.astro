@@ -3,7 +3,7 @@ import type { LibraryEntry } from "../lib/content";
 import type { ParsedSection } from "../lib/markdown";
 
 import BaseLayout from "./BaseLayout.astro";
-import { getEntryHref } from "../lib/content";
+import { getCollectionHref, getEntryHref } from "../lib/content";
 
 type Props = {
   entry: LibraryEntry;
@@ -26,6 +26,13 @@ const {
   answerHref,
   answerSnippetHtml,
 } = Astro.props;
+
+const collectionTitle =
+  entry.data.collection === "grey-book"
+    ? "Grey's Book"
+    : entry.data.collection === "a2-units"
+      ? "A2 Course"
+      : "Library";
 ---
 
 <BaseLayout title={`${entry.data.title} | English Library`} description={description}>
@@ -44,6 +51,38 @@ const {
       {entry.data.topics.map((topic) => <span>{topic}</span>)}
     </p>
   </section>
+
+  <nav class="reader-nav-bar" aria-label="Chapter navigation">
+    <a class="reader-nav-link reader-nav-back" href={getCollectionHref(entry.data.collection)}>
+      <span class="pager-label">Back to collection</span>
+      <strong>{collectionTitle}</strong>
+    </a>
+
+    {previous ? (
+      <a class="reader-nav-link" href={getEntryHref(previous)}>
+        <span class="pager-label">Previous</span>
+        <strong>{previous.data.title}</strong>
+      </a>
+    ) : (
+      <span class="reader-nav-link reader-nav-empty" />
+    )}
+
+    {next ? (
+      <a class="reader-nav-link align-right" href={getEntryHref(next)}>
+        <span class="pager-label">Next</span>
+        <strong>{next.data.title}</strong>
+      </a>
+    ) : (
+      <span class="reader-nav-link reader-nav-empty" />
+    )}
+
+    {answerSnippetHtml ? (
+      <a class="reader-nav-link reader-nav-answer" href="#answer-preview">
+        <span class="pager-label">Jump to answer preview</span>
+        <strong>Review only when ready</strong>
+      </a>
+    ) : null}
+  </nav>
 
   <div class="reader-shell">
     <aside class="reader-sidebar">
@@ -100,26 +139,6 @@ const {
           )}
         </details>
       )}
-
-      <nav class="pager-nav" aria-label="Adjacent content">
-        {previous ? (
-          <a class="pager-link" href={getEntryHref(previous)}>
-            <span class="pager-label">Previous</span>
-            <strong>{previous.data.title}</strong>
-          </a>
-        ) : (
-          <span />
-        )}
-
-        {next ? (
-          <a class="pager-link align-right" href={getEntryHref(next)}>
-            <span class="pager-label">Next</span>
-            <strong>{next.data.title}</strong>
-          </a>
-        ) : (
-          <span />
-        )}
-      </nav>
     </article>
   </div>
 </BaseLayout>
