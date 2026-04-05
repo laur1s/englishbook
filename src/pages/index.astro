@@ -13,63 +13,89 @@ const [greyBookEntries, a2Entries, resources] = await Promise.all([
 <BaseLayout title="English Library" description="GitHub-deployable bilingual English learning library.">
   <section class="landing-hero">
     <div class="hero-copy">
-      <p class="eyebrow">Markdown-first publishing</p>
-      <h1>Read the course like a library, not a folder dump.</h1>
+      <p class="eyebrow">Flagship reading track</p>
+      <h1>Learn English through Grey's Book first.</h1>
       <p class="hero-intro">
-        This site publishes the A2 course, Grey's Book chapters, grammar references, and answer keys
-        directly from the repository source files.
+        Grey's Book is now the main way into the library: a guided hospital drama with bilingual support,
+        chapter-by-chapter practice, and controlled answer reveals for Lithuanian learners.
+      </p>
+      <p class="hero-subtitle lt-text">
+        Pirmiausia skaitykite Grey's Book, tada naudokite A2 kursą ir gramatiką kaip pagalbinius įrankius.
       </p>
       <div class="hero-actions">
-        <a class="primary-button" href={withBase("/grey-book")}>Open Grey's Book</a>
-        <a class="secondary-button" href={withBase("/a2")}>Browse A2 Course</a>
+        <a class="primary-button" href={withBase("/grey-book")}>Start Grey's Book</a>
+        <a class="secondary-button" href={withBase("/a2")}>Use A2 Course for Practice</a>
       </div>
     </div>
 
     <div class="hero-panel">
       <dl>
         <div>
-          <dt>Grey's Book</dt>
-          <dd>{greyBookEntries.length} chapters</dd>
+          <dt>Start here</dt>
+          <dd>Grey's Book</dd>
         </div>
         <div>
-          <dt>A2 Course</dt>
-          <dd>{a2Entries.length} units</dd>
+          <dt>Story track</dt>
+          <dd>{greyBookEntries.length} hospital chapters</dd>
         </div>
         <div>
-          <dt>Resources</dt>
-          <dd>{resources.length} reference guides</dd>
+          <dt>Practice support</dt>
+          <dd>{a2Entries.length} A2 units + {resources.length} reference guides</dd>
+        </div>
+        <div>
+          <dt>Reading flow</dt>
+          <dd>Read, hold for LT, then review answers only when needed</dd>
         </div>
       </dl>
     </div>
   </section>
 
+  <section class="path-strip" aria-label="Recommended study path">
+    <article class="path-step">
+      <p class="eyebrow">Step 1</p>
+      <h2>Read the chapter</h2>
+      <p>Follow the story in order and stay inside the chapter flow instead of jumping across files.</p>
+    </article>
+    <article class="path-step">
+      <p class="eyebrow">Step 2</p>
+      <h2>Hold for Lithuanian help</h2>
+      <p>Long-press English words and phrases when you need support, without turning the chapter into a dictionary page.</p>
+    </article>
+    <article class="path-step">
+      <p class="eyebrow">Step 3</p>
+      <h2>Use practice as support</h2>
+      <p>Move to the A2 course, grammar guides, and answer keys only after the story has set the context.</p>
+    </article>
+  </section>
+
   <section class="feature-grid">
-    <a class="feature-card" href={withBase("/grey-book")}>
-      <p class="eyebrow">Track 1</p>
+    <a class="feature-card flagship-card" href={withBase("/grey-book")}>
+      <p class="eyebrow">Primary path</p>
       <h2>Grey's Book</h2>
       <p class="lt-text">Medicininė drama su A2 lygio anglų kalba</p>
-      <p>Story-led chapters with word banks, questions, activities, and linked answers.</p>
+      <p>Story-led chapters with bilingual support, guided questions, activity blocks, and linked answer previews.</p>
+      <p class="card-excerpt">This is the main reading experience and the first route new learners should open.</p>
     </a>
 
     <a class="feature-card" href={withBase("/a2")}>
-      <p class="eyebrow">Track 2</p>
+      <p class="eyebrow">Support track</p>
       <h2>A2 Course</h2>
       <p class="lt-text">Pilnas A2 kursas lietuviškai kalbantiems</p>
-      <p>Structured grammar units, vocabulary practice, translation work, and speaking tasks.</p>
+      <p>Structured grammar units, vocabulary practice, translation work, and speaking tasks that reinforce the reading track.</p>
     </a>
 
     <a class="feature-card" href={withBase("/resources/grammar-reference")}>
-      <p class="eyebrow">Reference</p>
+      <p class="eyebrow">On-demand help</p>
       <h2>Grammar + Vocabulary</h2>
       <p class="lt-text">Gramatikos ir žodyno šaltiniai</p>
-      <p>Long-form lookup pages for revision and self-study outside the unit sequence.</p>
+      <p>Reference pages for revision, quick lookup, and independent review when a chapter or unit sends you there.</p>
     </a>
 
     <a class="feature-card" href={withBase("/answers/a2")}>
-      <p class="eyebrow">Support</p>
+      <p class="eyebrow">Controlled review</p>
       <h2>Answer Keys</h2>
       <p class="lt-text">Atsakymai su peržiūros valdikliais</p>
-      <p>Collapsed by default, linked from lessons, and easier to navigate than raw Markdown.</p>
+      <p>Collapsed by default, linked from lessons, and designed to support review without spoiling the learning flow.</p>
     </a>
   </section>
 </BaseLayout>

@@ -319,6 +319,33 @@ html[data-lt="hidden"] .lt-text {
   gap: 1rem;
 }
 
+.path-strip {
+  max-width: 76rem;
+  margin: 0 auto 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.path-step {
+  padding: 1.2rem 1.25rem;
+  border-radius: var(--radius);
+  background: rgba(255, 252, 247, 0.7);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.path-step h2 {
+  margin: 0.2rem 0 0.45rem;
+  font-size: 1.35rem;
+}
+
+.path-step p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .feature-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -330,6 +357,13 @@ html[data-lt="hidden"] .lt-text {
 .feature-card,
 .library-card {
   min-height: 100%;
+}
+
+.feature-card.flagship-card {
+  grid-column: span 2;
+  background:
+    linear-gradient(140deg, rgba(186, 74, 47, 0.1), rgba(255, 252, 247, 0.92) 45%),
+    var(--paper);
 }
 
 .feature-card h2,
@@ -550,6 +584,7 @@ html[data-lt="hidden"] .lt-text {
   .landing-hero,
   .reader-shell,
   .feature-grid,
+  .path-strip,
   .library-grid,
   .pager-nav {
     grid-template-columns: 1fr;
@@ -573,6 +608,10 @@ html[data-lt="hidden"] .lt-text {
 
   .feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-card.flagship-card {
+    grid-column: span 1;
   }
 }
 

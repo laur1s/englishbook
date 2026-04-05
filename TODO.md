@@ -1,14 +1,12 @@
-✅ Completed: Extended each unit with more examples for easier learning
+# Progress Tracking
 
-- Unit 1: Added more examples for greetings, introductions, to be verb, questions, negative forms
-- Unit 2: Added more examples for Present Simple, adverbs of frequency, daily activities
-- Unit 3: Added more examples for regular/irregular verbs, negative, questions, life stories
-- Unit 4: Added more examples for countable/uncountable nouns, quantifiers, shopping dialogues
-- Unit 5: Added more examples for prepositions, giving directions, and transportation
-- Unit 6: More examples for will, going to, present continuous for future, and modal verbs (applied)
-- Unit 7: More examples for have/has + past participle, time expressions, and life experiences (applied)
-- Unit 8: More examples for comparative/superlative forms, as...as, and comparison structures (applied)
-- Unit 9: More examples for can/could, may/might, must, should, and polite requests (applied)
-- Unit 10: More examples for Present Simple vs Continuous vs Perfect, stative/dynamic verbs (applied)
-- Unit 11: More examples for was/were + verb-ing, interrupted actions, and background events (applied)
-- Unit 12: More examples reviewing all A2 grammar and mixed exercises (applied)
+- [x] 1. Rewrite the home page hierarchy so Grey's Book is the clear flagship.
+- [ ] 2. Convert `TODO.md` into the `Now / Next / Done / Rules` execution ledger.
+- [ ] 3. Audit every Grey's Book chapter page for structural defects and navigation gaps.
+- [ ] 4. Audit Grey's Book answer snippets against visible chapter exercises.
+- [ ] 5. Audit long-press translation behavior on representative Grey's Book chapters.
+- [ ] 6. Audit the mobile reading experience on short, medium, and long Grey's Book chapters.
+- [ ] 7. Define the canonical chapter structure for Grey's Book pages.
+- [ ] 8. Replace weak landing-page CTA copy with learner-task copy.
+- [ ] 9. Add a short learner-facing product promise for Lithuanian readers.
+- [ ] 10. Add a "resume reading" entry point on the home page.
