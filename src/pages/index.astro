@@ -22,9 +22,13 @@ const [greyBookEntries, a2Entries, resources] = await Promise.all([
       <p class="hero-subtitle lt-text">
         Pirmiausia skaitykite Grey's Book, tada naudokite A2 kursą ir gramatiką kaip pagalbinius įrankius.
       </p>
+      <p class="hero-promise">
+        Built for Lithuanian learners: read the story first, get Lithuanian help only when you need it, and
+        practise before you check answers.
+      </p>
       <div class="hero-actions">
         <a class="primary-button" href={withBase("/grey-book/chapter-01")}>Read Chapter 1</a>
-        <a class="secondary-button" href={withBase("/a2")}>Practice With the A2 Course</a>
+        <a class="secondary-button" href={withBase("/a2")}>Practice Grammar in A2</a>
       </div>
     </div>
 
@@ -59,12 +63,12 @@ const [greyBookEntries, a2Entries, resources] = await Promise.all([
     <article class="path-step">
       <p class="eyebrow">Step 2</p>
       <h2>Translate difficult words</h2>
-      <p>Press and hold English words and phrases when you need help, then return to the story immediately.</p>
+      <p>Hold an English word or phrase when you need Lithuanian support, then keep reading without leaving the chapter.</p>
     </article>
     <article class="path-step">
       <p class="eyebrow">Step 3</p>
       <h2>Practice after reading</h2>
-      <p>Move to the A2 course, grammar guides, and answer keys only after the story has set the context.</p>
+      <p>Use the A2 course, grammar guides, and answer keys after the chapter has already given you the story context.</p>
     </article>
   </section>
 
@@ -74,28 +78,28 @@ const [greyBookEntries, a2Entries, resources] = await Promise.all([
       <h2>Grey's Book</h2>
       <p class="lt-text">Medicininė drama su A2 lygio anglų kalba</p>
       <p>Story-led chapters with bilingual support, guided questions, activity blocks, and linked answer previews.</p>
-      <p class="card-excerpt">This is the main reading experience and the first route new learners should open.</p>
+      <p class="card-excerpt">Open the story first, read in order, and use long-press translation only when you need help.</p>
     </a>
 
     <a class="feature-card" href={withBase("/a2")}>
       <p class="eyebrow">Practice after reading</p>
       <h2>A2 Course</h2>
       <p class="lt-text">Pilnas A2 kursas lietuviškai kalbantiems</p>
-      <p>Structured grammar units, vocabulary practice, translation work, and speaking tasks that reinforce the reading track.</p>
+      <p>Review grammar, reinforce vocabulary, and practise speaking after each reading session.</p>
     </a>
 
     <a class="feature-card" href={withBase("/resources/grammar-reference")}>
       <p class="eyebrow">Look up what you need</p>
       <h2>Grammar + Vocabulary</h2>
       <p class="lt-text">Gramatikos ir žodyno šaltiniai</p>
-      <p>Reference pages for revision, quick lookup, and independent review when a chapter or unit sends you there.</p>
+      <p>Look up a rule, check a word list, and go straight back to the chapter or unit you were studying.</p>
     </a>
 
     <a class="feature-card" href={withBase("/answers/a2")}>
       <p class="eyebrow">Check answers last</p>
       <h2>Answer Keys</h2>
       <p class="lt-text">Atsakymai su peržiūros valdikliais</p>
-      <p>Collapsed by default, linked from lessons, and designed to support review without spoiling the learning flow.</p>
+      <p>Check answers only after you try the work yourself, with sections kept collapsed until you open them.</p>
     </a>
   </section>
 </BaseLayout>
