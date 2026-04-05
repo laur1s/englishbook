@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 8. Replace weak landing-page CTA copy with learner-task copy.
+- [ ] 9. Add a short learner-facing product promise for Lithuanian readers.
 
 ## Next
 
-- [ ] 9. Add a short learner-facing product promise for Lithuanian readers.
 - [ ] 10. Add a "resume reading" entry point on the home page.
 - [ ] 11. Normalize Chapter 1 structure and remove duplicate sections.
 - [ ] 12. Normalize Chapter 2 structure and heading order.
@@ -15,6 +14,7 @@
 - [ ] 15. Remove current Astro deprecation hints from content schema and pointer lookup code.
 - [ ] 16. Make Grey's Book tables and chapter navigation work cleanly on mobile.
 - [ ] 17. Normalize Chapter 5 structure and answer coverage to match the canonical lesson shape.
+- [ ] 18. Normalize Chapter 6 structure and answer coverage to match the canonical lesson shape.
 
 ## Done
 
@@ -25,6 +25,7 @@
 - [x] 5. Audit long-press translation behavior on representative Grey's Book chapters.
 - [x] 6. Audit the mobile reading experience on short, medium, and long Grey's Book chapters.
 - [x] 7. Define the canonical chapter structure for Grey's Book pages.
+- [x] 8. Replace weak landing-page CTA copy with learner-task copy.
 
 ## Rules
 
