@@ -143,11 +143,9 @@ a) pulsas  b) viršininkas  c) rezidentas/praktikantas  d) rūbinė  e) valgykla
 
 #### Activity 3: Fill in the Blanks
 
-Complete the summary using the Word Bank:
+Complete the summary using words from the Word Bank above:
 
 Meredith put on her __________ and walked past people in __________. Her first __________ was Mr. Johnson. She felt __________ but tried to smile. At lunch, she went to the __________ and later wrote __________ on the computer.
-
-Word Bank: white coat, scrubs, patient, nervous, cafeteria, reports
 
 ### Grammar Practice
 
