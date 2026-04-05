@@ -90,3 +90,44 @@ Meredith learned that being a doctor means balancing dreams and reality.
 3. What would you do if your career dreams changed over time?
 4. How do you think balancing work and personal life affects success?
 5. If you could tell your younger self one thing about dreams and reality, what would it be?
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Meredith had been working at the hospital for three years. **T / F**
+2. Dr. Catherine Avery was a trauma surgeon. **T / F**
+3. Derek told Meredith to give up on her dreams. **T / F**
+4. Cristina wanted to become the foremost heart surgeon in the country. **T / F**
+5. Izzie wanted to help people who could not afford care. **T / F**
+
+#### Activity 2: Matching
+
+Match the English phrase to the Lithuanian meaning:
+
+1. crossroads ___
+2. impeccable ___
+3. compassion ___
+4. trauma surgeon ___
+5. medical missions ___
+
+a) medicininės misijos  b) traumos chirurgas  c) užuojauta  d) nepriekaištingas  e) kryžkelė
+
+#### Activity 3: Fill in the Blanks
+
+Complete the summary using the Word Bank:
+
+Meredith learned that success is not about __________. It is about accepting __________, striving for __________, caring for __________, and finding __________ between work and life.
+
+Word Bank: reality, perfection, excellence, patients, balance
+
+### Grammar Practice
+
+Complete the sentences with the correct comparative or superlative form:
+
+1. Meredith is ___ confident than she used to be.
+2. Catherine is the ___ experienced doctor in the room.
+3. Meredith wants ___ wisdom, not just talent.
+4. Derek is ___ when Meredith finds balance.
+5. Cristina wants ___ dedication to her dream.
+6. Success is the ___ meaningful when it includes humanity.
