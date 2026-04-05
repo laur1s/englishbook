@@ -143,10 +143,13 @@ status: "published"
 
 ### Chapter 5 Fun Activities
 
+- Activity 1 (Emotions Vocabulary): shocked -> When George's heart stopped; guilty -> When Cristina thought it was her fault; supportive -> When friends sat with Cristina; broken -> When Cristina cried on the floor; grateful -> When Cristina thanked her friends
 - Activity 2 (True/False): 1 T, 2 F, 3 F, 4 F, 5 T, 6 T, 7 T
+- Activity 3 (Role-Play): model answers will vary
 - Activity 4 (Complete the Rules): listen; comfort; understand; blame; help; bad
 - Activity 5 (Timeline): sample answers will vary
 - Activity 6 (Supportive Message): model answer will vary
+- Activity 7 (Discussion): model answers will vary
 
 ### Chapter 5 Grammar Practice
 
