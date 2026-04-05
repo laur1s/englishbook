@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 12. Normalize Chapter 2 structure and heading order.
+- [ ] 13. Normalize Chapter 3 structure and heading order.
 
 ## Next
 
-- [ ] 13. Normalize Chapter 3 structure and heading order.
 - [ ] 14. Normalize Chapter 4 structure and heading order.
 - [ ] 15. Remove current Astro deprecation hints from content schema and pointer lookup code.
 - [ ] 16. Make Grey's Book tables and chapter navigation work cleanly on mobile.
@@ -16,6 +15,7 @@
 - [ ] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
 - [ ] 21. Normalize Chapter 9 structure and heading order.
 - [ ] 22. Normalize Chapter 10 structure and heading order.
+- [ ] 23. Audit the Chapter 3 answer bundle against the visible lesson shape.
 
 ## Done
 
@@ -30,6 +30,7 @@
 - [x] 9. Add a short learner-facing product promise for Lithuanian readers.
 - [x] 10. Add a "resume reading" entry point on the home page.
 - [x] 11. Normalize Chapter 1 structure and remove duplicate sections.
+- [x] 12. Normalize Chapter 2 structure and heading order.
 
 ## Rules
 

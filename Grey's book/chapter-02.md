@@ -47,19 +47,6 @@ status: "published"
 
 ---
 
-### Grammar Practice
-
-Put the verbs in Past Simple:
-
-1) The drunk driver ___ (hit) Sarah’s car.
-2) Sarah ___ (scream) in pain.
-3) Cristina ___ (look) at the X-rays.
-4) They ___ (operate) for three hours.
-5) Mark ___ (cry) in the ER.
-6) The team ___ (save) Sarah’s leg.
-
----
-
 ### Story
 
 It was Friday night. The emergency room was always busy on Fridays, but tonight was crazy. Ambulances were arriving one after another. Sirens were screaming outside. Dr. Meredith Grey was very tired. She wanted to go home. But then the doors opened fast.
@@ -163,20 +150,15 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
    - *Example answer:* "I think Sarah's family will be more careful when driving. They will be happy to be together. Sarah might be scared to drive again."
    - *Your answer:* "I think Sarah's family will _______________. They will _______________. Sarah might _______________."
 
-### Word Bank
+### Grammar Practice
 
-- emergency room — skubios pagalbos skyrius
-- stretcher — neštuvai
-- drunk driver — girtas vairuotojas
-- shock — šokas
-- trauma room — traumos kambarys
-- ortho surgery — ortopedinė chirurgija
-- X-rays — rentgeno nuotraukos
-- compound fracture — atviras lūžis
-- tibia — blauzdikaulis
-- fibula — žastikaulis
-- recovery room — atsigavimo palata
-- anesthesia — anestezija
-- physical therapy — fizinė terapija
+Put the verbs in Past Simple:
+
+1) The drunk driver ___ (hit) Sarah’s car.
+2) Sarah ___ (scream) in pain.
+3) Cristina ___ (look) at the X-rays.
+4) They ___ (operate) for three hours.
+5) Mark ___ (cry) in the ER.
+6) The team ___ (save) Sarah’s leg.
 
 ---
