@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 19. Normalize Chapter 7 structure and answer coverage to match the canonical lesson shape.
+- [ ] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
 
 ## Next
 
-- [ ] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
 - [ ] 21. Normalize Chapter 9 structure and heading order.
 - [ ] 22. Normalize Chapter 10 structure and heading order.
 - [ ] 23. Audit the Chapter 3 answer bundle against the visible lesson shape.
@@ -16,6 +15,7 @@
 - [ ] 27. Normalize Chapter 10 answer coverage to match the canonical lesson shape.
 - [ ] 28. Normalize Chapter 9 answer coverage to match the canonical lesson shape.
 - [ ] 29. Normalize Chapter 6 answer coverage to match the canonical lesson shape.
+- [ ] 30. Normalize Chapter 7 answer coverage to match the canonical lesson shape.
 
 ## Done
 
@@ -37,6 +37,7 @@
 - [x] 16. Make Grey's Book tables and chapter navigation work cleanly on mobile.
 - [x] 17. Normalize Chapter 5 structure and answer coverage to match the canonical lesson shape.
 - [x] 18. Normalize Chapter 6 structure and answer coverage to match the canonical lesson shape.
+- [x] 19. Normalize Chapter 7 structure and answer coverage to match the canonical lesson shape.
 
 ## Rules
 

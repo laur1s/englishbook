@@ -93,3 +93,43 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 3. What would you say to comfort someone who survived a traumatic event?
 4. How do you think natural disasters change communities?
 5. If you could prepare a hospital for any disaster, what would you do?
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Seattle was hit by the worst storm in decades. **T / F**
+2. The hospital never lost power. **T / F**
+3. Cristina worked on a construction worker with a mangled arm. **T / F**
+4. Izzie comforted a boy who was not separated from his parents. **T / F**
+5. The storm lasted 18 hours. **T / F**
+
+#### Activity 2: Fill in the Blanks
+
+Complete the summary using the Word Bank:
+
+The hospital used backup __________ when the main power failed. Cristina worked by __________ during surgery. One patient had severe __________ after being trapped in flooding. The city was __________, but the team still had to __________ the most urgent cases.
+
+Word Bank: generators, flashlight, hypothermia, flooded, prioritize
+
+#### Activity 3: Role-Play
+
+Practice with a partner:
+
+Student A is a frightened patient during the storm. Student B is a doctor or nurse who must stay calm and explain what is happening.
+
+Write your own short dialog:
+
+"________________________________________________________________"
+"________________________________________________________________"
+
+### Grammar Practice
+
+Complete the sentences with `can` or `can't`:
+
+1. The backup generators ___ power the essential machines.
+2. The hospital ___ help every patient at once, so the team must prioritize.
+3. The doctors ___ work by flashlight when they have to.
+4. The main power ___ run the whole building during the storm.
+5. ___ the trauma room for the injured worker. (Take)
+6. ___ with the frightened child until help arrives. (Stay)
