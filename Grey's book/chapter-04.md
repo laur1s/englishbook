@@ -251,16 +251,4 @@ Lisa wanted to have a __________ for five years. When the baby was born, he was 
 
 **Write your prediction:** "I think _______________ because _______________."
 
-### Word Bank
-
-- neonatal specialist — naujagimių specialistas
-- high-risk pregnancies — didelės rizikos nėštumai
-- intrauterine growth restriction — gimdos augimo apribojimas
-- ultrasound — ultragarsas
-- cesarean section — cezario pjūvis
-- premature — priešlaikinis
-- NICU — naujagimių intensyvios priežiūros skyrius
-- ventilator — ventiliatorius
-- breast milk — motinos pienas
-
 ---

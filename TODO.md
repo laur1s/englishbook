@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 14. Normalize Chapter 4 structure and heading order.
+- [ ] 15. Remove current Astro deprecation hints from content schema and pointer lookup code.
 
 ## Next
 
-- [ ] 15. Remove current Astro deprecation hints from content schema and pointer lookup code.
 - [ ] 16. Make Grey's Book tables and chapter navigation work cleanly on mobile.
 - [ ] 17. Normalize Chapter 5 structure and answer coverage to match the canonical lesson shape.
 - [ ] 18. Normalize Chapter 6 structure and answer coverage to match the canonical lesson shape.
@@ -16,6 +15,7 @@
 - [ ] 22. Normalize Chapter 10 structure and heading order.
 - [ ] 23. Audit the Chapter 3 answer bundle against the visible lesson shape.
 - [ ] 24. Normalize the Chapter 3 support sections to match the canonical lesson shape.
+- [ ] 25. Normalize Chapter 4 support sections to match the canonical lesson shape.
 
 ## Done
 
@@ -32,6 +32,7 @@
 - [x] 11. Normalize Chapter 1 structure and remove duplicate sections.
 - [x] 12. Normalize Chapter 2 structure and heading order.
 - [x] 13. Normalize Chapter 3 structure and heading order.
+- [x] 14. Normalize Chapter 4 structure and heading order.
 
 ## Rules
 
