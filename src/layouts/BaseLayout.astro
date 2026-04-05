@@ -60,7 +60,7 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
       <strong data-translation-word></strong>
       <ul data-translation-list></ul>
       <p class="translation-hint">
-        Long-press another word to translate it.
+        Press and hold another word to translate it.
         <span class="lt-text">Palaikykite paspaudę kitą žodį kitam vertimui.</span>
       </p>
     </div>
@@ -149,6 +149,8 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
       });
 
       const WORD_CHARACTER = /[A-Za-z'-]/;
+      const LONG_PRESS_DELAY = 380;
+      const MOVE_TOLERANCE = 18;
       let longPressTimer = null;
       let longPressTriggered = false;
       let pointerState = null;
@@ -329,63 +331,111 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
         return null;
       };
 
-      const clearLongPress = () => {
+      const isTouchLikePointer = (pointerType) => pointerType === "touch" || pointerType === "pen";
+
+      const clearLongPressTimer = () => {
         window.clearTimeout(longPressTimer);
         longPressTimer = null;
+      };
+
+      const releasePointerState = () => {
+        document.body.classList.remove("translation-press-active");
         pointerState = null;
       };
 
-      document.addEventListener("pointerdown", (event) => {
-        if (event.button !== 0 || !isEligibleTarget(event.target)) {
-          return;
-        }
+      const clearLongPress = () => {
+        clearLongPressTimer();
+        releasePointerState();
+      };
 
-        longPressTriggered = false;
-        pointerState = {
-          x: event.clientX,
-          y: event.clientY,
-        };
-
-        longPressTimer = window.setTimeout(() => {
-          const termLookup = getTermsFromPoint(event.clientX, event.clientY);
-          const translationResult = termLookup ? lookupTranslation(termLookup.terms) : null;
-
-          if (termLookup && translationResult) {
-            longPressTriggered = true;
-            showTranslationPopover({
-              word: translationResult.matchedTerm || termLookup.displayWord,
-              translations: translationResult.translations,
-              x: event.clientX,
-              y: event.clientY,
-            });
-          }
-
-          clearLongPress();
-        }, 420);
-      });
-
-      document.addEventListener("pointermove", (event) => {
+      const triggerTranslation = () => {
         if (!pointerState) {
           return;
         }
 
-        const distance = Math.hypot(event.clientX - pointerState.x, event.clientY - pointerState.y);
+        const termLookup = getTermsFromPoint(pointerState.currentX, pointerState.currentY);
+        const translationResult = termLookup ? lookupTranslation(termLookup.terms) : null;
 
-        if (distance > 12) {
+        if (termLookup && translationResult) {
+          longPressTriggered = true;
+          pointerState.translationShown = true;
+          showTranslationPopover({
+            word: translationResult.matchedTerm || termLookup.displayWord,
+            translations: translationResult.translations,
+            x: pointerState.currentX,
+            y: pointerState.currentY,
+          });
+        }
+
+        clearLongPressTimer();
+
+        if (!pointerState?.translationShown || !isTouchLikePointer(pointerState.pointerType)) {
+          releasePointerState();
+        }
+      };
+
+      document.addEventListener("pointerdown", (event) => {
+        if ((event.pointerType === "mouse" && event.button !== 0) || !isEligibleTarget(event.target)) {
+          return;
+        }
+
+        clearLongPress();
+        longPressTriggered = false;
+        pointerState = {
+          pointerId: event.pointerId,
+          pointerType: event.pointerType || "mouse",
+          startX: event.clientX,
+          startY: event.clientY,
+          x: event.clientX,
+          y: event.clientY,
+          currentX: event.clientX,
+          currentY: event.clientY,
+          translationShown: false,
+        };
+
+        if (isTouchLikePointer(pointerState.pointerType)) {
+          document.body.classList.add("translation-press-active");
+        }
+
+        longPressTimer = window.setTimeout(triggerTranslation, LONG_PRESS_DELAY);
+      }, { passive: true });
+
+      document.addEventListener("pointermove", (event) => {
+        if (!pointerState || event.pointerId !== pointerState.pointerId) {
+          return;
+        }
+
+        pointerState.currentX = event.clientX;
+        pointerState.currentY = event.clientY;
+
+        const distance = Math.hypot(
+          event.clientX - pointerState.startX,
+          event.clientY - pointerState.startY,
+        );
+
+        if (distance > MOVE_TOLERANCE) {
           clearLongPress();
         }
-      });
+      }, { passive: true });
 
-      ["pointerup", "pointercancel", "scroll"].forEach((eventName) => {
-        window.addEventListener(eventName, () => {
-          clearLongPress();
+      ["pointerup", "pointercancel"].forEach((eventName) => {
+        window.addEventListener(eventName, (event) => {
+          if (!pointerState || event.pointerId !== pointerState.pointerId) {
+            return;
+          }
+
+          clearLongPressTimer();
+          releasePointerState();
         }, { passive: true });
       });
+
+      window.addEventListener("scroll", clearLongPress, { passive: true });
 
       document.addEventListener("click", (event) => {
         if (longPressTriggered) {
           longPressTriggered = false;
           event.preventDefault();
+          event.stopPropagation();
           return;
         }
 
@@ -395,7 +445,10 @@ const translationDictionary = JSON.stringify(getTranslationDictionary());
       });
 
       document.addEventListener("contextmenu", (event) => {
-        if (!translationPopover?.hasAttribute("hidden")) {
+        if (
+          (pointerState && isTouchLikePointer(pointerState.pointerType)) ||
+          !translationPopover?.hasAttribute("hidden")
+        ) {
           event.preventDefault();
         }
       });
