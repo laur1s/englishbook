@@ -92,3 +92,45 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 3. What would you do to help new interns feel welcome?
 4. How do you think family relationships affect doctors' work?
 5. If you could witness any family reunion, what would it be and why?
+
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Meredith had worked at Seattle Grace for two years. **T / F**
+2. Lexie was Meredith's daughter. **T / F**
+3. Derek proposed to Meredith in the hospital garden. **T / F**
+4. Owen Hunt became the new chief of surgery. **T / F**
+5. The wedding was huge and public. **T / F**
+
+#### Activity 2: Vocabulary Matching
+
+Match the English phrase to the Lithuanian meaning:
+
+1. half-sister ___
+2. maid of honor ___
+3. appendectomy ___
+4. military trauma surgeon ___
+5. infectious enthusiasm ___
+
+a) įseserė  b) vyriausioji pamergė  c) apendicito pašalinimas  d) karinis traumos chirurgas  e) užkrečiamas entuziazmas
+
+#### Activity 3: Welcome Message
+
+Write a short welcome message to a new family member, new colleague, or new student.
+
+Your message:
+
+"________________________________________________________________"
+"________________________________________________________________"
+
+### Grammar Practice
+
+Complete the sentences with the correct present perfect form:
+
+1. Meredith ___ (become) more confident over the years.
+2. Lexie ___ (mentor) Meredith in a new way.
+3. Derek ___ (plan) the perfect proposal.
+4. They ___ (face) countless emergencies together.
+5. Owen ___ (take) over as the new chief of surgery.
+6. Meredith ___ (find) a family at Seattle Grace.
