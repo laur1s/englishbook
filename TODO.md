@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 5. Audit long-press translation behavior on representative Grey's Book chapters.
+- [ ] 6. Audit the mobile reading experience on short, medium, and long Grey's Book chapters.
 
 ## Next
 
-- [ ] 6. Audit the mobile reading experience on short, medium, and long Grey's Book chapters.
 - [ ] 7. Define the canonical chapter structure for Grey's Book pages.
 - [ ] 8. Replace weak landing-page CTA copy with learner-task copy.
 - [ ] 9. Add a short learner-facing product promise for Lithuanian readers.
@@ -14,6 +13,8 @@
 - [ ] 11. Normalize Chapter 1 structure and remove duplicate sections.
 - [ ] 12. Normalize Chapter 2 structure and heading order.
 - [ ] 13. Normalize Chapter 3 structure and heading order.
+- [ ] 14. Normalize Chapter 4 structure and heading order.
+- [ ] 15. Remove current Astro deprecation hints from content schema and pointer lookup code.
 
 ## Done
 
@@ -21,6 +22,7 @@
 - [x] 2. Convert `TODO.md` into the `Now / Next / Done / Rules` execution ledger.
 - [x] 3. Audit every Grey's Book chapter page for structural defects and navigation gaps.
 - [x] 4. Audit Grey's Book answer snippets against visible chapter exercises.
+- [x] 5. Audit long-press translation behavior on representative Grey's Book chapters.
 
 ## Rules
 
