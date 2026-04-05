@@ -15,6 +15,7 @@
 - [ ] 17. Normalize Chapter 5 structure and answer coverage to match the canonical lesson shape.
 - [ ] 18. Normalize Chapter 6 structure and answer coverage to match the canonical lesson shape.
 - [ ] 19. Normalize Chapter 7 structure and answer coverage to match the canonical lesson shape.
+- [ ] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
 
 ## Done
 
