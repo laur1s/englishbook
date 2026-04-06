@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 21. Normalize Chapter 9 structure and heading order.
+- [ ] 22. Normalize Chapter 10 structure and heading order.
 
 ## Next
 
-- [ ] 22. Normalize Chapter 10 structure and heading order.
 - [ ] 23. Audit the Chapter 3 answer bundle against the visible lesson shape.
 - [ ] 24. Normalize the Chapter 3 support sections to match the canonical lesson shape.
 - [ ] 25. Normalize Chapter 4 support sections to match the canonical lesson shape.
@@ -16,6 +15,7 @@
 - [ ] 29. Normalize Chapter 6 answer coverage to match the canonical lesson shape.
 - [ ] 30. Normalize Chapter 7 answer coverage to match the canonical lesson shape.
 - [ ] 31. Normalize Chapter 8 answer coverage to match the canonical lesson shape.
+- [ ] 32. Audit the Chapter 4 answer bundle against the visible lesson shape.
 
 ## Done
 
@@ -39,6 +39,7 @@
 - [x] 18. Normalize Chapter 6 structure and answer coverage to match the canonical lesson shape.
 - [x] 19. Normalize Chapter 7 structure and answer coverage to match the canonical lesson shape.
 - [x] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
+- [x] 21. Normalize Chapter 9 structure and heading order.
 
 ## Rules
 

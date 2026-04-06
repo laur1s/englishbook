@@ -1,6 +1,6 @@
 ---
 title: "Chapter 9: A Father's Heart"
-ltTitle: "IX Skyrius: Tėvo Širdis"
+ltTitle: "9 Skyrius: Tėvo Širdis"
 slug: "chapter-09"
 collection: "grey-book"
 order: 9
@@ -18,7 +18,7 @@ status: "published"
 
 ## Chapter 9: A Father's Heart
 
-## IX Skyrius: Tėvo Širdis
+## 9 Skyrius: Tėvo Širdis
 
 ### Phrasal Verbs
 
@@ -146,7 +146,7 @@ Match the medical situations with the correct phrasal verb from this chapter:
 4. When you trust someone completely → _______
 5. When you stop yourself from acting → _______
 
-### Grammar Exercises: Past Continuous
+### Grammar Practice
 
 **1. Complete the sentences using the Past Continuous form of the verb in parentheses.**
 
