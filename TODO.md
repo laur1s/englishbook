@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 47. Audit the Chapter 4 answer labels after key alignment.
+- [ ] 48. Audit the Chapter 5 answer labels after the answer-coverage expansion.
 
 ## Next
 
-- [ ] 47. Audit the Chapter 4 answer labels after key alignment.
 - [ ] 48. Audit the Chapter 5 answer labels after the answer-coverage expansion.
 - [ ] 49. Audit the Chapter 10 answer bundle after the final label alignment.
 - [ ] 50. Audit the Chapter 9 answer bundle after the final label alignment.
@@ -17,6 +16,7 @@
 - [ ] 55. Audit the Chapter 5 answer bundle after the final answer-key alignment.
 - [ ] 56. Run build/check QA after tasks 41-45 and log any follow-up work.
 - [ ] 57. Run build/check QA after tasks 46-50 and log any follow-up work.
+- [ ] 58. Audit the Chapter 10 grammar labels after the final key alignment.
 
 ## Done
 
@@ -66,6 +66,7 @@
 - [x] 44. Audit the Chapter 10 answer labels after key alignment.
 - [x] 45. Audit the Chapter 9 answer labels after key alignment.
 - [x] 46. Audit the Chapter 3 answer labels after key alignment.
+- [x] 47. Audit the Chapter 4 answer labels after key alignment.
 
 ## Rules
 
