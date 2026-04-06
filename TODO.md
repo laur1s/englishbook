@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 36. Align the shared Grey's Book answer key with the normalized Chapter 4 lesson shape.
+- [ ] 37. Audit the Chapter 5 answer bundle after Chapter 5 content changes.
 
 ## Next
 
-- [ ] 37. Audit the Chapter 5 answer bundle after Chapter 5 content changes.
 - [ ] 38. Audit the Chapter 10 answer bundle after Chapter 10 content changes.
 - [ ] 39. Audit the Chapter 9 answer bundle after Chapter 9 content changes.
 - [ ] 40. Audit the Chapter 6 answer bundle after Chapter 6 content changes.
@@ -16,6 +15,7 @@
 - [ ] 44. Audit the Chapter 10 answer labels after key alignment.
 - [ ] 45. Audit the Chapter 9 answer labels after key alignment.
 - [ ] 46. Audit the Chapter 3 answer labels after key alignment.
+- [ ] 47. Audit the Chapter 4 answer labels after key alignment.
 
 ## Done
 
@@ -54,6 +54,7 @@
 - [x] 33. Align the shared Grey's Book answer key with the normalized Chapter 10 lesson shape.
 - [x] 34. Align the shared Grey's Book answer key with the normalized Chapter 9 lesson shape.
 - [x] 35. Align the shared Grey's Book answer key with the normalized Chapter 3 lesson shape.
+- [x] 36. Align the shared Grey's Book answer key with the normalized Chapter 4 lesson shape.
 
 ## Rules
 

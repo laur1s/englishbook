@@ -117,9 +117,12 @@ status: "published"
 ### Chapter 4 Fun Activities
 
 - Activity 1 (True/False): 1 T, 2 F, 3 T, 4 F, 5 T, 6 F
-- Activity 2 (Role-Play): model answers will vary
+- Activity 2 (Role-Play Dialog): model answers will vary
 - Activity 3 (Fill in the Blanks): baby; tiny; breathing; cry; breathe; miracle
-- Activity 6 (Vocabulary Matching): 1 c, 2 d, 3 a, 4 b, 5 e
+- Activity 4 (Retelling Challenge): model answers will vary
+- Activity 5 (Character Feelings Chart): Tom -> worried / helpless; Meredith -> hopeful / amazed; The baby -> fighting / trying to survive; sample answers will vary
+- Activity 6 (Vocabulary Matching Game): 1 c, 2 d, 3 a, 4 b, 5 e
+- Activity 7 (What Happens Next?): prediction answers will vary
 
 ### Chapter 4 Grammar Practice
 
