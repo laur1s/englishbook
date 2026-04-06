@@ -2,7 +2,7 @@
 
 ## Now
 
-- [ ] 41. Audit the Chapter 7 answer bundle after Chapter 7 content changes.
+- [ ] 42. Audit the Chapter 8 answer bundle after Chapter 8 content changes.
 
 ## Next
 
@@ -16,6 +16,7 @@
 - [ ] 49. Audit the Chapter 10 answer bundle after the final label alignment.
 - [ ] 50. Audit the Chapter 9 answer bundle after the final label alignment.
 - [ ] 51. Audit the Chapter 6 answer bundle after the final lesson restoration.
+- [ ] 52. Audit the Chapter 7 answer bundle after the final lesson restoration.
 
 ## Done
 
@@ -59,6 +60,7 @@
 - [x] 38. Audit the Chapter 10 answer bundle after Chapter 10 content changes.
 - [x] 39. Audit the Chapter 9 answer bundle after Chapter 9 content changes.
 - [x] 40. Audit the Chapter 6 answer bundle after Chapter 6 content changes.
+- [x] 41. Audit the Chapter 7 answer bundle after Chapter 7 content changes.
 
 ## Rules
 
