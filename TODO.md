@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 39. Audit the Chapter 9 answer bundle after Chapter 9 content changes.
+- [ ] 40. Audit the Chapter 6 answer bundle after Chapter 6 content changes.
 
 ## Next
 
-- [ ] 40. Audit the Chapter 6 answer bundle after Chapter 6 content changes.
 - [ ] 41. Audit the Chapter 7 answer bundle after Chapter 7 content changes.
 - [ ] 42. Audit the Chapter 8 answer bundle after Chapter 8 content changes.
 - [ ] 43. Audit the Chapter 3 answer bundle after Chapter 3 support restoration.
@@ -16,6 +15,7 @@
 - [ ] 47. Audit the Chapter 4 answer labels after key alignment.
 - [ ] 48. Audit the Chapter 5 answer labels after the answer-coverage expansion.
 - [ ] 49. Audit the Chapter 10 answer bundle after the final label alignment.
+- [ ] 50. Audit the Chapter 9 answer bundle after the final label alignment.
 
 ## Done
 
@@ -57,6 +57,7 @@
 - [x] 36. Align the shared Grey's Book answer key with the normalized Chapter 4 lesson shape.
 - [x] 37. Audit the Chapter 5 answer bundle after Chapter 5 content changes.
 - [x] 38. Audit the Chapter 10 answer bundle after Chapter 10 content changes.
+- [x] 39. Audit the Chapter 9 answer bundle after Chapter 9 content changes.
 
 ## Rules
 
