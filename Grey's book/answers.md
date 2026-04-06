@@ -281,7 +281,7 @@ status: "published"
 
 ### Chapter 10 Fun Activities
 
-- Activity 1 (Role-Play): model answers will vary (calm questions, honest answers, reassurance)
+- Activity 1 (Role-Play — Tell the Truth): model answers will vary (calm questions, honest answers, reassurance)
 - Activity 2 (Story Detective Timeline): correct order is 3, 1, 2, 4; sample sentences will vary
 
 ### Chapter 10 Grammar Practice

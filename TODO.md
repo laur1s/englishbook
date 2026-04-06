@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 33. Align the shared Grey's Book answer key with the normalized Chapter 10 lesson shape.
+- [ ] 34. Align the shared Grey's Book answer key with the normalized Chapter 9 lesson shape.
 
 ## Next
 
-- [ ] 34. Align the shared Grey's Book answer key with the normalized Chapter 9 lesson shape.
 - [ ] 35. Align the shared Grey's Book answer key with the normalized Chapter 3 lesson shape.
 - [ ] 36. Align the shared Grey's Book answer key with the normalized Chapter 4 lesson shape.
 - [ ] 37. Audit the Chapter 5 answer bundle after Chapter 5 content changes.
@@ -16,6 +15,7 @@
 - [ ] 41. Audit the Chapter 7 answer bundle after Chapter 7 content changes.
 - [ ] 42. Audit the Chapter 8 answer bundle after Chapter 8 content changes.
 - [ ] 43. Audit the Chapter 3 answer bundle after Chapter 3 support restoration.
+- [ ] 44. Audit the Chapter 10 answer labels after key alignment.
 
 ## Done
 
@@ -51,6 +51,7 @@
 - [x] 30. Normalize Chapter 7 answer coverage to match the canonical lesson shape.
 - [x] 31. Normalize Chapter 8 answer coverage to match the canonical lesson shape.
 - [x] 32. Audit the Chapter 4 answer bundle against the visible lesson shape.
+- [x] 33. Align the shared Grey's Book answer key with the normalized Chapter 10 lesson shape.
 
 ## Rules
 
