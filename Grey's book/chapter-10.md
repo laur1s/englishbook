@@ -225,7 +225,7 @@ Put these events in the correct order, then write three sentences with `must hav
 - The accident must have happened before the flight.
 - The pain might have become worse on the plane.
 
-### Grammar Exercises: Modals of Speculation about the Past
+### Grammar Practice
 
 Use `must have` for a strong conclusion, `might have` for a possible idea, and `couldn't have` for something impossible.
 
