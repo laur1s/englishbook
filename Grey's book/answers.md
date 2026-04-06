@@ -258,8 +258,8 @@ status: "published"
 
 ### Chapter 9 Fun Activities
 
-- Activity 1 (Role-Play): model answers will vary (clear explanation, questions, informed decision)
-- Activity 2 (Vocabulary Matching): 1 look into, 2 rule out, 3 step in, 4 count on, 5 hold back
+- Activity 1 (Role-Play — The Ethical Discussion): model answers will vary (clear explanation, questions, informed decision)
+- Activity 2 (Vocabulary Matching Game): 1 look into, 2 rule out, 3 step in, 4 count on, 5 hold back
 
 ### Chapter 9 Grammar Practice
 
