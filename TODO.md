@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 23. Audit the Chapter 3 answer bundle against the visible lesson shape.
+- [ ] 24. Normalize the Chapter 3 support sections to match the canonical lesson shape.
 
 ## Next
 
-- [ ] 24. Normalize the Chapter 3 support sections to match the canonical lesson shape.
 - [ ] 25. Normalize Chapter 4 support sections to match the canonical lesson shape.
 - [ ] 26. Align the shared Grey's Book answer key with the normalized Chapter 5 lesson shape.
 - [ ] 27. Normalize Chapter 10 answer coverage to match the canonical lesson shape.
@@ -16,6 +15,7 @@
 - [ ] 31. Normalize Chapter 8 answer coverage to match the canonical lesson shape.
 - [ ] 32. Audit the Chapter 4 answer bundle against the visible lesson shape.
 - [ ] 33. Align the shared Grey's Book answer key with the normalized Chapter 10 lesson shape.
+- [ ] 34. Align the shared Grey's Book answer key with the normalized Chapter 9 lesson shape.
 
 ## Done
 
@@ -41,6 +41,7 @@
 - [x] 20. Normalize Chapter 8 structure and answer coverage to match the canonical lesson shape.
 - [x] 21. Normalize Chapter 9 structure and heading order.
 - [x] 22. Normalize Chapter 10 structure and heading order.
+- [x] 23. Audit the Chapter 3 answer bundle against the visible lesson shape.
 
 ## Rules
 
