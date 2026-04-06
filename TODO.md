@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 30. Normalize Chapter 7 answer coverage to match the canonical lesson shape.
+- [ ] 31. Normalize Chapter 8 answer coverage to match the canonical lesson shape.
 
 ## Next
 
-- [ ] 31. Normalize Chapter 8 answer coverage to match the canonical lesson shape.
 - [ ] 32. Audit the Chapter 4 answer bundle against the visible lesson shape.
 - [ ] 33. Align the shared Grey's Book answer key with the normalized Chapter 10 lesson shape.
 - [ ] 34. Align the shared Grey's Book answer key with the normalized Chapter 9 lesson shape.
@@ -16,6 +15,7 @@
 - [ ] 38. Audit the Chapter 10 answer bundle after Chapter 10 content changes.
 - [ ] 39. Audit the Chapter 9 answer bundle after Chapter 9 content changes.
 - [ ] 40. Audit the Chapter 6 answer bundle after Chapter 6 content changes.
+- [ ] 41. Audit the Chapter 7 answer bundle after Chapter 7 content changes.
 
 ## Done
 
@@ -48,6 +48,7 @@
 - [x] 27. Normalize Chapter 10 answer coverage to match the canonical lesson shape.
 - [x] 28. Normalize Chapter 9 answer coverage to match the canonical lesson shape.
 - [x] 29. Normalize Chapter 6 answer coverage to match the canonical lesson shape.
+- [x] 30. Normalize Chapter 7 answer coverage to match the canonical lesson shape.
 
 ## Rules
 
