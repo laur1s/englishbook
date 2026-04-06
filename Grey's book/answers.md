@@ -89,7 +89,7 @@ status: "published"
 ### Chapter 3 Fun Activities
 
 - Activity 1 (True/False): 1 F, 2 T, 3 T, 4 F, 5 F
-- Activity 2 (Matching): 1 c, 2 b, 3 d, 4 a, 5 e
+- Activity 2 (Vocabulary Matching): 1 c, 2 b, 3 d, 4 a, 5 e
 - Activity 3 (Fill in the Blanks): secret; rules; surgery; window; kiss; careful
 
 ### Chapter 3 Grammar Practice
