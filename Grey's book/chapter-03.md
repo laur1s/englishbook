@@ -162,5 +162,46 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
    - *Example answer:* "Yes, I would risk my job for love because true love is more important than work. / No, I wouldn't risk my job because I worked hard to become a doctor."
    - *Your answer:* "Yes/No, I would/wouldn't risk my job for love because _______________."
 
+### Fun Activities
+
+#### Activity 1: True or False?
+
+1. Meredith and Derek told all their friends about the relationship. **T / F**
+2. Robert's surgery was very dangerous. **T / F**
+3. Meredith watched the surgery through the glass window. **T / F**
+4. Izzie was angry and told the chief immediately. **T / F**
+5. Meredith and Derek felt calm and safe about their secret. **T / F**
+
+#### Activity 2: Vocabulary Matching
+
+Match the English word to the correct meaning:
+
+1. secret ___
+2. rules ___
+3. surgery ___
+4. window ___
+5. kiss ___
+
+a) bučinys  b) langas  c) operacija  d) taisyklės  e) paslaptis
+
+#### Activity 3: Fill in the Blanks
+
+Complete the summary using words from the chapter:
+
+Meredith and Derek had a __________ relationship because hospital __________ were very strict. During the dangerous __________, Meredith watched through the glass __________. Later, they shared a quick __________ but knew they had to be very __________.
+
+*Word Bank: secret, rules, surgery, window, kiss, careful*
+
+### Grammar Practice
+
+Choose the best modal verb for each sentence.
+
+1. Meredith and Derek ______ keep the relationship hidden because hospital rules were strict. `(must / might / should)`
+2. They ______ tell everyone the truth if it could cost them their jobs. `(mustn't / can't / should)`
+3. Izzie ______ tell the chief, but she chose not to. `(might / can't / must)`
+4. Meredith thought they ______ be more careful after Izzie noticed them. `(should / can't / mustn't)`
+5. Derek said they ______ find another way in the future. `(should / can / might)`
+6. Hospital romance ______ be dangerous when rules are strict. `(can't / can / should)`
+
 
 ---
