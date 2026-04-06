@@ -251,4 +251,15 @@ Lisa wanted to have a __________ for five years. When the baby was born, he was 
 
 **Write your prediction:** "I think _______________ because _______________."
 
+### Grammar Practice
+
+Choose the best word for each sentence: `just`, `already`, or `yet`. Use the correct verb form where needed.
+
+1. The baby has ______ started breathing on his own.
+2. Lisa has not held her baby ______ because he is still in special care.
+3. Addison has ______ told the family the good news.
+4. The doctors have ______ prepared the equipment for the next check.
+5. Tom has not gone home ______ because he wants to stay near the baby.
+6. Addison ______ in neonatal care for many years. `(work)`
+
 ---
