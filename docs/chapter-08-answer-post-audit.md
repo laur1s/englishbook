@@ -2,17 +2,17 @@
 
 ## Result
 
-The shared Chapter 8 answer bundle remains aligned after the Chapter 8 lesson restoration.
+After the final Chapter 8 lesson restoration, the shared answer bundle still matches the visible lesson with no stale prompts or missing coverage.
 
 ## Verified coverage
 
-- `Understanding` still matches the ten visible reading questions.
-- `Fun Activities` still covers the visible activity set:
-  - Activity 1 (`True or False`)
+- `Understanding` still matches the ten visible comprehension questions.
+- `Fun Activities` still matches the visible activity set and labels:
+  - Activity 1 (`True or False?`)
   - Activity 2 (`Matching`)
   - Activity 3 (`Fill in the Blanks`)
-- `Grammar Practice` still matches the visible comparative and superlative exercise.
+- `Grammar Practice` still matches the visible comparative and superlative sentence-completion exercise.
 
 ## Conclusion
 
-No additional shared answer-key edits are required for Chapter 8 at this checkpoint.
+No further answer-key change is required for Chapter 8 at this checkpoint.
