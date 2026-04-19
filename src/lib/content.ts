@@ -6,7 +6,12 @@ export type GreyBookEntry = CollectionEntry<"greyBook">;
 export type A2UnitEntry = CollectionEntry<"a2Units">;
 export type ResourceEntry = CollectionEntry<"resources">;
 export type AnswerKeyEntry = CollectionEntry<"answerKeys">;
-export type LibraryEntry = GreyBookEntry | A2UnitEntry | ResourceEntry;
+export type SpeakingMissionEntry = CollectionEntry<"speakingMissions">;
+export type LibraryEntry =
+  | GreyBookEntry
+  | A2UnitEntry
+  | ResourceEntry
+  | SpeakingMissionEntry;
 
 type OrderedEntry = {
   data: {
@@ -30,6 +35,9 @@ export const getResourceEntries = async () =>
 export const getAnswerKeyEntries = async () =>
   sortEntries(await getCollection("answerKeys"));
 
+export const getSpeakingMissionEntries = async () =>
+  sortEntries(await getCollection("speakingMissions"));
+
 export const getEntryBody = (entry: { body?: string }) => entry.body ?? "";
 
 export const getEntryHref = (entry: LibraryEntry) => {
@@ -40,6 +48,8 @@ export const getEntryHref = (entry: LibraryEntry) => {
       return withBase(`/a2/${entry.data.slug}`);
     case "resources":
       return withBase(`/resources/${entry.data.slug}`);
+    case "speaking-missions":
+      return withBase(`/speaking/${entry.data.slug}`);
     default:
       return withBase("/");
   }
@@ -53,6 +63,8 @@ export const getCollectionHref = (collection: string) => {
       return withBase("/a2");
     case "resources":
       return withBase("/resources/grammar-reference");
+    case "speaking-missions":
+      return withBase("/speaking");
     default:
       return withBase("/");
   }

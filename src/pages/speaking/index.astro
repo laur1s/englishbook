@@ -1,0 +1,240 @@
+---
+import SpeakingMissionCard from "../../components/SpeakingMissionCard.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getA2Entries, getSpeakingMissionEntries } from "../../lib/content";
+import { SPEAKING_PROGRESS_KEY, MISSION_TYPE_LABELS } from "../../lib/speaking";
+
+const entries = await getSpeakingMissionEntries();
+const sourceUnits = await getA2Entries();
+const durations = [...new Set(entries.map((entry) => entry.data.durationMinutes))].sort(
+  (left, right) => left - right,
+);
+const topics = [...new Set(entries.flatMap((entry) => entry.data.topics))].sort((left, right) =>
+  left.localeCompare(right),
+);
+const availableMissionTypes = [
+  ...new Set(entries.map((entry) => entry.data.missionType)),
+];
+const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entry.data.title]));
+---
+
+<BaseLayout
+  title="Speaking Lab | English Library"
+  description="Short, mobile-friendly A2 speaking missions for Lithuanian learners."
+>
+  <section class="collection-hero">
+    <p class="eyebrow">Speaking-First Support Track</p>
+    <h1>Speaking Lab</h1>
+    <p class="hero-subtitle lt-text">Trumpa kalbėjimo praktika A2 mokiniams</p>
+    <p class="collection-description">
+      Use short rehearsal missions when you want to turn a grammar unit into real speech instead of
+      another silent exercise.
+    </p>
+  </section>
+
+  <section class="speaking-summary-row">
+    <article class="summary-chip">
+      <span>Total missions</span>
+      <strong>{entries.length}</strong>
+    </article>
+    <article class="summary-chip">
+      <span>Completed locally</span>
+      <strong data-speaking-completed>0</strong>
+    </article>
+    <article class="summary-chip">
+      <span>Average confidence</span>
+      <strong data-speaking-confidence>Not rated</strong>
+    </article>
+    <article class="summary-chip">
+      <span>Visible now</span>
+      <strong data-speaking-visible>{entries.length}</strong>
+    </article>
+  </section>
+
+  <section class="speaking-filter-shell" data-speaking-root>
+    <div class="speaking-filter-bar">
+      <div class="filter-group">
+        <p>Mission Type</p>
+        <div class="chip-row">
+          {availableMissionTypes.map((missionType) => (
+            <button
+              type="button"
+              class="chip"
+              data-speaking-filter-button
+              data-filter-group="missionType"
+              data-filter-value={missionType}
+            >
+              {MISSION_TYPE_LABELS[missionType]}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <p>Duration</p>
+        <div class="chip-row">
+          {durations.map((minutes) => (
+            <button
+              type="button"
+              class="chip"
+              data-speaking-filter-button
+              data-filter-group="duration"
+              data-filter-value={String(minutes)}
+            >
+              {minutes} min
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <p>Topics</p>
+        <div class="chip-row">
+          {topics.map((topic) => (
+            <button
+              type="button"
+              class="chip"
+              data-speaking-filter-button
+              data-filter-group="topic"
+              data-filter-value={topic}
+            >
+              {topic}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="speaking-grid">
+      {entries.map((entry) => (
+        <SpeakingMissionCard
+          entry={entry}
+          sourceTitle={sourceTitleMap.get(entry.data.sourceRefs[0]) ?? "A2 unit"}
+        />
+      ))}
+    </div>
+  </section>
+
+  <script is:inline define:vars={{ progressKey: SPEAKING_PROGRESS_KEY }}>
+    const readSpeakingProgress = () => {
+      try {
+        const raw = localStorage.getItem(progressKey);
+
+        if (!raw) {
+          return {};
+        }
+
+        const parsed = JSON.parse(raw);
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch {
+        return {};
+      }
+    };
+
+    const averageConfidence = (records) => {
+      if (!records.length) {
+        return "Not rated";
+      }
+
+      const total = records.reduce((sum, value) => sum + value, 0);
+      return `${(total / records.length).toFixed(1)}/5`;
+    };
+
+    document.querySelectorAll("[data-speaking-root]").forEach((root) => {
+      const cards = [...root.querySelectorAll("[data-speaking-card]")];
+      const buttons = [...root.querySelectorAll("[data-speaking-filter-button]")];
+      const completedValue = document.querySelector("[data-speaking-completed]");
+      const confidenceValue = document.querySelector("[data-speaking-confidence]");
+      const visibleValue = document.querySelector("[data-speaking-visible]");
+      const active = {
+        missionType: new Set(),
+        duration: new Set(),
+        topic: new Set(),
+      };
+
+      const syncProgress = () => {
+        const progress = readSpeakingProgress();
+        let completedCount = 0;
+        const confidenceScores = [];
+
+        cards.forEach((card) => {
+          const slug = card.dataset.missionSlug;
+          const label = card.querySelector("[data-progress-label]");
+          const record = slug ? progress[slug] : undefined;
+
+          if (record?.completed) {
+            completedCount += 1;
+          }
+
+          if (Number.isFinite(Number(record?.lastConfidence))) {
+            confidenceScores.push(Number(record.lastConfidence));
+          }
+
+          if (label) {
+            label.textContent = record?.completed
+              ? `Done • ${record.lastConfidence}/5`
+              : "Not started";
+          }
+        });
+
+        if (completedValue) {
+          completedValue.textContent = String(completedCount);
+        }
+
+        if (confidenceValue) {
+          confidenceValue.textContent = averageConfidence(confidenceScores);
+        }
+      };
+
+      const applyFilters = () => {
+        let visibleCount = 0;
+
+        cards.forEach((card) => {
+          const missionType = card.dataset.missionType || "";
+          const duration = card.dataset.duration || "";
+          const topics = (card.dataset.topics || "").split("|").filter(Boolean);
+
+          const missionTypeMatch =
+            !active.missionType.size || active.missionType.has(missionType);
+          const durationMatch = !active.duration.size || active.duration.has(duration);
+          const topicMatch = !active.topic.size || topics.some((topic) => active.topic.has(topic));
+          const isVisible = missionTypeMatch && durationMatch && topicMatch;
+
+          card.hidden = !isVisible;
+
+          if (isVisible) {
+            visibleCount += 1;
+          }
+        });
+
+        if (visibleValue) {
+          visibleValue.textContent = String(visibleCount);
+        }
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const group = button.dataset.filterGroup;
+          const value = button.dataset.filterValue;
+
+          if (!group || !value || !(group in active)) {
+            return;
+          }
+
+          if (active[group].has(value)) {
+            active[group].delete(value);
+            button.classList.remove("selected");
+          } else {
+            active[group].add(value);
+            button.classList.add("selected");
+          }
+
+          applyFilters();
+        });
+      });
+
+      syncProgress();
+      applyFilters();
+    });
+  </script>
+</BaseLayout>

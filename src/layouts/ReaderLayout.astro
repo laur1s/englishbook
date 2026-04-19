@@ -14,6 +14,13 @@ type Props = {
   next?: LibraryEntry;
   answerHref?: string;
   answerSnippetHtml?: string;
+  practiceCallout?: {
+    href: string;
+    title: string;
+    ltTitle: string;
+    description: string;
+    buttonLabel: string;
+  };
 };
 
 const {
@@ -25,6 +32,7 @@ const {
   next,
   answerHref,
   answerSnippetHtml,
+  practiceCallout,
 } = Astro.props;
 
 const collectionTitle =
@@ -102,6 +110,20 @@ const collectionTitle =
 
     <article class="reader-content">
       {introHtml && <div class="prose intro-block" set:html={introHtml} />}
+
+      {practiceCallout && (
+        <section class="support-callout">
+          <div class="support-callout-copy">
+            <p class="eyebrow">Speaking mission</p>
+            <h2>{practiceCallout.title}</h2>
+            <p class="lt-text">{practiceCallout.ltTitle}</p>
+            <p>{practiceCallout.description}</p>
+          </div>
+          <a class="primary-button" href={practiceCallout.href}>
+            {practiceCallout.buttonLabel}
+          </a>
+        </section>
+      )}
 
       {sections.map((section) =>
         section.collapsible ? (

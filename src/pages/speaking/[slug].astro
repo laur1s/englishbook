@@ -1,0 +1,117 @@
+---
+import MissionPlayer from "../../components/MissionPlayer.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getA2Entries,
+  getCollectionHref,
+  getEntryBody,
+  getEntryHref,
+  getPrevNextEntries,
+  getSpeakingMissionEntries,
+} from "../../lib/content";
+import { withBase } from "../../lib/constants";
+import { parseDocument } from "../../lib/markdown";
+import { MISSION_TYPE_LABELS, formatDurationMinutes, getSourceUnit } from "../../lib/speaking";
+
+export async function getStaticPaths() {
+  const entries = await getSpeakingMissionEntries();
+
+  return entries.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry, entries },
+  }));
+}
+
+const { entry, entries } = Astro.props;
+const parsed = parseDocument({
+  markdown: getEntryBody(entry),
+  title: entry.data.title,
+  ltTitle: entry.data.ltTitle,
+});
+const { previous, next } = getPrevNextEntries(entries, entry.data.slug);
+const sourceUnit = getSourceUnit(entry, await getA2Entries());
+---
+
+<BaseLayout title={`${entry.data.title} | English Library`} description={parsed.excerpt}>
+  <section class="reader-hero speaking-hero">
+    <p class="eyebrow">Speaking mission</p>
+    <h1>{entry.data.title}</h1>
+    <p class="hero-subtitle lt-text">{entry.data.ltTitle}</p>
+
+    <div class="badge-row">
+      <span class="badge">{entry.data.level}</span>
+      <span class="badge soft">{MISSION_TYPE_LABELS[entry.data.missionType]}</span>
+      <span class="badge">{formatDurationMinutes(entry.data.durationMinutes)}</span>
+    </div>
+
+    <p class="topic-row">
+      {entry.data.topics.map((topic) => <span>{topic}</span>)}
+    </p>
+  </section>
+
+  <nav class="reader-nav-bar" aria-label="Speaking mission navigation">
+    <a class="reader-nav-link reader-nav-back" href={getCollectionHref(entry.data.collection)}>
+      <span class="pager-label">Back to collection</span>
+      <strong>Speaking Lab</strong>
+    </a>
+
+    {previous ? (
+      <a class="reader-nav-link" href={getEntryHref(previous)}>
+        <span class="pager-label">Previous mission</span>
+        <strong>{previous.data.title}</strong>
+      </a>
+    ) : (
+      <span class="reader-nav-link reader-nav-empty" />
+    )}
+
+    {next ? (
+      <a class="reader-nav-link align-right" href={getEntryHref(next)}>
+        <span class="pager-label">Next mission</span>
+        <strong>{next.data.title}</strong>
+      </a>
+    ) : (
+      <span class="reader-nav-link reader-nav-empty" />
+    )}
+
+    {sourceUnit ? (
+      <a class="reader-nav-link reader-nav-answer" href={withBase(`/a2/${sourceUnit.data.slug}`)}>
+        <span class="pager-label">Related unit</span>
+        <strong>{sourceUnit.data.title}</strong>
+      </a>
+    ) : null}
+  </nav>
+
+  <div class="reader-shell">
+    <aside class="reader-sidebar">
+      <div class="toc-card">
+        <h2>Mission outline</h2>
+        <p class="lt-text sidebar-subtitle">Misijos planas</p>
+        <ul>
+          <li><a href="#mission-player">Run the rehearsal</a></li>
+          {parsed.sections.map((section) => (
+            <li>
+              <a href={`#${section.id}`}>{section.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </aside>
+
+    <article class="reader-content">
+      <MissionPlayer
+        entry={entry}
+        relatedHref={sourceUnit ? withBase(`/a2/${sourceUnit.data.slug}`) : undefined}
+        relatedTitle={sourceUnit?.data.title}
+      />
+
+      {parsed.introHtml && <div class="prose intro-block" set:html={parsed.introHtml} />}
+
+      {parsed.sections.map((section) => (
+        <section class="content-panel" id={section.id}>
+          <h2 set:html={section.titleHtml} />
+          <div class="prose" set:html={section.html} />
+        </section>
+      ))}
+    </article>
+  </div>
+</BaseLayout>

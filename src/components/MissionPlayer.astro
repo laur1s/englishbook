@@ -1,0 +1,344 @@
+---
+import type { SpeakingMissionEntry } from "../lib/content";
+
+import {
+  MISSION_TYPE_LABELS,
+  SPEAKING_PROGRESS_KEY,
+  STEP_KIND_LABELS,
+  formatDurationMinutes,
+} from "../lib/speaking";
+
+type Props = {
+  entry: SpeakingMissionEntry;
+  relatedHref?: string;
+  relatedTitle?: string;
+};
+
+const { entry, relatedHref, relatedTitle } = Astro.props;
+---
+
+<section class="mission-player" id="mission-player" data-mission-player data-mission-slug={entry.data.slug}>
+  <div class="mission-player-head">
+    <div>
+      <p class="eyebrow">Run The Rehearsal</p>
+      <h2>Move once through the full speaking loop</h2>
+      <p class="mission-player-copy">
+        Keep the pace short, speak aloud, and resist writing a full script before you start.
+      </p>
+    </div>
+
+    <div class="badge-row">
+      <span class="badge soft">{MISSION_TYPE_LABELS[entry.data.missionType]}</span>
+      <span class="badge">{formatDurationMinutes(entry.data.durationMinutes)}</span>
+      <span class="badge">{entry.data.supportsRecording ? "Recording ready" : "Speak aloud only"}</span>
+    </div>
+  </div>
+
+  <div class="mission-progress-strip">
+    <div>
+      <span>Status</span>
+      <strong data-progress-status>Not completed yet</strong>
+    </div>
+    <div>
+      <span>Last confidence</span>
+      <strong data-progress-confidence>Not rated</strong>
+    </div>
+    <div>
+      <span>Last played</span>
+      <strong data-progress-played>Never</strong>
+    </div>
+  </div>
+
+  <ol class="mission-step-list">
+    {entry.data.steps.map((step, index) => (
+      <li
+        class="mission-step"
+        data-mission-step
+        data-step-seconds={step.seconds ? String(step.seconds) : ""}
+      >
+        <div class="mission-step-top">
+          <div>
+            <p class="eyebrow">Step {index + 1}</p>
+            <h3>{STEP_KIND_LABELS[step.kind]}</h3>
+          </div>
+
+          {step.seconds ? (
+            <div class="mission-timer-shell">
+              <span class="mission-timer-label">Countdown</span>
+              <strong data-timer-countdown>{Math.floor(step.seconds / 60)}:{String(step.seconds % 60).padStart(2, "0")}</strong>
+            </div>
+          ) : null}
+        </div>
+
+        <p class="mission-step-prompt">{step.prompt}</p>
+        {step.ltPrompt && <p class="mission-step-translation lt-text">{step.ltPrompt}</p>}
+
+        {step.support?.length ? (
+          <ul class="mission-support-list">
+            {step.support.map((item) => <li>{item}</li>)}
+          </ul>
+        ) : null}
+
+        {step.seconds ? (
+          <div class="mission-timer-tools">
+            <p class="mission-time-note">Suggested time: {step.seconds} seconds.</p>
+            <button type="button" class="secondary-button" data-start-timer hidden>
+              Start timer
+            </button>
+            <p class="mission-timer-status" data-timer-status hidden>Timer ready.</p>
+          </div>
+        ) : null}
+
+        {step.kind === "reflect" ? (
+          <div class="mission-reflect">
+            <p class="mission-time-note">Rate the run: 1 = very hard, 5 = smooth and natural.</p>
+            <div class="confidence-row" data-confidence-row hidden>
+              {[1, 2, 3, 4, 5].map((score) => (
+                <button type="button" class="confidence-button" data-confidence={String(score)} aria-pressed="false">
+                  {score}
+                </button>
+              ))}
+            </div>
+            <p class="mission-reflect-note" data-confidence-note>
+              Select a score to save this mission in your local progress.
+            </p>
+            {relatedHref && relatedTitle ? (
+              <a class="inline-link" href={relatedHref}>Return to {relatedTitle}</a>
+            ) : null}
+          </div>
+        ) : null}
+      </li>
+    ))}
+  </ol>
+
+  <div class="mission-controls" data-player-controls hidden>
+    <button type="button" class="secondary-button" data-prev-step>Previous step</button>
+    <button type="button" class="primary-button" data-next-step>Next step</button>
+  </div>
+
+  <noscript>
+    <p class="mission-noscript">
+      JavaScript is off, so the steps stay open and the timers work as suggested timings only.
+    </p>
+  </noscript>
+</section>
+
+<script is:inline define:vars={{ progressKey: SPEAKING_PROGRESS_KEY }}>
+  const readSpeakingProgress = () => {
+    try {
+      const raw = localStorage.getItem(progressKey);
+
+      if (!raw) {
+        return {};
+      }
+
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === "object" ? parsed : {};
+    } catch {
+      return {};
+    }
+  };
+
+  const writeSpeakingProgress = (value) => {
+    try {
+      localStorage.setItem(progressKey, JSON.stringify(value));
+    } catch {}
+  };
+
+  const formatCountdown = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    return `${minutes}:${String(seconds % 60).padStart(2, "0")}`;
+  };
+
+  const formatLastPlayed = (value) => {
+    if (!value) {
+      return "Never";
+    }
+
+    const parsed = new Date(value);
+
+    if (Number.isNaN(parsed.getTime())) {
+      return "Recently";
+    }
+
+    return parsed.toLocaleDateString("en-GB", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
+  document.querySelectorAll("[data-mission-player]").forEach((root) => {
+    const slug = root.dataset.missionSlug;
+    const steps = [...root.querySelectorAll("[data-mission-step]")];
+    const controls = root.querySelector("[data-player-controls]");
+    const prevButton = root.querySelector("[data-prev-step]");
+    const nextButton = root.querySelector("[data-next-step]");
+    const statusValue = root.querySelector("[data-progress-status]");
+    const confidenceValue = root.querySelector("[data-progress-confidence]");
+    const playedValue = root.querySelector("[data-progress-played]");
+    const confidenceButtons = [...root.querySelectorAll("[data-confidence]")];
+    const confidenceRow = root.querySelector("[data-confidence-row]");
+    const confidenceNote = root.querySelector("[data-confidence-note]");
+
+    if (!slug || !steps.length || !controls || !prevButton || !nextButton) {
+      return;
+    }
+
+    let activeIndex = 0;
+    let timerId = null;
+    let progress = readSpeakingProgress();
+
+    const clearTimer = () => {
+      if (timerId !== null) {
+        window.clearInterval(timerId);
+        timerId = null;
+      }
+    };
+
+    const resetTimers = () => {
+      steps.forEach((step) => {
+        const seconds = Number(step.dataset.stepSeconds || 0);
+        const countdown = step.querySelector("[data-timer-countdown]");
+        const timerButton = step.querySelector("[data-start-timer]");
+        const timerStatus = step.querySelector("[data-timer-status]");
+
+        if (!seconds || !countdown) {
+          return;
+        }
+
+        countdown.textContent = formatCountdown(seconds);
+
+        if (timerButton) {
+          timerButton.hidden = false;
+        }
+
+        if (timerStatus) {
+          timerStatus.hidden = false;
+          timerStatus.textContent = "Timer ready.";
+        }
+      });
+    };
+
+    const syncProgressUi = () => {
+      const record = progress[slug];
+      const lastConfidence = Number(record?.lastConfidence);
+      const hasConfidence = Number.isFinite(lastConfidence);
+
+      if (statusValue) {
+        statusValue.textContent = record?.completed ? "Completed" : "Not completed yet";
+      }
+
+      if (confidenceValue) {
+        confidenceValue.textContent = hasConfidence ? `${lastConfidence}/5` : "Not rated";
+      }
+
+      if (playedValue) {
+        playedValue.textContent = formatLastPlayed(record?.lastPlayedAt);
+      }
+
+      if (confidenceNote) {
+        confidenceNote.textContent = hasConfidence
+          ? `Saved confidence: ${lastConfidence}/5.`
+          : "Select a score to save this mission in your local progress.";
+      }
+
+      confidenceButtons.forEach((button) => {
+        const isSelected = Number(button.dataset.confidence) === lastConfidence;
+        button.classList.toggle("selected", isSelected);
+        button.setAttribute("aria-pressed", String(isSelected));
+      });
+    };
+
+    const showStep = (index) => {
+      activeIndex = Math.max(0, Math.min(index, steps.length - 1));
+      clearTimer();
+      resetTimers();
+
+      steps.forEach((step, stepIndex) => {
+        step.hidden = stepIndex !== activeIndex;
+      });
+
+      prevButton.disabled = activeIndex === 0;
+      nextButton.disabled = activeIndex === steps.length - 1;
+      nextButton.textContent =
+        activeIndex === steps.length - 1 ? "Finish on reflection" : "Next step";
+    };
+
+    controls.hidden = false;
+
+    if (confidenceRow) {
+      confidenceRow.hidden = false;
+    }
+
+    prevButton.addEventListener("click", () => {
+      showStep(activeIndex - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+      showStep(activeIndex + 1);
+    });
+
+    steps.forEach((step) => {
+      const seconds = Number(step.dataset.stepSeconds || 0);
+      const timerButton = step.querySelector("[data-start-timer]");
+      const timerStatus = step.querySelector("[data-timer-status]");
+      const countdown = step.querySelector("[data-timer-countdown]");
+
+      if (!seconds || !timerButton || !countdown) {
+        return;
+      }
+
+      timerButton.addEventListener("click", () => {
+        clearTimer();
+        let remaining = seconds;
+
+        countdown.textContent = formatCountdown(remaining);
+
+        if (timerStatus) {
+          timerStatus.hidden = false;
+          timerStatus.textContent = "Timer running.";
+        }
+
+        timerId = window.setInterval(() => {
+          remaining -= 1;
+          countdown.textContent = formatCountdown(Math.max(remaining, 0));
+
+          if (remaining <= 0) {
+            clearTimer();
+
+            if (timerStatus) {
+              timerStatus.textContent = "Time is up. Finish the sentence and move on.";
+            }
+          }
+        }, 1000);
+      });
+    });
+
+    confidenceButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const confidence = Number(button.dataset.confidence);
+
+        if (!Number.isFinite(confidence)) {
+          return;
+        }
+
+        progress = {
+          ...progress,
+          [slug]: {
+            completed: true,
+            lastConfidence: confidence,
+            lastPlayedAt: new Date().toISOString(),
+          },
+        };
+
+        writeSpeakingProgress(progress);
+        syncProgressUi();
+      });
+    });
+
+    resetTimers();
+    showStep(0);
+    syncProgressUi();
+  });
+</script>

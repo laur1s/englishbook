@@ -2,6 +2,7 @@ export const NAV_LINKS = [
   { href: "/", label: "Home", ltLabel: "Pradžia" },
   { href: "/grey-book", label: "Grey's Book", ltLabel: "Grey knyga" },
   { href: "/a2", label: "A2 Course", ltLabel: "A2 kursas" },
+  { href: "/speaking", label: "Speaking Lab", ltLabel: "Kalbėjimo praktika" },
   { href: "/answers/a2", label: "Answer Keys", ltLabel: "Atsakymų raktai" },
 ] as const;
 

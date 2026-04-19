@@ -1,0 +1,51 @@
+---
+import type { SpeakingMissionEntry } from "../lib/content";
+
+import { getEntryBody, getEntryHref } from "../lib/content";
+import { parseDocument } from "../lib/markdown";
+import { MISSION_TYPE_LABELS, formatDurationMinutes } from "../lib/speaking";
+
+type Props = {
+  entry: SpeakingMissionEntry;
+  sourceTitle?: string;
+};
+
+const { entry, sourceTitle = "A2 unit" } = Astro.props;
+const parsed = parseDocument({
+  markdown: getEntryBody(entry),
+  title: entry.data.title,
+  ltTitle: entry.data.ltTitle,
+});
+---
+
+<article
+  class="speaking-card"
+  data-speaking-card
+  data-mission-slug={entry.data.slug}
+  data-mission-type={entry.data.missionType}
+  data-duration={String(entry.data.durationMinutes)}
+  data-topics={entry.data.topics.join("|")}
+>
+  <div class="speaking-card-head">
+    <p class="card-kicker">{MISSION_TYPE_LABELS[entry.data.missionType]}</p>
+    <span class="badge">{formatDurationMinutes(entry.data.durationMinutes)}</span>
+  </div>
+
+  <h2>
+    <a href={getEntryHref(entry)}>{entry.data.title}</a>
+  </h2>
+  <p class="card-subtitle lt-text">{entry.data.ltTitle}</p>
+  <p class="card-excerpt">{parsed.excerpt}</p>
+
+  <div class="badge-row compact">
+    <span class="badge">{entry.data.level}</span>
+    {entry.data.grammarFocus.slice(0, 2).map((focus) => <span class="badge soft">{focus}</span>)}
+  </div>
+
+  <div class="mission-source-row">
+    <p>
+      Based on <strong>{sourceTitle}</strong>
+    </p>
+    <span class="progress-pill" data-progress-label>Not started</span>
+  </div>
+</article>

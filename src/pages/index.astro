@@ -1,12 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getA2Entries, getGreyBookEntries, getResourceEntries } from "../lib/content";
+import {
+  getA2Entries,
+  getGreyBookEntries,
+  getResourceEntries,
+  getSpeakingMissionEntries,
+} from "../lib/content";
 import { withBase } from "../lib/constants";
 
-const [greyBookEntries, a2Entries, resources] = await Promise.all([
+const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.all([
   getGreyBookEntries(),
   getA2Entries(),
   getResourceEntries(),
+  getSpeakingMissionEntries(),
 ]);
 ---
 
@@ -125,6 +131,13 @@ const [greyBookEntries, a2Entries, resources] = await Promise.all([
       <h2>A2 Course</h2>
       <p class="lt-text">Pilnas A2 kursas lietuviškai kalbantiems</p>
       <p>Use the A2 units when a chapter shows you where you are weak and you want focused reinforcement.</p>
+    </a>
+
+    <a class="feature-card" href={withBase("/speaking")}>
+      <p class="eyebrow">Rehearsal track</p>
+      <h2>Speaking Lab</h2>
+      <p class="lt-text">Trumpa kalbėjimo praktika pagal A2 temas</p>
+      <p>Use {speakingEntries.length} short missions when you want to turn grammar and vocabulary into spoken English.</p>
     </a>
 
     <a class="feature-card" href={withBase("/resources/grammar-reference")}>
