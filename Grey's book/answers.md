@@ -103,16 +103,16 @@ status: "published"
 
 ### Chapter 4 Understanding
 
-1. A world-renowned neonatal specialist
+1. A baby doctor and the best baby doctor at Seattle Grace Hospital
 2. Five years
-3. Intrauterine growth restriction
-4. The NICU (intensive care unit for newborns)
-5. 48 hours
-6. The baby began breathing on his own
-7. "My little miracle"
-8. "Thank you. You gave us our family."
-9. A deep sense of accomplishment
-10. Birth and death are two sides of the same coin in medicine
+3. The baby was too small and was not growing properly
+4. The NICU, the special room for very sick babies
+5. Two days
+6. The baby opened his eyes and began breathing on his own
+7. "My miracle baby"
+8. "Thank you. You gave us our family. You gave us our dream."
+9. She felt happy because saving lives was why she became a doctor
+10. She learned that medicine includes both life and death on the same day
 
 ### Chapter 4 Fun Activities
 

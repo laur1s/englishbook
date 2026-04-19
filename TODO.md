@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 54. Audit the Chapter 4 answer bundle after the final answer-key alignment.
+- [ ] 55. Audit the Chapter 5 answer bundle after the final answer-key alignment.
 
 ## Next
 
-- [ ] 55. Audit the Chapter 5 answer bundle after the final answer-key alignment.
 - [ ] 56. Run build/check QA after tasks 41-45 and log any follow-up work.
 - [ ] 57. Run build/check QA after tasks 46-50 and log any follow-up work.
 - [ ] 58. Audit the Chapter 10 grammar labels after the final key alignment.
@@ -16,6 +15,7 @@
 - [ ] 62. Run build/check QA after tasks 51-55 and log any follow-up work.
 - [ ] 63. Run build/check QA after tasks 56-60 and log any follow-up work.
 - [ ] 64. Audit the Chapter 3 answer bundle after the final answer-key alignment.
+- [ ] 65. Run build/check QA after tasks 61-65 and log any follow-up work.
 
 ## Done
 
@@ -72,6 +72,7 @@
 - [x] 51. Audit the Chapter 6 answer bundle after the final lesson restoration.
 - [x] 52. Audit the Chapter 7 answer bundle after the final lesson restoration.
 - [x] 53. Audit the Chapter 8 answer bundle after the final lesson restoration.
+- [x] 54. Audit the Chapter 4 answer bundle after the final answer-key alignment.
 
 ## Rules
 
