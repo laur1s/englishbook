@@ -2,11 +2,10 @@
 
 ## Now
 
-- [ ] 49. Audit the Chapter 10 answer bundle after the final label alignment.
+- [ ] 50. Audit the Chapter 9 answer bundle after the final label alignment.
 
 ## Next
 
-- [ ] 49. Audit the Chapter 10 answer bundle after the final label alignment.
 - [ ] 50. Audit the Chapter 9 answer bundle after the final label alignment.
 - [ ] 51. Audit the Chapter 6 answer bundle after the final lesson restoration.
 - [ ] 52. Audit the Chapter 7 answer bundle after the final lesson restoration.
@@ -17,6 +16,7 @@
 - [ ] 57. Run build/check QA after tasks 46-50 and log any follow-up work.
 - [ ] 58. Audit the Chapter 10 grammar labels after the final key alignment.
 - [ ] 59. Audit the Chapter 6 answer labels after the final lesson restoration.
+- [ ] 60. Audit the Chapter 7 answer labels after the final lesson restoration.
 
 ## Done
 
@@ -68,6 +68,7 @@
 - [x] 46. Audit the Chapter 3 answer labels after key alignment.
 - [x] 47. Audit the Chapter 4 answer labels after key alignment.
 - [x] 48. Audit the Chapter 5 answer labels after the answer-coverage expansion.
+- [x] 49. Audit the Chapter 10 answer bundle after the final label alignment.
 
 ## Rules
 
