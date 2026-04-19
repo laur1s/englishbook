@@ -2,12 +2,12 @@
 
 ## Result
 
-After the Chapter 5 lesson-shape and answer-coverage updates, the shared answer bundle remains aligned with the visible lesson.
+After the Chapter 5 lesson-shape and answer-coverage updates, a follow-up audit found stale understanding answers and abbreviated activity labels in the shared answer bundle. Those items have now been corrected so the bundle aligns with the visible lesson again.
 
 ## Verified coverage
 
-- `Understanding` still matches the visible comprehension questions.
-- `Fun Activities` covers all seven visible activities, using model-answer wording where the activity is open-ended.
+- `Understanding` now matches all ten visible comprehension questions.
+- `Fun Activities` covers all seven visible activities, with labels matching the lesson titles and model-answer wording where the activity is open-ended.
 - `Grammar Practice` still matches the five visible prompts.
 
 ## Conclusion

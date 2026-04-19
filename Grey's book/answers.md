@@ -135,24 +135,26 @@ status: "published"
 
 ### Chapter 5 Understanding
 
-1. Open-heart surgery
-2. She slumped against the wall, sobbing uncontrollably
-3. She killed him, she was too slow, she missed something
-4. She immediately knew something was wrong and led Cristina to the lounge
-5. Cristina talked about her immigrant parents, Meredith about her insecurities, Alex about feeling like an imposter, Izzie about balancing medicine with personal life
-6. Her sobs turned to quiet tears, then to steady breathing
-7. Hospital work was brutal but having people who understood made it bearable
-8. To honor George's memory by becoming an even better surgeon
+1. He had serious heart problems and needed heart surgery.
+2. George's heart suddenly stopped during the operation.
+3. She cried in the scrub room.
+4. She said George's death was her fault and thought she had done something wrong.
+5. Meredith found Cristina crying first.
+6. Alex said George's heart was too damaged and no doctor could have saved him.
+7. Cristina feared she had failed her parents, Meredith feared she would never be good enough, Alex felt like a fake, and Izzie worried that work was taking over her whole life.
+8. She felt calmer and stronger because she was not alone.
+9. She thought about how hard being a doctor was and how friendship made it possible to continue.
+10. She learned that friendship saves doctors too, not just patients.
 
 ### Chapter 5 Fun Activities
 
 - Activity 1 (Emotions Vocabulary): shocked -> When George's heart stopped; guilty -> When Cristina thought it was her fault; supportive -> When friends sat with Cristina; broken -> When Cristina cried on the floor; grateful -> When Cristina thanked her friends
 - Activity 2 (True/False): 1 T, 2 F, 3 F, 4 F, 5 T, 6 T, 7 T
-- Activity 3 (Role-Play): model answers will vary
-- Activity 4 (Complete the Rules): listen; comfort; understand; blame; help; bad
-- Activity 5 (Timeline): sample answers will vary
-- Activity 6 (Supportive Message): model answer will vary
-- Activity 7 (Discussion): model answers will vary
+- Activity 3 (Role-Play - Comforting a Friend): model answers will vary
+- Activity 4 (Complete the Friendship Rules): listen; comfort; understand; blame; help; bad
+- Activity 5 (Character Feelings Timeline): sample answers will vary
+- Activity 6 (Write a Supportive Message): model answer will vary
+- Activity 7 (Discussion - Friendship is Important): model answers will vary
 
 ### Chapter 5 Grammar Practice
 
