@@ -92,14 +92,19 @@ html[data-lt="hidden"] .lt-text {
 .brand-mark {
   display: inline-grid;
   place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 0.9rem;
-  background: var(--ink);
-  color: #fff7ed;
-  font: 700 0.88rem/1 "Avenir Next", "Segoe UI", sans-serif;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  width: 2.55rem;
+  height: 2.4rem;
+  color: var(--ink);
+}
+
+.brand-mark svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.35;
 }
 
 .brand-copy {
@@ -168,6 +173,29 @@ html[data-lt="hidden"] .lt-text {
 
 .toggle-state {
   color: var(--accent);
+}
+
+.nav-menu-button {
+  display: none;
+  width: 2.85rem;
+  height: 2.85rem;
+  padding: 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.nav-menu-button span {
+  display: block;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.nav-menu-button span + span {
+  margin-top: 0.32rem;
 }
 
 .translation-popover {
@@ -1007,6 +1035,7 @@ html[data-lt="hidden"] .lt-text {
 
 .reader-sidebar {
   position: relative;
+  min-width: 0;
 }
 
 .toc-card {
@@ -1039,6 +1068,11 @@ html[data-lt="hidden"] .lt-text {
 .reader-content {
   display: grid;
   gap: 1rem;
+  min-width: 0;
+}
+
+.reader-content > * {
+  min-width: 0;
 }
 
 .study-coach {
@@ -1258,7 +1292,7 @@ html[data-lt="hidden"] .lt-text {
   .speaking-summary-row,
   .library-grid,
   .pager-nav {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .site-header {
@@ -1353,6 +1387,7 @@ html[data-lt="hidden"] .lt-text {
 
   .site-header {
     position: static;
+    grid-template-columns: minmax(0, 1fr) auto auto;
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
   }
@@ -1367,7 +1402,36 @@ html[data-lt="hidden"] .lt-text {
   }
 
   .toggle-button {
-    justify-self: start;
+    justify-self: end;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .nav-menu-button {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.35rem;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .site-header.nav-open .site-nav {
+    display: grid;
+  }
+
+  .site-nav a {
+    min-width: 0;
+    padding: 0.5rem 0.3rem;
+    font-size: 0.88rem;
+    line-height: 1.1;
+  }
+
+  .nav-lt {
+    font-size: 0.68rem;
   }
 
   .landing-hero,

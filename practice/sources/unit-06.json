@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-06",
+  "contentVersion": 2,
+  "title": "Future Plans",
+  "objectives": [
+    {
+      "id": "u06.going-to",
+      "label": {
+        "en": "Use going to for plans and evidence-based predictions",
+        "lt": "Vartoti „going to“ planams ir įrodymais pagrįstoms prognozėms"
+      }
+    },
+    {
+      "id": "u06.will",
+      "label": {
+        "en": "Use will for predictions, decisions, and promises",
+        "lt": "Vartoti „will“ prognozėms, sprendimams ir pažadams"
+      }
+    },
+    {
+      "id": "u06.future-choice",
+      "label": {
+        "en": "Choose between going to and will",
+        "lt": "Pasirinkti tarp „going to“ ir „will“"
+      }
+    },
+    {
+      "id": "u06.weekend-reading",
+      "label": {
+        "en": "Understand a text about future plans",
+        "lt": "Suprasti tekstą apie ateities planus"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "u06.going-to.001",
+      "revision": 1,
+      "objectiveId": "u06.going-to",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete with going to and visit: “I ___ my grandparents next week.”",
+        "lt": "Užbaikite sakinį vartodami „going to“ ir „visit“: „I ___ my grandparents next week.“"
+      },
+      "answer": {
+        "accepted": ["am going to visit"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "With I, the structure is am going to plus the base verb visit.",
+        "lt": "Su „I“ vartojama struktūra „am going to“ ir bendratis „visit“."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 1}]
+    },
+    {
+      "id": "u06.going-to.002",
+      "revision": 1,
+      "objectiveId": "u06.going-to",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the correct form: “She ___ medicine at university.”",
+        "lt": "Pasirinkite tinkamą formą: „She ___ medicine at university.“"
+      },
+      "choices": [
+        {"id": "a", "text": "is going to study"},
+        {"id": "b", "text": "are going to study"},
+        {"id": "c", "text": "is going study"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "With she, use is going to followed by the base verb study.",
+        "lt": "Su „she“ vartojama „is going to“ ir bendratis „study“."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 1}]
+    },
+    {
+      "id": "u06.going-to.003",
+      "revision": 2,
+      "objectiveId": "u06.going-to",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the negative plan: “We ___ tomorrow.” Use not work with going to.",
+        "lt": "Užbaikite neigiamą planą su „not work“ ir „going to“: „We ___ tomorrow.“"
+      },
+      "answer": {
+        "accepted": ["are not going to work", "aren't going to work"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "With we, use “are not going to work” or the contraction “aren't going to work.”",
+        "lt": "Su „we“ vartojame „are not going to work“ arba sutrumpintą formą „aren't going to work“."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 1}]
+    },
+    {
+      "id": "u06.will.004",
+      "revision": 1,
+      "objectiveId": "u06.will",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete the prediction with will and be: “I think it ___ sunny tomorrow.”",
+        "lt": "Užbaikite prognozę vartodami „will“ ir „be“: „I think it ___ sunny tomorrow.“"
+      },
+      "answer": {
+        "accepted": ["will be"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "A general prediction can use will followed by the base verb be.",
+        "lt": "Bendrai prognozei galima vartoti „will“ ir bendratį „be“."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 2}]
+    },
+    {
+      "id": "u06.will.005",
+      "revision": 1,
+      "objectiveId": "u06.will",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct promise: “I promise I ___ you tomorrow.”",
+        "lt": "Pasirinkite tinkamą pažado formą: „I promise I ___ you tomorrow.“"
+      },
+      "choices": [
+        {"id": "a", "text": "will call"},
+        {"id": "b", "text": "will calling"},
+        {"id": "c", "text": "am call"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Promises can use will plus the base verb: will call.",
+        "lt": "Pažadui galima vartoti „will“ ir bendratį: „will call“."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 2}]
+    },
+    {
+      "id": "u06.future-choice.006",
+      "revision": 2,
+      "objectiveId": "u06.future-choice",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "A says, “We don't have any milk.” B decides at that moment to go to the shop. Which form is normally recommended for this spontaneous decision?",
+        "lt": "A sako: „We don't have any milk.“ B tą akimirką nusprendžia eiti į parduotuvę. Kuri forma paprastai rekomenduojama šiam spontaniškam sprendimui?"
+      },
+      "choices": [
+        {"id": "a", "text": "I'll go to the shop and buy some."},
+        {"id": "b", "text": "I'm going to go to the shop and buy some."},
+        {"id": "c", "text": "I go to the shop and buy some."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Will is normally used for a spontaneous decision made at the moment of speaking. Going to would fit a prior intention.",
+        "lt": "Spontaniškam sprendimui, priimtam kalbėjimo metu, paprastai vartojame „will“. „Going to“ tiktų iš anksto turėtam ketinimui."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 3}]
+    },
+    {
+      "id": "u06.future-choice.007",
+      "revision": 2,
+      "objectiveId": "u06.future-choice",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Complete the planned action using going to and visit: “What are your plans for Saturday?” — “I ___ my friend in Kaunas.”",
+        "lt": "Užbaikite iš anksto suplanuotą veiksmą vartodami „going to“ ir „visit“: „What are your plans for Saturday?“ — „I ___ my friend in Kaunas.“"
+      },
+      "answer": {
+        "accepted": ["am going to visit"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The speaker already has a Saturday plan, so going to is appropriate.",
+        "lt": "Kalbėtojas jau turi šeštadienio planą, todėl tinka „going to“."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 3}]
+    },
+    {
+      "id": "u06.future-choice.008",
+      "revision": 2,
+      "objectiveId": "u06.future-choice",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Look at the dark clouds. Which form is normally recommended for a prediction based on this visible evidence? “It ___.”",
+        "lt": "Pažvelkite į tamsius debesis. Kuri forma paprastai rekomenduojama prognozei, paremtai šiuo matomu įrodymu? „It ___.“"
+      },
+      "choices": [
+        {"id": "a", "text": "is going to rain"},
+        {"id": "b", "text": "will rain"},
+        {"id": "c", "text": "rains"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Going to is normally taught for a prediction based on visible present evidence. Will rain is grammatical but is less specific about that evidence.",
+        "lt": "Prognozei, paremtai matomu dabarties įrodymu, paprastai mokoma vartoti „going to“. „Will rain“ yra taisyklinga, bet ne taip aiškiai pabrėžia šį įrodymą."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 3}]
+    },
+    {
+      "id": "u06.will.009",
+      "revision": 2,
+      "objectiveId": "u06.will",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete with the negative form of will: “She ___ come to the party.”",
+        "lt": "Įrašykite neigiamąją „will“ formą: „She ___ come to the party.“"
+      },
+      "answer": {
+        "accepted": ["won't", "will not"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The negative of will is will not or won't, followed by come.",
+        "lt": "Neigiamoji „will“ forma yra „will not“ arba „won't“, po jos vartojama „come“."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 4}]
+    },
+    {
+      "id": "u06.weekend-reading.010",
+      "revision": 2,
+      "objectiveId": "u06.weekend-reading",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Andrius says, “I'm going to take the bus to Kaunas in the morning.” How is he going to travel?",
+        "lt": "Andrius sako: „I'm going to take the bus to Kaunas in the morning.“ Kaip jis keliaus?"
+      },
+      "choices": [
+        {"id": "a", "text": "By car"},
+        {"id": "b", "text": "By train"},
+        {"id": "c", "text": "By bus"}
+      ],
+      "answer": {"choiceId": "c"},
+      "rationale": {
+        "en": "The text says that Andrius is going to take the bus in the morning.",
+        "lt": "Tekste parašyta, kad Andrius ryte važiuos autobusu."
+      },
+      "sourceRefs": [{"lesson": "unit-06", "exercise": 6}]
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-12",
+  "contentVersion": 2,
+  "title": "Unit 12: Review and Consolidation",
+  "objectives": [
+    { "id": "u12.tense-review", "label": { "en": "Choose and form A2 tenses", "lt": "Pasirinkti ir sudaryti A2 laikus" } },
+    { "id": "u12.structure-review", "label": { "en": "Review comparisons and modals", "lt": "Kartoti palyginimus ir modalinius veiksmažodžius" } },
+    { "id": "u12.functional-review", "label": { "en": "Understand integrated A2 reading and dialogue", "lt": "Suprasti integruotą A2 tekstą ir dialogą" } }
+  ],
+  "items": [
+    {
+      "id": "u12.tense-review.001",
+      "revision": 1,
+      "objectiveId": "u12.tense-review",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "They ___ basketball every week, but they ___ now in the gym.", "lt": "Jie žaidžia krepšinį kas savaitę, o dabar žaidžia sporto salėje." },
+      "choices": [
+        { "id": "play-are-playing", "text": "play; are playing" },
+        { "id": "are-playing-play", "text": "are playing; play" },
+        { "id": "played-have-played", "text": "played; have played" }
+      ],
+      "answer": { "choiceId": "play-are-playing" },
+      "rationale": { "en": "Every week takes Present Simple; now takes Present Continuous.", "lt": "Su every week vartojame Present Simple, o su now – Present Continuous." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 1 }]
+    },
+    {
+      "id": "u12.tense-review.002",
+      "revision": 2,
+      "objectiveId": "u12.tense-review",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "The cooking was already in progress. Complete with the Past Continuous form of cook: She ___ dinner when the phone rang.", "lt": "Vakarienės gaminimas jau vyko. Įrašykite veiksmažodžio „cook“ Past Continuous formą: She ___ dinner when the phone rang." },
+      "answer": { "accepted": ["was cooking"], "caseSensitive": false },
+      "rationale": { "en": "The cooking was in progress when the shorter event happened.", "lt": "Gaminimas vyko tuo metu, kai įvyko trumpesnis veiksmas." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 1 }]
+    },
+    {
+      "id": "u12.tense-review.003",
+      "revision": 2,
+      "objectiveId": "u12.tense-review",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Choose the correct sentence for a completed trip at the finished time last year.", "lt": "Pasirinkite taisyklingą sakinį apie užbaigtą kelionę pernai." },
+      "choices": [
+        { "id": "visited", "text": "They visited Paris last year." },
+        { "id": "have-visited", "text": "They have visited Paris last year." },
+        { "id": "were-visiting", "text": "They were visit Paris last year." }
+      ],
+      "answer": { "choiceId": "visited" },
+      "rationale": { "en": "Last year is a finished past time, so use Past Simple: visited.", "lt": "Last year yra pasibaigęs laikas praeityje, todėl vartojame Past Simple: visited." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 2 }]
+    },
+    {
+      "id": "u12.structure-review.004",
+      "revision": 1,
+      "objectiveId": "u12.structure-review",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "It is not ___ than you think. (expensive)", "lt": "Tai nėra brangiau, nei manote." },
+      "answer": { "accepted": ["more expensive"], "caseSensitive": false },
+      "rationale": { "en": "Use more with the long adjective expensive in a comparison with than.", "lt": "Palyginime su than prie ilgo būdvardžio expensive vartojame more." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 5 }]
+    },
+    {
+      "id": "u12.structure-review.005",
+      "revision": 1,
+      "objectiveId": "u12.structure-review",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "This is advice, not a rule: You ___ see a doctor.", "lt": "Tai patarimas, o ne taisyklė: turėtumėte kreiptis į gydytoją." },
+      "choices": [
+        { "id": "should", "text": "should" },
+        { "id": "must", "text": "must" },
+        { "id": "cant", "text": "can't" }
+      ],
+      "answer": { "choiceId": "should" },
+      "rationale": { "en": "Should gives advice; must expresses a stronger requirement.", "lt": "Should reiškia patarimą, o must – stipresnę būtinybę." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 5 }]
+    },
+    {
+      "id": "u12.structure-review.006",
+      "revision": 1,
+      "objectiveId": "u12.structure-review",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Correct the sentence: You should to eat more vegetables.", "lt": "Ištaisykite sakinį: You should to eat more vegetables." },
+      "answer": { "accepted": ["You should eat more vegetables.", "You should eat more vegetables"], "caseSensitive": false },
+      "rationale": { "en": "Use the base verb without to after should.", "lt": "Po should vartojame bendratį be to." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 2 }]
+    },
+    {
+      "id": "u12.functional-review.007",
+      "revision": 2,
+      "objectiveId": "u12.functional-review",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Anna usually works from home, but today she is meeting a client in the city centre. What is Anna doing for work today?", "lt": "Anna paprastai dirba iš namų, bet šiandien miesto centre susitinka su klientu. Ką ji šiandien daro darbo reikalais?" },
+      "choices": [
+        { "id": "city-centre", "text": "She is meeting a client in the city centre." },
+        { "id": "home", "text": "She is working from home." },
+        { "id": "london", "text": "She is working in London." }
+      ],
+      "answer": { "choiceId": "city-centre" },
+      "rationale": { "en": "The reading says that today Anna is meeting a client in the city centre.", "lt": "Tekste parašyta, kad šiandien Anna susitinka su klientu miesto centre." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 3 }]
+    },
+    {
+      "id": "u12.functional-review.008",
+      "revision": 2,
+      "objectiveId": "u12.tense-review",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Use Present Perfect for a life experience: I ___ abroad. (never/travel)", "lt": "Vartokite Present Perfect gyvenimo patirčiai: „Gyvenime nesu keliavęs / keliavusi į užsienį.“ I ___ abroad." },
+      "choices": [
+        { "id": "have-never-travelled", "text": "have never travelled" },
+        { "id": "never-have-travelled", "text": "never have travelled" },
+        { "id": "did-never-travelled", "text": "did never travelled" }
+      ],
+      "answer": { "choiceId": "have-never-travelled" },
+      "rationale": { "en": "Use have + never + past participle for a life experience that has not happened.", "lt": "Neįvykusiai gyvenimo patirčiai vartojame have + never + III veiksmažodžio formą." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 5 }]
+    },
+    {
+      "id": "u12.tense-review.009",
+      "revision": 2,
+      "objectiveId": "u12.tense-review",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "Complete with the Present Perfect Simple form of live: I ___ in Lithuania all my life.", "lt": "Įrašykite veiksmažodžio „live“ Present Perfect Simple formą: „Visą gyvenimą gyvenu Lietuvoje.“ I ___ in Lithuania all my life." },
+      "answer": { "accepted": ["have lived"], "caseSensitive": false },
+      "rationale": { "en": "All my life describes an unfinished period continuing to now, so use have lived.", "lt": "All my life nusako iki dabar besitęsiantį laikotarpį, todėl vartojame have lived." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 1 }]
+    },
+    {
+      "id": "u12.functional-review.010",
+      "revision": 2,
+      "objectiveId": "u12.functional-review",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "The profile says, “Anna is a 25-year-old graphic designer from Vilnius.” What does Anna do for a living?", "lt": "Aprašyme sakoma: „Anna is a 25-year-old graphic designer from Vilnius.“ Kuo Anna dirba?" },
+      "choices": [
+        { "id": "graphic-designer", "text": "She is a graphic designer." },
+        { "id": "english-teacher", "text": "She is an English teacher." },
+        { "id": "doctor", "text": "She is a doctor." }
+      ],
+      "answer": { "choiceId": "graphic-designer" },
+      "rationale": { "en": "The reading introduces Anna as a 25-year-old graphic designer.", "lt": "Tekste Anna pristatoma kaip 25 metų grafikos dizainerė." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 3 }]
+    }
+  ]
+}

@@ -135,7 +135,7 @@ status: "published"
 ---
 
 ## Exercise 1: Complete with Present Perfect form of the verbs
-## Pratimas 1: Užpildykite Present Perfect forma veiksmžodžių
+## Pratimas 1: Įrašykite veiksmažodžius Present Perfect forma
 
 1. I _____ (visit) Paris twice.
 2. She _____ (not/finish) her homework yet.

@@ -1,100 +1,90 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import {
-  getA2Entries,
-  getGreyBookEntries,
-  getResourceEntries,
-  getSpeakingMissionEntries,
-} from "../lib/content";
+import { getSpeakingMissionEntries } from "../lib/content";
 import { withBase } from "../lib/constants";
 
-const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.all([
-  getGreyBookEntries(),
-  getA2Entries(),
-  getResourceEntries(),
-  getSpeakingMissionEntries(),
-]);
+const speakingEntries = await getSpeakingMissionEntries();
 ---
 
 <BaseLayout title="English Library" description="A story-led A2 English course with Lithuanian support, speaking practice, and answer keys.">
   <section class="landing-hero">
     <div class="hero-copy">
-      <p class="eyebrow">Flagship reading track</p>
+      <p class="eyebrow">Continuous A2 learning</p>
       <p class="hero-brand">English Library</p>
-      <h1>Learn English through a story you&apos;ll want to finish.</h1>
+      <h1>One clear English lesson at a time.</h1>
       <p class="hero-intro">
-        Read a hospital story first, keep Lithuanian help close, and move into grammar only after the chapter has
-        given you context.
+        Follow a 60-session path through context, grammar, interactive practice, speaking, and spaced review. Your
+        next useful step is always ready.
       </p>
       <p class="hero-subtitle lt-text" lang="lt">
-        Pagrindinis kelias: istorija, žodžių pagalba, tik tada pratimai ir atsakymai.
+        Aiškus 60 užsiėmimų kelias: kontekstas, gramatika, praktika, kalbėjimas ir kartojimas.
       </p>
       <div class="hero-actions">
-        <a class="primary-button" href={withBase("/grey-book/chapter-01")}>Start the story</a>
-        <a class="secondary-button" href={withBase("/grey-book")}>Browse all chapters</a>
+        <a class="primary-button" href={withBase("/learn")}>Start your learning path</a>
+        <a class="secondary-button" href={withBase("/grey-book")}>Read Grey&apos;s Book</a>
       </div>
       <div class="hero-stat-row" aria-label="Library overview">
         <div>
-          <span>Story</span>
-          <strong>{greyBookEntries.length} chapters</strong>
+          <span>Path</span>
+          <strong>12 modules</strong>
+        </div>
+        <div>
+          <span>Sessions</span>
+          <strong>60 clear steps</strong>
         </div>
         <div>
           <span>Practice</span>
-          <strong>{a2Entries.length} A2 units</strong>
-        </div>
-        <div>
-          <span>Support</span>
-          <strong>{resources.length} guides</strong>
+          <strong>Fresh repeat sets</strong>
         </div>
       </div>
     </div>
 
-    <div class="hero-poster" aria-label="Grey's Book preview">
+    <div class="hero-poster" aria-label="Continuous learning path preview">
       <div class="hero-poster-copy">
-        <p class="poster-kicker">Read like a series</p>
-        <h2>One chapter. One emotional arc. One clear next step.</h2>
+        <p class="poster-kicker">Learn like a course</p>
+        <h2>Learn. Practice. Speak. Review. Then keep going.</h2>
         <p>
-          Select a difficult word or short phrase for Lithuanian help, then reveal answers only when you are ready.
+          Short sessions save your place, explain every answer, and bring important skills back when review is due.
         </p>
       </div>
 
       <div class="chapter-glimpse" aria-hidden="true">
-        <span>Emergency room</span>
-        <span>Secret romance</span>
-        <span>Storm shift</span>
-        <span>Medical mission</span>
+        <span>Context</span>
+        <span>Practice</span>
+        <span>Speaking</span>
+        <span>Recall</span>
       </div>
 
       <dl class="hero-panel">
         <div>
           <dt>Start here</dt>
-          <dd>Grey&apos;s Book</dd>
+          <dd>Your English path</dd>
         </div>
         <div>
-          <dt>Best on mobile</dt>
-          <dd>Read, select to translate, then continue</dd>
+          <dt>Built for real progress</dt>
+          <dd>One focused session, with feedback</dd>
         </div>
         <div>
           <dt>Study order</dt>
-          <dd>Story first, practice second, answer key last</dd>
+          <dd>Context, learn, practice, speak, review</dd>
         </div>
       </dl>
     </div>
   </section>
 
-  <section class="resume-strip" aria-label="Resume reading">
-    <article class="resume-card" data-resume-card>
+  <section class="resume-strip" aria-label="Continue learning">
+    <article class="resume-card">
       <div>
-        <p class="eyebrow">Resume reading</p>
-        <h2 data-resume-title>Start Chapter 1</h2>
-      <p class="resume-track" data-resume-track>Grey's Book</p>
+        <p class="eyebrow">Your next step</p>
+        <h2>Continue your English path</h2>
+        <p class="resume-track">Progress saves on this device</p>
       </div>
-      <p data-resume-copy>
-        Continue from the last chapter you opened, or start Chapter 1 if this is your first visit.
+      <p>
+        Return to the exact session you reached, or begin with Module 1 if this is your first visit.
       </p>
       <div class="hero-actions">
-        <a class="primary-button" data-resume-link href={withBase("/grey-book/chapter-01")}>Start Chapter 1</a>
-        <a class="secondary-button" href={withBase("/grey-book")}>Open Grey's Book</a>
+        <a class="primary-button" href={withBase("/learn")}>Open learning path</a>
+        <a class="secondary-button" href={withBase("/a2")}>Browse A2 lessons</a>
       </div>
     </article>
   </section>
@@ -102,35 +92,42 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
   <section class="path-strip" aria-label="Recommended study path">
     <article class="path-step">
       <p class="eyebrow">Step 1</p>
-      <h2>Read the scene</h2>
-      <p>Stay with one chapter until you understand the emotional turn, not just the words.</p>
+      <h2>Follow the next session</h2>
+      <p>The course chooses one useful step from your 12-module path, so you never need to plan the order.</p>
     </article>
     <article class="path-step">
       <p class="eyebrow">Step 2</p>
-      <h2>Select to translate</h2>
-      <p>Select up to four words for Lithuanian support without leaving the lesson.</p>
+      <h2>Answer and correct</h2>
+      <p>Interactive practice checks each response and explains the answer in English and Lithuanian.</p>
     </article>
     <article class="path-step">
       <p class="eyebrow">Step 3</p>
-      <h2>Practice after</h2>
-      <p>Move into grammar, vocabulary, and answer checks after the story has done its job.</p>
+      <h2>Return when it matters</h2>
+      <p>Skills come back through review sessions, and a new practice set is always available.</p>
     </article>
   </section>
 
   <section class="feature-grid">
-    <a class="feature-card flagship-card" href={withBase("/grey-book")}>
+    <a class="feature-card flagship-card" href={withBase("/learn")}>
       <p class="eyebrow">Primary track</p>
+      <h2>Your English Path</h2>
+      <p class="lt-text" lang="lt">Nuoseklus A2 mokymosi kelias</p>
+      <p>Move through 60 short sessions with interactive answers, speaking, review scheduling, and a clear next step.</p>
+      <p class="card-excerpt">Best place to begin when you want steady progress without planning the course yourself.</p>
+    </a>
+
+    <a class="feature-card" href={withBase("/grey-book")}>
+      <p class="eyebrow">Story track</p>
       <h2>Grey's Book</h2>
       <p class="lt-text" lang="lt">Medicininė drama su A2 lygio anglų kalba</p>
       <p>Ten chapters designed to be read in order, with translation help and controlled answer reveals built into the flow.</p>
-      <p class="card-excerpt">Best place to begin if you want a stronger reading habit on mobile.</p>
     </a>
 
     <a class="feature-card" href={withBase("/a2")}>
-      <p class="eyebrow">Support track</p>
+      <p class="eyebrow">Deep-study track</p>
       <h2>A2 Course</h2>
       <p class="lt-text" lang="lt">Pilnas A2 kursas lietuviškai kalbantiems</p>
-      <p>Use the A2 units when a chapter shows you where you are weak and you want focused reinforcement.</p>
+      <p>Open the complete A2 units whenever you want more explanation, examples, reading, and writing practice.</p>
     </a>
 
     <a class="feature-card" href={withBase("/speaking")}>
@@ -155,43 +152,4 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
     </a>
   </section>
 
-  <script is:inline>
-    const resumeCard = document.querySelector("[data-resume-card]");
-    const resumeTitle = document.querySelector("[data-resume-title]");
-    const resumeTrack = document.querySelector("[data-resume-track]");
-    const resumeCopy = document.querySelector("[data-resume-copy]");
-    const resumeLink = document.querySelector("[data-resume-link]");
-    let resumeData = null;
-
-    try {
-      const rawResumeData = localStorage.getItem("english-library.resume");
-      const parsedResumeData = rawResumeData ? JSON.parse(rawResumeData) : null;
-
-      if (parsedResumeData && typeof parsedResumeData === "object" && !Array.isArray(parsedResumeData)) {
-        resumeData = parsedResumeData;
-      }
-    } catch {}
-
-    if (resumeCard && resumeData && resumeLink && resumeTitle && resumeTrack && resumeCopy) {
-      const lessonTitle = typeof resumeData.title === "string" && resumeData.title.trim()
-        ? resumeData.title
-        : "your last lesson";
-      resumeTitle.textContent = `Resume ${lessonTitle}`;
-      resumeTrack.textContent = typeof resumeData.track === "string" && resumeData.track.trim()
-        ? resumeData.track
-        : "Recent lesson";
-      resumeCopy.textContent = `You last read ${lessonTitle}. Pick up where you left off or choose another lesson.`;
-      resumeLink.textContent = `Resume ${lessonTitle}`;
-
-      if (typeof resumeData.href === "string") {
-        try {
-          const resumeUrl = new URL(resumeData.href, window.location.href);
-
-          if (resumeUrl.origin === window.location.origin) {
-            resumeLink.href = resumeUrl.href;
-          }
-        } catch {}
-      }
-    }
-  </script>
 </BaseLayout>

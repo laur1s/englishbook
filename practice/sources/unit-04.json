@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-04",
+  "contentVersion": 2,
+  "title": "Food and Shopping",
+  "objectives": [
+    {
+      "id": "u04.food-nouns",
+      "label": {
+        "en": "Distinguish countable and uncountable food nouns",
+        "lt": "Skirti skaičiuojamus ir neskaičiuojamus maisto daiktavardžius"
+      }
+    },
+    {
+      "id": "u04.quantifiers",
+      "label": {
+        "en": "Use common quantity words",
+        "lt": "Vartoti pagrindinius kiekio žodžius"
+      }
+    },
+    {
+      "id": "u04.shopping-language",
+      "label": {
+        "en": "Use language for shopping and ordering food",
+        "lt": "Vartoti apsipirkimo ir maisto užsakymo kalbą"
+      }
+    },
+    {
+      "id": "u04.shopping-reading",
+      "label": {
+        "en": "Understand a shopping text",
+        "lt": "Suprasti tekstą apie apsipirkimą"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "u04.food-nouns.001",
+      "revision": 1,
+      "objectiveId": "u04.food-nouns",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Is water countable or uncountable in this exercise?",
+        "lt": "Ar „water“ šiame pratime yra skaičiuojamas, ar neskaičiuojamas daiktavardis?"
+      },
+      "choices": [
+        {"id": "a", "text": "Countable"},
+        {"id": "b", "text": "Uncountable"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Water is normally uncountable when referring to the substance.",
+        "lt": "Kai kalbama apie medžiagą, „water“ paprastai yra neskaičiuojamas daiktavardis."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 1}]
+    },
+    {
+      "id": "u04.food-nouns.002",
+      "revision": 1,
+      "objectiveId": "u04.food-nouns",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Is egg countable or uncountable in this exercise?",
+        "lt": "Ar „egg“ šiame pratime yra skaičiuojamas, ar neskaičiuojamas daiktavardis?"
+      },
+      "choices": [
+        {"id": "a", "text": "Countable"},
+        {"id": "b", "text": "Uncountable"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Individual eggs can be counted: one egg, two eggs.",
+        "lt": "Atskirus kiaušinius galima suskaičiuoti: „one egg, two eggs“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 1}]
+    },
+    {
+      "id": "u04.quantifiers.003",
+      "revision": 2,
+      "objectiveId": "u04.quantifiers",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "You are asking a neutral question and do not expect a particular answer. Complete with some or any: “Do you have ___ milk?”",
+        "lt": "Užduodate neutralų klausimą ir nesitikite konkretaus atsakymo. Įrašykite „some“ arba „any“: „Do you have ___ milk?“"
+      },
+      "answer": {
+        "accepted": ["any"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Any is normally used in this neutral question.",
+        "lt": "Tokiame neutraliame klausime paprastai vartojama „any“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 2}]
+    },
+    {
+      "id": "u04.quantifiers.004",
+      "revision": 1,
+      "objectiveId": "u04.quantifiers",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete with some or any: “Would you like ___ coffee?”",
+        "lt": "Įrašykite „some“ arba „any“: „Would you like ___ coffee?“"
+      },
+      "answer": {
+        "accepted": ["some"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Some is commonly used when offering food or drink.",
+        "lt": "Siūlant maistą ar gėrimą dažnai vartojama „some“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 2}]
+    },
+    {
+      "id": "u04.quantifiers.005",
+      "revision": 1,
+      "objectiveId": "u04.quantifiers",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete with much or many: “How ___ apples do you need?”",
+        "lt": "Įrašykite „much“ arba „many“: „How ___ apples do you need?“"
+      },
+      "answer": {
+        "accepted": ["many"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Apples is a plural countable noun, so use many.",
+        "lt": "„Apples“ yra skaičiuojamo daiktavardžio daugiskaita, todėl vartojama „many“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 3}]
+    },
+    {
+      "id": "u04.quantifiers.006",
+      "revision": 1,
+      "objectiveId": "u04.quantifiers",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the correct word: “How ___ milk is there?”",
+        "lt": "Pasirinkite tinkamą žodį: „How ___ milk is there?“"
+      },
+      "choices": [
+        {"id": "a", "text": "much"},
+        {"id": "b", "text": "many"},
+        {"id": "c", "text": "a few"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Milk is uncountable here, so use much.",
+        "lt": "Čia „milk“ yra neskaičiuojamas daiktavardis, todėl vartojama „much“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 3}]
+    },
+    {
+      "id": "u04.quantifiers.007",
+      "revision": 1,
+      "objectiveId": "u04.quantifiers",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct phrase: “She has ___ friends.”",
+        "lt": "Pasirinkite tinkamą frazę: „She has ___ friends.“"
+      },
+      "choices": [
+        {"id": "a", "text": "a few"},
+        {"id": "b", "text": "a little"},
+        {"id": "c", "text": "much"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Friends is plural and countable, so a few is correct.",
+        "lt": "„Friends“ yra skaičiuojamo daiktavardžio daugiskaita, todėl tinka „a few“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 4}]
+    },
+    {
+      "id": "u04.shopping-language.008",
+      "revision": 1,
+      "objectiveId": "u04.shopping-language",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the market dialogue: “How ___ kilos do you need?”",
+        "lt": "Užbaikite dialogą turguje: „How ___ kilos do you need?“"
+      },
+      "answer": {
+        "accepted": ["many"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Kilos is a plural countable noun, so the question uses how many.",
+        "lt": "„Kilos“ yra skaičiuojamo daiktavardžio daugiskaita, todėl klausime vartojama „how many“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 5}]
+    },
+    {
+      "id": "u04.shopping-language.009",
+      "revision": 1,
+      "objectiveId": "u04.shopping-language",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Which sentence is a polite way to order the grilled salmon in Exercise 6?",
+        "lt": "Kuriuo sakiniu mandagiai užsakytumėte 6 pratime pateiktą keptą lašišą?"
+      },
+      "choices": [
+        {"id": "a", "text": "I'd like the grilled salmon, please."},
+        {"id": "b", "text": "I like the grilled salmon."},
+        {"id": "c", "text": "Give the grilled salmon."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "I'd like ..., please is a polite form for ordering food.",
+        "lt": "„I'd like ..., please“ yra mandagi forma maistui užsisakyti."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 6}]
+    },
+    {
+      "id": "u04.shopping-reading.010",
+      "revision": 2,
+      "objectiveId": "u04.shopping-reading",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "The shopping story says, “Kristina spends 45 euros in total.” How much does she spend?",
+        "lt": "Apsipirkimo istorijoje sakoma: „Kristina spends 45 euros in total.“ Kiek ji išleidžia?"
+      },
+      "choices": [
+        {"id": "a", "text": "35 euros"},
+        {"id": "b", "text": "45 euros"},
+        {"id": "c", "text": "55 euros"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "The final paragraph says that Kristina spends 45 euros in total.",
+        "lt": "Paskutinėje pastraipoje parašyta, kad Kristina iš viso išleidžia 45 eurus."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 7}]
+    }
+  ]
+}

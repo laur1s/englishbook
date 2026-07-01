@@ -252,7 +252,7 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 3. They _____ (be) tired because they _____ (work) all day.
 4. He _____ (never/see) snow. _____ you _____ (ever/see) snow?
 5. We _____ (wait) for the bus when it _____ (start) to rain.
-6. You _____ (should) eat more vegetables. It's _____ (healthy).
+6. You _____ (should) eat more vegetables. They are _____ (healthy) than sweets.
 7. The book is _____ (interesting) than the film. It's the _____ (interesting) I've read.
 8. I _____ (just/finish) my homework. It _____ (take) me 2 hours.
 9. There _____ (be) two banks near the station.
@@ -267,7 +267,16 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 - Your plans for next year
 - Advice you would give to a friend learning English
 
-**Use at least 8 different grammar structures from A2 level.**
+**Use all eight of these grammar structures:**
+
+1. Present Simple for a routine
+2. Present Continuous for something happening now or around now
+3. Present Perfect for a life experience
+4. Past Simple for a finished weekend event
+5. Past Continuous for background or an interrupted action
+6. **going to** or **will** for a future plan or prediction
+7. **should** for advice
+8. a comparative or superlative
 
 ---
 

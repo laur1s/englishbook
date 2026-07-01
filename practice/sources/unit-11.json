@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-11",
+  "contentVersion": 2,
+  "title": "Unit 11: Past Continuous",
+  "objectives": [
+    { "id": "u11.past-continuous-form", "label": { "en": "Form the Past Continuous", "lt": "Sudaryti Past Continuous" } },
+    { "id": "u11.interrupted-actions", "label": { "en": "Contrast ongoing and interrupting actions", "lt": "Atskirti vykusį ir jį pertraukusį veiksmą" } },
+    { "id": "u11.background", "label": { "en": "Describe background events", "lt": "Apibūdinti fono veiksmus" } }
+  ],
+  "items": [
+    {
+      "id": "u11.past-continuous-form.001",
+      "revision": 1,
+      "objectiveId": "u11.past-continuous-form",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "I ___ home. (walk)", "lt": "Aš ėjau namo. Sudarykite Past Continuous." },
+      "answer": { "accepted": ["was walking"], "caseSensitive": false },
+      "rationale": { "en": "Past Continuous with I uses was + verb-ing.", "lt": "Past Continuous su I sudaromas iš was + veiksmažodžio su -ing." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 1 }]
+    },
+    {
+      "id": "u11.past-continuous-form.002",
+      "revision": 1,
+      "objectiveId": "u11.past-continuous-form",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "They ___ football.", "lt": "Jie žaidė futbolą." },
+      "choices": [
+        { "id": "were-playing", "text": "were playing" },
+        { "id": "was-playing", "text": "was playing" },
+        { "id": "were-play", "text": "were play" }
+      ],
+      "answer": { "choiceId": "were-playing" },
+      "rationale": { "en": "Past Continuous with they uses were + playing.", "lt": "Past Continuous su they sudaromas iš were + playing." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 1 }]
+    },
+    {
+      "id": "u11.past-continuous-form.003",
+      "revision": 1,
+      "objectiveId": "u11.past-continuous-form",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "Make a question: She was studying.", "lt": "Sudarykite klausimą: She was studying." },
+      "answer": { "accepted": ["Was she studying?", "Was she studying"], "caseSensitive": false },
+      "rationale": { "en": "Move was before the subject to form the question.", "lt": "Klausimui sudaryti was perkeliame prieš veiksnį." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 2 }]
+    },
+    {
+      "id": "u11.interrupted-actions.004",
+      "revision": 2,
+      "objectiveId": "u11.interrupted-actions",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Complete the action that was already in progress: I ___ home when I saw my friend.", "lt": "Užbaikite jau vykusį veiksmą: I ___ home when I saw my friend." },
+      "choices": [
+        { "id": "was-walking", "text": "was walking" },
+        { "id": "walked", "text": "walked" },
+        { "id": "were-walking", "text": "were walking" }
+      ],
+      "answer": { "choiceId": "was-walking" },
+      "rationale": { "en": "The walk was in progress when the shorter Past Simple event happened.", "lt": "Ėjimas vyko tuo metu, kai įvyko trumpesnis Past Simple veiksmas." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 3 }]
+    },
+    {
+      "id": "u11.interrupted-actions.005",
+      "revision": 1,
+      "objectiveId": "u11.interrupted-actions",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "She ___ English when the power went out. (study)", "lt": "Ji mokėsi anglų kalbos, kai dingo elektra." },
+      "answer": { "accepted": ["was studying"], "caseSensitive": false },
+      "rationale": { "en": "The studying was the ongoing action, so use Past Continuous.", "lt": "Mokymasis buvo vykstantis veiksmas, todėl vartojame Past Continuous." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 3 }]
+    },
+    {
+      "id": "u11.background.006",
+      "revision": 2,
+      "objectiveId": "u11.background",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "The sun ___ when I woke up.", "lt": "Saulė švietė, kai pabudau." },
+      "choices": [
+        { "id": "was-shining", "text": "was shining" },
+        { "id": "shined-now", "text": "is shining" },
+        { "id": "were-shining", "text": "were shining" }
+      ],
+      "answer": { "choiceId": "was-shining" },
+      "rationale": { "en": "The shining describes the background in progress when I woke up.", "lt": "Tai, kad saulė švietė, nusako foninį veiksmą, vykusį tuo metu, kai pabudau." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 5 }]
+    },
+    {
+      "id": "u11.background.007",
+      "revision": 2,
+      "objectiveId": "u11.background",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Complete with the Past Continuous form of rain: It ___ while we were playing tennis.", "lt": "Įrašykite veiksmažodžio „rain“ Past Continuous formą: It ___ while we were playing tennis." },
+      "answer": { "accepted": ["was raining"], "caseSensitive": false },
+      "rationale": { "en": "Both background actions were in progress, so the missing form is was raining.", "lt": "Abu fono veiksmai vyko tuo pačiu metu, todėl trūkstama forma yra was raining." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 5 }]
+    },
+    {
+      "id": "u11.interrupted-actions.008",
+      "revision": 2,
+      "objectiveId": "u11.interrupted-actions",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Choose the sentence that shows ongoing TV watching interrupted by a phone call.", "lt": "Pasirinkite sakinį, kuriame vykstantį televizoriaus žiūrėjimą pertraukė telefono skambutis." },
+      "choices": [
+        { "id": "watching-rang", "text": "We were watching TV when the phone rang." },
+        { "id": "watched-was-ringing", "text": "We were watch TV when the phone rang." },
+        { "id": "were-watch-ringed", "text": "We were watching TV when the phone ringed." }
+      ],
+      "answer": { "choiceId": "watching-rang" },
+      "rationale": { "en": "Use Past Continuous for the ongoing action and Past Simple rang for the interrupting event.", "lt": "Vykusiam veiksmui vartojame Past Continuous, o pertraukusiam įvykiui – Past Simple rang." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 10 }]
+    },
+    {
+      "id": "u11.past-continuous-form.009",
+      "revision": 1,
+      "objectiveId": "u11.past-continuous-form",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "Make the sentence negative: They were playing.", "lt": "Sudarykite neigiamąjį sakinį: They were playing." },
+      "answer": { "accepted": ["They weren't playing.", "They weren't playing", "They were not playing.", "They were not playing"], "caseSensitive": false },
+      "rationale": { "en": "Add not after were: were not playing, or weren't playing.", "lt": "Po were pridedame not: were not playing arba weren't playing." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 2 }]
+    },
+    {
+      "id": "u11.background.010",
+      "revision": 2,
+      "objectiveId": "u11.background",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "The writer says, “I was walking home from work when I saw an accident.” What was he doing when he saw it?", "lt": "Pasakotojas sako: „I was walking home from work when I saw an accident.“ Ką jis veikė, kai pamatė avariją?" },
+      "choices": [
+        { "id": "walking-home", "text": "He was walking home from work." },
+        { "id": "driving-home", "text": "He was driving home from work." },
+        { "id": "waiting-bus", "text": "He was waiting for a bus." }
+      ],
+      "answer": { "choiceId": "walking-home" },
+      "rationale": { "en": "The reading begins: “I was walking home from work when I saw an accident.”", "lt": "Teksto pradžioje sakoma: „I was walking home from work when I saw an accident.“" },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 8 }]
+    }
+  ]
+}

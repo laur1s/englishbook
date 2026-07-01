@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-01",
+  "contentVersion": 2,
+  "title": "Greetings and Introductions",
+  "objectives": [
+    {
+      "id": "u01.greetings",
+      "label": {
+        "en": "Use greetings and introduction phrases",
+        "lt": "Vartoti pasisveikinimo ir prisistatymo frazes"
+      }
+    },
+    {
+      "id": "u01.be-forms",
+      "label": {
+        "en": "Use present forms of be",
+        "lt": "Vartoti veiksmažodžio „to be“ esamojo laiko formas"
+      }
+    },
+    {
+      "id": "u01.be-questions",
+      "label": {
+        "en": "Form questions with be",
+        "lt": "Sudaryti klausimus su „to be“"
+      }
+    },
+    {
+      "id": "u01.personal-details",
+      "label": {
+        "en": "Understand simple personal information",
+        "lt": "Suprasti paprastą asmeninę informaciją"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "u01.be-forms.001",
+      "revision": 1,
+      "objectiveId": "u01.be-forms",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete the sentence with the correct form of be: “I ___ from Lithuania.”",
+        "lt": "Įrašykite tinkamą „to be“ formą: „I ___ from Lithuania.“"
+      },
+      "answer": {
+        "accepted": ["am"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The subject I takes am: I am from Lithuania.",
+        "lt": "Su įvardžiu „I“ vartojama forma „am“: „I am from Lithuania.“"
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 1}]
+    },
+    {
+      "id": "u01.be-forms.002",
+      "revision": 1,
+      "objectiveId": "u01.be-forms",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the correct form: “She ___ a teacher.”",
+        "lt": "Pasirinkite tinkamą formą: „She ___ a teacher.“"
+      },
+      "choices": [
+        {"id": "a", "text": "am"},
+        {"id": "b", "text": "is"},
+        {"id": "c", "text": "are"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "She takes is in the present tense.",
+        "lt": "Su „she“ esamajame laike vartojama forma „is“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 1}]
+    },
+    {
+      "id": "u01.be-forms.003",
+      "revision": 1,
+      "objectiveId": "u01.be-forms",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete the sentence with the correct form of be: “The books ___ on the table.”",
+        "lt": "Įrašykite tinkamą „to be“ formą: „The books ___ on the table.“"
+      },
+      "answer": {
+        "accepted": ["are"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Books is plural, so it takes are.",
+        "lt": "„Books“ yra daugiskaita, todėl vartojama forma „are“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 1}]
+    },
+    {
+      "id": "u01.greetings.004",
+      "revision": 1,
+      "objectiveId": "u01.greetings",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the correct word: “Hello! My name ___ Anna.”",
+        "lt": "Pasirinkite tinkamą žodį: „Hello! My name ___ Anna.“"
+      },
+      "choices": [
+        {"id": "a", "text": "am"},
+        {"id": "b", "text": "is"},
+        {"id": "c", "text": "are"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Name is singular, so the phrase is My name is Anna.",
+        "lt": "„Name“ yra vienaskaita, todėl sakoma „My name is Anna.“"
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 2}]
+    },
+    {
+      "id": "u01.be-forms.005",
+      "revision": 1,
+      "objectiveId": "u01.be-forms",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Make the sentence negative: “She ___ a doctor.”",
+        "lt": "Sudarykite neigiamąjį sakinį: „She ___ a doctor.“"
+      },
+      "answer": {
+        "accepted": ["is not", "isn't"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The negative of she is is she is not or she isn't.",
+        "lt": "Neigiamoji „she is“ forma yra „she is not“ arba „she isn't“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 3}]
+    },
+    {
+      "id": "u01.be-questions.006",
+      "revision": 1,
+      "objectiveId": "u01.be-questions",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the word that completes the question: “___ she from Vilnius?”",
+        "lt": "Pasirinkite klausimą užbaigiantį žodį: „___ she from Vilnius?“"
+      },
+      "choices": [
+        {"id": "a", "text": "Are"},
+        {"id": "b", "text": "Is"},
+        {"id": "c", "text": "Am"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "A question with she begins with Is: Is she from Vilnius?",
+        "lt": "Klausimas su „she“ pradedamas forma „Is“: „Is she from Vilnius?“"
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 4}]
+    },
+    {
+      "id": "u01.be-questions.007",
+      "revision": 1,
+      "objectiveId": "u01.be-questions",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the question: “___ I late?”",
+        "lt": "Užbaikite klausimą: „___ I late?“"
+      },
+      "answer": {
+        "accepted": ["Am"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "With I, the question form begins with Am.",
+        "lt": "Klausimas su „I“ pradedamas forma „Am“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 4}]
+    },
+    {
+      "id": "u01.greetings.008",
+      "revision": 1,
+      "objectiveId": "u01.greetings",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the English translation of “Malonu susipažinti.”",
+        "lt": "Pasirinkite anglišką sakinio „Malonu susipažinti“ vertimą."
+      },
+      "choices": [
+        {"id": "a", "text": "How are you?"},
+        {"id": "b", "text": "Nice to meet you."},
+        {"id": "c", "text": "See you later."}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Nice to meet you is the standard phrase used when meeting someone.",
+        "lt": "Susipažįstant sakoma „Nice to meet you“ – „Malonu susipažinti“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 5}]
+    },
+    {
+      "id": "u01.personal-details.009",
+      "revision": 2,
+      "objectiveId": "u01.personal-details",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Lukas says, “I am 28 years old.” Complete the sentence: “Lukas is ___ years old.”",
+        "lt": "Lukas sako: „I am 28 years old.“ Užbaikite sakinį: „Lukas is ___ years old.“"
+      },
+      "answer": {
+        "accepted": ["28", "twenty-eight"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Lukas says, “I am 28 years old.”",
+        "lt": "Lukas sako: „I am 28 years old“ – jam 28 metai."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 7}]
+    },
+    {
+      "id": "u01.personal-details.010",
+      "revision": 2,
+      "objectiveId": "u01.personal-details",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Lukas says, “My wife Greta is a teacher.” What is Greta's job?",
+        "lt": "Lukas sako: „My wife Greta is a teacher.“ Kokia Gretos profesija?"
+      },
+      "choices": [
+        {"id": "a", "text": "She is a doctor."},
+        {"id": "b", "text": "She is a teacher."},
+        {"id": "c", "text": "She is a student."}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "The text says that Lukas's wife Greta is a teacher.",
+        "lt": "Tekste parašyta, kad Luko žmona Greta yra mokytoja."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 7}]
+    }
+  ]
+}

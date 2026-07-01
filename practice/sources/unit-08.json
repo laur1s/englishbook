@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-08",
+  "contentVersion": 1,
+  "title": "Unit 8: Comparatives and Superlatives",
+  "objectives": [
+    { "id": "u08.comparatives", "label": { "en": "Form and use comparatives", "lt": "Sudaryti ir vartoti lyginamąjį laipsnį" } },
+    { "id": "u08.superlatives", "label": { "en": "Form and use superlatives", "lt": "Sudaryti ir vartoti aukščiausiąjį laipsnį" } },
+    { "id": "u08.equality", "label": { "en": "Compare with as ... as", "lt": "Lyginti su as ... as" } }
+  ],
+  "items": [
+    {
+      "id": "u08.comparatives.001",
+      "revision": 1,
+      "objectiveId": "u08.comparatives",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "big → ___", "lt": "Sudarykite būdvardžio big lyginamąjį laipsnį." },
+      "answer": { "accepted": ["bigger"], "caseSensitive": false },
+      "rationale": { "en": "Double the final consonant in big and add -er: bigger.", "lt": "Žodyje big padvigubiname galinį priebalsį ir pridedame -er: bigger." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 1 }]
+    },
+    {
+      "id": "u08.comparatives.002",
+      "revision": 1,
+      "objectiveId": "u08.comparatives",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "A car is ___ than a bicycle. (expensive)", "lt": "Automobilis yra brangesnis už dviratį." },
+      "choices": [
+        { "id": "more-expensive", "text": "more expensive" },
+        { "id": "expensiver", "text": "expensiver" },
+        { "id": "most-expensive", "text": "most expensive" }
+      ],
+      "answer": { "choiceId": "more-expensive" },
+      "rationale": { "en": "Use more with the longer adjective expensive when comparing two things.", "lt": "Lyginant du dalykus su ilgesniu būdvardžiu expensive vartojame more." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 3 }]
+    },
+    {
+      "id": "u08.comparatives.003",
+      "revision": 1,
+      "objectiveId": "u08.comparatives",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "happy → ___", "lt": "Sudarykite būdvardžio happy lyginamąjį laipsnį." },
+      "answer": { "accepted": ["happier"], "caseSensitive": false },
+      "rationale": { "en": "For adjectives ending in consonant + y, change y to i and add -er.", "lt": "Kai būdvardis baigiasi priebalse + y, y keičiame į i ir pridedame -er." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 1 }]
+    },
+    {
+      "id": "u08.comparatives.004",
+      "revision": 1,
+      "objectiveId": "u08.comparatives",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "This book is ___ than that one. (good)", "lt": "Ši knyga geresnė už aną." },
+      "choices": [
+        { "id": "better", "text": "better" },
+        { "id": "gooder", "text": "gooder" },
+        { "id": "best", "text": "best" }
+      ],
+      "answer": { "choiceId": "better" },
+      "rationale": { "en": "Good has the irregular comparative form better.", "lt": "Būdvardžio good nereguliari lyginamoji forma yra better." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 1 }]
+    },
+    {
+      "id": "u08.superlatives.005",
+      "revision": 1,
+      "objectiveId": "u08.superlatives",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "This is the ___ restaurant in town. (good)", "lt": "Tai geriausias restoranas mieste." },
+      "choices": [
+        { "id": "best", "text": "best" },
+        { "id": "better", "text": "better" },
+        { "id": "most-good", "text": "most good" }
+      ],
+      "answer": { "choiceId": "best" },
+      "rationale": { "en": "The irregular superlative of good is the best.", "lt": "Nereguliari aukščiausiojo laipsnio good forma yra the best." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 4 }]
+    },
+    {
+      "id": "u08.superlatives.006",
+      "revision": 1,
+      "objectiveId": "u08.superlatives",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "This is the ___ place I have ever seen. (beautiful)", "lt": "Tai gražiausia vieta, kurią esu matęs." },
+      "answer": { "accepted": ["most beautiful"], "caseSensitive": false },
+      "rationale": { "en": "Use most with the long adjective beautiful; the is already in the sentence.", "lt": "Su ilgu būdvardžiu beautiful vartojame most; the sakinyje jau yra." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 4 }]
+    },
+    {
+      "id": "u08.equality.007",
+      "revision": 1,
+      "objectiveId": "u08.equality",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Both tests have the same difficulty. The English test is ___ the Lithuanian test.", "lt": "Abu testai vienodo sunkumo. Anglų kalbos testas toks pat sunkus kaip lietuvių kalbos testas." },
+      "choices": [
+        { "id": "as-difficult-as", "text": "as difficult as" },
+        { "id": "more-difficult-as", "text": "more difficult as" },
+        { "id": "as-more-difficult-as", "text": "as more difficult as" }
+      ],
+      "answer": { "choiceId": "as-difficult-as" },
+      "rationale": { "en": "Equality uses as + base adjective + as.", "lt": "Lygybei vartojame as + pagrindinę būdvardžio formą + as." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 5 }]
+    },
+    {
+      "id": "u08.equality.008",
+      "revision": 1,
+      "objectiveId": "u08.equality",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "A bicycle costs much less than a car. A bicycle is ___ a car. (expensive)", "lt": "Dviratis kainuoja daug mažiau už automobilį. Dviratis nėra toks brangus kaip automobilis." },
+      "answer": { "accepted": ["not as expensive as"], "caseSensitive": false },
+      "rationale": { "en": "Use not as + base adjective + as to say the bicycle has less of this quality.", "lt": "Norėdami pasakyti, kad dviratis turi mažiau šios savybės, vartojame not as + pagrindinę formą + as." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 5 }]
+    },
+    {
+      "id": "u08.comparatives.009",
+      "revision": 1,
+      "objectiveId": "u08.comparatives",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "The weather today is ___ than yesterday. (bad)", "lt": "Šiandien oras blogesnis nei vakar." },
+      "choices": [
+        { "id": "worse", "text": "worse" },
+        { "id": "badder", "text": "badder" },
+        { "id": "worst", "text": "worst" }
+      ],
+      "answer": { "choiceId": "worse" },
+      "rationale": { "en": "Bad has the irregular comparative form worse.", "lt": "Būdvardžio bad nereguliari lyginamoji forma yra worse." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 3 }]
+    },
+    {
+      "id": "u08.superlatives.010",
+      "revision": 1,
+      "objectiveId": "u08.superlatives",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "This is the ___ exercise in the book. (easy)", "lt": "Tai lengviausias pratimas knygoje." },
+      "answer": { "accepted": ["easiest"], "caseSensitive": false },
+      "rationale": { "en": "Change the final y in easy to i and add -est: easiest.", "lt": "Žodžio easy galinę y keičiame į i ir pridedame -est: easiest." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 4 }]
+    }
+  ]
+}

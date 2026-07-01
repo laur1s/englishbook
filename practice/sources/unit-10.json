@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-10",
+  "contentVersion": 2,
+  "title": "Unit 10: Present Tenses Contrast",
+  "objectives": [
+    { "id": "u10.present-simple", "label": { "en": "Use Present Simple for routines and facts", "lt": "Vartoti Present Simple įpročiams ir faktams" } },
+    { "id": "u10.present-continuous", "label": { "en": "Use Present Continuous for actions now", "lt": "Vartoti Present Continuous dabar vykstantiems veiksmams" } },
+    { "id": "u10.present-perfect", "label": { "en": "Use Present Perfect for experience and duration", "lt": "Vartoti Present Perfect patirčiai ir trukmei" } },
+    { "id": "u10.stative-verbs", "label": { "en": "Use stative verbs accurately", "lt": "Taisyklingai vartoti būsenos veiksmažodžius" } }
+  ],
+  "items": [
+    {
+      "id": "u10.present-simple.001",
+      "revision": 1,
+      "objectiveId": "u10.present-simple",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "I usually ___ to work by bus.", "lt": "Aš paprastai važiuoju į darbą autobusu." },
+      "choices": [
+        { "id": "go", "text": "go" },
+        { "id": "am-going", "text": "am going" },
+        { "id": "have-gone", "text": "have gone" }
+      ],
+      "answer": { "choiceId": "go" },
+      "rationale": { "en": "Usually signals a routine, so use Present Simple.", "lt": "Usually rodo įprotį, todėl vartojame Present Simple." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 1 }]
+    },
+    {
+      "id": "u10.present-continuous.002",
+      "revision": 2,
+      "objectiveId": "u10.present-continuous",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "Look! I ___ to work right now. (walk)", "lt": "Žiūrėk! Dabar einu į darbą pėsčiomis." },
+      "answer": { "accepted": ["am walking"], "caseSensitive": false },
+      "rationale": { "en": "Look and right now make the current action clear, so use am walking.", "lt": "„Look“ ir „right now“ aiškiai nurodo dabar vykstantį veiksmą, todėl vartojame „am walking“." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 1 }]
+    },
+    {
+      "id": "u10.present-simple.003",
+      "revision": 1,
+      "objectiveId": "u10.present-simple",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Water ___ at 100°C.", "lt": "Vanduo užverda 100 °C temperatūroje." },
+      "choices": [
+        { "id": "boils", "text": "boils" },
+        { "id": "is-boiling", "text": "is boiling" },
+        { "id": "has-boiled", "text": "has boiled" }
+      ],
+      "answer": { "choiceId": "boils" },
+      "rationale": { "en": "This is a general fact, so use Present Simple: boils.", "lt": "Tai bendras faktas, todėl vartojame Present Simple: boils." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 1 }]
+    },
+    {
+      "id": "u10.present-perfect.004",
+      "revision": 2,
+      "objectiveId": "u10.present-perfect",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "Complete with the Present Perfect Simple form of live: We ___ here since 2015.", "lt": "Įrašykite veiksmažodžio „live“ Present Perfect Simple formą: We ___ here since 2015." },
+      "answer": { "accepted": ["have lived"], "caseSensitive": false },
+      "rationale": { "en": "Since gives the starting point of a situation continuing now, so use have lived.", "lt": "Since nurodo iki dabar besitęsiančios situacijos pradžią, todėl vartojame have lived." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 2 }]
+    },
+    {
+      "id": "u10.present-perfect.005",
+      "revision": 1,
+      "objectiveId": "u10.present-perfect",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "I ___ that film last night.", "lt": "Aš mačiau tą filmą vakar vakare." },
+      "choices": [
+        { "id": "saw", "text": "saw" },
+        { "id": "have-seen", "text": "have seen" },
+        { "id": "see", "text": "see" }
+      ],
+      "answer": { "choiceId": "saw" },
+      "rationale": { "en": "Last night is finished, so use Past Simple rather than Present Perfect.", "lt": "Last night yra pasibaigęs laikas, todėl vartojame Past Simple, o ne Present Perfect." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 2 }]
+    },
+    {
+      "id": "u10.stative-verbs.006",
+      "revision": 1,
+      "objectiveId": "u10.stative-verbs",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "Correct the sentence: I am knowing the answer.", "lt": "Ištaisykite sakinį: I am knowing the answer." },
+      "answer": { "accepted": ["I know the answer.", "I know the answer"], "caseSensitive": false },
+      "rationale": { "en": "Know normally describes a state and is used in Present Simple.", "lt": "Know paprastai nusako būseną ir vartojamas Present Simple laiku." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 4 }]
+    },
+    {
+      "id": "u10.stative-verbs.007",
+      "revision": 1,
+      "objectiveId": "u10.stative-verbs",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Choose the sentence where have describes an action happening now.", "lt": "Pasirinkite sakinį, kuriame have nusako dabar vykstantį veiksmą." },
+      "choices": [
+        { "id": "having-dinner", "text": "I am having dinner." },
+        { "id": "having-a-car", "text": "I am having a car." },
+        { "id": "have-dinner-now", "text": "I have dinner right now." }
+      ],
+      "answer": { "choiceId": "having-dinner" },
+      "rationale": { "en": "Have is dynamic in have dinner, so Present Continuous is possible; possession is stative.", "lt": "Junginyje have dinner veiksmažodis nusako veiksmą, todėl galima Present Continuous forma; nuosavybė yra būsena." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 4 }]
+    },
+    {
+      "id": "u10.present-continuous.008",
+      "revision": 1,
+      "objectiveId": "u10.present-continuous",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Which tense does “at the moment” most clearly signal in this unit?", "lt": "Kurį laiką šiame skyriuje aiškiausiai nurodo at the moment?" },
+      "choices": [
+        { "id": "present-continuous", "text": "Present Continuous" },
+        { "id": "present-simple", "text": "Present Simple" },
+        { "id": "past-simple", "text": "Past Simple" }
+      ],
+      "answer": { "choiceId": "present-continuous" },
+      "rationale": { "en": "At the moment points to an action in progress now.", "lt": "At the moment nurodo dabar vykstantį veiksmą." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 5 }]
+    },
+    {
+      "id": "u10.present-continuous.009",
+      "revision": 1,
+      "objectiveId": "u10.present-continuous",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Look! The cat ___ on the roof.", "lt": "Žiūrėk! Katė sėdi ant stogo." },
+      "choices": [
+        { "id": "is-sitting", "text": "is sitting" },
+        { "id": "sits", "text": "sits" },
+        { "id": "has-sat", "text": "has sat" }
+      ],
+      "answer": { "choiceId": "is-sitting" },
+      "rationale": { "en": "Look! directs attention to an action happening now, so use Present Continuous.", "lt": "Look! atkreipia dėmesį į dabar vykstantį veiksmą, todėl vartojame Present Continuous." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 1 }]
+    },
+    {
+      "id": "u10.present-perfect.010",
+      "revision": 1,
+      "objectiveId": "u10.present-perfect",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "He ___ his homework. (just / finish)", "lt": "Jis ką tik baigė namų darbus." },
+      "answer": { "accepted": ["has just finished"], "caseSensitive": false },
+      "rationale": { "en": "With he, use has + just + the past participle finished.", "lt": "Su he vartojame has + just + III formą finished." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 2 }]
+    }
+  ]
+}

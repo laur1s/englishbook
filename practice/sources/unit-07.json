@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-07",
+  "contentVersion": 2,
+  "title": "Unit 7: Present Perfect Introduction",
+  "objectives": [
+    { "id": "u07.present-perfect-form", "label": { "en": "Form the Present Perfect", "lt": "Sudaryti Present Perfect" } },
+    { "id": "u07.tense-choice", "label": { "en": "Choose Present Perfect or Past Simple", "lt": "Pasirinkti Present Perfect arba Past Simple" } },
+    { "id": "u07.time-expressions", "label": { "en": "Use Present Perfect time expressions", "lt": "Vartoti Present Perfect laiko žodžius" } }
+  ],
+  "items": [
+    {
+      "id": "u07.present-perfect-form.001",
+      "revision": 1,
+      "objectiveId": "u07.present-perfect-form",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "I ___ Paris twice. (visit)", "lt": "Aš du kartus lankiausi Paryžiuje. Įrašykite veiksmažodį Present Perfect forma." },
+      "answer": { "accepted": ["have visited"], "caseSensitive": false },
+      "rationale": { "en": "Use have + visited with I to describe a life experience.", "lt": "Gyvenimo patirčiai su I vartojame have + visited." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.present-perfect-form.002",
+      "revision": 1,
+      "objectiveId": "u07.present-perfect-form",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "She ___ her homework yet.", "lt": "Ji dar nebaigė namų darbų." },
+      "choices": [
+        { "id": "hasnt-finished", "text": "hasn't finished" },
+        { "id": "havent-finished", "text": "haven't finished" },
+        { "id": "didnt-finished", "text": "didn't finished" }
+      ],
+      "answer": { "choiceId": "hasnt-finished" },
+      "rationale": { "en": "She takes has, and finish needs the past participle finished.", "lt": "Su she vartojame has, o finish III forma yra finished." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.time-expressions.003",
+      "revision": 1,
+      "objectiveId": "u07.time-expressions",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "___ Lithuanian food? (you / ever / try)", "lt": "Ar kada nors ragavote lietuviško maisto?" },
+      "answer": { "accepted": ["Have you ever tried"], "caseSensitive": false },
+      "rationale": { "en": "A Present Perfect question with you uses Have + you + past participle.", "lt": "Present Perfect klausime su you vartojame Have + you + III veiksmažodžio formą." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.tense-choice.004",
+      "revision": 1,
+      "objectiveId": "u07.tense-choice",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "I ___ that film last night.", "lt": "Aš mačiau tą filmą vakar vakare." },
+      "choices": [
+        { "id": "saw", "text": "saw" },
+        { "id": "have-seen", "text": "have seen" },
+        { "id": "seen", "text": "seen" }
+      ],
+      "answer": { "choiceId": "saw" },
+      "rationale": { "en": "Last night is a finished past time, so use Past Simple: saw.", "lt": "Last night nurodo pasibaigusį laiką praeityje, todėl vartojame Past Simple: saw." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 2 }]
+    },
+    {
+      "id": "u07.tense-choice.005",
+      "revision": 2,
+      "objectiveId": "u07.tense-choice",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "Complete with the Present Perfect Simple form of live: We ___ here since 2020.", "lt": "Įrašykite veiksmažodžio „live“ Present Perfect Simple formą: We ___ here since 2020." },
+      "answer": { "accepted": ["have lived"], "caseSensitive": false },
+      "rationale": { "en": "Since 2020 marks a situation continuing to the present, so use have lived.", "lt": "Since 2020 rodo iki dabar besitęsiančią situaciją, todėl vartojame have lived." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 2 }]
+    },
+    {
+      "id": "u07.time-expressions.006",
+      "revision": 1,
+      "objectiveId": "u07.time-expressions",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "Choose the correct word order: We ___ breakfast.", "lt": "Pasirinkite taisyklingą žodžių tvarką: Mes jau papusryčiavome." },
+      "choices": [
+        { "id": "have-already-eaten", "text": "have already eaten" },
+        { "id": "already-have-eaten", "text": "already have eaten" },
+        { "id": "have-eaten-already-before", "text": "have eaten already before" }
+      ],
+      "answer": { "choiceId": "have-already-eaten" },
+      "rationale": { "en": "Already normally goes between have and the past participle.", "lt": "Already paprastai rašomas tarp have ir III veiksmažodžio formos." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.tense-choice.007",
+      "revision": 1,
+      "objectiveId": "u07.tense-choice",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Marta is still in London. She has ___ to London.", "lt": "Marta vis dar Londone. Ji išvyko į Londoną." },
+      "choices": [
+        { "id": "gone", "text": "gone" },
+        { "id": "been", "text": "been" },
+        { "id": "went", "text": "went" }
+      ],
+      "answer": { "choiceId": "gone" },
+      "rationale": { "en": "Has gone means the person went there and has not returned yet.", "lt": "Has gone reiškia, kad žmogus išvyko ir dar negrįžo." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 4 }]
+    },
+    {
+      "id": "u07.present-perfect-form.008",
+      "revision": 1,
+      "objectiveId": "u07.present-perfect-form",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Correct the sentence: Have you ever visit Paris?", "lt": "Ištaisykite sakinį: Have you ever visit Paris?" },
+      "answer": { "accepted": ["Have you ever visited Paris?", "Have you ever visited Paris"], "caseSensitive": false },
+      "rationale": { "en": "Present Perfect uses the past participle visited after have.", "lt": "Po have Present Perfect laike vartojama III forma visited." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 7 }]
+    },
+    {
+      "id": "u07.time-expressions.009",
+      "revision": 1,
+      "objectiveId": "u07.time-expressions",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "He has lived in Vilnius ___ ten years.", "lt": "Jis Vilniuje gyvena dešimt metų." },
+      "choices": [
+        { "id": "for", "text": "for" },
+        { "id": "since", "text": "since" },
+        { "id": "yet", "text": "yet" }
+      ],
+      "answer": { "choiceId": "for" },
+      "rationale": { "en": "Use for with a period of time such as ten years.", "lt": "Su laiko trukme, pavyzdžiui, ten years, vartojame for." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.present-perfect-form.010",
+      "revision": 1,
+      "objectiveId": "u07.present-perfect-form",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "They have ___ a new car recently. (buy)", "lt": "Jie neseniai nusipirko naują automobilį." },
+      "answer": { "accepted": ["bought"], "caseSensitive": false },
+      "rationale": { "en": "The irregular past participle of buy is bought.", "lt": "Netaisyklinga veiksmažodžio buy III forma yra bought." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    }
+  ]
+}

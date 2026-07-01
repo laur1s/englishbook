@@ -1094,7 +1094,7 @@ Dialogue blanks: **hotter, hotter, most beautiful, most beautiful**.
 7. Cepelinai.
 8. Beer.
 
-True or False: 1. True (approximately 500,000 in the text) 2. False 3. False 4. False 5. False
+True or False: 1. True (it is described as the biggest city in Lithuania) 2. False 3. False 4. False 5. False
 
 ### Exercise 13: Writing Practice
 Answers will vary. Example:
@@ -1256,11 +1256,11 @@ Checklist: advice with **should/shouldn't**; one possibility with **may/might**;
 1. saw (specific time)
 2. has visited
 3. bought (specific time)
-4. have never seen
+4. have never been
 5. has just finished
 6. have lived
 7. met (specific time)
-8. have already visited
+8. have already eaten
 
 ### Exercise 3: Mixed Present Tenses and Past Simple
 1. live, have lived, am sitting

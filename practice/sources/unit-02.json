@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-02",
+  "contentVersion": 2,
+  "title": "Daily Routines and Present Simple",
+  "objectives": [
+    {
+      "id": "u02.present-simple",
+      "label": {
+        "en": "Use the Present Simple",
+        "lt": "Vartoti esamąjį paprastąjį laiką"
+      }
+    },
+    {
+      "id": "u02.questions-negatives",
+      "label": {
+        "en": "Form Present Simple questions and negatives",
+        "lt": "Sudaryti esamojo paprastojo laiko klausimus ir neiginius"
+      }
+    },
+    {
+      "id": "u02.frequency",
+      "label": {
+        "en": "Place adverbs of frequency correctly",
+        "lt": "Taisyklingai vartoti dažnumo prieveiksmius"
+      }
+    },
+    {
+      "id": "u02.routine-reading",
+      "label": {
+        "en": "Understand a daily routine",
+        "lt": "Suprasti kasdienės rutinos aprašymą"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "u02.present-simple.001",
+      "revision": 1,
+      "objectiveId": "u02.present-simple",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete with the Present Simple form of study: “She ___ English every day.”",
+        "lt": "Įrašykite veiksmažodžio „study“ esamojo paprastojo laiko formą: „She ___ English every day.“"
+      },
+      "answer": {
+        "accepted": ["studies"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "With she, study changes to studies.",
+        "lt": "Su „she“ veiksmažodis „study“ keičiamas į „studies“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 1}]
+    },
+    {
+      "id": "u02.present-simple.002",
+      "revision": 1,
+      "objectiveId": "u02.present-simple",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the correct form: “He ___ to the gym on Mondays.”",
+        "lt": "Pasirinkite tinkamą formą: „He ___ to the gym on Mondays.“"
+      },
+      "choices": [
+        {"id": "a", "text": "go"},
+        {"id": "b", "text": "goes"},
+        {"id": "c", "text": "going"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Go takes -es with he: he goes.",
+        "lt": "Su „he“ prie „go“ pridedama galūnė „-es“: „he goes“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 1}]
+    },
+    {
+      "id": "u02.present-simple.003",
+      "revision": 1,
+      "objectiveId": "u02.present-simple",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete with the Present Simple form of watch: “My sister ___ TV in the evening.”",
+        "lt": "Įrašykite veiksmažodžio „watch“ esamojo paprastojo laiko formą: „My sister ___ TV in the evening.“"
+      },
+      "answer": {
+        "accepted": ["watches"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Watch takes -es with a third-person singular subject.",
+        "lt": "Su trečiojo asmens vienaskaitos veiksniu prie „watch“ pridedama „-es“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 1}]
+    },
+    {
+      "id": "u02.questions-negatives.004",
+      "revision": 1,
+      "objectiveId": "u02.questions-negatives",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct negative form of “She likes tea.”",
+        "lt": "Pasirinkite tinkamą neigiamąją sakinio „She likes tea“ formą."
+      },
+      "choices": [
+        {"id": "a", "text": "She doesn't like tea."},
+        {"id": "b", "text": "She don't likes tea."},
+        {"id": "c", "text": "She isn't like tea."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "With she, use doesn't followed by the base form like.",
+        "lt": "Su „she“ vartojama „doesn't“, o po jo – bendratis „like“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 2}]
+    },
+    {
+      "id": "u02.questions-negatives.005",
+      "revision": 1,
+      "objectiveId": "u02.questions-negatives",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the question: “___ she live in London?”",
+        "lt": "Užbaikite klausimą: „___ she live in London?“"
+      },
+      "answer": {
+        "accepted": ["Does"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "A Present Simple question with she begins with Does, and live stays in the base form.",
+        "lt": "Esamojo paprastojo laiko klausimas su „she“ pradedamas „Does“, o „live“ lieka bendraties formos."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 3}]
+    },
+    {
+      "id": "u02.frequency.006",
+      "revision": 1,
+      "objectiveId": "u02.frequency",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Put never in the correct place: “I am ___ late for work.”",
+        "lt": "Įrašykite „never“ tinkamoje vietoje: „I am ___ late for work.“"
+      },
+      "answer": {
+        "accepted": ["never"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "An adverb of frequency comes after be: I am never late.",
+        "lt": "Dažnumo prieveiksmis eina po „be“ formos: „I am never late“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 4}]
+    },
+    {
+      "id": "u02.frequency.007",
+      "revision": 1,
+      "objectiveId": "u02.frequency",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the sentence with always in the correct position.",
+        "lt": "Pasirinkite sakinį, kuriame „always“ yra tinkamoje vietoje."
+      },
+      "choices": [
+        {"id": "a", "text": "She drinks always coffee in the morning."},
+        {"id": "b", "text": "She always drinks coffee in the morning."},
+        {"id": "c", "text": "She drinks coffee always in the morning."}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "With a main verb, always normally comes before the verb: always drinks.",
+        "lt": "Su pagrindiniu veiksmažodžiu „always“ paprastai eina prieš jį: „always drinks“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 4}]
+    },
+    {
+      "id": "u02.routine-reading.008",
+      "revision": 2,
+      "objectiveId": "u02.routine-reading",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Ona says, “I wake up at 6:30 AM every morning.” What time does Ona wake up?",
+        "lt": "Ona sako: „I wake up at 6:30 AM every morning.“ Kada Ona pabunda?"
+      },
+      "choices": [
+        {"id": "a", "text": "At 6:30 AM"},
+        {"id": "b", "text": "At 7:45 AM"},
+        {"id": "c", "text": "At 8:30 AM"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "The text says that Ona wakes up at 6:30 AM.",
+        "lt": "Tekste parašyta, kad Ona pabunda 6.30 val."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 5}]
+    },
+    {
+      "id": "u02.routine-reading.009",
+      "revision": 2,
+      "objectiveId": "u02.routine-reading",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Ona says, “I go to school by bus.” Complete the answer: “How does Ona go to school?” — “___.”",
+        "lt": "Ona sako: „I go to school by bus.“ Užbaikite atsakymą: „How does Ona go to school?“ — „___.“"
+      },
+      "answer": {
+        "accepted": ["by bus"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The text says that she goes to school by bus.",
+        "lt": "Tekste parašyta, kad ji į mokyklą važiuoja autobusu – „by bus“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 5}]
+    },
+    {
+      "id": "u02.frequency.010",
+      "revision": 1,
+      "objectiveId": "u02.frequency",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Choose the correct translation of “Ji niekada nevėluoja.”",
+        "lt": "Pasirinkite tinkamą sakinio „Ji niekada nevėluoja“ vertimą."
+      },
+      "choices": [
+        {"id": "a", "text": "She never arrives late."},
+        {"id": "b", "text": "She arrives never late."},
+        {"id": "c", "text": "She doesn't never arrive late."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Never comes before the main verb arrives, and English does not use an extra negative here.",
+        "lt": "„Never“ eina prieš pagrindinį veiksmažodį „arrives“, papildomo neiginio nereikia."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 8}]
+    }
+  ]
+}

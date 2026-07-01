@@ -1,0 +1,641 @@
+---
+import LearningCycle from "./LearningCycle.astro";
+import type { CourseModule, CourseSession } from "../lib/course-path";
+import { coursePath } from "../lib/course-path";
+import { withBase } from "../lib/constants";
+
+type Props = {
+  module: CourseModule;
+  session: CourseSession;
+  nextSessionId?: string;
+};
+
+const { module, session, nextSessionId } = Astro.props;
+const nextHref = nextSessionId ? withBase(`/learn/${nextSessionId}`) : withBase("/learn");
+const contentHref = session.kind === "content" ? withBase(session.href) : undefined;
+const stageDescriptions = {
+  context: "Read or explore the source first. Notice meaning and useful language before you study the rules.",
+  learn: "Work through the focused lesson. Say examples aloud and try the exercises before checking answers.",
+  practice: "Answer one item at a time. Use the feedback to correct mistakes while the language is still active.",
+  speak: "Complete the speaking mission aloud. Aim for clear meaning first, then a smoother second attempt.",
+  review: "Recall the language without notes. The result schedules the skills that need another review.",
+} as const;
+const contentActionLabels = {
+  context: "Open reading",
+  learn: "Open lesson",
+  practice: "Open practice",
+  speak: "Open speaking mission",
+  review: "Open review",
+} as const;
+const completeActionLabels = {
+  context: "I finished the reading",
+  learn: "I finished the lesson",
+  practice: "I finished the practice",
+  speak: "I finished the mission",
+  review: "I finished the review",
+} as const;
+const serializeForScript = (value: unknown) => JSON.stringify(value).replace(/</g, "\\u003c");
+const runnerData = serializeForScript({
+  revision: coursePath.version,
+  module: { id: module.id, order: module.order, title: module.title },
+  moduleSessions: module.sessions.map((item) => ({ id: item.id, stage: item.stage })),
+  session: {
+    id: session.id,
+    kind: session.kind,
+    stage: session.stage,
+    title: session.title,
+    minutes: session.minutes,
+    skillRefs: session.skillRefs,
+    ...(session.kind === "practice"
+      ? {
+          ...(session.unitIds ? { unitIds: session.unitIds } : { unitId: session.unitId }),
+          mode: session.mode,
+          count: session.count,
+        }
+      : {}),
+  },
+  nextSessionId: nextSessionId ?? null,
+  nextHref,
+  dashboardHref: withBase("/learn"),
+});
+const chevronIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>';
+const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M12 7.5V12l3 2" /></svg>';
+---
+
+<section class="learning-shell session-runner-shell" data-session-runner>
+  <header class="session-runner-header">
+    <div>
+      <p class="learning-module-name">Module {module.order} · {module.title}</p>
+      <h1>{session.title}</h1>
+      <p class="learning-duration">
+        <Fragment set:html={clockIcon} />
+        <span>{session.stage[0].toUpperCase() + session.stage.slice(1)} · {session.minutes} min</span>
+      </p>
+    </div>
+
+    <LearningCycle
+      sessions={module.sessions}
+      activeSessionId={session.id}
+      className="runner-cycle"
+    />
+
+    <a class="runner-exit-link" href={withBase("/learn")}>Exit session</a>
+  </header>
+
+  {session.kind === "content" ? (
+    <section class="content-session-card" data-content-session aria-labelledby="content-session-title">
+      <p class="learning-label">{session.stage === "speak" ? "Speak aloud" : "Open the source"}</p>
+      <h2 id="content-session-title">{session.title}</h2>
+      <p>{stageDescriptions[session.stage]}</p>
+      <div class="content-session-actions">
+        <a class="learning-primary-button" href={contentHref}>
+          {contentActionLabels[session.stage]}
+          <Fragment set:html={chevronIcon} />
+        </a>
+        <button class="learning-outline-button" type="button" data-complete-content>
+          {completeActionLabels[session.stage]}
+        </button>
+      </div>
+      <p class="runner-saved-note" data-saved-note>Progress is saved on this device.</p>
+    </section>
+  ) : (
+    <section class="runner-question-card" data-practice-session aria-labelledby="practice-question">
+      <div class="question-progress">
+        <span data-question-count>Preparing your practice set…</span>
+        <div class="question-progress-track" aria-hidden="true">
+          <span class="question-progress-fill" data-question-progress style="width: 0%" />
+        </div>
+      </div>
+
+      <p class="question-objective" data-question-objective>Get ready to answer</p>
+      <h2 id="practice-question" data-question-prompt tabindex="-1">Loading your first question…</h2>
+      <p lang="lt" data-question-lt hidden></p>
+
+      <div data-answer-container></div>
+
+      <div class="feedback-panel" data-feedback role="status" aria-live="polite" hidden>
+        <strong data-feedback-title></strong>
+        <p data-feedback-copy></p>
+        <p class="lt-text" lang="lt" data-feedback-lt></p>
+      </div>
+
+      <div class="runner-actions">
+        <button class="learning-outline-button" type="button" data-toggle-hint aria-expanded="false">
+          LT&nbsp; Show hint
+        </button>
+        <button class="learning-text-action" type="button" data-skip-item>Skip for now</button>
+        <button class="answer-action primary" type="button" data-check-answer disabled>
+          <span>Check answer</span>
+          <Fragment set:html={chevronIcon} />
+        </button>
+      </div>
+      <p class="runner-saved-note" data-saved-note>Each answer is saved on this device.</p>
+
+      <noscript>
+        <p>Interactive practice needs JavaScript. Open the related A2 lesson from the course map instead.</p>
+      </noscript>
+    </section>
+  )}
+
+  <section class="session-complete-card" data-session-complete aria-labelledby="session-complete-title" tabindex="-1" hidden>
+    <div class="session-score" data-session-score hidden>0 / 0</div>
+    <p class="learning-label">Session saved</p>
+    <h2 id="session-complete-title" data-complete-title>Step complete</h2>
+    <p data-complete-copy>Your next focused step is ready.</p>
+    <div class="complete-actions">
+      <a class="learning-primary-button" href={nextHref} data-continue-link>
+        {nextSessionId ? "Continue to next step" : "Return to your path"}
+        <Fragment set:html={chevronIcon} />
+      </a>
+      {session.kind === "practice" && (
+        <>
+          <button class="learning-outline-button" type="button" data-retry-pack>Retry this set</button>
+          <button class="learning-text-action" type="button" data-new-pack>Create a new set</button>
+        </>
+      )}
+    </div>
+  </section>
+
+  <script is:inline type="application/json" data-runner-data set:html={runnerData} />
+</section>
+
+<script>
+  import {
+    completeLearningSession,
+    nextPracticeAttempt,
+    readLearningProgress,
+    saveLearningResponse,
+    startLearningSession,
+    writeLearningProgress,
+  } from "../lib/learning-progress";
+  import {
+    generatePracticePack,
+    getPracticeItems,
+    practiceCatalog,
+    scorePracticeItem,
+    type PracticeItem,
+    type PracticeMode,
+    type PracticePack,
+  } from "../lib/practice";
+
+  type RunnerSession = {
+    id: string;
+    kind: "content" | "practice";
+    stage: "context" | "learn" | "practice" | "speak" | "review";
+    title: string;
+    minutes: number;
+    skillRefs: string[];
+    unitId?: string;
+    unitIds?: string[];
+    mode?: "guided" | "standard" | "review" | "checkpoint";
+    count?: number;
+  };
+
+  type RunnerData = {
+    revision: number;
+    module: { id: string; order: number; title: string };
+    moduleSessions: Array<{ id: string; stage: RunnerSession["stage"] }>;
+    session: RunnerSession;
+    nextSessionId: string | null;
+    nextHref: string;
+    dashboardHref: string;
+  };
+
+  const SKIPPED_RESPONSE = "__skipped__";
+
+  const setText = (root: Element, selector: string, value: string) => {
+    const element = root.querySelector(selector);
+    if (element) element.textContent = value;
+  };
+
+  const asElement = <T extends Element>(root: Element, selector: string) =>
+    root.querySelector(selector) as T | null;
+
+  document.querySelectorAll("[data-session-runner]").forEach((root) => {
+    const dataElement = root.querySelector("[data-runner-data]");
+    let data: RunnerData | null = null;
+
+    try {
+      data = JSON.parse(dataElement?.textContent || "null") as RunnerData | null;
+    } catch {
+      data = null;
+    }
+
+    if (!data) return;
+
+    const session = data.session;
+    const contentView = asElement<HTMLElement>(root, "[data-content-session]");
+    const practiceView = asElement<HTMLElement>(root, "[data-practice-session]");
+    const completeView = asElement<HTMLElement>(root, "[data-session-complete]");
+    const completeButton = asElement<HTMLButtonElement>(root, "[data-complete-content]");
+    const scoreElement = asElement<HTMLElement>(root, "[data-session-score]");
+    const continueLink = asElement<HTMLAnchorElement>(root, "[data-continue-link]");
+    const savedNotes = [...root.querySelectorAll("[data-saved-note]")];
+    const isFreshRequest = new URL(window.location.href).searchParams.get("fresh") === "1";
+    let progress = readLearningProgress(window.localStorage);
+
+    const persist = () => {
+      const saved = writeLearningProgress(window.localStorage, progress);
+      savedNotes.forEach((note) => {
+        note.textContent = saved
+          ? "Progress is saved on this device."
+          : "This browser did not allow progress to be saved.";
+      });
+      window.dispatchEvent(new CustomEvent("english-library:progress"));
+    };
+
+    const syncCycle = () => {
+      root.querySelectorAll("[data-cycle-session]").forEach((step) => {
+        const stepId = (step as HTMLElement).dataset.cycleSession || "";
+        const completed = progress.sessions[stepId]?.status === "completed";
+        const current = !completed && stepId === session.id;
+        const status = step.querySelector("[data-cycle-status]");
+        step.classList.toggle("completed", completed);
+        step.classList.toggle("current", current);
+        if (status) status.textContent = completed ? "Done" : current ? "In progress" : "Upcoming";
+      });
+    };
+
+    const showCompletion = (score?: number, total?: number) => {
+      if (contentView) contentView.hidden = true;
+      if (practiceView) practiceView.hidden = true;
+      if (completeView) completeView.hidden = false;
+      if (scoreElement) {
+        const hasScore = Number.isFinite(score) && Number.isFinite(total);
+        scoreElement.hidden = !hasScore;
+        if (hasScore) scoreElement.textContent = `${score} / ${total}`;
+      }
+      if (score !== undefined && total) {
+        const percentage = Math.round((score / total) * 100);
+        setText(root, "[data-complete-title]", percentage >= 75 ? "Strong work" : "Practice saved");
+        setText(
+          root,
+          "[data-complete-copy]",
+          percentage >= 75
+            ? `You answered ${score} of ${total} correctly. Continue while the language is active.`
+            : `You answered ${score} of ${total} correctly. Review the feedback, then retry or continue.`,
+        );
+      }
+      const currentModuleIndex = data.moduleSessions.findIndex((item) => item.id === session.id);
+      const nextIncompleteInModule = data.moduleSessions
+        .slice(currentModuleIndex + 1)
+        .find((item) => progress.sessions[item.id]?.status !== "completed");
+      if (continueLink && nextIncompleteInModule) {
+        continueLink.href = `${data.dashboardHref.replace(/\/$/, "")}/${nextIncompleteInModule.id}`;
+      }
+      syncCycle();
+    };
+
+    progress = startLearningSession(progress, session.id, data.revision);
+    persist();
+    syncCycle();
+
+    if (session.kind === "content") {
+      if (progress.sessions[session.id]?.status === "completed" && !isFreshRequest) {
+        showCompletion();
+      }
+
+      completeButton?.addEventListener("click", () => {
+        progress = completeLearningSession(
+          progress,
+          session.id,
+          {
+            revision: data?.revision,
+            skillRefs: session.skillRefs,
+            nextSessionId: data?.nextSessionId,
+          },
+        );
+        persist();
+        showCompletion();
+        completeView?.focus({ preventScroll: true });
+      });
+
+      return;
+    }
+
+    if ((!session.unitId && !session.unitIds?.length) || !session.mode || !practiceView) return;
+
+    const answerContainer = asElement<HTMLElement>(root, "[data-answer-container]");
+    const promptElement = asElement<HTMLElement>(root, "[data-question-prompt]");
+    const ltPromptElement = asElement<HTMLElement>(root, "[data-question-lt]");
+    const progressFill = asElement<HTMLElement>(root, "[data-question-progress]");
+    const feedback = asElement<HTMLElement>(root, "[data-feedback]");
+    const feedbackLt = asElement<HTMLElement>(root, "[data-feedback-lt]");
+    const hintButton = asElement<HTMLButtonElement>(root, "[data-toggle-hint]");
+    const skipButton = asElement<HTMLButtonElement>(root, "[data-skip-item]");
+    const checkButton = asElement<HTMLButtonElement>(root, "[data-check-answer]");
+    const checkButtonLabel = checkButton?.querySelector("span");
+    const retryButton = asElement<HTMLButtonElement>(root, "[data-retry-pack]");
+    const newPackButton = asElement<HTMLButtonElement>(root, "[data-new-pack]");
+    const supportedMode: PracticeMode = session.mode;
+    const requestedUnitIds = session.unitIds?.length
+      ? session.unitIds
+      : [session.unitId as string];
+    const availableCount = requestedUnitIds.reduce(
+      (total, unitId) => total + getPracticeItems(unitId).length,
+      0,
+    );
+    const requestedCount = Math.min(session.count ?? availableCount, availableCount);
+    let pack: PracticePack;
+    let currentIndex = 0;
+    let selectedResponse = "";
+    let checked = false;
+    let runResponses: Record<string, string> = {};
+
+    const createPack = () => {
+      const attempt = (progress.practiceAttempts[session.id] ?? 0) + 1;
+      return generatePracticePack({
+        ...(session.unitIds?.length
+          ? { unitIds: session.unitIds }
+          : { unitId: session.unitId as string }),
+        mode: supportedMode,
+        count: requestedCount,
+        attempt,
+        recentItemIds: progress.recentItemIds,
+      });
+    };
+
+    const resetPracticeProgress = () => {
+      const previous = progress.sessions[session.id];
+      const now = new Date().toISOString();
+      progress = {
+        ...progress,
+        activeSessionId: session.id,
+        sessions: {
+          ...progress.sessions,
+          [session.id]: {
+            revision: data?.revision ?? 1,
+            status: "started",
+            responses: {},
+            attempts: previous?.attempts ?? 0,
+            startedAt: now,
+            updatedAt: now,
+          },
+        },
+      };
+    };
+
+    if (isFreshRequest) {
+      progress = nextPracticeAttempt(progress, session.id);
+      resetPracticeProgress();
+      persist();
+      window.history.replaceState({}, "", window.location.pathname);
+    }
+
+    pack = createPack();
+
+    const objectiveLabel = (item: PracticeItem) =>
+      practiceCatalog.units
+        .flatMap((unit) => unit.objectives)
+        .find((objective) => objective.id === item.objectiveId)?.label.en
+      ?? (item.type === "single-choice" ? "Choose the best answer" : "Complete the sentence");
+
+    const currentItem = () => pack.items[currentIndex];
+
+    const setChoiceState = (button: HTMLButtonElement, item: PracticeItem, resultCorrect?: boolean) => {
+      const choiceId = button.dataset.choiceId || "";
+      const isSelected = choiceId === selectedResponse;
+      const isCorrectChoice = item.type === "single-choice" && choiceId === item.answer.choiceId;
+      button.classList.toggle("selected", isSelected && !checked);
+      button.classList.toggle("correct", checked && isCorrectChoice);
+      button.classList.toggle("incorrect", checked && isSelected && resultCorrect === false);
+      button.setAttribute("aria-checked", String(isSelected));
+      button.disabled = checked;
+    };
+
+    const renderAnswers = (item: PracticeItem) => {
+      if (!answerContainer) return;
+      answerContainer.replaceChildren();
+
+      if (item.type === "single-choice") {
+        answerContainer.setAttribute("role", "radiogroup");
+        answerContainer.setAttribute("aria-label", "Answer choices");
+
+        item.choices.forEach((choice) => {
+          const button = document.createElement("button");
+          const marker = document.createElement("span");
+          const label = document.createElement("span");
+          button.type = "button";
+          button.className = "answer-choice";
+          button.dataset.choiceId = choice.id;
+          button.setAttribute("role", "radio");
+          button.setAttribute("aria-checked", "false");
+          marker.className = "answer-choice-marker";
+          marker.setAttribute("aria-hidden", "true");
+          label.textContent = choice.text;
+          button.append(marker, label);
+          button.addEventListener("click", () => {
+            if (checked) return;
+            selectedResponse = choice.id;
+            answerContainer.querySelectorAll<HTMLButtonElement>("[data-choice-id]").forEach((candidate) => {
+              setChoiceState(candidate, item);
+            });
+            if (checkButton) checkButton.disabled = false;
+          });
+          answerContainer.appendChild(button);
+        });
+        return;
+      }
+
+      answerContainer.removeAttribute("role");
+      answerContainer.removeAttribute("aria-label");
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      label.className = "question-objective";
+      label.textContent = "Your answer";
+      input.className = "fill-answer";
+      input.type = "text";
+      input.autocomplete = "off";
+      input.spellcheck = false;
+      input.setAttribute("aria-label", "Your answer");
+      input.addEventListener("input", () => {
+        if (checked) return;
+        selectedResponse = input.value;
+        if (checkButton) checkButton.disabled = !selectedResponse.trim();
+      });
+      label.appendChild(input);
+      answerContainer.appendChild(label);
+      window.requestAnimationFrame(() => input.focus());
+    };
+
+    const renderItem = () => {
+      const item = currentItem();
+      if (!item) return;
+      selectedResponse = "";
+      checked = false;
+      setText(root, "[data-question-count]", `Question ${currentIndex + 1} of ${pack.items.length}`);
+      setText(root, "[data-question-objective]", objectiveLabel(item));
+      setText(root, "[data-question-prompt]", item.prompt.en);
+      if (ltPromptElement) {
+        ltPromptElement.textContent = item.prompt.lt;
+        ltPromptElement.hidden = true;
+      }
+      if (hintButton) {
+        hintButton.setAttribute("aria-expanded", "false");
+        hintButton.textContent = "LT  Show hint";
+      }
+      if (feedback) {
+        feedback.hidden = true;
+        feedback.classList.remove("correct");
+      }
+      if (feedbackLt) feedbackLt.textContent = "";
+      if (progressFill) progressFill.style.width = `${((currentIndex + 1) / pack.items.length) * 100}%`;
+      if (checkButton) checkButton.disabled = true;
+      if (checkButtonLabel) checkButtonLabel.textContent = "Check answer";
+      if (skipButton) skipButton.hidden = false;
+      renderAnswers(item);
+      promptElement?.focus({ preventScroll: true });
+    };
+
+    const scoreRun = () => {
+      let score = 0;
+      pack.items.forEach((item) => {
+        const response = runResponses[item.id];
+        if (response && response !== SKIPPED_RESPONSE && scorePracticeItem(item, response).correct) {
+          score += 1;
+        }
+      });
+      return score;
+    };
+
+    const finishPack = () => {
+      const score = scoreRun();
+      progress = completeLearningSession(
+        progress,
+        session.id,
+        {
+          revision: data?.revision,
+          score,
+          total: pack.items.length,
+          skillRefs: [...new Set(pack.items.map((item) => item.objectiveId))],
+          itemIds: pack.items.map((item) => item.id),
+          nextSessionId: data?.nextSessionId,
+        },
+      );
+      persist();
+      showCompletion(score, pack.items.length);
+      completeView?.focus({ preventScroll: true });
+    };
+
+    const continuePractice = () => {
+      if (currentIndex >= pack.items.length - 1) {
+        finishPack();
+        return;
+      }
+      currentIndex += 1;
+      renderItem();
+    };
+
+    const saveResponse = (item: PracticeItem, response: string) => {
+      runResponses[item.id] = response;
+      progress = saveLearningResponse(progress, session.id, item.id, response);
+      persist();
+    };
+
+    checkButton?.addEventListener("click", () => {
+      if (checked) {
+        continuePractice();
+        return;
+      }
+
+      const item = currentItem();
+      if (!item || !selectedResponse.trim()) return;
+      const result = scorePracticeItem(item, selectedResponse);
+      checked = true;
+      saveResponse(item, selectedResponse);
+      if (feedback) {
+        feedback.hidden = false;
+        feedback.classList.toggle("correct", result.correct);
+      }
+      setText(root, "[data-feedback-title]", result.correct ? "Correct" : `Not yet · Answer: ${result.expected.join(" / ")}`);
+      setText(root, "[data-feedback-copy]", result.rationale.en);
+      if (feedbackLt) feedbackLt.textContent = result.rationale.lt;
+      if (item.type === "single-choice" && answerContainer) {
+        answerContainer.querySelectorAll<HTMLButtonElement>("[data-choice-id]").forEach((button) => {
+          setChoiceState(button, item, result.correct);
+        });
+      } else {
+        const input = answerContainer?.querySelector("input");
+        if (input) {
+          input.readOnly = true;
+          input.setAttribute("aria-invalid", String(!result.correct));
+        }
+      }
+      if (checkButtonLabel) {
+        checkButtonLabel.textContent = currentIndex === pack.items.length - 1 ? "See results" : "Continue";
+      }
+      if (skipButton) skipButton.hidden = true;
+    });
+
+    skipButton?.addEventListener("click", () => {
+      const item = currentItem();
+      if (!item) return;
+      saveResponse(item, SKIPPED_RESPONSE);
+      continuePractice();
+    });
+
+    hintButton?.addEventListener("click", () => {
+      if (!ltPromptElement) return;
+      const willShow = ltPromptElement.hidden;
+      ltPromptElement.hidden = !willShow;
+      hintButton.setAttribute("aria-expanded", String(willShow));
+      hintButton.textContent = willShow ? "LT  Hide hint" : "LT  Show hint";
+    });
+
+    retryButton?.addEventListener("click", () => {
+      resetPracticeProgress();
+      persist();
+      runResponses = {};
+      currentIndex = 0;
+      if (completeView) completeView.hidden = true;
+      practiceView.hidden = false;
+      renderItem();
+    });
+
+    newPackButton?.addEventListener("click", () => {
+      progress = nextPracticeAttempt(progress, session.id);
+      resetPracticeProgress();
+      persist();
+      pack = createPack();
+      runResponses = {};
+      currentIndex = 0;
+      if (completeView) completeView.hidden = true;
+      practiceView.hidden = false;
+      renderItem();
+    });
+
+    if (progress.sessions[session.id]?.status === "completed" && !isFreshRequest) {
+      showCompletion(
+        progress.sessions[session.id].score,
+        progress.sessions[session.id].total,
+      );
+    } else {
+      const savedResponses = progress.sessions[session.id]?.responses ?? {};
+      runResponses = Object.fromEntries(
+        pack.items
+          .filter((item) => typeof savedResponses[item.id] === "string")
+          .map((item) => [item.id, savedResponses[item.id]]),
+      );
+      const firstUnansweredIndex = pack.items.findIndex((item) => !(item.id in runResponses));
+      currentIndex = firstUnansweredIndex >= 0 ? firstUnansweredIndex : 0;
+      renderItem();
+    }
+  });
+</script>
+
+<style>
+  [data-question-lt] {
+    margin: -0.85rem 0 1.35rem;
+    color: var(--muted);
+    font: 500 0.95rem/1.55 "Avenir Next", "Segoe UI", sans-serif;
+  }
+
+  [data-answer-container] .question-objective {
+    display: grid;
+    gap: 0.55rem;
+  }
+
+  .runner-actions > .learning-outline-button {
+    width: auto;
+  }
+</style>

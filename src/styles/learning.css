@@ -1,0 +1,971 @@
+.learning-shell {
+  --learning-surface: rgba(255, 253, 249, 0.82);
+  --learning-line: rgba(62, 48, 34, 0.19);
+  --learning-navy: #12213a;
+  --learning-rust: #bd3e1e;
+  --learning-success: #1b6042;
+  max-width: 92rem;
+  margin: 0 auto;
+  padding: 2.2rem 0 1rem;
+  color: var(--learning-navy);
+}
+
+body:has(.learning-shell) {
+  background: #f7f3ec;
+}
+
+body:has(.learning-shell) .site-header {
+  background: rgba(251, 249, 245, 0.94);
+}
+
+body:has(.learning-shell) .site-nav a {
+  border-radius: 0;
+  border-bottom-color: transparent;
+  background: transparent;
+}
+
+body:has(.learning-shell) .site-nav a.active {
+  border-color: transparent;
+  border-bottom-color: var(--accent);
+  background: transparent;
+  color: var(--ink);
+}
+
+.learning-shell :is(button, input) {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-page-heading {
+  margin: 0 0 1.35rem;
+}
+
+.learning-page-heading h1 {
+  max-width: 13ch;
+  margin: 0;
+  font-size: clamp(3rem, 5.4vw, 5.25rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.learning-page-heading p {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font: 500 1.08rem/1.5 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(19rem, 0.92fr);
+  grid-template-areas:
+    "next today"
+    "map review"
+    "map more";
+  gap: 1rem;
+  align-items: start;
+}
+
+.learning-panel {
+  min-width: 0;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.75rem;
+  background: var(--learning-surface);
+}
+
+.next-session-panel {
+  grid-area: next;
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.9fr) minmax(24rem, 1.1fr);
+  gap: 1.8rem;
+  padding: 1.5rem;
+}
+
+.next-session-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.learning-label {
+  margin: 0 0 0.85rem;
+  color: var(--learning-rust);
+  font: 700 0.92rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-module-name {
+  margin: 0;
+  color: var(--learning-navy);
+  font: 650 0.96rem/1.35 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.next-session-copy h2,
+.learning-side-panel h2,
+.course-map-panel h2,
+.runner-question-card h2,
+.content-session-card h2 {
+  margin: 0;
+  color: var(--learning-navy);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.next-session-copy h2 {
+  margin-top: 0.35rem;
+  font-size: clamp(2rem, 3.1vw, 3.25rem);
+}
+
+.learning-duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font: 600 0.9rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-duration svg,
+.learning-row-icon svg,
+.review-icon svg,
+.more-practice-icon svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.next-session-description {
+  margin: 0.95rem 0 1.15rem;
+  color: var(--muted);
+  font: 500 0.97rem/1.55 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-primary-button,
+.learning-outline-button,
+.answer-action,
+.answer-choice,
+.learning-text-action {
+  border: 0;
+  cursor: pointer;
+}
+
+.learning-primary-button,
+.learning-outline-button,
+.answer-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 0.4rem;
+  font: 700 0.98rem/1.1 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-primary-button,
+.answer-action.primary {
+  background: var(--learning-rust);
+  color: #fffdf9;
+}
+
+.learning-primary-button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.learning-primary-button svg,
+.learning-outline-button svg,
+.answer-action svg,
+.learning-row svg.chevron {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-left: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.learning-primary-button:hover,
+.answer-action.primary:hover {
+  background: #a93418;
+}
+
+.learning-cycle-wrap {
+  min-width: 0;
+  padding: 0.7rem 0 0 1.8rem;
+  border-left: 1px solid var(--learning-line);
+}
+
+.learning-cycle {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(4.2rem, 1fr));
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.learning-cycle::before {
+  content: "";
+  position: absolute;
+  top: 1.08rem;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: var(--learning-line);
+}
+
+.learning-cycle-step {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 0.28rem;
+  min-width: 0;
+  color: var(--muted);
+  text-align: center;
+  font: 500 0.78rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-cycle-marker {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 50%;
+  background: #fffdfa;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.learning-cycle-step strong {
+  color: var(--learning-navy);
+  font-weight: 650;
+}
+
+.learning-cycle-step em {
+  min-height: 1rem;
+  font-style: italic;
+}
+
+.learning-cycle-step.completed .learning-cycle-marker {
+  border-color: var(--learning-navy);
+  background: var(--learning-navy);
+  color: #fff;
+  font-size: 0;
+}
+
+.learning-cycle-step.completed .learning-cycle-marker::after {
+  content: "";
+  width: 0.72rem;
+  height: 0.38rem;
+  border-bottom: 2px solid currentColor;
+  border-left: 2px solid currentColor;
+  transform: translateY(-0.08rem) rotate(-45deg);
+}
+
+.learning-cycle-step.current .learning-cycle-marker {
+  border: 2px solid var(--learning-rust);
+  box-shadow: inset 0 0 0 0.45rem #fffdfa;
+  background: var(--learning-rust);
+  color: transparent;
+}
+
+.learning-cycle-step.current em {
+  color: var(--learning-rust);
+}
+
+.learning-step-focus {
+  margin-top: 1.7rem;
+  color: var(--muted);
+  font: 500 0.9rem/1.5 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-step-focus strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--learning-navy);
+}
+
+.today-loop-panel {
+  grid-area: today;
+}
+
+.review-queue-panel {
+  grid-area: review;
+}
+
+.more-practice-panel {
+  grid-area: more;
+}
+
+.learning-side-panel,
+.course-map-panel {
+  padding: 1.15rem;
+}
+
+.learning-side-panel h2,
+.course-map-panel h2 {
+  margin-bottom: 0.9rem;
+  font-size: 1.7rem;
+}
+
+.learning-list {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.55rem;
+  list-style: none;
+  overflow: hidden;
+}
+
+.learning-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.8rem;
+  align-items: center;
+  min-height: 4.4rem;
+  padding: 0.8rem 0.9rem;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-row + .learning-row {
+  border-top: 1px solid var(--learning-line);
+}
+
+.learning-row-icon {
+  color: var(--learning-navy);
+}
+
+.learning-row-copy {
+  min-width: 0;
+}
+
+.learning-row-copy strong,
+.learning-row-copy span {
+  display: block;
+}
+
+.learning-row-copy strong {
+  font-size: 0.9rem;
+}
+
+.learning-row-copy span,
+.learning-row-time {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.course-map-panel {
+  grid-area: map;
+}
+
+.course-map {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-map::before {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  bottom: 1.2rem;
+  left: 1.05rem;
+  width: 2px;
+  background: var(--learning-line);
+}
+
+.course-module-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr);
+  gap: 0.65rem;
+  min-height: 2.25rem;
+}
+
+.course-module-number {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  align-self: start;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 50%;
+  background: #fffdfa;
+  color: var(--learning-navy);
+  font: 650 0.76rem/1 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.course-module-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 0.75rem;
+  align-items: center;
+  min-width: 0;
+  padding: 0.45rem 0.7rem;
+  border-bottom: 1px solid var(--learning-line);
+  color: var(--learning-navy);
+  font: 600 0.82rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.course-module-row.current .course-module-main {
+  min-height: 3.7rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.35rem;
+  background: rgba(249, 245, 238, 0.84);
+}
+
+.course-module-row.current .course-module-number,
+.course-module-row.completed .course-module-number {
+  border-color: var(--learning-navy);
+  background: var(--learning-navy);
+  color: #fff;
+}
+
+.course-module-title span {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.course-module-progress {
+  display: grid;
+  grid-template-columns: auto 6rem;
+  gap: 0.55rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.course-module-progress-track,
+.question-progress-track {
+  height: 0.28rem;
+  border-radius: 999px;
+  background: rgba(27, 33, 48, 0.12);
+  overflow: hidden;
+}
+
+.course-module-progress-fill,
+.question-progress-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--learning-rust);
+  transition: width 200ms ease;
+}
+
+.course-module-state {
+  display: grid;
+  place-items: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  color: var(--muted);
+}
+
+.course-module-state svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.review-summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review-icon,
+.more-practice-icon {
+  display: grid;
+  place-items: center;
+  width: 3.15rem;
+  height: 3.15rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 50%;
+  color: var(--learning-rust);
+}
+
+.review-summary strong,
+.review-summary span {
+  display: block;
+}
+
+.review-summary strong {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.review-summary span {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font: 500 0.76rem/1.4 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.learning-outline-button {
+  width: 100%;
+  border: 1px solid var(--learning-rust);
+  background: transparent;
+  color: var(--learning-rust);
+}
+
+.learning-outline-button:hover {
+  background: rgba(189, 62, 30, 0.06);
+}
+
+.more-practice-link {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.85rem;
+  align-items: center;
+  min-height: 5.1rem;
+  padding: 0.85rem;
+  border: 1px dashed rgba(62, 48, 34, 0.3);
+  border-radius: 0.35rem;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.more-practice-icon {
+  color: var(--learning-navy);
+}
+
+.more-practice-link strong,
+.more-practice-link span {
+  display: block;
+}
+
+.more-practice-link strong {
+  font-size: 0.9rem;
+}
+
+.more-practice-link span {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+.more-practice-link > svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.learning-footer-note {
+  margin: 1.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Session runner */
+.session-runner-shell {
+  padding-top: 1.6rem;
+}
+
+.session-runner-header {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.8fr) minmax(28rem, 1.2fr) auto;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.session-runner-header h1 {
+  margin: 0.3rem 0 0;
+  font-size: clamp(2rem, 3.4vw, 3.3rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.runner-exit-link {
+  color: var(--learning-rust);
+  font: 650 0.92rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.runner-cycle .learning-cycle-step {
+  font-size: 0.73rem;
+}
+
+.runner-question-card,
+.content-session-card,
+.session-complete-card {
+  min-height: 34rem;
+  padding: clamp(1.5rem, 4vw, 3.2rem);
+  border: 1px solid var(--learning-line);
+  border-radius: 0.75rem;
+  background: var(--learning-surface);
+}
+
+.question-progress {
+  max-width: 21rem;
+  margin-bottom: 2.2rem;
+  color: var(--muted);
+  font: 550 0.9rem/1.4 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.question-progress-track {
+  margin-top: 0.85rem;
+}
+
+.question-objective {
+  margin: 0 0 1.4rem;
+  color: var(--learning-navy);
+  font: 600 1rem/1.4 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.runner-question-card h2 {
+  max-width: 26ch;
+  margin-bottom: 1.8rem;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+}
+
+.answer-choice-list {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.answer-choice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--learning-navy);
+  text-align: left;
+  font-size: 1rem;
+}
+
+.answer-choice-marker {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.answer-choice.selected {
+  border-color: var(--learning-rust);
+  color: var(--learning-rust);
+}
+
+.answer-choice.selected .answer-choice-marker::after {
+  content: "";
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.answer-choice.correct {
+  border-color: var(--learning-success);
+  background: rgba(27, 96, 66, 0.08);
+  color: var(--learning-success);
+}
+
+.answer-choice.incorrect {
+  border-color: #a93418;
+  background: rgba(169, 52, 24, 0.07);
+}
+
+.fill-answer {
+  width: 100%;
+  min-height: 3.8rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--learning-navy);
+  font-size: 1.05rem;
+}
+
+.runner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.3rem;
+}
+
+.learning-text-action {
+  padding: 0.65rem 0;
+  background: transparent;
+  color: var(--learning-navy);
+  font: 600 0.88rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.runner-actions .answer-action.primary {
+  min-width: 12rem;
+  margin-left: auto;
+}
+
+.answer-action:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.feedback-panel {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border-left: 3px solid var(--learning-rust);
+  background: rgba(189, 62, 30, 0.06);
+  color: var(--muted);
+  font: 500 0.92rem/1.55 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.feedback-panel.correct {
+  border-left-color: var(--learning-success);
+  background: rgba(27, 96, 66, 0.07);
+}
+
+.feedback-panel strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--learning-navy);
+}
+
+.feedback-panel p {
+  margin: 0.3rem 0 0;
+}
+
+.content-session-card {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  max-width: 58rem;
+  margin: 0 auto;
+}
+
+.content-session-card h2,
+.session-complete-card h2 {
+  max-width: 18ch;
+  font-size: clamp(2.4rem, 5vw, 4.6rem);
+}
+
+.content-session-card > p,
+.session-complete-card > p {
+  max-width: 48rem;
+  color: var(--muted);
+  font: 500 1rem/1.65 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.content-session-actions,
+.complete-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.content-session-actions .learning-primary-button,
+.content-session-actions .learning-outline-button,
+.complete-actions .learning-primary-button {
+  width: auto;
+  min-width: 12rem;
+}
+
+.runner-actions .learning-outline-button {
+  width: auto;
+  min-width: 7.5rem;
+}
+
+.session-complete-card {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.session-score {
+  display: grid;
+  place-items: center;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 1rem;
+  border: 2px solid var(--learning-rust);
+  border-radius: 50%;
+  color: var(--learning-rust);
+  font: 700 1.4rem/1 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.runner-saved-note {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  text-align: center;
+  font: 500 0.76rem/1.4 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 1000px) {
+  .learning-dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "next"
+      "today"
+      "map"
+      "review"
+      "more";
+  }
+
+  .session-runner-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .session-runner-header .runner-cycle {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .learning-shell {
+    padding-top: 1.4rem;
+  }
+
+  .learning-page-heading h1 {
+    font-size: clamp(2.7rem, 13vw, 4.1rem);
+  }
+
+  .next-session-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .next-session-copy h2 {
+    font-size: 2.15rem;
+  }
+
+  .learning-cycle-wrap {
+    padding: 1.1rem 0 0;
+    border-top: 1px solid var(--learning-line);
+    border-left: 0;
+  }
+
+  .learning-cycle {
+    gap: 0.15rem;
+  }
+
+  .learning-cycle-step {
+    font-size: 0.66rem;
+  }
+
+  .learning-cycle-marker {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .learning-cycle::before {
+    top: 0.98rem;
+  }
+
+  .learning-step-focus {
+    display: none;
+  }
+
+  .learning-side-panel,
+  .course-map-panel {
+    padding: 1rem;
+  }
+
+  .course-module-main {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .course-module-progress {
+    grid-column: 1 / -1;
+    grid-template-columns: auto minmax(4rem, 1fr);
+  }
+
+  .session-runner-header {
+    gap: 1rem;
+  }
+
+  .runner-cycle {
+    overflow-x: auto;
+    padding-bottom: 0.4rem;
+  }
+
+  .runner-cycle .learning-cycle {
+    min-width: 24rem;
+  }
+
+  .runner-question-card,
+  .content-session-card,
+  .session-complete-card {
+    min-height: 31rem;
+    padding: 1.2rem;
+  }
+
+  .runner-question-card h2 {
+    font-size: 2.25rem;
+  }
+
+  .runner-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .runner-actions .answer-action.primary {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .content-session-actions,
+  .complete-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .content-session-actions .learning-primary-button,
+  .content-session-actions .learning-outline-button,
+  .complete-actions .learning-primary-button,
+  .complete-actions .learning-outline-button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .course-module-progress-fill,
+  .question-progress-fill {
+    transition: none;
+  }
+}

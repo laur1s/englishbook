@@ -119,6 +119,9 @@ Stative verbs describe states, not actions. They are NOT usually used in continu
 - have: I have a car. (possession) vs I am having dinner. (action)
 - think: I think you're right. (opinion) vs I am thinking about it. (process)
 - see: I see the problem. (understand) vs I am seeing the doctor. (meeting)
+- taste: The soup tastes good. (state) vs She is tasting the soup. (action)
+- feel: I feel tired. (state) vs I am feeling better today. (changing condition)
+- smell: The flowers smell lovely. (state) vs He is smelling the flowers. (action)
 
 ---
 

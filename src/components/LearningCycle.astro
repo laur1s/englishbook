@@ -1,0 +1,50 @@
+---
+type Stage = "context" | "learn" | "practice" | "speak" | "review";
+
+type CycleSession = {
+  id: string;
+  stage: Stage;
+};
+
+type Props = {
+  sessions: CycleSession[];
+  activeSessionId?: string;
+  completedSessionIds?: string[];
+  className?: string;
+};
+
+const {
+  sessions,
+  activeSessionId = sessions[0]?.id,
+  completedSessionIds = [],
+  className = "",
+} = Astro.props;
+const labels: Record<Stage, string> = {
+  context: "Context",
+  learn: "Learn",
+  practice: "Practice",
+  speak: "Speak",
+  review: "Review",
+};
+---
+
+<ol class:list={["learning-cycle", className]} data-learning-cycle>
+  {sessions.map((session, index) => {
+    const isCompleted = completedSessionIds.includes(session.id);
+    const isCurrent = !isCompleted && session.id === activeSessionId;
+    return (
+      <li
+        class:list={[
+          "learning-cycle-step",
+          isCompleted && "completed",
+          isCurrent && "current",
+        ]}
+        data-cycle-session={session.id}
+      >
+        <span class="learning-cycle-marker" aria-hidden="true">{index + 1}</span>
+        <strong>{labels[session.stage]}</strong>
+        <em data-cycle-status>{isCompleted ? "Done" : isCurrent ? "In progress" : "Upcoming"}</em>
+      </li>
+    );
+  })}
+</ol>

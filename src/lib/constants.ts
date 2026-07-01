@@ -1,10 +1,9 @@
 export const NAV_LINKS = [
-  { href: "/", label: "Home", ltLabel: "Pradžia" },
+  { href: "/learn", label: "Learn", ltLabel: "Mokytis" },
   { href: "/grey-book", label: "Grey's Book", ltLabel: "Grey knyga" },
   { href: "/a2", label: "A2 Course", ltLabel: "A2 kursas" },
-  { href: "/speaking", label: "Speaking Lab", ltLabel: "Kalbėjimo praktika" },
+  { href: "/speaking", label: "Speaking", ltLabel: "Kalbėjimas" },
   { href: "/resources", label: "Resources", ltLabel: "Ištekliai" },
-  { href: "/answers/a2", label: "Answer Keys", ltLabel: "Atsakymų raktai" },
 ] as const;
 
 export const REVEAL_SECTION_PATTERN =

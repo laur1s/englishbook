@@ -1,0 +1,198 @@
+{
+  "id": "a2-core",
+  "title": "A2 English learning path",
+  "level": "A2",
+  "version": 1,
+  "modules": [
+    {
+      "id": "module-01",
+      "order": 1,
+      "title": "Foundations",
+      "unitSlug": "unit-01",
+      "missionSlug": "introduce-yourself-fast",
+      "storySlug": "chapter-01",
+      "summary": "Meet people, exchange basic personal information, and build accurate sentences with the verb be.",
+      "sessions": [
+        { "id": "module-01-context", "title": "First day: meet the team", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-01", "required": true, "skillRefs": ["reading.gist", "vocabulary.hospital", "exposure.present-actions"] },
+        { "id": "module-01-learn", "title": "Learn greetings and introductions", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-01", "required": true, "skillRefs": ["greetings.basic", "be.statements", "be.questions"] },
+        { "id": "module-01-practice", "title": "Build a clear introduction", "kind": "practice", "stage": "practice", "minutes": 12, "unitId": "unit-01", "mode": "guided", "count": 8, "required": true, "skillRefs": ["be.statements", "be.questions", "personal-information"] },
+        { "id": "module-01-speak", "title": "Introduce yourself fast", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/introduce-yourself-fast", "required": true, "skillRefs": ["speaking.introduction", "personal-information"] },
+        { "id": "module-01-review", "title": "Review the foundations", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-01", "mode": "review", "count": 6, "required": true, "skillRefs": ["greetings.basic", "be.statements", "be.questions"] }
+      ]
+    },
+    {
+      "id": "module-02",
+      "order": 2,
+      "title": "Daily life",
+      "unitSlug": "unit-02",
+      "missionSlug": "my-ordinary-day",
+      "storySlug": "chapter-02",
+      "summary": "Describe routines, tell the time, and use frequency expressions to make everyday English more precise.",
+      "sessions": [
+        { "id": "module-02-context", "title": "Emergency night: read for events", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-02", "required": true, "skillRefs": ["reading.sequence", "vocabulary.emergencies", "exposure.past-simple"] },
+        { "id": "module-02-learn", "title": "Learn to describe daily life", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-02", "required": true, "skillRefs": ["present-simple.routines", "present-simple.questions", "frequency.adverbs"] },
+        { "id": "module-02-practice", "title": "Build an everyday routine", "kind": "practice", "stage": "practice", "minutes": 12, "unitId": "unit-02", "mode": "guided", "count": 8, "required": true, "skillRefs": ["present-simple.routines", "present-simple.third-person", "frequency.adverbs"] },
+        { "id": "module-02-speak", "title": "Describe your ordinary day", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/my-ordinary-day", "required": true, "skillRefs": ["speaking.routines", "time-expressions.present"] },
+        { "id": "module-02-review", "title": "Review daily life", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-02", "mode": "review", "count": 6, "required": true, "skillRefs": ["present-simple.routines", "present-simple.questions", "frequency.adverbs"] }
+      ]
+    },
+    {
+      "id": "module-03",
+      "order": 3,
+      "title": "Past stories",
+      "unitSlug": "unit-03",
+      "missionSlug": "tell-a-weekend-story",
+      "storySlug": "chapter-03",
+      "summary": "Talk about finished events, ask about the past, and organise a short personal story.",
+      "sessions": [
+        { "id": "module-03-context", "title": "A secret: follow the story", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-03", "required": true, "skillRefs": ["reading.inference", "vocabulary.relationships", "exposure.modals"] },
+        { "id": "module-03-learn", "title": "Learn to talk about the past", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-03", "required": true, "skillRefs": ["past-simple.regular", "past-simple.irregular", "past-simple.questions"] },
+        { "id": "module-03-practice", "title": "Put a past story together", "kind": "practice", "stage": "practice", "minutes": 12, "unitId": "unit-03", "mode": "guided", "count": 8, "required": true, "skillRefs": ["past-simple.forms", "past-simple.negatives", "story.sequence"] },
+        { "id": "module-03-speak", "title": "Tell a weekend story", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/tell-a-weekend-story", "required": true, "skillRefs": ["speaking.past-story", "story.sequence"] },
+        { "id": "module-03-review", "title": "Checkpoint: foundations to past stories", "kind": "practice", "stage": "review", "minutes": 15, "unitIds": ["unit-01", "unit-02", "unit-03"], "mode": "checkpoint", "count": 10, "required": true, "skillRefs": ["be.questions", "present-simple.routines", "past-simple.forms"] }
+      ]
+    },
+    {
+      "id": "module-04",
+      "order": 4,
+      "title": "Food & shopping",
+      "unitSlug": "unit-04",
+      "missionSlug": "restaurant-rescue",
+      "storySlug": "chapter-04",
+      "summary": "Handle quantities, ask for what you need, and communicate politely in shops and restaurants.",
+      "sessions": [
+        { "id": "module-04-context", "title": "A miracle: notice urgent updates", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-04", "required": true, "skillRefs": ["reading.key-details", "vocabulary.health", "exposure.present-perfect"] },
+        { "id": "module-04-learn", "title": "Learn food and shopping language", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-04", "required": true, "skillRefs": ["nouns.countability", "quantifiers.some-any", "requests.polite"] },
+        { "id": "module-04-practice", "title": "Choose quantities and requests", "kind": "practice", "stage": "practice", "minutes": 12, "unitId": "unit-04", "mode": "guided", "count": 8, "required": true, "skillRefs": ["nouns.countability", "quantifiers.much-many", "quantifiers.few-little"] },
+        { "id": "module-04-speak", "title": "Solve a restaurant problem", "kind": "content", "stage": "speak", "minutes": 6, "href": "/speaking/restaurant-rescue", "required": true, "skillRefs": ["speaking.ordering", "requests.polite"] },
+        { "id": "module-04-review", "title": "Review food and shopping", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-04", "mode": "review", "count": 6, "required": true, "skillRefs": ["nouns.countability", "quantifiers.some-any", "requests.polite"] }
+      ]
+    },
+    {
+      "id": "module-05",
+      "order": 5,
+      "title": "Travel",
+      "unitSlug": "unit-05",
+      "missionSlug": "lost-but-clear",
+      "storySlug": "chapter-05",
+      "summary": "Find places, understand directions, and describe where people and things are.",
+      "sessions": [
+        { "id": "module-05-context", "title": "A difficult shift: follow two timelines", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-05", "required": true, "skillRefs": ["reading.timeline", "vocabulary.feelings", "exposure.past-continuous"] },
+        { "id": "module-05-learn", "title": "Learn travel and directions", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-05", "required": true, "skillRefs": ["there-is-are", "place.prepositions", "directions.imperatives"] },
+        { "id": "module-05-practice", "title": "Navigate a city", "kind": "practice", "stage": "practice", "minutes": 12, "unitId": "unit-05", "mode": "guided", "count": 8, "required": true, "skillRefs": ["there-is-are", "place.prepositions", "directions.sequence"] },
+        { "id": "module-05-speak", "title": "Ask for and give directions", "kind": "content", "stage": "speak", "minutes": 6, "href": "/speaking/lost-but-clear", "required": true, "skillRefs": ["speaking.directions", "communication.checking"] },
+        { "id": "module-05-review", "title": "Review travel", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-05", "mode": "review", "count": 6, "required": true, "skillRefs": ["there-is-are", "place.prepositions", "directions.imperatives"] }
+      ]
+    },
+    {
+      "id": "module-06",
+      "order": 6,
+      "title": "Future plans",
+      "unitSlug": "unit-06",
+      "missionSlug": "weekend-plan-sprint",
+      "storySlug": "chapter-06",
+      "summary": "Explain intentions, make predictions, and respond naturally when plans change.",
+      "sessions": [
+        { "id": "module-06-context", "title": "New beginnings: connect past and present", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-06", "required": true, "skillRefs": ["reading.change", "vocabulary.life-events", "exposure.present-perfect"] },
+        { "id": "module-06-learn", "title": "Learn to discuss future plans", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-06", "required": true, "skillRefs": ["future.going-to", "future.will", "future.time-expressions"] },
+        { "id": "module-06-practice", "title": "Choose the right future form", "kind": "practice", "stage": "practice", "minutes": 12, "unitId": "unit-06", "mode": "guided", "count": 8, "required": true, "skillRefs": ["future.intentions", "future.predictions", "future.decisions"] },
+        { "id": "module-06-speak", "title": "Plan a weekend", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/weekend-plan-sprint", "required": true, "skillRefs": ["speaking.future-plans", "future.time-expressions"] },
+        { "id": "module-06-review", "title": "Checkpoint: A2.1", "kind": "practice", "stage": "review", "minutes": 15, "unitIds": ["unit-01", "unit-02", "unit-03", "unit-04", "unit-05", "unit-06"], "mode": "checkpoint", "count": 10, "required": true, "skillRefs": ["past-simple.forms", "quantifiers.some-any", "directions.imperatives", "future.forms"] }
+      ]
+    },
+    {
+      "id": "module-07",
+      "order": 7,
+      "title": "Life experience",
+      "unitSlug": "unit-07",
+      "missionSlug": "life-experience-sprint",
+      "storySlug": "chapter-07",
+      "summary": "Share experiences, connect them to finished past details, and ask meaningful follow-up questions.",
+      "sessions": [
+        { "id": "module-07-context", "title": "The storm: read for ability and action", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-07", "required": true, "skillRefs": ["reading.cause-effect", "vocabulary.crisis", "exposure.can-cannot"] },
+        { "id": "module-07-learn", "title": "Learn to share life experience", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-07", "required": true, "skillRefs": ["present-perfect.experience", "present-perfect.time-words", "present-perfect.vs-past"] },
+        { "id": "module-07-practice", "title": "Connect experience and past detail", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-07", "mode": "standard", "count": 10, "required": true, "skillRefs": ["present-perfect.forms", "present-perfect.vs-past", "participles.irregular"] },
+        { "id": "module-07-speak", "title": "Share your life experience", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/life-experience-sprint", "required": true, "skillRefs": ["speaking.experience", "present-perfect.vs-past"] },
+        { "id": "module-07-review", "title": "Review life experience", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-07", "mode": "review", "count": 6, "required": true, "skillRefs": ["present-perfect.experience", "present-perfect.time-words", "present-perfect.vs-past"] }
+      ]
+    },
+    {
+      "id": "module-08",
+      "order": 8,
+      "title": "Comparisons",
+      "unitSlug": "unit-08",
+      "missionSlug": "comparison-clinic",
+      "storySlug": "chapter-08",
+      "summary": "Compare people, places, and choices with accurate comparative and superlative forms.",
+      "sessions": [
+        { "id": "module-08-context", "title": "Dreams and reality: compare choices", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-08", "required": true, "skillRefs": ["reading.viewpoints", "vocabulary.careers", "exposure.comparisons"] },
+        { "id": "module-08-learn", "title": "Learn to make comparisons", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-08", "required": true, "skillRefs": ["comparison.comparative", "comparison.superlative", "comparison.as-as"] },
+        { "id": "module-08-practice", "title": "Compare real choices", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-08", "mode": "standard", "count": 10, "required": true, "skillRefs": ["comparison.spelling", "comparison.irregular", "comparison.structures"] },
+        { "id": "module-08-speak", "title": "Run the comparison clinic", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/comparison-clinic", "required": true, "skillRefs": ["speaking.comparison", "error-correction.comparison"] },
+        { "id": "module-08-review", "title": "Review comparisons", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-08", "mode": "review", "count": 6, "required": true, "skillRefs": ["comparison.comparative", "comparison.superlative", "comparison.as-as"] }
+      ]
+    },
+    {
+      "id": "module-09",
+      "order": 9,
+      "title": "Advice & possibility",
+      "unitSlug": "unit-09",
+      "missionSlug": "advice-or-maybe",
+      "storySlug": "chapter-09",
+      "summary": "Give advice, describe possibilities, and make evidence-based deductions without confusing their meanings.",
+      "sessions": [
+        { "id": "module-09-context", "title": "A father's heart: weigh the evidence", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-09", "required": true, "skillRefs": ["reading.evidence", "vocabulary.ethics", "exposure.past-continuous"] },
+        { "id": "module-09-learn", "title": "Learn advice and possibility", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-09", "required": true, "skillRefs": ["modal.advice", "modal.possibility", "modal.deduction"] },
+        { "id": "module-09-practice", "title": "Choose a modal by meaning", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-09", "mode": "standard", "count": 10, "required": true, "skillRefs": ["modal.form", "modal.meaning", "modal.negative-meaning"] },
+        { "id": "module-09-speak", "title": "Decide: advice or maybe", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/advice-or-maybe", "required": true, "skillRefs": ["speaking.advice", "speaking.deduction"] },
+        { "id": "module-09-review", "title": "Checkpoint: experience to possibility", "kind": "practice", "stage": "review", "minutes": 15, "unitIds": ["unit-07", "unit-08", "unit-09"], "mode": "checkpoint", "count": 10, "required": true, "skillRefs": ["present-perfect.vs-past", "comparison.structures", "modal.meaning"] }
+      ]
+    },
+    {
+      "id": "module-10",
+      "order": 10,
+      "title": "Present tenses",
+      "unitSlug": "unit-10",
+      "missionSlug": "habit-now-experience",
+      "storySlug": "chapter-10",
+      "summary": "Choose between habits, actions happening now, and experience connected to the present.",
+      "sessions": [
+        { "id": "module-10-context", "title": "A different calling: read beyond the clues", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-10", "required": true, "skillRefs": ["reading.hidden-causes", "vocabulary.volunteering", "exposure.past-speculation"] },
+        { "id": "module-10-learn", "title": "Learn to choose a present tense", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-10", "required": true, "skillRefs": ["present-simple.habit", "present-continuous.now", "present-perfect.connection"] },
+        { "id": "module-10-practice", "title": "Match meaning to tense", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-10", "mode": "standard", "count": 10, "required": true, "skillRefs": ["present.tense-choice", "stative-verbs", "time-expressions.present"] },
+        { "id": "module-10-speak", "title": "Connect habit, now, and experience", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/habit-now-experience", "required": true, "skillRefs": ["speaking.tense-contrast", "present.tense-choice"] },
+        { "id": "module-10-review", "title": "Review present tenses", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-10", "mode": "review", "count": 6, "required": true, "skillRefs": ["present.tense-choice", "stative-verbs", "time-expressions.present"] }
+      ]
+    },
+    {
+      "id": "module-11",
+      "order": 11,
+      "title": "Storytelling",
+      "unitSlug": "unit-11",
+      "missionSlug": "when-it-happened",
+      "summary": "Set a scene, describe an interrupted action, and move a spoken story towards a clear result.",
+      "sessions": [
+        { "id": "module-11-context", "title": "Explore the past continuous guide", "kind": "content", "stage": "context", "minutes": 10, "href": "/resources/grammar-reference#past-continuous", "required": true, "skillRefs": ["reference.grammar", "past-continuous.form", "past-continuous.meaning"] },
+        { "id": "module-11-learn", "title": "Learn to set a past scene", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-11", "required": true, "skillRefs": ["past-continuous.form", "past-continuous.interruption", "past-simple.vs-continuous"] },
+        { "id": "module-11-practice", "title": "Build an interrupted story", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-11", "mode": "standard", "count": 10, "required": true, "skillRefs": ["past-continuous.agreement", "past-simple.vs-continuous", "story.background"] },
+        { "id": "module-11-speak", "title": "Tell what was happening", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/when-it-happened", "required": true, "skillRefs": ["speaking.past-narrative", "story.turning-point"] },
+        { "id": "module-11-review", "title": "Review storytelling", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-11", "mode": "review", "count": 6, "required": true, "skillRefs": ["past-continuous.form", "past-continuous.interruption", "past-simple.vs-continuous"] }
+      ]
+    },
+    {
+      "id": "module-12",
+      "order": 12,
+      "title": "A2 checkpoint",
+      "unitSlug": "unit-12",
+      "missionSlug": "a2-real-life-challenge",
+      "summary": "Combine A2 grammar and vocabulary in a realistic decision, then identify the best next learning goal.",
+      "sessions": [
+        { "id": "module-12-context", "title": "Reconnect the A2 vocabulary network", "kind": "content", "stage": "context", "minutes": 10, "href": "/resources/vocabulary-lists", "required": true, "skillRefs": ["reference.vocabulary", "retrieval.mixed-a2", "communication.connectors"] },
+        { "id": "module-12-learn", "title": "Consolidate the A2 course", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-12", "required": true, "skillRefs": ["grammar.mixed-a2", "writing.connected-text", "communication.repair"] },
+        { "id": "module-12-practice", "title": "Solve a mixed A2 challenge", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-12", "mode": "standard", "count": 10, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.functions"] },
+        { "id": "module-12-speak", "title": "Complete the real-life challenge", "kind": "content", "stage": "speak", "minutes": 7, "href": "/speaking/a2-real-life-challenge", "required": true, "skillRefs": ["speaking.integrated-a2", "communication.repair"] },
+        { "id": "module-12-review", "title": "Final A2 checkpoint", "kind": "practice", "stage": "review", "minutes": 18, "unitIds": ["unit-01", "unit-02", "unit-03", "unit-04", "unit-05", "unit-06", "unit-07", "unit-08", "unit-09", "unit-10", "unit-11", "unit-12"], "mode": "checkpoint", "count": 10, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.integrated-a2"] }
+      ]
+    }
+  ]
+}

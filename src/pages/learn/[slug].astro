@@ -1,0 +1,36 @@
+---
+import SessionRunner from "../../components/SessionRunner.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getModuleById,
+  getNextSessionId,
+  getSessionById,
+  sessions,
+} from "../../lib/course-path";
+import "../../styles/learning.css";
+
+export function getStaticPaths() {
+  return sessions.map((session) => ({
+    params: { slug: session.id },
+    props: { sessionId: session.id },
+  }));
+}
+
+const { sessionId } = Astro.props;
+const session = getSessionById(sessionId);
+const moduleId = sessionId.split("-").slice(0, 2).join("-");
+const module = getModuleById(moduleId);
+
+if (!session || !module) {
+  throw new Error(`Learning session ${sessionId} is missing from the course path.`);
+}
+
+const nextSessionId = getNextSessionId(session.id);
+---
+
+<BaseLayout
+  title={`${session.title} | English Library`}
+  description={`Complete the ${session.title} session in your guided A2 English path.`}
+>
+  <SessionRunner module={module} session={session} nextSessionId={nextSessionId} />
+</BaseLayout>

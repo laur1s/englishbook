@@ -267,7 +267,7 @@ B: Homemade food is _____ (good). Restaurant food is _____ (expensive), but not 
 
 **Read the text:**
 
-Lithuania is a beautiful country in Northern Europe. Vilnius is the biggest and most beautiful city in Lithuania. It has about 500,000 people, which is more than Kaunas (the second biggest city) but less than Riga in Latvia.
+Lithuania is a beautiful country in Northern Europe. Vilnius is the capital and largest city in Lithuania. It is larger than Kaunas, the second-largest city in Lithuania.
 
 Lithuanian summers are warmer than winters, but not as hot as in Southern Europe. The warmest month is July, when temperatures can reach 25°C. Winters are colder, with temperatures around -5°C.
 
@@ -382,7 +382,7 @@ A: No, it's cheaper but has more features.
 
 **Read the text:**
 
-Lithuania has many beautiful places. Vilnius is the biggest city with about 500,000 people. Kaunas is smaller but has more parks. Klaipėda is the smallest of the three main cities but is closer to the sea.
+Lithuania has many beautiful places. Vilnius is the biggest city in Lithuania. Kaunas is smaller but has many parks. Klaipėda is the smallest of the three main cities but is closer to the sea.
 
 The weather in Lithuania varies. Summer is the warmest season. Winter is colder than summer but more beautiful with snow. Autumn is wetter than spring. Spring is the most colorful with flowers.
 
@@ -401,7 +401,7 @@ Lithuanian food is delicious. Cepelinai are bigger than kibinai. Beer is cheaper
 
 **True or False:**
 
-1. Vilnius has 500,000 people. _____
+1. Vilnius is the biggest city in Lithuania. _____
 2. Kaunas is the smallest city. _____
 3. Winter is warmer than summer. _____
 4. Spring is wetter than autumn. _____
@@ -454,7 +454,7 @@ Compare Lithuanian culture with another country's culture.
 ## Useful Phrases / Naudingi posakiai
 
 - Which is bigger/better...? - Kuris yra didesnis/geresnis...?
-- It's more expensive than... - Tai brangesnė nei...
+- It's more expensive than... - Tai brangiau negu...
 - It's the most beautiful... - Tai gražiausia...
 - Not as...as - Ne tokia...kaip
 - Much more... - Daug daugiau...

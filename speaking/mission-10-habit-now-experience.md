@@ -46,7 +46,7 @@ steps:
       - "At the moment..."
       - "So far..."
   - kind: "compare"
-    prompt: "Compare with this model: I usually study English after dinner, and I often read short news stories. This month, I'm preparing for an exam, so I'm studying more than usual. I've learned English for four years, and I've already used it on two trips. I know more vocabulary now, but I still need to practise speaking."
+    prompt: "Compare with this model: I usually study English after dinner, and I often read short news stories. This month, I'm preparing for an exam, so I'm studying more than usual. I've studied English for four years, and I've already used it on two trips. I know more vocabulary now, but I still need to practise speaking."
     ltPrompt: "Palyginkite savo pasakojimą su pavyzdžiu."
     support:
       - "Did the habitual verb use Present Simple?"

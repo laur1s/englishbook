@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-03",
+  "contentVersion": 2,
+  "title": "Past Simple and Personal History",
+  "objectives": [
+    {
+      "id": "u03.past-forms",
+      "label": {
+        "en": "Use regular and irregular Past Simple forms",
+        "lt": "Vartoti taisyklingas ir netaisyklingas būtojo paprastojo laiko formas"
+      }
+    },
+    {
+      "id": "u03.past-negatives",
+      "label": {
+        "en": "Form Past Simple negatives",
+        "lt": "Sudaryti būtojo paprastojo laiko neiginius"
+      }
+    },
+    {
+      "id": "u03.past-questions",
+      "label": {
+        "en": "Form Past Simple questions",
+        "lt": "Sudaryti būtojo paprastojo laiko klausimus"
+      }
+    },
+    {
+      "id": "u03.life-story",
+      "label": {
+        "en": "Understand a simple life story",
+        "lt": "Suprasti paprastą gyvenimo istoriją"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "u03.past-forms.001",
+      "revision": 1,
+      "objectiveId": "u03.past-forms",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Write the Past Simple form of walk.",
+        "lt": "Parašykite veiksmažodžio „walk“ būtojo paprastojo laiko formą."
+      },
+      "answer": {
+        "accepted": ["walked"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Walk is regular, so its Past Simple form is walked.",
+        "lt": "„Walk“ yra taisyklingas veiksmažodis, todėl būtojo laiko forma yra „walked“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 1}]
+    },
+    {
+      "id": "u03.past-forms.002",
+      "revision": 1,
+      "objectiveId": "u03.past-forms",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the Past Simple form of buy.",
+        "lt": "Pasirinkite veiksmažodžio „buy“ būtojo paprastojo laiko formą."
+      },
+      "choices": [
+        {"id": "a", "text": "buyed"},
+        {"id": "b", "text": "bought"},
+        {"id": "c", "text": "buy"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Buy is irregular; its Past Simple form is bought.",
+        "lt": "„Buy“ yra netaisyklingas veiksmažodis; jo būtojo laiko forma yra „bought“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 1}]
+    },
+    {
+      "id": "u03.past-forms.003",
+      "revision": 1,
+      "objectiveId": "u03.past-forms",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete with the Past Simple form of go: “Yesterday I ___ to the cinema.”",
+        "lt": "Įrašykite veiksmažodžio „go“ būtojo paprastojo laiko formą: „Yesterday I ___ to the cinema.“"
+      },
+      "answer": {
+        "accepted": ["went"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The irregular Past Simple form of go is went.",
+        "lt": "Netaisyklinga „go“ būtojo paprastojo laiko forma yra „went“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 2}]
+    },
+    {
+      "id": "u03.past-forms.004",
+      "revision": 1,
+      "objectiveId": "u03.past-forms",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct form: “We ___ at home yesterday.”",
+        "lt": "Pasirinkite tinkamą formą: „We ___ at home yesterday.“"
+      },
+      "choices": [
+        {"id": "a", "text": "was"},
+        {"id": "b", "text": "were"},
+        {"id": "c", "text": "are"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "The Past Simple form of be with we is were.",
+        "lt": "Veiksmažodžio „be“ būtojo laiko forma su „we“ yra „were“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 2}]
+    },
+    {
+      "id": "u03.past-negatives.005",
+      "revision": 2,
+      "objectiveId": "u03.past-negatives",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete this Past Simple negative: “He ___ a new phone.” Use buy.",
+        "lt": "Užbaikite šį Past Simple neigiamąjį sakinį su „buy“: „He ___ a new phone.“"
+      },
+      "answer": {
+        "accepted": ["didn't buy", "did not buy"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "After didn't or did not, use the base form buy.",
+        "lt": "Po „didn't“ arba „did not“ vartojama bendratis „buy“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 3}]
+    },
+    {
+      "id": "u03.past-questions.006",
+      "revision": 1,
+      "objectiveId": "u03.past-questions",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the question: “___ they play football?”",
+        "lt": "Užbaikite klausimą: „___ they play football?“"
+      },
+      "answer": {
+        "accepted": ["Did"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "A Past Simple question begins with Did, followed by the base form play.",
+        "lt": "Būtojo paprastojo laiko klausimas pradedamas „Did“, po jo vartojama bendratis „play“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 4}]
+    },
+    {
+      "id": "u03.past-forms.007",
+      "revision": 1,
+      "objectiveId": "u03.past-forms",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Complete the dialogue question: “Where ___ you last night?”",
+        "lt": "Užbaikite dialogo klausimą: „Where ___ you last night?“"
+      },
+      "choices": [
+        {"id": "a", "text": "was"},
+        {"id": "b", "text": "were"},
+        {"id": "c", "text": "did be"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "The Past Simple question form of be with you uses were: Where were you?",
+        "lt": "Klausime su „you“ vartojama būtojo laiko forma „were“: „Where were you?“"
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 5}]
+    },
+    {
+      "id": "u03.life-story.008",
+      "revision": 2,
+      "objectiveId": "u03.life-story",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "The story says, “Jurgis studied computer science at university.” What did Jurgis study?",
+        "lt": "Pasakojime sakoma: „Jurgis studied computer science at university.“ Ką Jurgis studijavo?"
+      },
+      "choices": [
+        {"id": "a", "text": "Medicine"},
+        {"id": "b", "text": "Computer science"},
+        {"id": "c", "text": "English"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "The text says that Jurgis studied computer science.",
+        "lt": "Tekste parašyta, kad Jurgis studijavo informatiką."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 6}]
+    },
+    {
+      "id": "u03.life-story.009",
+      "revision": 2,
+      "objectiveId": "u03.life-story",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Laura got a new job in Klaipėda, so she and Jurgis moved there. Why did they move?",
+        "lt": "Laura gavo naują darbą Klaipėdoje, todėl ji ir Jurgis ten persikėlė. Kodėl jie persikėlė?"
+      },
+      "choices": [
+        {"id": "a", "text": "Because Jurgis started university there."},
+        {"id": "b", "text": "Because Laura got a new job there."},
+        {"id": "c", "text": "Because their daughter started school there."}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "They moved because Laura got a new job in Klaipėda.",
+        "lt": "Jie persikėlė, nes Laura gavo naują darbą Klaipėdoje."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 6}]
+    },
+    {
+      "id": "u03.past-negatives.010",
+      "revision": 1,
+      "objectiveId": "u03.past-negatives",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Choose the correct version of “She didn't came to the party.”",
+        "lt": "Pasirinkite taisyklingą sakinio „She didn't came to the party“ variantą."
+      },
+      "choices": [
+        {"id": "a", "text": "She didn't come to the party."},
+        {"id": "b", "text": "She doesn't came to the party."},
+        {"id": "c", "text": "She wasn't come to the party."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "After didn't, the verb must be in the base form come.",
+        "lt": "Po „didn't“ veiksmažodis turi būti bendraties forma „come“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 10}]
+    }
+  ]
+}

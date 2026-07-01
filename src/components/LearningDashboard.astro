@@ -1,0 +1,394 @@
+---
+import LearningCycle from "./LearningCycle.astro";
+import { modules, sessions } from "../lib/course-path";
+import { withBase } from "../lib/constants";
+
+const firstModule = modules[0];
+const firstSession = firstModule.sessions[0];
+const firstPractice = firstModule.sessions.find((session) => session.stage === "practice") ?? firstSession;
+const firstReview = firstModule.sessions.find((session) => session.stage === "review") ?? firstSession;
+const sessionHref = (sessionId: string) => withBase(`/learn/${sessionId}`);
+const serializeForScript = (value: unknown) => JSON.stringify(value).replace(/</g, "\\u003c");
+const dashboardData = serializeForScript({
+  modules: modules.map((module) => ({
+    id: module.id,
+    order: module.order,
+    title: module.title,
+    summary: module.summary,
+    unitSlug: module.unitSlug,
+    missionSlug: module.missionSlug,
+    sessions: module.sessions.map((session) => ({
+      id: session.id,
+      title: session.title,
+      stage: session.stage,
+      minutes: session.minutes,
+      href: sessionHref(session.id),
+    })),
+  })),
+  sessions: sessions.map((session) => ({ id: session.id })),
+});
+
+const chevronIcon = '<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>';
+const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M12 7.5V12l3 2" /></svg>';
+const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="10" width="11" height="9" rx="1.5" /><path d="M9 10V7.5a3 3 0 0 1 6 0V10" /></svg>';
+---
+
+<section class="learning-shell" data-learning-dashboard>
+  <header class="learning-page-heading">
+    <h1>Your English path</h1>
+    <p>One focused session at a time.</p>
+  </header>
+
+  <div class="learning-dashboard-grid">
+    <section class="learning-panel next-session-panel" aria-labelledby="next-session-title">
+      <div class="next-session-copy">
+        <p class="learning-label" data-next-label>Next session</p>
+        <p class="learning-module-name" data-next-module>
+          Module {firstModule.order} · {firstModule.title}
+        </p>
+        <h2 id="next-session-title" data-next-title>{firstSession.title}</h2>
+        <p class="learning-duration">
+          <Fragment set:html={clockIcon} />
+          <span data-next-minutes>{firstSession.minutes} min</span>
+        </p>
+        <p class="next-session-description" data-next-description>{firstModule.summary}</p>
+        <a class="learning-primary-button" data-next-link href={sessionHref(firstSession.id)}>
+          <span data-next-action>Start session</span>
+          <Fragment set:html={chevronIcon} />
+        </a>
+      </div>
+
+      <div class="learning-cycle-wrap">
+        <LearningCycle sessions={firstModule.sessions} activeSessionId={firstSession.id} />
+        <p class="learning-step-focus">
+          <strong>Step focus</strong>
+          <span data-step-focus>
+            Meet the language in context, notice useful details, and get ready to learn.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section class="learning-panel learning-side-panel today-loop-panel" aria-labelledby="today-loop-title">
+      <h2 id="today-loop-title">Today’s loop</h2>
+      <ul class="learning-list">
+        <li>
+          <a class="learning-row" data-loop-context href={sessionHref(firstSession.id)}>
+            <span class="learning-row-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 18.5h18M5 15a7 7 0 0 1 14 0M12 3v3M4.5 7.5l2 2M19.5 7.5l-2 2" /></svg>
+            </span>
+            <span class="learning-row-copy">
+              <strong data-loop-context-label>Warm up · {firstSession.minutes} min</strong>
+              <span>Get your brain ready</span>
+            </span>
+            <span class="learning-row-time"><span data-loop-context-time>{firstSession.minutes} min</span><Fragment set:html={chevronIcon} /></span>
+          </a>
+        </li>
+        <li>
+          <a class="learning-row" data-loop-core href={sessionHref(firstSession.id)}>
+            <span class="learning-row-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3.5 5.5c3.2-1.4 6-1 8.5 1.2v13c-2.5-2.2-5.3-2.6-8.5-1.2zM20.5 5.5c-3.2-1.4-6-1-8.5 1.2v13c2.5-2.2 5.3-2.6 8.5-1.2z" /></svg>
+            </span>
+            <span class="learning-row-copy">
+              <strong data-loop-core-label>Core lesson · {firstSession.minutes} min</strong>
+              <span>Continue your recommended step</span>
+            </span>
+            <span class="learning-row-time"><span data-loop-core-time>{firstSession.minutes} min</span><Fragment set:html={chevronIcon} /></span>
+          </a>
+        </li>
+        <li>
+          <a class="learning-row" data-loop-review href={sessionHref(firstReview.id)}>
+            <span class="learning-row-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 8V4l-2 2a8 8 0 1 0 1.1 10.1M4 16v4l2-2" /></svg>
+            </span>
+            <span class="learning-row-copy">
+              <strong data-loop-review-label>Recall · {firstReview.minutes} min</strong>
+              <span>Strengthen your memory</span>
+            </span>
+            <span class="learning-row-time"><span data-loop-review-time>{firstReview.minutes} min</span><Fragment set:html={chevronIcon} /></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="learning-panel course-map-panel" aria-labelledby="course-map-title">
+      <h2 id="course-map-title">Course map</h2>
+      <ol class="course-map">
+        {modules.map((module, index) => (
+          <li
+            class:list={["course-module-row", index === 0 && "current"]}
+            data-course-module={module.id}
+          >
+            <span class="course-module-number">{module.order}</span>
+            <a class="course-module-main" data-module-link href={sessionHref(module.sessions[0].id)}>
+              <span class="course-module-title">
+                <strong>{module.title}</strong>
+                <span data-module-summary hidden={index !== 0}>{module.summary}</span>
+              </span>
+              <span class="course-module-progress" data-module-progress hidden={index !== 0}>
+                <span data-module-progress-copy>0 / {module.sessions.length} sessions</span>
+                <span class="course-module-progress-track" aria-hidden="true">
+                  <span class="course-module-progress-fill" data-module-progress-fill style="width: 0%" />
+                </span>
+              </span>
+              <span class="course-module-state" data-module-state>
+                <span data-module-lock hidden={index === 0}><Fragment set:html={lockIcon} /></span>
+                <span data-module-chevron hidden={index !== 0}><Fragment set:html={chevronIcon} /></span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section class="learning-panel learning-side-panel review-queue-panel" aria-labelledby="review-queue-title">
+      <h2 id="review-queue-title">Review queue</h2>
+      <div class="review-summary">
+        <span class="review-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3.5 5.5c3.2-1.4 6-1 8.5 1.2v13c-2.5-2.2-5.3-2.6-8.5-1.2zM20.5 5.5c-3.2-1.4-6-1-8.5 1.2v13c2.5-2.2 5.3-2.6 8.5-1.2z" /></svg>
+        </span>
+        <span>
+          <strong data-review-count>0 skills due</strong>
+          <span data-review-copy>You are caught up. A short recall still keeps the path fresh.</span>
+        </span>
+      </div>
+      <a class="learning-outline-button" data-review-link href={sessionHref(firstReview.id)}>
+        <span data-review-action>Practice recall</span>
+        <Fragment set:html={chevronIcon} />
+      </a>
+    </section>
+
+    <section class="learning-panel learning-side-panel more-practice-panel" aria-labelledby="more-practice-title">
+      <h2 id="more-practice-title">More practice</h2>
+      <a class="more-practice-link" data-more-practice-link href={`${sessionHref(firstPractice.id)}?fresh=1`}>
+        <span class="more-practice-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+        </span>
+        <span>
+          <strong>Create another practice set</strong>
+          <span>Make a fresh set from what you are learning.</span>
+        </span>
+        <Fragment set:html={chevronIcon} />
+      </a>
+    </section>
+  </div>
+
+  <p class="learning-footer-note">Short sessions. Steady progress. Real English.</p>
+
+  <script is:inline type="application/json" data-dashboard-data set:html={dashboardData} />
+</section>
+
+<script>
+  import {
+    getDueSkills,
+    getNextLearningSessionId,
+    migrateLegacyLearningProgress,
+    readLearningProgress,
+  } from "../lib/learning-progress";
+
+  type DashboardSession = {
+    id: string;
+    title: string;
+    stage: "context" | "learn" | "practice" | "speak" | "review";
+    minutes: number;
+    href: string;
+  };
+
+  type DashboardModule = {
+    id: string;
+    order: number;
+    title: string;
+    summary: string;
+    unitSlug: string;
+    missionSlug: string;
+    sessions: DashboardSession[];
+  };
+
+  type DashboardData = {
+    modules: DashboardModule[];
+    sessions: Array<{ id: string }>;
+  };
+
+  const focusCopy: Record<DashboardSession["stage"], string> = {
+    context: "Meet the language in context, notice useful details, and get ready to learn.",
+    learn: "Learn new words and patterns, study examples, and check your understanding.",
+    practice: "Answer one item at a time, use feedback, and correct mistakes immediately.",
+    speak: "Turn the new language into a short, useful spoken response.",
+    review: "Recall the key language without notes and strengthen it for later.",
+  };
+
+  const setText = (root: Element, selector: string, value: string) => {
+    const element = root.querySelector(selector);
+    if (element) element.textContent = value;
+  };
+
+  const setHref = (root: Element, selector: string, value: string) => {
+    const element = root.querySelector(selector);
+    if (element instanceof HTMLAnchorElement) element.href = value;
+  };
+
+  document.querySelectorAll("[data-learning-dashboard]").forEach((root) => {
+    const dataElement = root.querySelector("[data-dashboard-data]");
+    let data: DashboardData | null = null;
+
+    try {
+      data = JSON.parse(dataElement?.textContent || "null") as DashboardData | null;
+    } catch {
+      data = null;
+    }
+
+    if (!data?.modules.length || !data.sessions.length) return;
+
+    const sessionById = new Map(
+      data.modules.flatMap((module) =>
+        module.sessions.map((session) => [session.id, { module, session }] as const),
+      ),
+    );
+
+    migrateLegacyLearningProgress(
+      window.localStorage,
+      data.modules.flatMap((module) => {
+        const learnSession = module.sessions.find((session) => session.stage === "learn");
+        const speakSession = module.sessions.find((session) => session.stage === "speak");
+
+        return learnSession && speakSession
+          ? [{
+              unitSlug: module.unitSlug,
+              learnSessionId: learnSession.id,
+              missionSlug: module.missionSlug,
+              speakSessionId: speakSession.id,
+            }]
+          : [];
+      }),
+    );
+
+    const syncDashboard = () => {
+      const progress = readLearningProgress(window.localStorage);
+      const nextSessionId = getNextLearningSessionId(data.sessions, progress) ?? data.sessions[0].id;
+      const nextEntry = sessionById.get(nextSessionId) ?? sessionById.get(data.sessions[0].id);
+
+      if (!nextEntry) return;
+
+      const { module: activeModule, session: activeSession } = nextEntry;
+      const allComplete = data.sessions.every(
+        ({ id }) => progress.sessions[id]?.status === "completed",
+      );
+      const sessionStarted = progress.sessions[activeSession.id]?.status === "started";
+
+      setText(root, "[data-next-label]", allComplete ? "Course complete" : "Next session");
+      setText(root, "[data-next-module]", `Module ${activeModule.order} · ${activeModule.title}`);
+      setText(root, "[data-next-title]", activeSession.title);
+      setText(root, "[data-next-minutes]", `${activeSession.minutes} min`);
+      setText(root, "[data-next-description]", activeModule.summary);
+      setText(
+        root,
+        "[data-next-action]",
+        allComplete ? "Review the final step" : sessionStarted ? "Continue session" : "Start session",
+      );
+      setText(root, "[data-step-focus]", focusCopy[activeSession.stage]);
+      setHref(root, "[data-next-link]", activeSession.href);
+
+      const cycle = root.querySelector("[data-learning-cycle]");
+      cycle?.querySelectorAll("[data-cycle-session]").forEach((step, index) => {
+        const moduleSession = activeModule.sessions[index];
+        if (moduleSession) (step as HTMLElement).dataset.cycleSession = moduleSession.id;
+        const sessionId = (step as HTMLElement).dataset.cycleSession || "";
+        const isCompleted = progress.sessions[sessionId]?.status === "completed";
+        const isCurrent = !isCompleted && sessionId === activeSession.id;
+        const status = step.querySelector("[data-cycle-status]");
+        step.classList.toggle("completed", isCompleted);
+        step.classList.toggle("current", isCurrent);
+        if (status) status.textContent = isCompleted ? "Done" : isCurrent ? "In progress" : "Upcoming";
+      });
+
+      const contextSession = activeModule.sessions.find((session) => session.stage === "context") ?? activeSession;
+      const reviewSession = activeModule.sessions.find((session) => session.stage === "review") ?? activeSession;
+      const practiceSession = activeModule.sessions.find((session) => session.stage === "practice") ?? activeSession;
+
+      setHref(root, "[data-loop-context]", contextSession.href);
+      setText(root, "[data-loop-context-label]", `Warm up · ${contextSession.minutes} min`);
+      setText(root, "[data-loop-context-time]", `${contextSession.minutes} min`);
+      setHref(root, "[data-loop-core]", activeSession.href);
+      setText(root, "[data-loop-core-label]", `Core lesson · ${activeSession.minutes} min`);
+      setText(root, "[data-loop-core-time]", `${activeSession.minutes} min`);
+      setHref(root, "[data-loop-review]", reviewSession.href);
+      setText(root, "[data-loop-review-label]", `Recall · ${reviewSession.minutes} min`);
+      setText(root, "[data-loop-review-time]", `${reviewSession.minutes} min`);
+      setHref(root, "[data-more-practice-link]", `${practiceSession.href}?fresh=1`);
+
+      data.modules.forEach((module) => {
+        const row = root.querySelector(`[data-course-module="${module.id}"]`);
+        if (!(row instanceof HTMLElement)) return;
+
+        const completedCount = module.sessions.filter(
+          (session) => progress.sessions[session.id]?.status === "completed",
+        ).length;
+        const isCompleted = completedCount === module.sessions.length;
+        const isCurrent = module.id === activeModule.id;
+        const firstIncomplete = module.sessions.find(
+          (session) => progress.sessions[session.id]?.status !== "completed",
+        ) ?? module.sessions.at(-1);
+        const summary = row.querySelector("[data-module-summary]");
+        const progressElement = row.querySelector("[data-module-progress]");
+        const lockElement = row.querySelector("[data-module-lock]");
+        const chevronElement = row.querySelector("[data-module-chevron]");
+        const moduleLink = row.querySelector("[data-module-link]");
+        const progressFill = row.querySelector("[data-module-progress-fill]");
+        const isLocked = !isCurrent && !isCompleted;
+
+        row.classList.toggle("current", isCurrent);
+        row.classList.toggle("completed", isCompleted);
+        if (summary instanceof HTMLElement) summary.hidden = !isCurrent;
+        if (progressElement instanceof HTMLElement) progressElement.hidden = !isCurrent;
+        if (lockElement instanceof HTMLElement) lockElement.hidden = !isLocked;
+        if (chevronElement instanceof HTMLElement) chevronElement.hidden = isLocked;
+        setText(row, "[data-module-progress-copy]", `${completedCount} / ${module.sessions.length} sessions`);
+        if (progressFill instanceof HTMLElement) {
+          progressFill.style.width = `${(completedCount / module.sessions.length) * 100}%`;
+        }
+        if (moduleLink instanceof HTMLAnchorElement) {
+          if (isLocked) {
+            moduleLink.removeAttribute("href");
+            moduleLink.setAttribute("aria-disabled", "true");
+            moduleLink.tabIndex = -1;
+          } else if (firstIncomplete) {
+            moduleLink.href = firstIncomplete.href;
+            moduleLink.removeAttribute("aria-disabled");
+            moduleLink.removeAttribute("tabindex");
+          }
+        }
+      });
+
+      const dueSkills = getDueSkills(progress);
+      const dueCount = dueSkills.length;
+      const dueSourceId = dueSkills[0]?.[1].sourceSessionId;
+      const dueEntry = dueSourceId ? sessionById.get(dueSourceId) : undefined;
+      const dueReview = dueEntry?.module.sessions.find((session) => session.stage === "review") ?? reviewSession;
+
+      setText(root, "[data-review-count]", `${dueCount} ${dueCount === 1 ? "skill" : "skills"} due`);
+      setText(
+        root,
+        "[data-review-copy]",
+        dueCount
+          ? "Language you have learned is ready for another recall."
+          : "You are caught up. A short recall still keeps the path fresh.",
+      );
+      setText(root, "[data-review-action]", dueCount ? "Start review" : "Practice recall");
+      setHref(root, "[data-review-link]", dueReview.href);
+    };
+
+    syncDashboard();
+    window.addEventListener("storage", (event) => {
+      if (event.key === "english-library.learning.v1") syncDashboard();
+    });
+  });
+</script>
+
+<style>
+  .learning-row-time {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    white-space: nowrap;
+  }
+</style>

@@ -49,6 +49,9 @@ jobs:
       - name: Content integrity audit
         run: pnpm audit:content
 
+      - name: Practice catalog integrity
+        run: pnpm practice:check
+
       - name: Build
         run: pnpm build
 

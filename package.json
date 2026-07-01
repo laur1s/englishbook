@@ -12,7 +12,10 @@
     "check": "astro check",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
     "audit:content": "node --experimental-strip-types scripts/audit-content.mjs",
-    "qa": "pnpm check && pnpm test && pnpm audit:content && pnpm build"
+    "practice:generate": "node --experimental-strip-types scripts/build-practice.mjs",
+    "practice:check": "node --experimental-strip-types scripts/check-practice.mjs",
+    "practice:stats": "node --experimental-strip-types scripts/practice-stats.mjs",
+    "qa": "pnpm check && pnpm test && pnpm audit:content && pnpm practice:check && pnpm build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",

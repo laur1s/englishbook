@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "unitId": "unit-05",
+  "contentVersion": 2,
+  "title": "Travel and Directions",
+  "objectives": [
+    {
+      "id": "u05.place-prepositions",
+      "label": {
+        "en": "Use prepositions of place",
+        "lt": "Vartoti vietos prielinksnius"
+      }
+    },
+    {
+      "id": "u05.there-be",
+      "label": {
+        "en": "Use there is and there are",
+        "lt": "Vartoti „there is“ ir „there are“"
+      }
+    },
+    {
+      "id": "u05.directions",
+      "label": {
+        "en": "Understand and give simple directions",
+        "lt": "Suprasti ir nurodyti paprastas kryptis"
+      }
+    },
+    {
+      "id": "u05.travel-reading",
+      "label": {
+        "en": "Understand simple travel information",
+        "lt": "Suprasti paprastą kelionių informaciją"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "u05.place-prepositions.001",
+      "revision": 1,
+      "objectiveId": "u05.place-prepositions",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete with the phrase meaning šalia: “The bank is ___ the post office.”",
+        "lt": "Įrašykite anglišką žodžio „šalia“ atitikmenį: „The bank is ___ the post office.“"
+      },
+      "answer": {
+        "accepted": ["next to"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Next to means beside or šalia.",
+        "lt": "„Next to“ reiškia „šalia“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 1}]
+    },
+    {
+      "id": "u05.place-prepositions.002",
+      "revision": 1,
+      "objectiveId": "u05.place-prepositions",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the word meaning priešais: “There's a café ___ the cinema.”",
+        "lt": "Pasirinkite žodį, reiškiantį „priešais“: „There's a café ___ the cinema.“"
+      },
+      "choices": [
+        {"id": "a", "text": "behind"},
+        {"id": "b", "text": "opposite"},
+        {"id": "c", "text": "between"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Opposite means on the other side, or priešais.",
+        "lt": "„Opposite“ reiškia „priešais“, kitoje pusėje."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 1}]
+    },
+    {
+      "id": "u05.place-prepositions.003",
+      "revision": 1,
+      "objectiveId": "u05.place-prepositions",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the sentence: “The museum is ___ the church and the library.”",
+        "lt": "Užbaikite sakinį: „The museum is ___ the church and the library.“"
+      },
+      "answer": {
+        "accepted": ["between"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Between is used when something is in the middle of two places.",
+        "lt": "„Between“ vartojama, kai vieta yra tarp dviejų kitų vietų."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 1}]
+    },
+    {
+      "id": "u05.there-be.004",
+      "revision": 1,
+      "objectiveId": "u05.there-be",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the correct phrase: “___ two hotels in the town centre.”",
+        "lt": "Pasirinkite tinkamą frazę: „___ two hotels in the town centre.“"
+      },
+      "choices": [
+        {"id": "a", "text": "There is"},
+        {"id": "b", "text": "There are"},
+        {"id": "c", "text": "Is there"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Two hotels is plural, so use There are.",
+        "lt": "„Two hotels“ yra daugiskaita, todėl vartojama „There are“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 2}]
+    },
+    {
+      "id": "u05.there-be.005",
+      "revision": 1,
+      "objectiveId": "u05.there-be",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the question: “___ any shops near the station?”",
+        "lt": "Užbaikite klausimą: „___ any shops near the station?“"
+      },
+      "answer": {
+        "accepted": ["Are there"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Shops is plural, so the question begins with Are there.",
+        "lt": "„Shops“ yra daugiskaita, todėl klausimas pradedamas „Are there“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 2}]
+    },
+    {
+      "id": "u05.there-be.006",
+      "revision": 1,
+      "objectiveId": "u05.there-be",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct negative form of “There are shops on this street.”",
+        "lt": "Pasirinkite tinkamą neigiamąją sakinio „There are shops on this street“ formą."
+      },
+      "choices": [
+        {"id": "a", "text": "There isn't shops on this street."},
+        {"id": "b", "text": "There aren't any shops on this street."},
+        {"id": "c", "text": "There don't have shops on this street."}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "A plural negative uses there aren't, and any is natural before shops.",
+        "lt": "Daugiskaitos neiginiui vartojama „there aren't“, o prieš „shops“ natūraliai vartojama „any“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 3}]
+    },
+    {
+      "id": "u05.directions.007",
+      "revision": 1,
+      "objectiveId": "u05.directions",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete the direction: “Go ___ on Station Road.”",
+        "lt": "Užbaikite krypties nurodymą: „Go ___ on Station Road.“"
+      },
+      "answer": {
+        "accepted": ["straight"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Go straight on means continue forward without turning.",
+        "lt": "„Go straight on“ reiškia eiti tiesiai, nesukant."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 4}]
+    },
+    {
+      "id": "u05.directions.008",
+      "revision": 2,
+      "objectiveId": "u05.directions",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "The directions say, “The hotel is on your right, opposite the park.” Complete: “The hotel is ___ the park.”",
+        "lt": "Nurodymuose sakoma: „The hotel is on your right, opposite the park.“ Užbaikite: „The hotel is ___ the park.“"
+      },
+      "choices": [
+        {"id": "a", "text": "opposite"},
+        {"id": "b", "text": "behind"},
+        {"id": "c", "text": "between"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "The map description says that the hotel is opposite the park.",
+        "lt": "Žemėlapio aprašyme nurodyta, kad viešbutis yra priešais parką."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 4}]
+    },
+    {
+      "id": "u05.travel-reading.009",
+      "revision": 2,
+      "objectiveId": "u05.travel-reading",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "The travel text says, “Gediminas Tower is on a hill behind the cathedral.” Where is the tower?",
+        "lt": "Kelionės tekste sakoma: „Gediminas Tower is on a hill behind the cathedral.“ Kur yra bokštas?"
+      },
+      "choices": [
+        {"id": "a", "text": "On a hill behind the cathedral"},
+        {"id": "b", "text": "Opposite Tom's hotel"},
+        {"id": "c", "text": "Between the café and the museum"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "The text places the tower on a hill behind the cathedral.",
+        "lt": "Tekste nurodyta, kad bokštas yra ant kalvos už katedros."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 5}]
+    },
+    {
+      "id": "u05.place-prepositions.010",
+      "revision": 2,
+      "objectiveId": "u05.place-prepositions",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Translate into English using pharmacy and opposite: “Vaistinė yra priešais parką.”",
+        "lt": "Išverskite į anglų kalbą vartodami „pharmacy“ ir „opposite“: „Vaistinė yra priešais parką.“"
+      },
+      "answer": {
+        "accepted": ["The pharmacy is opposite the park", "The pharmacy is opposite the park."],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Pharmacy means vaistinė, and opposite means priešais.",
+        "lt": "„Pharmacy“ reiškia „vaistinė“, o „opposite“ – „priešais“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 9}]
+    }
+  ]
+}

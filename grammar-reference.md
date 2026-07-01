@@ -156,9 +156,9 @@ Complete grammar reference for Lithuanian speakers learning English at A2 level.
 - today, this week, this month
 - Look! Listen! (to draw attention)
 
-### Stative Verbs (NOT used in continuous)
+### Stative Verbs (Usually Not Used in Continuous)
 
-These verbs are NOT usually used in Present Continuous:
+These verbs are not usually used in Present Continuous:
 - **Thinking:** know, understand, believe, think (opinion), remember
 - **Feelings:** like, love, hate, want, need, prefer
 - **Possession:** have (possess), own, belong
@@ -168,7 +168,13 @@ These verbs are NOT usually used in Present Continuous:
 **Wrong:** I am knowing the answer. ✗
 **Correct:** I know the answer. ✓
 
-Some verbs change meaning. Compare *I have a car* (possession) with *I am having lunch* (activity), and *I think you are right* (opinion) with *I am thinking about the problem* (mental process).
+Some verbs change meaning. Compare:
+
+- *I have a car* (possession) / *I am having lunch* (activity)
+- *I think you are right* (opinion) / *I am thinking about the problem* (mental process)
+- *The soup tastes good* (state) / *She is tasting the soup* (action)
+- *I feel tired* (state) / *I am feeling better today* (changing condition)
+- *The flowers smell lovely* (state) / *He is smelling the flowers* (action)
 
 ---
 

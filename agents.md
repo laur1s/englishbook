@@ -4,6 +4,8 @@
 
 English learning library for Lithuanian speakers with:
 
+- A 12-module, 60-session continuous learning path
+- Deterministic interactive practice and spaced review
 - A2.1 Units 1–6
 - A2.2 Units 7–12
 - Grey's Book reading track
@@ -21,18 +23,22 @@ English learning library for Lithuanian speakers with:
 - Every open writing or speaking task needs a model, sentence starter, or success checklist.
 - Prefer qualified usage notes over rules containing “always” or “never.”
 - Preserve the grammar progression from Units 1–12.
+- Keep interactive items self-contained, unambiguous, bilingual, and tied to a real lesson exercise.
+- Preserve stable session, objective, and item IDs; increment revisions when meaning or answers change.
+- Never auto-grade open writing or speaking. Use a model and self-check criteria instead.
 
 ## Quality gates
 
 Before describing the project as release-ready, run:
 
 1. `pnpm audit:content`
-2. `pnpm test`
-3. `pnpm check`
-4. `pnpm build`
-5. Browser smoke tests for home, collection filters, one lesson, one answer deep link, and one speaking mission on desktop and mobile.
+2. `pnpm practice:check`
+3. `pnpm test`
+4. `pnpm check`
+5. `pnpm build`
+6. Browser smoke tests for the learning dashboard, one content session, choice and fill-blank scoring, saved resume, one cumulative checkpoint, home, one lesson, and one speaking mission on desktop and mobile.
 
-The Markdown course is the source of truth. The site must not display empty lesson panels, stale answers, invalid translations, or draft content.
+Markdown remains the source of truth for long lessons. `learning/course-path.json` is the source of truth for order, and `practice/sources/*.json` is the source of truth for scored interactive items. The site must not display empty lesson panels, stale answers, invalid translations, draft content, or a stale generated practice catalog.
 
 ## Publishing status
 
