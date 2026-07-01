@@ -5,6 +5,7 @@ slug: "a2-30-day-study-plan"
 collection: "resources"
 order: 12
 contentType: "reference"
+resourceGroup: "start-plan"
 level: "A2"
 grammarFocus:
   - "Cumulative A2 study planning"

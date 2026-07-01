@@ -5,6 +5,7 @@ slug: "a2-self-study-routes"
 collection: "resources"
 order: 13
 contentType: "reference"
+resourceGroup: "start-plan"
 level: "A2"
 grammarFocus:
   - "Structured A2 self-study planning"

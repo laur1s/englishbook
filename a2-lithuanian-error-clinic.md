@@ -5,6 +5,7 @@ slug: "a2-lithuanian-error-clinic"
 collection: "resources"
 order: 4
 contentType: "reference"
+resourceGroup: "understand-repair"
 level: "A2"
 grammarFocus:
   - "Common Lithuanian-to-English transfer errors"

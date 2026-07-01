@@ -2,59 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CollectionFilters from "../../components/CollectionFilters.astro";
 import { getA2Entries } from "../../lib/content";
-import { withBase } from "../../lib/constants";
 
 const entries = await getA2Entries();
-
-const resourceGroups = [
-  {
-    title: "Start with a plan",
-    ltTitle: "Pradėkite nuo plano",
-    description: "Choose a realistic pace, follow a daily route, and collect evidence of progress.",
-    ltDescription: "Pasirinkite realų tempą, sekite dienos planą ir kaupkite pažangos įrodymus.",
-    links: [
-      ["30-day study plan", "/resources/a2-30-day-study-plan"],
-      ["Gentle, standard, or intensive route", "/resources/a2-self-study-routes"],
-      ["Can-do evidence portfolio", "/resources/a2-can-do-portfolio"],
-    ],
-  },
-  {
-    title: "Understand and repair",
-    ltTitle: "Supraskite ir taisykite",
-    description: "Practise every unit, understand Lithuanian transfer errors, and repair weak forms.",
-    ltDescription: "Praktikuokite visus skyrius, supraskite lietuviams būdingas klaidas ir jas ištaisykite.",
-    links: [
-      ["44-set practice workbook", "/resources/a2-practice-workbook"],
-      ["Lithuanian learner error clinic", "/resources/a2-lithuanian-error-clinic"],
-      ["Grammar reference", "/resources/grammar-reference"],
-      ["Vocabulary lists", "/resources/vocabulary-lists"],
-    ],
-  },
-  {
-    title: "Use English in real life",
-    ltTitle: "Vartokite anglų kalbą gyvenime",
-    description: "Rehearse practical dialogues for everyday services, travel, work, and problem-solving.",
-    ltDescription: "Repetuokite kasdienių paslaugų, kelionių, darbo ir problemų sprendimo pokalbius.",
-    links: [
-      ["Real-life phrasebook", "/resources/a2-real-life-phrasebook"],
-      ["Workplace English", "/resources/a2-workplace-english-pack"],
-      ["Travel English", "/resources/a2-travel-english-pack"],
-      ["Everyday services", "/resources/a2-services-english-pack"],
-    ],
-  },
-  {
-    title: "Listen, speak, and play",
-    ltTitle: "Klausykite, kalbėkite ir žaiskite",
-    description: "Build active English through dictation, role cards, couple conversations, and retrieval games.",
-    ltDescription: "Aktyvinkite anglų kalbą diktantais, vaidmenų kortelėmis, porų pokalbiais ir žodyno žaidimais.",
-    links: [
-      ["24-day listening and dictation", "/resources/a2-listening-dictation-pack"],
-      ["Couples conversation pack", "/resources/a2-couples-conversation-pack"],
-      ["Partner role-card guide", "/resources/a2-partner-study-guide"],
-      ["30 vocabulary games", "/resources/a2-vocabulary-game-bank"],
-    ],
-  },
-];
 ---
 
 <BaseLayout title="A2 Course | English Library">
@@ -64,27 +13,4 @@ const resourceGroups = [
     description="The full Lithuanian-supported A2 sequence with grammar, vocabulary, reading, writing, and speaking practice. A2.1–A2.4 are internal course stages within CEFR A2, not separate official levels."
     entries={entries}
   />
-
-  <section class="content-panel" aria-labelledby="practice-chooser-title">
-    <p class="eyebrow">Practice chooser · Praktikos pasirinkimas</p>
-    <h2 id="practice-chooser-title">What do you need today?</h2>
-    <p>Choose by learning need instead of searching through one long resource list.</p>
-    <p class="lt-text" lang="lt">Pasirinkite pagal šiandienos mokymosi poreikį, o ne ieškokite ilgame sąraše.</p>
-
-    <div class="feature-grid">
-      {resourceGroups.map((group) => (
-        <article class="feature-card">
-          <h3>{group.title}</h3>
-          <p class="lt-text" lang="lt">{group.ltTitle}</p>
-          <p>{group.description}</p>
-          <p class="lt-text" lang="lt">{group.ltDescription}</p>
-          <ul>
-            {group.links.map(([label, href]) => (
-              <li><a class="inline-link" href={withBase(href)}>{label} →</a></li>
-            ))}
-          </ul>
-        </article>
-      ))}
-    </div>
-  </section>
 </BaseLayout>

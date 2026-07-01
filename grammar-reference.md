@@ -5,6 +5,7 @@ slug: "grammar-reference"
 collection: "resources"
 order: 1
 contentType: "reference"
+resourceGroup: "understand-repair"
 level: "A2"
 grammarFocus:
   - "Mixed A2 grammar"

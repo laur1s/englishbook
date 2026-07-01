@@ -5,6 +5,7 @@ slug: "a2-travel-english-pack"
 collection: "resources"
 order: 9
 contentType: "reference"
+resourceGroup: "real-life"
 level: "A2"
 grammarFocus:
   - "Practical A2 travel communication"
@@ -184,7 +185,7 @@ e. Skysčių talpos negali viršyti nurodyto dydžio.
 | mushroom pasta | vegetarian | €11 |
 | apple cake | contains nuts | €5 |
 
-**Questions:** 1. Which main dish is vegetarian? 2. Which two dishes contain a stated ingredient? 3. What is the total for soup and pasta? 4. Which dish should a person avoiding nuts ask more about?
+**Questions:** 1. Which main dish is vegetarian? 2. Which two dishes contain a stated ingredient? 3. What is the total for soup and pasta? 4. Which dessert must a person avoiding nuts not order?
 
 **Model order:** *Could I have the mushroom pasta, please? Does it contain any nuts? Also, could we have some tap water?*
 
@@ -290,7 +291,7 @@ e. Skysčių talpos negali viršyti nurodyto dydžio.
 1. The air conditioning is making a loud noise. 2. I switched it off, but the room became hot. 3. Could someone check it, please?
 
 ## Journey 8
-1. Mushroom pasta. 2. Vegetable soup and apple cake. 3. €17. 4. Apple cake. Jei alergija rimta, klauskite ir apie kryžminį užteršimą pagal darbuotojo galimybes.
+1. Mushroom pasta. 2. Vegetable soup and apple cake. 3. €17. 4. Apple cake, because the menu says that it contains nuts. Jei alergija rimta, apie kitus patiekalus ir kryžminį užteršimą klauskite darbuotojo.
 
 ## Journey 10
 1. I have **a** booking from 5 **to** 7 October. 2. My travel dates **have** changed. 3. **Will the** price change?

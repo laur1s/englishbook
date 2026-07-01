@@ -5,6 +5,7 @@ slug: "a2-vocabulary-game-bank"
 collection: "resources"
 order: 11
 contentType: "reference"
+resourceGroup: "active-practice"
 level: "A2"
 grammarFocus:
   - "Vocabulary retrieval and recycling"

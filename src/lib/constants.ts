@@ -12,8 +12,10 @@ export const REVEAL_SECTION_PATTERN =
 export const GREY_ANSWER_SLUG = "grey-book";
 export const A2_ANSWER_SLUG = "a2";
 
-export const withBase = (path: string) => {
-  const base = import.meta.env.BASE_URL || "/";
+export const withBasePath = (path: string, base = "/") => {
+  if (!path.startsWith("/") || path.startsWith("//")) {
+    return path;
+  }
 
   if (path === "/") {
     return base;
@@ -21,3 +23,6 @@ export const withBase = (path: string) => {
 
   return `${base.replace(/\/$/, "")}${path}`;
 };
+
+export const withBase = (path: string) =>
+  withBasePath(path, import.meta.env?.BASE_URL || "/");

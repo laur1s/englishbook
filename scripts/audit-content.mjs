@@ -86,6 +86,7 @@ const readMarkdownDocument = (filePath) => {
       order: Number(readFrontmatterScalar(frontmatter, "order")),
       hasAnswerKey: readFrontmatterScalar(frontmatter, "hasAnswerKey") === "true",
       sourceRefs: readFrontmatterList(frontmatter, "sourceRefs"),
+      resourceGroup: readFrontmatterScalar(frontmatter, "resourceGroup"),
       supportsRecording:
         readFrontmatterScalar(frontmatter, "supportsRecording") === "true",
     },
@@ -150,23 +151,10 @@ export const runContentAudit = ({ root = defaultRoot } = {}) => {
   const unitFiles = listMarkdownFiles(root, /^unit-\d+.*\.md$/);
   const greyFiles = listMarkdownFiles(path.join(root, "Grey's book"), /^chapter-\d+\.md$/);
   const speakingFiles = listMarkdownFiles(path.join(root, "speaking"), /^mission-.*\.md$/);
-  const resourceFiles = [
-    path.join(root, "grammar-reference.md"),
-    path.join(root, "vocabulary-lists.md"),
-    path.join(root, "a2-practice-workbook.md"),
-    path.join(root, "a2-lithuanian-error-clinic.md"),
-    path.join(root, "a2-real-life-phrasebook.md"),
-    path.join(root, "a2-listening-dictation-pack.md"),
-    path.join(root, "a2-couples-conversation-pack.md"),
-    path.join(root, "a2-workplace-english-pack.md"),
-    path.join(root, "a2-travel-english-pack.md"),
-    path.join(root, "a2-services-english-pack.md"),
-    path.join(root, "a2-vocabulary-game-bank.md"),
-    path.join(root, "a2-30-day-study-plan.md"),
-    path.join(root, "a2-self-study-routes.md"),
-    path.join(root, "a2-partner-study-guide.md"),
-    path.join(root, "a2-can-do-portfolio.md"),
-  ];
+  const resourceFiles = listMarkdownFiles(
+    root,
+    /^(?:grammar-reference|vocabulary-lists|a2-.*)\.md$/,
+  );
 
   const units = unitFiles.map((filePath) => ({ filePath, document: load(filePath) }));
   const greyChapters = greyFiles.map((filePath) => ({ filePath, document: load(filePath) }));
@@ -183,6 +171,32 @@ export const runContentAudit = ({ root = defaultRoot } = {}) => {
 
   if (speakingMissions.length !== 24) {
     errors.push(`course scope: expected 24 speaking missions, found ${speakingMissions.length}`);
+  }
+
+  if (resources.length < 15) {
+    errors.push(`resource scope: expected at least 15 resources, found ${resources.length}`);
+  }
+
+  const resourceGroups = new Set([
+    "start-plan",
+    "understand-repair",
+    "real-life",
+    "active-practice",
+  ]);
+
+  for (const { filePath, document } of resources) {
+    if (!document) continue;
+
+    if (!resourceGroups.has(document.data.resourceGroup)) {
+      report(filePath, "resourceGroup must place the resource in the learner chooser");
+    }
+
+    if (
+      path.basename(filePath).startsWith("a2-") &&
+      !/^##\s+Recommended next\s*\/\s*Ką rinktis toliau\s*$/mi.test(document.body)
+    ) {
+      report(filePath, "A2 resource needs a bilingual Recommended next section");
+    }
   }
 
   for (const { filePath, document } of units) {

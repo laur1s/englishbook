@@ -115,11 +115,17 @@ const a2Units = defineCollection({
 const resources = defineCollection({
   loader: glob({
     base: ".",
-    pattern: "{grammar-reference.md,vocabulary-lists.md,a2-practice-workbook.md,a2-lithuanian-error-clinic.md,a2-real-life-phrasebook.md,a2-listening-dictation-pack.md,a2-couples-conversation-pack.md,a2-workplace-english-pack.md,a2-travel-english-pack.md,a2-services-english-pack.md,a2-vocabulary-game-bank.md,a2-30-day-study-plan.md,a2-self-study-routes.md,a2-partner-study-guide.md,a2-can-do-portfolio.md}",
+    pattern: "{grammar-reference.md,vocabulary-lists.md,a2-*.md}",
   }),
   schema: sharedSchema.extend({
     collection: z.literal("resources"),
     contentType: z.literal("reference"),
+    resourceGroup: z.enum([
+      "start-plan",
+      "understand-repair",
+      "real-life",
+      "active-practice",
+    ]),
   }),
 });
 

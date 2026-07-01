@@ -5,6 +5,7 @@ slug: "vocabulary-lists"
 collection: "resources"
 order: 2
 contentType: "reference"
+resourceGroup: "understand-repair"
 level: "A2"
 grammarFocus:
   - "Vocabulary building"

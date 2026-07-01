@@ -26,10 +26,12 @@ const topics = uniqueListValues(entries, "topics");
   <p class="collection-description">{description}</p>
 </section>
 
+<slot name="before-filters" />
+
 <section class="filter-shell" data-filter-root data-filter-item-label={itemLabel}>
   <div class="filter-bar">
     <fieldset class="filter-group">
-      <legend>Level</legend>
+      <legend>Level <span class="lt-text" lang="lt">/ Lygis</span></legend>
       <div class="chip-row">
         {levels.map((level) => (
           <button type="button" class="chip" data-filter-button data-filter-group="level" data-filter-value={level} aria-pressed="false">
@@ -40,7 +42,7 @@ const topics = uniqueListValues(entries, "topics");
     </fieldset>
 
     <fieldset class="filter-group">
-      <legend>Grammar</legend>
+      <legend>Grammar <span class="lt-text" lang="lt">/ Gramatika</span></legend>
       <div class="chip-row">
         {grammarFocus.map((item) => (
           <button type="button" class="chip" data-filter-button data-filter-group="grammar" data-filter-value={item} aria-pressed="false">
@@ -51,7 +53,7 @@ const topics = uniqueListValues(entries, "topics");
     </fieldset>
 
     <fieldset class="filter-group">
-      <legend>Topics</legend>
+      <legend>Topics <span class="lt-text" lang="lt">/ Temos</span></legend>
       <div class="chip-row">
         {topics.map((item) => (
           <button type="button" class="chip" data-filter-button data-filter-group="topic" data-filter-value={item} aria-pressed="false">
@@ -63,7 +65,9 @@ const topics = uniqueListValues(entries, "topics");
 
     <div class="filter-results-bar">
       <p data-filter-status role="status" aria-live="polite">Showing {entries.length} of {entries.length} {itemLabel}</p>
-      <button type="button" class="text-button" data-filter-clear hidden>Clear filters</button>
+      <button type="button" class="text-button" data-filter-clear hidden>
+        Clear filters <span class="lt-text" lang="lt">/ Išvalyti filtrus</span>
+      </button>
     </div>
   </div>
 
@@ -73,5 +77,6 @@ const topics = uniqueListValues(entries, "topics");
 
   <p class="empty-state" data-filter-empty role="status" hidden>
     No items match these filters. Try clearing one or more choices.
+    <span class="lt-text" lang="lt">Nėra šiuos filtrus atitinkančių įrašų. Išvalykite vieną ar kelis pasirinkimus.</span>
   </p>
 </section>

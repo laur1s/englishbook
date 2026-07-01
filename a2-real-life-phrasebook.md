@@ -5,6 +5,7 @@ slug: "a2-real-life-phrasebook"
 collection: "resources"
 order: 5
 contentType: "reference"
+resourceGroup: "real-life"
 level: "A2"
 grammarFocus:
   - "Functional A2 communication"

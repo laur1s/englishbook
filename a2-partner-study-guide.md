@@ -5,6 +5,7 @@ slug: "a2-partner-study-guide"
 collection: "resources"
 order: 14
 contentType: "reference"
+resourceGroup: "active-practice"
 level: "A2"
 grammarFocus:
   - "Collaborative A2 speaking and correction"

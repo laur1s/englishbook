@@ -297,6 +297,7 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
 <script>
   import {
     LEARNING_PROGRESS_KEY,
+    getActiveRepairSessionId,
     getNextLearningSessionId,
     isLearningSessionUnlocked,
     migrateLegacyLearningProgress,
@@ -313,6 +314,7 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     type SkillInsight,
   } from "../lib/learning-insights";
   import {
+    DAILY_RECALL_REVISION,
     DAILY_RECALL_SESSION_ID,
     buildDailyRecallPlan,
   } from "../lib/daily-recall";
@@ -473,8 +475,10 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         const record = progress.sessions[session.id];
         return record?.revision === session.revision && Boolean(record.practiceRun);
       };
-      const activeDailyRun = progress.sessions[DAILY_RECALL_SESSION_ID]?.practiceRun?.scope === "daily"
-        ? progress.sessions[DAILY_RECALL_SESSION_ID].practiceRun
+      const dailyRecord = progress.sessions[DAILY_RECALL_SESSION_ID];
+      const activeDailyRun = dailyRecord?.revision === DAILY_RECALL_REVISION &&
+        dailyRecord.practiceRun?.scope === "daily"
+        ? dailyRecord.practiceRun
         : undefined;
       const isUnlocked = (session: Pick<DashboardSession, "id">) =>
         isLearningSessionUnlocked(data.sessions, progress, session.id);
@@ -581,12 +585,13 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
           candidate && (purpose === "daily" || isUnlocked(candidate))
         );
       };
-      const activeRepairEntry = Object.entries(progress.sessions)
-        .find(([sessionId, record]) =>
-          sessionId !== DAILY_RECALL_SESSION_ID && record.practiceRun?.phase === "repair"
-        );
-      const activeRepairSession = activeRepairEntry
-        ? sessionById.get(activeRepairEntry[0])?.session
+      const activeRepairSessionId = getActiveRepairSessionId(
+        data.sessions,
+        progress,
+        [DAILY_RECALL_SESSION_ID],
+      );
+      const activeRepairSession = activeRepairSessionId
+        ? sessionById.get(activeRepairSessionId)?.session
         : undefined;
       const firstMistake = mistakes.groups[0];
       const firstSkill = skillQueue[0];
@@ -724,7 +729,11 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       const skillList = root.querySelector<HTMLElement>("[data-skill-list]");
       const reviewEmpty = root.querySelector<HTMLElement>("[data-review-empty]");
       if (skillList) skillList.replaceChildren();
-      if (reviewEmpty) reviewEmpty.hidden = skillQueue.length > 0;
+      if (reviewEmpty) {
+        reviewEmpty.hidden = Boolean(
+          skillQueue.length || activeDailyRun || dailyRecallPlan.emptyReason === null,
+        );
+      }
 
       const makeSkillRow = (skill: SkillInsight) => {
         const item = document.createElement("li");

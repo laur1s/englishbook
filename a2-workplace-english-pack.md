@@ -5,6 +5,7 @@ slug: "a2-workplace-english-pack"
 collection: "resources"
 order: 8
 contentType: "reference"
+resourceGroup: "real-life"
 level: "A2"
 grammarFocus:
   - "Practical A2 workplace communication"

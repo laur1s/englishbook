@@ -5,6 +5,7 @@ slug: "a2-can-do-portfolio"
 collection: "resources"
 order: 15
 contentType: "reference"
+resourceGroup: "start-plan"
 level: "A2"
 grammarFocus:
   - "A2 communicative evidence and reflection"

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CollectionFilters from "../../components/CollectionFilters.astro";
+import ResourceChooser from "../../components/ResourceChooser.astro";
 import { getResourceEntries } from "../../lib/content";
 
 const entries = await getResourceEntries();
@@ -16,5 +17,7 @@ const entries = await getResourceEntries();
     description="Use the grammar guide, vocabulary lists, 44-set practice workbook, and Lithuanian error clinic to understand mistakes, repair them, and use the corrected English in real life."
     entries={entries}
     itemLabel="resources"
-  />
+  >
+    <ResourceChooser slot="before-filters" entries={entries} />
+  </CollectionFilters>
 </BaseLayout>

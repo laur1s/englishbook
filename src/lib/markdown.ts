@@ -1,6 +1,6 @@
 import { marked } from "marked";
 
-import { REVEAL_SECTION_PATTERN } from "./constants.ts";
+import { REVEAL_SECTION_PATTERN, withBase } from "./constants.ts";
 
 export type ParsedSection = {
   id: string;
@@ -20,6 +20,15 @@ const LITHUANIAN_HINTS =
   /\b(skyrius|pratimas|mokymosi|pagrindinis|gramatika|veiksmažodis|naudingi|kultūrinės|papildomos|atsakymų|žodyno|skaitymo|kalbėjimo|vertimas|patarimai|būtasis|esamasis|ateities|ligoninė|maistas|kelionės|kartojimas|įvadas|lyginamieji|pradžia|tėvo|širdis|tikrovė|svajonės|mokytojas|gydytojas|draugas|ačiū|viso|laba|labas|malonu|susipažinti|vakar|rytoj)\b/i;
 
 const markdownRenderer = new marked.Renderer();
+const renderLink = markdownRenderer.link.bind(markdownRenderer);
+
+markdownRenderer.link = (token) =>
+  renderLink({
+    ...token,
+    href: token.href.startsWith("/") && !token.href.startsWith("//")
+      ? withBase(token.href)
+      : token.href,
+  });
 
 marked.setOptions({
   gfm: true,

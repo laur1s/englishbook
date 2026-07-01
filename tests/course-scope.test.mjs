@@ -46,7 +46,7 @@ test("Unit 12 is an interim A2.2 checkpoint and cannot claim completion when ope
 
   assert.equal(module12.title, "A2.2 checkpoint");
   assert.equal(learnSession.title, "Consolidate Units 1–12");
-  assert.equal(learnSession.revision, 2);
+  assert.equal(learnSession.revision, 3);
   assert.equal(reviewSession.title, "Complete the A2.2 checkpoint");
   assert.equal(manifest.modules[manifest.modules.indexOf(module12) + 1].id, "module-13");
 
@@ -77,4 +77,32 @@ test("Unit 12 correction key preserves the intended negative meaning", () => {
   assert.match(unit12Key, /She doesn't like coffee\./);
   assert.doesNotMatch(unit12Key, /She likes coffee\./);
   assert.match(unit12Key, /1\. have lived, has lived/);
+});
+
+test("resource discovery and guidance stay learner-facing and self-registering", () => {
+  const contentConfig = read("src/content.config.ts");
+  const resourcesIndex = read("src/pages/resources/index.astro");
+  const a2Index = read("src/pages/a2/index.astro");
+  const chooser = read("src/components/ResourceChooser.astro");
+  const filters = read("src/components/CollectionFilters.astro");
+
+  assert.match(contentConfig, /pattern: "\{grammar-reference\.md,vocabulary-lists\.md,a2-\*\.md\}"/);
+  assert.match(resourcesIndex, /ResourceChooser/);
+  assert.doesNotMatch(a2Index, /resourceGroups|ResourceChooser/);
+  assert.match(chooser, /entry\.data\.resourceGroup/);
+  assert.match(chooser, /Pradėkite nuo plano/);
+  assert.match(filters, /Lygis/);
+  assert.match(filters, /Gramatika/);
+  assert.match(filters, /Temos/);
+});
+
+test("resource repair keys stay unambiguous and inside the A2 progression", () => {
+  const travel = read("a2-travel-english-pack.md");
+  const services = read("a2-services-english-pack.md");
+
+  assert.match(travel, /Which dessert must a person avoiding nuts not order\?/);
+  assert.match(travel, /Apple cake, because the menu says that it contains nuts\./);
+  assert.doesNotMatch(travel, /Which dish should a person avoiding nuts ask more about\?/);
+  assert.match(services, /The music \*\*started an hour ago and is still playing\*\*/);
+  assert.doesNotMatch(services, /Music \*\*has been playing for\*\*/);
 });

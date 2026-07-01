@@ -1,0 +1,115 @@
+---
+import type { ResourceEntry } from "../lib/content";
+import { getEntryHref } from "../lib/content";
+
+type Props = {
+  entries: ResourceEntry[];
+};
+
+const { entries } = Astro.props;
+const groups = [
+  {
+    id: "start-plan",
+    title: "Start with a plan",
+    ltTitle: "Pradėkite nuo plano",
+    description: "Choose a realistic pace and keep visible evidence of progress.",
+    ltDescription: "Pasirinkite realų tempą ir kaupkite aiškius pažangos įrodymus.",
+  },
+  {
+    id: "understand-repair",
+    title: "Understand and repair",
+    ltTitle: "Supraskite ir taisykite",
+    description: "Find the rule, practise it, and repair recurring Lithuanian transfer errors.",
+    ltDescription: "Raskite taisyklę, ją pritaikykite ir taisykite pasikartojančias lietuvių kalbos įtakos klaidas.",
+  },
+  {
+    id: "real-life",
+    title: "Use English in real life",
+    ltTitle: "Vartokite anglų kalbą gyvenime",
+    description: "Rehearse practical language for work, travel, services, and everyday problems.",
+    ltDescription: "Repetuokite darbo, kelionių, paslaugų ir kasdienių problemų kalbą.",
+  },
+  {
+    id: "active-practice",
+    title: "Listen, speak, and play",
+    ltTitle: "Klausykite, kalbėkite ir žaiskite",
+    description: "Turn passive knowledge into dictation, conversation, partner work, and retrieval games.",
+    ltDescription: "Paverskite pasyvias žinias diktantu, pokalbiais, darbu dviese ir kartojimo žaidimais.",
+  },
+] as const;
+---
+
+<section class="resource-chooser" aria-labelledby="resource-chooser-title">
+  <header class="resource-chooser-heading">
+    <p class="eyebrow">Practice chooser · Praktikos pasirinkimas</p>
+    <h2 id="resource-chooser-title">What do you need today?</h2>
+    <p>Choose by learning need instead of searching through one long list.</p>
+    <p class="lt-text" lang="lt">Pasirinkite pagal šiandienos mokymosi poreikį, o ne ieškokite ilgame sąraše.</p>
+  </header>
+
+  <div class="feature-grid">
+    {groups.map((group) => {
+      const groupEntries = entries.filter((entry) => entry.data.resourceGroup === group.id);
+
+      return (
+        <article class="feature-card">
+          <h3>{group.title}</h3>
+          <p class="lt-text" lang="lt">{group.ltTitle}</p>
+          <p>{group.description}</p>
+          <p class="lt-text" lang="lt">{group.ltDescription}</p>
+          <ul>
+            {groupEntries.map((entry) => (
+              <li>
+                <a class="inline-link" href={getEntryHref(entry)}>
+                  {entry.data.title}
+                  <span class="lt-text" lang="lt">{entry.data.ltTitle}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </article>
+      );
+    })}
+  </div>
+</section>
+
+<style>
+  .resource-chooser {
+    max-width: 76rem;
+    margin: 0 auto 2rem;
+  }
+
+  .resource-chooser-heading {
+    max-width: 48rem;
+    margin-bottom: 1rem;
+  }
+
+  .resource-chooser-heading h2 {
+    margin: 0.2rem 0 0.5rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+  }
+
+  .resource-chooser-heading p:not(.eyebrow) {
+    margin: 0.25rem 0;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .feature-card h3 {
+    margin: 0.2rem 0;
+    font-size: 1.45rem;
+  }
+
+  .feature-card ul {
+    display: grid;
+    gap: 0.65rem;
+    margin: 1rem 0 0;
+    padding-left: 1.1rem;
+  }
+
+  .feature-card a span {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.86rem;
+  }
+</style>

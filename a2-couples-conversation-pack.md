@@ -5,6 +5,7 @@ slug: "a2-couples-conversation-pack"
 collection: "resources"
 order: 7
 contentType: "reference"
+resourceGroup: "active-practice"
 level: "A2"
 grammarFocus:
   - "Supported A2 conversation practice"

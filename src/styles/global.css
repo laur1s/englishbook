@@ -210,6 +210,32 @@ html[data-lt="hidden"] .lt-text {
   margin-top: 0.32rem;
 }
 
+.translation-term,
+.translation-guide-sample {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.18em;
+}
+
+.translation-term {
+  border-radius: 0.18em;
+  cursor: help;
+  transition:
+    background-color 140ms ease,
+    color 140ms ease;
+}
+
+.translation-term:hover,
+.translation-term:focus-visible {
+  background: var(--accent-soft);
+}
+
+.translation-term:active {
+  background: rgba(178, 75, 49, 0.18);
+}
+
 .translation-popover {
   position: fixed;
   z-index: 30;
@@ -1492,6 +1518,25 @@ html[data-lt="hidden"] .lt-text {
   min-width: 0;
 }
 
+.translation-guide {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(178, 75, 49, 0.2);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.48);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.translation-guide p {
+  margin: 0;
+}
+
+.translation-guide-sample {
+  font-weight: 700;
+}
+
 .study-coach {
   display: grid;
   gap: 1rem;
@@ -1863,6 +1908,17 @@ html[data-lt="hidden"] .lt-text {
   .study-step,
   .study-step:has(input:checked) {
     border: 1px solid CanvasText;
+  }
+
+  .translation-term,
+  .translation-guide-sample {
+    text-decoration-color: LinkText;
+  }
+
+  .translation-term:hover,
+  .translation-term:focus-visible {
+    background: Highlight;
+    color: HighlightText;
   }
 }
 

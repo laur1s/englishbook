@@ -5,6 +5,7 @@ slug: "a2-practice-workbook"
 collection: "resources"
 order: 3
 contentType: "reference"
+resourceGroup: "understand-repair"
 level: "A2"
 grammarFocus:
   - "Mixed A2 grammar and communication"

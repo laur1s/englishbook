@@ -774,6 +774,21 @@ export const isLearningSessionUnlocked = (
   );
 };
 
+export const getActiveRepairSessionId = (
+  orderedSessions: SessionRef[],
+  progress: LearningProgress,
+  excludedSessionIds: readonly string[] = [],
+) => {
+  const excluded = new Set(excludedSessionIds);
+
+  return orderedSessions.find((session) => {
+    if (excluded.has(session.id)) return false;
+    const record = progress.sessions[session.id];
+    return record?.revision === session.revision &&
+      record.practiceRun?.phase === "repair";
+  })?.id ?? null;
+};
+
 export const getNextLearningSessionId = (
   orderedSessions: SessionRef[],
   progress: LearningProgress,

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { parseDocument, renderMarkdown } from "../src/lib/markdown.ts";
+import { withBasePath } from "../src/lib/constants.ts";
 
 test("adjacent English and Lithuanian headings form one populated section", () => {
   const parsed = parseDocument({
@@ -61,4 +62,16 @@ test("Markdown tables receive a focusable scrolling region", () => {
     /<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table>/,
   );
   assert.match(html, /<\/table><\/div>/);
+});
+
+test("root-relative content links can be scoped to a deployed base path", () => {
+  assert.equal(
+    withBasePath("/resources/a2-practice-workbook", "/englishbook/"),
+    "/englishbook/resources/a2-practice-workbook",
+  );
+  assert.equal(withBasePath("https://example.com/resource", "/englishbook/"), "https://example.com/resource");
+  assert.match(
+    renderMarkdown("[Practice](/resources/a2-practice-workbook)"),
+    /href="\/resources\/a2-practice-workbook"/,
+  );
 });

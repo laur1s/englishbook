@@ -5,6 +5,7 @@ slug: "a2-listening-dictation-pack"
 collection: "resources"
 order: 6
 contentType: "reference"
+resourceGroup: "active-practice"
 level: "A2"
 grammarFocus:
   - "A2 listening, dictation, and pronunciation"

@@ -5,6 +5,7 @@ slug: "a2-services-english-pack"
 collection: "resources"
 order: 10
 contentType: "reference"
+resourceGroup: "real-life"
 level: "A2"
 grammarFocus:
   - "A2 service encounters and problem-solving"
@@ -255,7 +256,7 @@ status: "published"
 **Repair:** 1. *Music plays since one hour.* 2. *Now is after midnight.* 3. *Can change me room?*
 
 **Your task:** pasirinkite viešbutį arba daugiabutį; pateikite tik faktus ir pagrįstą prašymą.  
-**Checklist:** vieta; *for + duration*; poveikis; ramus tonas; sprendimas.
+**Checklist:** vieta; trukmė arba pradžios laikas; poveikis; ramus tonas; sprendimas.
 
 ---
 
@@ -321,7 +322,7 @@ status: "published"
 1. There is **a mistake on the** bill. 2. We ordered one pasta dish, but the bill **includes** two. 3. Could you check it, please?
 
 ## Service 13
-1. Music **has been playing for** one hour. 2. It is now after midnight. 3. Could you move **me to another room**?
+1. The music **started an hour ago and is still playing**. 2. It is now after midnight. 3. Could you move **me to another room**?
 
 Atvirų užduočių atsakymai skirsis. Tikrinkite, ar prašymas konkretus, tonas ramus, o sprendimas atitinka problemą. Po kiekvieno taisymo sukurkite naują sakinį su savo tikra data, laiku, preke ar paslauga.
 

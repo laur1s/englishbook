@@ -16,26 +16,12 @@
 - [ ] 86. Build a bilingual set of A2 picture-free description challenges for speaking practice.
 - [ ] 87. Build an A2 mini-assessment bank with four parallel versions for repeat practice.
 - [ ] 88. Build an A2 functional phrase review deck with spaced-repetition prompts.
-- [ ] 91. Build a resumable cross-unit daily recall session from due skills and unresolved mistakes without advancing the linear path.
-- [ ] 92. Add a bilingual “how to choose your next exercise” decision card to the learning dashboard.
-
-## Deferred QA
-
-- [ ] 56. Run build/check QA after tasks 41-45 and log any follow-up work.
-- [ ] 57. Run build/check QA after tasks 46-50 and log any follow-up work.
-- [ ] 58. Audit the Chapter 10 grammar labels after the final key alignment.
-- [ ] 59. Audit the Chapter 6 answer labels after the final lesson restoration.
-- [ ] 60. Audit the Chapter 7 answer labels after the final lesson restoration.
-- [ ] 61. Audit the Chapter 8 answer labels after the final lesson restoration.
-- [ ] 62. Run build/check QA after tasks 51-55 and log any follow-up work.
-- [ ] 63. Run build/check QA after tasks 56-60 and log any follow-up work.
-- [ ] 64. Audit the Chapter 3 answer bundle after the final answer-key alignment.
-- [ ] 65. Run build/check QA after tasks 61-65 and log any follow-up work.
-- [ ] 66. Audit the Chapter 5 answer labels after the final answer-key alignment.
+- [ ] 92. Add a bilingual “why this answer” micro-lesson and focused source link after every repaired practice mistake.
+- [ ] 93. Add a bilingual “how to choose your next exercise” decision card to the learning dashboard.
 
 ## Done
 
-- [x] 1. Rewrite the home page hierarchy so Grey's Book is the clear flagship.
+- [x] 1. Rewrite the home page hierarchy so Grey's Book is the clear flagship. Superseded by the current learning-path homepage.
 - [x] 2. Convert `TODO.md` into the `Now / Next / Done / Rules` execution ledger.
 - [x] 3. Audit every Grey's Book chapter page for structural defects and navigation gaps.
 - [x] 4. Audit Grey's Book answer snippets against visible chapter exercises.
@@ -44,7 +30,7 @@
 - [x] 7. Define the canonical chapter structure for Grey's Book pages.
 - [x] 8. Replace weak landing-page CTA copy with learner-task copy.
 - [x] 9. Add a short learner-facing product promise for Lithuanian readers.
-- [x] 10. Add a "resume reading" entry point on the home page.
+- [x] 10. Add a "resume reading" entry point on the home page. Superseded by unified learning-path resume.
 - [x] 11. Normalize Chapter 1 structure and remove duplicate sections.
 - [x] 12. Normalize Chapter 2 structure and heading order.
 - [x] 13. Normalize Chapter 3 structure and heading order.
@@ -90,6 +76,17 @@
 - [x] 53. Audit the Chapter 8 answer bundle after the final lesson restoration.
 - [x] 54. Audit the Chapter 4 answer bundle after the final answer-key alignment.
 - [x] 55. Audit the Chapter 5 answer bundle after the final answer-key alignment.
+- [x] 56. Run build/check QA covering tasks 41–45; recovered by the full gate run on 2026-07-01.
+- [x] 57. Run build/check QA covering tasks 46–50; recovered by the full gate run on 2026-07-01.
+- [x] 58. Audit the Chapter 10 grammar labels after the final key alignment.
+- [x] 59. Audit the Chapter 6 answer labels after the final lesson restoration.
+- [x] 60. Audit the Chapter 7 answer labels after the final lesson restoration.
+- [x] 61. Audit the Chapter 8 answer labels after the final lesson restoration.
+- [x] 62. Run build/check QA covering tasks 51–55; recovered by the full gate run on 2026-07-01.
+- [x] 63. Run build/check QA covering tasks 56–60; recovered by the full gate run on 2026-07-01.
+- [x] 64. Audit the Chapter 3 answer bundle after the final answer-key alignment.
+- [x] 65. Run build/check QA covering tasks 61–64; recovered by the full gate run on 2026-07-01.
+- [x] 66. Audit the Chapter 5 answer labels after the final answer-key alignment.
 - [x] 67. Build a bilingual A2 real-life phrasebook with 20 situations, model dialogues, repair drills, and answers.
 - [x] 68. Build a 24-day read-cover-recall listening and dictation pack with Lithuanian support.
 - [x] 69. Build a home-and-family conversation pack for couples learning together.
@@ -103,12 +100,18 @@
 - [x] 77. Build an A2 can-do portfolio with evidence prompts and repeatable progress checks.
 - [x] 89. Build a Lithuanian resource chooser so the expanded practice library is easy to navigate.
 - [x] 90. Add a compact “recommended next resource” route at the end of every new practice pack.
+- [x] 91. Build a resumable cross-unit daily recall session from due skills and unresolved mistakes without advancing the linear path.
+
+## Latest QA
+
+- 2026-07-01: `pnpm qa` passed with 134 tests, 24 audited units, 12 audited Grey's Book chapters, 15 auto-discovered resources, 24 speaking missions, a current 399-item practice catalog, zero Astro diagnostics, and a 203-page build.
+- 2026-07-01: a production-base build verified that internal Markdown links stay under `/englishbook`.
 
 ## Rules
 
 - Keep exactly one active task in `Now`.
 - Keep 8 to 12 visible tasks in `Next`.
-- After each completed task, move it to `Done`, cross it out, and append exactly one new numbered task.
+- After each completed task, move it to `Done`, mark it `[x]`, and append exactly one new numbered task.
 - Commit and push to `main` after every completed task.
 - If a task grows too large, split it into smaller numbered tasks before implementation.
 - After every 5 completed tasks, run build/check/QA and turn findings into new tasks.

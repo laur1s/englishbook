@@ -95,8 +95,8 @@ const resumeContext =
         <strong data-translation-word></strong>
         <ul data-translation-list></ul>
         <p class="translation-hint">
-          Select another word to translate it.
-          <span class="lt-text" lang="lt">Pažymėkite kitą žodį vertimui.</span>
+          Click or tap another underlined word, or select up to four words.
+          <span class="lt-text" lang="lt">Spustelėkite arba bakstelėkite kitą pabrauktą žodį arba pažymėkite iki keturių žodžių.</span>
         </p>
       </div>
     )}
@@ -124,16 +124,9 @@ const resumeContext =
           localStorage.setItem(key, value);
         } catch {}
       };
-      const translationDictionary = JSON.parse(
-        document.getElementById("translation-dictionary-data")?.textContent || "{}",
-      );
       const resumeContext = JSON.parse(
         document.getElementById("resume-context-data")?.textContent || "null",
       );
-      const translationPopover = document.querySelector("[data-translation-popover]");
-      const translationClose = document.querySelector("[data-translation-close]");
-      const translationWord = document.querySelector("[data-translation-word]");
-      const translationList = document.querySelector("[data-translation-list]");
       const setState = (isVisible) => {
         root.dataset.lt = isVisible ? "shown" : "hidden";
         setStoredValue(storageKey, String(isVisible));
@@ -302,188 +295,289 @@ const resumeContext =
         applyFilters();
       });
 
-      const MAX_SELECTION_WORDS = 4;
-      let selectionTimer = null;
-      let suppressSelectionClickUntil = 0;
+    </script>
 
-      const normalizeWord = (value) =>
-        value
-          .toLowerCase()
-          .normalize("NFKD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .replace(/(^[^a-z]+|[^a-z]+$)/g, "");
+    <script>
+      import {
+        findTranslationMatches,
+        lookupTranslation,
+        MAX_LOOKUP_WORDS,
+        type TranslationDictionary,
+      } from "../lib/translation-lookup";
 
-      const wordCandidates = (value) => {
-        const normalized = normalizeWord(value);
-        const variants = [normalized];
+      const dictionaryElement = document.getElementById("translation-dictionary-data");
+      const translationPopover = document.querySelector<HTMLElement>("[data-translation-popover]");
+      const translationClose = document.querySelector<HTMLButtonElement>("[data-translation-close]");
+      const translationWord = document.querySelector<HTMLElement>("[data-translation-word]");
+      const translationList = document.querySelector<HTMLUListElement>("[data-translation-list]");
 
-        if (normalized.endsWith("ies") && normalized.length > 4) {
-          variants.push(`${normalized.slice(0, -3)}y`);
-        }
+      if (dictionaryElement && translationPopover && translationWord && translationList) {
+        const translationDictionary = JSON.parse(
+          dictionaryElement.textContent || "{}",
+        ) as TranslationDictionary;
+        const excludedTranslationSelector = [
+          "a",
+          "button",
+          "summary",
+          "input",
+          "textarea",
+          "select",
+          "code",
+          "pre",
+          ".lt-text",
+          "[lang='lt']",
+          ".translation-popover",
+        ].join(", ");
+        const excludedDecorationSelector = `${excludedTranslationSelector}, [data-translation-term]`;
+        let selectionTimer: number | undefined;
+        let suppressSelectionClickUntil = 0;
 
-        if (normalized.endsWith("es") && normalized.length > 4) {
-          variants.push(normalized.slice(0, -2));
-        }
-
-        if (normalized.endsWith("s") && normalized.length > 3) {
-          variants.push(normalized.slice(0, -1));
-        }
-
-        return [...new Set(variants.filter(Boolean))];
-      };
-
-      const isEligibleTarget = (target) => {
-        if (!target || !(target instanceof Node)) {
-          return false;
-        }
-
-        const element =
-          target instanceof Element ? target : target.parentElement;
-
-        if (!element) {
-          return false;
-        }
-
-        return !element.closest(
-          "a, button, summary, input, textarea, select, code, pre, .lt-text, .translation-popover",
-        );
-      };
-
-      const closeTranslationPopover = () => {
-        translationPopover?.setAttribute("hidden", "");
-      };
-
-      const showTranslationPopover = ({ word, translations, x, y }) => {
-        if (!translationPopover || !translationWord || !translationList) {
-          return;
-        }
-
-        translationWord.textContent = word;
-        translationList.innerHTML = "";
-
-        translations.slice(0, 6).forEach((translation) => {
-          const item = document.createElement("li");
-          item.textContent = translation;
-          translationList.appendChild(item);
-        });
-
-        translationPopover.removeAttribute("hidden");
-
-        const rect = translationPopover.getBoundingClientRect();
-        const left = Math.min(
-          Math.max(12, x - rect.width / 2),
-          window.innerWidth - rect.width - 12,
-        );
-        const top = Math.min(
-          Math.max(12, y + 18),
-          window.innerHeight - rect.height - 12,
-        );
-
-        translationPopover.style.left = `${left}px`;
-        translationPopover.style.top = `${top}px`;
-      };
-
-      const lookupTranslation = (terms) => {
-        for (const term of terms) {
-          for (const candidate of wordCandidates(term)) {
-            const translations = translationDictionary[candidate];
-
-            if (translations?.length) {
-              return {
-                matchedTerm: term,
-                translations,
-              };
-            }
+        const isEligibleTarget = (
+          target: EventTarget | Node | null,
+          excludedSelector = excludedTranslationSelector,
+        ) => {
+          if (!target || !(target instanceof Node)) {
+            return false;
           }
-        }
 
-        return null;
-      };
-
-      const getSelectionTarget = () => {
-        const selection = document.getSelection();
-
-        if (!selection || selection.isCollapsed || !selection.rangeCount) {
-          return;
-        }
-
-        if (!isEligibleTarget(selection.anchorNode) || !isEligibleTarget(selection.focusNode)) {
-          return null;
-        }
-
-        const range = selection.getRangeAt(0).cloneRange();
-        const selectedText = selection.toString().replace(/\s+/g, " ").trim();
-        const words = selectedText.split(" ").filter(Boolean);
-
-        if (!selectedText || !words.length || words.length > MAX_SELECTION_WORDS) {
-          return null;
-        }
-
-        const rect = range.getBoundingClientRect();
-
-        if (!rect.width && !rect.height) {
-          return null;
-        }
-
-        return {
-          displayWord: selectedText,
-          terms: [selectedText],
-          x: rect.left + rect.width / 2,
-          y: rect.bottom,
+          const element = target instanceof Element ? target : target.parentElement;
+          return Boolean(element && !element.closest(excludedSelector));
         };
-      };
 
-      const syncSelectionTranslation = () => {
-        const selectionTarget = getSelectionTarget();
+        const closeTranslationPopover = () => {
+          translationPopover.setAttribute("hidden", "");
+        };
 
-        if (!selectionTarget) {
-          closeTranslationPopover();
-          return;
-        }
+        const showTranslationPopover = ({
+          word,
+          translations,
+          x,
+          topY,
+          bottomY,
+        }: {
+          word: string;
+          translations: string[];
+          x: number;
+          topY: number;
+          bottomY: number;
+        }) => {
+          translationWord.textContent = word;
+          translationList.replaceChildren(
+            ...translations.slice(0, 6).map((translation) => {
+              const item = document.createElement("li");
+              item.textContent = translation;
+              return item;
+            }),
+          );
+          translationPopover.removeAttribute("hidden");
 
-        const translationResult = lookupTranslation(selectionTarget.terms);
+          const rect = translationPopover.getBoundingClientRect();
+          const viewportInset = 12;
+          const anchorGap = 18;
+          const left = Math.min(
+            Math.max(viewportInset, x - rect.width / 2),
+            window.innerWidth - rect.width - viewportInset,
+          );
+          const below = bottomY + anchorGap;
+          const above = topY - rect.height - anchorGap;
+          const top = below + rect.height <= window.innerHeight - viewportInset
+            ? below
+            : Math.max(
+                viewportInset,
+                Math.min(above, window.innerHeight - rect.height - viewportInset),
+              );
 
-        if (!translationResult) {
-          closeTranslationPopover();
-          return;
-        }
+          translationPopover.style.left = `${left}px`;
+          translationPopover.style.top = `${top}px`;
+        };
 
-        suppressSelectionClickUntil = Date.now() + 250;
-        showTranslationPopover({
-          word: translationResult.matchedTerm || selectionTarget.displayWord,
-          translations: translationResult.translations,
-          x: selectionTarget.x,
-          y: selectionTarget.y,
+        const activateTranslationTerm = (marker: HTMLElement) => {
+          const dictionaryKey = marker.dataset.translationTerm;
+
+          if (!dictionaryKey) {
+            return;
+          }
+
+          const translations = translationDictionary[dictionaryKey];
+
+          if (!translations?.length) {
+            return;
+          }
+
+          const rect = marker.getBoundingClientRect();
+          showTranslationPopover({
+            word: marker.textContent?.trim() || dictionaryKey,
+            translations,
+            x: rect.left + rect.width / 2,
+            topY: rect.top,
+            bottomY: rect.bottom,
+          });
+        };
+
+        const decorateTranslationTerms = () => {
+          document.querySelectorAll<HTMLElement>(".reader-content .prose").forEach((root) => {
+            const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+              acceptNode(node) {
+                if (!node.textContent?.trim() || !isEligibleTarget(node, excludedDecorationSelector)) {
+                  return NodeFilter.FILTER_REJECT;
+                }
+
+                return NodeFilter.FILTER_ACCEPT;
+              },
+            });
+            const textNodes: Text[] = [];
+
+            while (walker.nextNode()) {
+              textNodes.push(walker.currentNode as Text);
+            }
+
+            textNodes.forEach((textNode) => {
+              const text = textNode.textContent || "";
+              const matches = findTranslationMatches(text, translationDictionary);
+
+              if (!matches.length || !textNode.parentNode) {
+                return;
+              }
+
+              const fragment = document.createDocumentFragment();
+              let cursor = 0;
+
+              matches.forEach((match) => {
+                fragment.append(text.slice(cursor, match.start));
+
+                const visibleTerm = text.slice(match.start, match.end);
+                const marker = document.createElement("span");
+                marker.className = "translation-term";
+                marker.dataset.translationTerm = match.key;
+                marker.setAttribute("role", "button");
+                marker.setAttribute("tabindex", "0");
+                marker.setAttribute(
+                  "aria-label",
+                  `${visibleTerm}. Show Lithuanian translation`,
+                );
+                marker.title = "Show Lithuanian translation";
+                marker.textContent = visibleTerm;
+                fragment.append(marker);
+                cursor = match.end;
+              });
+
+              fragment.append(text.slice(cursor));
+              textNode.parentNode.replaceChild(fragment, textNode);
+            });
+          });
+        };
+
+        const getSelectionTarget = () => {
+          const selection = document.getSelection();
+
+          if (!selection || selection.isCollapsed || !selection.rangeCount) {
+            return null;
+          }
+
+          if (!isEligibleTarget(selection.anchorNode) || !isEligibleTarget(selection.focusNode)) {
+            return null;
+          }
+
+          const range = selection.getRangeAt(0).cloneRange();
+          const selectedText = selection.toString().replace(/\s+/g, " ").trim();
+          const words = selectedText.split(" ").filter(Boolean);
+
+          if (!selectedText || !words.length || words.length > MAX_LOOKUP_WORDS) {
+            return null;
+          }
+
+          const rect = range.getBoundingClientRect();
+
+          if (!rect.width && !rect.height) {
+            return null;
+          }
+
+          return {
+            displayWord: selectedText,
+            terms: [selectedText],
+            x: rect.left + rect.width / 2,
+            topY: rect.top,
+            bottomY: rect.bottom,
+          };
+        };
+
+        const syncSelectionTranslation = () => {
+          const selectionTarget = getSelectionTarget();
+
+          if (!selectionTarget) {
+            closeTranslationPopover();
+            return;
+          }
+
+          const translationResult = lookupTranslation(
+            selectionTarget.terms,
+            translationDictionary,
+          );
+
+          if (!translationResult) {
+            closeTranslationPopover();
+            return;
+          }
+
+          suppressSelectionClickUntil = Date.now() + 250;
+          showTranslationPopover({
+            word: translationResult.matchedTerm || selectionTarget.displayWord,
+            translations: translationResult.translations,
+            x: selectionTarget.x,
+            topY: selectionTarget.topY,
+            bottomY: selectionTarget.bottomY,
+          });
+        };
+
+        decorateTranslationTerms();
+
+        document.addEventListener("selectionchange", () => {
+          window.clearTimeout(selectionTimer);
+          selectionTimer = window.setTimeout(syncSelectionTranslation, 50);
         });
-      };
 
-      document.addEventListener("selectionchange", () => {
-        window.clearTimeout(selectionTimer);
-        selectionTimer = window.setTimeout(syncSelectionTranslation, 50);
-      });
+        window.addEventListener("scroll", closeTranslationPopover, { passive: true });
+        translationClose?.addEventListener("click", closeTranslationPopover);
 
-      window.addEventListener("scroll", closeTranslationPopover, { passive: true });
-      translationClose?.addEventListener("click", closeTranslationPopover);
+        document.addEventListener("keydown", (event) => {
+          const marker = event.target instanceof Element
+            ? event.target.closest<HTMLElement>("[data-translation-term]")
+            : null;
 
-      document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          closeTranslationPopover();
-        }
-      });
+          if (marker && (event.key === "Enter" || event.key === " ")) {
+            event.preventDefault();
+            activateTranslationTerm(marker);
+            return;
+          }
 
-      document.addEventListener("click", (event) => {
-        if (Date.now() < suppressSelectionClickUntil && isEligibleTarget(event.target)) {
-          suppressSelectionClickUntil = 0;
-          event.preventDefault();
-          event.stopPropagation();
-          return;
-        }
+          if (event.key === "Escape") {
+            closeTranslationPopover();
+          }
+        });
 
-        if (!translationPopover?.contains(event.target)) {
-          closeTranslationPopover();
-        }
-      });
+        document.addEventListener("click", (event) => {
+          if (Date.now() < suppressSelectionClickUntil && isEligibleTarget(event.target)) {
+            suppressSelectionClickUntil = 0;
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+          }
 
+          const marker = event.target instanceof Element
+            ? event.target.closest<HTMLElement>("[data-translation-term]")
+            : null;
+
+          if (marker) {
+            event.preventDefault();
+            activateTranslationTerm(marker);
+            return;
+          }
+
+          if (!translationPopover.contains(event.target as Node)) {
+            closeTranslationPopover();
+          }
+        });
+      }
     </script>
 
     <script>
