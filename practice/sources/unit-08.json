@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-08",
-  "contentVersion": 1,
+  "contentVersion": 2,
   "title": "Unit 8: Comparatives and Superlatives",
   "objectives": [
     { "id": "u08.comparatives", "label": { "en": "Form and use comparatives", "lt": "Sudaryti ir vartoti lyginamąjį laipsnį" } },
@@ -81,11 +81,11 @@
     },
     {
       "id": "u08.superlatives.006",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u08.superlatives",
       "type": "fill-blank",
       "difficulty": 2,
-      "prompt": { "en": "This is the ___ place I have ever seen. (beautiful)", "lt": "Tai gražiausia vieta, kurią esu matęs." },
+      "prompt": { "en": "This is the ___ place I have ever seen. (beautiful)", "lt": "Tai gražiausia vieta, kurią esu matęs / mačiusi." },
       "answer": { "accepted": ["most beautiful"], "caseSensitive": false },
       "rationale": { "en": "Use most with the long adjective beautiful; the is already in the sentence.", "lt": "Su ilgu būdvardžiu beautiful vartojame most; the sakinyje jau yra." },
       "sourceRefs": [{ "lesson": "unit-08", "exercise": 4 }]
@@ -143,6 +143,87 @@
       "answer": { "accepted": ["easiest"], "caseSensitive": false },
       "rationale": { "en": "Change the final y in easy to i and add -est: easiest.", "lt": "Žodžio easy galinę y keičiame į i ir pridedame -est: easiest." },
       "sourceRefs": [{ "lesson": "unit-08", "exercise": 4 }]
+    },
+    {
+      "id": "u08.comparatives.011",
+      "revision": 1,
+      "objectiveId": "u08.comparatives",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "Summer is ___ than winter. (hot)", "lt": "Vasara karštesnė už žiemą." },
+      "choices": [
+        { "id": "hotter", "text": "hotter" },
+        { "id": "more-hot", "text": "more hot" },
+        { "id": "hottest", "text": "hottest" }
+      ],
+      "answer": { "choiceId": "hotter" },
+      "rationale": { "en": "Double the final consonant in hot and add -er: hotter.", "lt": "Žodyje „hot“ padvigubiname galinį priebalsį ir pridedame „-er“: „hotter“." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 3 }]
+    },
+    {
+      "id": "u08.superlatives.012",
+      "revision": 1,
+      "objectiveId": "u08.superlatives",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "tall → the ___", "lt": "Sudarykite būdvardžio „tall“ aukščiausiojo laipsnio formą: the ___." },
+      "answer": { "accepted": ["tallest"], "caseSensitive": false },
+      "rationale": { "en": "Add -est to the short adjective tall: the tallest.", "lt": "Prie trumpo būdvardžio „tall“ pridedame „-est“: „the tallest“." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 2 }]
+    },
+    {
+      "id": "u08.superlatives.013",
+      "revision": 1,
+      "objectiveId": "u08.superlatives",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Correct “This is the most good book.”", "lt": "Pasirinkite taisyklingą sakinio „This is the most good book“ variantą." },
+      "choices": [
+        { "id": "best", "text": "This is the best book." },
+        { "id": "better", "text": "This is the better book of all." },
+        { "id": "goodest", "text": "This is the goodest book." }
+      ],
+      "answer": { "choiceId": "best" },
+      "rationale": { "en": "Good has the irregular superlative form the best.", "lt": "Būdvardžio „good“ nereguliari aukščiausiojo laipsnio forma yra „the best“." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 9 }]
+    },
+    {
+      "id": "u08.equality.014",
+      "revision": 1,
+      "objectiveId": "u08.equality",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "I enjoyed the last book more. This book is ___ the last one. (interesting)", "lt": "Ankstesnė knyga man patiko labiau. Ši knyga nėra tokia įdomi kaip ankstesnė." },
+      "answer": { "accepted": ["not as interesting as"], "caseSensitive": false },
+      "rationale": { "en": "Use not as + base adjective + as when the first thing has less of the quality.", "lt": "Kai pirmas dalykas turi mažiau savybės, vartojame „not as“ + pagrindinę būdvardžio formą + „as“." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 5 }]
+    },
+    {
+      "id": "u08.equality.015",
+      "revision": 1,
+      "objectiveId": "u08.equality",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "My brother and I are both 180 cm tall. My brother is ___ me.", "lt": "Mano brolis ir aš esame po 180 cm ūgio. Mano brolis yra tokio pat ūgio kaip aš." },
+      "choices": [
+        { "id": "as-tall-as", "text": "as tall as" },
+        { "id": "taller-as", "text": "taller as" },
+        { "id": "as-taller-as", "text": "as taller as" }
+      ],
+      "answer": { "choiceId": "as-tall-as" },
+      "rationale": { "en": "Equal height uses as + base adjective + as: as tall as.", "lt": "Vienodam ūgiui nusakyti vartojame „as“ + pagrindinę formą + „as“: „as tall as“." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 5 }]
+    },
+    {
+      "id": "u08.equality.016",
+      "revision": 1,
+      "objectiveId": "u08.equality",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Complete the translation: English is ___ Chinese. (not / difficult)", "lt": "Užbaikite vertimą: „Anglų kalba nėra tokia sunki kaip kinų kalba.“" },
+      "answer": { "accepted": ["not as difficult as"], "caseSensitive": false },
+      "rationale": { "en": "The negative equality structure is not as + base adjective + as.", "lt": "Neigiama lygybės struktūra yra „not as“ + pagrindinė būdvardžio forma + „as“." },
+      "sourceRefs": [{ "lesson": "unit-08", "exercise": 8 }]
     }
   ]
 }

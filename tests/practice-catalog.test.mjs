@@ -16,9 +16,29 @@ test("compiled catalog covers all twelve units with usable banks", () => {
 
   practiceCatalog.units.forEach((unit, index) => {
     assert.equal(unit.unitId, `unit-${String(index + 1).padStart(2, "0")}`);
-    assert.ok(unit.items.length >= 10, `${unit.unitId} needs at least ten items`);
-    assert.ok(unit.items.some((item) => item.type === "single-choice"));
-    assert.ok(unit.items.some((item) => item.type === "fill-blank"));
+    assert.ok(unit.items.length >= 16, `${unit.unitId} needs at least sixteen items`);
+    assert.ok(
+      unit.items.filter((item) => item.type === "single-choice").length >= 6,
+      `${unit.unitId} needs a balanced choice bank`,
+    );
+    assert.ok(
+      unit.items.filter((item) => item.type === "fill-blank").length >= 6,
+      `${unit.unitId} needs a balanced fill-blank bank`,
+    );
+
+    for (const difficulty of [1, 2, 3]) {
+      assert.ok(
+        unit.items.filter((item) => item.difficulty === difficulty).length >= 4,
+        `${unit.unitId} needs at least four difficulty-${difficulty} items`,
+      );
+    }
+
+    unit.objectives.forEach((objective) => {
+      assert.ok(
+        unit.items.filter((item) => item.objectiveId === objective.id).length >= 3,
+        `${unit.unitId} objective ${objective.id} is under-represented`,
+      );
+    });
 
     unit.items.forEach((item) => {
       assert.equal(allItemIds.has(item.id), false, `duplicate ${item.id}`);
@@ -26,6 +46,8 @@ test("compiled catalog covers all twelve units with usable banks", () => {
       assert.ok(item.rationale.en.trim());
       assert.ok(item.rationale.lt.trim());
       assert.ok(item.sourceRefs.length > 0);
+      assert.doesNotMatch(item.prompt.en, /according to|exercise \d+ text/i);
+      assert.doesNotMatch(item.prompt.lt, /pagal \d+|pratimo tekst/i);
     });
   });
 });
@@ -61,6 +83,27 @@ test("every unit can supply ten-item standard and checkpoint sessions", () => {
       assert.equal(pack.items.length, 10);
       assert.equal(new Set(pack.items.map((item) => item.id)).size, 10);
     }
+  }
+});
+
+test("new attempts rotate real item content rather than only its order", () => {
+  for (const unit of practiceCatalog.units) {
+    const attempts = [1, 2, 3].map((attempt) =>
+      generatePracticePack({
+        unitId: unit.unitId,
+        mode: "standard",
+        count: 10,
+        attempt,
+      }),
+    );
+    const representedItems = new Set(
+      attempts.flatMap((pack) => pack.items.map((item) => item.id)),
+    );
+
+    assert.ok(
+      representedItems.size > 10,
+      `${unit.unitId} attempts only reshuffle the same ten items`,
+    );
   }
 });
 
@@ -110,6 +153,7 @@ for (const [label, unitIds, count] of [
     });
 
     const perUnit = [...counts.values()];
+    assert.ok(perUnit.every((represented) => represented > 0));
     assert.ok(Math.max(...perUnit) - Math.min(...perUnit) <= 1);
   });
 }
@@ -161,7 +205,7 @@ test("source-dependent reviewed items include their context in the prompt", () =
   selfContainedIds.forEach((id) => {
     const item = itemMap.get(id);
     assert.ok(item, `missing reviewed item ${id}`);
-    assert.equal(item.revision, 2);
+    assert.ok(item.revision >= 2);
     assert.doesNotMatch(item.prompt.en, /according to|exercise \d/i);
     assert.doesNotMatch(item.prompt.lt, /pagal \d|pratimo tekst/i);
   });
@@ -189,5 +233,5 @@ test("the UI-facing scorer returns rationale and expected answers", () => {
 test("the committed catalog is byte-for-byte current", () => {
   const result = checkPracticeCatalog();
   assert.equal(result.catalog.units.length, 12);
-  assert.ok(result.itemCount >= 96);
+  assert.ok(result.itemCount >= 192);
 });

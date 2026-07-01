@@ -38,7 +38,18 @@ const serializeForScript = (value: unknown) => JSON.stringify(value).replace(/</
 const runnerData = serializeForScript({
   revision: coursePath.version,
   module: { id: module.id, order: module.order, title: module.title },
-  moduleSessions: module.sessions.map((item) => ({ id: item.id, stage: item.stage })),
+  moduleSessions: module.sessions.map((item) => ({
+    id: item.id,
+    stage: item.stage,
+    required: item.required,
+  })),
+  pathSessions: coursePath.modules.flatMap((courseModule) =>
+    courseModule.sessions.map((item) => ({
+      id: item.id,
+      revision: coursePath.version,
+      required: item.required,
+    })),
+  ),
   session: {
     id: session.id,
     kind: session.kind,
@@ -107,6 +118,10 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         </div>
       </div>
 
+      <p class="pack-update-notice" data-pack-update-notice role="status" hidden>
+        This practice content changed, so the saved set restarted with the newest questions.
+      </p>
+
       <p class="question-objective" data-question-objective>Get ready to answer</p>
       <h2 id="practice-question" data-question-prompt tabindex="-1">Loading your first question…</h2>
       <p lang="lt" data-question-lt hidden></p>
@@ -144,9 +159,12 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     <p data-complete-copy>Your next focused step is ready.</p>
     <div class="complete-actions">
       <a class="learning-primary-button" href={nextHref} data-continue-link>
-        {nextSessionId ? "Continue to next step" : "Return to your path"}
+        <span data-continue-label>{nextSessionId ? "Continue to next step" : "Return to your path"}</span>
         <Fragment set:html={chevronIcon} />
       </a>
+      {session.kind === "content" && contentHref && (
+        <a class="learning-outline-button" href={contentHref}>Open source again</a>
+      )}
       {session.kind === "practice" && (
         <>
           <button class="learning-outline-button" type="button" data-retry-pack>Retry this set</button>
@@ -161,7 +179,9 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
 <script>
   import {
+    beginPracticeRun,
     completeLearningSession,
+    isLearningSessionUnlocked,
     nextPracticeAttempt,
     readLearningProgress,
     saveLearningResponse,
@@ -194,7 +214,12 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
   type RunnerData = {
     revision: number;
     module: { id: string; order: number; title: string };
-    moduleSessions: Array<{ id: string; stage: RunnerSession["stage"] }>;
+    moduleSessions: Array<{
+      id: string;
+      stage: RunnerSession["stage"];
+      required: boolean;
+    }>;
+    pathSessions: Array<{ id: string; revision: number; required: boolean }>;
     session: RunnerSession;
     nextSessionId: string | null;
     nextHref: string;
@@ -230,9 +255,30 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     const completeButton = asElement<HTMLButtonElement>(root, "[data-complete-content]");
     const scoreElement = asElement<HTMLElement>(root, "[data-session-score]");
     const continueLink = asElement<HTMLAnchorElement>(root, "[data-continue-link]");
+    const continueLabel = asElement<HTMLElement>(root, "[data-continue-label]");
     const savedNotes = [...root.querySelectorAll("[data-saved-note]")];
     const isFreshRequest = new URL(window.location.href).searchParams.get("fresh") === "1";
     let progress = readLearningProgress(window.localStorage);
+    const sessionIsUnlocked = isLearningSessionUnlocked(
+      data.pathSessions,
+      progress,
+      session.id,
+    );
+
+    if (!sessionIsUnlocked) {
+      window.location.replace(data.dashboardHref);
+      return;
+    }
+
+    const sessionRecordOnEntry = progress.sessions[session.id];
+    const sessionWasCompletedOnEntry = sessionRecordOnEntry?.status === "completed" &&
+      sessionRecordOnEntry.revision === data.revision;
+    const activeRecordOnEntry = progress.activeSessionId
+      ? progress.sessions[progress.activeSessionId]
+      : undefined;
+    const canAdvancePath = !progress.activeSessionId ||
+      progress.activeSessionId === session.id ||
+      activeRecordOnEntry?.status === "completed";
 
     const persist = () => {
       const saved = writeLearningProgress(window.localStorage, progress);
@@ -247,7 +293,9 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     const syncCycle = () => {
       root.querySelectorAll("[data-cycle-session]").forEach((step) => {
         const stepId = (step as HTMLElement).dataset.cycleSession || "";
-        const completed = progress.sessions[stepId]?.status === "completed";
+        const stepProgress = progress.sessions[stepId];
+        const completed = stepProgress?.status === "completed" &&
+          stepProgress.revision === data.revision;
         const current = !completed && stepId === session.id;
         const status = step.querySelector("[data-cycle-status]");
         step.classList.toggle("completed", completed);
@@ -279,9 +327,16 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       const currentModuleIndex = data.moduleSessions.findIndex((item) => item.id === session.id);
       const nextIncompleteInModule = data.moduleSessions
         .slice(currentModuleIndex + 1)
-        .find((item) => progress.sessions[item.id]?.status !== "completed");
-      if (continueLink && nextIncompleteInModule) {
+        .find((item) => item.required && (
+          progress.sessions[item.id]?.status !== "completed" ||
+          progress.sessions[item.id]?.revision !== data.revision
+        ));
+      if (continueLink && (!canAdvancePath || sessionWasCompletedOnEntry)) {
+        continueLink.href = data.dashboardHref;
+        if (continueLabel) continueLabel.textContent = "Return to your path";
+      } else if (continueLink && nextIncompleteInModule) {
         continueLink.href = `${data.dashboardHref.replace(/\/$/, "")}/${nextIncompleteInModule.id}`;
+        if (continueLabel) continueLabel.textContent = "Continue to next step";
       }
       syncCycle();
     };
@@ -301,8 +356,9 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
           session.id,
           {
             revision: data?.revision,
-            skillRefs: session.skillRefs,
-            nextSessionId: data?.nextSessionId,
+            ...(!sessionWasCompletedOnEntry && canAdvancePath
+              ? { nextSessionId: data?.nextSessionId }
+              : {}),
           },
         );
         persist();
@@ -327,6 +383,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     const checkButtonLabel = checkButton?.querySelector("span");
     const retryButton = asElement<HTMLButtonElement>(root, "[data-retry-pack]");
     const newPackButton = asElement<HTMLButtonElement>(root, "[data-new-pack]");
+    const packUpdateNotice = asElement<HTMLElement>(root, "[data-pack-update-notice]");
     const supportedMode: PracticeMode = session.mode;
     const requestedUnitIds = session.unitIds?.length
       ? session.unitIds
@@ -336,53 +393,102 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       0,
     );
     const requestedCount = Math.min(session.count ?? availableCount, availableCount);
-    let pack: PracticePack;
+    let pack!: PracticePack;
+    let packRecentItemIds: string[] = [];
+    let packWasUpdated = false;
     let currentIndex = 0;
     let selectedResponse = "";
     let checked = false;
     let runResponses: Record<string, string> = {};
 
-    const createPack = () => {
-      const attempt = (progress.practiceAttempts[session.id] ?? 0) + 1;
-      return generatePracticePack({
+    const createPack = (attempt: number, recentItemIds: readonly string[]) =>
+      generatePracticePack({
         ...(session.unitIds?.length
           ? { unitIds: session.unitIds }
           : { unitId: session.unitId as string }),
         mode: supportedMode,
         count: requestedCount,
         attempt,
-        recentItemIds: progress.recentItemIds,
+        recentItemIds,
       });
+
+    const resetToPack = (targetPack: PracticePack, recentItemIds: readonly string[]) => {
+      packRecentItemIds = [...recentItemIds];
+      progress = beginPracticeRun(
+        progress,
+        session.id,
+        {
+          attempt: targetPack.attempt,
+          recentItemIds: packRecentItemIds,
+          packId: targetPack.id,
+          itemRefs: targetPack.items.map((item) => ({
+            id: item.id,
+            revision: item.revision,
+          })),
+        },
+        data?.revision ?? 1,
+      );
+      persist();
     };
 
-    const resetPracticeProgress = () => {
-      const previous = progress.sessions[session.id];
-      const now = new Date().toISOString();
-      progress = {
-        ...progress,
-        activeSessionId: session.id,
-        sessions: {
-          ...progress.sessions,
-          [session.id]: {
-            revision: data?.revision ?? 1,
-            status: "started",
-            responses: {},
-            attempts: previous?.attempts ?? 0,
-            startedAt: now,
-            updatedAt: now,
-          },
-        },
-      };
+    const beginPack = (attempt: number, recentItemIds: readonly string[]) => {
+      pack = createPack(attempt, recentItemIds);
+      resetToPack(pack, recentItemIds);
+      return pack;
     };
 
     if (isFreshRequest) {
       progress = nextPracticeAttempt(progress, session.id);
-      resetPracticeProgress();
-      persist();
-      window.history.replaceState({}, "", window.location.pathname);
+      const cleanUrl = new URL(window.location.href);
+      cleanUrl.searchParams.delete("fresh");
+      window.history.replaceState({}, "", `${cleanUrl.pathname}${cleanUrl.search}${cleanUrl.hash}`);
     }
 
-    pack = createPack();
+    const savedRun = !isFreshRequest
+      ? progress.sessions[session.id]?.practiceRun
+      : undefined;
+    const hasSavedCompletion = !isFreshRequest &&
+      !savedRun &&
+      progress.sessions[session.id]?.status === "completed" &&
+      progress.sessions[session.id]?.revision === data.revision;
+    if (hasSavedCompletion) {
+      const attempt = (progress.practiceAttempts[session.id] ?? 0) + 1;
+      packRecentItemIds = [...progress.recentItemIds];
+      pack = createPack(attempt, packRecentItemIds);
+    } else if (savedRun) {
+      packRecentItemIds = [...savedRun.recentItemIds];
+      pack = createPack(savedRun.attempt, packRecentItemIds);
+      if (pack.id !== savedRun.packId) {
+        const itemsById = new Map(
+          requestedUnitIds
+            .flatMap((unitId) => getPracticeItems(unitId))
+            .map((item) => [item.id, item] as const),
+        );
+        const restoredItems = savedRun.itemRefs.flatMap((itemRef) => {
+          const item = itemsById.get(itemRef.id);
+          return item?.revision === itemRef.revision ? [item] : [];
+        });
+
+        if (
+          savedRun.itemRefs.length === requestedCount &&
+          restoredItems.length === requestedCount
+        ) {
+          pack = {
+            ...pack,
+            id: savedRun.packId,
+            attempt: savedRun.attempt,
+            items: restoredItems,
+          };
+        } else {
+          packWasUpdated = true;
+          beginPack(savedRun.attempt, packRecentItemIds);
+        }
+      }
+    } else {
+      const attempt = (progress.practiceAttempts[session.id] ?? 0) + 1;
+      beginPack(attempt, progress.recentItemIds);
+    }
+    if (packUpdateNotice) packUpdateNotice.hidden = !packWasUpdated;
 
     const objectiveLabel = (item: PracticeItem) =>
       practiceCatalog.units
@@ -392,15 +498,16 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
     const currentItem = () => pack.items[currentIndex];
 
-    const setChoiceState = (button: HTMLButtonElement, item: PracticeItem, resultCorrect?: boolean) => {
-      const choiceId = button.dataset.choiceId || "";
+    const setChoiceState = (input: HTMLInputElement, item: PracticeItem, resultCorrect?: boolean) => {
+      const choiceId = input.dataset.choiceId || "";
       const isSelected = choiceId === selectedResponse;
       const isCorrectChoice = item.type === "single-choice" && choiceId === item.answer.choiceId;
-      button.classList.toggle("selected", isSelected && !checked);
-      button.classList.toggle("correct", checked && isCorrectChoice);
-      button.classList.toggle("incorrect", checked && isSelected && resultCorrect === false);
-      button.setAttribute("aria-checked", String(isSelected));
-      button.disabled = checked;
+      const choice = input.closest(".answer-choice");
+      choice?.classList.toggle("selected", isSelected && !checked);
+      choice?.classList.toggle("correct", checked && isCorrectChoice);
+      choice?.classList.toggle("incorrect", checked && isSelected && resultCorrect === false);
+      input.checked = isSelected;
+      input.disabled = checked;
     };
 
     const renderAnswers = (item: PracticeItem) => {
@@ -408,37 +515,37 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       answerContainer.replaceChildren();
 
       if (item.type === "single-choice") {
-        answerContainer.setAttribute("role", "radiogroup");
-        answerContainer.setAttribute("aria-label", "Answer choices");
+        answerContainer.classList.add("answer-choice-list");
 
         item.choices.forEach((choice) => {
-          const button = document.createElement("button");
+          const choiceLabel = document.createElement("label");
+          const input = document.createElement("input");
           const marker = document.createElement("span");
-          const label = document.createElement("span");
-          button.type = "button";
-          button.className = "answer-choice";
-          button.dataset.choiceId = choice.id;
-          button.setAttribute("role", "radio");
-          button.setAttribute("aria-checked", "false");
+          const choiceText = document.createElement("span");
+          choiceLabel.className = "answer-choice";
+          input.className = "answer-choice-input";
+          input.type = "radio";
+          input.name = `answer-${session.id}-${item.id}`;
+          input.value = choice.id;
+          input.dataset.choiceId = choice.id;
           marker.className = "answer-choice-marker";
           marker.setAttribute("aria-hidden", "true");
-          label.textContent = choice.text;
-          button.append(marker, label);
-          button.addEventListener("click", () => {
+          choiceText.textContent = choice.text;
+          choiceLabel.append(input, marker, choiceText);
+          input.addEventListener("change", () => {
             if (checked) return;
             selectedResponse = choice.id;
-            answerContainer.querySelectorAll<HTMLButtonElement>("[data-choice-id]").forEach((candidate) => {
+            answerContainer.querySelectorAll<HTMLInputElement>("[data-choice-id]").forEach((candidate) => {
               setChoiceState(candidate, item);
             });
             if (checkButton) checkButton.disabled = false;
           });
-          answerContainer.appendChild(button);
+          answerContainer.appendChild(choiceLabel);
         });
         return;
       }
 
-      answerContainer.removeAttribute("role");
-      answerContainer.removeAttribute("aria-label");
+      answerContainer.classList.remove("answer-choice-list");
       const label = document.createElement("label");
       const input = document.createElement("input");
       label.className = "question-objective";
@@ -489,17 +596,27 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
     const scoreRun = () => {
       let score = 0;
+      const skillResults: Record<string, { score: number; total: number }> = {};
       pack.items.forEach((item) => {
         const response = runResponses[item.id];
-        if (response && response !== SKIPPED_RESPONSE && scorePracticeItem(item, response).correct) {
+        const correct = Boolean(
+          response &&
+          response !== SKIPPED_RESPONSE &&
+          scorePracticeItem(item, response).correct,
+        );
+        const result = skillResults[item.objectiveId] ?? { score: 0, total: 0 };
+        result.total += 1;
+        if (correct) {
           score += 1;
+          result.score += 1;
         }
+        skillResults[item.objectiveId] = result;
       });
-      return score;
+      return { score, skillResults };
     };
 
     const finishPack = () => {
-      const score = scoreRun();
+      const { score, skillResults } = scoreRun();
       progress = completeLearningSession(
         progress,
         session.id,
@@ -507,9 +624,12 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
           revision: data?.revision,
           score,
           total: pack.items.length,
-          skillRefs: [...new Set(pack.items.map((item) => item.objectiveId))],
+          skillRefs: Object.keys(skillResults),
+          skillResults,
           itemIds: pack.items.map((item) => item.id),
-          nextSessionId: data?.nextSessionId,
+          ...(!sessionWasCompletedOnEntry && canAdvancePath
+            ? { nextSessionId: data?.nextSessionId }
+            : {}),
         },
       );
       persist();
@@ -551,8 +671,8 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       setText(root, "[data-feedback-copy]", result.rationale.en);
       if (feedbackLt) feedbackLt.textContent = result.rationale.lt;
       if (item.type === "single-choice" && answerContainer) {
-        answerContainer.querySelectorAll<HTMLButtonElement>("[data-choice-id]").forEach((button) => {
-          setChoiceState(button, item, result.correct);
+        answerContainer.querySelectorAll<HTMLInputElement>("[data-choice-id]").forEach((input) => {
+          setChoiceState(input, item, result.correct);
         });
       } else {
         const input = answerContainer?.querySelector("input");
@@ -583,8 +703,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     });
 
     retryButton?.addEventListener("click", () => {
-      resetPracticeProgress();
-      persist();
+      resetToPack(pack, packRecentItemIds);
       runResponses = {};
       currentIndex = 0;
       if (completeView) completeView.hidden = true;
@@ -594,9 +713,8 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
     newPackButton?.addEventListener("click", () => {
       progress = nextPracticeAttempt(progress, session.id);
-      resetPracticeProgress();
-      persist();
-      pack = createPack();
+      const attempt = (progress.practiceAttempts[session.id] ?? 0) + 1;
+      beginPack(attempt, progress.recentItemIds);
       runResponses = {};
       currentIndex = 0;
       if (completeView) completeView.hidden = true;
@@ -604,7 +722,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       renderItem();
     });
 
-    if (progress.sessions[session.id]?.status === "completed" && !isFreshRequest) {
+    if (hasSavedCompletion) {
       showCompletion(
         progress.sessions[session.id].score,
         progress.sessions[session.id].total,
@@ -617,8 +735,12 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
           .map((item) => [item.id, savedResponses[item.id]]),
       );
       const firstUnansweredIndex = pack.items.findIndex((item) => !(item.id in runResponses));
-      currentIndex = firstUnansweredIndex >= 0 ? firstUnansweredIndex : 0;
-      renderItem();
+      if (firstUnansweredIndex < 0 && pack.items.length > 0) {
+        finishPack();
+      } else {
+        currentIndex = Math.max(0, firstUnansweredIndex);
+        renderItem();
+      }
     }
   });
 </script>

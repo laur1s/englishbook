@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-03",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Past Simple and Personal History",
   "objectives": [
     {
@@ -204,13 +204,13 @@
     },
     {
       "id": "u03.life-story.009",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u03.life-story",
       "type": "single-choice",
       "difficulty": 3,
       "prompt": {
-        "en": "Laura got a new job in Klaipėda, so she and Jurgis moved there. Why did they move?",
-        "lt": "Laura gavo naują darbą Klaipėdoje, todėl ji ir Jurgis ten persikėlė. Kodėl jie persikėlė?"
+        "en": "Laura found work in Klaipėda while the couple lived in another city. They wanted to live near her new workplace, so they packed their home. Why did they move?",
+        "lt": "Laura rado darbą Klaipėdoje, o pora tuo metu gyveno kitame mieste. Jie norėjo gyventi netoli jos naujos darbovietės, todėl susikrovė daiktus. Kodėl jie persikėlė?"
       },
       "choices": [
         {"id": "a", "text": "Because Jurgis started university there."},
@@ -219,8 +219,8 @@
       ],
       "answer": {"choiceId": "b"},
       "rationale": {
-        "en": "They moved because Laura got a new job in Klaipėda.",
-        "lt": "Jie persikėlė, nes Laura gavo naują darbą Klaipėdoje."
+        "en": "Laura's new job was in Klaipėda, so living there put them near her workplace.",
+        "lt": "Naujas Lauros darbas buvo Klaipėdoje, todėl persikėlę jie gyveno netoli jos darbovietės."
       },
       "sourceRefs": [{"lesson": "unit-03", "exercise": 6}]
     },
@@ -243,6 +243,132 @@
       "rationale": {
         "en": "After didn't, the verb must be in the base form come.",
         "lt": "Po „didn't“ veiksmažodis turi būti bendraties forma „come“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 10}]
+    },
+    {
+      "id": "u03.past-questions.011",
+      "revision": 1,
+      "objectiveId": "u03.past-questions",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Turn “She finished her homework” into a Past Simple question.",
+        "lt": "Paverskite sakinį „She finished her homework“ Past Simple klausimu."
+      },
+      "choices": [
+        {"id": "a", "text": "Did she finish her homework?"},
+        {"id": "b", "text": "Did she finished her homework?"},
+        {"id": "c", "text": "Was she finish her homework?"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Use did before the subject and the base form finish.",
+        "lt": "Prieš veiksnį vartokite „did“, o po jo – bendratį „finish“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 4}]
+    },
+    {
+      "id": "u03.past-questions.012",
+      "revision": 1,
+      "objectiveId": "u03.past-questions",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the question about arrival time: “What time ___ they arrive?”",
+        "lt": "Užbaikite klausimą apie atvykimo laiką: „What time ___ they arrive?“"
+      },
+      "answer": {
+        "accepted": ["did"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "A Past Simple question with a main verb uses did before the subject.",
+        "lt": "Past Simple klausime su pagrindiniu veiksmažodžiu prieš veiksnį vartojama „did“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 8}]
+    },
+    {
+      "id": "u03.past-negatives.013",
+      "revision": 1,
+      "objectiveId": "u03.past-negatives",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Make “I saw your brother” negative.",
+        "lt": "Paverskite sakinį „I saw your brother“ neigiamuoju."
+      },
+      "choices": [
+        {"id": "a", "text": "I didn't see your brother."},
+        {"id": "b", "text": "I didn't saw your brother."},
+        {"id": "c", "text": "I wasn't see your brother."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "After didn't, saw returns to its base form see.",
+        "lt": "Po „didn't“ forma „saw“ grįžta į bendratį „see“."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 3}]
+    },
+    {
+      "id": "u03.life-story.014",
+      "revision": 1,
+      "objectiveId": "u03.life-story",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Jurgis was born in 1990 and began school seven years later. Complete: “He started school in ___.”",
+        "lt": "Jurgis gimė 1990 m. ir po septynerių metų pradėjo lankyti mokyklą. Užbaikite: „He started school in ___.“"
+      },
+      "answer": {
+        "accepted": ["1997"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Seven years after 1990 is 1997, the year given for the start of school.",
+        "lt": "Praėjus septyneriems metams po 1990 m. buvo 1997 m. – tada jis pradėjo lankyti mokyklą."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 6}]
+    },
+    {
+      "id": "u03.life-story.015",
+      "revision": 1,
+      "objectiveId": "u03.life-story",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Jurgis was born in 1990 and started school in 1997. About how old was he when he started school?",
+        "lt": "Jurgis gimė 1990 m., o mokyklą pradėjo lankyti 1997 m. Maždaug kiek jam tada buvo metų?"
+      },
+      "choices": [
+        {"id": "a", "text": "About seven"},
+        {"id": "b", "text": "About twelve"},
+        {"id": "c", "text": "About eighteen"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "The difference between 1997 and 1990 is seven years.",
+        "lt": "Skirtumas tarp 1997 ir 1990 metų yra septyneri metai."
+      },
+      "sourceRefs": [{"lesson": "unit-03", "exercise": 6}]
+    },
+    {
+      "id": "u03.past-forms.016",
+      "revision": 1,
+      "objectiveId": "u03.past-forms",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Correct the irregular verb in “We buyed a new car”: “We ___ a new car.”",
+        "lt": "Ištaisykite netaisyklingą veiksmažodį sakinyje „We buyed a new car“: „We ___ a new car.“"
+      },
+      "answer": {
+        "accepted": ["bought"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Buy is irregular; its Past Simple form is bought.",
+        "lt": "„Buy“ yra netaisyklingas veiksmažodis; jo Past Simple forma yra „bought“."
       },
       "sourceRefs": [{"lesson": "unit-03", "exercise": 10}]
     }

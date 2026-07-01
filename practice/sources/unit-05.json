@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-05",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Travel and Directions",
   "objectives": [
     {
@@ -204,23 +204,23 @@
     },
     {
       "id": "u05.travel-reading.009",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u05.travel-reading",
       "type": "single-choice",
       "difficulty": 3,
       "prompt": {
-        "en": "The travel text says, “Gediminas Tower is on a hill behind the cathedral.” Where is the tower?",
-        "lt": "Kelionės tekste sakoma: „Gediminas Tower is on a hill behind the cathedral.“ Kur yra bokštas?"
+        "en": "Tom leaves the cathedral and walks uphill. At the place behind the cathedral, he can see Vilnius from above. Where has he arrived?",
+        "lt": "Tomas išeina iš katedros ir kyla į kalvą. Vietoje už katedros jis gali matyti Vilnių iš viršaus. Kur jis atėjo?"
       },
       "choices": [
-        {"id": "a", "text": "On a hill behind the cathedral"},
-        {"id": "b", "text": "Opposite Tom's hotel"},
-        {"id": "c", "text": "Between the café and the museum"}
+        {"id": "a", "text": "Gediminas Tower"},
+        {"id": "b", "text": "The café"},
+        {"id": "c", "text": "Pilies Street"}
       ],
       "answer": {"choiceId": "a"},
       "rationale": {
-        "en": "The text places the tower on a hill behind the cathedral.",
-        "lt": "Tekste nurodyta, kad bokštas yra ant kalvos už katedros."
+        "en": "The uphill viewpoint behind the cathedral is Gediminas Tower.",
+        "lt": "Apžvalgos vieta ant kalvos už katedros yra Gedimino bokštas."
       },
       "sourceRefs": [{"lesson": "unit-05", "exercise": 5}]
     },
@@ -241,6 +241,132 @@
       "rationale": {
         "en": "Pharmacy means vaistinė, and opposite means priešais.",
         "lt": "„Pharmacy“ reiškia „vaistinė“, o „opposite“ – „priešais“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 9}]
+    },
+    {
+      "id": "u05.place-prepositions.011",
+      "revision": 1,
+      "objectiveId": "u05.place-prepositions",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the word meaning už: “The pharmacy is ___ the supermarket.”",
+        "lt": "Pasirinkite žodį, reiškiantį „už“: „The pharmacy is ___ the supermarket.“"
+      },
+      "choices": [
+        {"id": "a", "text": "behind"},
+        {"id": "b", "text": "between"},
+        {"id": "c", "text": "opposite"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Behind means at the back of something, or už.",
+        "lt": "„Behind“ reiškia būti už ko nors."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 1}]
+    },
+    {
+      "id": "u05.there-be.012",
+      "revision": 1,
+      "objectiveId": "u05.there-be",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete the singular question: “___ a hospital in this area?”",
+        "lt": "Užbaikite vienaskaitos klausimą: „___ a hospital in this area?“"
+      },
+      "answer": {
+        "accepted": ["Is there"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "A question about one hospital begins with Is there.",
+        "lt": "Klausimas apie vieną ligoninę pradedamas „Is there“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 2}]
+    },
+    {
+      "id": "u05.directions.013",
+      "revision": 1,
+      "objectiveId": "u05.directions",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct English direction for “Eikite tiesiai ir sukite dešinėn.”",
+        "lt": "Pasirinkite taisyklingą anglišką nurodymą sakiniui „Eikite tiesiai ir sukite dešinėn“."
+      },
+      "choices": [
+        {"id": "a", "text": "Go straight and turn right."},
+        {"id": "b", "text": "Go right and turn straight."},
+        {"id": "c", "text": "Walk behind and turn near."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Go straight means eikite tiesiai, and turn right means sukite dešinėn.",
+        "lt": "„Go straight“ reiškia „eikite tiesiai“, o „turn right“ – „sukite dešinėn“."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 9}]
+    },
+    {
+      "id": "u05.travel-reading.014",
+      "revision": 1,
+      "objectiveId": "u05.travel-reading",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Tom shops on Pilies Street for small things to remember his trip. Complete: “He buys a few ___.”",
+        "lt": "Pilies gatvėje Tomas perka nedidelius daiktus kelionei prisiminti. Užbaikite: „He buys a few ___.“"
+      },
+      "answer": {
+        "accepted": ["souvenirs"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Small items bought to remember a trip are souvenirs.",
+        "lt": "Nedideli daiktai, perkami kelionei prisiminti, yra „souvenirs“ – suvenyrai."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 5}]
+    },
+    {
+      "id": "u05.travel-reading.015",
+      "revision": 1,
+      "objectiveId": "u05.travel-reading",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Tom's hotel is near the Old Town. A local says the cathedral is about ten minutes away on foot, and Tom walks there. What can we conclude?",
+        "lt": "Tomo viešbutis yra netoli senamiesčio. Vietinis žmogus sako, kad iki katedros pėsčiomis apie dešimt minučių, ir Tomas ten nueina. Kokią išvadą galime padaryti?"
+      },
+      "choices": [
+        {"id": "a", "text": "The cathedral is close enough to walk to."},
+        {"id": "b", "text": "Tom needs a plane to reach the cathedral."},
+        {"id": "c", "text": "The cathedral is outside Vilnius."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "A ten-minute walk means the cathedral is nearby and reachable on foot.",
+        "lt": "Dešimties minučių kelias pėsčiomis reiškia, kad katedra yra netoli ir ją galima pasiekti pėsčiomis."
+      },
+      "sourceRefs": [{"lesson": "unit-05", "exercise": 5}]
+    },
+    {
+      "id": "u05.there-be.016",
+      "revision": 1,
+      "objectiveId": "u05.there-be",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Translate into English: “Šioje gatvėje yra daug restoranų.”",
+        "lt": "Išverskite į anglų kalbą: „Šioje gatvėje yra daug restoranų.“"
+      },
+      "answer": {
+        "accepted": ["There are many restaurants on this street", "There are many restaurants on this street."],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Use There are with the plural noun restaurants, followed by on this street.",
+        "lt": "Su daugiskaitos daiktavardžiu „restaurants“ vartokite „There are“, po to – „on this street“."
       },
       "sourceRefs": [{"lesson": "unit-05", "exercise": 9}]
     }

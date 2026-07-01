@@ -53,7 +53,7 @@ const makeSource = () => ({
       label: { en: "Use be forms", lt: "Vartoti be formas" },
     },
   ],
-  items: Array.from({ length: 10 }, (_, index) => makeItem(index)),
+  items: Array.from({ length: 16 }, (_, index) => makeItem(index)),
 });
 
 test("a complete bilingual practice source validates", () => {

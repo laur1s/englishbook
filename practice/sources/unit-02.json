@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-02",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Daily Routines and Present Simple",
   "objectives": [
     {
@@ -204,21 +204,21 @@
     },
     {
       "id": "u02.routine-reading.009",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u02.routine-reading",
       "type": "fill-blank",
       "difficulty": 3,
       "prompt": {
-        "en": "Ona says, “I go to school by bus.” Complete the answer: “How does Ona go to school?” — “___.”",
-        "lt": "Ona sako: „I go to school by bus.“ Užbaikite atsakymą: „How does Ona go to school?“ — „___.“"
+        "en": "On work mornings, Ona gets on a bus after leaving home. She gets off near the school before 8:30. Complete: “She goes to school ___.”",
+        "lt": "Darbo dienų rytais išėjusi iš namų Ona įlipa į autobusą. Prieš 8.30 val. ji išlipa netoli mokyklos. Užbaikite: „She goes to school ___.“"
       },
       "answer": {
         "accepted": ["by bus"],
         "caseSensitive": false
       },
       "rationale": {
-        "en": "The text says that she goes to school by bus.",
-        "lt": "Tekste parašyta, kad ji į mokyklą važiuoja autobusu – „by bus“."
+        "en": "Getting on a bus to reach school means she travels by bus.",
+        "lt": "Jei ji į mokyklą vyksta autobusu, angliškai sakome „by bus“."
       },
       "sourceRefs": [{"lesson": "unit-02", "exercise": 5}]
     },
@@ -243,6 +243,132 @@
         "lt": "„Never“ eina prieš pagrindinį veiksmažodį „arrives“, papildomo neiginio nereikia."
       },
       "sourceRefs": [{"lesson": "unit-02", "exercise": 8}]
+    },
+    {
+      "id": "u02.present-simple.011",
+      "revision": 1,
+      "objectiveId": "u02.present-simple",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete with the Present Simple form of open: “The shop ___ at 9 AM.”",
+        "lt": "Įrašykite veiksmažodžio „open“ esamojo paprastojo laiko formą: „The shop ___ at 9 AM.“"
+      },
+      "answer": {
+        "accepted": ["opens"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The singular subject the shop takes opens.",
+        "lt": "Su vienaskaitos veiksniu „the shop“ vartojama forma „opens“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 1}]
+    },
+    {
+      "id": "u02.questions-negatives.012",
+      "revision": 1,
+      "objectiveId": "u02.questions-negatives",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Turn “Your sister works in a hospital” into a question.",
+        "lt": "Paverskite sakinį „Your sister works in a hospital“ klausimu."
+      },
+      "choices": [
+        {"id": "a", "text": "Does your sister work in a hospital?"},
+        {"id": "b", "text": "Do your sister works in a hospital?"},
+        {"id": "c", "text": "Is your sister work in a hospital?"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Use does with your sister, then the base form work.",
+        "lt": "Su „your sister“ vartokite „does“, o po jo – bendratį „work“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 3}]
+    },
+    {
+      "id": "u02.frequency.013",
+      "revision": 1,
+      "objectiveId": "u02.frequency",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Put usually in the correct place: “He is ___ tired after work.”",
+        "lt": "Įrašykite „usually“ tinkamoje vietoje: „He is ___ tired after work.“"
+      },
+      "answer": {
+        "accepted": ["usually"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "With be, an adverb of frequency normally comes after the verb: is usually tired.",
+        "lt": "Su „be“ dažnumo prieveiksmis paprastai eina po veiksmažodžio: „is usually tired“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 4}]
+    },
+    {
+      "id": "u02.routine-reading.014",
+      "revision": 1,
+      "objectiveId": "u02.routine-reading",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Ona teaches until the afternoon and eats her midday meal before leaving work. Where does she have lunch?",
+        "lt": "Ona moko iki popietės ir pietauja dar prieš išeidama iš darbo. Kur ji valgo pietus?"
+      },
+      "choices": [
+        {"id": "a", "text": "At school"},
+        {"id": "b", "text": "At the gym"},
+        {"id": "c", "text": "On the bus"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "The routine says she has lunch at school during her workday.",
+        "lt": "Rutinos aprašyme nurodyta, kad darbo dieną ji pietauja mokykloje."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 5}]
+    },
+    {
+      "id": "u02.questions-negatives.015",
+      "revision": 1,
+      "objectiveId": "u02.questions-negatives",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Correct the sentence “They doesn't live here”: “They ___ live here.”",
+        "lt": "Ištaisykite sakinį „They doesn't live here“: „They ___ live here.“"
+      },
+      "answer": {
+        "accepted": ["don't", "do not"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The plural subject they uses don't or do not, followed by live.",
+        "lt": "Su daugiskaitos veiksniu „they“ vartojama „don't“ arba „do not“, po to – „live“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 9}]
+    },
+    {
+      "id": "u02.present-simple.016",
+      "revision": 1,
+      "objectiveId": "u02.present-simple",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Choose the correct version of “We watchs TV every day.”",
+        "lt": "Pasirinkite taisyklingą sakinio „We watchs TV every day“ variantą."
+      },
+      "choices": [
+        {"id": "a", "text": "We watch TV every day."},
+        {"id": "b", "text": "We watches TV every day."},
+        {"id": "c", "text": "We watching TV every day."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "With we, use the base form watch without -s.",
+        "lt": "Su „we“ vartojama bendratis „watch“ be galūnės „-s“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 9}]
     }
   ]
 }

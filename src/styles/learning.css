@@ -337,7 +337,7 @@ body:has(.learning-shell) .site-nav a.active {
   font-family: "Avenir Next", "Segoe UI", sans-serif;
 }
 
-.learning-row + .learning-row {
+.learning-list li + li {
   border-top: 1px solid var(--learning-line);
 }
 
@@ -634,6 +634,15 @@ body:has(.learning-shell) .site-nav a.active {
   margin-top: 0.85rem;
 }
 
+.pack-update-notice {
+  margin: -1rem 0 1.5rem;
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--learning-rust);
+  background: rgba(189, 62, 30, 0.06);
+  color: var(--muted);
+  font: 550 0.86rem/1.45 "Avenir Next", "Segoe UI", sans-serif;
+}
+
 .question-objective {
   margin: 0 0 1.4rem;
   color: var(--learning-navy);
@@ -655,6 +664,7 @@ body:has(.learning-shell) .site-nav a.active {
 }
 
 .answer-choice {
+  position: relative;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 0.85rem;
@@ -665,8 +675,27 @@ body:has(.learning-shell) .site-nav a.active {
   border-radius: 0.4rem;
   background: rgba(255, 255, 255, 0.35);
   color: var(--learning-navy);
+  cursor: pointer;
   text-align: left;
   font-size: 1rem;
+}
+
+.answer-choice-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.answer-choice:focus-within {
+  outline: 3px solid rgba(189, 62, 30, 0.24);
+  outline-offset: 2px;
 }
 
 .answer-choice-marker {
@@ -881,6 +910,7 @@ body:has(.learning-shell) .site-nav a.active {
   }
 
   .learning-cycle {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 0.15rem;
   }
 

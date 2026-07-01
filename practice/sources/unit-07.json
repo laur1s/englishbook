@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-07",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Unit 7: Present Perfect Introduction",
   "objectives": [
     { "id": "u07.present-perfect-form", "label": { "en": "Form the Present Perfect", "lt": "Sudaryti Present Perfect" } },
@@ -143,6 +143,87 @@
       "answer": { "accepted": ["bought"], "caseSensitive": false },
       "rationale": { "en": "The irregular past participle of buy is bought.", "lt": "Netaisyklinga veiksmažodžio buy III forma yra bought." },
       "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.present-perfect-form.011",
+      "revision": 1,
+      "objectiveId": "u07.present-perfect-form",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "My sister ___ home. (just / arrive)", "lt": "Mano sesuo ką tik grįžo namo. Pasirinkite tinkamą formą." },
+      "choices": [
+        { "id": "has-just-arrived", "text": "has just arrived" },
+        { "id": "have-just-arrived", "text": "have just arrived" },
+        { "id": "has-just-arrive", "text": "has just arrive" }
+      ],
+      "answer": { "choiceId": "has-just-arrived" },
+      "rationale": { "en": "With my sister, use has + just + the past participle arrived.", "lt": "Su „my sister“ vartojame „has“ + „just“ + III formą „arrived“." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.present-perfect-form.012",
+      "revision": 1,
+      "objectiveId": "u07.present-perfect-form",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Correct the sentence: She has came back from work.", "lt": "Ištaisykite sakinį: „She has came back from work.“" },
+      "answer": { "accepted": ["She has come back from work.", "She has come back from work"], "caseSensitive": false },
+      "rationale": { "en": "The past participle of come is come, not came.", "lt": "Veiksmažodžio „come“ III forma yra „come“, o ne „came“." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 7 }]
+    },
+    {
+      "id": "u07.time-expressions.013",
+      "revision": 1,
+      "objectiveId": "u07.time-expressions",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "___ you finished your work yet?", "lt": "Ar jau baigėte darbą? Pasirinkite trūkstamą žodį." },
+      "choices": [
+        { "id": "have", "text": "Have" },
+        { "id": "did", "text": "Did" },
+        { "id": "are", "text": "Are" }
+      ],
+      "answer": { "choiceId": "have" },
+      "rationale": { "en": "Yet commonly appears in Present Perfect questions, formed with Have + subject + past participle.", "lt": "„Yet“ dažnai vartojamas Present Perfect klausimuose: „Have“ + veiksnys + III forma." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 2 }]
+    },
+    {
+      "id": "u07.time-expressions.014",
+      "revision": 1,
+      "objectiveId": "u07.time-expressions",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "She hasn't finished her homework ___.", "lt": "Ji dar nebaigė namų darbų. Įrašykite trūkstamą laiko žodį." },
+      "answer": { "accepted": ["yet"], "caseSensitive": false },
+      "rationale": { "en": "Yet normally comes at the end of a negative Present Perfect sentence.", "lt": "Neigiamame Present Perfect sakinyje „yet“ paprastai rašomas sakinio gale." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 1 }]
+    },
+    {
+      "id": "u07.tense-choice.015",
+      "revision": 1,
+      "objectiveId": "u07.tense-choice",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "They ___ to Kaunas in 2015.", "lt": "Jie persikėlė į Kauną 2015 metais." },
+      "choices": [
+        { "id": "moved", "text": "moved" },
+        { "id": "have-moved", "text": "have moved" },
+        { "id": "move", "text": "move" }
+      ],
+      "answer": { "choiceId": "moved" },
+      "rationale": { "en": "In 2015 is a finished past time, so use Past Simple: moved.", "lt": "„In 2015“ nurodo pasibaigusį laiką praeityje, todėl vartojame Past Simple formą „moved“." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 2 }]
+    },
+    {
+      "id": "u07.tense-choice.016",
+      "revision": 1,
+      "objectiveId": "u07.tense-choice",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "I ___ to Europe. (never / be)", "lt": "Niekada nesu buvęs / buvusi Europoje. Įrašykite Present Perfect formą." },
+      "answer": { "accepted": ["have never been"], "caseSensitive": false },
+      "rationale": { "en": "Use have + never + been for a life experience that has not happened.", "lt": "Neįvykusiai gyvenimo patirčiai vartojame „have“ + „never“ + „been“." },
+      "sourceRefs": [{ "lesson": "unit-07", "exercise": 4 }]
     }
   ]
 }

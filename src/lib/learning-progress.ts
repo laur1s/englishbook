@@ -3,6 +3,14 @@ export const LEARNING_PROGRESS_VERSION = 1;
 
 export type StorageLike = Pick<Storage, "getItem" | "setItem">;
 
+export type PracticeRunProgress = {
+  attempt: number;
+  recentItemIds: string[];
+  packId: string;
+  itemRefs: Array<{ id: string; revision: number }>;
+  startedAt: string;
+};
+
 export type SessionProgress = {
   revision: number;
   status: "started" | "completed";
@@ -14,6 +22,7 @@ export type SessionProgress = {
   startedAt: string;
   updatedAt: string;
   completedAt?: string;
+  practiceRun?: PracticeRunProgress;
 };
 
 export type SkillProgress = {
@@ -35,7 +44,7 @@ export type LearningProgress = {
   activeDays: string[];
 };
 
-type SessionRef = { id: string };
+export type SessionRef = { id: string; revision?: number; required?: boolean };
 
 export type LegacyProgressMapping = {
   unitSlug: string;
@@ -57,6 +66,115 @@ const addDays = (isoDate: string, days: number) => {
 };
 
 const dayKey = (isoDate: string) => isoDate.slice(0, 10);
+
+const isTimestamp = (value: unknown): value is string =>
+  typeof value === "string" && Number.isFinite(Date.parse(value));
+
+const stringRecord = (value: unknown) => {
+  if (!isRecord(value)) return {};
+  return Object.fromEntries(
+    Object.entries(value).filter((entry): entry is [string, string] => typeof entry[1] === "string"),
+  );
+};
+
+const sanitizePracticeRun = (value: unknown): PracticeRunProgress | undefined => {
+  if (!isRecord(value)) return undefined;
+  if (!Number.isInteger(value.attempt) || Number(value.attempt) <= 0) return undefined;
+  if (typeof value.packId !== "string" || !value.packId) return undefined;
+  if (!isTimestamp(value.startedAt)) return undefined;
+
+  return {
+    attempt: Number(value.attempt),
+    packId: value.packId,
+    startedAt: value.startedAt,
+    itemRefs: Array.isArray(value.itemRefs)
+      ? value.itemRefs.flatMap((item) =>
+          isRecord(item) &&
+          typeof item.id === "string" &&
+          item.id &&
+          Number.isInteger(item.revision) &&
+          Number(item.revision) > 0
+            ? [{ id: item.id, revision: Number(item.revision) }]
+            : [],
+        ).slice(0, 40)
+      : [],
+    recentItemIds: Array.isArray(value.recentItemIds)
+      ? value.recentItemIds.filter((item): item is string => typeof item === "string").slice(-40)
+      : [],
+  };
+};
+
+const sanitizeSessions = (value: unknown): Record<string, SessionProgress> => {
+  if (!isRecord(value)) return {};
+  const sessions: Record<string, SessionProgress> = {};
+
+  for (const [id, raw] of Object.entries(value)) {
+    if (!isRecord(raw)) continue;
+    if (!Number.isInteger(raw.revision) || Number(raw.revision) <= 0) continue;
+    if (raw.status !== "started" && raw.status !== "completed") continue;
+    if (!Number.isInteger(raw.attempts) || Number(raw.attempts) < 0) continue;
+    if (!isTimestamp(raw.startedAt) || !isTimestamp(raw.updatedAt)) continue;
+
+    const score = typeof raw.score === "number" && Number.isFinite(raw.score)
+      ? Math.max(0, raw.score)
+      : undefined;
+    const total = typeof raw.total === "number" && Number.isFinite(raw.total)
+      ? Math.max(0, raw.total)
+      : undefined;
+    const completedAt = isTimestamp(raw.completedAt) ? raw.completedAt : undefined;
+    const practiceRun = sanitizePracticeRun(raw.practiceRun);
+
+    sessions[id] = {
+      revision: Number(raw.revision),
+      status: raw.status,
+      responses: stringRecord(raw.responses),
+      attempts: Number(raw.attempts),
+      startedAt: raw.startedAt,
+      updatedAt: raw.updatedAt,
+      ...(typeof raw.currentItemId === "string" ? { currentItemId: raw.currentItemId } : {}),
+      ...(score !== undefined ? { score } : {}),
+      ...(total !== undefined ? { total } : {}),
+      ...(completedAt ? { completedAt } : {}),
+      ...(practiceRun ? { practiceRun } : {}),
+    };
+  }
+
+  return sessions;
+};
+
+const sanitizeSkills = (value: unknown): Record<string, SkillProgress> => {
+  if (!isRecord(value)) return {};
+  const skills: Record<string, SkillProgress> = {};
+
+  for (const [id, raw] of Object.entries(value)) {
+    if (!isRecord(raw)) continue;
+    if (typeof raw.strength !== "number" || !Number.isFinite(raw.strength)) continue;
+    if (!Number.isInteger(raw.intervalDays) || Number(raw.intervalDays) <= 0) continue;
+    if (!Number.isInteger(raw.lapses) || Number(raw.lapses) < 0) continue;
+    if (!isTimestamp(raw.lastSeenAt) || !isTimestamp(raw.dueAt)) continue;
+    if (typeof raw.sourceSessionId !== "string" || !raw.sourceSessionId) continue;
+
+    skills[id] = {
+      strength: clamp(raw.strength),
+      intervalDays: Number(raw.intervalDays),
+      lastSeenAt: raw.lastSeenAt,
+      dueAt: raw.dueAt,
+      lapses: Number(raw.lapses),
+      sourceSessionId: raw.sourceSessionId,
+    };
+  }
+
+  return skills;
+};
+
+const sanitizeAttemptCounts = (value: unknown) => {
+  if (!isRecord(value)) return {};
+  return Object.fromEntries(
+    Object.entries(value).filter(
+      (entry): entry is [string, number] => Number.isInteger(entry[1]) && Number(entry[1]) >= 0,
+    ),
+  );
+};
 
 export const createLearningProgress = (): LearningProgress => ({
   version: LEARNING_PROGRESS_VERSION,
@@ -80,21 +198,25 @@ export const parseLearningProgress = (value: string | null): LearningProgress =>
       return createLearningProgress();
     }
 
+    const sessions = sanitizeSessions(parsed.sessions);
+    const activeSessionId = typeof parsed.activeSessionId === "string" &&
+      Object.prototype.hasOwnProperty.call(sessions, parsed.activeSessionId)
+      ? parsed.activeSessionId
+      : null;
+
     return {
       version: LEARNING_PROGRESS_VERSION,
-      activeSessionId: typeof parsed.activeSessionId === "string" ? parsed.activeSessionId : null,
-      sessions: isRecord(parsed.sessions)
-        ? (parsed.sessions as LearningProgress["sessions"])
-        : {},
-      skills: isRecord(parsed.skills) ? (parsed.skills as LearningProgress["skills"]) : {},
-      practiceAttempts: isRecord(parsed.practiceAttempts)
-        ? (parsed.practiceAttempts as LearningProgress["practiceAttempts"])
-        : {},
+      activeSessionId,
+      sessions,
+      skills: sanitizeSkills(parsed.skills),
+      practiceAttempts: sanitizeAttemptCounts(parsed.practiceAttempts),
       recentItemIds: Array.isArray(parsed.recentItemIds)
         ? parsed.recentItemIds.filter((item): item is string => typeof item === "string").slice(-40)
         : [],
       activeDays: Array.isArray(parsed.activeDays)
-        ? parsed.activeDays.filter((item): item is string => typeof item === "string").slice(-90)
+        ? parsed.activeDays.filter(
+            (item): item is string => typeof item === "string" && /^\d{4}-\d{2}-\d{2}$/.test(item),
+          ).slice(-90)
         : [],
     };
   } catch {
@@ -195,11 +317,54 @@ export const startLearningSession = (
         updatedAt: now,
       };
 
+  const activeProgress = progress.activeSessionId
+    ? progress.sessions[progress.activeSessionId]
+    : undefined;
+  const shouldBecomeActive =
+    !progress.activeSessionId ||
+    progress.activeSessionId === sessionId ||
+    !activeProgress ||
+    activeProgress.status === "completed";
+
   return withActiveDay({
     ...progress,
-    activeSessionId: sessionId,
+    activeSessionId: shouldBecomeActive ? sessionId : progress.activeSessionId,
     sessions: { ...progress.sessions, [sessionId]: session },
   }, now);
+};
+
+export const beginPracticeRun = (
+  progress: LearningProgress,
+  sessionId: string,
+  run: Omit<PracticeRunProgress, "startedAt" | "itemRefs"> & {
+    itemRefs?: PracticeRunProgress["itemRefs"];
+    startedAt?: string;
+  },
+  revision = 1,
+  now = new Date().toISOString(),
+): LearningProgress => {
+  const started = startLearningSession(progress, sessionId, revision, now);
+  const existing = started.sessions[sessionId];
+
+  return {
+    ...started,
+    sessions: {
+      ...started.sessions,
+      [sessionId]: {
+        ...existing,
+        responses: {},
+        currentItemId: undefined,
+        updatedAt: now,
+        practiceRun: {
+          attempt: run.attempt,
+          recentItemIds: [...run.recentItemIds].slice(-40),
+          packId: run.packId,
+          itemRefs: (run.itemRefs ?? []).map((item) => ({ ...item })).slice(0, 40),
+          startedAt: run.startedAt ?? now,
+        },
+      },
+    },
+  };
 };
 
 export const saveLearningResponse = (
@@ -243,6 +408,7 @@ export const completeLearningSession = (
     skillRefs?: string[];
     itemIds?: string[];
     nextSessionId?: string | null;
+    skillResults?: Record<string, { score: number; total: number }>;
   } = {},
   now = new Date().toISOString(),
 ): LearningProgress => {
@@ -255,20 +421,28 @@ export const completeLearningSession = (
 
   for (const skillId of options.skillRefs ?? []) {
     const previous = skills[skillId];
-    const intervalDays = nextInterval(previous, accuracy);
+    const skillResult = options.skillResults?.[skillId];
+    const skillAccuracy = skillResult && skillResult.total > 0
+      ? clamp(skillResult.score / skillResult.total)
+      : accuracy;
+    const intervalDays = nextInterval(previous, skillAccuracy);
     skills[skillId] = {
-      strength: clamp(previous ? previous.strength * 0.55 + accuracy * 0.45 : accuracy),
+      strength: clamp(
+        previous ? previous.strength * 0.55 + skillAccuracy * 0.45 : skillAccuracy,
+      ),
       intervalDays,
       lastSeenAt: now,
       dueAt: addDays(now, intervalDays),
-      lapses: (previous?.lapses ?? 0) + (accuracy < 0.6 ? 1 : 0),
+      lapses: (previous?.lapses ?? 0) + (skillAccuracy < 0.6 ? 1 : 0),
       sourceSessionId: sessionId,
     };
   }
 
+  const hasNextSession = Object.prototype.hasOwnProperty.call(options, "nextSessionId");
+
   return withActiveDay({
     ...started,
-    activeSessionId: options.nextSessionId ?? null,
+    activeSessionId: hasNextSession ? options.nextSessionId ?? null : started.activeSessionId,
     sessions: {
       ...started.sessions,
       [sessionId]: {
@@ -279,6 +453,8 @@ export const completeLearningSession = (
         total,
         updatedAt: now,
         completedAt: now,
+        currentItemId: undefined,
+        practiceRun: undefined,
       },
     },
     skills,
@@ -293,24 +469,41 @@ export const nextPracticeAttempt = (
   ...progress,
   practiceAttempts: {
     ...progress.practiceAttempts,
-    [sessionId]: (progress.practiceAttempts[sessionId] ?? 0) + 1,
+    [sessionId]: (Number.isInteger(progress.practiceAttempts[sessionId])
+      ? progress.practiceAttempts[sessionId]
+      : 0) + 1,
   },
 });
+
+const isCompletedForRevision = (
+  session: SessionRef,
+  progress: LearningProgress,
+) => {
+  const record = progress.sessions[session.id];
+  return record?.status === "completed" &&
+    (session.revision === undefined || record.revision === session.revision);
+};
+
+export const isLearningSessionUnlocked = (
+  orderedSessions: SessionRef[],
+  progress: LearningProgress,
+  sessionId: string,
+) => {
+  const targetIndex = orderedSessions.findIndex((session) => session.id === sessionId);
+  if (targetIndex < 0) return false;
+
+  return orderedSessions.slice(0, targetIndex).every(
+    (session) => session.required === false || isCompletedForRevision(session, progress),
+  );
+};
 
 export const getNextLearningSessionId = (
   orderedSessions: SessionRef[],
   progress: LearningProgress,
 ) => {
-  if (
-    progress.activeSessionId &&
-    orderedSessions.some((session) => session.id === progress.activeSessionId) &&
-    progress.sessions[progress.activeSessionId]?.status !== "completed"
-  ) {
-    return progress.activeSessionId;
-  }
-
-  return orderedSessions.find((session) => progress.sessions[session.id]?.status !== "completed")?.id
-    ?? orderedSessions.at(-1)?.id
+  const requiredSessions = orderedSessions.filter((session) => session.required !== false);
+  return requiredSessions.find((session) => !isCompletedForRevision(session, progress))?.id
+    ?? requiredSessions.at(-1)?.id
     ?? null;
 };
 

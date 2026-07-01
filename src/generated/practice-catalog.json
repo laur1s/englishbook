@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "generatorVersion": 2,
-  "sourceHash": "sha256-1d1ad43dd4e05436b0f61a161982b3e0958c35e230523114acdcf374bc44d7ea",
+  "sourceHash": "sha256-8e9b19fcceab00d43f5aaa92edfb7b4f7051bcc1632900c2686c5d98abc6b555",
   "units": [
     {
       "schemaVersion": 1,
       "unitId": "unit-01",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Greetings and Introductions",
       "objectives": [
         {
@@ -160,6 +160,34 @@
           ]
         },
         {
+          "id": "u01.be-forms.014",
+          "revision": 1,
+          "objectiveId": "u01.be-forms",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Complete the negative sentence: “They ___ at home.”",
+            "lt": "Užbaikite neigiamąjį sakinį: „They ___ at home.“"
+          },
+          "answer": {
+            "accepted": [
+              "are not",
+              "aren't"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The negative of they are is they are not or they aren't.",
+            "lt": "Neigiamoji „they are“ forma yra „they are not“ arba „they aren't“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-01",
+              "exercise": 5
+            }
+          ]
+        },
+        {
           "id": "u01.be-questions.006",
           "revision": 1,
           "objectiveId": "u01.be-questions",
@@ -216,6 +244,71 @@
           "rationale": {
             "en": "With I, the question form begins with Am.",
             "lt": "Klausimas su „I“ pradedamas forma „Am“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-01",
+              "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u01.be-questions.012",
+          "revision": 1,
+          "objectiveId": "u01.be-questions",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Turn “They are teachers” into a question.",
+            "lt": "Paverskite sakinį „They are teachers“ klausimu."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Are they teachers?"
+            },
+            {
+              "id": "b",
+              "text": "Is they teachers?"
+            },
+            {
+              "id": "c",
+              "text": "They are teachers?"
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "Move are before the subject they: Are they teachers?",
+            "lt": "Perkelkite „are“ prieš veiksnį „they“: „Are they teachers?“"
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-01",
+              "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u01.be-questions.016",
+          "revision": 1,
+          "objectiveId": "u01.be-questions",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Ask a new colleague about their country: “Where ___?”",
+            "lt": "Paklauskite naujo kolegos apie jo šalį: „Where ___?“"
+          },
+          "answer": {
+            "accepted": [
+              "are you from"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The complete question is Where are you from?",
+            "lt": "Visas klausimas yra „Where are you from?“"
           },
           "sourceRefs": [
             {
@@ -301,25 +394,89 @@
           ]
         },
         {
-          "id": "u01.personal-details.009",
-          "revision": 2,
-          "objectiveId": "u01.personal-details",
+          "id": "u01.greetings.011",
+          "revision": 1,
+          "objectiveId": "u01.greetings",
           "type": "fill-blank",
-          "difficulty": 3,
+          "difficulty": 1,
           "prompt": {
-            "en": "Lukas says, “I am 28 years old.” Complete the sentence: “Lukas is ___ years old.”",
-            "lt": "Lukas sako: „I am 28 years old.“ Užbaikite sakinį: „Lukas is ___ years old.“"
+            "en": "Complete the greeting: “Good morning! How ___ you?”",
+            "lt": "Užbaikite pasisveikinimą: „Good morning! How ___ you?“"
           },
           "answer": {
             "accepted": [
-              "28",
-              "twenty-eight"
+              "are"
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Lukas says, “I am 28 years old.”",
-            "lt": "Lukas sako: „I am 28 years old“ – jam 28 metai."
+            "en": "The standard greeting question is How are you?",
+            "lt": "Įprastas pasisveikinimo klausimas yra „How are you?“"
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-01",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u01.greetings.015",
+          "revision": 1,
+          "objectiveId": "u01.greetings",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "You meet a colleague for the first time. They say, “Nice to meet you.” Choose the most natural reply.",
+            "lt": "Pirmą kartą sutinkate kolegą. Jis sako: „Nice to meet you.“ Pasirinkite natūraliausią atsakymą."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Nice to meet you too."
+            },
+            {
+              "id": "b",
+              "text": "Good night."
+            },
+            {
+              "id": "c",
+              "text": "I am fine yesterday."
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "Nice to meet you too politely returns the same first-meeting greeting.",
+            "lt": "„Nice to meet you too“ mandagiai atsako tuo pačiu susipažinimo posakiu."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-01",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u01.personal-details.009",
+          "revision": 3,
+          "objectiveId": "u01.personal-details",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Lukas and Greta grew up in Kaunas. They never moved away, and their home is still in that city. Complete: “They live in ___.”",
+            "lt": "Lukas ir Greta užaugo Kaune. Jie niekur neišsikėlė, o jų namai tebėra tame pačiame mieste. Užbaikite: „They live in ___.“"
+          },
+          "answer": {
+            "accepted": [
+              "Kaunas"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The text identifies their shared city and their home as Kaunas.",
+            "lt": "Tekste jų bendras miestas ir namų vieta nurodyti kaip Kaunas."
           },
           "sourceRefs": [
             {
@@ -330,13 +487,13 @@
         },
         {
           "id": "u01.personal-details.010",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u01.personal-details",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "Lukas says, “My wife Greta is a teacher.” What is Greta's job?",
-            "lt": "Lukas sako: „My wife Greta is a teacher.“ Kokia Gretos profesija?"
+            "en": "Lukas works with patients at a hospital. Greta works with pupils in a classroom. Which sentence describes Greta's job?",
+            "lt": "Lukas dirba su pacientais ligoninėje. Greta dirba su mokiniais klasėje. Kuris sakinys apibūdina Gretos profesiją?"
           },
           "choices": [
             {
@@ -356,8 +513,46 @@
             "choiceId": "b"
           },
           "rationale": {
-            "en": "The text says that Lukas's wife Greta is a teacher.",
-            "lt": "Tekste parašyta, kad Luko žmona Greta yra mokytoja."
+            "en": "Working with pupils in a classroom points to Greta being a teacher.",
+            "lt": "Darbas su mokiniais klasėje rodo, kad Greta yra mokytoja."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-01",
+              "exercise": 7
+            }
+          ]
+        },
+        {
+          "id": "u01.personal-details.013",
+          "revision": 1,
+          "objectiveId": "u01.personal-details",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Lukas treats people who are ill. Greta teaches children. Which statement is true?",
+            "lt": "Lukas gydo sergančius žmones. Greta moko vaikus. Kuris teiginys yra teisingas?"
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Lukas is a doctor and Greta is a teacher."
+            },
+            {
+              "id": "b",
+              "text": "Lukas is a teacher and Greta is a doctor."
+            },
+            {
+              "id": "c",
+              "text": "They are both students."
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "Treating ill people matches a doctor, while teaching children matches a teacher.",
+            "lt": "Sergančių žmonių gydymas siejamas su gydytoju, o vaikų mokymas – su mokytoja."
           },
           "sourceRefs": [
             {
@@ -371,7 +566,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-02",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Daily Routines and Present Simple",
       "objectives": [
         {
@@ -508,6 +703,33 @@
           ]
         },
         {
+          "id": "u02.frequency.013",
+          "revision": 1,
+          "objectiveId": "u02.frequency",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Put usually in the correct place: “He is ___ tired after work.”",
+            "lt": "Įrašykite „usually“ tinkamoje vietoje: „He is ___ tired after work.“"
+          },
+          "answer": {
+            "accepted": [
+              "usually"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "With be, an adverb of frequency normally comes after the verb: is usually tired.",
+            "lt": "Su „be“ dažnumo prieveiksmis paprastai eina po veiksmažodžio: „is usually tired“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-02",
+              "exercise": 4
+            }
+          ]
+        },
+        {
           "id": "u02.present-simple.001",
           "revision": 1,
           "objectiveId": "u02.present-simple",
@@ -600,6 +822,71 @@
           ]
         },
         {
+          "id": "u02.present-simple.011",
+          "revision": 1,
+          "objectiveId": "u02.present-simple",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Complete with the Present Simple form of open: “The shop ___ at 9 AM.”",
+            "lt": "Įrašykite veiksmažodžio „open“ esamojo paprastojo laiko formą: „The shop ___ at 9 AM.“"
+          },
+          "answer": {
+            "accepted": [
+              "opens"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The singular subject the shop takes opens.",
+            "lt": "Su vienaskaitos veiksniu „the shop“ vartojama forma „opens“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-02",
+              "exercise": 1
+            }
+          ]
+        },
+        {
+          "id": "u02.present-simple.016",
+          "revision": 1,
+          "objectiveId": "u02.present-simple",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Choose the correct version of “We watchs TV every day.”",
+            "lt": "Pasirinkite taisyklingą sakinio „We watchs TV every day“ variantą."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "We watch TV every day."
+            },
+            {
+              "id": "b",
+              "text": "We watches TV every day."
+            },
+            {
+              "id": "c",
+              "text": "We watching TV every day."
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "With we, use the base form watch without -s.",
+            "lt": "Su „we“ vartojama bendratis „watch“ be galūnės „-s“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-02",
+              "exercise": 9
+            }
+          ]
+        },
+        {
           "id": "u02.questions-negatives.004",
           "revision": 1,
           "objectiveId": "u02.questions-negatives",
@@ -665,6 +952,72 @@
           ]
         },
         {
+          "id": "u02.questions-negatives.012",
+          "revision": 1,
+          "objectiveId": "u02.questions-negatives",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Turn “Your sister works in a hospital” into a question.",
+            "lt": "Paverskite sakinį „Your sister works in a hospital“ klausimu."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Does your sister work in a hospital?"
+            },
+            {
+              "id": "b",
+              "text": "Do your sister works in a hospital?"
+            },
+            {
+              "id": "c",
+              "text": "Is your sister work in a hospital?"
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "Use does with your sister, then the base form work.",
+            "lt": "Su „your sister“ vartokite „does“, o po jo – bendratį „work“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-02",
+              "exercise": 3
+            }
+          ]
+        },
+        {
+          "id": "u02.questions-negatives.015",
+          "revision": 1,
+          "objectiveId": "u02.questions-negatives",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct the sentence “They doesn't live here”: “They ___ live here.”",
+            "lt": "Ištaisykite sakinį „They doesn't live here“: „They ___ live here.“"
+          },
+          "answer": {
+            "accepted": [
+              "do not",
+              "don't"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The plural subject they uses don't or do not, followed by live.",
+            "lt": "Su daugiskaitos veiksniu „they“ vartojama „don't“ arba „do not“, po to – „live“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-02",
+              "exercise": 9
+            }
+          ]
+        },
+        {
           "id": "u02.routine-reading.008",
           "revision": 2,
           "objectiveId": "u02.routine-reading",
@@ -704,13 +1057,13 @@
         },
         {
           "id": "u02.routine-reading.009",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u02.routine-reading",
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Ona says, “I go to school by bus.” Complete the answer: “How does Ona go to school?” — “___.”",
-            "lt": "Ona sako: „I go to school by bus.“ Užbaikite atsakymą: „How does Ona go to school?“ — „___.“"
+            "en": "On work mornings, Ona gets on a bus after leaving home. She gets off near the school before 8:30. Complete: “She goes to school ___.”",
+            "lt": "Darbo dienų rytais išėjusi iš namų Ona įlipa į autobusą. Prieš 8.30 val. ji išlipa netoli mokyklos. Užbaikite: „She goes to school ___.“"
           },
           "answer": {
             "accepted": [
@@ -719,8 +1072,46 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The text says that she goes to school by bus.",
-            "lt": "Tekste parašyta, kad ji į mokyklą važiuoja autobusu – „by bus“."
+            "en": "Getting on a bus to reach school means she travels by bus.",
+            "lt": "Jei ji į mokyklą vyksta autobusu, angliškai sakome „by bus“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-02",
+              "exercise": 5
+            }
+          ]
+        },
+        {
+          "id": "u02.routine-reading.014",
+          "revision": 1,
+          "objectiveId": "u02.routine-reading",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Ona teaches until the afternoon and eats her midday meal before leaving work. Where does she have lunch?",
+            "lt": "Ona moko iki popietės ir pietauja dar prieš išeidama iš darbo. Kur ji valgo pietus?"
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "At school"
+            },
+            {
+              "id": "b",
+              "text": "At the gym"
+            },
+            {
+              "id": "c",
+              "text": "On the bus"
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "The routine says she has lunch at school during her workday.",
+            "lt": "Rutinos aprašyme nurodyta, kad darbo dieną ji pietauja mokykloje."
           },
           "sourceRefs": [
             {
@@ -734,7 +1125,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-03",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Past Simple and Personal History",
       "objectives": [
         {
@@ -807,13 +1198,13 @@
         },
         {
           "id": "u03.life-story.009",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u03.life-story",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "Laura got a new job in Klaipėda, so she and Jurgis moved there. Why did they move?",
-            "lt": "Laura gavo naują darbą Klaipėdoje, todėl ji ir Jurgis ten persikėlė. Kodėl jie persikėlė?"
+            "en": "Laura found work in Klaipėda while the couple lived in another city. They wanted to live near her new workplace, so they packed their home. Why did they move?",
+            "lt": "Laura rado darbą Klaipėdoje, o pora tuo metu gyveno kitame mieste. Jie norėjo gyventi netoli jos naujos darbovietės, todėl susikrovė daiktus. Kodėl jie persikėlė?"
           },
           "choices": [
             {
@@ -833,8 +1224,73 @@
             "choiceId": "b"
           },
           "rationale": {
-            "en": "They moved because Laura got a new job in Klaipėda.",
-            "lt": "Jie persikėlė, nes Laura gavo naują darbą Klaipėdoje."
+            "en": "Laura's new job was in Klaipėda, so living there put them near her workplace.",
+            "lt": "Naujas Lauros darbas buvo Klaipėdoje, todėl persikėlę jie gyveno netoli jos darbovietės."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-03",
+              "exercise": 6
+            }
+          ]
+        },
+        {
+          "id": "u03.life-story.014",
+          "revision": 1,
+          "objectiveId": "u03.life-story",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Jurgis was born in 1990 and began school seven years later. Complete: “He started school in ___.”",
+            "lt": "Jurgis gimė 1990 m. ir po septynerių metų pradėjo lankyti mokyklą. Užbaikite: „He started school in ___.“"
+          },
+          "answer": {
+            "accepted": [
+              "1997"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Seven years after 1990 is 1997, the year given for the start of school.",
+            "lt": "Praėjus septyneriems metams po 1990 m. buvo 1997 m. – tada jis pradėjo lankyti mokyklą."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-03",
+              "exercise": 6
+            }
+          ]
+        },
+        {
+          "id": "u03.life-story.015",
+          "revision": 1,
+          "objectiveId": "u03.life-story",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Jurgis was born in 1990 and started school in 1997. About how old was he when he started school?",
+            "lt": "Jurgis gimė 1990 m., o mokyklą pradėjo lankyti 1997 m. Maždaug kiek jam tada buvo metų?"
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "About seven"
+            },
+            {
+              "id": "b",
+              "text": "About twelve"
+            },
+            {
+              "id": "c",
+              "text": "About eighteen"
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "The difference between 1997 and 1990 is seven years.",
+            "lt": "Skirtumas tarp 1997 ir 1990 metų yra septyneri metai."
           },
           "sourceRefs": [
             {
@@ -1012,6 +1468,33 @@
           ]
         },
         {
+          "id": "u03.past-forms.016",
+          "revision": 1,
+          "objectiveId": "u03.past-forms",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct the irregular verb in “We buyed a new car”: “We ___ a new car.”",
+            "lt": "Ištaisykite netaisyklingą veiksmažodį sakinyje „We buyed a new car“: „We ___ a new car.“"
+          },
+          "answer": {
+            "accepted": [
+              "bought"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Buy is irregular; its Past Simple form is bought.",
+            "lt": "„Buy“ yra netaisyklingas veiksmažodis; jo Past Simple forma yra „bought“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-03",
+              "exercise": 10
+            }
+          ]
+        },
+        {
           "id": "u03.past-negatives.005",
           "revision": 2,
           "objectiveId": "u03.past-negatives",
@@ -1078,6 +1561,44 @@
           ]
         },
         {
+          "id": "u03.past-negatives.013",
+          "revision": 1,
+          "objectiveId": "u03.past-negatives",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Make “I saw your brother” negative.",
+            "lt": "Paverskite sakinį „I saw your brother“ neigiamuoju."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "I didn't see your brother."
+            },
+            {
+              "id": "b",
+              "text": "I didn't saw your brother."
+            },
+            {
+              "id": "c",
+              "text": "I wasn't see your brother."
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "After didn't, saw returns to its base form see.",
+            "lt": "Po „didn't“ forma „saw“ grįžta į bendratį „see“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-03",
+              "exercise": 3
+            }
+          ]
+        },
+        {
           "id": "u03.past-questions.006",
           "revision": 1,
           "objectiveId": "u03.past-questions",
@@ -1103,13 +1624,78 @@
               "exercise": 4
             }
           ]
+        },
+        {
+          "id": "u03.past-questions.011",
+          "revision": 1,
+          "objectiveId": "u03.past-questions",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Turn “She finished her homework” into a Past Simple question.",
+            "lt": "Paverskite sakinį „She finished her homework“ Past Simple klausimu."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Did she finish her homework?"
+            },
+            {
+              "id": "b",
+              "text": "Did she finished her homework?"
+            },
+            {
+              "id": "c",
+              "text": "Was she finish her homework?"
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "Use did before the subject and the base form finish.",
+            "lt": "Prieš veiksnį vartokite „did“, o po jo – bendratį „finish“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-03",
+              "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u03.past-questions.012",
+          "revision": 1,
+          "objectiveId": "u03.past-questions",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Complete the question about arrival time: “What time ___ they arrive?”",
+            "lt": "Užbaikite klausimą apie atvykimo laiką: „What time ___ they arrive?“"
+          },
+          "answer": {
+            "accepted": [
+              "did"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "A Past Simple question with a main verb uses did before the subject.",
+            "lt": "Past Simple klausime su pagrindiniu veiksmažodžiu prieš veiksnį vartojama „did“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-03",
+              "exercise": 8
+            }
+          ]
         }
       ]
     },
     {
       "schemaVersion": 1,
       "unitId": "unit-04",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Food and Shopping",
       "objectives": [
         {
@@ -1202,6 +1788,40 @@
           "rationale": {
             "en": "Individual eggs can be counted: one egg, two eggs.",
             "lt": "Atskirus kiaušinius galima suskaičiuoti: „one egg, two eggs“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-04",
+              "exercise": 1
+            }
+          ]
+        },
+        {
+          "id": "u04.food-nouns.011",
+          "revision": 1,
+          "objectiveId": "u04.food-nouns",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "In the phrase “some rice”, is rice countable or uncountable?",
+            "lt": "Ar frazėje „some rice“ daiktavardis „rice“ yra skaičiuojamas ar neskaičiuojamas?"
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Countable"
+            },
+            {
+              "id": "b",
+              "text": "Uncountable"
+            }
+          ],
+          "answer": {
+            "choiceId": "b"
+          },
+          "rationale": {
+            "en": "Rice is normally uncountable when we mean the food in general.",
+            "lt": "Kalbant apie maistą apskritai, „rice“ paprastai yra neskaičiuojamas daiktavardis."
           },
           "sourceRefs": [
             {
@@ -1368,6 +1988,60 @@
           ]
         },
         {
+          "id": "u04.quantifiers.012",
+          "revision": 1,
+          "objectiveId": "u04.quantifiers",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Complete with some or any: “There isn't ___ bread.”",
+            "lt": "Įrašykite „some“ arba „any“: „There isn't ___ bread.“"
+          },
+          "answer": {
+            "accepted": [
+              "any"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Any is normally used with an uncountable noun in a negative sentence.",
+            "lt": "Neigiamajame sakinyje su neskaičiuojamu daiktavardžiu paprastai vartojama „any“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-04",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u04.quantifiers.016",
+          "revision": 1,
+          "objectiveId": "u04.quantifiers",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "You need a small amount of sugar. Complete: “I need ___ sugar.”",
+            "lt": "Jums reikia nedidelio kiekio cukraus. Užbaikite: „I need ___ sugar.“"
+          },
+          "answer": {
+            "accepted": [
+              "a little"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Use a little for a small amount of an uncountable noun such as sugar.",
+            "lt": "Nedideliam neskaičiuojamo daiktavardžio, pavyzdžiui, cukraus, kiekiui vartojama „a little“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-04",
+              "exercise": 4
+            }
+          ]
+        },
+        {
           "id": "u04.shopping-language.008",
           "revision": 1,
           "objectiveId": "u04.shopping-language",
@@ -1433,14 +2107,52 @@
           ]
         },
         {
+          "id": "u04.shopping-language.013",
+          "revision": 1,
+          "objectiveId": "u04.shopping-language",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "A market seller asks, “Can I help you?” Choose the most natural reply when you want tomatoes.",
+            "lt": "Turgaus pardavėjas klausia: „Can I help you?“ Pasirinkite natūraliausią atsakymą, kai norite pomidorų."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Yes, please. I'd like some tomatoes."
+            },
+            {
+              "id": "b",
+              "text": "Yes, I like tomatoes yesterday."
+            },
+            {
+              "id": "c",
+              "text": "No, give tomatoes."
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "I'd like some tomatoes is a polite, natural request in a shop.",
+            "lt": "„I'd like some tomatoes“ yra mandagus ir natūralus prašymas parduotuvėje."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-04",
+              "exercise": 5
+            }
+          ]
+        },
+        {
           "id": "u04.shopping-reading.010",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u04.shopping-reading",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "The shopping story says, “Kristina spends 45 euros in total.” How much does she spend?",
-            "lt": "Apsipirkimo istorijoje sakoma: „Kristina spends 45 euros in total.“ Kiek ji išleidžia?"
+            "en": "Kristina pays with a 50-euro note. The cashier gives her 5 euros back. How much did her shopping cost?",
+            "lt": "Kristina sumoka 50 eurų banknotu. Kasininkas jai grąžina 5 eurus. Kiek kainavo jos pirkiniai?"
           },
           "choices": [
             {
@@ -1460,8 +2172,73 @@
             "choiceId": "b"
           },
           "rationale": {
-            "en": "The final paragraph says that Kristina spends 45 euros in total.",
-            "lt": "Paskutinėje pastraipoje parašyta, kad Kristina iš viso išleidžia 45 eurus."
+            "en": "Fifty euros minus five euros change equals a total cost of 45 euros.",
+            "lt": "Iš 50 eurų atėmus 5 eurų grąžą gauname 45 eurų bendrą kainą."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-04",
+              "exercise": 7
+            }
+          ]
+        },
+        {
+          "id": "u04.shopping-reading.014",
+          "revision": 1,
+          "objectiveId": "u04.shopping-reading",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Kristina sees delicious cakes at the bakery, but their price is higher than she wants to pay. Complete: “The cakes are too ___.”",
+            "lt": "Kristina kepykloje mato gardžius pyragus, bet jų kaina didesnė, nei ji nori mokėti. Užbaikite: „The cakes are too ___.“"
+          },
+          "answer": {
+            "accepted": [
+              "expensive"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "A price that is higher than someone wants to pay is too expensive.",
+            "lt": "Kaina, kuri yra didesnė, nei žmogus nori mokėti, yra „too expensive“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-04",
+              "exercise": 7
+            }
+          ]
+        },
+        {
+          "id": "u04.shopping-reading.015",
+          "revision": 1,
+          "objectiveId": "u04.shopping-reading",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "At the butcher's, Kristina chooses chicken and a little beef. She leaves one protein item because she does not enjoy it. What does she leave?",
+            "lt": "Mėsos parduotuvėje Kristina pasirenka vištieną ir truputį jautienos. Vieno baltyminio produkto ji neima, nes jo nemėgsta. Ko ji neima?"
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Fish"
+            },
+            {
+              "id": "b",
+              "text": "Chicken"
+            },
+            {
+              "id": "c",
+              "text": "Beef"
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "The story says she buys chicken and beef but does not buy fish because she dislikes it.",
+            "lt": "Pasakojime ji perka vištieną ir jautieną, bet neperka žuvies, nes jos nemėgsta."
           },
           "sourceRefs": [
             {
@@ -1475,7 +2252,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-05",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Travel and Directions",
       "objectives": [
         {
@@ -1570,6 +2347,44 @@
             {
               "lesson": "unit-05",
               "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u05.directions.013",
+          "revision": 1,
+          "objectiveId": "u05.directions",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Choose the correct English direction for “Eikite tiesiai ir sukite dešinėn.”",
+            "lt": "Pasirinkite taisyklingą anglišką nurodymą sakiniui „Eikite tiesiai ir sukite dešinėn“."
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "Go straight and turn right."
+            },
+            {
+              "id": "b",
+              "text": "Go right and turn straight."
+            },
+            {
+              "id": "c",
+              "text": "Walk behind and turn near."
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "Go straight means eikite tiesiai, and turn right means sukite dešinėn.",
+            "lt": "„Go straight“ reiškia „eikite tiesiai“, o „turn right“ – „sukite dešinėn“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-05",
+              "exercise": 9
             }
           ]
         },
@@ -1694,6 +2509,44 @@
           ]
         },
         {
+          "id": "u05.place-prepositions.011",
+          "revision": 1,
+          "objectiveId": "u05.place-prepositions",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Choose the word meaning už: “The pharmacy is ___ the supermarket.”",
+            "lt": "Pasirinkite žodį, reiškiantį „už“: „The pharmacy is ___ the supermarket.“"
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "behind"
+            },
+            {
+              "id": "b",
+              "text": "between"
+            },
+            {
+              "id": "c",
+              "text": "opposite"
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "Behind means at the back of something, or už.",
+            "lt": "„Behind“ reiškia būti už ko nors."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-05",
+              "exercise": 1
+            }
+          ]
+        },
+        {
           "id": "u05.there-be.004",
           "revision": 1,
           "objectiveId": "u05.there-be",
@@ -1797,35 +2650,155 @@
           ]
         },
         {
+          "id": "u05.there-be.012",
+          "revision": 1,
+          "objectiveId": "u05.there-be",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Complete the singular question: “___ a hospital in this area?”",
+            "lt": "Užbaikite vienaskaitos klausimą: „___ a hospital in this area?“"
+          },
+          "answer": {
+            "accepted": [
+              "Is there"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "A question about one hospital begins with Is there.",
+            "lt": "Klausimas apie vieną ligoninę pradedamas „Is there“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-05",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u05.there-be.016",
+          "revision": 1,
+          "objectiveId": "u05.there-be",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Translate into English: “Šioje gatvėje yra daug restoranų.”",
+            "lt": "Išverskite į anglų kalbą: „Šioje gatvėje yra daug restoranų.“"
+          },
+          "answer": {
+            "accepted": [
+              "There are many restaurants on this street",
+              "There are many restaurants on this street."
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Use There are with the plural noun restaurants, followed by on this street.",
+            "lt": "Su daugiskaitos daiktavardžiu „restaurants“ vartokite „There are“, po to – „on this street“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-05",
+              "exercise": 9
+            }
+          ]
+        },
+        {
           "id": "u05.travel-reading.009",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u05.travel-reading",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "The travel text says, “Gediminas Tower is on a hill behind the cathedral.” Where is the tower?",
-            "lt": "Kelionės tekste sakoma: „Gediminas Tower is on a hill behind the cathedral.“ Kur yra bokštas?"
+            "en": "Tom leaves the cathedral and walks uphill. At the place behind the cathedral, he can see Vilnius from above. Where has he arrived?",
+            "lt": "Tomas išeina iš katedros ir kyla į kalvą. Vietoje už katedros jis gali matyti Vilnių iš viršaus. Kur jis atėjo?"
           },
           "choices": [
             {
               "id": "a",
-              "text": "On a hill behind the cathedral"
+              "text": "Gediminas Tower"
             },
             {
               "id": "b",
-              "text": "Opposite Tom's hotel"
+              "text": "The café"
             },
             {
               "id": "c",
-              "text": "Between the café and the museum"
+              "text": "Pilies Street"
             }
           ],
           "answer": {
             "choiceId": "a"
           },
           "rationale": {
-            "en": "The text places the tower on a hill behind the cathedral.",
-            "lt": "Tekste nurodyta, kad bokštas yra ant kalvos už katedros."
+            "en": "The uphill viewpoint behind the cathedral is Gediminas Tower.",
+            "lt": "Apžvalgos vieta ant kalvos už katedros yra Gedimino bokštas."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-05",
+              "exercise": 5
+            }
+          ]
+        },
+        {
+          "id": "u05.travel-reading.014",
+          "revision": 1,
+          "objectiveId": "u05.travel-reading",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Tom shops on Pilies Street for small things to remember his trip. Complete: “He buys a few ___.”",
+            "lt": "Pilies gatvėje Tomas perka nedidelius daiktus kelionei prisiminti. Užbaikite: „He buys a few ___.“"
+          },
+          "answer": {
+            "accepted": [
+              "souvenirs"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Small items bought to remember a trip are souvenirs.",
+            "lt": "Nedideli daiktai, perkami kelionei prisiminti, yra „souvenirs“ – suvenyrai."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-05",
+              "exercise": 5
+            }
+          ]
+        },
+        {
+          "id": "u05.travel-reading.015",
+          "revision": 1,
+          "objectiveId": "u05.travel-reading",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Tom's hotel is near the Old Town. A local says the cathedral is about ten minutes away on foot, and Tom walks there. What can we conclude?",
+            "lt": "Tomo viešbutis yra netoli senamiesčio. Vietinis žmogus sako, kad iki katedros pėsčiomis apie dešimt minučių, ir Tomas ten nueina. Kokią išvadą galime padaryti?"
+          },
+          "choices": [
+            {
+              "id": "a",
+              "text": "The cathedral is close enough to walk to."
+            },
+            {
+              "id": "b",
+              "text": "Tom needs a plane to reach the cathedral."
+            },
+            {
+              "id": "c",
+              "text": "The cathedral is outside Vilnius."
+            }
+          ],
+          "answer": {
+            "choiceId": "a"
+          },
+          "rationale": {
+            "en": "A ten-minute walk means the cathedral is nearby and reachable on foot.",
+            "lt": "Dešimties minučių kelias pėsčiomis reiškia, kad katedra yra netoli ir ją galima pasiekti pėsčiomis."
           },
           "sourceRefs": [
             {
@@ -1839,7 +2812,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-06",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Future Plans",
       "objectives": [
         {
@@ -1976,6 +2949,34 @@
           ]
         },
         {
+          "id": "u06.future-choice.014",
+          "revision": 1,
+          "objectiveId": "u06.future-choice",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "The phone has just started ringing, and you decide now to take the call. Complete: “___ it.” (I / answer)",
+            "lt": "Telefonas ką tik suskambo, ir dabar nusprendžiate atsiliepti. Užbaikite: „___ it.“ (I / answer)"
+          },
+          "answer": {
+            "accepted": [
+              "I will answer",
+              "I'll answer"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "A decision made at the moment of speaking normally uses will: I'll answer it.",
+            "lt": "Kalbėjimo metu priimtam sprendimui paprastai vartojame „will“: „I'll answer it“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-06",
+              "exercise": 3
+            }
+          ]
+        },
+        {
           "id": "u06.going-to.001",
           "revision": 1,
           "objectiveId": "u06.going-to",
@@ -2069,6 +3070,71 @@
           ]
         },
         {
+          "id": "u06.going-to.011",
+          "revision": 1,
+          "objectiveId": "u06.going-to",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "My sister ___ married in June. (get)",
+            "lt": "Mano sesuo birželį ketina ištekėti. Pasirinkite tinkamą „going to“ formą."
+          },
+          "choices": [
+            {
+              "id": "are-going-to-get",
+              "text": "are going to get"
+            },
+            {
+              "id": "is-going-get",
+              "text": "is going get"
+            },
+            {
+              "id": "is-going-to-get",
+              "text": "is going to get"
+            }
+          ],
+          "answer": {
+            "choiceId": "is-going-to-get"
+          },
+          "rationale": {
+            "en": "With my sister, use is going to + the base verb get.",
+            "lt": "Su „my sister“ vartojame „is going to“ + bendratį „get“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-06",
+              "exercise": 1
+            }
+          ]
+        },
+        {
+          "id": "u06.going-to.012",
+          "revision": 1,
+          "objectiveId": "u06.going-to",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Are you ___ to Spain? (travel)",
+            "lt": "Ar ketinate keliauti į Ispaniją? Įrašykite trūkstamą „going to“ konstrukcijos dalį."
+          },
+          "answer": {
+            "accepted": [
+              "going to travel"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "After Are you, complete the planned action with going to travel.",
+            "lt": "Po „Are you“ planuojamam veiksmui vartojame „going to travel“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-06",
+              "exercise": 1
+            }
+          ]
+        },
+        {
           "id": "u06.weekend-reading.010",
           "revision": 2,
           "objectiveId": "u06.weekend-reading",
@@ -2098,6 +3164,71 @@
           "rationale": {
             "en": "The text says that Andrius is going to take the bus in the morning.",
             "lt": "Tekste parašyta, kad Andrius ryte važiuos autobusu."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-06",
+              "exercise": 6
+            }
+          ]
+        },
+        {
+          "id": "u06.weekend-reading.015",
+          "revision": 1,
+          "objectiveId": "u06.weekend-reading",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "After Saturday football, Andrius eats at a restaurant with his relatives before helping in the garden. Who joins him for lunch?",
+            "lt": "Po šeštadienio futbolo Andrius pietauja restorane su giminaičiais, o vėliau padeda sode. Kas pietauja kartu su juo?"
+          },
+          "choices": [
+            {
+              "id": "family",
+              "text": "His family"
+            },
+            {
+              "id": "football-team",
+              "text": "His football team"
+            },
+            {
+              "id": "grandparents",
+              "text": "Only his grandparents"
+            }
+          ],
+          "answer": {
+            "choiceId": "family"
+          },
+          "rationale": {
+            "en": "The relatives at the restaurant are his family.",
+            "lt": "Restorane minimi giminaičiai yra jo šeima."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-06",
+              "exercise": 6
+            }
+          ]
+        },
+        {
+          "id": "u06.weekend-reading.016",
+          "revision": 1,
+          "objectiveId": "u06.weekend-reading",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Andrius plans football, gardening, a film, dinner, and a full Sunday visit. Complete his prediction: “I think I will be very ___ on Monday.”",
+            "lt": "Andrius planuoja futbolą, darbą sode, filmą, vakarienę ir visos dienos sekmadienio išvyką. Užbaikite jo prognozę: „I think I will be very ___ on Monday.“"
+          },
+          "answer": {
+            "accepted": [
+              "tired"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Such a full weekend supports his prediction that he will be very tired.",
+            "lt": "Toks užimtas savaitgalis pagrindžia jo prognozę, kad pirmadienį jis bus labai pavargęs."
           },
           "sourceRefs": [
             {
@@ -2198,13 +3329,51 @@
               "exercise": 4
             }
           ]
+        },
+        {
+          "id": "u06.will.013",
+          "revision": 1,
+          "objectiveId": "u06.will",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Don't worry! I ___ you.",
+            "lt": "Nesijaudink! Aš tau padėsiu."
+          },
+          "choices": [
+            {
+              "id": "am-help",
+              "text": "am help"
+            },
+            {
+              "id": "will-help",
+              "text": "will help"
+            },
+            {
+              "id": "will-helping",
+              "text": "will helping"
+            }
+          ],
+          "answer": {
+            "choiceId": "will-help"
+          },
+          "rationale": {
+            "en": "An offer can use will + the base verb: will help.",
+            "lt": "Pasiūlymui galima vartoti „will“ + bendratį: „will help“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-06",
+              "exercise": 2
+            }
+          ]
         }
       ]
     },
     {
       "schemaVersion": 1,
       "unitId": "unit-07",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 7: Present Perfect Introduction",
       "objectives": [
         {
@@ -2351,6 +3520,72 @@
           ]
         },
         {
+          "id": "u07.present-perfect-form.011",
+          "revision": 1,
+          "objectiveId": "u07.present-perfect-form",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "My sister ___ home. (just / arrive)",
+            "lt": "Mano sesuo ką tik grįžo namo. Pasirinkite tinkamą formą."
+          },
+          "choices": [
+            {
+              "id": "has-just-arrive",
+              "text": "has just arrive"
+            },
+            {
+              "id": "has-just-arrived",
+              "text": "has just arrived"
+            },
+            {
+              "id": "have-just-arrived",
+              "text": "have just arrived"
+            }
+          ],
+          "answer": {
+            "choiceId": "has-just-arrived"
+          },
+          "rationale": {
+            "en": "With my sister, use has + just + the past participle arrived.",
+            "lt": "Su „my sister“ vartojame „has“ + „just“ + III formą „arrived“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-07",
+              "exercise": 1
+            }
+          ]
+        },
+        {
+          "id": "u07.present-perfect-form.012",
+          "revision": 1,
+          "objectiveId": "u07.present-perfect-form",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct the sentence: She has came back from work.",
+            "lt": "Ištaisykite sakinį: „She has came back from work.“"
+          },
+          "answer": {
+            "accepted": [
+              "She has come back from work",
+              "She has come back from work."
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The past participle of come is come, not came.",
+            "lt": "Veiksmažodžio „come“ III forma yra „come“, o ne „came“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-07",
+              "exercise": 7
+            }
+          ]
+        },
+        {
           "id": "u07.tense-choice.004",
           "revision": 1,
           "objectiveId": "u07.tense-choice",
@@ -2445,6 +3680,71 @@
           "rationale": {
             "en": "Has gone means the person went there and has not returned yet.",
             "lt": "Has gone reiškia, kad žmogus išvyko ir dar negrįžo."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-07",
+              "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u07.tense-choice.015",
+          "revision": 1,
+          "objectiveId": "u07.tense-choice",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "They ___ to Kaunas in 2015.",
+            "lt": "Jie persikėlė į Kauną 2015 metais."
+          },
+          "choices": [
+            {
+              "id": "have-moved",
+              "text": "have moved"
+            },
+            {
+              "id": "move",
+              "text": "move"
+            },
+            {
+              "id": "moved",
+              "text": "moved"
+            }
+          ],
+          "answer": {
+            "choiceId": "moved"
+          },
+          "rationale": {
+            "en": "In 2015 is a finished past time, so use Past Simple: moved.",
+            "lt": "„In 2015“ nurodo pasibaigusį laiką praeityje, todėl vartojame Past Simple formą „moved“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-07",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u07.tense-choice.016",
+          "revision": 1,
+          "objectiveId": "u07.tense-choice",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "I ___ to Europe. (never / be)",
+            "lt": "Niekada nesu buvęs / buvusi Europoje. Įrašykite Present Perfect formą."
+          },
+          "answer": {
+            "accepted": [
+              "have never been"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Use have + never + been for a life experience that has not happened.",
+            "lt": "Neįvykusiai gyvenimo patirčiai vartojame „have“ + „never“ + „been“."
           },
           "sourceRefs": [
             {
@@ -2555,13 +3855,78 @@
               "exercise": 1
             }
           ]
+        },
+        {
+          "id": "u07.time-expressions.013",
+          "revision": 1,
+          "objectiveId": "u07.time-expressions",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "___ you finished your work yet?",
+            "lt": "Ar jau baigėte darbą? Pasirinkite trūkstamą žodį."
+          },
+          "choices": [
+            {
+              "id": "are",
+              "text": "Are"
+            },
+            {
+              "id": "did",
+              "text": "Did"
+            },
+            {
+              "id": "have",
+              "text": "Have"
+            }
+          ],
+          "answer": {
+            "choiceId": "have"
+          },
+          "rationale": {
+            "en": "Yet commonly appears in Present Perfect questions, formed with Have + subject + past participle.",
+            "lt": "„Yet“ dažnai vartojamas Present Perfect klausimuose: „Have“ + veiksnys + III forma."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-07",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u07.time-expressions.014",
+          "revision": 1,
+          "objectiveId": "u07.time-expressions",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "She hasn't finished her homework ___.",
+            "lt": "Ji dar nebaigė namų darbų. Įrašykite trūkstamą laiko žodį."
+          },
+          "answer": {
+            "accepted": [
+              "yet"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Yet normally comes at the end of a negative Present Perfect sentence.",
+            "lt": "Neigiamame Present Perfect sakinyje „yet“ paprastai rašomas sakinio gale."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-07",
+              "exercise": 1
+            }
+          ]
         }
       ]
     },
     {
       "schemaVersion": 1,
       "unitId": "unit-08",
-      "contentVersion": 1,
+      "contentVersion": 2,
       "title": "Unit 8: Comparatives and Superlatives",
       "objectives": [
         {
@@ -2756,6 +4121,44 @@
           ]
         },
         {
+          "id": "u08.comparatives.011",
+          "revision": 1,
+          "objectiveId": "u08.comparatives",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Summer is ___ than winter. (hot)",
+            "lt": "Vasara karštesnė už žiemą."
+          },
+          "choices": [
+            {
+              "id": "hotter",
+              "text": "hotter"
+            },
+            {
+              "id": "hottest",
+              "text": "hottest"
+            },
+            {
+              "id": "more-hot",
+              "text": "more hot"
+            }
+          ],
+          "answer": {
+            "choiceId": "hotter"
+          },
+          "rationale": {
+            "en": "Double the final consonant in hot and add -er: hotter.",
+            "lt": "Žodyje „hot“ padvigubiname galinį priebalsį ir pridedame „-er“: „hotter“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-08",
+              "exercise": 3
+            }
+          ]
+        },
+        {
           "id": "u08.equality.007",
           "revision": 1,
           "objectiveId": "u08.equality",
@@ -2821,6 +4224,98 @@
           ]
         },
         {
+          "id": "u08.equality.014",
+          "revision": 1,
+          "objectiveId": "u08.equality",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "I enjoyed the last book more. This book is ___ the last one. (interesting)",
+            "lt": "Ankstesnė knyga man patiko labiau. Ši knyga nėra tokia įdomi kaip ankstesnė."
+          },
+          "answer": {
+            "accepted": [
+              "not as interesting as"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Use not as + base adjective + as when the first thing has less of the quality.",
+            "lt": "Kai pirmas dalykas turi mažiau savybės, vartojame „not as“ + pagrindinę būdvardžio formą + „as“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-08",
+              "exercise": 5
+            }
+          ]
+        },
+        {
+          "id": "u08.equality.015",
+          "revision": 1,
+          "objectiveId": "u08.equality",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "My brother and I are both 180 cm tall. My brother is ___ me.",
+            "lt": "Mano brolis ir aš esame po 180 cm ūgio. Mano brolis yra tokio pat ūgio kaip aš."
+          },
+          "choices": [
+            {
+              "id": "as-tall-as",
+              "text": "as tall as"
+            },
+            {
+              "id": "as-taller-as",
+              "text": "as taller as"
+            },
+            {
+              "id": "taller-as",
+              "text": "taller as"
+            }
+          ],
+          "answer": {
+            "choiceId": "as-tall-as"
+          },
+          "rationale": {
+            "en": "Equal height uses as + base adjective + as: as tall as.",
+            "lt": "Vienodam ūgiui nusakyti vartojame „as“ + pagrindinę formą + „as“: „as tall as“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-08",
+              "exercise": 5
+            }
+          ]
+        },
+        {
+          "id": "u08.equality.016",
+          "revision": 1,
+          "objectiveId": "u08.equality",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Complete the translation: English is ___ Chinese. (not / difficult)",
+            "lt": "Užbaikite vertimą: „Anglų kalba nėra tokia sunki kaip kinų kalba.“"
+          },
+          "answer": {
+            "accepted": [
+              "not as difficult as"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The negative equality structure is not as + base adjective + as.",
+            "lt": "Neigiama lygybės struktūra yra „not as“ + pagrindinė būdvardžio forma + „as“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-08",
+              "exercise": 8
+            }
+          ]
+        },
+        {
           "id": "u08.superlatives.005",
           "revision": 1,
           "objectiveId": "u08.superlatives",
@@ -2860,13 +4355,13 @@
         },
         {
           "id": "u08.superlatives.006",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u08.superlatives",
           "type": "fill-blank",
           "difficulty": 2,
           "prompt": {
             "en": "This is the ___ place I have ever seen. (beautiful)",
-            "lt": "Tai gražiausia vieta, kurią esu matęs."
+            "lt": "Tai gražiausia vieta, kurią esu matęs / mačiusi."
           },
           "answer": {
             "accepted": [
@@ -2911,13 +4406,78 @@
               "exercise": 4
             }
           ]
+        },
+        {
+          "id": "u08.superlatives.012",
+          "revision": 1,
+          "objectiveId": "u08.superlatives",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "tall → the ___",
+            "lt": "Sudarykite būdvardžio „tall“ aukščiausiojo laipsnio formą: the ___."
+          },
+          "answer": {
+            "accepted": [
+              "tallest"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Add -est to the short adjective tall: the tallest.",
+            "lt": "Prie trumpo būdvardžio „tall“ pridedame „-est“: „the tallest“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-08",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u08.superlatives.013",
+          "revision": 1,
+          "objectiveId": "u08.superlatives",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct “This is the most good book.”",
+            "lt": "Pasirinkite taisyklingą sakinio „This is the most good book“ variantą."
+          },
+          "choices": [
+            {
+              "id": "best",
+              "text": "This is the best book."
+            },
+            {
+              "id": "better",
+              "text": "This is the better book of all."
+            },
+            {
+              "id": "goodest",
+              "text": "This is the goodest book."
+            }
+          ],
+          "answer": {
+            "choiceId": "best"
+          },
+          "rationale": {
+            "en": "Good has the irregular superlative form the best.",
+            "lt": "Būdvardžio „good“ nereguliari aukščiausiojo laipsnio forma yra „the best“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-08",
+              "exercise": 9
+            }
+          ]
         }
       ]
     },
     {
       "schemaVersion": 1,
       "unitId": "unit-09",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 9: Modal Verbs",
       "objectives": [
         {
@@ -2952,13 +4512,13 @@
       "items": [
         {
           "id": "u09.advice.005",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u09.advice",
           "type": "single-choice",
           "difficulty": 1,
           "prompt": {
             "en": "You look tired. You ___ go to bed early tonight.",
-            "lt": "Atrodote pavargęs. Šį vakarą turėtumėte anksti eiti miegoti."
+            "lt": "Atrodote pavargęs / pavargusi. Šį vakarą turėtumėte anksti eiti miegoti."
           },
           "choices": [
             {
@@ -3013,6 +4573,72 @@
             {
               "lesson": "unit-09",
               "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u09.advice.013",
+          "revision": 1,
+          "objectiveId": "u09.advice",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "You ___ eat so much sugar. It is not healthy.",
+            "lt": "Neturėtumėte valgyti tiek daug cukraus, nes tai nesveika."
+          },
+          "choices": [
+            {
+              "id": "may",
+              "text": "may"
+            },
+            {
+              "id": "must",
+              "text": "must"
+            },
+            {
+              "id": "shouldnt",
+              "text": "shouldn't"
+            }
+          ],
+          "answer": {
+            "choiceId": "shouldnt"
+          },
+          "rationale": {
+            "en": "Shouldn't gives advice against an unhealthy action.",
+            "lt": "„Shouldn't“ vartojamas patariant nedaryti sveikatai žalingo veiksmo."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-09",
+              "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u09.advice.014",
+          "revision": 1,
+          "objectiveId": "u09.advice",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct the sentence: I should to study more.",
+            "lt": "Ištaisykite sakinį: „I should to study more.“"
+          },
+          "answer": {
+            "accepted": [
+              "I should study more",
+              "I should study more."
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "After should, use the base verb without to: should study.",
+            "lt": "Po „should“ vartojame bendratį be „to“: „should study“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-09",
+              "exercise": 9
             }
           ]
         },
@@ -3121,13 +4747,13 @@
         },
         {
           "id": "u09.deduction.009",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u09.deduction",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "I just saw Jonas board a flight. He ___ be at home now.",
-            "lt": "Ką tik mačiau, kaip Jonas įlipo į lėktuvą. Jis negali dabar būti namuose."
+            "en": "This key does not fit the lock. It ___ be the right key.",
+            "lt": "Šis raktas netinka spynai. Tai negali būti tinkamas raktas."
           },
           "choices": [
             {
@@ -3147,8 +4773,8 @@
             "choiceId": "cant"
           },
           "rationale": {
-            "en": "Seeing Jonas board a flight is strong evidence that being at home now is impossible.",
-            "lt": "Tai, kad Jonas įlipo į lėktuvą, yra aiškus įrodymas, todėl neįmanomumui reikšti vartojame „can't“."
+            "en": "The failed fit is strong evidence that this is not the right key, so use can't.",
+            "lt": "Tai, kad raktas netinka, yra aiškus įrodymas, todėl neįmanomumui reikšti vartojame „can't“."
           },
           "sourceRefs": [
             {
@@ -3224,6 +4850,72 @@
           ]
         },
         {
+          "id": "u09.modal-form.015",
+          "revision": 1,
+          "objectiveId": "u09.modal-form",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Choose the correct sentence about a possible event tomorrow.",
+            "lt": "Pasirinkite taisyklingą sakinį apie galimą rytojaus įvykį."
+          },
+          "choices": [
+            {
+              "id": "may-rain",
+              "text": "It may rain tomorrow."
+            },
+            {
+              "id": "may-rains",
+              "text": "It may rains tomorrow."
+            },
+            {
+              "id": "may-to-rain",
+              "text": "It may to rain tomorrow."
+            }
+          ],
+          "answer": {
+            "choiceId": "may-rain"
+          },
+          "rationale": {
+            "en": "A modal is followed by the base verb without -s or to: may rain.",
+            "lt": "Po modalinio veiksmažodžio vartojame bendratį be „-s“ ir be „to“: „may rain“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-09",
+              "exercise": 9
+            }
+          ]
+        },
+        {
+          "id": "u09.modal-form.016",
+          "revision": 1,
+          "objectiveId": "u09.modal-form",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct the sentence: They should to arrive early.",
+            "lt": "Ištaisykite sakinį: „They should to arrive early.“"
+          },
+          "answer": {
+            "accepted": [
+              "They should arrive early",
+              "They should arrive early."
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Use the base verb arrive directly after should.",
+            "lt": "Po „should“ iš karto vartojame bendratį „arrive“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-09",
+              "exercise": 9
+            }
+          ]
+        },
+        {
           "id": "u09.possibility.004",
           "revision": 1,
           "objectiveId": "u09.possibility",
@@ -3253,13 +4945,13 @@
         },
         {
           "id": "u09.possibility.010",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u09.possibility",
           "type": "fill-blank",
           "difficulty": 2,
           "prompt": {
             "en": "Her office light is on, but I am not sure she is there. She ___ be in her office.",
-            "lt": "Jos kabinete dega šviesa, bet nesu tikras, ar ji ten. Ji galbūt yra savo kabinete."
+            "lt": "Jos kabinete dega šviesa, bet nesu tikras / tikra, ar ji ten. Ji galbūt yra savo kabinete."
           },
           "answer": {
             "accepted": [
@@ -3278,13 +4970,79 @@
               "exercise": 4
             }
           ]
+        },
+        {
+          "id": "u09.possibility.011",
+          "revision": 1,
+          "objectiveId": "u09.possibility",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "She is not answering her phone. She ___ be busy, but I am not sure.",
+            "lt": "Ji neatsiliepia telefonu. Galbūt ji užsiėmusi, bet nesu tikras / tikra."
+          },
+          "choices": [
+            {
+              "id": "cant",
+              "text": "can't"
+            },
+            {
+              "id": "might",
+              "text": "might"
+            },
+            {
+              "id": "must",
+              "text": "must"
+            }
+          ],
+          "answer": {
+            "choiceId": "might"
+          },
+          "rationale": {
+            "en": "The speaker is unsure, so might expresses possibility rather than certainty or impossibility.",
+            "lt": "Kalbėtojas nėra tikras, todėl galimybei, o ne tikrumui ar neįmanomumui, reikšti vartojame „might“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-09",
+              "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u09.possibility.012",
+          "revision": 1,
+          "objectiveId": "u09.possibility",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "The bus ___ be late. It is often late on Fridays.",
+            "lt": "Autobusas gali vėluoti. Penktadieniais jis dažnai vėluoja."
+          },
+          "answer": {
+            "accepted": [
+              "may",
+              "might"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "May and might both express a possible delay; the evidence is not certain.",
+            "lt": "Ir „may“, ir „might“ reiškia galimą vėlavimą; turima informacija nesuteikia tikrumo."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-09",
+              "exercise": 2
+            }
+          ]
         }
       ]
     },
     {
       "schemaVersion": 1,
       "unitId": "unit-10",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 10: Present Tenses Contrast",
       "objectives": [
         {
@@ -3421,6 +5179,33 @@
           ]
         },
         {
+          "id": "u10.present-continuous.013",
+          "revision": 1,
+          "objectiveId": "u10.present-continuous",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "They ___ football now. (play)",
+            "lt": "Jie dabar žaidžia futbolą."
+          },
+          "answer": {
+            "accepted": [
+              "are playing"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Now marks an action in progress, so use are playing with they.",
+            "lt": "„Now“ nurodo vykstantį veiksmą, todėl su „they“ vartojame „are playing“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-10",
+              "exercise": 1
+            }
+          ]
+        },
+        {
           "id": "u10.present-perfect.004",
           "revision": 2,
           "objectiveId": "u10.present-perfect",
@@ -3513,6 +5298,33 @@
           ]
         },
         {
+          "id": "u10.present-perfect.014",
+          "revision": 1,
+          "objectiveId": "u10.present-perfect",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "She ___ Paris three times in her life. (visit)",
+            "lt": "Ji tris kartus gyvenime lankėsi Paryžiuje."
+          },
+          "answer": {
+            "accepted": [
+              "has visited"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "An experience in her life without a finished time uses Present Perfect: has visited.",
+            "lt": "Gyvenimo patirčiai, kai nenurodytas pasibaigęs laikas, vartojame Present Perfect formą „has visited“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-10",
+              "exercise": 2
+            }
+          ]
+        },
+        {
           "id": "u10.present-simple.001",
           "revision": 1,
           "objectiveId": "u10.present-simple",
@@ -3589,6 +5401,71 @@
           ]
         },
         {
+          "id": "u10.present-simple.011",
+          "revision": 1,
+          "objectiveId": "u10.present-simple",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "They ___ football every Saturday. (play)",
+            "lt": "Jie žaidžia futbolą kiekvieną šeštadienį."
+          },
+          "answer": {
+            "accepted": [
+              "play"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Every Saturday marks a routine, so use Present Simple: play.",
+            "lt": "„Every Saturday“ nurodo įprotį, todėl vartojame Present Simple formą „play“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-10",
+              "exercise": 1
+            }
+          ]
+        },
+        {
+          "id": "u10.present-simple.012",
+          "revision": 1,
+          "objectiveId": "u10.present-simple",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "The train ___ at 9 PM every day.",
+            "lt": "Traukinys kasdien išvyksta 21 valandą."
+          },
+          "choices": [
+            {
+              "id": "has-left",
+              "text": "has left"
+            },
+            {
+              "id": "is-leaving",
+              "text": "is leaving"
+            },
+            {
+              "id": "leaves",
+              "text": "leaves"
+            }
+          ],
+          "answer": {
+            "choiceId": "leaves"
+          },
+          "rationale": {
+            "en": "A regular timetable uses Present Simple: leaves.",
+            "lt": "Reguliariam tvarkaraščiui vartojame Present Simple formą „leaves“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-10",
+              "exercise": 6
+            }
+          ]
+        },
+        {
           "id": "u10.stative-verbs.006",
           "revision": 1,
           "objectiveId": "u10.stative-verbs",
@@ -3618,7 +5495,7 @@
         },
         {
           "id": "u10.stative-verbs.007",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u10.stative-verbs",
           "type": "single-choice",
           "difficulty": 3,
@@ -3645,12 +5522,78 @@
           },
           "rationale": {
             "en": "Have is dynamic in have dinner, so Present Continuous is possible; possession is stative.",
-            "lt": "Junginyje have dinner veiksmažodis nusako veiksmą, todėl galima Present Continuous forma; nuosavybė yra būsena."
+            "lt": "Junginyje „have dinner“ veiksmažodis nusako veiksmą, todėl galima vartoti Present Continuous; nuosavybę reiškiantis „have“ yra būsenos veiksmažodis."
           },
           "sourceRefs": [
             {
               "lesson": "unit-10",
               "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u10.stative-verbs.015",
+          "revision": 1,
+          "objectiveId": "u10.stative-verbs",
+          "type": "single-choice",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Choose the usual form for a stable preference.",
+            "lt": "Pasirinkite įprastą formą pastoviam pomėgiui nusakyti."
+          },
+          "choices": [
+            {
+              "id": "does-preferring",
+              "text": "She does preferring coffee."
+            },
+            {
+              "id": "is-preferring",
+              "text": "She is preferring coffee."
+            },
+            {
+              "id": "prefers",
+              "text": "She prefers coffee."
+            }
+          ],
+          "answer": {
+            "choiceId": "prefers"
+          },
+          "rationale": {
+            "en": "Prefer normally describes a state, so use Present Simple: prefers.",
+            "lt": "„Prefer“ paprastai nusako būseną, todėl vartojame Present Simple formą „prefers“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-10",
+              "exercise": 4
+            }
+          ]
+        },
+        {
+          "id": "u10.stative-verbs.016",
+          "revision": 1,
+          "objectiveId": "u10.stative-verbs",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct the sentence: I am knowing him very well.",
+            "lt": "Ištaisykite sakinį: „I am knowing him very well.“"
+          },
+          "answer": {
+            "accepted": [
+              "I know him very well",
+              "I know him very well."
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Know is normally stative, so use Present Simple rather than Present Continuous.",
+            "lt": "„Know“ paprastai yra būsenos veiksmažodis, todėl vartojame Present Simple, o ne Present Continuous."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-10",
+              "exercise": 6
             }
           ]
         }
@@ -3659,7 +5602,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-11",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 11: Past Continuous",
       "objectives": [
         {
@@ -3752,13 +5695,13 @@
         },
         {
           "id": "u11.background.010",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u11.background",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "The writer says, “I was walking home from work when I saw an accident.” What was he doing when he saw it?",
-            "lt": "Pasakotojas sako: „I was walking home from work when I saw an accident.“ Ką jis veikė, kai pamatė avariją?"
+            "en": "After finishing work, the writer set off on foot. Before he reached home, two cars tried to park and one hit the other. What was the writer doing when he noticed the accident?",
+            "lt": "Baigęs darbą pasakotojas išėjo namo pėsčiomis. Jam dar nepasiekus namų, du automobiliai bandė pasistatyti ir vienas atsitrenkė į kitą. Ką pasakotojas veikė, kai pastebėjo avariją?"
           },
           "choices": [
             {
@@ -3778,13 +5721,78 @@
             "choiceId": "walking-home"
           },
           "rationale": {
-            "en": "The reading begins: “I was walking home from work when I saw an accident.”",
-            "lt": "Teksto pradžioje sakoma: „I was walking home from work when I saw an accident.“"
+            "en": "He had left work on foot and had not reached home, so he was walking home from work.",
+            "lt": "Jis išėjo iš darbo pėsčiomis ir dar nebuvo pasiekęs namų, todėl ėjo namo iš darbo."
           },
           "sourceRefs": [
             {
               "lesson": "unit-11",
               "exercise": 8
+            }
+          ]
+        },
+        {
+          "id": "u11.background.015",
+          "revision": 1,
+          "objectiveId": "u11.background",
+          "type": "single-choice",
+          "difficulty": 2,
+          "prompt": {
+            "en": "Music ___ when he entered the room.",
+            "lt": "Kai jis įėjo į kambarį, grojo muzika."
+          },
+          "choices": [
+            {
+              "id": "was-play",
+              "text": "was play"
+            },
+            {
+              "id": "was-playing",
+              "text": "was playing"
+            },
+            {
+              "id": "were-playing",
+              "text": "were playing"
+            }
+          ],
+          "answer": {
+            "choiceId": "was-playing"
+          },
+          "rationale": {
+            "en": "The music forms the background already in progress, so use was playing.",
+            "lt": "Muzika sudaro jau vykusį foną, todėl vartojame „was playing“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-11",
+              "exercise": 5
+            }
+          ]
+        },
+        {
+          "id": "u11.background.016",
+          "revision": 1,
+          "objectiveId": "u11.background",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "People were talking loudly while I ___ to study. (try)",
+            "lt": "Žmonės garsiai kalbėjo, kol aš bandžiau mokytis."
+          },
+          "answer": {
+            "accepted": [
+              "was trying"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Both actions were in progress at the same time, so use was trying.",
+            "lt": "Abu veiksmai tuo metu vyko, todėl vartojame Past Continuous formą „was trying“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-11",
+              "exercise": 5
             }
           ]
         },
@@ -3888,6 +5896,71 @@
             {
               "lesson": "unit-11",
               "exercise": 10
+            }
+          ]
+        },
+        {
+          "id": "u11.interrupted-actions.013",
+          "revision": 1,
+          "objectiveId": "u11.interrupted-actions",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "He ___ dinner when his phone rang.",
+            "lt": "Jis valgė vakarienę, kai suskambo telefonas."
+          },
+          "choices": [
+            {
+              "id": "was-eat",
+              "text": "was eat"
+            },
+            {
+              "id": "was-eating",
+              "text": "was eating"
+            },
+            {
+              "id": "were-eating",
+              "text": "were eating"
+            }
+          ],
+          "answer": {
+            "choiceId": "was-eating"
+          },
+          "rationale": {
+            "en": "The meal was in progress when the phone rang, so use was eating.",
+            "lt": "Vakarienė buvo valgoma tuo metu, kai suskambo telefonas, todėl vartojame „was eating“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-11",
+              "exercise": 3
+            }
+          ]
+        },
+        {
+          "id": "u11.interrupted-actions.014",
+          "revision": 1,
+          "objectiveId": "u11.interrupted-actions",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "The email was already in progress. She ___ an email when her computer crashed. (write)",
+            "lt": "Laiškas jau buvo rašomas. Ji rašė elektroninį laišką, kai sugedo kompiuteris."
+          },
+          "answer": {
+            "accepted": [
+              "was writing"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "The ongoing action takes Past Continuous: was writing; crashed is the interrupting event.",
+            "lt": "Vykstančiam veiksmui vartojame Past Continuous formą „was writing“, o „crashed“ nusako jį pertraukusį įvykį."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-11",
+              "exercise": 4
             }
           ]
         },
@@ -4013,13 +6086,81 @@
               "exercise": 2
             }
           ]
+        },
+        {
+          "id": "u11.past-continuous-form.011",
+          "revision": 1,
+          "objectiveId": "u11.past-continuous-form",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "We ___ TV.",
+            "lt": "Mes žiūrėjome televizorių. Pasirinkite Past Continuous formą."
+          },
+          "choices": [
+            {
+              "id": "was-watching",
+              "text": "was watching"
+            },
+            {
+              "id": "were-watch",
+              "text": "were watch"
+            },
+            {
+              "id": "were-watching",
+              "text": "were watching"
+            }
+          ],
+          "answer": {
+            "choiceId": "were-watching"
+          },
+          "rationale": {
+            "en": "With we, Past Continuous uses were + watching.",
+            "lt": "Su „we“ Past Continuous sudaromas iš „were“ + „watching“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-11",
+              "exercise": 1
+            }
+          ]
+        },
+        {
+          "id": "u11.past-continuous-form.012",
+          "revision": 1,
+          "objectiveId": "u11.past-continuous-form",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Make the sentence negative: I was eating.",
+            "lt": "Sudarykite neigiamąjį sakinį: „I was eating.“"
+          },
+          "answer": {
+            "accepted": [
+              "I was not eating",
+              "I was not eating.",
+              "I wasn't eating",
+              "I wasn't eating."
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Add not after was: was not eating, or wasn't eating.",
+            "lt": "Po „was“ pridedame „not“: „was not eating“ arba „wasn't eating“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-11",
+              "exercise": 2
+            }
+          ]
         }
       ]
     },
     {
       "schemaVersion": 1,
       "unitId": "unit-12",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 12: Review and Consolidation",
       "objectives": [
         {
@@ -4123,13 +6264,13 @@
         },
         {
           "id": "u12.functional-review.010",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u12.functional-review",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "The profile says, “Anna is a 25-year-old graphic designer from Vilnius.” What does Anna do for a living?",
-            "lt": "Aprašyme sakoma: „Anna is a 25-year-old graphic designer from Vilnius.“ Kuo Anna dirba?"
+            "en": "Anna creates logos for Lithuanian companies and often works from home. Today she is meeting a client to discuss a new visual identity. Which profession best matches her work?",
+            "lt": "Anna kuria logotipus Lietuvos įmonėms ir dažnai dirba iš namų. Šiandien ji susitinka su klientu aptarti naujo vizualinio identiteto. Kuri profesija geriausiai atitinka jos darbą?"
           },
           "choices": [
             {
@@ -4149,13 +6290,105 @@
             "choiceId": "graphic-designer"
           },
           "rationale": {
-            "en": "The reading introduces Anna as a 25-year-old graphic designer.",
-            "lt": "Tekste Anna pristatoma kaip 25 metų grafikos dizainerė."
+            "en": "Creating logos and visual identities is the work of a graphic designer.",
+            "lt": "Logotipų ir vizualinio identiteto kūrimas yra grafikos dizainerio ar dizainerės darbas."
           },
           "sourceRefs": [
             {
               "lesson": "unit-12",
               "exercise": 3
+            }
+          ]
+        },
+        {
+          "id": "u12.functional-review.014",
+          "revision": 1,
+          "objectiveId": "u12.functional-review",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Anna wakes at 7 AM and begins her job two hours later. What time does she usually start work?",
+            "lt": "Anna pabunda 7 valandą ir darbą pradeda po dviejų valandų. Kada ji paprastai pradeda dirbti?"
+          },
+          "choices": [
+            {
+              "id": "nine",
+              "text": "At 9 AM"
+            },
+            {
+              "id": "seven",
+              "text": "At 7 AM"
+            },
+            {
+              "id": "six",
+              "text": "At 6 PM"
+            }
+          ],
+          "answer": {
+            "choiceId": "nine"
+          },
+          "rationale": {
+            "en": "Two hours after 7 AM is 9 AM, which matches Anna's routine.",
+            "lt": "Praėjus dviem valandoms po 7 valandos yra 9 valanda; tai atitinka Annos dienotvarkę."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-12",
+              "exercise": 3
+            }
+          ]
+        },
+        {
+          "id": "u12.functional-review.015",
+          "revision": 1,
+          "objectiveId": "u12.functional-review",
+          "type": "fill-blank",
+          "difficulty": 2,
+          "prompt": {
+            "en": "A: I visited London last summer. B: What ___ you do there?",
+            "lt": "A: Praėjusią vasarą aplankiau Londoną. B: Ką ten veikei? Įrašykite trūkstamą pagalbinį veiksmažodį."
+          },
+          "answer": {
+            "accepted": [
+              "did"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "A Past Simple information question uses did before the subject.",
+            "lt": "Past Simple informaciniame klausime prieš veiksnį vartojame „did“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-12",
+              "exercise": 5
+            }
+          ]
+        },
+        {
+          "id": "u12.functional-review.016",
+          "revision": 1,
+          "objectiveId": "u12.functional-review",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "The speaker answers, “I have studied English for five years.” Complete the question: How long ___ English? (you / study)",
+            "lt": "Kalbėtojas atsako: „I have studied English for five years.“ Užbaikite klausimą: How long ___ English? (you / study)"
+          },
+          "answer": {
+            "accepted": [
+              "have you studied"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Ask about duration continuing to the present with How long + have + subject + past participle.",
+            "lt": "Apie iki dabar besitęsiančią trukmę klausiame: „How long“ + „have“ + veiksnys + III forma."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-12",
+              "exercise": 5
             }
           ]
         },
@@ -4244,6 +6477,72 @@
           "rationale": {
             "en": "Use the base verb without to after should.",
             "lt": "Po should vartojame bendratį be to."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-12",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u12.structure-review.012",
+          "revision": 1,
+          "objectiveId": "u12.structure-review",
+          "type": "single-choice",
+          "difficulty": 1,
+          "prompt": {
+            "en": "Choose the correct sentence about a possible event tomorrow.",
+            "lt": "Pasirinkite taisyklingą sakinį apie galimą rytojaus įvykį."
+          },
+          "choices": [
+            {
+              "id": "may-rain",
+              "text": "It may rain tomorrow."
+            },
+            {
+              "id": "may-rains",
+              "text": "It may rains tomorrow."
+            },
+            {
+              "id": "may-to-rain",
+              "text": "It may to rain tomorrow."
+            }
+          ],
+          "answer": {
+            "choiceId": "may-rain"
+          },
+          "rationale": {
+            "en": "After may, use the base verb without -s or to: may rain.",
+            "lt": "Po „may“ vartojame bendratį be „-s“ ir be „to“: „may rain“."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-12",
+              "exercise": 2
+            }
+          ]
+        },
+        {
+          "id": "u12.structure-review.013",
+          "revision": 1,
+          "objectiveId": "u12.structure-review",
+          "type": "fill-blank",
+          "difficulty": 3,
+          "prompt": {
+            "en": "Correct the sentence: She is the happiest than her sister.",
+            "lt": "Ištaisykite sakinį: „She is the happiest than her sister.“"
+          },
+          "answer": {
+            "accepted": [
+              "She is happier than her sister",
+              "She is happier than her sister."
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "A comparison between two people uses the comparative happier + than.",
+            "lt": "Lyginant du žmones vartojamas lyginamasis laipsnis „happier“ + „than“."
           },
           "sourceRefs": [
             {
@@ -4374,6 +6673,33 @@
           "rationale": {
             "en": "All my life describes an unfinished period continuing to now, so use have lived.",
             "lt": "All my life nusako iki dabar besitęsiantį laikotarpį, todėl vartojame have lived."
+          },
+          "sourceRefs": [
+            {
+              "lesson": "unit-12",
+              "exercise": 1
+            }
+          ]
+        },
+        {
+          "id": "u12.tense-review.011",
+          "revision": 1,
+          "objectiveId": "u12.tense-review",
+          "type": "fill-blank",
+          "difficulty": 1,
+          "prompt": {
+            "en": "They ___ basketball every week. (play)",
+            "lt": "Jie žaidžia krepšinį kiekvieną savaitę."
+          },
+          "answer": {
+            "accepted": [
+              "play"
+            ],
+            "caseSensitive": false
+          },
+          "rationale": {
+            "en": "Every week marks a regular activity, so use Present Simple: play.",
+            "lt": "„Every week“ nurodo reguliarų veiksmą, todėl vartojame Present Simple formą „play“."
           },
           "sourceRefs": [
             {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-12",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Unit 12: Review and Consolidation",
   "objectives": [
     { "id": "u12.tense-review", "label": { "en": "Choose and form A2 tenses", "lt": "Pasirinkti ir sudaryti A2 laikus" } },
@@ -135,19 +135,95 @@
     },
     {
       "id": "u12.functional-review.010",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u12.functional-review",
       "type": "single-choice",
       "difficulty": 3,
-      "prompt": { "en": "The profile says, “Anna is a 25-year-old graphic designer from Vilnius.” What does Anna do for a living?", "lt": "Aprašyme sakoma: „Anna is a 25-year-old graphic designer from Vilnius.“ Kuo Anna dirba?" },
+      "prompt": { "en": "Anna creates logos for Lithuanian companies and often works from home. Today she is meeting a client to discuss a new visual identity. Which profession best matches her work?", "lt": "Anna kuria logotipus Lietuvos įmonėms ir dažnai dirba iš namų. Šiandien ji susitinka su klientu aptarti naujo vizualinio identiteto. Kuri profesija geriausiai atitinka jos darbą?" },
       "choices": [
         { "id": "graphic-designer", "text": "She is a graphic designer." },
         { "id": "english-teacher", "text": "She is an English teacher." },
         { "id": "doctor", "text": "She is a doctor." }
       ],
       "answer": { "choiceId": "graphic-designer" },
-      "rationale": { "en": "The reading introduces Anna as a 25-year-old graphic designer.", "lt": "Tekste Anna pristatoma kaip 25 metų grafikos dizainerė." },
+      "rationale": { "en": "Creating logos and visual identities is the work of a graphic designer.", "lt": "Logotipų ir vizualinio identiteto kūrimas yra grafikos dizainerio ar dizainerės darbas." },
       "sourceRefs": [{ "lesson": "unit-12", "exercise": 3 }]
+    },
+    {
+      "id": "u12.tense-review.011",
+      "revision": 1,
+      "objectiveId": "u12.tense-review",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "They ___ basketball every week. (play)", "lt": "Jie žaidžia krepšinį kiekvieną savaitę." },
+      "answer": { "accepted": ["play"], "caseSensitive": false },
+      "rationale": { "en": "Every week marks a regular activity, so use Present Simple: play.", "lt": "„Every week“ nurodo reguliarų veiksmą, todėl vartojame Present Simple formą „play“." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 1 }]
+    },
+    {
+      "id": "u12.structure-review.012",
+      "revision": 1,
+      "objectiveId": "u12.structure-review",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "Choose the correct sentence about a possible event tomorrow.", "lt": "Pasirinkite taisyklingą sakinį apie galimą rytojaus įvykį." },
+      "choices": [
+        { "id": "may-rain", "text": "It may rain tomorrow." },
+        { "id": "may-rains", "text": "It may rains tomorrow." },
+        { "id": "may-to-rain", "text": "It may to rain tomorrow." }
+      ],
+      "answer": { "choiceId": "may-rain" },
+      "rationale": { "en": "After may, use the base verb without -s or to: may rain.", "lt": "Po „may“ vartojame bendratį be „-s“ ir be „to“: „may rain“." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 2 }]
+    },
+    {
+      "id": "u12.structure-review.013",
+      "revision": 1,
+      "objectiveId": "u12.structure-review",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Correct the sentence: She is the happiest than her sister.", "lt": "Ištaisykite sakinį: „She is the happiest than her sister.“" },
+      "answer": { "accepted": ["She is happier than her sister.", "She is happier than her sister"], "caseSensitive": false },
+      "rationale": { "en": "A comparison between two people uses the comparative happier + than.", "lt": "Lyginant du žmones vartojamas lyginamasis laipsnis „happier“ + „than“." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 2 }]
+    },
+    {
+      "id": "u12.functional-review.014",
+      "revision": 1,
+      "objectiveId": "u12.functional-review",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "Anna wakes at 7 AM and begins her job two hours later. What time does she usually start work?", "lt": "Anna pabunda 7 valandą ir darbą pradeda po dviejų valandų. Kada ji paprastai pradeda dirbti?" },
+      "choices": [
+        { "id": "nine", "text": "At 9 AM" },
+        { "id": "seven", "text": "At 7 AM" },
+        { "id": "six", "text": "At 6 PM" }
+      ],
+      "answer": { "choiceId": "nine" },
+      "rationale": { "en": "Two hours after 7 AM is 9 AM, which matches Anna's routine.", "lt": "Praėjus dviem valandoms po 7 valandos yra 9 valanda; tai atitinka Annos dienotvarkę." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 3 }]
+    },
+    {
+      "id": "u12.functional-review.015",
+      "revision": 1,
+      "objectiveId": "u12.functional-review",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "A: I visited London last summer. B: What ___ you do there?", "lt": "A: Praėjusią vasarą aplankiau Londoną. B: Ką ten veikei? Įrašykite trūkstamą pagalbinį veiksmažodį." },
+      "answer": { "accepted": ["did"], "caseSensitive": false },
+      "rationale": { "en": "A Past Simple information question uses did before the subject.", "lt": "Past Simple informaciniame klausime prieš veiksnį vartojame „did“." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 5 }]
+    },
+    {
+      "id": "u12.functional-review.016",
+      "revision": 1,
+      "objectiveId": "u12.functional-review",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "The speaker answers, “I have studied English for five years.” Complete the question: How long ___ English? (you / study)", "lt": "Kalbėtojas atsako: „I have studied English for five years.“ Užbaikite klausimą: How long ___ English? (you / study)" },
+      "answer": { "accepted": ["have you studied"], "caseSensitive": false },
+      "rationale": { "en": "Ask about duration continuing to the present with How long + have + subject + past participle.", "lt": "Apie iki dabar besitęsiančią trukmę klausiame: „How long“ + „have“ + veiksnys + III forma." },
+      "sourceRefs": [{ "lesson": "unit-12", "exercise": 5 }]
     }
   ]
 }

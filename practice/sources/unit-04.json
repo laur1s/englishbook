@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-04",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Food and Shopping",
   "objectives": [
     {
@@ -224,13 +224,13 @@
     },
     {
       "id": "u04.shopping-reading.010",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u04.shopping-reading",
       "type": "single-choice",
       "difficulty": 3,
       "prompt": {
-        "en": "The shopping story says, “Kristina spends 45 euros in total.” How much does she spend?",
-        "lt": "Apsipirkimo istorijoje sakoma: „Kristina spends 45 euros in total.“ Kiek ji išleidžia?"
+        "en": "Kristina pays with a 50-euro note. The cashier gives her 5 euros back. How much did her shopping cost?",
+        "lt": "Kristina sumoka 50 eurų banknotu. Kasininkas jai grąžina 5 eurus. Kiek kainavo jos pirkiniai?"
       },
       "choices": [
         {"id": "a", "text": "35 euros"},
@@ -239,10 +239,135 @@
       ],
       "answer": {"choiceId": "b"},
       "rationale": {
-        "en": "The final paragraph says that Kristina spends 45 euros in total.",
-        "lt": "Paskutinėje pastraipoje parašyta, kad Kristina iš viso išleidžia 45 eurus."
+        "en": "Fifty euros minus five euros change equals a total cost of 45 euros.",
+        "lt": "Iš 50 eurų atėmus 5 eurų grąžą gauname 45 eurų bendrą kainą."
       },
       "sourceRefs": [{"lesson": "unit-04", "exercise": 7}]
+    },
+    {
+      "id": "u04.food-nouns.011",
+      "revision": 1,
+      "objectiveId": "u04.food-nouns",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "In the phrase “some rice”, is rice countable or uncountable?",
+        "lt": "Ar frazėje „some rice“ daiktavardis „rice“ yra skaičiuojamas ar neskaičiuojamas?"
+      },
+      "choices": [
+        {"id": "a", "text": "Countable"},
+        {"id": "b", "text": "Uncountable"}
+      ],
+      "answer": {"choiceId": "b"},
+      "rationale": {
+        "en": "Rice is normally uncountable when we mean the food in general.",
+        "lt": "Kalbant apie maistą apskritai, „rice“ paprastai yra neskaičiuojamas daiktavardis."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 1}]
+    },
+    {
+      "id": "u04.quantifiers.012",
+      "revision": 1,
+      "objectiveId": "u04.quantifiers",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete with some or any: “There isn't ___ bread.”",
+        "lt": "Įrašykite „some“ arba „any“: „There isn't ___ bread.“"
+      },
+      "answer": {
+        "accepted": ["any"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Any is normally used with an uncountable noun in a negative sentence.",
+        "lt": "Neigiamajame sakinyje su neskaičiuojamu daiktavardžiu paprastai vartojama „any“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 2}]
+    },
+    {
+      "id": "u04.shopping-language.013",
+      "revision": 1,
+      "objectiveId": "u04.shopping-language",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "A market seller asks, “Can I help you?” Choose the most natural reply when you want tomatoes.",
+        "lt": "Turgaus pardavėjas klausia: „Can I help you?“ Pasirinkite natūraliausią atsakymą, kai norite pomidorų."
+      },
+      "choices": [
+        {"id": "a", "text": "Yes, please. I'd like some tomatoes."},
+        {"id": "b", "text": "Yes, I like tomatoes yesterday."},
+        {"id": "c", "text": "No, give tomatoes."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "I'd like some tomatoes is a polite, natural request in a shop.",
+        "lt": "„I'd like some tomatoes“ yra mandagus ir natūralus prašymas parduotuvėje."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 5}]
+    },
+    {
+      "id": "u04.shopping-reading.014",
+      "revision": 1,
+      "objectiveId": "u04.shopping-reading",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Kristina sees delicious cakes at the bakery, but their price is higher than she wants to pay. Complete: “The cakes are too ___.”",
+        "lt": "Kristina kepykloje mato gardžius pyragus, bet jų kaina didesnė, nei ji nori mokėti. Užbaikite: „The cakes are too ___.“"
+      },
+      "answer": {
+        "accepted": ["expensive"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "A price that is higher than someone wants to pay is too expensive.",
+        "lt": "Kaina, kuri yra didesnė, nei žmogus nori mokėti, yra „too expensive“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 7}]
+    },
+    {
+      "id": "u04.shopping-reading.015",
+      "revision": 1,
+      "objectiveId": "u04.shopping-reading",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "At the butcher's, Kristina chooses chicken and a little beef. She leaves one protein item because she does not enjoy it. What does she leave?",
+        "lt": "Mėsos parduotuvėje Kristina pasirenka vištieną ir truputį jautienos. Vieno baltyminio produkto ji neima, nes jo nemėgsta. Ko ji neima?"
+      },
+      "choices": [
+        {"id": "a", "text": "Fish"},
+        {"id": "b", "text": "Chicken"},
+        {"id": "c", "text": "Beef"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "The story says she buys chicken and beef but does not buy fish because she dislikes it.",
+        "lt": "Pasakojime ji perka vištieną ir jautieną, bet neperka žuvies, nes jos nemėgsta."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 7}]
+    },
+    {
+      "id": "u04.quantifiers.016",
+      "revision": 1,
+      "objectiveId": "u04.quantifiers",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "You need a small amount of sugar. Complete: “I need ___ sugar.”",
+        "lt": "Jums reikia nedidelio kiekio cukraus. Užbaikite: „I need ___ sugar.“"
+      },
+      "answer": {
+        "accepted": ["a little"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Use a little for a small amount of an uncountable noun such as sugar.",
+        "lt": "Nedideliam neskaičiuojamo daiktavardžio, pavyzdžiui, cukraus, kiekiui vartojama „a little“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 4}]
     }
   ]
 }

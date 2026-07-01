@@ -49,6 +49,17 @@ test("checkpoint sessions draw from the intended cumulative unit ranges", () => 
   ]);
   assert.deepEqual(getSessionById("module-09-review")?.unitIds, ["unit-07", "unit-08", "unit-09"]);
   assert.equal(getSessionById("module-12-review")?.unitIds.length, 12);
+  assert.equal(getSessionById("module-12-review")?.count, 12);
+});
+
+test("the next-session helper skips optional enrichment", () => {
+  const original = sessions[1].required;
+  sessions[1].required = false;
+  try {
+    assert.equal(getNextSessionId("module-01-context"), "module-01-practice");
+  } finally {
+    sessions[1].required = original;
+  }
 });
 
 test("validation orders a valid manifest independently of source array order", () => {
@@ -128,5 +139,17 @@ test("validation rejects bad unit, mission, story, and practice references", asy
     );
     checkpoint.unitIds = ["unit-01", "unit-02"];
     assert.throws(() => validateCoursePath(invalid), /must include the current unit unit-03/);
+  });
+
+  await t.test("checkpoint question coverage", () => {
+    const invalid = clonePath();
+    const checkpoint = invalid.modules[11].sessions.find(
+      (session) => session.stage === "review",
+    );
+    checkpoint.count = 11;
+    assert.throws(
+      () => validateCoursePath(invalid),
+      /at least one question for every checkpoint unit/,
+    );
   });
 });

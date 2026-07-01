@@ -333,8 +333,8 @@ export const validatePracticeSource = (
 
   const itemIds = new Set<string>();
 
-  if (!Array.isArray(input.items) || input.items.length < 10) {
-    addIssue(issues, `${path}.items`, "must contain at least ten practice items");
+  if (!Array.isArray(input.items) || input.items.length < 16) {
+    addIssue(issues, `${path}.items`, "must contain at least sixteen practice items");
   } else {
     input.items.forEach((item, index) => {
       validateItem(item, `${path}.items[${index}]`, String(input.unitId ?? ""), objectiveIds, issues);

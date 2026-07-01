@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-09",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Unit 9: Modal Verbs",
   "objectives": [
     { "id": "u09.deduction", "label": { "en": "Make deductions with must and can't", "lt": "Daryti išvadas su must ir can't" } },
@@ -66,11 +66,11 @@
     },
     {
       "id": "u09.advice.005",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u09.advice",
       "type": "single-choice",
       "difficulty": 1,
-      "prompt": { "en": "You look tired. You ___ go to bed early tonight.", "lt": "Atrodote pavargęs. Šį vakarą turėtumėte anksti eiti miegoti." },
+      "prompt": { "en": "You look tired. You ___ go to bed early tonight.", "lt": "Atrodote pavargęs / pavargusi. Šį vakarą turėtumėte anksti eiti miegoti." },
       "choices": [
         { "id": "should", "text": "should" },
         { "id": "cant", "text": "can't" },
@@ -120,30 +120,111 @@
     },
     {
       "id": "u09.deduction.009",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u09.deduction",
       "type": "single-choice",
       "difficulty": 2,
-      "prompt": { "en": "I just saw Jonas board a flight. He ___ be at home now.", "lt": "Ką tik mačiau, kaip Jonas įlipo į lėktuvą. Jis negali dabar būti namuose." },
+      "prompt": { "en": "This key does not fit the lock. It ___ be the right key.", "lt": "Šis raktas netinka spynai. Tai negali būti tinkamas raktas." },
       "choices": [
         { "id": "cant", "text": "can't" },
         { "id": "must", "text": "must" },
         { "id": "should", "text": "should" }
       ],
       "answer": { "choiceId": "cant" },
-      "rationale": { "en": "Seeing Jonas board a flight is strong evidence that being at home now is impossible.", "lt": "Tai, kad Jonas įlipo į lėktuvą, yra aiškus įrodymas, todėl neįmanomumui reikšti vartojame „can't“." },
+      "rationale": { "en": "The failed fit is strong evidence that this is not the right key, so use can't.", "lt": "Tai, kad raktas netinka, yra aiškus įrodymas, todėl neįmanomumui reikšti vartojame „can't“." },
       "sourceRefs": [{ "lesson": "unit-09", "exercise": 1 }]
     },
     {
       "id": "u09.possibility.010",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u09.possibility",
       "type": "fill-blank",
       "difficulty": 2,
-      "prompt": { "en": "Her office light is on, but I am not sure she is there. She ___ be in her office.", "lt": "Jos kabinete dega šviesa, bet nesu tikras, ar ji ten. Ji galbūt yra savo kabinete." },
+      "prompt": { "en": "Her office light is on, but I am not sure she is there. She ___ be in her office.", "lt": "Jos kabinete dega šviesa, bet nesu tikras / tikra, ar ji ten. Ji galbūt yra savo kabinete." },
       "answer": { "accepted": ["may", "might"], "caseSensitive": false },
       "rationale": { "en": "The evidence is not conclusive, so may or might expresses possibility rather than certainty.", "lt": "Įrodymas nėra pakankamas tvirtai išvadai, todėl galimybei reikšti vartojame „may“ arba „might“." },
       "sourceRefs": [{ "lesson": "unit-09", "exercise": 4 }]
+    },
+    {
+      "id": "u09.possibility.011",
+      "revision": 1,
+      "objectiveId": "u09.possibility",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "She is not answering her phone. She ___ be busy, but I am not sure.", "lt": "Ji neatsiliepia telefonu. Galbūt ji užsiėmusi, bet nesu tikras / tikra." },
+      "choices": [
+        { "id": "might", "text": "might" },
+        { "id": "must", "text": "must" },
+        { "id": "cant", "text": "can't" }
+      ],
+      "answer": { "choiceId": "might" },
+      "rationale": { "en": "The speaker is unsure, so might expresses possibility rather than certainty or impossibility.", "lt": "Kalbėtojas nėra tikras, todėl galimybei, o ne tikrumui ar neįmanomumui, reikšti vartojame „might“." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 4 }]
+    },
+    {
+      "id": "u09.possibility.012",
+      "revision": 1,
+      "objectiveId": "u09.possibility",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "The bus ___ be late. It is often late on Fridays.", "lt": "Autobusas gali vėluoti. Penktadieniais jis dažnai vėluoja." },
+      "answer": { "accepted": ["may", "might"], "caseSensitive": false },
+      "rationale": { "en": "May and might both express a possible delay; the evidence is not certain.", "lt": "Ir „may“, ir „might“ reiškia galimą vėlavimą; turima informacija nesuteikia tikrumo." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 2 }]
+    },
+    {
+      "id": "u09.advice.013",
+      "revision": 1,
+      "objectiveId": "u09.advice",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "You ___ eat so much sugar. It is not healthy.", "lt": "Neturėtumėte valgyti tiek daug cukraus, nes tai nesveika." },
+      "choices": [
+        { "id": "shouldnt", "text": "shouldn't" },
+        { "id": "must", "text": "must" },
+        { "id": "may", "text": "may" }
+      ],
+      "answer": { "choiceId": "shouldnt" },
+      "rationale": { "en": "Shouldn't gives advice against an unhealthy action.", "lt": "„Shouldn't“ vartojamas patariant nedaryti sveikatai žalingo veiksmo." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 4 }]
+    },
+    {
+      "id": "u09.advice.014",
+      "revision": 1,
+      "objectiveId": "u09.advice",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Correct the sentence: I should to study more.", "lt": "Ištaisykite sakinį: „I should to study more.“" },
+      "answer": { "accepted": ["I should study more.", "I should study more"], "caseSensitive": false },
+      "rationale": { "en": "After should, use the base verb without to: should study.", "lt": "Po „should“ vartojame bendratį be „to“: „should study“." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 9 }]
+    },
+    {
+      "id": "u09.modal-form.015",
+      "revision": 1,
+      "objectiveId": "u09.modal-form",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Choose the correct sentence about a possible event tomorrow.", "lt": "Pasirinkite taisyklingą sakinį apie galimą rytojaus įvykį." },
+      "choices": [
+        { "id": "may-rain", "text": "It may rain tomorrow." },
+        { "id": "may-rains", "text": "It may rains tomorrow." },
+        { "id": "may-to-rain", "text": "It may to rain tomorrow." }
+      ],
+      "answer": { "choiceId": "may-rain" },
+      "rationale": { "en": "A modal is followed by the base verb without -s or to: may rain.", "lt": "Po modalinio veiksmažodžio vartojame bendratį be „-s“ ir be „to“: „may rain“." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 9 }]
+    },
+    {
+      "id": "u09.modal-form.016",
+      "revision": 1,
+      "objectiveId": "u09.modal-form",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Correct the sentence: They should to arrive early.", "lt": "Ištaisykite sakinį: „They should to arrive early.“" },
+      "answer": { "accepted": ["They should arrive early.", "They should arrive early"], "caseSensitive": false },
+      "rationale": { "en": "Use the base verb arrive directly after should.", "lt": "Po „should“ iš karto vartojame bendratį „arrive“." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 9 }]
     }
   ]
 }

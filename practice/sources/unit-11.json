@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-11",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Unit 11: Past Continuous",
   "objectives": [
     { "id": "u11.past-continuous-form", "label": { "en": "Form the Past Continuous", "lt": "Sudaryti Past Continuous" } },
@@ -130,19 +130,100 @@
     },
     {
       "id": "u11.background.010",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u11.background",
       "type": "single-choice",
       "difficulty": 3,
-      "prompt": { "en": "The writer says, “I was walking home from work when I saw an accident.” What was he doing when he saw it?", "lt": "Pasakotojas sako: „I was walking home from work when I saw an accident.“ Ką jis veikė, kai pamatė avariją?" },
+      "prompt": { "en": "After finishing work, the writer set off on foot. Before he reached home, two cars tried to park and one hit the other. What was the writer doing when he noticed the accident?", "lt": "Baigęs darbą pasakotojas išėjo namo pėsčiomis. Jam dar nepasiekus namų, du automobiliai bandė pasistatyti ir vienas atsitrenkė į kitą. Ką pasakotojas veikė, kai pastebėjo avariją?" },
       "choices": [
         { "id": "walking-home", "text": "He was walking home from work." },
         { "id": "driving-home", "text": "He was driving home from work." },
         { "id": "waiting-bus", "text": "He was waiting for a bus." }
       ],
       "answer": { "choiceId": "walking-home" },
-      "rationale": { "en": "The reading begins: “I was walking home from work when I saw an accident.”", "lt": "Teksto pradžioje sakoma: „I was walking home from work when I saw an accident.“" },
+      "rationale": { "en": "He had left work on foot and had not reached home, so he was walking home from work.", "lt": "Jis išėjo iš darbo pėsčiomis ir dar nebuvo pasiekęs namų, todėl ėjo namo iš darbo." },
       "sourceRefs": [{ "lesson": "unit-11", "exercise": 8 }]
+    },
+    {
+      "id": "u11.past-continuous-form.011",
+      "revision": 1,
+      "objectiveId": "u11.past-continuous-form",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "We ___ TV.", "lt": "Mes žiūrėjome televizorių. Pasirinkite Past Continuous formą." },
+      "choices": [
+        { "id": "were-watching", "text": "were watching" },
+        { "id": "was-watching", "text": "was watching" },
+        { "id": "were-watch", "text": "were watch" }
+      ],
+      "answer": { "choiceId": "were-watching" },
+      "rationale": { "en": "With we, Past Continuous uses were + watching.", "lt": "Su „we“ Past Continuous sudaromas iš „were“ + „watching“." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 1 }]
+    },
+    {
+      "id": "u11.past-continuous-form.012",
+      "revision": 1,
+      "objectiveId": "u11.past-continuous-form",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "Make the sentence negative: I was eating.", "lt": "Sudarykite neigiamąjį sakinį: „I was eating.“" },
+      "answer": { "accepted": ["I wasn't eating.", "I wasn't eating", "I was not eating.", "I was not eating"], "caseSensitive": false },
+      "rationale": { "en": "Add not after was: was not eating, or wasn't eating.", "lt": "Po „was“ pridedame „not“: „was not eating“ arba „wasn't eating“." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 2 }]
+    },
+    {
+      "id": "u11.interrupted-actions.013",
+      "revision": 1,
+      "objectiveId": "u11.interrupted-actions",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "He ___ dinner when his phone rang.", "lt": "Jis valgė vakarienę, kai suskambo telefonas." },
+      "choices": [
+        { "id": "was-eating", "text": "was eating" },
+        { "id": "were-eating", "text": "were eating" },
+        { "id": "was-eat", "text": "was eat" }
+      ],
+      "answer": { "choiceId": "was-eating" },
+      "rationale": { "en": "The meal was in progress when the phone rang, so use was eating.", "lt": "Vakarienė buvo valgoma tuo metu, kai suskambo telefonas, todėl vartojame „was eating“." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 3 }]
+    },
+    {
+      "id": "u11.interrupted-actions.014",
+      "revision": 1,
+      "objectiveId": "u11.interrupted-actions",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "The email was already in progress. She ___ an email when her computer crashed. (write)", "lt": "Laiškas jau buvo rašomas. Ji rašė elektroninį laišką, kai sugedo kompiuteris." },
+      "answer": { "accepted": ["was writing"], "caseSensitive": false },
+      "rationale": { "en": "The ongoing action takes Past Continuous: was writing; crashed is the interrupting event.", "lt": "Vykstančiam veiksmui vartojame Past Continuous formą „was writing“, o „crashed“ nusako jį pertraukusį įvykį." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 4 }]
+    },
+    {
+      "id": "u11.background.015",
+      "revision": 1,
+      "objectiveId": "u11.background",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Music ___ when he entered the room.", "lt": "Kai jis įėjo į kambarį, grojo muzika." },
+      "choices": [
+        { "id": "was-playing", "text": "was playing" },
+        { "id": "were-playing", "text": "were playing" },
+        { "id": "was-play", "text": "was play" }
+      ],
+      "answer": { "choiceId": "was-playing" },
+      "rationale": { "en": "The music forms the background already in progress, so use was playing.", "lt": "Muzika sudaro jau vykusį foną, todėl vartojame „was playing“." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 5 }]
+    },
+    {
+      "id": "u11.background.016",
+      "revision": 1,
+      "objectiveId": "u11.background",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "People were talking loudly while I ___ to study. (try)", "lt": "Žmonės garsiai kalbėjo, kol aš bandžiau mokytis." },
+      "answer": { "accepted": ["was trying"], "caseSensitive": false },
+      "rationale": { "en": "Both actions were in progress at the same time, so use was trying.", "lt": "Abu veiksmai tuo metu vyko, todėl vartojame Past Continuous formą „was trying“." },
+      "sourceRefs": [{ "lesson": "unit-11", "exercise": 5 }]
     }
   ]
 }

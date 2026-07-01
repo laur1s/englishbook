@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-10",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Unit 10: Present Tenses Contrast",
   "objectives": [
     { "id": "u10.present-simple", "label": { "en": "Use Present Simple for routines and facts", "lt": "Vartoti Present Simple įpročiams ir faktams" } },
@@ -93,7 +93,7 @@
     },
     {
       "id": "u10.stative-verbs.007",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u10.stative-verbs",
       "type": "single-choice",
       "difficulty": 3,
@@ -104,7 +104,7 @@
         { "id": "have-dinner-now", "text": "I have dinner right now." }
       ],
       "answer": { "choiceId": "having-dinner" },
-      "rationale": { "en": "Have is dynamic in have dinner, so Present Continuous is possible; possession is stative.", "lt": "Junginyje have dinner veiksmažodis nusako veiksmą, todėl galima Present Continuous forma; nuosavybė yra būsena." },
+      "rationale": { "en": "Have is dynamic in have dinner, so Present Continuous is possible; possession is stative.", "lt": "Junginyje „have dinner“ veiksmažodis nusako veiksmą, todėl galima vartoti Present Continuous; nuosavybę reiškiantis „have“ yra būsenos veiksmažodis." },
       "sourceRefs": [{ "lesson": "unit-10", "exercise": 4 }]
     },
     {
@@ -149,6 +149,82 @@
       "answer": { "accepted": ["has just finished"], "caseSensitive": false },
       "rationale": { "en": "With he, use has + just + the past participle finished.", "lt": "Su he vartojame has + just + III formą finished." },
       "sourceRefs": [{ "lesson": "unit-10", "exercise": 2 }]
+    },
+    {
+      "id": "u10.present-simple.011",
+      "revision": 1,
+      "objectiveId": "u10.present-simple",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "They ___ football every Saturday. (play)", "lt": "Jie žaidžia futbolą kiekvieną šeštadienį." },
+      "answer": { "accepted": ["play"], "caseSensitive": false },
+      "rationale": { "en": "Every Saturday marks a routine, so use Present Simple: play.", "lt": "„Every Saturday“ nurodo įprotį, todėl vartojame Present Simple formą „play“." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 1 }]
+    },
+    {
+      "id": "u10.present-simple.012",
+      "revision": 1,
+      "objectiveId": "u10.present-simple",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "The train ___ at 9 PM every day.", "lt": "Traukinys kasdien išvyksta 21 valandą." },
+      "choices": [
+        { "id": "leaves", "text": "leaves" },
+        { "id": "is-leaving", "text": "is leaving" },
+        { "id": "has-left", "text": "has left" }
+      ],
+      "answer": { "choiceId": "leaves" },
+      "rationale": { "en": "A regular timetable uses Present Simple: leaves.", "lt": "Reguliariam tvarkaraščiui vartojame Present Simple formą „leaves“." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 6 }]
+    },
+    {
+      "id": "u10.present-continuous.013",
+      "revision": 1,
+      "objectiveId": "u10.present-continuous",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": { "en": "They ___ football now. (play)", "lt": "Jie dabar žaidžia futbolą." },
+      "answer": { "accepted": ["are playing"], "caseSensitive": false },
+      "rationale": { "en": "Now marks an action in progress, so use are playing with they.", "lt": "„Now“ nurodo vykstantį veiksmą, todėl su „they“ vartojame „are playing“." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 1 }]
+    },
+    {
+      "id": "u10.present-perfect.014",
+      "revision": 1,
+      "objectiveId": "u10.present-perfect",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "She ___ Paris three times in her life. (visit)", "lt": "Ji tris kartus gyvenime lankėsi Paryžiuje." },
+      "answer": { "accepted": ["has visited"], "caseSensitive": false },
+      "rationale": { "en": "An experience in her life without a finished time uses Present Perfect: has visited.", "lt": "Gyvenimo patirčiai, kai nenurodytas pasibaigęs laikas, vartojame Present Perfect formą „has visited“." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 2 }]
+    },
+    {
+      "id": "u10.stative-verbs.015",
+      "revision": 1,
+      "objectiveId": "u10.stative-verbs",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": { "en": "Choose the usual form for a stable preference.", "lt": "Pasirinkite įprastą formą pastoviam pomėgiui nusakyti." },
+      "choices": [
+        { "id": "prefers", "text": "She prefers coffee." },
+        { "id": "is-preferring", "text": "She is preferring coffee." },
+        { "id": "does-preferring", "text": "She does preferring coffee." }
+      ],
+      "answer": { "choiceId": "prefers" },
+      "rationale": { "en": "Prefer normally describes a state, so use Present Simple: prefers.", "lt": "„Prefer“ paprastai nusako būseną, todėl vartojame Present Simple formą „prefers“." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 4 }]
+    },
+    {
+      "id": "u10.stative-verbs.016",
+      "revision": 1,
+      "objectiveId": "u10.stative-verbs",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Correct the sentence: I am knowing him very well.", "lt": "Ištaisykite sakinį: „I am knowing him very well.“" },
+      "answer": { "accepted": ["I know him very well.", "I know him very well"], "caseSensitive": false },
+      "rationale": { "en": "Know is normally stative, so use Present Simple rather than Present Continuous.", "lt": "„Know“ paprastai yra būsenos veiksmažodis, todėl vartojame Present Simple, o ne Present Continuous." },
+      "sourceRefs": [{ "lesson": "unit-10", "exercise": 6 }]
     }
   ]
 }

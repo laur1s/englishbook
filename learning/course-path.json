@@ -191,7 +191,7 @@
         { "id": "module-12-learn", "title": "Consolidate the A2 course", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-12", "required": true, "skillRefs": ["grammar.mixed-a2", "writing.connected-text", "communication.repair"] },
         { "id": "module-12-practice", "title": "Solve a mixed A2 challenge", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-12", "mode": "standard", "count": 10, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.functions"] },
         { "id": "module-12-speak", "title": "Complete the real-life challenge", "kind": "content", "stage": "speak", "minutes": 7, "href": "/speaking/a2-real-life-challenge", "required": true, "skillRefs": ["speaking.integrated-a2", "communication.repair"] },
-        { "id": "module-12-review", "title": "Final A2 checkpoint", "kind": "practice", "stage": "review", "minutes": 18, "unitIds": ["unit-01", "unit-02", "unit-03", "unit-04", "unit-05", "unit-06", "unit-07", "unit-08", "unit-09", "unit-10", "unit-11", "unit-12"], "mode": "checkpoint", "count": 10, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.integrated-a2"] }
+        { "id": "module-12-review", "title": "Final A2 checkpoint", "kind": "practice", "stage": "review", "minutes": 18, "unitIds": ["unit-01", "unit-02", "unit-03", "unit-04", "unit-05", "unit-06", "unit-07", "unit-08", "unit-09", "unit-10", "unit-11", "unit-12"], "mode": "checkpoint", "count": 12, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.integrated-a2"] }
       ]
     }
   ]

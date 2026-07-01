@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-06",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Future Plans",
   "objectives": [
     {
@@ -243,6 +243,87 @@
         "lt": "Tekste parašyta, kad Andrius ryte važiuos autobusu."
       },
       "sourceRefs": [{"lesson": "unit-06", "exercise": 6}]
+    },
+    {
+      "id": "u06.going-to.011",
+      "revision": 1,
+      "objectiveId": "u06.going-to",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "My sister ___ married in June. (get)", "lt": "Mano sesuo birželį ketina ištekėti. Pasirinkite tinkamą „going to“ formą." },
+      "choices": [
+        { "id": "is-going-to-get", "text": "is going to get" },
+        { "id": "are-going-to-get", "text": "are going to get" },
+        { "id": "is-going-get", "text": "is going get" }
+      ],
+      "answer": { "choiceId": "is-going-to-get" },
+      "rationale": { "en": "With my sister, use is going to + the base verb get.", "lt": "Su „my sister“ vartojame „is going to“ + bendratį „get“." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 1 }]
+    },
+    {
+      "id": "u06.going-to.012",
+      "revision": 1,
+      "objectiveId": "u06.going-to",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": { "en": "Are you ___ to Spain? (travel)", "lt": "Ar ketinate keliauti į Ispaniją? Įrašykite trūkstamą „going to“ konstrukcijos dalį." },
+      "answer": { "accepted": ["going to travel"], "caseSensitive": false },
+      "rationale": { "en": "After Are you, complete the planned action with going to travel.", "lt": "Po „Are you“ planuojamam veiksmui vartojame „going to travel“." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 1 }]
+    },
+    {
+      "id": "u06.will.013",
+      "revision": 1,
+      "objectiveId": "u06.will",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": { "en": "Don't worry! I ___ you.", "lt": "Nesijaudink! Aš tau padėsiu." },
+      "choices": [
+        { "id": "will-help", "text": "will help" },
+        { "id": "will-helping", "text": "will helping" },
+        { "id": "am-help", "text": "am help" }
+      ],
+      "answer": { "choiceId": "will-help" },
+      "rationale": { "en": "An offer can use will + the base verb: will help.", "lt": "Pasiūlymui galima vartoti „will“ + bendratį: „will help“." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 2 }]
+    },
+    {
+      "id": "u06.future-choice.014",
+      "revision": 1,
+      "objectiveId": "u06.future-choice",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "The phone has just started ringing, and you decide now to take the call. Complete: “___ it.” (I / answer)", "lt": "Telefonas ką tik suskambo, ir dabar nusprendžiate atsiliepti. Užbaikite: „___ it.“ (I / answer)" },
+      "answer": { "accepted": ["I'll answer", "I will answer"], "caseSensitive": false },
+      "rationale": { "en": "A decision made at the moment of speaking normally uses will: I'll answer it.", "lt": "Kalbėjimo metu priimtam sprendimui paprastai vartojame „will“: „I'll answer it“." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 3 }]
+    },
+    {
+      "id": "u06.weekend-reading.015",
+      "revision": 1,
+      "objectiveId": "u06.weekend-reading",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "After Saturday football, Andrius eats at a restaurant with his relatives before helping in the garden. Who joins him for lunch?", "lt": "Po šeštadienio futbolo Andrius pietauja restorane su giminaičiais, o vėliau padeda sode. Kas pietauja kartu su juo?" },
+      "choices": [
+        { "id": "family", "text": "His family" },
+        { "id": "football-team", "text": "His football team" },
+        { "id": "grandparents", "text": "Only his grandparents" }
+      ],
+      "answer": { "choiceId": "family" },
+      "rationale": { "en": "The relatives at the restaurant are his family.", "lt": "Restorane minimi giminaičiai yra jo šeima." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 6 }]
+    },
+    {
+      "id": "u06.weekend-reading.016",
+      "revision": 1,
+      "objectiveId": "u06.weekend-reading",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Andrius plans football, gardening, a film, dinner, and a full Sunday visit. Complete his prediction: “I think I will be very ___ on Monday.”", "lt": "Andrius planuoja futbolą, darbą sode, filmą, vakarienę ir visos dienos sekmadienio išvyką. Užbaikite jo prognozę: „I think I will be very ___ on Monday.“" },
+      "answer": { "accepted": ["tired"], "caseSensitive": false },
+      "rationale": { "en": "Such a full weekend supports his prediction that he will be very tired.", "lt": "Toks užimtas savaitgalis pagrindžia jo prognozę, kad pirmadienį jis bus labai pavargęs." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 6 }]
     }
   ]
 }

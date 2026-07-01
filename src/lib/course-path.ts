@@ -267,6 +267,10 @@ const parseSession = (
       fail(`${id}.unitIds contains duplicates`);
     }
 
+    if (count < unitIds.length) {
+      fail(`${id}.count must allow at least one question for every checkpoint unit`);
+    }
+
     if (!unitIds.includes(module.unitSlug)) {
       fail(`${id}.unitIds must include the current unit ${module.unitSlug}`);
     }
@@ -492,5 +496,7 @@ export const getModuleById = (id: string) => moduleById.get(id);
 export const getSessionById = (id: string) => sessionById.get(id);
 export const getNextSessionId = (id: string) => {
   const index = sessionIndexById.get(id);
-  return index === undefined ? undefined : sessions[index + 1]?.id;
+  return index === undefined
+    ? undefined
+    : sessions.slice(index + 1).find((session) => session.required)?.id;
 };

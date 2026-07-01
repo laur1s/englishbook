@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-01",
-  "contentVersion": 2,
+  "contentVersion": 3,
   "title": "Greetings and Introductions",
   "objectives": [
     {
@@ -204,33 +204,33 @@
     },
     {
       "id": "u01.personal-details.009",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u01.personal-details",
       "type": "fill-blank",
-      "difficulty": 3,
+      "difficulty": 1,
       "prompt": {
-        "en": "Lukas says, “I am 28 years old.” Complete the sentence: “Lukas is ___ years old.”",
-        "lt": "Lukas sako: „I am 28 years old.“ Užbaikite sakinį: „Lukas is ___ years old.“"
+        "en": "Lukas and Greta grew up in Kaunas. They never moved away, and their home is still in that city. Complete: “They live in ___.”",
+        "lt": "Lukas ir Greta užaugo Kaune. Jie niekur neišsikėlė, o jų namai tebėra tame pačiame mieste. Užbaikite: „They live in ___.“"
       },
       "answer": {
-        "accepted": ["28", "twenty-eight"],
+        "accepted": ["Kaunas"],
         "caseSensitive": false
       },
       "rationale": {
-        "en": "Lukas says, “I am 28 years old.”",
-        "lt": "Lukas sako: „I am 28 years old“ – jam 28 metai."
+        "en": "The text identifies their shared city and their home as Kaunas.",
+        "lt": "Tekste jų bendras miestas ir namų vieta nurodyti kaip Kaunas."
       },
       "sourceRefs": [{"lesson": "unit-01", "exercise": 7}]
     },
     {
       "id": "u01.personal-details.010",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u01.personal-details",
       "type": "single-choice",
       "difficulty": 3,
       "prompt": {
-        "en": "Lukas says, “My wife Greta is a teacher.” What is Greta's job?",
-        "lt": "Lukas sako: „My wife Greta is a teacher.“ Kokia Gretos profesija?"
+        "en": "Lukas works with patients at a hospital. Greta works with pupils in a classroom. Which sentence describes Greta's job?",
+        "lt": "Lukas dirba su pacientais ligoninėje. Greta dirba su mokiniais klasėje. Kuris sakinys apibūdina Gretos profesiją?"
       },
       "choices": [
         {"id": "a", "text": "She is a doctor."},
@@ -239,10 +239,136 @@
       ],
       "answer": {"choiceId": "b"},
       "rationale": {
-        "en": "The text says that Lukas's wife Greta is a teacher.",
-        "lt": "Tekste parašyta, kad Luko žmona Greta yra mokytoja."
+        "en": "Working with pupils in a classroom points to Greta being a teacher.",
+        "lt": "Darbas su mokiniais klasėje rodo, kad Greta yra mokytoja."
       },
       "sourceRefs": [{"lesson": "unit-01", "exercise": 7}]
+    },
+    {
+      "id": "u01.greetings.011",
+      "revision": 1,
+      "objectiveId": "u01.greetings",
+      "type": "fill-blank",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Complete the greeting: “Good morning! How ___ you?”",
+        "lt": "Užbaikite pasisveikinimą: „Good morning! How ___ you?“"
+      },
+      "answer": {
+        "accepted": ["are"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The standard greeting question is How are you?",
+        "lt": "Įprastas pasisveikinimo klausimas yra „How are you?“"
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 2}]
+    },
+    {
+      "id": "u01.be-questions.012",
+      "revision": 1,
+      "objectiveId": "u01.be-questions",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Turn “They are teachers” into a question.",
+        "lt": "Paverskite sakinį „They are teachers“ klausimu."
+      },
+      "choices": [
+        {"id": "a", "text": "Are they teachers?"},
+        {"id": "b", "text": "Is they teachers?"},
+        {"id": "c", "text": "They are teachers?"}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Move are before the subject they: Are they teachers?",
+        "lt": "Perkelkite „are“ prieš veiksnį „they“: „Are they teachers?“"
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 4}]
+    },
+    {
+      "id": "u01.personal-details.013",
+      "revision": 1,
+      "objectiveId": "u01.personal-details",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Lukas treats people who are ill. Greta teaches children. Which statement is true?",
+        "lt": "Lukas gydo sergančius žmones. Greta moko vaikus. Kuris teiginys yra teisingas?"
+      },
+      "choices": [
+        {"id": "a", "text": "Lukas is a doctor and Greta is a teacher."},
+        {"id": "b", "text": "Lukas is a teacher and Greta is a doctor."},
+        {"id": "c", "text": "They are both students."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Treating ill people matches a doctor, while teaching children matches a teacher.",
+        "lt": "Sergančių žmonių gydymas siejamas su gydytoju, o vaikų mokymas – su mokytoja."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 7}]
+    },
+    {
+      "id": "u01.be-forms.014",
+      "revision": 1,
+      "objectiveId": "u01.be-forms",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete the negative sentence: “They ___ at home.”",
+        "lt": "Užbaikite neigiamąjį sakinį: „They ___ at home.“"
+      },
+      "answer": {
+        "accepted": ["are not", "aren't"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The negative of they are is they are not or they aren't.",
+        "lt": "Neigiamoji „they are“ forma yra „they are not“ arba „they aren't“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 5}]
+    },
+    {
+      "id": "u01.greetings.015",
+      "revision": 1,
+      "objectiveId": "u01.greetings",
+      "type": "single-choice",
+      "difficulty": 3,
+      "prompt": {
+        "en": "You meet a colleague for the first time. They say, “Nice to meet you.” Choose the most natural reply.",
+        "lt": "Pirmą kartą sutinkate kolegą. Jis sako: „Nice to meet you.“ Pasirinkite natūraliausią atsakymą."
+      },
+      "choices": [
+        {"id": "a", "text": "Nice to meet you too."},
+        {"id": "b", "text": "Good night."},
+        {"id": "c", "text": "I am fine yesterday."}
+      ],
+      "answer": {"choiceId": "a"},
+      "rationale": {
+        "en": "Nice to meet you too politely returns the same first-meeting greeting.",
+        "lt": "„Nice to meet you too“ mandagiai atsako tuo pačiu susipažinimo posakiu."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 2}]
+    },
+    {
+      "id": "u01.be-questions.016",
+      "revision": 1,
+      "objectiveId": "u01.be-questions",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": {
+        "en": "Ask a new colleague about their country: “Where ___?”",
+        "lt": "Paklauskite naujo kolegos apie jo šalį: „Where ___?“"
+      },
+      "answer": {
+        "accepted": ["are you from"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The complete question is Where are you from?",
+        "lt": "Visas klausimas yra „Where are you from?“"
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 4}]
     }
   ]
 }
