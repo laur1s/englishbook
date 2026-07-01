@@ -60,7 +60,7 @@ test("momentum uses a seven-day local calendar window and current revisions", ()
   assert.equal(summary.todayMinutes, 8);
   assert.equal(summary.dailyProgress, 0.8);
   assert.equal(summary.coursePercent, 50);
-  assert.equal(summary.activeDayCount, 2);
+  assert.equal(summary.activeDayCount, 1);
   assert.equal(summary.strongSkills, 1);
 });
 

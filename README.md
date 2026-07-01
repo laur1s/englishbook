@@ -1,6 +1,6 @@
 # English Library
 
-A continuous A2 English learning system for Lithuanian speakers. The project combines a 120-session guided path, deterministic interactive practice, spaced review, 24 units, a ten-chapter story, speaking rehearsals, bilingual support, reference guides, and answer keys in one Astro website.
+A continuous A2 English learning system for Lithuanian speakers. The project combines a 120-session guided path, deterministic interactive practice, spaced review, 24 units, a twelve-chapter story, speaking rehearsals, bilingual support, reference guides, and answer keys in one Astro website.
 
 ## Start learning
 

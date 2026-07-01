@@ -775,11 +775,12 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       if (repairView) repairView.hidden = true;
       showCompletion(score, total);
       if (missedItemIds.length) {
+        if (scoreElement) scoreElement.textContent = `${missedItemIds.length} fixed`;
         setText(root, "[data-complete-title]", "Mistakes repaired");
         setText(
           root,
           "[data-complete-copy]",
-          `You corrected ${missedItemIds.length} ${missedItemIds.length === 1 ? "answer" : "answers"}. We will bring ${missedItemIds.length === 1 ? "it" : "them"} back in a future review so the learning lasts.`,
+          `You corrected ${missedItemIds.length} ${missedItemIds.length === 1 ? "answer" : "answers"}. We will revisit ${missedItemIds.length === 1 ? "that skill" : "those skills"} in future reviews so the learning lasts.`,
         );
       }
       completeView?.focus({ preventScroll: true });

@@ -112,7 +112,6 @@ export const buildMomentumSummary = (
     activityMinutes.set(key, (activityMinutes.get(key) ?? 0) + activity.minutes);
   }
 
-  const activeDays = new Set(progress.activeDays);
   const days = Array.from({ length: 7 }, (_, index) => {
     const key = shiftCalendarDay(todayKey, index - 6);
     const minutes = activityMinutes.get(key) ?? 0;
@@ -120,7 +119,7 @@ export const buildMomentumSummary = (
       key,
       label: weekdayLabel(key),
       minutes,
-      active: minutes > 0 || activeDays.has(key),
+      active: minutes > 0,
       isToday: key === todayKey,
     };
   });
