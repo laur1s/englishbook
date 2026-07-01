@@ -1,6 +1,6 @@
 ---
 title: "Unit 2: Daily Routines and Present Simple"
-ltTitle: "Skyrius 2: Kasdieninės rutinos ir esamasis laikas"
+ltTitle: "Skyrius 2: Kasdienė rutina ir esamasis paprastasis laikas"
 slug: "unit-02"
 collection: "a2-units"
 order: 2
@@ -19,7 +19,7 @@ status: "published"
 
 # Unit 2: Daily Routines and Present Simple
 
-## Skyrius 2: Kasdieninės rutinos ir esamasis laikas
+## Skyrius 2: Kasdienė rutina ir esamasis paprastasis laikas
 
 ### Learning Objectives / Mokymosi tikslai
 
@@ -84,13 +84,21 @@ status: "published"
 - They play football. - Jie žaidžia futbolą.
 - He cooks dinner. - Jis gamina vakarienę.
 - She reads books. - Ji skaito knygas.
-- It rains in autumn. - Rudeniui lyja.
+- It rains in autumn. - Rudenį lyja.
 
 ### Spelling Rules (Rašybos taisyklės)
 
 - Most verbs: add -s → work**s**, play**s**, eat**s**
 - Verbs ending in -s, -ss, -sh, -ch, -x, -o: add -es → watch**es**, go**es**, do**es**
 - Verbs ending in consonant + y: change y to i and add -es → study → stud**ies**, cry → cr**ies**
+
+### Pronouncing **-s/-es**
+
+- /s/: **works, gets**
+- /z/: **plays, lives**
+- /ɪz/: **watches, teaches**
+
+Say the whole phrase aloud: **She works. He plays. Ona teaches English.**
 
 ### Negative (Neigiamasis)
 
@@ -144,7 +152,7 @@ status: "published"
 - We often go shopping. - Mes dažnai einame apsipirkti.
 - They sometimes watch movies. - Jie kartais žiūri filmus.
 - He rarely eats fast food. - Jis retai valgo greitą maistą.
-- It never rains in July. - Liepą niekada nelyja.
+- It never snows in July. - Liepą niekada nesninga.
 
 - I **always** wake up early.
 - She is **usually** happy.
@@ -289,7 +297,15 @@ _____________________________________________
 | Who? | Kas? (apie asmenį) |
 | Why? | Kodėl? |
 | How? | Kaip? |
-| What time? | Kelinta valanda? |
+| What time...? | Kelintą valandą...? |
+
+**Question word order:** question word + **do/does** + subject + base verb
+
+- Where **do you live**? - Kur tu gyveni?
+- What time **does she start** work? - Kelintą valandą ji pradeda darbą?
+- Why **does he study** English? - Kodėl jis mokosi anglų kalbos?
+
+> Use **What time is it? - Kelinta valanda?** when you ask for the current time.
 
 **Make questions for these answers:**
 
@@ -298,7 +314,7 @@ _____________________________________________
 3. _____________________ → They go to the cinema on Fridays.
 4. _____________________ → I have coffee for breakfast.
 5. _____________________ → He goes to work by car.
-6. _____________________ → Because I like it.
+6. _____________________ → I study English because I like it.
 7. _____________________ → My sister teaches at the school.
 
 ---
@@ -311,7 +327,7 @@ Translate from Lithuanian to English:
 
 1. Aš keliuosi 7 valandą. _____________________
 2. Ji dirba ligoninėje. _____________________
-3. Mes nestudiojuojame savaitgaliais. _____________________
+3. Mes nesimokome savaitgaliais. _____________________
 4. Ar jis geria kavą? _____________________
 5. Jie visada pusryčiauja namuose. _____________________
 6. Kur tu gyveni? _____________________
@@ -339,7 +355,7 @@ Find and correct the mistakes:
 
 ## Useful Phrases / Naudingi posakiai
 
-- What time do you...? - Kada tu...?
+- What time do you...? - Kelintą valandą tu...?
 - How often do you...? - Kaip dažnai tu...?
 - I usually... - Aš paprastai...
 - On weekdays - Darbo dienomis
@@ -369,12 +385,12 @@ Find and correct the mistakes:
 
 - read a book - skaityti knygą
 - listen to music - klausytis muzikos
-- play sports - žaisti sportą
+- play sports - sportuoti / užsiimti sportu
 - watch movies - žiūrėti filmus
 - cook dinner - gaminti vakarienę
 - go for a walk - eiti pasivaikščioti
 - meet friends - susitikti su draugais
-- do housework - dirbti namų darbus
+- do housework - atlikti namų ruošos darbus / tvarkytis
 
 ### Meals and Food (Valgiai ir maistas)
 
@@ -387,7 +403,7 @@ Find and correct the mistakes:
 - juice - sultys
 - water - vanduo
 
-**Exercise:** Match the activities to frequencies. (Use adverbs of frequency)
+**Exercise:** Put the adverb of frequency in the correct position.
 
 1. I read a book. (often) → _____________________
 2. She cooks dinner. (usually) → _____________________
@@ -460,17 +476,17 @@ In pairs, compare your daily routines. Use phrases like:
 
 ### Activity 2: Time Management Discussion
 
-Discuss: How do you manage your time? What routines help you stay organized? Share tips with the group.
+Discuss: How do you manage your time? What routines help you stay organised? Share tips with the group.
 
 ### Activity 3: Cultural Routines
 
-Talk about routines in different countries. For example:
+Compare routines that you have personally experienced, read about, or discussed with someone. Avoid saying that everyone in a country follows the same routine. Use careful phrases such as:
 
-- In Spain, people have lunch late (around 2-3 PM).
-- In the UK, afternoon tea is common.
-- In Japan, people often work long hours.
+- Some people have lunch later than I do.
+- In my experience, shops open earlier/later.
+- My friend in another country starts work at...
 
-What are some differences from Lithuanian routines?
+How are these routines different from yours?
 
 ### Activity 4: Role-Play - Daily Schedule
 
@@ -480,10 +496,27 @@ Pretend you are a personal assistant. Create a daily schedule for a busy person 
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Work-Life Balance:** In many English-speaking countries, especially Nordic countries and the Netherlands, people value work-life balance. They often finish work by 5 PM and spend evenings with family. In contrast, in some Asian countries, long working hours are common.
-- **Meal Times:** Breakfast is light (cereal, toast), lunch is at noon, dinner around 6-7 PM. In the US, people eat dinner early compared to Europeans.
-- **Weekends:** Saturdays and Sundays are for relaxation, family, and hobbies. Shopping and chores are done on weekends.
-- **Health Focus:** Many people include exercise in their routines. Gyms and running are popular. "Healthy eating" is emphasized, with more salads and less fried food.
+- **Work and study routines:** Starting and finishing times differ by workplace, school, family, and country. Ask rather than assume: "What time do you usually start?"
+- **Meal times:** English speakers use **breakfast, lunch,** and **dinner**, but the time and size of each meal vary widely.
+- **Weekends:** People may work, study, rest, do chores, or spend time with family. Use frequency language to describe your own routine instead of making a general rule.
+- **Healthy routines:** Useful small-talk questions include "Do you exercise?" and "How often do you cook at home?"
+
+---
+
+## Cumulative Review / Kaupiamasis kartojimas
+
+1. Complete: She _____ a teacher. (**be**)
+2. Complete: Tomas _____ to work at 8 every day. (**go**)
+3. Make this negative: They watch TV every evening. → _____________________
+4. Make a question: She lives in Kaunas. → Where _____________________?
+5. Put the adverb in the correct place: I am late. (**never**) → _____________________
+
+### Can-Do Self-Check / Įsivertinimas
+
+- [ ] I can describe my daily routine and say what time I do things.
+- [ ] I can use Present Simple statements, negatives, and questions.
+- [ ] I can use **always, usually, often, sometimes, rarely,** and **never**.
+- [ ] I can ask and answer simple questions about another person's routine.
 
 ---
 

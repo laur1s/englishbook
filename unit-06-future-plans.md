@@ -40,7 +40,7 @@ status: "published"
 - soon - greitai
 - later - vėliau
 - in the future - ateityje
-- one day - vieną dieną
+- one day - kada nors / vieną dieną
 - this weekend - šį savaitgalį
 - this evening - šį vakarą
 
@@ -53,12 +53,12 @@ status: "published"
 - travel - keliauti
 - visit - aplankyti
 - buy - pirkti
-- study - studijuoti
+- study - mokytis / studijuoti
 - move - persikelti
 - change - keisti
 - start - pradėti
 - finish - baigti
-- get married - vesti/tekėti
+- get married - susituokti
 - have a baby - susilaukti kūdikio
 
 ---
@@ -153,6 +153,13 @@ status: "published"
 **Short Answers:**
 - Yes, I will. / No, I won't.
 
+### Fixed Schedules
+
+Use Present Simple for a fixed timetable or programme:
+
+- The film **starts** at 8 PM.
+- The train **leaves** at 7:30 tomorrow morning.
+
 ---
 
 ## Part 4: Going To vs Will
@@ -184,7 +191,7 @@ status: "published"
 3. They _____________ (move) to Vilnius next month.
 4. We _____________ (not/work) tomorrow.
 5. He _____________ (buy) a new car.
-6. You _____________ (travel) to Spain?
+6. _____________ you _____________ (travel) to Spain?
 7. I _____________ (not/watch) TV tonight.
 8. What _____________ you _____________ (do) this weekend?
 9. It _____________ (rain). Look at those clouds!
@@ -197,7 +204,7 @@ status: "published"
 
 1. I think it _____________ (be) sunny tomorrow.
 2. I'm tired. I _____________ (go) to bed early.
-3. The film _____________ (start) at 8 PM.
+3. I think the film _____________ (be) interesting.
 4. Don't worry! I _____________ (help) you.
 5. She _____________ (not/come) to the meeting.
 6. _____________ you _____________ (be) at home tonight?
@@ -272,7 +279,7 @@ Choose the correct form:
 
 **Read about Andrius's weekend plans:**
 
-This weekend is going to be busy for Andrius. On Saturday morning, he's going to play football with his friends. They play every Saturday at the local sports center. After the game, he's going to have lunch with his family at a restaurant.
+This weekend is going to be busy for Andrius. On Saturday morning, he's going to play football with his friends. They play every Saturday at the local sports centre. After the game, he's going to have lunch with his family at a restaurant.
 
 In the afternoon, Andrius is going to help his father in the garden. They're going to plant some vegetables. It's going to take about two hours.
 
@@ -366,11 +373,11 @@ Anna: Perfect! I _____________ (be) ready.
 Translate from Lithuanian to English:
 
 1. Aš ketinu mokytis anglų kalbos. _____________________
-2. Rytoj lis. _____________________
-3. Ką tu darysi šį vakarą? _____________________
-4. Mes nekeliausime šiais metais. _____________________
-5. Ar ji ateis į vakarėlį? _____________________
-6. Aš tau padėsiu. _____________________
+2. Manau, rytoj lis. _____________________
+3. Ką ketini daryti šį vakarą? _____________________
+4. Mes neketiname keliauti šiais metais. _____________________
+5. Ar ji ketina ateiti į vakarėlį? _____________________
+6. Nesijaudink, aš tau padėsiu. _____________________
 7. Jie ketina persikelti į Vilnių. _____________________
 8. Manau, gyvenimas bus geresnis. _____________________
 
@@ -424,7 +431,7 @@ Find and correct the mistakes:
 ### Future Plans Vocabulary (Ateities planų žodynas)
 
 - Career - Karjera
-- Education - Švietimas
+- Education - Mokslai / išsilavinimas
 - Marriage - Santuoka
 - Family - Šeima
 - Travel - Kelionės
@@ -435,13 +442,13 @@ Find and correct the mistakes:
 ### Future Actions (Ateities veiksmai)
 
 - Graduate - Baigti studijas
-- Get married - Vesti/tekėti
+- Get married - Susituokti
 - Have children - Turėti vaikų
 - Buy a house - Nusipirkti namą
 - Change job - Pakeisti darbą
 - Learn a language - Išmokti kalbą
 - Start a business - Pradėti verslą
-- Move abroad - Išvykti į užsienį
+- Move abroad - Persikelti gyventi į užsienį
 
 **Exercise:** Match the words with their Lithuanian translations.
 
@@ -459,17 +466,17 @@ Find and correct the mistakes:
 
 A: What are your plans for the future?
 B: I want to become a doctor. I'm going to study medicine at university.
-A: That's great! When will you start?
-B: Next year. I'll apply for scholarships too.
+A: That's great! When are you going to start?
+B: Next year. I'm going to apply for scholarships too.
 
-**Complete the dialogue:**
+**Dialogue 2: After School - Complete the dialogue**
 
-A: What _____ you _____ after school?
+A: What _____ you _____ (**do**) after school?
 B: I _____ going to travel. I want to visit Asia.
-A: How long _____ you _____ there?
-B: For three months. Then I _____ start university.
+A: How long _____ you _____ (**stay**) there?
+B: For three months. Then I _____ going to start university.
 
-**Dialogue 2: Family Plans**
+**Dialogue 3: Family Plans**
 
 A: Do you want to get married someday?
 B: Yes, I hope to get married in a few years.
@@ -477,10 +484,10 @@ A: And children?
 B: Maybe two children. What about you?
 
 **Questions:**
-1. What does the first person want to become?
-2. What will the second person do after school?
-3. How long will they travel?
-4. What does the second person hope for?
+1. What career does speaker B in Dialogue 1 want?
+2. What is speaker B in Dialogue 2 going to do after school?
+3. How long are they going to travel?
+4. What does speaker B in Dialogue 3 hope to do?
 
 ---
 
@@ -490,9 +497,9 @@ B: Maybe two children. What about you?
 
 Anna is 25 years old. She works as a teacher in Vilnius. In the future, she wants to improve her life. She plans to take English courses to speak better. She hopes to travel to England next summer.
 
-Anna thinks about her career. She wants to become a school director one day. She will study for a master's degree. After that, she will apply for better jobs.
+Anna thinks about her career. She wants to become a head teacher one day. She is going to study for a master's degree. After that, she plans to apply for better jobs.
 
-In ten years, Anna wants to have a family. She will get married and have children. She believes life will be happy with a good job and family.
+In ten years, Anna would like to have a family. She hopes to get married and have children. She believes she will have a happy life with a good job and a family.
 
 **Answer the questions:**
 
@@ -500,7 +507,7 @@ In ten years, Anna wants to have a family. She will get married and have childre
 2. What courses does she plan to take?
 3. Where does she want to travel?
 4. What does she want to become?
-5. What degree will she study for?
+5. What degree is she going to study for?
 6. What does she want in ten years?
 
 **True or False:**
@@ -533,7 +540,7 @@ In five years, I want to be a teacher. I will live in a big city. My dream is im
 
 ### Activity 1: Future Predictions
 
-In pairs, make predictions about each other's future. Use "I think you will..." and "You might..."
+In pairs, make predictions about each other's future. Use "I think you will..." and "You will probably..."
 
 ### Activity 2: Goal Sharing
 
@@ -547,9 +554,9 @@ Role-play an interview for your dream job. Describe why you want it and your pla
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Education Goals:** In many countries, people plan their education carefully. In the US, community college is common before university. In Lithuania, direct university entry is more typical.
-- **Career Planning:** English speakers often have "career paths" and change jobs frequently. In some cultures, people stay in one job for life.
-- **Family Timing:** In Western countries, people often have children later (30s), while in some cultures, earlier marriage is common.
+- **Education choices:** English-language conversations may mention university, college, vocational training, online courses, or work-based learning. The available routes differ by country.
+- **Career planning:** A **career path** is the sequence of jobs and skills in a person's working life. People may stay in one role or change direction; avoid assuming that everyone has the same plan.
+- **Personal plans:** Questions about marriage and children can be private. In conversation, let the other person introduce these topics first.
 
 ---
 
@@ -564,14 +571,14 @@ Role-play an interview for your dream job. Describe why you want it and your pla
 - My dream is to... - Mano svajonė yra...
 
 **Making decisions:**
-- I've decided to... - Nusprendžiau...
+- I decided to... - Nusprendžiau...
 - I'm going to... - Ketinu...
 - I'll... - Aš...
 
 **Talking about the future:**
 - In the future... - Ateityje...
-- One day... - Vieną dieną...
-- Some day... - Kada nors...
+- One day... - Kada nors / vieną dieną...
+- Someday... - Kada nors...
 - When I'm older... - Kai būsiu vyresnis...
 - I'm sure that... - Esu tikras, kad...
 - I think... - Manau...
@@ -585,13 +592,13 @@ Role-play an interview for your dream job. Describe why you want it and your pla
 ⚠️ **Common mistakes:**
 1. Don't forget "to" in "going to": "I'm going study" ✗ → "I'm going to study" ✓
 2. Will is the same for all subjects: "He wills" ✗ → "He will" ✓
-3. Use "going to" for plans, "will" for spontaneous decisions
+3. Use **going to** for plans or evidence-based predictions; use **will** for general predictions, offers, promises, and spontaneous decisions.
 4. Don't use "will" + "to": "will to go" ✗ → "will go" ✓
 
 **Lithuanian vs English:**
 - Lithuanian has one main future tense
 - English distinguishes between "going to" (planned) and "will" (spontaneous/predictions)
-- English future is simpler to form than Lithuanian future
+- English uses several common structures to express different kinds of future meaning
 
 **Remember:**
 - **Going to** = ateities laikas (suplanuotas)
@@ -599,8 +606,25 @@ Role-play an interview for your dream job. Describe why you want it and your pla
 
 ---
 
+## Cumulative Review / Kaupiamasis kartojimas
+
+1. Complete the plan: We _____ going to visit Klaipėda next weekend.
+2. Complete the spontaneous decision: The phone is ringing. I _____ answer it.
+3. Choose the fixed schedule: The train **leaves / will leave** at 7:30 tomorrow morning.
+4. Make this negative: She is going to buy a car. → _____________________
+5. Complete: There _____ two cafés near the station, but there _____ a bank. (**be**)
+
+### Can-Do Self-Check / Įsivertinimas
+
+- [ ] I can use **going to** for plans and evidence-based predictions.
+- [ ] I can use **will** for predictions, offers, promises, and decisions made now.
+- [ ] I can ask and answer questions about future plans.
+- [ ] I can recognise Present Simple for a fixed future schedule.
+
+---
+
 **End of Expanded Unit 6 / Išplėsto šeštojo skyriaus pabaiga**
 
-Congratulations! You've completed all 6 units! / Sveikiname! Baigėte visus 6 skyrius!
+Congratulations! You've completed all six A2.1 units! / Sveikiname! Baigėte visus šešis A2.1 skyrius!
 
 Check your answers in the Answer Key section!

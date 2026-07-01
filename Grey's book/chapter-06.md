@@ -1,6 +1,6 @@
 ---
 title: "Chapter 6: New Beginnings"
-ltTitle: "6 Skyrius: Nauji Pradžiai"
+ltTitle: "6 Skyrius: Naujos Pradžios"
 slug: "chapter-06"
 collection: "grey-book"
 order: 6
@@ -18,7 +18,7 @@ status: "published"
 
 ## Chapter 6: New Beginnings
 
-## 6 Skyrius: Nauji Pradžiai
+## 6 Skyrius: Naujos Pradžios
 
 ### Phrasal Verbs
 
@@ -31,10 +31,10 @@ status: "published"
 ### Word Bank
 
 - infectious enthusiasm — užkrečiamas entuziazmas
-- half-sister — įseserė
+- half-sister — sesuo iš vieno bendro tėvo ar vienos bendros motinos
 - maid of honor — vyriausioji pamergė
-- appendectomy — apendicito pašalinimas
-- military trauma surgeon — karinis traumos chirurgas
+- appendectomy — apendikso pašalinimas / apendektomija
+- military trauma surgeon — karo traumų chirurgas
 
 ### Story
 
@@ -78,7 +78,7 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 2. How did Meredith discover Lexie was her sister?
 3. What did the sisters talk about that night?
 4. Where did Derek propose to Meredith?
-5. Who were in the wedding party?
+5. Who helped with the wedding, and what did each person do?
 6. What emergency happened on the wedding day?
 7. Who became the new chief of surgery?
 8. What did Meredith realize about change?
@@ -113,7 +113,7 @@ Match the English phrase to the Lithuanian meaning:
 4. military trauma surgeon ___
 5. infectious enthusiasm ___
 
-a) įseserė  b) vyriausioji pamergė  c) apendicito pašalinimas  d) karinis traumos chirurgas  e) užkrečiamas entuziazmas
+a) sesuo iš vieno bendro tėvo ar vienos bendros motinos  b) vyriausioji pamergė  c) apendikso pašalinimas / apendektomija  d) karo traumų chirurgas  e) užkrečiamas entuziazmas
 
 #### Activity 3: Welcome Message
 
@@ -129,7 +129,7 @@ Your message:
 Complete the sentences with the correct present perfect form:
 
 1. Meredith ___ (become) more confident over the years.
-2. Lexie ___ (mentor) Meredith in a new way.
+2. Meredith ___ (mentor) Lexie since she arrived.
 3. Derek ___ (plan) the perfect proposal.
 4. They ___ (face) countless emergencies together.
 5. Owen ___ (take) over as the new chief of surgery.

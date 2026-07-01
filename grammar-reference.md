@@ -29,16 +29,18 @@ Complete grammar reference for Lithuanian speakers learning English at A2 level.
 2. [Present Simple](#present-simple)
 3. [Present Continuous](#present-continuous)
 4. [Past Simple](#past-simple)
-5. [Future: Going To](#future-going-to)
-6. [Future: Will](#future-will)
-7. [Articles](#articles)
-8. [Countable & Uncountable Nouns](#countable-and-uncountable-nouns)
-9. [Quantifiers](#quantifiers)
-10. [There is / There are](#there-is-there-are)
-11. [Prepositions](#prepositions)
-12. [Question Formation](#question-formation)
-13. [Modal Verbs (Basic)](#modal-verbs)
-14. [Comparison](#comparison)
+5. [Present Perfect](#present-perfect)
+6. [Past Continuous](#past-continuous)
+7. [Future: Going To](#future-going-to)
+8. [Future: Will](#future-will)
+9. [Articles](#articles)
+10. [Countable & Uncountable Nouns](#countable-and-uncountable-nouns)
+11. [Quantifiers](#quantifiers)
+12. [There is / There are](#there-is-there-are)
+13. [Prepositions](#prepositions)
+14. [Question Formation](#question-formation)
+15. [Modal Verbs](#modal-verbs)
+16. [Comparison](#comparison)
 
 ---
 
@@ -139,8 +141,8 @@ Complete grammar reference for Lithuanian speakers learning English at A2 level.
 |------|---------|
 | Most verbs: add -ing | work → working, play → playing |
 | Verbs ending in -e: remove e, add -ing | make → making, write → writing |
-| One syllable, one vowel + one consonant: double consonant | run → running, sit → sitting |
-| Two syllables, stress on 2nd, one vowel + one consonant: double | begin → beginning |
+| One-syllable verb ending in consonant-vowel-consonant: usually double the final consonant (not w, x, or y) | run → running, sit → sitting, but fix → fixing |
+| Longer verb stressed on the final consonant-vowel-consonant syllable: double | begin → beginning, prefer → preferring |
 
 ### Uses of Present Continuous
 
@@ -166,6 +168,8 @@ These verbs are NOT usually used in Present Continuous:
 **Wrong:** I am knowing the answer. ✗
 **Correct:** I know the answer. ✓
 
+Some verbs change meaning. Compare *I have a car* (possession) with *I am having lunch* (activity), and *I think you are right* (opinion) with *I am thinking about the problem* (mental process).
+
 ---
 
 ## Past Simple
@@ -179,7 +183,7 @@ These verbs are NOT usually used in Present Continuous:
 | Most verbs: add -ed | work → worked |
 | Verbs ending in -e: add -d | live → lived |
 | Consonant + y: y → ied | study → studied |
-| One vowel + one consonant: double + ed | stop → stopped |
+| One-syllable verb ending in consonant-vowel-consonant: usually double the final consonant (not w, x, or y) | stop → stopped, but fix → fixed |
 
 ### Formation - Irregular Verbs
 
@@ -212,6 +216,87 @@ Irregular verbs have special past forms. See the list in Unit 3 or vocabulary se
 - ago (two days ago, a week ago)
 - in + past year (in 2020, in 1990)
 - when I was...
+
+---
+
+## Present Perfect
+
+### Formation
+
+**Structure:** subject + **have/has + past participle (verb form 3)**
+
+| Subject | Positive | Negative | Question |
+|---------|----------|----------|----------|
+| I/You/We/They | have worked | haven't worked | Have ... worked? |
+| He/She/It | has worked | hasn't worked | Has ... worked? |
+
+Regular past participles usually end in **-ed**. Common irregular forms include:
+
+| Base | Past Simple | Past Participle |
+|------|-------------|-----------------|
+| be | was/were | been |
+| go | went | gone |
+| see | saw | seen |
+| do | did | done |
+| eat | ate | eaten |
+| take | took | taken |
+| write | wrote | written |
+| buy | bought | bought |
+
+### Uses
+
+1. **Life experience, no finished time stated:** I have visited Paris twice.
+2. **A continuing state:** She has lived here since 2020.
+3. **An unfinished time period:** We have had three lessons this week.
+4. **A recent result connected to now:** I have lost my keys. (I do not have them now.)
+
+### Since and For
+
+- **since + starting point:** since Monday, since 2020, since I was a child
+- **for + duration:** for two days, for five years, for a long time
+
+### just, already, yet, ever, never
+
+- Put **just/already/ever/never** before the past participle: *I have just arrived. Have you ever tried it?*
+- Put **yet** at the end of a negative sentence or question: *I haven't finished yet. Have you finished yet?*
+
+### Been and Gone
+
+- **has been to** = visited and returned: *Rasa has been to London.*
+- **has gone to** = went there and is still away: *Rasa has gone to London. She isn't here.*
+
+### Present Perfect or Past Simple?
+
+- Use Present Perfect when the time is not finished or not stated: *I have seen that film.*
+- Use Past Simple with a finished past time: *I saw it last Friday.*
+- Do not combine Present Perfect with **yesterday, last..., ...ago, in 2020**.
+
+---
+
+## Past Continuous
+
+### Formation
+
+**Structure:** subject + **was/were + verb-ing**
+
+| Subject | Positive | Negative | Question |
+|---------|----------|----------|----------|
+| I/He/She/It | was working | wasn't working | Was ... working? |
+| You/We/They | were working | weren't working | Were ... working? |
+
+### Uses
+
+1. **Action in progress at a past time:** At 8 PM, I was studying.
+2. **Background in a story:** The sun was shining and people were talking.
+3. **Interrupted action:** I was studying when the phone rang.
+4. **Two simultaneous actions:** While I was cooking, Jonas was setting the table.
+
+### Past Continuous or Past Simple?
+
+- Past Continuous presents an action as in progress: *I was walking home...*
+- Past Simple presents a completed event: *...when I saw Marta.*
+- **when** often introduces the shorter event; **while** often links ongoing actions. This is a useful pattern, not an absolute rule.
+- Stative verbs are not usually continuous: *I knew the answer*, not *I was knowing the answer*.
 
 ---
 
@@ -302,7 +387,7 @@ Irregular verbs have special past forms. See the list in Unit 3 or vocabulary se
 3. Superlatives: **the** best, **the** biggest
 4. Musical instruments: play **the** piano
 5. Rivers, seas, oceans: **the** Neris, **the** Baltic Sea
-6. With "of": **the** Tower of London
+6. A specific noun defined by an **of** phrase: **the** end of the road, **the** Tower of London
 
 **When NOT to use "the":**
 1. General plural: I like **cats**. (not the cats)
@@ -335,9 +420,9 @@ Can be counted: one, two, three...
 
 ### Uncountable Nouns
 
-Cannot be counted individually
-- NO plural form
-- NO "a/an"
+In their uncountable meaning, these nouns are not counted individually:
+- normally no plural form
+- no "a/an"
 - Use: some water, much milk
 
 **Common uncountable nouns:**
@@ -346,6 +431,8 @@ Cannot be counted individually
 - Materials: wood, paper, glass, plastic
 - Abstract: information, advice, news, work, homework, money, music
 - Weather: rain, snow, weather
+
+Some words can be countable with a different meaning. *Two coffees* means two cups/servings; *a paper* can mean a newspaper, article, or document.
 
 ### Making Uncountable Countable
 
@@ -412,7 +499,7 @@ Use containers or portions:
 - How **much** water?
 - Not **much** time
 
-⚠️ In affirmative sentences, use **a lot of** instead of much/many.
+⚠️ In everyday affirmative sentences, **a lot of** is often more natural than **much**. Affirmative **many** is grammatical, especially in more formal language: *Many students use this book.*
 
 ---
 
@@ -539,6 +626,13 @@ Compare:
 
 ## Modal Verbs
 
+### Shared Form
+
+- Use a base verb after a modal: *She can swim. He might come.*
+- Do not add **to**: *You should go* ✓, *You should to go* ✗.
+- Put the modal before the subject in questions: *Should I call? Can you help?*
+- Do not use **do/does/did** with a modal.
+
 ### Can / Can't
 
 **Structure:** subject + can + base verb
@@ -561,6 +655,27 @@ Compare:
 
 **Polite requests (present):**
 - **Could** you help me? (more polite than "can")
+
+### May / Might
+
+**Present or future possibility:**
+- It **may** rain later.
+- She **might** be at work.
+- They **may not** come. / They **might not** come.
+
+At A2 level, **may** and **might** are often interchangeable. **Might** can sound slightly more tentative, but neither word represents an exact percentage.
+
+**Formal permission:**
+- **May** I come in?
+
+### Must / Can't for Deduction
+
+Use these forms when evidence supports a strong conclusion:
+
+- **must be/do** = the speaker believes it is almost certainly true: *I can hear her voice. She must be nearby.*
+- **can't be/do** = the speaker believes it is impossible: *I saw him leave. He can't be at home.*
+
+For an uncertain conclusion, use **may/might** instead: *She isn't answering. She may be busy.*
 
 ### Should / Shouldn't
 
@@ -585,6 +700,12 @@ Compare:
 **Don't have to** = not necessary (≠ mustn't)
 - You **don't have to** come. (= it's not necessary)
 - You **mustn't** come. (= it's forbidden)
+
+Do not confuse these meanings:
+
+- **can't be** = logically impossible
+- **mustn't do** = forbidden
+- **don't have to do** = not necessary
 
 ### Would like
 
@@ -612,10 +733,12 @@ Compare:
 - big → bigg**er**: This is bigger than that.
 - old → old**er**: She is older than her brother.
 
-**Long adjectives (2+ syllables):** use "more"
+**Most longer adjectives:** use "more"
 - expensive → **more** expensive: This car is more expensive than that one.
 - beautiful → **more** beautiful: She is more beautiful than before.
 - interesting → **more** interesting: This book is more interesting than that one.
+
+Many adjectives with three or more syllables use **more**. Two-syllable adjectives vary; common **-y** forms follow the rule below, and forms such as **simpler** or **more simple** should be learned with examples.
 
 **2-syllable adjectives ending in -y:** change y to i, add -er
 - happy → happ**ier**: I am happier now.
@@ -648,6 +771,12 @@ Compare:
 - bad → **the worst**
 - far → **the farthest/furthest**
 
+### As...as and one of the...
+
+- Equality: **as + base adjective + as** — *This task is as easy as that one.*
+- Inequality: **not as + base adjective + as** — *Vilnius is not as big as London.*
+- Top-group membership: **one of the + superlative + plural noun** — *one of the best restaurants*
+
 ---
 
 ## Common Lithuanian-English Grammar Differences
@@ -659,12 +788,12 @@ Compare:
 
 ### 2. Word Order
 - **Lithuanian:** Flexible (due to case system)
-- **English:** Fixed SVO (Subject-Verb-Object)
-- English: I see him. (always this order)
+- **English:** Statements usually follow SVO (Subject-Verb-Object)
+- English: *I see him.* Questions and emphasis can change this order.
 
 ### 3. Verb "To Be"
 - **Lithuanian:** Often omitted in present
-- **English:** ALWAYS needed
+- **English:** Needed when it links the subject to a noun, adjective, or location
 - Wrong: "I student" ✗ → Correct: "I am a student" ✓
 
 ### 4. Present Continuous
@@ -674,27 +803,27 @@ Compare:
 
 ### 5. Auxiliary Verbs
 - **Lithuanian:** No auxiliary "do" for questions/negatives
-- **English:** Uses do/does/did
-- Questions need "do": "Do you like it?" (not "You like it?")
+- **English:** Uses do/does/did with ordinary verbs in simple-tense questions and negatives
+- "Do you like it?" but "Are you ready?", "Can you swim?", and "Who lives here?"
 
 ### 6. Future Tense
-- **Lithuanian:** One future tense
-- **English:** Multiple ways (will, going to, present continuous for future)
+- **Lithuanian:** Has a regular future-tense form
+- **English:** Commonly expresses future meaning with **will**, **going to**, or Present Continuous, depending on meaning
 
 ### 7. Double Negatives
 - **Lithuanian:** Uses double negatives
-- **English:** One negative only
+- **Standard English:** Avoid negative concord inside one clause
 - Wrong: "I don't know nothing" ✗ → Correct: "I don't know anything" ✓
 
 ---
 
 ## Tips for Lithuanian Learners
 
-1. **Always use articles** - Lithuanian doesn't have them, but English needs a/an/the
+1. **Choose the article deliberately** - English may need a/an, the, or zero article; Lithuanian has no direct equivalent
 2. **Use auxiliary verbs** - Don't forget do/does/did in questions and negatives
-3. **Include "to be"** - Never omit am/is/are/was/were
-4. **Word order is fixed** - Subject + Verb + Object in English
-5. **One negative per sentence** - Use "any" with negative, not "no"
+3. **Include "to be" when it links a subject to a noun, adjective, or place** - *She is a doctor. They are tired. I am at home.*
+4. **Use normal statement order** - Subject + Verb + Object is the usual pattern, but questions use different patterns
+5. **Avoid negative concord in Standard English** - Say *I don't have any*, not *I don't have no*
 6. **Learn irregular verbs** - They don't follow patterns
 7. **-s for he/she/it** - Don't forget in Present Simple
 8. **Prepositions are different** - Learn English prepositions, don't translate from Lithuanian

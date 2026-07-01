@@ -21,19 +21,19 @@ status: "published"
 
 ### Chapter 1 Understanding
 
-1. Nervous but excited
-2. "You will work harder than you ever have. You will make mistakes. But if you care about patients, you will become good doctors."
+1. She felt very nervous, and her heart was beating fast.
+2. He said they would work very hard, make mistakes, and could become good doctors.
 3. Hip surgery
-4. "Don't let the old nurses scare you. They're tougher than the doctors."
+4. He said the older nurses were very tough and told her to be careful.
 5. Cristina Yang, Alex Karev, and Izzie Stevens
-6. General surgery
-7. "This place will chew you up and spit you out."
-8. The hospital was overwhelming, but she felt like she belonged there. "This is just the beginning. Tomorrow will be better."
+6. Surgery
+7. He said the hospital was very difficult.
+8. She thought the hospital was difficult and big, but she felt happy there and hoped the next day would be better.
 
 ### Chapter 1 Fun Activities
 
 - Activity 1 (True/False): 1 T, 2 T, 3 F, 4 F, 5 T
-- Activity 2 (Matching): 1 d, 2 e, 3 a, 4 b, 5 c
+- Activity 2 (Vocabulary Matching): 1 d, 2 e, 3 a, 4 b, 5 c
 - Activity 3 (Fill in the Blanks): white coat; scrubs; patient; nervous; cafeteria; reports
 
 ### Chapter 1 Grammar Practice
@@ -47,22 +47,22 @@ status: "published"
 
 ### Chapter 2 Understanding
 
-1. A car accident caused by a drunk driver
-2. "Please, help my babies. Tell them Mommy's okay."
-3. Compound fracture of the tibia and fibula
-4. Dr. Cristina Yang
-5. Three hours
-6. "It's fixed. You'll need physical therapy, but you'll walk again. You're lucky - it could have been much worse."
-7. He was frantic, his face pale with worry
-8. "Hey, Grey. Heard you handled that trauma case well. Not bad for someone who's only been here a week."
-9. The emergency room was exhausting and emotional, but it was also where she felt most alive
-10. To help families through their darkest moments
+1. A drunk driver hit Sarah's car.
+2. She asked the doctors to tell her children that their mother was OK.
+3. They showed that her leg was broken in two places.
+4. Cristina performed the surgery, and Meredith helped her.
+5. Three hours.
+6. Cristina said that they had saved Sarah's leg and that she would walk again after physical therapy.
+7. He looked terrified and started crying.
+8. He said that Meredith had done a great job and helped save Sarah's life.
+9. She thought that the emergency room was difficult and emotional.
+10. Sarah's family was together again because the team had saved her life and her leg.
 
 ### Chapter 2 Fun Activities
 
 - Activity 1 (True/False): 1 T, 2 F, 3 T, 4 F, 5 T, 6 T
-- Activity 2 (Fill in the Blanks): ambulance; stretcher; X-rays; surgery; blood; children
-- Activity 3 (Role-Play): model answers will vary (clear explanation + reassurance)
+- Activity 2 (Complete the Story): 1 ambulance, 2 stretcher, 3 blood, 4 X-rays, 5 surgery, 6 children
+- Activity 3 (Reassure a Family Member): Answers will vary. Model: "Sarah is alive, but she needs surgery now." / "Is she going to be OK?" / "The team is helping her. We will tell you as soon as we know more."
 
 ### Chapter 2 Grammar Practice
 
@@ -75,21 +75,21 @@ status: "published"
 
 ### Chapter 3 Understanding
 
-1. For months
+1. Dr. Derek Shepherd
 2. Hospital rules strictly forbade doctors from dating each other
-3. A large brain tumor pressing on his brain stem
+3. A large brain tumor growing in a dangerous place
 4. Outside the operating room, watching through the glass window
-5. Exhausted but triumphant
-6. The way Meredith and Derek looked at each other strangely
-7. "Be careful, Meredith. Hospital romances can be dangerous."
-8. It made her anxious about getting caught
-9. It was worth it because Derek made her happier than she'd ever been
-10. Their love felt stolen and fragile
+5. He felt very tired but happy that the surgery was successful.
+6. She saw them standing very close and noticed how they looked at each other.
+7. She told Meredith to be careful because they could both lose their jobs.
+8. She worried at work and found it difficult to act as if they were only colleagues.
+9. She continued because she loved Derek and did not want to give up on their relationship.
+10. Hospital rules forbade the relationship, and they risked being discovered and losing their jobs.
 
 ### Chapter 3 Fun Activities
 
 - Activity 1 (True/False): 1 F, 2 T, 3 T, 4 F, 5 F
-- Activity 2 (Vocabulary Matching): 1 c, 2 b, 3 d, 4 a, 5 e
+- Activity 2 (Vocabulary Matching): 1 e, 2 d, 3 c, 4 b, 5 a
 - Activity 3 (Fill in the Blanks): secret; rules; surgery; window; kiss; careful
 
 ### Chapter 3 Grammar Practice
@@ -98,12 +98,12 @@ status: "published"
 2) mustn’t
 3) might
 4) should
-5) should
-6) can’t
+5) can
+6) can
 
 ### Chapter 4 Understanding
 
-1. A baby doctor and the best baby doctor at Seattle Grace Hospital
+1. A specialist who cared for mothers and babies
 2. Five years
 3. The baby was too small and was not growing properly
 4. The NICU, the special room for very sick babies
@@ -148,7 +148,7 @@ status: "published"
 
 ### Chapter 5 Fun Activities
 
-- Activity 1 (Emotions Vocabulary): shocked -> When George's heart stopped; guilty -> When Cristina thought it was her fault; supportive -> When friends sat with Cristina; broken -> When Cristina cried on the floor; grateful -> When Cristina thanked her friends
+- Activity 1 (Emotions Vocabulary): 1 c, 2 d, 3 b, 4 e, 5 a
 - Activity 2 (True/False): 1 T, 2 F, 3 F, 4 F, 5 T, 6 T, 7 T
 - Activity 3 (Role-Play - Comforting a Friend): model answers will vary
 - Activity 4 (Complete the Friendship Rules): listen; comfort; understand; blame; help; bad
@@ -180,7 +180,7 @@ status: "published"
 ### Chapter 6 Fun Activities
 
 - Activity 1 (True/False): 1 T, 2 F, 3 T, 4 T, 5 F
-- Activity 2 (Matching): 1 a, 2 b, 3 c, 4 d, 5 e
+- Activity 2 (Vocabulary Matching): 1 a, 2 b, 3 c, 4 d, 5 e
 - Activity 3 (Welcome Message): sample answers will vary
 
 ### Chapter 6 Grammar Practice
@@ -213,12 +213,12 @@ status: "published"
 
 ### Chapter 7 Grammar Practice
 
-1) can’t
-2) can
+1) can
+2) can’t
 3) can
 4) can’t
-5) Take
-6) Stay
+5) can’t
+6) can
 
 ### Chapter 8 Understanding
 
@@ -237,7 +237,7 @@ status: "published"
 
 - Activity 1 (True/False): 1 T, 2 F, 3 F, 4 T, 5 T
 - Activity 2 (Matching): 1 e, 2 d, 3 c, 4 b, 5 a
-- Activity 3 (Fill in the Blanks): reality; perfection; excellence; patients; balance
+- Activity 3 (Fill in the Blanks): perfection; reality; excellence; patients; balance
 
 ### Chapter 8 Grammar Practice
 
@@ -245,7 +245,7 @@ status: "published"
 2) most
 3) more
 4) happier
-5) more
+5) more dedicated
 6) most
 
 ### Chapter 9 Understanding
@@ -303,34 +303,34 @@ status: "published"
 - Surgery (chirurgija)
 - Emergency room (skubios pagalbos skyrius)
 - Blood pressure (kraujo spaudimas)
-- Brain tumor (auglys smegenyse)
+- Brain tumor (smegenų auglys)
 - Pregnancy (nėštumas)
 - Delivery (gimdymas)
 
 **Emotions / Emocijos:**
 
-- Nervous (nervinga)
-- Excited (susijaudinęs)
-- Worried (susirūpinęs)
-- Proud (išdidus)
-- Guilty (kaltas)
-- Confident (pasitikintis savimi)
+- Nervous (nervingas / nervinga)
+- Excited (susijaudinęs / susijaudinusi)
+- Worried (susirūpinęs / susirūpinusi)
+- Proud (besididžiuojantis / besididžiuojanti)
+- Guilty (kaltas / kalta)
+- Confident (pasitikintis / pasitikinti savimi)
 
 **Hospital Terms / Ligoninės Terminai:**
 
-- Ambulance (greitoji pagalba)
+- Ambulance (greitosios pagalbos automobilis)
 - Operating room (operacinė)
 - Patient (pacientas)
-- Nurse (slauge)
+- Nurse (slaugytojas / slaugytoja)
 - Doctor (gydytojas)
 - Surgery (operacija)
 
 **Relationships / Santykiai:**
 
-- Dating (susitikinėti)
+- Dating (susitikinėjimas)
 - Friendship (draugystė)
 - Family (šeima)
-- Colleague (bendradarbis)
+- Colleague (bendradarbis / bendradarbė)
 - Secret (paslaptis)
 
 ---

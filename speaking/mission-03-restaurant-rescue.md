@@ -1,9 +1,9 @@
 ---
-title: "Mission 3: Restaurant Rescue"
-ltTitle: "Misija 3: Situacija restorane"
+title: "Mission 4: Restaurant Rescue"
+ltTitle: "Misija 4: Situacija restorane"
 slug: "restaurant-rescue"
 collection: "speaking-missions"
-order: 3
+order: 4
 contentType: "speaking-mission"
 level: "A2.1"
 grammarFocus:
@@ -46,7 +46,7 @@ steps:
       - "Customer: Sorry, I think this is not my order."
       - "Waiter: I'm sorry. I'll change it right away."
   - kind: "compare"
-    prompt: "Compare with this model exchange: Could I have the chicken soup and a still water, please? Of course. Here you are. Sorry, I ordered tea, not water. I'm sorry about that. I'll bring your tea in a minute."
+    prompt: "Compare with this model exchange: Could I have the chicken soup and a tea, please? Of course. Here you are. Sorry, I ordered tea, not water. I'm sorry about that. I'll bring your tea in a minute."
     ltPrompt: "Palyginkite savo dialogą su pavyzdžiu."
     support:
       - "Did both people sound polite?"
@@ -57,6 +57,8 @@ steps:
     support:
       - "1 = I needed the support lines all the time."
       - "5 = I could improvise naturally."
+      - "Accuracy: Did you use Could I have...? and a clear food or drink noun?"
+      - "Second attempt: change the problem and solve it in fewer pauses."
 ---
 
 This mission pushes Unit 4 into live dialogue. The main challenge is not vocabulary. The main challenge is switching roles and staying polite while something goes wrong.

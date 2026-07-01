@@ -46,9 +46,9 @@ status: "published"
 
 ### Comparison Words (Palyginimo žodžiai)
 - than - nei (palyginimui)
-- as...as - toks...kaip
+- as...as - toks pat...kaip
 - not as...as - ne toks...kaip
-- the most - pats (aukščiausias laipsnis)
+- the most - labiausiai / pats ...-iausias (pagal sakinį)
 - the least - mažiausiai
 
 ---
@@ -67,11 +67,13 @@ status: "published"
 - Vilnius is bigger than Kaunas.
 - Summer is hotter than winter.
 
-#### Long Adjectives (2+ syllables) - Use "more"
+#### Most Longer Adjectives - Use "more"
 - expensive → more expensive
 - interesting → more interesting
 - beautiful → more beautiful
 - difficult → more difficult
+
+Many adjectives with three or more syllables use **more**. Some two-syllable adjectives use **-er**, and some allow both forms, so learn common forms as vocabulary. Adjectives ending in **-y** follow the rule below.
 
 **Examples:**
 - A car is more expensive than a bicycle.
@@ -106,6 +108,12 @@ status: "published"
 - My house is bigger than yours.
 - English is more difficult than Spanish.
 - She is happier than her brother.
+
+### Equality with as...as / Lygybė su as...as
+
+- **as + base adjective + as** means two things are equal in that quality: *This task is as easy as the last one.*
+- **not as + base adjective + as** means the first thing has less of that quality: *Vilnius is not as big as London.*
+- Do not use a comparative form inside this structure: *as easy as* ✓, *as easier as* ✗.
 
 ---
 
@@ -161,6 +169,8 @@ status: "published"
 - Vilnius is the biggest city in Lithuania.
 - This is the most beautiful place I've seen.
 - She is the happiest person in the world.
+
+Use **one of the + superlative + plural noun** when something belongs to a top group: *Vilnius is one of the oldest cities in the region.*
 
 ---
 
@@ -225,14 +235,14 @@ status: "published"
 
 Complete with as...as or not as...as:
 
-1. English is _____ (difficult) _____ Lithuanian.
-2. Vilnius is _____ (big) _____ London.
-3. Summer is _____ (hot) _____ winter.
-4. My brother is _____ (tall) _____ me.
-5. This book is _____ (interesting) _____ the last one.
-6. She is _____ (good) _____ her sister at English.
-7. The weather today is _____ (bad) _____ yesterday.
-8. A bicycle is _____ (expensive) _____ a car.
+1. The two language tests have the same difficulty. The English test is _____ (difficult) _____ the Lithuanian test.
+2. London is much bigger than Vilnius. Vilnius is _____ (big) _____ London.
+3. It is 20°C in both cities. Kaunas is _____ (hot) _____ Vilnius today.
+4. My brother and I are both 180 cm tall. My brother is _____ (tall) _____ me.
+5. I enjoyed the last book more. This book is _____ (interesting) _____ the last one.
+6. The sisters get the same English grades. Lina is _____ (good) _____ her sister at English.
+7. Both days were equally stormy. The weather today is _____ (bad) _____ yesterday.
+8. A bicycle costs much less than a car. A bicycle is _____ (expensive) _____ a car.
 
 ---
 
@@ -269,7 +279,7 @@ Lithuanian food is very good and healthy. Traditional dishes like cepelinai are 
 2. What is the biggest city in Lithuania? _____________________
 3. Which is warmer, Lithuanian summer or winter? _____________________
 4. Which is the warmest month in Lithuania? _____________________
-5. Which is colder, Lithuanian winter or Southern European winter? _____________________
+5. Which is colder, Lithuanian summer or winter? _____________________
 6. What is more popular in Lithuania, cepelinai or fast food? _____________________
 7. What do people think is the best Lithuanian food? _____________________
 8. Is Lithuanian food good and healthy? _____________________
@@ -299,7 +309,7 @@ Correct the mistakes:
 
 1. Vilnius is more big than Kaunas. _____________________
 2. This is the most good book. _____________________
-3. She is happier than her sister. _____________________
+3. She is more happier than her sister. _____________________
 4. This car is expensiver than that one. _____________________
 5. He is the bestest student. _____________________
 6. Summer is hoter than winter. _____________________
@@ -308,13 +318,13 @@ Correct the mistakes:
 
 ---
 
-## Exercise 9: Extended Vocabulary / Pratimas 9: Išplėstas žodynas
+## Exercise 10: Extended Vocabulary / Pratimas 10: Išplėstas žodynas
 
 ### Comparative and Superlative Adjectives (Palyginimo ir aukščiausiojo laipsnio būdvardžiai)
 
 - Big - Bigger - Biggest - Didelis/didesnis/didžiausias
 - Small - Smaller - Smallest - Mažas/mažesnis/mažiausias
-- Fast - Faster - Fastest - Greitas/greitesnis/greitesnis
+- Fast - Faster - Fastest - Greitas/greitesnis/greičiausias
 - Slow - Slower - Slowest - Lėtas/lėtesnis/lėčiausias
 - Easy - Easier - Easiest - Lengvas/lengvesnis/lengviausias
 - Difficult - More difficult - Most difficult - Sunkus/sunkesnis/sunkiausias
@@ -338,7 +348,7 @@ Correct the mistakes:
 
 ---
 
-## Exercise 10: Extended Dialogues / Pratimas 10: Išplėsti dialogai
+## Exercise 11: Extended Dialogues / Pratimas 11: Išplėsti dialogai
 
 **Dialogue 1: Comparing Cities**
 
@@ -349,10 +359,10 @@ B: Yes, it's the biggest.
 
 **Complete the dialogue:**
 
-A: Which is _________, summer or winter?
-B: Summer is _________ than winter.
-A: What's the _________ season?
-B: I think autumn is the _________.
+A: Which is _________ (hot), summer or winter?
+B: Summer is _________ (hot) than winter.
+A: What's the _________ (beautiful) season?
+B: I think autumn is the _________ (beautiful).
 
 **Dialogue 2: Product Comparison**
 
@@ -368,7 +378,7 @@ A: No, it's cheaper but has more features.
 
 ---
 
-## Exercise 11: Extended Reading Comprehension 2 / Pratimas 11: Skaitymo suvokimas 2
+## Exercise 12: Extended Reading Comprehension 2 / Pratimas 12: Skaitymo suvokimas 2
 
 **Read the text:**
 
@@ -376,7 +386,7 @@ Lithuania has many beautiful places. Vilnius is the biggest city with about 500,
 
 The weather in Lithuania varies. Summer is the warmest season. Winter is colder than summer but more beautiful with snow. Autumn is wetter than spring. Spring is the most colorful with flowers.
 
-Lithuanian food is delicious. Cepelinai are bigger than kibinai. Beer is cheaper than wine. The traditional dish is the most popular among tourists.
+Lithuanian food is delicious. Cepelinai are bigger than kibinai. Beer is cheaper than wine. In this text, cepelinai are the most popular traditional dish among tourists.
 
 **Answer the questions:**
 
@@ -399,7 +409,7 @@ Lithuanian food is delicious. Cepelinai are bigger than kibinai. Beer is cheaper
 
 ---
 
-## Exercise 12: Writing Practice / Pratimas 12: Rašymo praktika
+## Exercise 13: Writing Practice / Pratimas 13: Rašymo praktika
 
 Write a short paragraph comparing two things you know well. For example:
 
@@ -435,7 +445,7 @@ Compare Lithuanian culture with another country's culture.
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Politeness in Comparisons:** English speakers avoid direct negative comparisons to be polite. Instead of "Your car is worse," say "My car is different."
+- **Politeness in Comparisons:** A direct negative comparison can sound critical. In a sensitive situation, give a reason or frame it as a preference: "I prefer this car because it uses less fuel."
 - **Advertising:** Superlatives are common in ads: "The best," "The fastest," "The cheapest."
 - **Sports Commentary:** Comparisons are frequent: "He runs faster than...," "This is the best team ever."
 
@@ -457,9 +467,27 @@ Compare Lithuanian culture with another country's culture.
 ## Cultural Notes / Kultūrinės pastabos
 
 - English speakers use comparisons frequently in conversation
-- Superlatives often use "one of the" instead of "the" when there are several equal best things
-- "Than" is always used with comparatives (unlike Lithuanian "už")
+- Use **one of the + superlative + plural noun** for membership in a top group: "one of the best restaurants"
+- Use **than** after a comparative when you name the second person or thing: "bigger than Kaunas"
 - In English, we compare quality, not just size or quantity
+
+---
+
+## Quick Retrieval and Can-do Check / Greitas kartojimas ir gebėjimų įsivertinimas
+
+Complete without looking back:
+
+1. good → _____ → the _____
+2. This task is _____ (easy) than the last one.
+3. Both bags cost €20. This bag is _____ expensive _____ that one.
+4. It is one of the _____ (interesting) museums in the city.
+
+After checking your answers, rate each statement: **Not yet / Almost / Yes**.
+
+- I can form regular and irregular comparative and superlative adjectives.
+- I can use **than**, **as...as**, and **not as...as** accurately.
+- I can use **one of the + superlative + plural noun**.
+- I can compare two familiar places or products and give a reason for my opinion.
 
 ---
 

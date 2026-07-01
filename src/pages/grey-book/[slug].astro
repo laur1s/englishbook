@@ -39,6 +39,7 @@ const answerSnippet = answerEntry ? extractGreyAnswerSnippet(answerEntry, entry)
   sections={parsed.sections}
   previous={previous}
   next={next}
+  totalEntries={entries.length}
   answerHref={`${withBase("/answers/grey-book")}#${entry.data.slug}`}
   answerSnippetHtml={answerSnippet ? renderMarkdown(answerSnippet) : ""}
 />

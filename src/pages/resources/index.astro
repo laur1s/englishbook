@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CollectionFilters from "../../components/CollectionFilters.astro";
+import { getResourceEntries } from "../../lib/content";
+
+const entries = await getResourceEntries();
+---
+
+<BaseLayout
+  title="Learning Resources | English Library"
+  description="Grammar and vocabulary reference guides for Lithuanian learners of English."
+>
+  <CollectionFilters
+    title="Learning Resources"
+    ltTitle="Mokymosi ištekliai"
+    description="Use the grammar guide and topic vocabulary lists whenever a lesson needs a quick explanation or review."
+    entries={entries}
+    itemLabel="resources"
+  />
+</BaseLayout>

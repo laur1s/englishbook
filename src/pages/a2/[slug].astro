@@ -43,6 +43,7 @@ const relatedMission = findSpeakingMissionForSource(
   sections={parsed.sections}
   previous={previous}
   next={next}
+  totalEntries={entries.length}
   answerHref={`${withBase("/answers/a2")}#${entry.data.slug}`}
   answerSnippetHtml={answerSnippet ? renderMarkdown(answerSnippet) : ""}
   practiceCallout={

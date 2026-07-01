@@ -24,19 +24,23 @@ type OrderedEntry = {
 export const sortEntries = <T extends OrderedEntry>(entries: T[]) =>
   [...entries].sort((left, right) => left.data.order - right.data.order);
 
-export const getGreyBookEntries = async () =>
-  sortEntries(await getCollection("greyBook"));
+const publishedEntries = <T extends { data: { status: string } }>(entries: T[]) =>
+  entries.filter((entry) => entry.data.status === "published");
 
-export const getA2Entries = async () => sortEntries(await getCollection("a2Units"));
+export const getGreyBookEntries = async () =>
+  sortEntries(publishedEntries(await getCollection("greyBook")));
+
+export const getA2Entries = async () =>
+  sortEntries(publishedEntries(await getCollection("a2Units")));
 
 export const getResourceEntries = async () =>
-  sortEntries(await getCollection("resources"));
+  sortEntries(publishedEntries(await getCollection("resources")));
 
 export const getAnswerKeyEntries = async () =>
-  sortEntries(await getCollection("answerKeys"));
+  sortEntries(publishedEntries(await getCollection("answerKeys")));
 
 export const getSpeakingMissionEntries = async () =>
-  sortEntries(await getCollection("speakingMissions"));
+  sortEntries(publishedEntries(await getCollection("speakingMissions")));
 
 export const getEntryBody = (entry: { body?: string }) => entry.body ?? "";
 
@@ -62,7 +66,7 @@ export const getCollectionHref = (collection: string) => {
     case "a2-units":
       return withBase("/a2");
     case "resources":
-      return withBase("/resources/grammar-reference");
+      return withBase("/resources");
     case "speaking-missions":
       return withBase("/speaking");
     default:

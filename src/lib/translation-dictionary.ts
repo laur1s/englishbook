@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 
 type TranslationDictionary = Record<string, string[]>;
+export type TranslationPair = { english: string; lithuanian: string };
 
 const repoRoot = process.cwd();
 
@@ -61,10 +62,22 @@ const normalizeLithuanian = (value: string) =>
 const looksLithuanian = (value: string) =>
   LITHUANIAN_CHARACTER_PATTERN.test(value) || LITHUANIAN_WORD_HINTS.test(value);
 
-const looksLikeLowercaseGloss = (value: string) =>
-  /[a-z]/.test(value) &&
-  value === value.toLowerCase() &&
-  !/\b(example|answer|doctor|patient|simple|continuous|grammar|word bank|activity|true|false)\b/i.test(value);
+const extractLithuanianGloss = (value: string) => {
+  const trimmed = value.trim();
+  const segments = trimmed.split(/\s+(?:—|-)\s+/).map((segment) => segment.trim());
+
+  if (looksLithuanian(segments[0])) {
+    return trimmed;
+  }
+
+  const lithuanianStart = segments.findIndex((segment) => looksLithuanian(segment));
+
+  if (lithuanianStart >= 0) {
+    return segments.slice(lithuanianStart).join(" - ");
+  }
+
+  return looksLithuanian(trimmed) ? trimmed : null;
+};
 
 const singularize = (value: string) => {
   if (value.endsWith("ies") && value.length > 4) {
@@ -131,21 +144,30 @@ const addEntry = (dictionary: Map<string, Set<string>>, english: string, lithuan
   }
 };
 
-const extractBulletTranslation = (line: string) => {
-  const match = line.match(/^\s*[-*]\s+(.+?)\s(?:—|-)\s(.+?)\s*$/);
+const extractBulletTranslation = (line: string): TranslationPair | null => {
+  const bulletMatch = line.match(/^\s*[-*]\s+(.+?)\s*$/);
 
-  if (!match) {
+  if (!bulletMatch) {
     return null;
   }
 
-  const english = match[1];
-  const rightSide = match[2];
+  const segments = bulletMatch[1]
+    .split(/\s+(?:—|-)\s+/)
+    .map((segment) => segment.trim())
+    .filter(Boolean);
+
+  // Three- and four-column study rows mix English forms, explanations, and
+  // Lithuanian values. Guessing where the language changes creates incorrect
+  // dictionary entries, so only unambiguous two-column rows are harvested.
+  if (segments.length !== 2) {
+    return null;
+  }
+
+  const [english, rightSide] = segments;
   const parentheticalTranslation = rightSide.match(/\(([^)\n]+)\)\s*$/)?.[1];
-  const lithuanian = parentheticalTranslation && (looksLithuanian(parentheticalTranslation) || looksLikeLowercaseGloss(parentheticalTranslation))
-    ? parentheticalTranslation
-    : looksLithuanian(rightSide)
-      ? rightSide
-      : null;
+  const lithuanian = parentheticalTranslation
+    ? extractLithuanianGloss(parentheticalTranslation)
+    : extractLithuanianGloss(rightSide);
 
   if (!lithuanian) {
     return null;
@@ -155,14 +177,14 @@ const extractBulletTranslation = (line: string) => {
 };
 
 const extractParentheticalGlosses = (line: string) => {
-  const pairs: Array<{ english: string; lithuanian: string }> = [];
+  const pairs: TranslationPair[] = [];
   const pattern = /([A-Za-z][A-Za-z' -]{1,40}?)\s*\(([^)\n]{2,60})\)/g;
 
   for (const match of line.matchAll(pattern)) {
     const english = match[1].trim();
-    const lithuanian = match[2].trim();
+    const lithuanian = extractLithuanianGloss(match[2]);
 
-    if (english && (looksLithuanian(lithuanian) || looksLikeLowercaseGloss(lithuanian))) {
+    if (english && lithuanian) {
       for (const variant of trailingEnglishVariants(english)) {
         pairs.push({ english: variant, lithuanian });
       }
@@ -172,16 +194,20 @@ const extractParentheticalGlosses = (line: string) => {
   return pairs;
 };
 
-const extractTranslationPairs = (markdown: string) => {
+export const extractTranslationPairs = (markdown: string) => {
   const cleaned = stripFrontmatter(markdown);
   const lines = cleaned.split("\n");
-  const pairs: Array<{ english: string; lithuanian: string }> = [];
+  const pairs: TranslationPair[] = [];
 
   for (const line of lines) {
     const bulletPair = extractBulletTranslation(line);
 
     if (bulletPair) {
       pairs.push(bulletPair);
+      continue;
+    }
+
+    if (/^\s*[-*]\s+.*\s(?:—|-)\s/.test(line)) {
       continue;
     }
 

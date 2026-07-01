@@ -34,8 +34,8 @@ status: "published"
 - donor — donoras
 - waiting list — laukiančiųjų sąrašas
 - heart failure — širdies nepakankamumas
-- desperate — beviltiškas, desperatiškas
-- match — atitikmuo
+- desperate — apimtas nevilties
+- match — tinkamas atitikmuo / suderinamas donoras
 - pager — pranešimų gaviklis
 - exhausted — išsekęs
 - procedure — procedūra
@@ -43,7 +43,7 @@ status: "published"
 - ethical — etiškas
 - dilemma — dilema
 - disappointed — nusivylęs
-- proud — didžiuojasi
+- proud — besididžiuojantis / išdidus
 
 ---
 
@@ -77,7 +77,7 @@ Sarah was desperate. "A 5% risk?" she asked, her voice shaking. "But he will 100
 
 "Then do it," Sarah said, her decision firm. "We have to take the chance. I can't lose him."
 
-The surgery was long and incredibly difficult. Cristina was the lead surgeon, her focus absolute. Derek, who had stepped in to assist with the complex nerve connections, was amazed by her skill. "She's extraordinary," he whispered to Meredith, who was observing from the gallery. Meredith felt a surge of pride for her friend.
+The surgery was long and incredibly difficult. Cristina was the lead surgeon, her focus absolute. Derek, who had stepped in to assist with the complex blood-vessel connections, was amazed by her skill. "She's extraordinary," he whispered to Meredith, who was observing from the gallery. Meredith felt a surge of pride for her friend.
 
 After eight intense hours, the surgery was over. The new heart was beating strongly in Mr. Evans's chest. The transplant was a success.
 
@@ -125,7 +125,7 @@ As she walked out of the hospital with Derek that night, Meredith felt a deep se
 
 ### Fun Activities / Smagios Užduotys
 
-**Activity 1: Role-Play — The Ethical Discussion (Etinė Diskusija)**
+#### Activity 1: Role-Play — The Ethical Discussion (Etinė Diskusija)
 
 Work in pairs. One person is the doctor, and the other is a patient's family member. The doctor must explain a difficult medical situation with a small risk. The family member must ask questions and make a decision.
 
@@ -136,7 +136,7 @@ Work in pairs. One person is the doctor, and the other is a patient's family mem
 - Doctor: "There is a 5% chance of complications. But without this, the risk is 100%."
 - Family: "I understand. Let's do it."
 
-**Activity 2: Vocabulary Matching Game**
+#### Activity 2: Vocabulary Matching Game
 
 Match the medical situations with the correct phrasal verb from this chapter:
 

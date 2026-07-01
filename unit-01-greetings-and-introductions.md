@@ -42,6 +42,8 @@ status: "published"
 - Goodbye / Bye - Viso gero / Iki
 - See you later - Iki pasimatymo
 
+> **Remember:** **Good evening** is a greeting. **Good night** is normally used when leaving late in the evening or going to bed.
+
 ### Introductions (Prisistatymai)
 
 - My name is... - Mano vardas...
@@ -73,6 +75,7 @@ status: "published"
 - You are = You're
 - He is = He's
 - She is = She's
+- It is = It's
 - We are = We're
 - They are = They're
 
@@ -81,6 +84,10 @@ status: "published"
 - I am not = I'm not
 - You are not = You aren't / You're not
 - He is not = He isn't / He's not
+- She is not = She isn't / She's not
+- It is not = It isn't / It's not
+- We are not = We aren't / We're not
+- They are not = They aren't / They're not
 
 **More Examples:**
 - I am not tired. - Aš nesu pavargęs.
@@ -104,7 +111,7 @@ status: "published"
 5. You _____ very kind. (Tu esi labai malonus)
 6. He _____ my brother. (Jis yra mano brolis)
 7. It _____ a beautiful day. (Tai graži diena)
-8. I _____ 25 years old. (Man yra 25 metai)
+8. I _____ 25 years old. (Man 25 metai)
 9. Maria _____ from Spain. (Maria yra iš Ispanijos)
 10. The books _____ on the table. (Knygos yra ant stalo)
 
@@ -192,7 +199,7 @@ Translate from Lithuanian to English:
 5. Jie nėra namuose. _____________________
 6. Malonu susipažinti. _____________________
 7. Kaip laikaisi? _____________________
-8. Aš esu gerai, ačiū. _____________________
+8. Man viskas gerai, ačiū. _____________________
 
 ---
 
@@ -247,21 +254,21 @@ Hello! My name is Lukas. I am from Kaunas, Lithuania. I am 28 years old. I am a 
 
 ## Cultural Notes / Kultūrinės pastabos
 
-In English-speaking countries, greetings have subtle rules that are good to know.
+When using English, greeting choices depend on the situation and your relationship with the other person.
 
 - **Formality:** "Hello" is a neutral greeting suitable for anyone. "Hi" is a friendly, common greeting for most informal and semi-formal situations. "Hey" is very informal and best used with friends and people you know well.
 - **The "How are you?" Ritual:** "How are you?" is often a part of the greeting itself, not a deep question about your well-being.
   - A typical, polite response is: "I'm good, thanks. And you?" or "Fine, thank you. How are you?"
   - It's not common to respond with a long list of your problems unless you know the person very well.
-- **Handshakes:** A firm handshake is common when meeting someone for the first time in a professional or formal setting. It's usually brief. Among friends, handshakes are less common; a simple "hello" is enough.
-- **First Names:** Using first names (e.g., "John," "Mary") is very common, even with people in positions of authority like managers or teachers, after the initial introduction. This is different from Lithuania, where formal titles are used more often.
-- **Eye Contact:** Making eye contact when you greet someone shows that you are confident and sincere. Avoiding eye contact can be seen as impolite or shy.
+- **Handshakes:** Handshake customs vary by country, workplace, and person. In a formal setting, follow the other person's lead; a friendly verbal greeting is always useful.
+- **First Names:** First names are common in many English-speaking workplaces and classrooms, but expectations vary. If you are unsure, notice how the person introduces themselves or politely ask what they prefer.
+- **Eye Contact:** In many settings, brief, natural eye contact can show attention. Comfortable levels differ between people and cultures, so there is no single rule.
 
 ---
 
 ---
 
-## Part 8: Speaking Practice / Kalbėjimo praktika
+## Part 3: Speaking Practice / Kalbėjimo praktika
 
 These exercises are designed to be done with a partner or in a small group. The goal is to use the vocabulary and grammar from this unit in a real conversation.
 
@@ -277,7 +284,7 @@ Work with a partner. Imagine you are in one of the following situations. Introdu
 4. You are at a friend's party and don't know each other.
 
 **Example Dialogue:**
-A: Hello, I'm [Your Name]. I don't think we've met.
+A: Hello, I'm [Your Name]. What's your name?
 B: Hi, [Your Name]. I'm [Partner's Name]. It's nice to meet you.
 A: Nice to meet you too. Where are you from?
 B: I'm from [Your City/Country]. And you?
@@ -329,7 +336,7 @@ For a digital version of this book, these exercises could be even more engaging:
 
 ### Countries and Nationalities (Šalys ir tautybės)
 
-- Lithuania - Lithuanian - Lietuva - lietuvis/lietuvis
+- Lithuania - Lithuanian - Lietuva - lietuvis/lietuvė
 - Poland - Polish - Lenkija - lenkas/lenkė
 - Germany - German - Vokietija - vokietis/vokietė
 - France - French - Prancūzija - prancūzas/prancūzė
@@ -372,10 +379,10 @@ B: _____________ from London. _____________ you?
 A: _____________ from Lithuania.
 
 **Dialogue 2: Family Introduction**
-A: This is my family. This is my wife, Maria. She is a doctor.
-B: Hello, Maria. I'm Peter.
-C: Nice to meet you, Peter. And this is our son, Lukas. He is 10 years old.
-B: Hi, Lukas. I'm happy to meet you all!
+Tomas: This is my family. This is my wife, Maria. She is a doctor.
+Peter: Hello, Maria. I'm Peter.
+Maria: Nice to meet you, Peter. And this is our son, Lukas. He is 10 years old.
+Peter: Hi, Lukas. I'm happy to meet you all!
 
 **Questions:**
 
@@ -435,7 +442,7 @@ Discuss: How do people greet each other in different countries? Share what you k
 
 ### Activity 6: Pronunciation Practice
 
-Practice saying these phrases with correct stress:
+Practise saying these phrases with correct stress:
 
 - My name is [Name]
 - Nice to meet you
@@ -446,10 +453,29 @@ Practice saying these phrases with correct stress:
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Personal Space:** In English-speaking countries, people usually stand about an arm's length apart when talking. This is closer than in some other cultures, but farther than in very close relationships.
-- **Small Talk:** After introductions, people often make small talk about weather, work, or hobbies. Questions like "How's the weather?" or "Did you have a good weekend?" are common.
-- **Business Cards:** In professional settings, especially in Asia-influenced English contexts, exchanging business cards is important. In Western countries, it's less formal, but having a card ready is good.
-- **Follow-up:** After meeting someone, it's polite to say "It was great meeting you" or "Let's stay in touch" if you want to continue the connection.
+- **Personal Space:** Comfortable conversational distance varies between people, relationships, and cultures. Notice the other person's body language and give them space.
+- **Small Talk:** After introductions, people often make small talk about weather, work, or hobbies. Simple questions such as "How's your day?" are common.
+- **Business Cards:** The importance of business cards depends on the country and profession. Follow the practice used in that setting.
+- **Follow-up:** After meeting someone, you can say "Nice meeting you" or "Let's stay in touch" if you want to continue the connection.
+
+---
+
+## Cumulative Review / Kaupiamasis kartojimas
+
+1. Complete: I _____ from Lithuania.
+2. Make this negative: She is tired. → _____________________
+3. Make a question: They are students. → _____________________
+4. Translate: Koks tavo vardas? → _____________________
+5. Choose the natural phrase when you leave to go to bed: **Good evening / Good night**
+
+### Can-Do Self-Check / Įsivertinimas
+
+Tick the statements that are true for you:
+
+- [ ] I can greet someone and say goodbye appropriately.
+- [ ] I can introduce myself and another person.
+- [ ] I can use **am, is, are** in statements, negatives, and questions.
+- [ ] I can ask for someone's name, home country, age, and job.
 
 ---
 **End of Expanded Unit 1 / Išplėsto pirmojo skyriaus pabaiga**

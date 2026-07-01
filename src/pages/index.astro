@@ -16,17 +16,17 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
 ]);
 ---
 
-<BaseLayout title="English Library" description="GitHub-deployable bilingual English learning library.">
+<BaseLayout title="English Library" description="A story-led A2 English course with Lithuanian support, speaking practice, and answer keys.">
   <section class="landing-hero">
     <div class="hero-copy">
       <p class="eyebrow">Flagship reading track</p>
       <p class="hero-brand">English Library</p>
-      <h1>Grey&apos;s Book should feel like a series, not a file dump.</h1>
+      <h1>Learn English through a story you&apos;ll want to finish.</h1>
       <p class="hero-intro">
         Read a hospital story first, keep Lithuanian help close, and move into grammar only after the chapter has
         given you context.
       </p>
-      <p class="hero-subtitle lt-text">
+      <p class="hero-subtitle lt-text" lang="lt">
         Pagrindinis kelias: istorija, žodžių pagalba, tik tada pratimai ir atsakymai.
       </p>
       <div class="hero-actions">
@@ -54,7 +54,7 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
         <p class="poster-kicker">Read like a series</p>
         <h2>One chapter. One emotional arc. One clear next step.</h2>
         <p>
-          Long-press difficult English, keep Lithuanian notes nearby, and reveal answers only when you are ready.
+          Select a difficult word or short phrase for Lithuanian help, then reveal answers only when you are ready.
         </p>
       </div>
 
@@ -72,7 +72,7 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
         </div>
         <div>
           <dt>Best on mobile</dt>
-          <dd>Read, hold to translate, then continue</dd>
+          <dd>Read, select to translate, then continue</dd>
         </div>
         <div>
           <dt>Study order</dt>
@@ -87,7 +87,7 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
       <div>
         <p class="eyebrow">Resume reading</p>
         <h2 data-resume-title>Start Chapter 1</h2>
-        <p class="lt-text" data-resume-track>Grey's Book</p>
+      <p class="resume-track" data-resume-track>Grey's Book</p>
       </div>
       <p data-resume-copy>
         Continue from the last chapter you opened, or start Chapter 1 if this is your first visit.
@@ -107,8 +107,8 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
     </article>
     <article class="path-step">
       <p class="eyebrow">Step 2</p>
-      <h2>Hold to translate</h2>
-      <p>Use Lithuanian support only when you need it, without breaking the reading rhythm.</p>
+      <h2>Select to translate</h2>
+      <p>Select up to four words for Lithuanian support without leaving the lesson.</p>
     </article>
     <article class="path-step">
       <p class="eyebrow">Step 3</p>
@@ -121,7 +121,7 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
     <a class="feature-card flagship-card" href={withBase("/grey-book")}>
       <p class="eyebrow">Primary track</p>
       <h2>Grey's Book</h2>
-      <p class="lt-text">Medicininė drama su A2 lygio anglų kalba</p>
+      <p class="lt-text" lang="lt">Medicininė drama su A2 lygio anglų kalba</p>
       <p>Ten chapters designed to be read in order, with translation help and controlled answer reveals built into the flow.</p>
       <p class="card-excerpt">Best place to begin if you want a stronger reading habit on mobile.</p>
     </a>
@@ -129,28 +129,28 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
     <a class="feature-card" href={withBase("/a2")}>
       <p class="eyebrow">Support track</p>
       <h2>A2 Course</h2>
-      <p class="lt-text">Pilnas A2 kursas lietuviškai kalbantiems</p>
+      <p class="lt-text" lang="lt">Pilnas A2 kursas lietuviškai kalbantiems</p>
       <p>Use the A2 units when a chapter shows you where you are weak and you want focused reinforcement.</p>
     </a>
 
     <a class="feature-card" href={withBase("/speaking")}>
       <p class="eyebrow">Rehearsal track</p>
       <h2>Speaking Lab</h2>
-      <p class="lt-text">Trumpa kalbėjimo praktika pagal A2 temas</p>
+      <p class="lt-text" lang="lt">Trumpa kalbėjimo praktika pagal A2 temas</p>
       <p>Use {speakingEntries.length} short missions when you want to turn grammar and vocabulary into spoken English.</p>
     </a>
 
-    <a class="feature-card" href={withBase("/resources/grammar-reference")}>
+    <a class="feature-card" href={withBase("/resources")}>
       <p class="eyebrow">Reference shelf</p>
       <h2>Grammar + Vocabulary</h2>
-      <p class="lt-text">Gramatikos ir žodyno šaltiniai</p>
+      <p class="lt-text" lang="lt">Gramatikos ir žodyno šaltiniai</p>
       <p>Look up one rule, check one word list, and go straight back to the lesson without getting lost.</p>
     </a>
 
     <a class="feature-card" href={withBase("/answers/a2")}>
       <p class="eyebrow">Review only</p>
       <h2>Answer Keys</h2>
-      <p class="lt-text">Atsakymai su peržiūros valdikliais</p>
+      <p class="lt-text" lang="lt">Atsakymai su peržiūros valdikliais</p>
       <p>Answers stay useful when they come last, so the site keeps them collapsed until you decide to open them.</p>
     </a>
   </section>
@@ -161,15 +161,37 @@ const [greyBookEntries, a2Entries, resources, speakingEntries] = await Promise.a
     const resumeTrack = document.querySelector("[data-resume-track]");
     const resumeCopy = document.querySelector("[data-resume-copy]");
     const resumeLink = document.querySelector("[data-resume-link]");
-    const resumeData = JSON.parse(localStorage.getItem("english-library.resume") || "null");
+    let resumeData = null;
+
+    try {
+      const rawResumeData = localStorage.getItem("english-library.resume");
+      const parsedResumeData = rawResumeData ? JSON.parse(rawResumeData) : null;
+
+      if (parsedResumeData && typeof parsedResumeData === "object" && !Array.isArray(parsedResumeData)) {
+        resumeData = parsedResumeData;
+      }
+    } catch {}
 
     if (resumeCard && resumeData && resumeLink && resumeTitle && resumeTrack && resumeCopy) {
-      const lessonTitle = resumeData.title || "your last lesson";
+      const lessonTitle = typeof resumeData.title === "string" && resumeData.title.trim()
+        ? resumeData.title
+        : "your last lesson";
       resumeTitle.textContent = `Resume ${lessonTitle}`;
-      resumeTrack.textContent = resumeData.track || "Recent lesson";
-      resumeCopy.textContent = `You last read ${lessonTitle}. Pick up where you left off or start Chapter 1 again.`;
+      resumeTrack.textContent = typeof resumeData.track === "string" && resumeData.track.trim()
+        ? resumeData.track
+        : "Recent lesson";
+      resumeCopy.textContent = `You last read ${lessonTitle}. Pick up where you left off or choose another lesson.`;
       resumeLink.textContent = `Resume ${lessonTitle}`;
-      resumeLink.href = resumeData.href || resumeLink.href;
+
+      if (typeof resumeData.href === "string") {
+        try {
+          const resumeUrl = new URL(resumeData.href, window.location.href);
+
+          if (resumeUrl.origin === window.location.origin) {
+            resumeLink.href = resumeUrl.href;
+          }
+        } catch {}
+      }
     }
   </script>
 </BaseLayout>

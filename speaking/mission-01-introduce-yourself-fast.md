@@ -45,7 +45,7 @@ steps:
       - "Start with: Hi, I'm..."
       - "Finish with a return question."
   - kind: "compare"
-    prompt: "Check your version against this model: Hi, I'm Rasa. I'm from Kaunas, but I live in Vilnius now. I work in marketing and I really like hiking at weekends. It's nice to meet you. What do you do?"
+    prompt: "Check your version against this model: Hi, I'm Rasa. I'm from Kaunas, but I live in Vilnius now. I moved here three years ago. I work in marketing for a small technology company. In my free time, I really like hiking and taking photos. At weekends, I often visit my family or meet friends for coffee. It's nice to meet you. What do you do, and what do you enjoy outside work?"
     ltPrompt: "Palyginkite savo variantą su pavyzdžiu."
     support:
       - "Did you use complete sentences?"
@@ -56,6 +56,8 @@ steps:
     support:
       - "1 = I needed a lot of help."
       - "5 = I sounded clear and natural."
+      - "Accuracy: Did every sentence have a subject and a verb?"
+      - "Second attempt: add one detail and finish with a clear question."
 ---
 
 This mission turns Unit 1 into a fast spoken introduction instead of another written exercise. The goal is not perfect grammar. The goal is to sound open, clear, and human.

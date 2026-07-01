@@ -31,19 +31,19 @@ status: "published"
 ### Word Bank
 
 - secret — paslaptis
-- in love — įsimylėjęs
+- in love — įsimylėjęs / įsimylėjusi
 - brain surgeon — neurochirurgas
 - tumor — auglys
-- forbidden — draudžiamas
+- forbidden — draudžiamas / draudžiama
 - rules — taisyklės
 - kiss — bučinys
-- caught — pagautas
+- caught — pagautas / pagauta
 - operating room — operacinė
-- dangerous — pavojingas
+- dangerous — pavojingas / pavojinga
 - relationship — santykiai
 - hiding — slapstymasis
-- afraid — bijantis
-- discover — atrasti
+- afraid — bijantis / bijanti
+- discover — sužinoti / atskleisti
 
 ---
 
@@ -51,7 +51,7 @@ status: "published"
 
 Meredith had a big secret. A very big secret. She was in love with Dr. Derek Shepherd. Derek was a brain surgeon - the best brain surgeon at Seattle Grace Hospital. He was handsome, smart, and kind. But there was a huge problem.
 
-Hospital rules said doctors cannot date other doctors. If their boss found out, Meredith and Derek could lose their jobs. They could be fired. So they kept their love secret. Nobody knew - not their friends, not their family, nobody.
+Hospital rules said doctors could not date other doctors. If their boss found out, Meredith and Derek could lose their jobs. They could be fired. So they kept their love secret. Nobody knew - not their friends, not their family, nobody.
 
 Every day at work was so hard. They had to act like they were just colleagues. They couldn't hold hands. They couldn't kiss. They couldn't even stand too close to each other. But sometimes, their eyes met across the room. And in those moments, Meredith felt her heart beat faster.
 
@@ -127,7 +127,7 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
 
 ### Understanding Questions
 
-1. How long had Meredith and Derek been dating?
+1. Who was Meredith in love with?
 2. Why did they keep their relationship secret?
 3. What was Robert's medical problem?
 4. Where did Meredith watch Derek's surgery from?
@@ -135,8 +135,8 @@ But as they left the restaurant, Meredith had a bad feeling. How long could they
 6. What did Izzie notice about Meredith and Derek?
 7. What advice did Izzie give Meredith?
 8. How did their relationship affect Meredith's work?
-9. Why did Meredith think the secrecy was worth it?
-10. What made their love feel fragile?
+9. Why did Meredith continue the relationship despite the risk?
+10. Why was their relationship difficult and risky?
 
 ### Creative Questions
 
@@ -198,9 +198,9 @@ Choose the best modal verb for each sentence.
 
 1. Meredith and Derek ______ keep the relationship hidden because hospital rules were strict. `(must / might / should)`
 2. They ______ tell everyone the truth if it could cost them their jobs. `(mustn't / can't / should)`
-3. Izzie ______ tell the chief, but she chose not to. `(might / can't / must)`
+3. Izzie ______ tell the chief, but she is not sure. `(might / can't / must)`
 4. Meredith thought they ______ be more careful after Izzie noticed them. `(should / can't / mustn't)`
-5. Derek said they ______ find another way in the future. `(should / can / might)`
+5. Derek believes they ______ find another way in the future. `(can / can't / mustn't)`
 6. Hospital romance ______ be dangerous when rules are strict. `(can't / can / should)`
 
 

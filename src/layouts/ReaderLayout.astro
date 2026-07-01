@@ -12,6 +12,7 @@ type Props = {
   sections: ParsedSection[];
   previous?: LibraryEntry;
   next?: LibraryEntry;
+  totalEntries?: number;
   answerHref?: string;
   answerSnippetHtml?: string;
   practiceCallout?: {
@@ -30,6 +31,7 @@ const {
   sections,
   previous,
   next,
+  totalEntries,
   answerHref,
   answerSnippetHtml,
   practiceCallout,
@@ -40,14 +42,23 @@ const collectionTitle =
     ? "Grey's Book"
     : entry.data.collection === "a2-units"
       ? "A2 Course"
-      : "Library";
+      : entry.data.collection === "resources"
+        ? "Resources"
+        : "Library";
+const isTrackLesson = entry.data.collection === "grey-book" || entry.data.collection === "a2-units";
+const sequenceLabel =
+  entry.data.collection === "grey-book"
+    ? `Chapter ${entry.data.order}${totalEntries ? ` of ${totalEntries}` : ""}`
+    : entry.data.collection === "a2-units"
+      ? `Unit ${entry.data.order}${totalEntries ? ` of ${totalEntries}` : ""}`
+      : entry.data.collection.replace("-", " ");
 ---
 
-<BaseLayout title={`${entry.data.title} | English Library`} description={description}>
+<BaseLayout title={`${entry.data.title} | English Library`} description={description} enableTranslation>
   <section class="reader-hero">
-    <p class="eyebrow">{entry.data.collection.replace("-", " ")}</p>
+    <p class="eyebrow">{sequenceLabel}</p>
     <h1>{entry.data.title}</h1>
-    <p class="hero-subtitle lt-text">{entry.data.ltTitle}</p>
+    <p class="hero-subtitle lt-text" lang="lt">{entry.data.ltTitle}</p>
 
     <div class="badge-row">
       <span class="badge">{entry.data.level}</span>
@@ -96,11 +107,11 @@ const collectionTitle =
     <aside class="reader-sidebar">
       <div class="toc-card">
         <h2>On this page</h2>
-        <p class="lt-text sidebar-subtitle">Šio puslapio turinys</p>
+        <p class="lt-text sidebar-subtitle" lang="lt">Šio puslapio turinys</p>
         <ul>
           {sections.map((section) => (
             <li>
-              <a href={`#${section.id}`}>{section.title}</a>
+              <a href={`#${section.id}`} set:html={section.titleHtml} />
             </li>
           ))}
           {answerSnippetHtml && <li><a href="#answer-preview">Answer preview</a></li>}
@@ -109,6 +120,32 @@ const collectionTitle =
     </aside>
 
     <article class="reader-content">
+      {isTrackLesson && (
+        <section class="study-coach" data-lesson-progress data-lesson-slug={entry.data.slug}>
+          <div class="study-coach-head">
+            <div>
+              <p class="eyebrow">Active study loop</p>
+              <h2>Try first. Check later.</h2>
+              <p class="lt-text" lang="lt">Pirmiausia pabandykite, tada tikrinkite atsakymus.</p>
+            </div>
+            <button type="button" class="secondary-button" data-lesson-complete aria-pressed="false">
+              Mark lesson complete
+            </button>
+          </div>
+
+          <ol class="study-step-list">
+            <li><strong>Notice:</strong> read the examples and say two of them aloud.</li>
+            <li><strong>Retrieve:</strong> close the notes and complete one exercise without help.</li>
+            <li><strong>Produce:</strong> make three true sentences about your own life.</li>
+            <li><strong>Correct:</strong> check the key, fix one error, and retry it tomorrow.</li>
+          </ol>
+
+          <p class="study-progress-note" data-lesson-completion-status aria-live="polite">
+            Progress is saved only on this device.
+          </p>
+        </section>
+      )}
+
       {introHtml && <div class="prose intro-block" set:html={introHtml} />}
 
       {practiceCallout && (
@@ -116,7 +153,7 @@ const collectionTitle =
           <div class="support-callout-copy">
             <p class="eyebrow">Speaking mission</p>
             <h2>{practiceCallout.title}</h2>
-            <p class="lt-text">{practiceCallout.ltTitle}</p>
+            <p class="lt-text" lang="lt">{practiceCallout.ltTitle}</p>
             <p>{practiceCallout.description}</p>
           </div>
           <a class="primary-button" href={practiceCallout.href}>
@@ -149,13 +186,13 @@ const collectionTitle =
           id="answer-preview"
           data-persist-key={`${entry.data.slug}:answer-preview`}
         >
-          <summary>Answer preview <span class="lt-text">Atsakymų peržiūra</span></summary>
+          <summary>Answer preview <span class="lt-text" lang="lt">Atsakymų peržiūra</span></summary>
           <div class="prose" set:html={answerSnippetHtml} />
           {answerHref && (
             <p class="answer-link-row">
               <a class="inline-link" href={answerHref}>
                 Open full answer key
-                <span class="lt-text">Atidaryti pilną atsakymų raktą</span>
+                <span class="lt-text" lang="lt">Atidaryti pilną atsakymų raktą</span>
               </a>
             </p>
           )}

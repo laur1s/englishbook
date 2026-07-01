@@ -22,9 +22,9 @@ status: "published"
 ## Skyrius 10: Esamojo laiko formų palyginimas
 
 ### Learning Objectives / Mokymosi tikslai
-- Contrast Present Simple, Present Continuous, and Present Perfect / Palyginti Present Simple, Present Continuous ir Present Perfect
+- Contrast Present Simple, Present Continuous, Present Perfect, and relevant Past Simple uses / Palyginti Present Simple, Present Continuous, Present Perfect ir susijusius Past Simple atvejus
 - Choose the correct tense for different situations / Pasirinkti tinkamą laiką skirtingoms situacijoms
-- Understand stative vs dynamic verbs / Suprasti stative vs dynamic veiksmažodžius
+- Understand stative vs dynamic verbs / Suprasti būsenos ir veiksmo veiksmažodžius
 - Use appropriate time expressions / Naudoti tinkamas laiko išraiškas
 
 ---
@@ -43,7 +43,9 @@ status: "published"
 - now, at the moment - dabar, šiuo metu
 - today, this week/month/year - šiandien, šią savaitę/mėnesį/metus
 - Look!/Listen!/Watch! - Žiūrėk!/Klausyk!/Stebėk!
-- right now, just now - dabar pat, ką tik
+- right now - dabar pat
+
+**Note:** **just now** usually refers to the immediate past: *I saw him just now.*
 
 ### Time Expressions for Present Perfect (Present Perfect laiko išraiškos)
 - ever, never - kada nors, niekada
@@ -84,7 +86,7 @@ status: "published"
 ### Present Perfect (Esamasis atliktinis)
 **When to use:**
 1. **Life experiences:** I have visited Paris.
-2. **Unfinished time periods:** I have seen that film. (at some point)
+2. **Unfinished time periods:** I have had three lessons this week. (this week is not finished)
 3. **Recent actions with present results:** I have lost my keys. (still lost)
 4. **With time expressions:** ever, never, since, for, just, already
 
@@ -120,15 +122,15 @@ Stative verbs describe states, not actions. They are NOT usually used in continu
 
 ---
 
-## Exercise 1: Present Simple or Present Continuous?
-## Pratimas 1: Present Simple ar Present Continuous?
+## Exercise 1: Present Simple, Present Continuous, or Present Perfect?
+## Pratimas 1: Present Simple, Present Continuous ar Present Perfect?
 
 Complete with the correct form:
 
 1. I usually _____ (go) to work by bus, but today I _____ (walk).
 2. She _____ (live) in Kaunas. She _____ (live) there since 2010.
 3. Look! The cat _____ (sit) on the roof. It _____ (sit) there every day.
-4. I _____ (study) English at the moment. I _____ (study) for my exam.
+4. I _____ (study) English at the moment. I usually _____ (study) in the library.
 5. Water _____ (boil) at 100°C. The water _____ (boil) now.
 6. He _____ (work) in an office. He _____ (work) late tonight.
 7. They _____ (play) football every Saturday. They _____ (play) now.
@@ -152,17 +154,17 @@ Choose the correct tense:
 
 ---
 
-## Exercise 3: All Three Tenses
-## Pratimas 3: Visi trys laikai
+## Exercise 3: Mixed Present Tenses and Past Simple
+## Pratimas 3: Mišrūs esamieji laikai ir Past Simple
 
-Complete with Present Simple, Present Continuous, or Present Perfect:
+Complete with Present Simple, Present Continuous, Present Perfect, or Past Simple:
 
 1. I _____ (live) in Vilnius. I _____ (live) here for 5 years. Right now I _____ (sit) in my living room.
 2. She usually _____ (drink) coffee in the morning, but today she _____ (drink) tea. She _____ (never/try) green tea before.
 3. He _____ (work) as a teacher. He _____ (work) at school now. He _____ (teach) English for 10 years.
 4. They _____ (play) tennis on Sundays. They _____ (play) at the moment. They _____ (win) the tournament last week.
-5. I _____ (not/like) vegetables, but I _____ (eat) broccoli now. I _____ (try) it for the first time.
-6. The sun _____ (rise) in the east. It _____ (rise) right now. It _____ (rise) every morning.
+5. I _____ (not/like) vegetables, but I _____ (eat) broccoli now. I _____ (never/try) it before today.
+6. The sun _____ (rise) in the east. It _____ (rise) right now. It _____ (already/rise), so it is light.
 
 ---
 
@@ -185,16 +187,16 @@ Correct the mistakes if necessary:
 ## Exercise 5: Time Expressions
 ## Pratimas 5: Laiko išraiškos
 
-Match the time expression with the correct tense:
+Match each time expression with the tense it most clearly signals here:
 
-1. now, at the moment → _____________________
-2. every day, usually → _____________________
-3. just, already, since → _____________________
-4. today, this week → _____________________
+1. right now → _____________________
+2. every day → _____________________
+3. since 2020 → _____________________
+4. Look! → _____________________
 5. yesterday, last week → _____________________
-6. ever, never → _____________________
-7. always, sometimes → _____________________
-8. Look!/Listen! → _____________________
+6. ever → _____________________
+7. usually → _____________________
+8. at the moment → _____________________
 
 ---
 
@@ -207,7 +209,7 @@ Correct the tense mistakes:
 2. She doesn't likes coffee. _____________________
 3. I have saw that movie yesterday. _____________________
 4. He is working here for 3 years. _____________________
-5. They are always complaining. _____________________
+5. They always are complain. _____________________
 6. I am knowing him very well. _____________________
 7. She has ate breakfast already. _____________________
 8. The train is leaving at 9 PM every day. _____________________
@@ -239,7 +241,7 @@ Anna has never been abroad, but she wants to travel. She is planning a trip to E
 ---
 
 ## Exercise 8: Mixed Practice
-## Pratimas 8: Mišrus praktika
+## Pratimas 8: Mišri praktika
 
 Complete the text with correct tenses:
 
@@ -286,14 +288,14 @@ B: I _____ (be) sick. I _____ (not/feel) well.
 A: I _____ (hope) you _____ (get) better soon.
 
 **Talking about hobbies:**
-A: _____ you _____ (play) any sports?
+A: _____ you _____ (play) any sports regularly?
 B: Yes, I _____ (play) tennis. I _____ (play) it since I was 10.
 A: _____ you _____ (win) any tournaments?
 B: I _____ (win) one last year, but I _____ (not/play) professionally.
 
 ---
 
-## Exercise 10: Extended Vocabulary / Pratimas 10: Išplėstas žodynas
+## Exercise 11: Extended Vocabulary / Pratimas 11: Išplėstas žodynas
 
 ### Tense Time Expressions (Laiko išraiškos laikams)
 
@@ -308,7 +310,7 @@ B: I _____ (win) one last year, but I _____ (not/play) professionally.
 
 **Exercise:** Choose the correct tense.
 
-1. I _____ (live) in Vilnius. (Present Simple/Continuous)
+1. Vilnius is my permanent home. I _____ (live) in Vilnius. (Present Simple/Continuous)
 2. She _____ (cook) dinner now. (Present Simple/Continuous)
 3. Have you _____ (see) that movie? (Present Simple/Perfect)
 4. He _____ (work) here since 2010. (Present Simple/Perfect)
@@ -316,7 +318,7 @@ B: I _____ (win) one last year, but I _____ (not/play) professionally.
 
 ---
 
-## Exercise 11: Extended Dialogues / Pratimas 11: Išplėsti dialogai
+## Exercise 12: Extended Dialogues / Pratimas 12: Išplėsti dialogai
 
 **Dialogue 1: Mixed Tenses**
 
@@ -341,14 +343,14 @@ B: No, I haven't.
 
 **Questions:**
 1. What does the person usually do on weekends?
-2. What is she doing today?
-3. What has she done before?
-4. What does she like?
-5. What hasn't she tried?
+2. What is speaker B doing today?
+3. What has speaker B done before?
+4. What does speaker B like?
+5. What hasn't speaker B tried?
 
 ---
 
-## Exercise 12: Extended Reading Comprehension 2 / Pratimas 12: Skaitymo suvokimas 2
+## Exercise 13: Extended Reading Comprehension 2 / Pratimas 13: Skaitymo suvokimas 2
 
 **Read the text:**
 
@@ -377,7 +379,7 @@ Her brother works in an office. He usually starts at 9 AM. At the moment, he is 
 
 ---
 
-## Exercise 13: Writing Practice / Pratimas 13: Rašymo praktika
+## Exercise 14: Writing Practice / Pratimas 14: Rašymo praktika
 
 Write about your daily routine using different present tenses.
 
@@ -387,7 +389,7 @@ Include:
 - Experiences (Present Perfect)
 
 Example:
-I usually wake up at 7 AM. Today I'm sleeping late. I have woken up early for years.
+I usually wake up at 7 AM. Today I'm getting up late because I am on holiday. I have followed my usual routine for several years.
 
 **Your turn:**
 
@@ -411,7 +413,7 @@ Talk about things you've never done but want to try.
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Temporary Actions:** English uses Present Continuous for temporary situations, unlike Lithuanian.
+- **Temporary Actions:** English commonly uses Present Continuous to mark a temporary situation; Lithuanian often expresses this distinction through context or extra words.
 - **Life Experiences:** Present Perfect is used for personal achievements and stories.
 - **Polite Questions:** "Have you ever...?" shows interest in the other person.
 
@@ -423,7 +425,7 @@ Talk about things you've never done but want to try.
 - What do you do? - Kuo tu užsiimi?
 - Have you ever...? - Ar kada nors...?
 - How long have you...? - Kaip ilgai tu...?
-- I'm just... - Aš ką tik...
+- I've just... - Aš ką tik...
 - I usually... - Aš paprastai...
 - At the moment... - Šiuo metu...
 - Right now... - Dabar pat...
@@ -432,10 +434,28 @@ Talk about things you've never done but want to try.
 
 ## Cultural Notes / Kultūrinės pastabos
 
-- English speakers use Present Continuous to talk about future plans more than Lithuanians do
+- English can use Present Continuous for a fixed future arrangement: "I'm meeting Rasa tomorrow"
 - "Have you ever...?" is a common conversation starter
 - Stative verbs in continuous form can sound wrong to native speakers
-- English distinguishes between temporary and permanent situations more than Lithuanian
+- English grammar often marks a temporary/permanent contrast that Lithuanian can leave to context
+
+---
+
+## Quick Retrieval and Can-do Check / Greitas kartojimas ir gebėjimų įsivertinimas
+
+Complete without looking back:
+
+1. She usually _____ (work) at home, but today she _____ (work) in the office.
+2. I _____ (know) the answer. Use a stative form.
+3. We _____ (live) here since 2021.
+4. I _____ (see) that film last Saturday.
+
+After checking your answers, rate each statement: **Not yet / Almost / Yes**.
+
+- I can choose a tense from meaning, not only from one time word.
+- I can distinguish a routine, an action happening now, an experience, and a finished past event.
+- I can use common stative verbs without an unnecessary continuous form.
+- I can explain why I chose a tense in a mixed paragraph.
 
 ---
 

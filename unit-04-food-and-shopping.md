@@ -36,7 +36,7 @@ status: "published"
 - carrot - morka
 - onion - svogūnas
 - cucumber - agurkas
-- pepper - paprika
+- pepper - pipiras; bell pepper - paprika
 - lettuce - salotos
 - cabbage - kopūstas
 - mushroom - grybas
@@ -68,7 +68,7 @@ status: "published"
 - cheese - sūris
 - butter - sviestas
 - yogurt - jogurtas
-- cream - grietinė
+- cream - grietinėlė; sour cream - grietinė
 
 ### Bread & Grains (Duona ir grūdai)
 - bread - duona
@@ -85,7 +85,7 @@ status: "published"
 - milk - pienas
 - wine - vynas
 - beer - alus
-- soda - gazuotas gėrimas
+- fizzy drink (BrE) / soda (AmE) - gazuotas gėrimas
 
 ### Other (Kita)
 - salt - druska
@@ -127,6 +127,8 @@ Things you cannot count individually
 ### Common Uncountable Foods:
 bread, rice, pasta, flour, meat, fish, cheese, butter, milk, water, juice, coffee, tea, sugar, salt, honey, chocolate, ice cream
 
+> **Context matters:** Some food words can be countable with a different meaning. **Chicken** can mean meat, but **a chicken** is an animal. In a café, **two coffees** means two cups of coffee. Learn the noun together with a useful phrase such as **some chicken** or **a cup of coffee**.
+
 ---
 
 ## Part 3: Quantifiers / Kiekio žodžiai
@@ -154,9 +156,10 @@ bread, rice, pasta, flour, meat, fish, cheese, butter, milk, water, juice, coffe
 - I don't have **much** time.
 - There isn't **much** water.
 
-⚠️ **Note:** Much and many are usually used in negatives and questions. In affirmative sentences, use **a lot of** or **lots of**.
-- I have **a lot of** friends. (NOT many friends in affirmative)
-- There is **a lot of** water. (NOT much water in affirmative)
+⚠️ **Note:** **Much** and **many** are common in negatives and questions. In neutral affirmative conversation, **a lot of** or **lots of** is often more natural. Affirmative **many** is still correct, especially in more formal language.
+- I have **a lot of** friends. (neutral conversation)
+- Many people use this shop. (correct; slightly more formal)
+- There is **a lot of** water.
 
 **More Examples:**
 - Do you have any bread? - Ar turi duonos?
@@ -191,7 +194,7 @@ bread, rice, pasta, flour, meat, fish, cheese, butter, milk, water, juice, coffe
 - I'm looking for... - Aš ieškau...
 - I'd like... - Aš norėčiau...
 - How much is this? - Kiek tai kainuoja?
-- How much are these? - Kiek šie kainuoja?
+- How much are these? - Kiek jie kainuoja?
 - That's too expensive. - Tai per brangu.
 - I'll take it. - Aš imsiu.
 - Do you accept credit cards? - Ar priimate kreditines korteles?
@@ -263,9 +266,9 @@ Write C (countable) or U (uncountable):
 ## Exercise 4: Choose the correct word
 ## Pratimas 4: Pasirinkite teisingą žodį
 
-1. I'd like (a / some) apple, please.
+1. I'd like (a / some) whole apple, please.
 2. There is (a lot of / many) water in the bottle.
-3. Do you have (some / any) questions?
+3. I don't have (some / any) questions.
 4. She has (a few / a little) friends.
 5. There isn't (much / many) cheese in the fridge.
 6. Can I have (a / some) bread?
@@ -283,7 +286,7 @@ Write C (countable) or U (uncountable):
 
 A: Good morning! Can I _______ you?
 B: Yes, please. I'd _______ some tomatoes.
-A: How _______ do you need?
+A: How _______ kilos do you need?
 B: Two kilos, please. How _______ are they?
 A: Five euros.
 B: OK. And do you have _______ cucumbers?
@@ -411,21 +414,21 @@ Translate from Lithuanian to English:
 ## Exercise 10: Containers and Quantities
 ## Pratimas 10: Talpyklos ir kiekiai
 
-Match the food with the correct container/quantity:
+Complete each phrase with a suitable container or quantity. More than one answer may be possible.
 
 **Containers:**
 a bottle of / a glass of / a cup of / a piece of / a slice of / a loaf of / a bar of / a can of / a box of / a jar of
 
-1. _______ water (bottle/glass)
-2. _______ bread (loaf/slice)
-3. _______ coffee (cup)
-4. _______ cake (piece/slice)
-5. _______ chocolate (bar)
-6. _______ soda (can)
-7. _______ cereal (box)
-8. _______ honey (jar)
-9. _______ wine (bottle/glass)
-10. _______ cheese (piece)
+1. _______ water
+2. _______ bread
+3. _______ coffee
+4. _______ cake
+5. _______ chocolate
+6. _______ fizzy drink / soda
+7. _______ cereal
+8. _______ honey
+9. _______ wine
+10. _______ cheese
 
 **Now make sentences:**
 
@@ -443,7 +446,7 @@ Example: I'd like a bottle of water, please.
 
 - Groceries - Maisto produktai
 - Supermarket - Supermarketas
-- Checkout - Kasos aparatas
+- Checkout - Kasa / atsiskaitymo vieta
 - Receipt - Čekis
 - Bargain - Pigi prekė
 - Expensive - Brangus
@@ -466,7 +469,7 @@ Example: I'd like a bottle of water, please.
 
 1. Supermarket - a) Šviežias
 2. Checkout - b) Supermarketas
-3. Fresh - c) Kasos aparatas
+3. Fresh - c) Kasa / atsiskaitymo vieta
 4. Bargain - d) Brangus
 5. Expensive - e) Pigi prekė
 
@@ -516,14 +519,14 @@ My name is Laura. I love shopping for food. Every Saturday, I go to the local ma
 
 I also go to the supermarket for other things. I buy milk, bread, and cheese. Sometimes I buy special items like organic honey or imported chocolate. I always check the prices because I like to find bargains.
 
-At home, I cook Lithuanian dishes. My favorite is cepelinai. I need potatoes, meat, and onions. I also make soup with fresh vegetables. Cooking is relaxing for me.
+At home, I cook Lithuanian dishes. My favourite is cepelinai. I need potatoes, meat, and onions. I also make soup with fresh vegetables. Cooking is relaxing for me.
 
 **Answer the questions:**
 
 1. Where does Laura shop for vegetables?
 2. What vegetables does she buy?
 3. What does she buy at the supermarket?
-4. What is her favorite Lithuanian dish?
+4. What is her favourite Lithuanian dish?
 5. Why does she check prices?
 
 **True or False:**
@@ -543,10 +546,10 @@ Write a short paragraph about your shopping habits. Include:
 - Where you usually shop
 - What you buy
 - How often you shop
-- Your favorite food item
+- Your favourite food item
 
 Example:
-I usually shop at the supermarket twice a week. I buy vegetables, milk, and bread. My favorite item is chocolate.
+I usually shop at the supermarket twice a week. I buy vegetables, milk, and bread. My favourite item is chocolate.
 
 **Your turn:**
 
@@ -560,7 +563,7 @@ In pairs, role-play a shopping scenario. One person is the customer, the other i
 
 ### Activity 2: Food Preferences Discussion
 
-Discuss your food preferences with a partner. Use expressions like "I love...", "I hate...", "My favorite is...". Ask questions like "What do you like to eat?"
+Discuss your food preferences with a partner. Use expressions like "I love...", "I hate...", "My favourite is...". Ask questions like "What do you like to eat?"
 
 ### Activity 3: Cultural Food Exchange
 
@@ -570,9 +573,9 @@ Talk about traditional Lithuanian foods vs. foods from other countries. What are
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Shopping Culture:** In Lithuania, people often shop at local markets for fresh produce. In the UK, supermarkets are more common, and people use shopping lists. In the US, big stores like Walmart are popular.
-- **Food Etiquette:** In many countries, it's polite to try everything on your plate. In some Asian cultures, leaving a little food shows you're full. In Lithuania, finishing everything is appreciated.
-- **Organic and Healthy Eating:** In Western countries, organic food is more expensive and popular. People read labels for ingredients and nutrition facts.
+- **Shopping choices:** People may shop at markets, small local shops, supermarkets, or online. Useful English words include **market, supermarket, checkout, delivery,** and **shopping list**.
+- **Food Etiquette:** Expectations about sharing food, finishing a meal, and paying the bill vary between homes and restaurants. When you are unsure, a polite question such as "Would you like to share?" is more useful than assuming one cultural rule.
+- **Food labels:** Labels can show ingredients, allergens, nutrition information, and whether a product is organic. Prices and labelling systems differ by country.
 
 ---
 
@@ -590,7 +593,7 @@ Talk about traditional Lithuanian foods vs. foods from other countries. What are
 - I love... - Aš mėgstu...
 - I hate... - Aš nekenčiu...
 - I prefer... - Aš teikiu pirmenybę...
-- My favorite food is... - Mano mėgstamiausias maistas yra...
+- My favourite food is... - Mano mėgstamiausias maistas yra...
 
 **At a restaurant:**
 - I'm vegetarian - Aš vegetaras/vegetarė
@@ -605,13 +608,30 @@ Talk about traditional Lithuanian foods vs. foods from other countries. What are
 ⚠️ **Common mistakes:**
 1. Remember: uncountable nouns don't have plural form
    - "breads" ✗ → "bread" or "some bread" ✓
-2. Use "some" in affirmative, "any" in negative and questions
-3. Much/many in questions and negatives; a lot of in affirmative
+2. **Some** is common in affirmative sentences and offers; **any** is common in negatives and neutral questions. Context can change the choice.
+3. **Much/many** are common in questions and negatives; **a lot of** is often more natural in affirmative conversation.
 4. Don't forget articles: "I want apple" ✗ → "I want an apple" ✓
 
 **Lithuanian vs English:**
 - Lithuanian doesn't have articles (a/an/the), English does
 - Some Lithuanian countable nouns are uncountable in English (e.g., "information", "advice")
+
+---
+
+## Cumulative Review / Kaupiamasis kartojimas
+
+1. Complete: Yesterday I bought _____ apples, but I didn't buy _____ milk. (**some/any**)
+2. Choose: How **much / many** eggs do we need?
+3. Choose: There is **a few / a little** rice in the bowl.
+4. Make a Past Simple question: She bought bread. → What _____________________?
+5. Translate: Norėčiau puodelio kavos. → _____________________
+
+### Can-Do Self-Check / Įsivertinimas
+
+- [ ] I can distinguish common countable and uncountable food nouns.
+- [ ] I can use **some, any, much, many, a few, a little,** and **a lot of**.
+- [ ] I can ask about prices and quantities.
+- [ ] I can order a simple meal and make a shopping request politely.
 
 ---
 

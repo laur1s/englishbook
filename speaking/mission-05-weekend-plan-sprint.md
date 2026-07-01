@@ -1,14 +1,14 @@
 ---
-title: "Mission 5: Weekend Plan Sprint"
-ltTitle: "Misija 5: Savaitgalio planas"
+title: "Mission 6: Weekend Plan Sprint"
+ltTitle: "Misija 6: Savaitgalio planas"
 slug: "weekend-plan-sprint"
 collection: "speaking-missions"
-order: 5
+order: 6
 contentType: "speaking-mission"
 level: "A2.1"
 grammarFocus:
   - "be going to"
-  - "Present Continuous for future"
+  - "will"
 topics:
   - "future plans"
   - "weekends"
@@ -35,38 +35,39 @@ steps:
     support:
       - "Saturday"
       - "Sunday"
-      - "If it rains..."
+      - "Bad-weather idea"
   - kind: "speak"
-    prompt: "Speak for one minute. Move from the fixed plans to the flexible plans."
-    ltPrompt: "Kalbėkite vieną minutę. Pereikite nuo tvirtų planų prie lankstesnių planų."
+    prompt: "Speak for one minute. Move from planned intentions to predictions or decisions."
+    ltPrompt: "Kalbėkite vieną minutę. Pereikite nuo suplanuotų ketinimų prie prognozių ar sprendimų."
     seconds: 60
     support:
-      - "I'm meeting..."
       - "We're going to..."
-      - "If it rains, I might..."
+      - "I think I'll..."
   - kind: "compare"
-    prompt: "Check this model: On Saturday, I'm meeting my cousin for brunch, and later we're going to the cinema. On Sunday, I'm going to visit my parents. If the weather is bad, I might stay in and cook something special."
+    prompt: "Check this model: On Saturday, I'm going to have brunch with my cousin, and later we're going to the cinema. On Sunday, I'm going to visit my parents. I think the weather will be bad, so I'll take a warm coat. For a rainy afternoon, I'll stay in and cook something special."
     ltPrompt: "Palyginkite savo pasakojimą su pavyzdžiu."
     support:
       - "Did you use time words like on Saturday and later?"
-      - "Did you mix one fixed arrangement with one personal plan?"
+      - "Did you use going to for a plan and will for an opinion or decision?"
   - kind: "reflect"
     prompt: "How confident did this feel?"
     ltPrompt: "Kaip užtikrintai jautėtės?"
     support:
       - "1 = Future forms still feel confusing."
       - "5 = I could talk about plans without stopping."
+      - "Accuracy: Did going to include am/is/are?"
+      - "Second attempt: use both future forms and add one time phrase."
 ---
 
 This mission gives Unit 6 a spoken target. Learners often understand future forms in exercises, but then hesitate when they need to choose between a plan, an arrangement, and a possibility in real speech.
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- On Saturday, I'm...
+- On Saturday, I'm going to...
 - I'm going to...
-- Later, we're...
+- Later, we're going to...
 - On Sunday, I think I'll...
-- If it rains, I might...
+- For bad weather, I think I'll...
 
 ## Push It Further / Pasunkinkite
 

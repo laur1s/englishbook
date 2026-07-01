@@ -9,7 +9,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "audit:content": "node --experimental-strip-types scripts/audit-content.mjs",
+    "qa": "pnpm check && pnpm test && pnpm audit:content && pnpm build"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",

@@ -34,7 +34,7 @@ status: "published"
 - liver resection — kepenų rezekcija
 - impeccable — nepriekaištingas
 - compassion — užuojauta
-- single-minded dedication — vienpusis atsidavimas
+- single-minded dedication — visiškas atsidavimas vienam tikslui
 - cardiac surgery — širdies chirurgija
 - trauma surgeon — traumos chirurgas
 - imposter — apsimetėlis
@@ -129,5 +129,5 @@ Complete the sentences with the correct comparative or superlative form:
 2. Catherine is the ___ experienced doctor in the room.
 3. Meredith wants ___ wisdom, not just talent.
 4. Derek is ___ when Meredith finds balance.
-5. Cristina wants ___ dedication to her dream.
+5. Cristina is ___ dedicated to cardiac surgery than before.
 6. Success is the ___ meaningful when it includes humanity.

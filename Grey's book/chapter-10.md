@@ -31,7 +31,7 @@ status: "published"
 ### Word Bank
 
 - medical mission — medicininė misija
-- volunteer — savanoris
+- volunteer — savanoris / savanorė
 - remote clinic — atoki klinika
 - collapsed — sukniubo
 - bruise — mėlynė
@@ -82,7 +82,7 @@ The first tests were confusing. Lily was dehydrated, but that was not the real p
 
 "But from what?" Cristina asked. "Her mother said she only had stomach pain after the flight."
 
-Elena folded her arms. "The flight might have made an older injury worse. Pressure and movement can do that."
+Elena folded her arms. "The flight might have made an older injury worse. Time and movement during a long journey can do that."
 
 Izzie went into Lily's room alone. The girl gripped the blanket with nervous hands.
 
@@ -98,7 +98,7 @@ Izzie sat beside her. "That was brave, but it was also risky. Your doctors need 
 
 A few minutes later, Lily repeated the story to her mother and the team. Her mother started to cry, half from fear and half from relief that they finally understood.
 
-Alex nodded toward the scan. "The fall must have injured her spleen. It was probably a small tear at first. Then the flight might have made the bleeding worse."
+Alex nodded toward the scan. "The impact in the jeep must have injured her spleen. It was probably a small tear at first. Then the flight might have made the bleeding worse."
 
 Cristina added, "We need surgery. Soon."
 
@@ -193,7 +193,7 @@ Some journeys begin when you leave home. Others begin when you finally tell the 
 
 ### Fun Activities / Smagios Užduotys
 
-**Activity 1: Role-Play — Tell the Truth (Pasakyk Tiesą)**
+#### Activity 1: Role-Play — Tell the Truth (Pasakyk Tiesą)
 
 Work in pairs. One person is the doctor, and the other person is Lily or Lily's mother. The doctor must ask calm questions and explain why honest information is important.
 
@@ -211,7 +211,7 @@ Work in pairs. One person is the doctor, and the other person is Lily or Lily's 
 - Family member: "I was worried because..."
 - Doctor: "Now we can help you because..."
 
-**Activity 2: Story Detective Timeline (Istorijos Detektyvas)**
+#### Activity 2: Story Detective Timeline (Istorijos Detektyvas)
 
 Put these events in the correct order, then write three sentences with `must have`, `might have`, or `couldn't have`.
 

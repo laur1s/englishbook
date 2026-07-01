@@ -34,15 +34,16 @@ status: "published"
 - scrubs — chirurginiai drabužiai
 - intern — rezidentas/praktikantas
 - locker room — rūbinė
-- chief of surgery — chirurgijos viršininkas
+- chief of surgery — chirurgijos skyriaus vadovas
 - patient — pacientas
-- surgery — operacija
+- surgery — chirurgija; operacija (medicininė procedūra)
 - temperature — temperatūra
 - blood pressure — kraujo spaudimas
 - pulse — pulsas
 - cafeteria — valgykla
-- nervous — nervinga
+- nervous — nervingas / nervinga
 - exhausted — išsekęs
+- reports — ataskaitos
 
 ### Story
 
@@ -100,8 +101,8 @@ But she didn't know that her life at Seattle Grace was going to change everythin
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
 1. If you were starting your first day at a new job, what would make you most nervous?
-   - *Example answer:* "If I was starting a new job, I would be most nervous about making mistakes and meeting new people."
-   - *Your answer:* "If I was starting a new job, I would be most nervous about _______________."
+   - *Example answer:* "If I were starting a new job, I would be most nervous about making mistakes and meeting new people."
+   - *Your answer:* "If I were starting a new job, I would be most nervous about _______________."
 
 2. Imagine you're Mr. Johnson. What would you tell a new young doctor?
    - *Example answer:* "Don't be scared. You studied hard and you can do this. Just be kind to your patients."
@@ -123,11 +124,11 @@ But she didn't know that her life at Seattle Grace was going to change everythin
 
 #### Activity 1: True or False?
 
-1. Meredith was nervous on her first day. (T)
-2. Dr. Webber is the chief of surgery. (T)
-3. Meredith’s first patient had a broken leg. (F)
-4. Cristina was unfriendly to Meredith in the cafeteria. (F)
-5. Meredith felt happy at the end of the day. (T)
+1. Meredith was nervous on her first day. **T / F**
+2. Dr. Webber is the chief of surgery. **T / F**
+3. Meredith’s first patient had a broken leg. **T / F**
+4. Cristina was unfriendly to Meredith in the cafeteria. **T / F**
+5. Meredith felt happy at the end of the day. **T / F**
 
 #### Activity 2: Vocabulary Matching
 

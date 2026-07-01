@@ -36,7 +36,7 @@ const sourceUnit = getSourceUnit(entry, await getA2Entries());
   <section class="reader-hero speaking-hero">
     <p class="eyebrow">Speaking mission</p>
     <h1>{entry.data.title}</h1>
-    <p class="hero-subtitle lt-text">{entry.data.ltTitle}</p>
+    <p class="hero-subtitle lt-text" lang="lt">{entry.data.ltTitle}</p>
 
     <div class="badge-row">
       <span class="badge">{entry.data.level}</span>
@@ -85,12 +85,12 @@ const sourceUnit = getSourceUnit(entry, await getA2Entries());
     <aside class="reader-sidebar">
       <div class="toc-card">
         <h2>Mission outline</h2>
-        <p class="lt-text sidebar-subtitle">Misijos planas</p>
+        <p class="lt-text sidebar-subtitle" lang="lt">Misijos planas</p>
         <ul>
           <li><a href="#mission-player">Run the rehearsal</a></li>
           {parsed.sections.map((section) => (
             <li>
-              <a href={`#${section.id}`}>{section.title}</a>
+              <a href={`#${section.id}`} set:html={section.titleHtml} />
             </li>
           ))}
         </ul>

@@ -14,6 +14,7 @@ const parsed = parseDocument({
   title: entry.data.title,
   ltTitle: entry.data.ltTitle,
 });
+const tracksProgress = entry.data.collection === "grey-book" || entry.data.collection === "a2-units";
 ---
 
 <article
@@ -22,12 +23,17 @@ const parsed = parseDocument({
   data-levels={entry.data.level}
   data-grammar={entry.data.grammarFocus.join("|")}
   data-topics={entry.data.topics.join("|")}
+  data-lesson-card={tracksProgress ? "" : undefined}
+  data-lesson-slug={tracksProgress ? entry.data.slug : undefined}
 >
-  <p class="card-kicker">{entry.data.contentType}</p>
+  <div class="card-meta-row">
+    <p class="card-kicker">{entry.data.contentType}</p>
+    {tracksProgress && <span class="progress-pill" data-lesson-card-status>Not completed</span>}
+  </div>
   <h2>
     <a href={getEntryHref(entry)}>{entry.data.title}</a>
   </h2>
-  <p class="card-subtitle lt-text">{entry.data.ltTitle}</p>
+  <p class="card-subtitle lt-text" lang="lt">{entry.data.ltTitle}</p>
   <p class="card-excerpt">{parsed.excerpt}</p>
   <div class="badge-row compact">
     <span class="badge">{entry.data.level}</span>

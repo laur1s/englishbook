@@ -43,6 +43,12 @@ jobs:
       - name: Type and content checks
         run: pnpm check
 
+      - name: Helper regression tests
+        run: pnpm test
+
+      - name: Content integrity audit
+        run: pnpm audit:content
+
       - name: Build
         run: pnpm build
 

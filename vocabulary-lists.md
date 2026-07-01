@@ -131,6 +131,8 @@ This document contains all essential vocabulary organized by topic for A2 level 
 
 ## Colors (Spalvos)
 
+Lithuanian forms below agree with the feminine noun **spalva**. With another noun, change the ending as needed: *raudona spalva*, but *raudonas automobilis*.
+
 - black - juoda
 - white - balta
 - red - raudona
@@ -202,7 +204,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - living room - svetainė
 - bedroom - miegamasis
 - kitchen - virtuvė
-- bathroom - vonia
+- bathroom - vonios kambarys / vonia (šnekamojoje kalboje)
 - toilet - tualetas
 - dining room - valgomasis
 - hall - prieškambaris
@@ -216,7 +218,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - sofa - sofa
 - armchair - fotelis
 - bed - lova
-- wardrobe - drabužinė
+- wardrobe - drabužių spinta; drabužinė (atskira patalpa)
 - desk - rašomasis stalas
 - shelf - lentyna
 - cupboard - spintelė
@@ -324,7 +326,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - cloud - debesis
 - cloudy - debesuota
 - storm - audra
-- stormy - audri nga
+- stormy - audringa
 - fog - rūkas
 - foggy - ūkanota
 - hot - karšta
@@ -381,12 +383,12 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - angry - piktas
 - tired - pavargęs
 - excited - susijaudinęs
-- bored - nuobodu
+- bored - nuobodžiaujantis; I'm bored - man nuobodu
 - scared/afraid - išsigandęs
 - worried - susirūpinęs
 - surprised - nustebęs
 - proud - išdidus
-- nervous - nervuojantis
+- nervous - nervingas, susinervinęs
 - relaxed - atsipalaidavęs
 
 ### Character (Charakteris)
@@ -403,7 +405,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - brave - drąsus
 - lazy - tingus
 - hard-working - darbštus
-- patient - kantrūs
+- patient - kantrus
 - honest - sąžiningas
 
 ---
@@ -430,7 +432,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - talk - kalbėti
 - ask - klausti
 - answer - atsakyti
-- listen - klausyti
+- listen to - klausytis (listen to music - klausytis muzikos)
 - hear - girdėti
 - see - matyti
 - look - žiūrėti
@@ -440,7 +442,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - eat - valgyti
 - drink - gerti
 - sleep - miegoti
-- wake up - pabust i
+- wake up - pabusti
 - get up - keltis
 - sit - sėdėti
 - stand - stovėti
@@ -490,7 +492,6 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - dance - šokti
 - sing - dainuoti
 - draw - piešti
-- write - rašyti
 - call - skambinti
 - meet - susitikti
 - visit - aplankyti
@@ -523,7 +524,146 @@ This document contains all essential vocabulary organized by topic for A2 level 
 
 ---
 
+## Key Irregular Verbs (Svarbiausi netaisyklingieji veiksmažodžiai)
+
+Learn all three forms as one unit. The third form is used after **have/has**.
+
+| Base form | Past Simple | Past participle | Lithuanian |
+|-----------|-------------|-----------------|------------|
+| be | was/were | been | būti |
+| become | became | become | tapti |
+| begin | began | begun | pradėti |
+| break | broke | broken | sulaužyti, sudaužyti |
+| bring | brought | brought | atnešti |
+| buy | bought | bought | pirkti |
+| come | came | come | ateiti, atvykti |
+| do | did | done | daryti |
+| drink | drank | drunk | gerti |
+| drive | drove | driven | vairuoti |
+| eat | ate | eaten | valgyti |
+| feel | felt | felt | jaustis, jausti |
+| find | found | found | rasti |
+| get | got | got/gotten | gauti, tapti |
+| give | gave | given | duoti |
+| go | went | gone | eiti, vykti |
+| have | had | had | turėti |
+| hear | heard | heard | girdėti |
+| know | knew | known | žinoti, pažinoti |
+| leave | left | left | išvykti, palikti |
+| lose | lost | lost | prarasti, pralaimėti |
+| make | made | made | gaminti, padaryti |
+| meet | met | met | susitikti |
+| read | read | read | skaityti |
+| ride | rode | ridden | važiuoti, joti |
+| run | ran | run | bėgti |
+| say | said | said | sakyti |
+| see | saw | seen | matyti |
+| sing | sang | sung | dainuoti |
+| sit | sat | sat | sėdėti |
+| speak | spoke | spoken | kalbėti |
+| swim | swam | swum | plaukti |
+| take | took | taken | imti, paimti |
+| teach | taught | taught | mokyti |
+| tell | told | told | pasakyti kam nors |
+| think | thought | thought | galvoti |
+| wear | wore | worn | dėvėti |
+| win | won | won | laimėti |
+| write | wrote | written | rašyti |
+
+---
+
+## Food and Shopping (Maistas ir apsipirkimas)
+
+### Food
+
+- bread (uncountable) - duona
+- rice (uncountable) - ryžiai
+- meat (uncountable) - mėsa
+- cheese (uncountable) - sūris
+- fruit - vaisiai; a piece of fruit - vaisius
+- vegetables - daržovės
+- an apple / apples - obuolys / obuoliai
+- an egg / eggs - kiaušinis / kiaušiniai
+- a bottle of water - butelis vandens
+- a loaf of bread - kepalas duonos
+- a slice of cheese - riekelė sūrio
+
+### Useful Shopping Chunks
+
+- How much is it? - Kiek tai kainuoja?
+- How many do you need? - Kiek tau reikia?
+- I'd like..., please. - Norėčiau..., prašau.
+- Do you have any...? - Ar turite...?
+- Can I pay by card? - Ar galiu mokėti kortele?
+- a receipt - kvitas
+- change - grąža
+- cheap / expensive - pigus / brangus
+
+---
+
+## Travel, Places, and Directions (Kelionės, vietos ir kryptys)
+
+- a bus stop - autobusų stotelė
+- a train station - traukinių stotis
+- an airport - oro uostas
+- a ticket - bilietas
+- a platform - peronas
+- a hotel / a hostel - viešbutis / nakvynės namai
+- a museum - muziejus
+- a pharmacy - vaistinė
+- a bridge - tiltas
+- a crossroads - sankryža
+- go straight on - eiti tiesiai
+- turn left/right - pasukti į kairę / dešinę
+- next to / opposite / between - šalia / priešais / tarp
+- How do I get to...? - Kaip nuvykti / nueiti iki...?
+- Is it far from here? - Ar tai toli nuo čia?
+- arrive **in** a city/country; arrive **at** a building/station - atvykti į miestą/šalį; atvykti į vietą
+
+---
+
+## Health, Advice, and Possibility (Sveikata, patarimai ir galimybė)
+
+- a headache / a stomach ache - galvos / pilvo skausmas
+- a cough - kosulys
+- a cold - peršalimas
+- feel sick - blogai jaustis / pykinti
+- tired / stressed / worried - pavargęs / patiriantis stresą / susirūpinęs
+- take medicine - vartoti vaistus
+- see a doctor - kreiptis į gydytoją
+- rest / exercise - ilsėtis / sportuoti
+- You should... / You shouldn't... - Turėtum... / Neturėtum...
+- It may/might... - Galbūt... / Gali būti, kad...
+- It must be... / It can't be... - Turbūt... / Negali būti...
+- You mustn't... - Negalima... / Draudžiama...
+- You don't have to... - Tau nereikia... / Neprivalai...
+
+---
+
+## Experiences, Learning, and Hobbies (Patirtys, mokymasis ir pomėgiai)
+
+- travel abroad - keliauti į užsienį
+- visit a country - aplankyti šalį
+- meet new people - susipažinti su naujais žmonėmis
+- learn a language / a skill - išmokti kalbą / įgūdį
+- pass an exam - išlaikyti egzaminą
+- fail an exam - neišlaikyti egzamino
+- graduate from university - baigti universitetą
+- get a job - gauti darbą
+- win a prize - laimėti prizą
+- break a record - sumušti rekordą
+- volunteer - savanoriauti
+- start a hobby - pradėti pomėgį
+- play an instrument - groti instrumentu
+- go hiking / cycling / swimming - eiti į žygį / važinėti dviračiu / plaukioti
+- Have you ever...? - Ar kada nors...?
+- I've never... / I've already... / I haven't... yet. - Aš niekada... / Aš jau... / Aš dar ne...
+
+---
+
 ## Prepositions (Prielinksniai)
+
+Prepositions rarely have one exact Lithuanian equivalent. Learn each one in a phrase, not as an isolated translation.
 
 ### Place (Vieta)
 - in - viduje
@@ -551,7 +691,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - on - (on Monday, on 5th May)
 - before - prieš
 - after - po
-- during - per, metu
+- during - per, ... metu
 - for - (trukmė: for 2 hours)
 - since - nuo (since 2010)
 - until/till - iki
@@ -576,7 +716,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - without - be
 - about - apie
 - for - dėl, už
-- of - iš (priklausomybė)
+- of - dažnai perteikiama lietuvių kalbos kilmininku, ne atskiru prielinksniu (the end of the road - kelio galas)
 - by - (autorius: by Shakespeare)
 - like - kaip
 
@@ -636,7 +776,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - See you later - Iki pasimatymo
 - See you tomorrow - Iki rytoj
 - Have a nice day - Geros dienos
-- Take care - Saugokis
+- Take care - Laikykis / saugok save
 
 ### Politeness (Mandagumas)
 - Please - Prašau
@@ -646,7 +786,7 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - Sorry - Atsiprašau
 - No problem - Nėra problemos
 - Of course - Žinoma
-- Sure - Tikrai
+- Sure - Žinoma / gerai (atsakant į prašymą)
 
 ### Common Phrases (Dažnos frazės)
 - I don't know - Nežinau
@@ -669,6 +809,23 @@ This document contains all essential vocabulary organized by topic for A2 level 
 - Happy birthday - Su gimtadieniu
 - Merry Christmas - Linksmų Kalėdų
 - Happy New Year - Laimingų Naujųjų Metų
+
+---
+
+## How to Learn These Words / Kaip mokytis šių žodžių
+
+1. Choose 8–10 words from one topic.
+2. Cover the English side and recall it from Lithuanian; then reverse the direction.
+3. Say or write one personal sentence with each difficult word.
+4. Review the same words after 1 day, 3 days, and 7 days.
+5. Learn verbs and prepositions as chunks: **listen to music**, **arrive at the station**, **arrive in Vilnius**.
+
+Useful distinctions:
+
+- **say something** but **tell someone something**
+- **look at** one thing, **watch** something for a period, **see** with your eyes
+- **learn** new knowledge; **study** a subject or spend time learning it
+- **lose** an object or a game; **miss** a bus, person, or opportunity
 
 ---
 

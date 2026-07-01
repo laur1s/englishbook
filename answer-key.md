@@ -67,6 +67,12 @@ status: "published"
 7. How are you?
 8. I am/I'm fine, thank you.
 
+### Exercise 6: Personal Information
+
+**Sample:** My name is Eglė. I am 24 years old. I am from Kaunas. I am a student. My hobby is reading. I am friendly.
+
+Answers will vary. Check that every sentence has a subject and the correct form of **be**.
+
 ### Exercise 7: Reading Comprehension
 1. Lukas
 2. Kaunas, Lithuania
@@ -89,10 +95,10 @@ status: "published"
 My name, I am, Nice, Nice, Where, I'm, And, I'm
 
 **Questions:**
-1. Maria is Tomas's wife. / She is Tomas's wife.
+1. Maria is Tomas's wife. / She is the first speaker's wife.
 2. She is a doctor.
 3. He is 10 years old. / Lukas is 10 years old.
-4. He is meeting Peter's family. / Peter is meeting the family.
+4. Peter is meeting Tomas's family: Maria and Lukas.
 
 ### Exercise 10: Reading Comprehension 2
 1. She is a chef. / Chef
@@ -106,6 +112,13 @@ My name, I am, Nice, Nice, Where, I'm, And, I'm
 
 ### Exercise 11: Writing Practice
 (Answers will vary; check for correct use of "to be", introductions, and structure.)
+
+### Cumulative Review
+1. am
+2. She is not/isn't tired.
+3. Are they students?
+4. What's/What is your name?
+5. Good night
 
 ---
 
@@ -171,6 +184,21 @@ My name, I am, Nice, Nice, Where, I'm, And, I'm
 4. False (English)
 5. True
 
+### Exercise 6: Write about Your Daily Routine
+
+**Sample:** I wake up at 7 AM. I have toast for breakfast. I go to work by bus and start at 9. I have lunch at 1. In the evening, I usually cook dinner and read. I go to bed at 11.
+
+Answers will vary. Check Present Simple forms, time expressions, and sentence order.
+
+### Exercise 7: Question Words
+1. Where do you live?
+2. What time does she start work?
+3. When do they go to the cinema?
+4. What do you have for breakfast?
+5. How does he go to work?
+6. Why do you study English?
+7. Who teaches at the school?
+
 ### Exercise 8: Translation
 1. I get up at 7 o'clock.
 2. She works in a hospital.
@@ -220,6 +248,13 @@ My name, I am, Nice, Nice, Where, I'm, And, I'm
 
 ### Exercise 12: Writing - Partner's Routine
 (Answers will vary; check for correct use of Present Simple, time expressions, and adverbs of frequency.)
+
+### Cumulative Review
+1. is
+2. goes
+3. They don't watch TV every evening.
+4. Where does she live?
+5. I am never late.
 
 ---
 
@@ -276,7 +311,7 @@ My name, I am, Nice, Nice, Where, I'm, And, I'm
 8. Did your sister come to the party?
 
 ### Exercise 5: Mixed Practice
-was, was, went, was, did you eat, had, tried, Was it, wasn't
+were, was, went, was, did you eat, had, tried, Was it, wasn't
 
 ### Exercise 6: Reading - Jurgis's Life Story
 **Questions:**
@@ -298,6 +333,22 @@ was, was, went, was, did you eat, had, tried, Was it, wasn't
 4. True
 5. True
 
+### Exercise 7: Write Your Life Story
+
+**Sample:** I was born in Panevėžys in 1998. I started school in 2005. After school, I studied in Vilnius. Last year, I changed jobs. Yesterday, I met an old friend.
+
+Answers will vary. Check Past Simple forms, chronological order, and past-time expressions.
+
+### Exercise 8: Question Words in Past Simple
+1. Where did you go last summer?
+2. Where did she meet him?
+3. What time did they arrive? / When did they arrive?
+4. What did you buy?
+5. Why did he leave?
+6. Who called you?
+7. How long did you stay there?
+8. How was the concert?
+
 ### Exercise 9: Translation
 1. I went to the cinema yesterday.
 2. She didn't study last week.
@@ -313,7 +364,7 @@ was, was, went, was, did you eat, had, tried, Was it, wasn't
 2. She didn't come to the party.
 3. Did you go to school?
 4. They were at home.
-5. He didn't finish his work.
+5. He didn't finish his work yesterday.
 6. We bought a new car.
 7. Did she like the film?
 8. I didn't see you.
@@ -326,10 +377,13 @@ was, was, went, was, did you eat, had, tried, Was it, wasn't
 5. e) Prieš
 
 ### Exercise 12: Extended Dialogues
-**Dialogue 1:** did, do, played, played, Did, have, did, drew
+**Dialogue 1:** did, do, played, played, Did, have, liked, drew
 **Complete the dialogue:** did, go, went, was, did, do, visited, took, ate
 **Dialogue 2:** went, woke, missed, left, did, do, went, was
-**Questions:** (Answers will vary; check for logical responses about the bad day events)
+**Questions:**
+1. The person woke up late, missed the bus, left their wallet at home, and was late for work.
+2. Several problems happened one after another.
+3. They went back home to get the wallet.
 
 ### Exercise 13: Extended Reading Comprehension 2
 1. Vilnius
@@ -343,6 +397,13 @@ was, was, went, was, did you eat, had, tried, Was it, wasn't
 
 ### Exercise 14: Writing Practice
 (Answers will vary; check for correct use of Past Simple, logical structure, and inclusion of required elements)
+
+### Cumulative Review
+1. get up, got up
+2. were
+3. She didn't buy a ticket.
+4. Where did they go?
+5. drinks, drank
 
 ---
 
@@ -402,7 +463,13 @@ was, was, went, was, did you eat, had, tried, Was it, wasn't
 10. any
 
 ### Exercise 5: Shopping dialogue
-Can I help, like, many/much, much, any, many, much
+help, like, many, much, any, many, much
+
+### Exercise 6: Restaurant Ordering
+
+**Sample:** I'd like the grilled salmon, please. I'd like some water to drink. And a chocolate cake, please.
+
+Answers will vary. Check that the order uses polite forms such as **I'd like...** and **Can I have...?**
 
 ### Exercise 7: Reading - Kristina's Shopping List
 **Questions:**
@@ -423,15 +490,19 @@ Can I help, like, many/much, much, any, many, much
 4. True
 5. False (doesn't like fish)
 
+### Exercise 8: Write Your Shopping List
+
+Answers will vary. Check that countable items can be plural and uncountable items use a suitable quantity when needed.
+
 ### Exercise 9: Translation
-1. I have some milk.
+1. I have some milk. / I have a little milk.
 2. Do you have any apples?
 3. How much is this cheese? / How much does this cheese cost?
 4. We need a lot of water.
 5. Is there any sugar?
 6. She doesn't eat much meat.
 7. How many eggs do you need?
-8. I'd like some coffee.
+8. I'd like some coffee. / I'd like a little coffee.
 
 ### Exercise 10: Containers and Quantities
 1. a bottle of / a glass of
@@ -444,6 +515,53 @@ Can I help, like, many/much, much, any, many, much
 8. a jar of
 9. a bottle of / a glass of
 10. a piece of
+
+**Sentences:** Answers will vary. Example: **I'd like a cup of coffee, please.**
+
+### Exercise 11: Extended Vocabulary
+1. b) Supermarketas
+2. c) Kasa / atsiskaitymo vieta
+3. a) Šviežias
+4. e) Pigi prekė
+5. d) Brangus
+
+### Exercise 12: Extended Dialogues
+
+**Complete the dialogue:** It, How much, It's, Can, it's
+
+**Questions:**
+1. In a restaurant.
+2. Sparkling water and pasta.
+3. Sparkling water.
+
+### Exercise 13: Extended Reading Comprehension 2
+
+**Questions:**
+1. At the local market.
+2. Tomatoes, cucumbers, and lettuce.
+3. Milk, bread, and cheese; sometimes organic honey or imported chocolate.
+4. Cepelinai.
+5. Because she likes to find bargains.
+
+**True or False:**
+1. False (every Saturday)
+2. False (fresh vegetables)
+3. True
+4. False (Lithuanian food)
+5. False (cooking is relaxing for her)
+
+### Exercise 14: Writing Practice
+
+**Sample:** I usually shop at a supermarket once a week. I buy vegetables, bread, milk, and coffee. My favourite food item is cheese.
+
+Answers will vary. Check that all four requested points are included.
+
+### Cumulative Review
+1. some, any
+2. many
+3. a little
+4. What did she buy?
+5. I'd like a cup of coffee.
 
 ---
 
@@ -501,8 +619,18 @@ next to
 4. False (opposite)
 5. True
 
+### Exercise 6: Write Directions
+
+**Sample:** Go straight on Oak Street. Turn left at the bank. The supermarket is on your right, next to the pharmacy.
+
+Answers will vary. Check for a clear starting point, direction verbs, and place prepositions.
+
 ### Exercise 7: At the Tourist Information
-Is there, there are, opposite/near, get, turn, on, Is, on
+Is there, there are, opposite, get, turn, on, Is, on
+
+### Exercise 8: Transportation
+
+Answers will vary. Check that each answer matches the question form. Example: **I usually go to work by bus. It takes twenty minutes.**
 
 ### Exercise 9: Translation
 1. Where is the nearest bank?
@@ -514,6 +642,59 @@ Is there, there are, opposite/near, get, turn, on, Is, on
 7. The pharmacy is opposite the park.
 8. Is there a metro in this city?
 
+### Exercise 10: Plan a Trip
+
+**Sample:** I want to go to London. I want to travel by plane and stay for four days. I want to stay in a small hotel, visit museums, and walk by the river.
+
+Answers will vary. Check that all six prompts are included.
+
+### Exercise 11: Extended Vocabulary
+1. b) Lėktuvas
+2. a) Traukinys
+3. d) Vėlavimas
+4. c) Atvykimas
+5. e) Bagažas
+
+### Exercise 12: Extended Dialogues
+
+**Complete the dialogue:** bus, How often
+
+**Questions:**
+1. The museum.
+2. Go straight for two blocks, turn left on Museum Street, and look on the right.
+3. About ten minutes.
+
+### Exercise 13: Extended Reading Comprehension 2
+
+**Questions:**
+1. They flew / travelled by plane.
+2. Three hours.
+3. Near the Eiffel Tower.
+4. The Louvre Museum and the area along the Seine River.
+5. Croissants and cheese.
+6. One week.
+7. They shopped for souvenirs and flew home.
+
+**True or False:**
+1. False (they travelled by plane)
+2. False (the hotel was near the Eiffel Tower)
+3. True
+4. False (they ate French food)
+5. False (one week)
+
+### Exercise 14: Writing Practice
+
+**Sample:** Last summer I went to Tallinn by bus. I visited the old town and tried local food. It was memorable because it was my first trip there.
+
+Answers will vary. Check for Past Simple verbs and all four requested points.
+
+### Cumulative Review
+1. Is there
+2. between
+3. turn
+4. There aren't any buses on Sunday. / There are no buses on Sunday.
+5. went, saw
+
 ---
 
 ## Unit 6: Future Plans
@@ -524,7 +705,7 @@ Is there, there are, opposite/near, get, turn, on, Is, on
 3. are going to move
 4. are not/aren't going to work
 5. is going to buy
-6. Are you going to travel
+6. Are, going to travel
 7. am not going to watch
 8. are, going to do
 9. is going to rain
@@ -533,7 +714,7 @@ Is there, there are, opposite/near, get, turn, on, Is, on
 ### Exercise 2: Complete with "will"
 1. will be
 2. will go
-3. will start
+3. will be
 4. will help
 5. will not/won't come
 6. Will, be
@@ -575,7 +756,7 @@ Is there, there are, opposite/near, get, turn, on, Is, on
 ### Exercise 6: Reading - Weekend Plans
 **Questions:**
 1. Play football (with his friends)
-2. At the local sports center
+2. At the local sports centre
 3. His family
 4. Help his father in the garden
 5. A film / A new film
@@ -584,6 +765,12 @@ Is there, there are, opposite/near, get, turn, on, Is, on
 8. By bus
 9. A traditional Lithuanian lunch
 10. Very tired
+
+### Exercise 7: Write about Your Weekend Plans
+
+**Sample:** On Saturday morning, I'm going to go shopping. I'm going to meet a friend for lunch. In the evening, we're going to watch a film. On Sunday, I'm going to visit my family.
+
+Answers will vary. Check for **am/is/are going to + base verb** and clear time expressions.
 
 ### Exercise 8: Predictions about the Future
 1. will live
@@ -595,16 +782,18 @@ Is there, there are, opposite/near, get, turn, on, Is, on
 7. won't go
 8. will change
 
+**Own predictions:** Answers will vary. Check for **will/won't + base verb**.
+
 ### Exercise 9: Dialogue - Making Plans
-are, going to do, am going to visit, am not going to do, will watch, will be, will come, will leave, will be
+are, going to do, am going to visit, am not going to do, will watch, will be, will come, are going to leave, will be
 
 ### Exercise 10: Translation
-1. I'm going to study English.
-2. It will rain tomorrow.
+1. I'm going to study/learn English.
+2. I think it will rain tomorrow.
 3. What are you going to do this evening?
 4. We aren't going to travel this year.
-5. Will she come to the party? / Is she going to come to the party?
-6. I will help you. / I'll help you.
+5. Is she going to come to the party?
+6. Don't worry, I will/I'll help you.
 7. They are going to move to Vilnius.
 8. I think life will be better.
 
@@ -617,6 +806,59 @@ are, going to do, am going to visit, am not going to do, will watch, will be, wi
 6. It will rain.
 7. We're going to visit London.
 8. I won't come.
+
+### Exercise 12: Personal Goals
+
+**Sample:** This year, I'm going to improve my English. Next year, I'm going to take a new course. In five years, I think I will have a more interesting job. One day, I hope I will live near the sea.
+
+Answers will vary. Check that plans use **going to** and predictions use **will** appropriately.
+
+### Exercise 13: Extended Vocabulary
+1. b) Karjera
+2. a) Kelionės
+3. d) Baigti studijas
+4. c) Santuoka
+5. e) Sėkmė
+
+### Exercise 14: Extended Dialogues
+
+**Complete the dialogue:** are, going to do, am, are, going to stay, am
+
+**Questions:**
+1. A doctor.
+2. Travel in Asia.
+3. Three months.
+4. To get married in a few years.
+
+### Exercise 15: Extended Reading Comprehension 2
+
+**Questions:**
+1. She is a teacher.
+2. English courses.
+3. England.
+4. A head teacher.
+5. A master's degree.
+6. A family.
+
+**True or False:**
+1. False (she is 25)
+2. False (English)
+3. False (England)
+4. False (a head teacher)
+5. True
+
+### Exercise 16: Writing Practice
+
+**Sample:** In five years, I want to be a designer. I want to live in Vilnius and work with creative people. These dreams are important because I enjoy making useful things.
+
+Answers will vary. Check that all four prompts are included and future forms are clear.
+
+### Cumulative Review
+1. are
+2. will / 'll
+3. leaves
+4. She isn't going to buy a car.
+5. are, isn't
 
 ---
 
@@ -645,36 +887,89 @@ are, going to do, am going to visit, am not going to do, will watch, will be, wi
 ### Exercise 3: Make questions with Present Perfect
 1. Have you ever been to London?
 2. Has she seen that movie?
-3. How long has he lived here?
+3. How long have they lived here?
 4. Has he finished his homework?
 5. Have you ever tried sushi?
 
 ### Exercise 4: Life Experiences Dialogue
-A: Have you ever traveled abroad?
-B: Yes, I have visited France and Spain. I went to Paris last summer.
-A: Really? What did you do there?
-B: I have seen the Eiffel Tower and have eaten delicious food.
-A: Nice to meet you too!
+A: Hi! Have you ever **travelled** abroad?
+B: Yes, I **have visited** France and Spain. I **went** to Paris last summer.
+A: Really? What **did** you **do** there?
+B: I **saw** the Eiffel Tower and **ate** delicious food.
+A: Sounds amazing! I **have never been** to Europe. **Have** you **planned** your next trip?
+B: Yes. I **have already booked** tickets to Italy, but I **haven't decided** what to do there yet.
 
 ### Exercise 5: Translation Practice
-1. I have never been to America.
-2. They have just come back from the trip.
+Possible answers:
+
+1. I have never been to America/the United States.
+2. They have just come back from their trip.
 3. Have you ever seen snow?
 4. She has lived here since 2010.
 5. We have already eaten lunch.
 6. When did you start learning English?
 7. I haven't finished my work yet.
-8. They have visited many countries.
+8. They have visited many countries. (Without more context, **They visited many countries** is also possible in Lithuanian-to-English translation.)
 
 ### Exercise 6: Reading Comprehension
-1. since he was born / for his whole life
+1. Since he was born / for his whole life.
 2. 15 countries
-3. No, she hasn't
-4. the Eiffel Tower
-5. started a new job last year
-6. No, she hasn't
-7. last month
-8. London
+3. No, he hasn't.
+4. The Eiffel Tower.
+5. He started a new job as a teacher.
+6. No, he hasn't.
+7. Last month.
+8. London.
+
+### Exercise 7: Error Correction
+1. I went to the cinema yesterday.
+2. She has already eaten lunch. / She has eaten lunch already.
+3. They didn't see the movie.
+4. Have you ever visited Paris?
+5. He has lived here for five years.
+6. We have seen that before.
+7. I didn't finish my homework.
+8. She has come back from work.
+
+### Exercise 8: Extended Vocabulary
+1. never
+2. just
+3. ever
+4. yet
+5. since
+
+### Exercise 9: Extended Dialogues
+Dialogue blanks: **Have, ever; have, ridden; rode**.
+
+1. France and Italy.
+2. No, they haven't.
+3. They have graduated from university and found a good job.
+4. Yes. They won a prize for best student.
+
+### Exercise 10: Extended Reading Comprehension 2
+1. He is 30 years old.
+2. He has been to 15 countries.
+3. The Alps.
+4. Three languages.
+5. He has never broken a bone.
+6. A camel.
+7. He is a travel guide.
+8. Japan.
+
+True or False: 1. False 2. False 3. False 4. False 5. False
+
+### Exercise 11: Writing Practice
+Answers will vary. Example:
+
+> I have visited Riga, Warsaw, and Berlin. I have learned to cook and to drive. I have never tried scuba diving. These experiences have helped me become more independent and curious.
+
+Checklist: three places; two learned skills; one **never** sentence; a reason; correct **have/has + past participle**.
+
+### Quick Retrieval and Can-do Check
+1. have, been
+2. visited
+3. since
+4. yet
 
 ---
 
@@ -711,23 +1006,25 @@ A: Nice to meet you too!
 8. worse
 
 ### Exercise 4: Write superlatives
-1. the biggest
-2. the most beautiful
-3. the happiest
-4. the easiest
-5. the worst
-6. the best
-7. the furthest
-8. the most expensive
+The sentence already contains **the**, so write only the missing form:
+
+1. biggest
+2. most beautiful
+3. happiest
+4. easiest
+5. worst
+6. best
+7. farthest/furthest
+8. most expensive
 
 ### Exercise 5: As...as comparisons
-1. not as difficult as
+1. as difficult as
 2. not as big as
-3. not as hot as
-4. not as tall as
+3. as hot as
+4. as tall as
 5. not as interesting as
-6. not as good as
-7. not as bad as
+6. as good as
+7. as bad as
 8. not as expensive as
 
 ### Exercise 6: Comparison Dialogue
@@ -741,22 +1038,24 @@ A: Is the food in restaurants better than homemade food?
 B: Homemade food is better. Restaurant food is more expensive, but not always better.
 
 ### Exercise 7: Reading Comprehension
-1. bigger
-2. the biggest
-3. warmer
-4. the warmest
-5. colder
-6. more popular
-7. the best
-8. Yes, it is
+1. Vilnius is bigger.
+2. Vilnius.
+3. Lithuanian summer.
+4. July.
+5. Lithuanian winter.
+6. Cepelinai/traditional dishes.
+7. Cepelinai.
+8. Yes, it is.
 
 ### Exercise 8: Translation Practice
+Possible answers:
+
 1. Vilnius is bigger than Kaunas.
 2. This book is more interesting than that one.
-3. He is the best student in class.
+3. He is the best student in the class.
 4. Winter is colder than summer.
 5. This is the most expensive restaurant in town.
-6. My sister is happier than me.
+6. My sister is happier than me. / My sister is happier than I am.
 7. English is not as difficult as Chinese.
 8. This is the most beautiful place I've ever seen.
 
@@ -770,19 +1069,59 @@ B: Homemade food is better. Restaurant food is more expensive, but not always be
 7. This is the most beautiful place.
 8. My house is bigger than yours.
 
+### Exercise 10: Extended Vocabulary
+1. taller; the tallest
+2. better; the best
+3. worse; the worst
+4. more interesting; the most interesting
+5. more expensive; the most expensive
+
+### Exercise 11: Extended Dialogues
+Dialogue blanks: **hotter, hotter, most beautiful, most beautiful**.
+
+1. Vilnius.
+2. Summer.
+3. Autumn, according to speaker B.
+4. It is cheaper and has more features.
+
+### Exercise 12: Extended Reading Comprehension 2
+1. Vilnius.
+2. Kaunas.
+3. Klaipėda.
+4. Summer.
+5. Winter.
+6. Spring.
+7. Cepelinai.
+8. Beer.
+
+True or False: 1. True (approximately 500,000 in the text) 2. False 3. False 4. False 5. False
+
+### Exercise 13: Writing Practice
+Answers will vary. Example:
+
+> Kaunas is smaller than Vilnius, but it feels quieter to me. Vilnius has more museums, while Kaunas has some beautiful parks. For me, Vilnius is the most exciting city for a weekend visit, but Kaunas is as interesting as Vilnius for history.
+
+Checklist: at least two correct comparatives; one superlative with **the**; one reason or example; clear **than/as...as** structure.
+
+### Quick Retrieval and Can-do Check
+1. better; best
+2. easier
+3. as; as
+4. most interesting
+
 ---
 
 ## Unit 9: Modal Verbs
 
 ### Exercise 1: Must or Can't?
 1. can't (impossible for a 3-year-old)
-2. must (sure based on evidence)
-3. must (sure based on evidence)
-4. can't (impossible)
-5. must (sure based on evidence)
-6. can't (impossible)
-7. must (sure based on evidence)
-8. must (sure based on evidence)
+2. must (the speaker can hear people inside)
+3. must (studying all night is strong evidence of tiredness)
+4. can't (heavy rain means the ground is not dry)
+5. must (winning is strong evidence that she is happy)
+6. can't (a car without an engine cannot move)
+7. must (the reservations and reviews are strong evidence of popularity)
+8. can't (the key does not fit)
 
 ### Exercise 2: May or Might?
 1. may/might
@@ -806,19 +1145,20 @@ B: Homemade food is better. Restaurant food is more expensive, but not always be
 
 ### Exercise 4: Mixed Modal Verbs
 1. should
-2. must
+2. may/might
 3. may/might
 4. shouldn't
 5. can't
 6. should
-7. must
+7. can't
 8. may/might
 
 ### Exercise 5: Advice Dialogue
-A: You should see a doctor. It might be serious.
-B: You shouldn't drink coffee before bed. You should exercise more.
-A: You shouldn't watch TV in bed. You should read a book instead.
-B: You should follow your suggestions.
+B: You **should** see a doctor. It **may/might** be serious.
+B: You **shouldn't** drink coffee before bed. And you **should** exercise more.
+A: What **should** I do in the evening?
+B: You **shouldn't** watch TV in bed. You **should** read a book instead.
+A: Thanks for the advice. I **will** follow your suggestions.
 
 ### Exercise 6: Problem-Solving Scenarios
 Situation 1: He should study more. He shouldn't watch TV all day.
@@ -827,43 +1167,85 @@ Situation 3: He should go to bed earlier. He shouldn't work so late.
 Situation 4: I shouldn't buy expensive clothes. I should save money.
 
 ### Exercise 7: Reading Comprehension
-1. exercise more and eat healthier food
-2. junk food
-3. go to bed earlier
-4. stressed
-5. she's very busy
-6. see a specialist
-7. might be serious
-8. work so late
+1. She should exercise more, eat healthier food, and drink more water.
+2. So much junk food.
+3. She should go to bed earlier.
+4. She may be stressed from work.
+5. Because she is very busy.
+6. He thinks she should see a specialist.
+7. He says it might be something serious.
+8. She shouldn't work so late.
 
 ### Exercise 8: Translation Practice
+Possible answers:
+
 1. You should eat more vegetables.
-2. She can't be at home because the lights are off.
-3. It may rain tomorrow.
+2. She can't be at home because I have just seen her at work.
+3. It may/might rain tomorrow.
 4. You shouldn't smoke.
-5. He must be tired.
-6. May I use your phone?
-7. She may be late for the meeting.
+5. He must be tired after work.
+6. May/Can I use your phone?
+7. She may/might be late for the meeting.
 8. Students must do homework.
 
 ### Exercise 9: Error Correction
 1. You must see a doctor.
-2. She may come tomorrow.
+2. She may come tomorrow. / She can come tomorrow. (The meaning changes slightly.)
 3. I should study more.
-4. He mustn't smoke here.
+4. He mustn't smoke here. (already correct)
 5. It may rain tomorrow.
-6. You should eat healthier food.
-7. She can't be hungry.
+6. You should eat healthier food. / You should eat more healthily.
+7. She can't be hungry. (already correct)
 8. They should arrive early.
+
+### Exercise 10: Extended Vocabulary
+1. should
+2. May
+3. may
+4. mustn't
+5. could
+
+### Exercise 11: Extended Dialogues
+Dialogue blanks: **should, might, Should, should**.
+
+1. They should take some medicine and rest.
+2. They shouldn't drink coffee.
+3. It might rain later.
+4. An umbrella.
+
+### Exercise 12: Extended Reading Comprehension 2
+1. On the left.
+2. You shouldn't use your phone.
+3. An adapter.
+4. Plenty of water.
+5. You can't smoke in enclosed public places.
+6. Punctual.
+7. Meetings.
+8. Whether service is included.
+
+True or False: 1. False 2. False 3. False 4. False 5. True
+
+### Exercise 13: Writing Practice
+Answers will vary. Example:
+
+> For a trip, you should pack light and you might need an adapter. You must take your passport. At a new job, you should arrive on time and you shouldn't interrupt people. To improve your English, you should practise regularly, and you may find a conversation partner helpful.
+
+Checklist: advice with **should/shouldn't**; one possibility with **may/might**; one real obligation with **must**; base verbs without **to**.
+
+### Quick Retrieval and Can-do Check
+1. should
+2. must
+3. may/might
+4. mustn't
 
 ---
 
 ## Unit 10: Present Tenses Contrast
 
-### Exercise 1: Present Simple or Present Continuous?
+### Exercise 1: Present Simple, Present Continuous, or Present Perfect?
 1. go, am walking
 2. lives, has lived
-3. sits, sits
+3. is sitting, sits
 4. am studying, study
 5. boils, is boiling
 6. works, is working
@@ -880,13 +1262,13 @@ Situation 4: I shouldn't buy expensive clothes. I should save money.
 7. met (specific time)
 8. have already visited
 
-### Exercise 3: All Three Tenses
+### Exercise 3: Mixed Present Tenses and Past Simple
 1. live, have lived, am sitting
-2. drinks, was drinking, has tried
+2. drinks, is drinking, has never tried
 3. works, is working, has taught
-4. play, were playing, won
-5. don't like, am eating, have tried
-6. rises, is rising, has risen
+4. play, are playing, won
+5. don't like, am eating, have never tried
+6. rises, is rising, has already risen
 
 ### Exercise 4: Stative Verbs
 1. I know the answer. (Present Simple)
@@ -915,18 +1297,18 @@ Situation 4: I shouldn't buy expensive clothes. I should save money.
 4. He has worked here for 3 years.
 5. They are always complaining.
 6. I know him very well.
-7. I have eaten breakfast already.
+7. She has eaten breakfast already. / She has already eaten breakfast.
 8. The train leaves at 9 PM every day.
 
 ### Exercise 7: Reading Comprehension
-1. studying for her exam
-2. for 4 years
-3. from home
-4. No, she hasn't
-5. Big Ben and the Thames River
-6. practiced speaking with native speakers and watched English films
-7. at 9 AM
-8. reading and playing tennis
+1. She is studying for her exam.
+2. For four years.
+3. She wakes up at 7 AM and has breakfast.
+4. Yes. She has passed three exams this semester.
+5. She plays the guitar and sings in a band.
+6. Yes, she has performed at several concerts.
+7. At a local festival.
+8. No, she hasn't.
 
 ### Exercise 8: Mixed Practice
 My name is Tomas. I am a teacher and I work at a school. Every day I get up at 6 AM and have coffee. Right now I am sitting in my office and am preparing lessons.
@@ -960,10 +1342,51 @@ B: I am sick. I don't feel well.
 A: I hope you get better soon.
 
 Talking about hobbies:
-A: Have you ever played any sports?
-B: Yes, I have played tennis. I have played it since I was 10.
+A: Do you play any sports regularly?
+B: Yes, I play tennis. I have played it since I was 10.
 A: Have you won any tournaments?
 B: I won one last year, but I don't play professionally.
+
+### Exercise 11: Extended Vocabulary
+1. live
+2. is cooking
+3. seen
+4. has worked
+5. are playing
+
+### Exercise 12: Extended Dialogues
+Dialogue blanks: **are, doing; am studying; have, studied; have studied**.
+
+1. Speaker B usually relaxes at home.
+2. Speaker B is visiting friends.
+3. Speaker B has been to the friends' house before.
+4. Speaker B likes/loves chocolate.
+5. Speaker B hasn't tried Lithuanian coffee.
+
+### Exercise 13: Extended Reading Comprehension 2
+1. She usually studies in the library.
+2. She is working on a project at home.
+3. For five years.
+4. New grammar.
+5. In an office.
+6. He is having lunch.
+7. For three years.
+8. The long hours.
+
+True or False: 1. False 2. True 3. False 4. False 5. False
+
+### Exercise 14: Writing Practice
+Answers will vary. Example:
+
+> I usually get up at seven and take the bus to work. This week I am working from home, so my routine is different. I have worked for the same company for four years. I have never worked abroad, but I want to try it one day.
+
+Checklist: a routine in Present Simple; a current or temporary action in Present Continuous; an experience or continuing state in Present Perfect; correct stative verb forms.
+
+### Quick Retrieval and Can-do Check
+1. works; is working
+2. know
+3. have lived
+4. saw
 
 ---
 
@@ -1017,10 +1440,38 @@ B: I won one last year, but I don't play professionally.
 8. was moving, were waiting
 
 ### Exercise 6: Story Completion
-was watching, rang, picked, heard, sounded, said, had won, didn't believe, insisted, was, were talking, arrived, had worked, decided, came, ordered, were eating, told, was
+1. was watching
+2. rang
+3. picked
+4. heard
+5. sounded
+6. said
+7. won
+8. didn't believe
+9. insisted
+10. was
+11. were talking
+12. arrived
+13. looked
+14. worked
+15. decided
+16. came
+17. ordered
+18. were eating
+19. told
+20. was
 
 ### Exercise 7: What were you doing...?
-(Answers will vary - students should use Past Continuous)
+Answers will vary. Possible answers:
+
+1. I was having dinner.
+2. My friend was travelling home.
+3. My parents were visiting relatives.
+4. It was raining.
+5. I was wearing jeans and a jacket.
+6. People were waiting for the police.
+7. They were dancing and talking.
+8. My teacher was writing on the board.
 
 ### Exercise 8: Reading Comprehension
 1. walking home from work
@@ -1046,25 +1497,63 @@ was watching, rang, picked, heard, sounded, said, had won, didn't believe, insis
 1. I was eating dinner when you called.
 2. She was studying English last night.
 3. They were playing football when it started to rain.
-4. He was working yesterday.
+4. At 3 PM yesterday, he was working.
 5. We were watching TV when the phone rang.
 6. You were sleeping when I arrived.
 7. It was raining while we were playing tennis.
 8. She was writing a letter when the doorbell rang.
 
+### Exercise 11: Extended Vocabulary
+1. was walking
+2. were, doing
+3. were playing
+4. was studying
+5. were watching
+
+### Exercise 12: Extended Dialogues
+Dialogue blanks: **was shopping; was shopping**.
+
+1. The person was having dinner with their family.
+2. People were dancing and music was playing.
+3. Yes, everyone was having fun.
+
+### Exercise 13: Extended Reading Comprehension 2
+1. He was watching TV.
+2. Popcorn.
+3. He was trying to find his phone.
+4. She was walking home from work.
+5. Music.
+6. The dark house.
+7. They were laughing.
+
+True or False: 1. False 2. False 3. False 4. True 5. False
+
+### Exercise 14: Writing Practice
+Answers will vary. Example:
+
+> I was walking to work when a cyclist fell in front of me. I stopped and asked if she was all right. She was not hurt, but we were both surprised. After a minute, she got back on her bicycle and left.
+
+Checklist: at least one Past Continuous background action; one Past Simple event; a clear time link with **when/while**; a feeling or reaction.
+
+### Quick Retrieval and Can-do Check
+1. was reading
+2. were walking; started
+3. was cooking; was setting
+4. went; was working
+
 ---
 
 ## Unit 12: Review and Consolidation
 
-### Part 1: Mixed Vocabulary Review
+### Part 1: Mixed Grammar and Vocabulary Review
 1. went
 2. has lived, lives
 3. play, are playing
 4. have never seen, Have you ever seen
 5. has worked, started
 6. were waiting, started
-7. was, had studied
-8. have just finished, was doing
+7. was, studied
+8. have just finished, took
 
 9. more expensive, most expensive
 10. should
@@ -1082,7 +1571,7 @@ was watching, rang, picked, heard, sounded, said, had won, didn't believe, insis
 7. cooks, is cooking
 8. grew, did you grow
 
-Story: decided, traveled, arrived, was waiting, met, were talking, started, ran, had already left, offered, were listening, were laughing, arrived, was waiting, had prepared, looked
+Story: **decided, travelled, arrived, was waiting, met, were talking, started, ran, left, offered, were listening, were laughing, arrived, was waiting, was preparing, looked**
 
 ### Part 3: Grammar - Mixed Structures Practice
 Comparatives and Superlatives:
@@ -1095,7 +1584,7 @@ Comparatives and Superlatives:
 
 Modal Verbs:
 1. shouldn't eat so much junk food
-2. must
+2. may/might
 3. should see a doctor
 4. can't
 5. should study harder
@@ -1103,8 +1592,24 @@ Modal Verbs:
 7. shouldn't smoke
 8. can't
 
+Articles, Quantifiers, There is/are, and Questions:
+9. an, some
+10. are
+11. much
+12. any
+13. at, on
+14. Where
+15. Do
+16. at, is
+
+Future Forms:
+17. is going to
+18. will
+19. are flying
+20. will/'ll
+
 ### Part 4: Comprehensive Exercises and Tests
-Exercise 1:
+### Exercise 1: Mixed Tense Practice
 1. have lived, have never lived
 2. has studied, started
 3. play, are playing
@@ -1114,7 +1619,7 @@ Exercise 1:
 7. was cooking, rang
 8. have grown, are
 
-Exercise 2:
+### Exercise 2: Error Correction
 1. I have lived in Vilnius since 2010.
 2. She likes coffee.
 3. They visited Paris last year.
@@ -1124,7 +1629,7 @@ Exercise 2:
 7. She is happier than her sister.
 8. I saw that film yesterday.
 
-Exercise 3: Reading Comprehension
+### Exercise 3: Reading Comprehension
 1. graphic designer
 2. for 4 years
 3. meeting a client in the city center
@@ -1134,18 +1639,24 @@ Exercise 3: Reading Comprehension
 7. at 9 AM
 8. reading and playing tennis
 
-Exercise 4: (Student writing - check for correct use of tenses)
+### Exercise 4: Writing Practice
 
-Exercise 5: Dialogue
+Answers will vary. Example:
+
+> My name is Eglė, and I live in Klaipėda. I wake up at seven and go to work by bus. I have worked in a hotel for two years, and I enjoy meeting new people. In the evening, I usually read or meet friends. Last weekend, I visited Palanga and had a great time. I have never visited Ireland, but I want to go there someday.
+
+Checklist: routine in Present Simple; continuing situation in Present Perfect; finished weekend event in Past Simple; complete sentences and time expressions.
+
+### Exercise 5: Dialogue Completion
 A: are you doing
 B: am studying, started
 A: have you studied
-B: have been learning, have already passed
+B: have studied, have already passed
 A: Have you ever been
 B: visited, was
 A: did you do
 B: saw, met
-A: have never traveled, may go
+A: have never travelled, may go
 B: should, more expensive
 
 ### Part 5: Final Assessment
@@ -1158,18 +1669,73 @@ Test 1:
 6. a) more expensive
 7. a) mustn't
 8. a) may
+9. b) is
+10. c) any
+11. a) at
+12. a) is going to
 
 Test 2:
 1. have lived, have lived
 2. was studying, arrived, studies
-3. were, had worked
+3. were, worked
 4. has never seen, Have you ever seen
 5. were waiting, started
 6. should, healthier
 7. more interesting, most interesting
-8. have just finished, was doing
+8. have just finished, took
+9. are
+10. much
 
-Test 3: (Student writing assessment - check grammar structures)
+Test 3: Answers will vary. Use this 8-point checklist (one point each):
+
+1. A clear daily routine in Present Simple.
+2. A current or temporary detail in Present Continuous.
+3. A life experience or continuing situation in Present Perfect.
+4. A finished weekend event in Past Simple.
+5. A background/interrupted action in Past Continuous.
+6. A future plan with **going to**, **will**, or a fixed arrangement.
+7. Advice with **should/shouldn't**.
+8. At least one accurate comparison, plus linking words such as **and, but, because, when**.
+
+### Exercise 6: Extended Vocabulary Review
+1. b) Hello, nice to meet you
+2. c) I wake up at 7 AM
+3. a) I visited a museum yesterday
+4. d) Bigger than, the best
+5. e) I will travel next year
+
+### Exercise 7: Extended Dialogues Review
+Dialogue blanks: **did, do; studied; study; Did, finish; did**.
+
+1. The person was shopping.
+2. Paris.
+3. They should book tickets early.
+4. A visa.
+
+### Exercise 8: Extended Reading Comprehension 2
+1. In Lithuania.
+2. She was working.
+3. For five years.
+4. She wants to travel more.
+5. Asia.
+6. She should save money.
+7. Breakfast at home and dinner with her family.
+8. She was reading.
+
+True or False: 1. False 2. False 3. False 4. False 5. False
+
+### Exercise 9: Writing Practice
+Answers will vary. The model in the unit is one suitable answer. Check for:
+
+- an introduction and routine;
+- a clear Past Simple/Past Continuous contrast;
+- a Present Perfect duration or experience;
+- a future plan;
+- one comparison and one piece of advice;
+- logical linking and understandable spelling.
+
+### Progress and Final Can-do Checks
+These are self-assessments. For every **Yes**, write or say one example. If an example is difficult, choose **Almost** and repeat the related unit's Quick Retrieval task.
 
 ---
 

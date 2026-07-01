@@ -1,6 +1,6 @@
 ---
 title: "Unit 5: Travel and Directions"
-ltTitle: "Skyrius 5: Kelionės ir krypčių nurodymai"
+ltTitle: "Skyrius 5: Kelionės ir kelio nurodymas"
 slug: "unit-05"
 collection: "a2-units"
 order: 5
@@ -18,7 +18,7 @@ status: "published"
 ---
 
 # Unit 5: Travel and Directions
-## Skyrius 5: Kelionės ir krypčių nurodymai
+## Skyrius 5: Kelionės ir kelio nurodymas
 
 ### Learning Objectives / Mokymosi tikslai
 - Learn travel vocabulary / Išmokti kelionių žodyną
@@ -53,7 +53,7 @@ status: "published"
 - cinema - kinas
 - theatre - teatras
 - police station - policijos nuovada
-- tourist information - turistinė informacija
+- tourist information centre - turizmo informacijos centras
 
 ### Transport (Transportas)
 - plane - lėktuvas
@@ -77,7 +77,7 @@ status: "published"
 - depart - išvykti
 - take (a bus) - važiuoti (autobusu)
 - catch (a train) - suspėti (į traukinį)
-- miss (a flight) - pralesti (skrydį)
+- miss (a flight) - praleisti (skrydį)
 - book - užsisakyti
 - stay - apsistoti
 
@@ -99,7 +99,7 @@ status: "published"
 - Turn right - Sukite dešinėn
 - Go past... - Eikite pro...
 - Cross the street - Pereikite gatvę
-- Take the first/second left - Sukite pirmąja/antrąja į kairę
+- Take the first/second left - Sukite į pirmą/antrą gatvę kairėje
 - It's on your left/right - Tai yra jūsų kairėje/dešinėje
 - It's opposite... - Tai yra priešais...
 - It's next to... - Tai yra šalia...
@@ -127,8 +127,8 @@ status: "published"
 | next to | šalia | next to the bank |
 | near | netoli | near the hotel |
 | between | tarp | between the shops |
-| opposite | priešais | opposite the church |
-| in front of | priešais | in front of the cinema |
+| opposite | priešais / kitoje pusėje | opposite the church |
+| in front of | priešais / priekyje | in front of the cinema |
 | behind | už | behind the building |
 | under | po | under the bridge |
 | over/above | virš | over the door |
@@ -140,6 +140,8 @@ status: "published"
 - The hotel is **between** the restaurant and the shop.
 - The park is **behind** the church.
 
+> **Do not confuse these:** **opposite** normally means on the other side of a street or space. **In front of** means before the front part of a place; it does not necessarily mean across a street.
+
 **More Examples:**
 - The keys are in the drawer. - Raktai yra stalčiuje.
 - The picture is on the wall. - Paveikslas yra ant sienos.
@@ -147,7 +149,7 @@ status: "published"
 - The ball is under the bed. - Kamuolys yra po lova.
 - My house is next to the river. - Mano namas yra šalia upės.
 - The cat is between the chairs. - Katė yra tarp kėdžių.
-- The teacher is in front of the class. - Mokytojas yra priešais klasę.
+- The teacher is in front of the class. - Mokytojas stovi priešais mokinius.
 - The garden is behind the house. - Sodas yra už namo.
 
 ---
@@ -179,24 +181,24 @@ status: "published"
 
 Complete with the correct preposition:
 
-1. The bank is _______ the post office. (next to)
-2. The hotel is _______ the main square. (on)
-3. There's a café _______ the cinema. (opposite)
-4. The museum is _______ the church and the library. (between)
-5. The park is _______ the river. (near)
-6. There's a bus stop _______ the hotel. (in front of)
-7. The restaurant is _______ King Street. (on)
-8. The pharmacy is _______ the supermarket. (behind)
+1. The bank is _______ the post office. (šalia)
+2. The hotel is _______ the main square. (pagrindinėje aikštėje)
+3. There's a café _______ the cinema. (priešais)
+4. The museum is _______ the church and the library. (tarp)
+5. The park is _______ the river. (netoli)
+6. There's a bus stop _______ the hotel. (viešbučio priekyje)
+7. The restaurant is _______ King Street. (King gatvėje)
+8. The pharmacy is _______ the supermarket. (už)
 
 ---
 
 ## Exercise 2: There is / There are
 ## Pratimas 2: There is / There are
 
-Complete with "there is" or "there are":
+Complete with **there is, there are, is there,** or **are there**:
 
 1. _______ a bank on this street.
-2. _______ two hotels in the town center.
+2. _______ two hotels in the town centre.
 3. _______ a post office near here?
 4. _______ many restaurants in Vilnius.
 5. _______ a museum opposite the park.
@@ -222,7 +224,9 @@ Complete with "there is" or "there are":
 ## Exercise 4: Giving Directions
 ## Pratimas 4: Krypčių nurodymas
 
-**Look at the map description and complete the directions:**
+**Use the map description and the word bank to complete the directions.**
+
+**Word bank:** straight · turn · on · opposite · next to
 
 You are at the TRAIN STATION. The HOTEL is on Main Street, opposite the park. The BANK is next to the hotel. The POST OFFICE is between the bank and the restaurant.
 
@@ -246,14 +250,14 @@ Tom is a tourist from England. He is visiting Vilnius for three days. Today is h
 In the morning, Tom wants to visit the cathedral. He asks a local person for directions.
 
 Tom: Excuse me, how do I get to the cathedral?
-Local: It's easy. Go straight on this street for about 200 meters. Then turn right at the traffic lights. The cathedral is on Cathedral Square, you can't miss it.
+Local: It's easy. Go straight on this street for about 200 metres. Then turn right at the traffic lights. The cathedral is on Cathedral Square, you can't miss it.
 Tom: Is it far?
 Local: No, it's about 10 minutes on foot.
 Tom: Thank you very much!
 
 After visiting the cathedral, Tom goes to a café. The café is opposite the cathedral. He has coffee and cake. Then he walks to the Gediminas Tower. It's on a hill behind the cathedral. The view from the tower is beautiful.
 
-In the afternoon, Tom visits some museums. There are many interesting museums in the Old Town. He also does some shopping. There are lots of souvenir shops on Pilies Street.
+In the afternoon, Tom visits some museums. There are many interesting museums in the Old Town. He also does some shopping and buys a few souvenirs on Pilies Street.
 
 In the evening, Tom has dinner at a traditional Lithuanian restaurant. The restaurant is near his hotel. The food is delicious. Tom is very happy with his first day in Vilnius!
 
@@ -294,7 +298,7 @@ _____________________
 _____________________
 _____________________
 
-3. The city center:
+3. The city centre:
 _____________________
 _____________________
 _____________________
@@ -309,7 +313,7 @@ _____________________
 Tourist: Excuse me, _______ _______ a good restaurant near here?
 Staff: Yes, _______ _______ many good restaurants in the Old Town.
 Tourist: Which one do you recommend?
-Staff: There's a nice Italian restaurant on Pilies Street. It's _______ the museum.
+Staff: There's a nice Italian restaurant on Pilies Street. The museum is on the other side of the street, so the restaurant is _______ the museum.
 Tourist: How do I _______ there from here?
 Staff: Go straight on, then _______ left at the square. The restaurant is _______ your right.
 Tourist: _______ it far?
@@ -328,9 +332,9 @@ Tourist: Thank you!
 3. Is there a bus stop near your home? _____________________
 4. Do you have a car? _____________________
 5. Can you ride a bicycle? _____________________
-6. Have you ever traveled by plane? _____________________
-7. What's your favorite way to travel? _____________________
-8. How do you get to the city center? _____________________
+6. Do you sometimes travel by plane? _____________________
+7. What's your favourite way to travel? _____________________
+8. How do you get to the city centre? _____________________
 
 ---
 
@@ -345,7 +349,7 @@ Translate from Lithuanian to English:
 4. Viešbutis yra šalia muziejaus. _____________________
 5. Šioje gatvėje yra daug restoranų. _____________________
 6. Kaip nuvykti į traukinių stotį? _____________________
-7. Apteka yra priešais parką. _____________________
+7. Vaistinė yra priešais parką. _____________________
 8. Ar yra metro šiame mieste? _____________________
 
 ---
@@ -356,9 +360,9 @@ Translate from Lithuanian to English:
 **Write about a trip you want to take:**
 
 1. Where do you want to go? _____________________
-2. How will you get there? _____________________
-3. How long will you stay? _____________________
-4. Where will you stay? (hotel, etc.) _____________________
+2. How do you want to get there? _____________________
+3. How long do you want to stay? _____________________
+4. Where do you want to stay? (hotel, etc.) _____________________
 5. What do you want to visit? _____________________
 6. What do you want to do? _____________________
 
@@ -389,7 +393,7 @@ _____________________________________________
 
 - Departure - Išvykimas
 - Arrival - Atvykimas
-- Delay - Delsti
+- Delay - Vėlavimas
 - Luggage - Bagažas
 - Passport - Pasas
 - Visa - Viza
@@ -413,15 +417,15 @@ _____________________________________________
 A: Excuse me, where is the check-in for flight LT101?
 B: It's at counter 5, over there.
 A: Thank you. And where is the gate?
-B: The gate number will be on your boarding pass. It's usually announced 30 minutes before departure.
+B: The gate number is on your boarding pass or the departure screen. Please check the screen.
 
 **Complete the dialogue:**
 
-A: Hi, I need to get to the city center.
+A: Hi, I need to get to the city centre.
 B: You can take the _____________ or a taxi.
-A: How much is the bus?
-B: It's _____________ euros. The taxi is more expensive.
-A: I'll take the bus. _____________ does it leave?
+A: How much is a bus ticket?
+B: It's five euros. The taxi is more expensive.
+A: The bus, please. _____________ does it leave?
 B: Every 15 minutes from platform 3.
 
 **Dialogue 2: Asking for Directions**
@@ -429,12 +433,12 @@ B: Every 15 minutes from platform 3.
 A: Excuse me, how do I get to the museum?
 B: Go straight ahead for two blocks, then turn left on Museum Street. The museum is on your right.
 A: Is it far?
-B: No, it's about 10 minutes walk.
+B: No, it's about a 10-minute walk.
 
 **Questions:**
 1. Where does the person want to go?
-2. What directions does he get?
-3. How long will it take?
+2. What directions do they get?
+3. How long does it take?
 
 ---
 
@@ -442,9 +446,9 @@ B: No, it's about 10 minutes walk.
 
 **Read the text:**
 
-Last summer, I traveled to Paris with my family. We flew from Vilnius to Paris. The flight was three hours long. At the airport, we took a taxi to our hotel. The hotel was near the Eiffel Tower.
+Last summer, I travelled to Paris with my family. We flew from Vilnius to Paris. The flight was three hours long. At the airport, we took a taxi to our hotel. The hotel was near the Eiffel Tower.
 
-In Paris, we visited many places. We saw the Louvre Museum and walked along the Seine River. We ate French food like croissants and cheese. The weather was nice, and we enjoyed the cafes.
+In Paris, we visited many places. We saw the Louvre Museum and walked along the Seine River. We ate French food like croissants and cheese. The weather was nice, and we enjoyed the cafés.
 
 We stayed for a week. On the last day, we shopped for souvenirs. Then we flew back home. It was a great trip.
 
@@ -460,7 +464,7 @@ We stayed for a week. On the last day, we shopped for souvenirs. Then we flew ba
 
 **True or False:**
 
-1. They traveled by train. _____
+1. They travelled by train. _____
 2. The hotel was far from the Eiffel Tower. _____
 3. They visited the Louvre. _____
 4. They ate Lithuanian food. _____
@@ -473,7 +477,7 @@ We stayed for a week. On the last day, we shopped for souvenirs. Then we flew ba
 Write a short paragraph about a memorable trip. Include:
 
 - Where you went
-- How you traveled
+- How you travelled
 - What you did
 - Why it was memorable
 
@@ -496,14 +500,14 @@ Share a travel story with the group. Describe the journey, places visited, and a
 
 ### Activity 3: Transportation Debate
 
-Discuss: Which is better, traveling by car or by train? Why?
+Discuss: Which is better, travelling by car or by train? Why?
 
 ---
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Punctuality:** In many English-speaking countries, especially Germany and Switzerland, trains and buses are very punctual. In the US, flights can be delayed.
-- **Tipping:** In the US, tipping taxi drivers and waiters is common (15-20%). In the UK, tipping is less expected but appreciated.
+- **Schedules:** Public transport uses timetables, but delays can happen anywhere. Check the departure board or a live travel app and ask, "Is it on time?"
+- **Tipping:** Tipping practices vary by country, city, and service. Check whether service is included and follow current local guidance.
 - **Driving:** In the UK, people drive on the left. In Lithuania and most countries, on the right. Be careful when renting a car abroad.
 
 ---
@@ -516,7 +520,7 @@ Discuss: Which is better, traveling by car or by train? Why?
 - I need to get to... - Man reikia nuvykti į...
 - Could you show me on the map? - Ar galėtumėte parodyti žemėlapyje?
 
-**Traveling:**
+**Travelling:**
 - What time does the train leave? - Kada išvyksta traukinys?
 - Which platform? - Kuri platforma?
 - A ticket to..., please - Bilietą į..., prašau
@@ -525,7 +529,7 @@ Discuss: Which is better, traveling by car or by train? Why?
 
 **At the hotel:**
 - I have a reservation - Turiu rezervaciją
-- Check in / Check out - Registracija / Išsiregistravimas
+- Check in / Check out - Užsiregistruoti / išsiregistruoti
 - Can I have the key? - Ar galiu gauti raktą?
 - What time is breakfast? - Kada pusryčiai?
 
@@ -533,17 +537,16 @@ Discuss: Which is better, traveling by car or by train? Why?
 
 ## Cultural Notes / Kultūrinės pastabos
 
-**In English-speaking countries:**
-- People usually give distances in miles/yards (US/UK) or meters (other English-speaking countries)
+**When using English for travel:**
+- The US commonly uses miles and feet. The UK uses miles on roads but also uses metres in many everyday directions. Most other countries use kilometres and metres.
 - Be polite when asking for directions: "Excuse me" or "Sorry"
 - Say "thank you" when someone helps you
-- If you're lost, don't be afraid to ask - people usually help tourists
+- If you're lost, politely ask a member of staff or another person for help
 
-**Useful distances:**
-- Close/near - less than 10 minutes walk
-- Not far - 10-20 minutes
-- Quite far - more than 20 minutes
-- Very far - need transport
+**Useful ways to explain distance:**
+- It's about a five-minute walk.
+- It's two kilometres from here.
+- It's quite far; you should take a bus.
 
 ---
 
@@ -559,6 +562,23 @@ Discuss: Which is better, traveling by car or by train? Why?
 - Lithuanian has more case endings for locations
 - English relies more on prepositions
 - Be careful with "at", "on", and "in" - they're different from Lithuanian cases
+
+---
+
+## Cumulative Review / Kaupiamasis kartojimas
+
+1. Complete: _____ a pharmacy near here? - Yes, there is.
+2. Complete: The bank is _____ the post office and the café.
+3. Complete the direction: Go straight, then _____ left.
+4. Make this negative: There are some buses on Sunday. → _____________________
+5. Complete: Last summer we _____ to Riga and _____ many interesting places. (**go, see**)
+
+### Can-Do Self-Check / Įsivertinimas
+
+- [ ] I can ask for and understand simple directions.
+- [ ] I can describe where places are with prepositions of place.
+- [ ] I can use **there is/there are** in statements, negatives, and questions.
+- [ ] I can ask basic questions at a station, airport, hotel, or tourist information centre.
 
 ---
 

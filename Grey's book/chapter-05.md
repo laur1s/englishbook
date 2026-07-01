@@ -33,7 +33,7 @@ status: "published"
 - heart surgery — širdies operacija
 - patient — pacientas
 - die/died — mirti/mirė
-- crying/sobbing — verkimas/aimanuoja
+- crying/sobbing — verkimas / kūkčiojimas
 - fault — kaltė
 - blame — kaltinti
 - failure — nesėkmė
@@ -158,15 +158,19 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
 
 #### Activity 1: Emotions Vocabulary / Emocijų Žodynas
 
-**Match the feeling with the situation from the story:**
+**Match each feeling with the correct situation from the story:**
 
-| Feeling | Situation |
-|---------|-----------|
-| shocked (šokiruotas) | When George's heart stopped |
-| guilty (kaltas) | When Cristina thought it was her fault |
-| supportive (palaikantis) | When friends sat with Cristina |
-| broken (sudužęs) | When Cristina cried on the floor |
-| grateful (dėkingas) | When Cristina thanked her friends |
+1. shocked (šokiruotas) ___
+2. guilty (kaltas) ___
+3. supportive (palaikantis) ___
+4. broken (palūžęs) ___
+5. grateful (dėkingas) ___
+
+a) When Cristina thanked her friends
+b) When the friends sat with Cristina
+c) When George's heart stopped
+d) When Cristina thought it was her fault
+e) When Cristina cried on the floor
 
 **Now write your own:** "I feel _______________ when _______________."
 
@@ -242,10 +246,10 @@ _______________________________________________________"
 
 Past Continuous vs Past Simple:
 
-1) Cristina ***(operate) when George’s heart*** (stop).
-2) Nurses ***(prepare) medicine while Cristina*** (do) CPR.
-3) Meredith ***(walk) past when she*** (hear) the crying.
-4) They ***(sit) together and*** (talk) about fears.
-5) Later, Cristina ***(go) back to work, but she*** (feel) sad.
+1) Cristina __________ (operate) when George's heart __________ (stop).
+2) Nurses __________ (prepare) medicine while Cristina __________ (do) CPR.
+3) Meredith __________ (walk) past when she __________ (hear) the crying.
+4) They __________ (sit) together and __________ (talk) about fears.
+5) Later, Cristina __________ (go) back to work, but she __________ (feel) sad.
 
 ---

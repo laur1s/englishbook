@@ -28,7 +28,7 @@ status: "published"
 
 ---
 
-## Part 1: Mixed Vocabulary Review / Mišrus žodyno kartojimas
+## Part 1: Mixed Grammar and Vocabulary Review / Mišrus gramatikos ir žodyno kartojimas
 
 ### Complete the sentences with the correct word:
 
@@ -36,17 +36,17 @@ status: "published"
 2. She _____ (live) in Vilnius since 2015. She _____ (live) there now.
 3. They _____ (play) tennis every Sunday. They _____ (play) now.
 4. I _____ (never/see) snow. _____ you _____ (ever/see) snow?
-5. He _____ (work) here for 3 years. He _____ (start) in 2020.
+5. He _____ (work) here for 3 years. He _____ (start) three years ago.
 6. We _____ (wait) for the bus when it _____ (start) to rain.
 7. She _____ (be) tired yesterday because she _____ (study) all night.
-8. I _____ (just/finish) my homework. I _____ (do) it for 2 hours.
+8. I _____ (just/finish) my homework. It _____ (take) me 2 hours.
 
 ### Choose the correct option:
 
 9. My car is _____ (expensive) than yours. It's the _____ (expensive) car here.
-10. You _____ (should/must) see a doctor. It's important.
+10. This is advice, not a rule: You _____ (should/must) see a doctor.
 11. It _____ (may/might) rain tomorrow. Take an umbrella.
-12. I _____ (can/may) I borrow your pen, please?
+12. Choose the more formal option: _____ (can/may) I borrow your pen, please?
 13. The book is on the table. It _____ (must/can't) be lost.
 
 ---
@@ -58,7 +58,7 @@ status: "published"
 **Complete with the correct tense:**
 
 1. I _____ (not/like) coffee. I _____ (prefer) tea.
-2. She _____ (study) medicine. She _____ (want) to be a doctor.
+2. At the moment, she _____ (study) medicine. She _____ (want) to be a doctor.
 3. They _____ (live) in Kaunas. They _____ (live) there for 5 years.
 4. He _____ (work) in a bank. He _____ (work) there now.
 5. I _____ (see) that film. I _____ (see) it last week.
@@ -72,7 +72,7 @@ status: "published"
 
 Last summer, I _____ (decide) to visit my grandmother. I _____ (travel) by train and _____ (arrive) in the afternoon. While I _____ (wait) for the bus, I _____ (meet) an old friend. We _____ (talk) about our childhood when suddenly it _____ (start) to rain.
 
-We _____ (run) to the bus stop, but the bus _____ (already/leave). My friend _____ (offer) to drive me home. On the way, we _____ (listen) to music and _____ (laugh) about old times.
+We _____ (run) to the bus stop, but the bus _____ (leave) just as we arrived. My friend _____ (offer) to drive me home. On the way, we _____ (listen) to music and _____ (laugh) about old times.
 
 When we _____ (arrive), my grandmother _____ (wait) for us. She _____ (prepare) dinner and _____ (look) happy to see me.
 
@@ -96,13 +96,35 @@ When we _____ (arrive), my grandmother _____ (wait) for us. She _____ (prepare) 
 **Give advice using should/shouldn't, or make deductions with must/can't/may/might:**
 
 1. My friend eats too much junk food. → _____________________
-2. She's not answering her phone. She _____ be busy.
+2. She's not answering her phone. She _____ be busy, but I'm not sure.
 3. I feel sick. → _____________________
-4. The lights are off. They _____ be at home.
+4. I can see them at the bus stop. They _____ be at home.
 5. You want to learn English faster. → _____________________
 6. It looks cloudy. It _____ rain soon.
 7. He smokes 20 cigarettes a day. → _____________________
 8. She's only 5 years old. She _____ drive a car.
+
+### Articles, Quantifiers, There is/are, and Questions
+
+**Complete with the missing word:**
+
+9. I bought _____ apple and _____ bread.
+10. There _____ two shops near my house.
+11. How _____ milk do we need?
+12. We don't have _____ eggs.
+13. The train leaves _____ 8 AM _____ Monday.
+14. _____ did you go last weekend? — To Kaunas.
+15. _____ you like tea?
+16. Turn left _____ the bank. The museum _____ opposite the station.
+
+### Future Forms
+
+**Complete with going to, will, or Present Continuous for a fixed arrangement:**
+
+17. Look at those dark clouds! It _____ rain.
+18. I think English _____ be useful in my career.
+19. We have plane tickets. We _____ (fly) to London on Friday.
+20. The phone is ringing. I _____ answer it.
 
 ---
 
@@ -180,12 +202,12 @@ I _____ (never/visit) _____________________, but I _____ (want) to go there some
 A: Hi! What _____ you _____ (do) these days?
 B: I _____ (study) English at university. I _____ (start) last September.
 A: How long _____ you _____ (study) English?
-B: I _____ (learn) it for 5 years now. I _____ (already/pass) 3 exams.
+B: I _____ (study) it for 5 years now. I _____ (already/pass) 3 exams.
 A: _____ you _____ (ever/be) to an English-speaking country?
 B: Yes, I _____ (visit) London last summer. It _____ (be) amazing!
 A: What _____ you _____ (do) there?
 B: I _____ (see) many sights and _____ (meet) local people.
-A: Sounds great! I _____ (never/travel) abroad. Maybe I _____ (go) next year.
+A: Sounds great! I _____ (never/travel) abroad. I _____ (may/go) next year.
 B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 
 ---
@@ -212,19 +234,29 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
    a) mustn't b) don't have to c) shouldn't
 8. It _____ rain tomorrow.
    a) may b) can c) must
+9. There _____ some milk in the fridge.
+   a) are b) is c) be
+10. I don't have _____ apples.
+   a) some b) much c) any
+11. The lesson starts _____ 9 AM.
+   a) at b) in c) on
+12. Look at those clouds! It _____ rain.
+   a) is going to b) will to c) goes to
 
 ### Test 2: Sentence Completion
 
 **Complete with the correct form:**
 
-1. I _____ (live) here for 10 years. I _____ (live) here since 2014.
+1. I _____ (live) here for 10 years. I _____ (live) here since 2016.
 2. She _____ (study) when I _____ (arrive). She _____ (study) English.
 3. They _____ (be) tired because they _____ (work) all day.
 4. He _____ (never/see) snow. _____ you _____ (ever/see) snow?
 5. We _____ (wait) for the bus when it _____ (start) to rain.
 6. You _____ (should) eat more vegetables. It's _____ (healthy).
 7. The book is _____ (interesting) than the film. It's the _____ (interesting) I've read.
-8. I _____ (just/finish) my homework. I _____ (do) it for 2 hours.
+8. I _____ (just/finish) my homework. It _____ (take) me 2 hours.
+9. There _____ (be) two banks near the station.
+10. How _____ water do you drink every day?
 
 ### Test 3: Writing Assessment
 
@@ -248,8 +280,12 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 - Present Perfect: _____
 - Past Simple: _____
 - Past Continuous: _____
+- Future forms (going to / will / arrangements): _____
 - Comparatives/Superlatives: _____
 - Modal verbs: _____
+- Articles and quantifiers: _____
+- There is/are and prepositions: _____
+- Question formation: _____
 - General vocabulary: _____
 
 **Areas to improve:** _____________________
@@ -284,13 +320,14 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 **You have completed the A2 level English course!**
 
 This book has covered:
-- All major tenses (Present Simple, Continuous, Perfect; Past Simple, Continuous)
+- The core tenses taught in this course (Present Simple, Present Continuous, Present Perfect, Past Simple, and Past Continuous)
+- Future forms with **going to**, **will**, and fixed arrangements
 - Modal verbs (can, could, may, might, must, should)
 - Comparatives and superlatives
 - Essential vocabulary for daily communication
 - Cultural aspects of English-speaking countries
 
-## Exercise 11: Extended Vocabulary Review / Pratimas 11: Išplėstas žodyno peržiūra
+## Exercise 6: Extended Vocabulary Review / Pratimas 6: Išplėstinė žodyno apžvalga
 
 ### All Topics Vocabulary (Visų temų žodynas)
 
@@ -307,7 +344,7 @@ This book has covered:
 
 **Exercise:** Match the topics with key phrases.
 
-1. Greetings - a) I was doing when...
+1. Greetings - a) I visited a museum yesterday
 2. Daily routines - b) Hello, nice to meet you
 3. Past events - c) I wake up at 7 AM
 4. Comparisons - d) Bigger than, the best
@@ -315,7 +352,7 @@ This book has covered:
 
 ---
 
-## Exercise 12: Extended Dialogues Review / Pratimas 12: Išplėsti dialogai peržiūra
+## Exercise 7: Extended Dialogues Review / Pratimas 7: Išplėstiniai kartojimo dialogai
 
 **Dialogue 1: Mixed Review**
 
@@ -340,13 +377,13 @@ B: It depends, but it could be expensive.
 
 **Questions:**
 1. What was the person doing when they met a friend?
-2. What does the friend want to do?
+2. Where does speaker B want to go?
 3. What should the traveler do?
 4. What might they need?
 
 ---
 
-## Exercise 13: Extended Reading Comprehension 2 / Pratimas 13: Skaitymo suvokimas 2
+## Exercise 8: Extended Reading Comprehension 2 / Pratimas 8: Skaitymo suvokimas 2
 
 **Read the text:**
 
@@ -370,14 +407,14 @@ Laura's daily routine includes breakfast at home and dinner with family. She oft
 **True or False:**
 
 1. Laura lives in France. _____
-2. She was sleeping when called. _____
+2. She was sleeping when her boss called a meeting. _____
 3. She has worked for 10 years. _____
 4. She wants to travel less. _____
 5. She often watches TV. _____
 
 ---
 
-## Exercise 14: Writing Practice / Pratimas 14: Rašymo praktika
+## Exercise 9: Writing Practice / Pratimas 9: Rašymo praktika
 
 Write a comprehensive paragraph about yourself using all grammar from A2.
 
@@ -388,7 +425,7 @@ Include:
 - Comparisons and advice
 
 Example:
-My name is Jonas. I live in Vilnius and work as a teacher. I usually start work at 8 AM. Yesterday I was teaching when the bell rang. I have taught for 3 years. In the future, I will travel to London. It should be more exciting than staying home.
+My name is Jonas. I live in Vilnius and work as a teacher. I usually start work at 8 AM. Yesterday I was teaching when the bell rang. I have taught for 3 years. Next year, I am going to travel to London. It should be more exciting than staying home.
 
 **Your turn:**
 
@@ -419,10 +456,21 @@ Tell a complete story from past to future.
 ---
 
 **Next steps:**
-- Practice speaking with native speakers
+- Practice speaking with supportive conversation partners
 - Read English books and watch English films
 - Continue to B1 level materials
-- Take an official English exam (PET, TOEIC, etc.)
+- If useful for your goals, choose an official English exam at the appropriate level
+
+### Final Can-do Check / Galutinis gebėjimų įsivertinimas
+
+Choose **Not yet / Almost / Yes**, then write one example sentence as evidence.
+
+- I can introduce myself and describe my routine.
+- I can describe a finished event and an action that was in progress.
+- I can talk about an experience and add a specific past detail.
+- I can make plans, predictions, comparisons, and suggestions.
+- I can ask for information, give directions, and handle a simple everyday problem.
+- I can write a connected 8–10 sentence text using linking words.
 
 **Remember:** Language learning is a journey, not a destination. Keep practicing regularly!
 

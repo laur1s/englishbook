@@ -13,7 +13,7 @@ const answerEntry = answerEntries.find((entry) => entry.data.slug === "a2");
   <section class="collection-hero">
     <p class="eyebrow">Answer key</p>
     <h1>A2 Answer Keys</h1>
-    <p class="hero-subtitle lt-text">A2 kurso atsakymų raktai</p>
+    <p class="hero-subtitle lt-text" lang="lt">A2 kurso atsakymų raktai</p>
     <p class="collection-description">
       Answers stay visible on the site, but they are folded by default so the learning flow does not collapse.
     </p>
@@ -31,13 +31,13 @@ const answerEntry = answerEntries.find((entry) => entry.data.slug === "a2");
           >
             <summary>
               {unit.data.title}
-              <span class="lt-text summary-subtitle">{unit.data.ltTitle}</span>
+              <span class="lt-text summary-subtitle" lang="lt">{unit.data.ltTitle}</span>
             </summary>
             <div class="prose" set:html={renderMarkdown(snippet)} />
             <p class="answer-link-row">
               <a class="inline-link" href={withBase(`/a2/${unit.data.slug}`)}>
                 Back to lesson
-                <span class="lt-text">Grįžti į skyrių</span>
+                <span class="lt-text" lang="lt">Grįžti į skyrių</span>
               </a>
             </p>
           </details>

@@ -31,19 +31,19 @@ status: "published"
 ### Word Bank
 
 - emergency room — skubios pagalbos skyrius
-- ambulance — greitoji pagalba
+- ambulance — greitosios pagalbos automobilis
 - stretcher — neštuvai
 - blood — kraujas
 - pain — skausmas
-- broken — sulaužytas
+- broken — lūžęs / sulaužytas
 - X-ray — rentgeno nuotrauka
 - surgery — operacija
-- scared — išsigandęs
+- scared — išsigandęs / išsigandusi
 - tears — ašaros
 - accident — avarija
-- hurt — sužeistas
+- hurt — sužeistas / sužeista
 - save — gelbėti
-- worried — susirūpinęs
+- worried — susirūpinęs / susirūpinusi
 
 ---
 
@@ -53,7 +53,7 @@ It was Friday night. The emergency room was always busy on Fridays, but tonight 
 
 "We need help NOW!" a nurse shouted.
 
-A young woman was on a stretcher. Her name was Sarah. She was only 28 years old. She was a teacher. She had two small children at home. Blood was everywhere - on her clothes, on her face, on the stretcher. She was screaming.
+An ambulance had brought in a young woman on a stretcher. Her name was Sarah. She was only 28 years old. She was a teacher. She had two small children at home. Blood was everywhere - on her clothes, on her face, on the stretcher. She was screaming.
 
 "My leg! Oh God, my leg!" Sarah was crying so hard. "Please help me! It hurts so much!"
 
@@ -93,7 +93,7 @@ After three terrible hours, the surgery was finished. They saved Sarah's leg. Wh
 
 "My leg?" she asked quietly. "Do I still have my leg?"
 
-Cristina smiled. "Yes. Your leg is fixed. You'll need to work hard in physical therapy (fizinė terapija), but you will walk again."
+Cristina smiled. "Yes. Your leg is fixed. You'll need to work hard in physical therapy (kineziterapija), but you will walk again."
 
 Sarah started crying - but this time, these were happy tears.
 
@@ -117,14 +117,14 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 
 1. How was Sarah injured?
 2. What did Sarah say about her children?
-3. What was Sarah's injury called?
+3. What did the X-rays show about Sarah's leg?
 4. Who performed the surgery on Sarah's leg?
 5. How long did the surgery last?
 6. What did Cristina tell Sarah after the surgery?
 7. How did Mark react when he arrived?
 8. What did Alex say to Meredith at the end of the night?
 9. What did Meredith think about working in the emergency room?
-10. Why did Meredith become a doctor?
+10. Why did Meredith feel wonderful after the surgery?
 
 ### Creative Questions
 
@@ -149,6 +149,38 @@ But tomorrow, there would be another emergency. Another life to save. Another ba
 5. How do you think Sarah's accident will change her family's life?
    - *Example answer:* "I think Sarah's family will be more careful when driving. They will be happy to be together. Sarah might be scared to drive again."
    - *Your answer:* "I think Sarah's family will _______________. They will _______________. Sarah might _______________."
+
+### Fun Activities / Smagios užduotys
+
+#### Activity 1: True or False? / Tiesa ar melas?
+
+Read each sentence and write **T** (true) or **F** (false).
+
+1. Sarah had two small children.
+2. The accident happened on Monday morning.
+3. Cristina and Meredith operated for three hours.
+4. Sarah lost her leg after the operation.
+5. Mark cried in the emergency room.
+6. Sarah's family visited her after the operation.
+
+#### Activity 2: Complete the Story / Užbaikite pasakojimą
+
+Use each word once: **ambulance, blood, children, stretcher, surgery, X-rays**.
+
+1. Sarah arrived at the hospital by _______________.
+2. The medical team moved her on a _______________.
+3. There was a lot of _______________ on her clothes.
+4. Cristina studied the _______________ of Sarah's leg.
+5. Sarah needed immediate _______________.
+6. She was very worried about her _______________.
+
+#### Activity 3: Reassure a Family Member / Nuraminkite šeimos narį
+
+Work with a partner. Student A is a doctor; Student B is a worried family member. Explain what is happening and give reassurance. Then change roles.
+
+- **Doctor:** "Sarah is alive, but she needs surgery now."
+- **Family member:** "Is she going to be OK?"
+- **Doctor:** "The team is helping her. We will tell you as soon as we know more."
 
 ### Grammar Practice
 

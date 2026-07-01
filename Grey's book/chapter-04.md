@@ -32,8 +32,9 @@ status: "published"
 
 - baby — kūdikis
 - pregnant — nėščia
-- birth/deliver — gimti/gimdyti
-- premature — priešlaikinis
+- birth — gimimas
+- deliver a baby — priimti kūdikį / padėti pagimdyti
+- premature baby — neišnešiotas kūdikis
 - tiny — mažytis
 - breathing — kvėpavimas
 - ultrasound — ultragarsas
@@ -49,7 +50,7 @@ status: "published"
 
 ### Story
 
-Dr. Addison Montgomery was a baby doctor - the best baby doctor at Seattle Grace Hospital. She helped mothers have babies. Usually, she helped when something was very wrong with the pregnancy.
+Dr. Addison Montgomery was a doctor who cared for mothers and babies - one of the best specialists at Seattle Grace Hospital. She helped mothers have babies, especially when something was wrong with a pregnancy.
 
 On Tuesday morning, a woman arrived at the hospital. Her name was Lisa Thompson. She was 32 years old and pregnant. But something was very wrong. Very, very wrong.
 
@@ -71,7 +72,7 @@ They took Lisa to the operating room. Tom couldn't come with them. He had to wai
 
 In the operating room, Addison began the surgery. She cut very carefully. "The baby is coming," she said. "The baby is so small. So, so small."
 
-The baby came out. It was a boy. But he was so tiny. So tiny that he looked like a little doll. His skin was almost see-through (permatomna). His eyes were still closed. And he wasn't breathing.
+The baby came out. It was a boy. But he was so tiny. So tiny that he looked like a little doll. His skin was almost see-through (permatoma). His eyes were still closed. And he wasn't breathing.
 
 "He's not breathing!" Meredith shouted. "The baby isn't breathing!"
 
@@ -137,7 +138,7 @@ As Meredith walked home that night, she thought about Lisa's miracle baby. She t
 
 1. What kind of doctor was Addison Montgomery?
 2. How long had Lisa been trying to have a baby?
-3. What was the baby's medical condition called?
+3. What was wrong with the baby before he was born?
 4. Where was the baby taken after birth?
 5. How long was the critical period for the baby?
 6. What happened on the third day?
@@ -255,10 +256,10 @@ Lisa wanted to have a __________ for five years. When the baby was born, he was 
 
 Choose the best word for each sentence: `just`, `already`, or `yet`. Use the correct verb form where needed.
 
-1. The baby has ______ started breathing on his own.
-2. Lisa has not held her baby ______ because he is still in special care.
-3. Addison has ______ told the family the good news.
-4. The doctors have ______ prepared the equipment for the next check.
+1. The baby started breathing only a few minutes ago. He has ______ started breathing on his own.
+2. The baby has not left the NICU ______ because he still needs special care.
+3. The family knows the good news because Addison has ______ told them.
+4. The equipment is ready earlier than expected. The doctors have ______ prepared it for the next check.
 5. Tom has not gone home ______ because he wants to stay near the baby.
 6. Addison ______ in neonatal care for many years. `(work)`
 

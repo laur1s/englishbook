@@ -1,9 +1,9 @@
 ---
-title: "Mission 4: Lost but Clear"
-ltTitle: "Misija 4: Pasiklydęs, bet aiškus"
+title: "Mission 5: Lost but Clear"
+ltTitle: "Misija 5: Pasiklydęs, bet aiškus"
 slug: "lost-but-clear"
 collection: "speaking-missions"
-order: 4
+order: 5
 contentType: "speaking-mission"
 level: "A2.1"
 grammarFocus:
@@ -44,7 +44,8 @@ steps:
       - "Excuse me, how do I get to...?"
       - "Go straight on."
       - "Turn left at..."
-      - "Is it far from here?"
+      - "Guide: Is that clear?"
+      - "Tourist: Is it far from here?"
   - kind: "compare"
     prompt: "Compare with this model: Excuse me, how do I get to the station? Go straight on for two blocks, then turn right at the bank. You'll see the station next to the bridge. Is it far? No, it's about five minutes on foot."
     ltPrompt: "Palyginkite savo dialogą su pavyzdžiu."
@@ -57,6 +58,8 @@ steps:
     support:
       - "1 = I mixed up the route."
       - "5 = I could guide someone clearly."
+      - "Accuracy: Did you use an imperative and at least one place phrase?"
+      - "Second attempt: give the route again with one checking question."
 ---
 
 This mission turns Unit 5 into spoken navigation. Good A2 directions are not long. They are short, ordered, and easy for the listener to follow.

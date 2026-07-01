@@ -66,9 +66,9 @@ status: "published"
 - Must is followed by the base form (infinitive without "to")
 
 **Examples:**
-- The lights are off. She must be asleep. (I'm sure)
+- I can hear her snoring. She must be asleep. (strong evidence)
 - He has a new car. He must be rich. (Logical conclusion)
-- You're tired. You must go to bed. (Strong advice)
+- I can hear Marta speaking in the next room. She must be here. (Strong evidence)
 
 ### Can't for Impossibility (Neįmanomumas)
 **Structure:** subject + can't + base verb
@@ -77,13 +77,13 @@ status: "published"
 - Can't = cannot
 
 **Examples:**
-- The lights are on. She can't be asleep. (Impossible)
+- I can hear her talking on the phone. She can't be asleep. (strong evidence)
 - He's only 5 years old. He can't drive a car. (Impossible)
-- You're not hungry. You can't be hungry after that big meal. (Impossible)
+- This key does not fit the lock. It can't be the right key. (Strong evidence)
 
 **Must vs Can't:**
-- The phone is ringing. He must be at home. (certain)
-- The phone is ringing. He can't be at home. (impossible)
+- I can see him through the window. He must be at home. (almost certain)
+- I have just seen him board a flight. He can't be at home. (almost impossible)
 
 ---
 
@@ -92,13 +92,12 @@ status: "published"
 ### May and Might (Galbūt)
 **Structure:** subject + may/might + base verb
 
-- Used to talk about future possibility
-- May and might have the same meaning
-- Might is slightly less certain than may
-- No difference in past or negative forms
+- Used to talk about present or future possibility
+- May and might are often interchangeable at this level
+- Might can sound slightly more tentative, but do not use a fixed percentage for either word
 
 **Examples:**
-- It may rain tomorrow. (50% chance)
+- It may rain tomorrow. (possible)
 - It might rain tomorrow. (same meaning)
 - She may come to the party. (possible)
 - He might call later. (possible)
@@ -118,7 +117,20 @@ status: "published"
 **Examples:**
 - It may not rain. (possible that it won't rain)
 - She might not come. (possible she won't come)
-- It cannot rain. (impossible)
+- It cannot be raining outside—the sky is clear and the ground is dry. (the speaker believes it is impossible)
+
+### Modal Form / Modalinių veiksmažodžių forma
+
+- Use a base verb after a modal: *She might come.* ✓, *She might to come.* ✗
+- Make a negative by adding **not**: *may not, might not, should not, must not*.
+- Put the modal before the subject in a question: *Should I call? May I come in?*
+- Do not add **do/does** with a modal: *Should I go?* ✓, *Do I should go?* ✗
+
+### Three Important Negative Meanings / Trys svarbios neigiamos reikšmės
+
+- **can't be** = the speaker thinks something is impossible: *He can't be at work; I can see him here.*
+- **mustn't** = something is forbidden: *You mustn't park here.*
+- **don't have to** = something is not necessary: *You don't have to come early.*
 
 ---
 
@@ -160,13 +172,13 @@ status: "published"
 Complete with must or can't. Explain why:
 
 1. She's only 3 years old. She _____ drive a car.
-2. The lights are on. Someone _____ be home.
+2. I can hear people talking inside. Someone _____ be home.
 3. He's been studying all night. He _____ be tired.
 4. It's raining heavily. The ground _____ be dry.
-5. She's smiling. She _____ be happy.
-6. He's 80 years old. He _____ run fast.
-7. The restaurant is full. It _____ be good.
-8. She's crying. She _____ be sad.
+5. She has just won the competition. She _____ be happy.
+6. This car has no engine. It _____ move.
+7. Every table is reserved and the reviews are excellent. The restaurant _____ be popular.
+8. This key does not fit the lock. It _____ be the right key.
 
 ---
 
@@ -208,12 +220,12 @@ Give advice using should or shouldn't:
 Complete with must, can't, may, might, should, or shouldn't:
 
 1. You look tired. You _____ go to bed early tonight.
-2. She's not answering her phone. She _____ be busy.
+2. She's not answering her phone. She _____ be busy, but I'm not sure.
 3. It _____ rain later. Take your umbrella.
 4. You _____ eat so much sugar. It's not healthy.
 5. He's only 10 years old. He _____ drive a car.
 6. I _____ call my parents. I haven't spoken to them for a week.
-7. The restaurant is empty. It _____ be very good.
+7. The sign says CLOSED. The restaurant _____ be open.
 8. She _____ come to the meeting. She's not sure yet.
 
 ---
@@ -272,8 +284,8 @@ Laura's husband thinks she should see a specialist. He says it might be somethin
 3. What does Anna think Laura should do? _____________________
 4. What might be wrong with Laura? _____________________
 5. Why can't Laura go to the doctor this week? _____________________
-6. What should Laura's husband do? _____________________
-7. Is Laura's health problem serious? _____________________
+6. What does Laura's husband think she should do? _____________________
+7. What does he say about her health problem? _____________________
 8. What shouldn't Laura do at night? _____________________
 
 ---
@@ -284,7 +296,7 @@ Laura's husband thinks she should see a specialist. He says it might be somethin
 Translate from Lithuanian to English:
 
 1. Tu turėtum valgyti daugiau daržovių. _____________________
-2. Ji negali būti namuose, nes šviesos išjungtos. _____________________
+2. Ji negali būti namuose, nes ką tik mačiau ją darbe. _____________________
 3. Rytoj gali lyti. _____________________
 4. Tu neturėtum rūkyti. _____________________
 5. Jis tikriausiai pavargęs po darbo. _____________________
@@ -297,7 +309,7 @@ Translate from Lithuanian to English:
 ## Exercise 9: Error Correction
 ## Pratimas 9: Klaidos taisymas
 
-Correct the mistakes:
+Correct the mistakes. Some sentences may already be correct:
 
 1. You must to see a doctor. _____________________
 2. She may can come tomorrow. _____________________
@@ -310,7 +322,7 @@ Correct the mistakes:
 
 ---
 
-## Exercise 8: Extended Vocabulary / Pratimas 8: Išplėstas žodynas
+## Exercise 10: Extended Vocabulary / Pratimas 10: Išplėstas žodynas
 
 ### Modal Verbs and Their Uses (Modaliniai veiksmažodžiai ir jų naudojimas)
 
@@ -319,7 +331,7 @@ Correct the mistakes:
 - May/Might - Possibility - Gali
 - Can - Ability/permission - Gali
 - Could - Past ability/polite request - Galėjai/galėčiau
-- Mustn't - Prohibition - Negali
+- Mustn't - Prohibition - Negalima / draudžiama
 - Can't - Impossibility - Negali
 
 ### Situations for Modals (Situacijos modalams)
@@ -332,15 +344,15 @@ Correct the mistakes:
 
 **Exercise:** Choose the correct modal verb.
 
-1. You _____ eat more vegetables. (should/must)
-2. _____ I use your phone? (May/Can)
-3. She _____ be at home now. (may/can't)
-4. You _____ smoke here. (mustn't/shouldn't)
+1. This is friendly health advice: You _____ eat more vegetables. (should/must)
+2. Choose the more formal option: _____ I use your phone? (May/Can)
+3. Her coat is here, but I am not sure where she is. She _____ be at home now. (may/can't)
+4. The sign says "No smoking." You _____ smoke here. (mustn't/shouldn't)
 5. He _____ swim when he was 5. (could/can)
 
 ---
 
-## Exercise 9: Extended Dialogues / Pratimas 9: Išplėsti dialogai
+## Exercise 11: Extended Dialogues / Pratimas 11: Išplėsti dialogai
 
 **Dialogue 1: Giving Advice**
 
@@ -361,7 +373,7 @@ B: Yes, you _____.
 A: Do you think it will rain?
 B: It might rain later. You should take an umbrella.
 A: Can I borrow yours?
-B: Yes, you may.
+B: Yes, of course.
 
 **Questions:**
 1. What should the person do for headache?
@@ -371,17 +383,17 @@ B: Yes, you may.
 
 ---
 
-## Exercise 10: Extended Reading Comprehension 2 / Pratimas 10: Skaitymo suvokimas 2
+## Exercise 12: Extended Reading Comprehension 2 / Pratimas 12: Skaitymo suvokimas 2
 
 **Read the text:**
 
 When traveling to England, there are some rules you should follow. You must drive on the left side. You shouldn't use your phone while driving. You may need an adapter for electricity.
 
-For health, you should drink plenty of water. You might get jet lag, so you should rest. You can't smoke in public places.
+For health, you should drink plenty of water. You might get jet lag, so you should rest. You can't smoke in enclosed public places.
 
 At work, you should be punctual. You may have meetings. You shouldn't interrupt others.
 
-In restaurants, you may tip 10-15%. You should try traditional food.
+In restaurants, you should check the bill to see whether service is included before you leave a tip. You should also try traditional food.
 
 **Answer the questions:**
 
@@ -392,7 +404,7 @@ In restaurants, you may tip 10-15%. You should try traditional food.
 5. What can't you do in public places?
 6. What should you be at work?
 7. What may you have at work?
-8. How much should you tip in restaurants?
+8. What should you check before you leave a tip?
 
 **True or False:**
 
@@ -400,11 +412,11 @@ In restaurants, you may tip 10-15%. You should try traditional food.
 2. You may use your phone while driving. _____
 3. You should drink coffee for health. _____
 4. You can smoke in public places. _____
-5. You shouldn't tip in restaurants. _____
+5. You should check whether service is included before leaving a tip. _____
 
 ---
 
-## Exercise 11: Writing Practice / Pratimas 11: Rašymo praktika
+## Exercise 13: Writing Practice / Pratimas 13: Rašymo praktika
 
 Write advice for a friend who is:
 
@@ -439,8 +451,8 @@ Discuss future possibilities: "It might..." "It could..."
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Politeness:** English uses "could" and "may" for polite requests, unlike Lithuanian directness.
-- **Advice Giving:** In English-speaking cultures, advice is often given indirectly with "should" rather than commands.
+- **Politeness:** **Could** and **may** can make a request sound more formal or less direct. The best choice depends on the relationship and situation.
+- **Advice Giving:** **Should** usually presents an idea as advice rather than as a command.
 - **Prohibition:** "Mustn't" is stronger than "shouldn't" for rules.
 
 ---
@@ -462,9 +474,27 @@ Discuss future possibilities: "It might..." "It could..."
 ## Cultural Notes / Kultūrinės pastabos
 
 - English speakers use "should" frequently to give polite advice
-- "May I...?" is more polite than "Can I...?" for requests
+- "May I...?" is more formal; "Can I...?" is common in everyday requests
 - In English, we often use modals to be indirect when giving advice
-- Lithuanians might be more direct; English speakers often soften advice with "should"
+- When speaking English, choose a direct command for an urgent instruction and **should/could** for ordinary advice
+
+---
+
+## Quick Retrieval and Can-do Check / Greitas kartojimas ir gebėjimų įsivertinimas
+
+Complete without looking back:
+
+1. You _____ see a dentist. (friendly advice)
+2. I can hear her voice, so she _____ be nearby. (strong deduction)
+3. I am not sure, but it _____ rain later. (possibility)
+4. You _____ use this door. It is forbidden.
+
+After checking your answers, rate each statement: **Not yet / Almost / Yes**.
+
+- I can use a base verb after a modal without **to**.
+- I can separate advice, possibility, deduction, prohibition, and lack of necessity.
+- I can explain what evidence supports **must** or **can't**.
+- I can give useful advice without making it sound like a command.
 
 ---
 

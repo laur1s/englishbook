@@ -32,7 +32,7 @@ status: "published"
 
 ### Experiences and Achievements (Patirtis ir pasiekimai)
 - visit a country - aplankyti šalį
-- travel abroad - keliauti užsienyje
+- travel abroad - keliauti į užsienį / keliauti užsienyje
 - learn a language - išmokti kalbą
 - get married - susituokti
 - have children - turėti vaikų
@@ -49,7 +49,7 @@ status: "published"
 - for - (laiko trukmė)
 - just - ką tik
 - already - jau
-- yet - dar (neiginiuose klausimuose)
+- yet - dar (neiginiuose sakiniuose ir klausimuose)
 - recently - neseniai
 - before - anksčiau
 
@@ -81,19 +81,34 @@ status: "published"
 - Have you visited Paris?
 - Has she visited Paris?
 
-### Past Participles (Būdvardinės formos)
+### Past Participles (Veiksmažodžio III formos / būtojo laiko dalyviai)
 | Base Form | Past Participle | Lithuanian |
 |-----------|----------------|------------|
+| be | been | būti |
 | visit | visited | lankyti |
 | travel | travelled | keliauti |
 | learn | learnt | mokytis |
 | see | seen | matyti |
 | go | gone | eiti |
+| come | come | ateiti |
+| do | done | daryti |
 | have | had | turėti |
 | eat | eaten | valgyti |
 | drink | drunk | gerti |
 | buy | bought | pirkti |
 | meet | met | susitikti |
+| write | written | rašyti |
+| swim | swum | plaukti |
+
+### Been or Gone? / Been ar gone?
+
+- **has/have been to** = someone visited a place and returned: *I have been to London twice.*
+- **has/have gone to** = someone went there and is still there or travelling there: *Marta has gone to London. She is not at home.*
+
+### Word Order with just, already, and yet / Žodžių tvarka
+
+- **have/has + just/already + past participle:** *She has just arrived. We have already eaten.*
+- **yet** normally comes at the end of a negative sentence or question: *I haven't finished yet. Have you finished yet?*
 
 ---
 
@@ -101,7 +116,7 @@ status: "published"
 
 ### When to Use Present Perfect
 1. **Life experiences:** I've been to London. (I have the experience)
-2. **Unfinished time periods:** I've seen that film. (at some point in my life)
+2. **Unfinished time periods:** I've seen Marta twice this week. (this week is not finished)
 3. **With time expressions:** ever, never, since, for, just, already, yet
 
 ### When to Use Past Simple
@@ -115,7 +130,7 @@ status: "published"
 
 **Examples:**
 - I've lost my keys. (They're still lost now)
-- I lost my keys yesterday. (I found them or don't care about them now)
+- I lost my keys yesterday. (The action happened at a finished past time; this sentence does not tell us whether the keys are still lost.)
 
 ---
 
@@ -124,7 +139,7 @@ status: "published"
 
 1. I _____ (visit) Paris twice.
 2. She _____ (not/finish) her homework yet.
-3. They _____ (buy) a new car last month.
+3. They _____ (buy) a new car recently.
 4. We _____ (not/see) that movie.
 5. He _____ (live) in Vilnius for 10 years.
 6. _____ you _____ (ever/try) Lithuanian food?
@@ -167,8 +182,8 @@ A: Hi! Have you ever _____ (travel) abroad?
 B: Yes, I _____ (visit) France and Spain. I _____ (go) to Paris last summer.
 A: Really? What _____ you _____ (do) there?
 B: I _____ (see) the Eiffel Tower and _____ (eat) delicious food.
-A: Sounds amazing! I _____ (never/be) to Europe. Where _____ you _____ (go) next?
-B: I _____ (already/book) tickets to Italy. I _____ (not/decide) when yet.
+A: Sounds amazing! I _____ (never/be) to Europe. _____ you _____ (plan) your next trip?
+B: Yes. I _____ (already/book) tickets to Italy, but I _____ (not/decide) what to do there yet.
 
 ---
 
@@ -193,7 +208,7 @@ Translate from Lithuanian to English:
 
 **Read the text:**
 
-My name is Tomas and I'm 32 years old. I have lived in Vilnius since I was born. I have studied English for 8 years and I have visited 15 countries. I have never been to Asia, but I have travelled to many European countries. I have seen the Eiffel Tower in Paris and I have eaten pizza in Italy. Last year, I have started a new job as a teacher. I have already taught 50 students this year. I have not married yet, but I have had three serious relationships. I have bought my first car last month. I have just come back from a trip to London.
+My name is Tomas and I'm 32 years old. I have lived in Vilnius since I was born. I have studied English for 8 years and I have visited 15 countries. I have never been to Asia, but I have travelled to many European countries. I have seen the Eiffel Tower in Paris and I have eaten pizza in Italy. Last year, I started a new job as a teacher. I have already taught 50 students this year. I haven't got married yet, but I have had three serious relationships. I bought my first car last month. I have just come back from a trip to London.
 
 **Answer the questions:**
 
@@ -201,8 +216,8 @@ My name is Tomas and I'm 32 years old. I have lived in Vilnius since I was born.
 2. How many countries has he visited? _____________________
 3. Has he ever been to Asia? _____________________
 4. What has he seen in Paris? _____________________
-5. What has he started last year? _____________________
-6. Has he married? _____________________
+5. What did he start last year? _____________________
+6. Has he got married yet? _____________________
 7. When did he buy his car? _____________________
 8. Where has he just come back from? _____________________
 
@@ -232,7 +247,7 @@ Correct the mistakes in these sentences:
 - Learn a skill - Išmokti įgūdžio
 - Meet famous people - Susitikti su žinomais žmonėmis
 - Win a prize - Laimėti prizą
-- Break a record - Sulaužyti rekordą
+- Break a record - Sumušti rekordą
 - Start a hobby - Pradėti pomėgį
 - Change career - Pakeisti karjerą
 - Volunteer - Savanoriauti
@@ -252,7 +267,7 @@ Correct the mistakes in these sentences:
 1. I have _____ been to London. (never)
 2. She has _____ finished her homework. (just)
 3. Have you _____ seen that movie? (ever)
-4. We haven't eaten _____ lunch. (yet)
+4. We haven't eaten lunch _____. (yet)
 5. He has lived here _____ 2010. (since)
 
 ---
@@ -269,22 +284,22 @@ B: I visited museums and ate delicious food.
 **Complete the dialogue:**
 
 A: _____ you _____ ridden a horse?
-B: No, I _____ never _____.
-A: I _____ once when I was young.
+B: No, I _____ never _____ one.
+A: I _____ one once when I was young.
 B: That sounds fun!
 
 **Dialogue 2: Life Achievements**
 
 A: What have you achieved in life?
-B: I've graduated from university and got a good job.
+B: I've graduated from university and found a good job.
 A: Have you won any awards?
 B: Yes, I won a prize for best student.
 
 **Questions:**
-1. What countries has the first person visited?
-2. Has the second person ridden a horse?
-3. What has the second person achieved?
-4. Has the second person won awards?
+1. What countries has speaker B in Dialogue 1 visited?
+2. Has speaker B in the horse dialogue ridden a horse?
+3. What has speaker B in Dialogue 2 achieved?
+4. Has speaker B in Dialogue 2 won an award?
 
 ---
 
@@ -292,7 +307,7 @@ B: Yes, I won a prize for best student.
 
 **Read the text:**
 
-Marius is 30 years old. He has lived in many places. He has been to 15 countries. He has climbed mountains in the Alps and swam in the Mediterranean Sea. He has learned three languages: English, French, and Spanish.
+Marius is 30 years old. He has lived in many places. He has been to 15 countries. He has climbed mountains in the Alps and swum in the Mediterranean Sea. He has learned three languages: English, French, and Spanish.
 
 Marius has never broken a bone, but he has had many adventures. He has ridden a camel in the desert and skied in the mountains. He has met interesting people from different cultures.
 
@@ -354,7 +369,7 @@ Draw a timeline of your life achievements and experiences.
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
 - **Conversation Starters:** "Have you ever...?" is very common in English to break the ice and find common ground.
-- **Bragging Culture:** In some cultures, sharing achievements is seen as bragging, but in English-speaking countries, it's normal to share positive experiences.
+- **Sharing Achievements:** How comfortable people feel discussing achievements varies by person and situation. In friendly English conversation, a short positive experience followed by a question can keep the exchange balanced.
 - **Life Stories:** English speakers often tell stories using Present Perfect for background experiences, then Past Simple for specific events.
 
 ---
@@ -378,7 +393,25 @@ Draw a timeline of your life achievements and experiences.
 - In English conversations, people often share life experiences using Present Perfect
 - "Have you ever...?" is a common way to start conversations with strangers
 - Present Perfect is used for achievements and experiences that are part of your identity
-- Lithuanians might prefer Past Simple for completed actions, but English speakers use Present Perfect for experiences
+- Lithuanian does not mark this contrast in the same way, so check whether English needs an unspecified experience (Present Perfect) or a finished past time (Past Simple)
+
+---
+
+## Quick Retrieval and Can-do Check / Greitas kartojimas ir gebėjimų įsivertinimas
+
+Complete without looking back:
+
+1. I _____ never _____ (be) to Scotland.
+2. We _____ (visit) Riga last year.
+3. She has lived here _____ 2022.
+4. Have they finished their project _____?
+
+After checking your answers, rate each statement: **Not yet / Almost / Yes**.
+
+- I can form positive, negative, and question forms of the Present Perfect.
+- I can use **since**, **for**, **just**, **already**, and **yet** in the right position.
+- I can choose Present Perfect for an experience and Past Simple for a finished past time.
+- I can ask a follow-up question and add a Past Simple detail when speaking about an experience.
 
 ---
 

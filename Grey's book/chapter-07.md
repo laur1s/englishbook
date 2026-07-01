@@ -33,8 +33,8 @@ status: "published"
 - hurricane-force winds — uragano stiprumo vėjai
 - scaffolding — pastoliai
 - hypothermia — hipotermija
-- prioritize — suteikti prioritetą
-- brachial artery — peties arterija
+- prioritize — nustatyti prioritetus
+- brachial artery — žasto arterija
 - severed — perpjauta
 - backup generators — atsarginiai generatoriai
 - flashlight — žibintuvėlis
@@ -108,7 +108,7 @@ As cleanup crews repaired the damage, Meredith reflected on the night's events. 
 
 Complete the summary using the Word Bank:
 
-The hospital used backup __________ when the main power failed. Cristina worked by __________ during surgery. One patient had severe __________ after being trapped in flooding. The city was __________, but the team still had to __________ the most urgent cases.
+The hospital used backup __________ when the main power failed. Cristina worked by __________ during surgery. A mother and daughter had severe __________ after their car left the road. An elderly woman's basement was __________, but the team still had to __________ the most urgent cases.
 
 Word Bank: generators, flashlight, hypothermia, flooded, prioritize
 
@@ -131,5 +131,5 @@ Complete the sentences with `can` or `can't`:
 2. The hospital ___ help every patient at once, so the team must prioritize.
 3. The doctors ___ work by flashlight when they have to.
 4. The main power ___ run the whole building during the storm.
-5. ___ the trauma room for the injured worker. (Take)
-6. ___ with the frightened child until help arrives. (Stay)
+5. The team ___ take every patient into surgery immediately.
+6. A nurse ___ stay with the frightened child until help arrives.

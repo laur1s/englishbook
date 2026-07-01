@@ -1,73 +1,39 @@
-# English A2 Book Progress Tracker
+# English A2 Book Maintenance Guide
 
-## Project Overview
+## Project scope
 
-Complete A2 level English learning book for Lithuanian speakers, structured into A2.1 (units 1-6) and A2.2 (units 7-12).
+English learning library for Lithuanian speakers with:
 
-## Current Status
+- A2.1 Units 1–6
+- A2.2 Units 7–12
+- Grey's Book reading track
+- Speaking Lab missions
+- A2 and Grey's Book answer keys
+- Grammar and vocabulary references
+- Astro learner website
 
-- ✅ A2.1 Units 1-6: Completed and expanded with additional exercises, speaking activities, and cultural notes
-- ✅ A2.2 Units 7-12: Completed and expanded with additional exercises, speaking activities, and cultural notes
-- ✅ Answer Keys (A2.1 & A2.2): All units have detailed answer keys
-- ✅ Grammar Reference: Complete reference guide for A2 level
-- ✅ Vocabulary Lists: Comprehensive topic-based vocabulary lists
+## Editorial requirements
 
-## Project Complete! 🎉
+- Keep learner instructions and model language at CEFR A2 unless a later form is clearly labelled.
+- Use natural Lithuanian support; avoid literal translations that would teach an error.
+- Do not force one answer when context permits several. Add context or mark alternatives as valid.
+- Every fixed-answer exercise needs a matching answer-key entry.
+- Every open writing or speaking task needs a model, sentence starter, or success checklist.
+- Prefer qualified usage notes over rules containing “always” or “never.”
+- Preserve the grammar progression from Units 1–12.
 
-The full A2 level English learning book for Lithuanian speakers is now complete and expanded! All units include additional exercises, dialogues, reading comprehension, writing practice, speaking activities, and cultural notes for comprehensive learning.
+## Quality gates
 
-## Completed Units Summary
+Before describing the project as release-ready, run:
 
-### ✅ Unit 7: Present Perfect Introduction
+1. `pnpm audit:content`
+2. `pnpm test`
+3. `pnpm check`
+4. `pnpm build`
+5. Browser smoke tests for home, collection filters, one lesson, one answer deep link, and one speaking mission on desktop and mobile.
 
-- Present Perfect formation and usage
-- Contrast with Past Simple
-- Life experiences and time expressions
+The Markdown course is the source of truth. The site must not display empty lesson panels, stale answers, invalid translations, or draft content.
 
-### ✅ Unit 8: Comparatives and Superlatives
+## Publishing status
 
-- Comparative and superlative adjective formation
-- Comparison structures and usage
-- As...as constructions
-
-### ✅ Unit 9: Modal Verbs
-
-- Modal verbs for deductions (must/can't)
-- Modal verbs for possibility (may/might)
-- Modal verbs for advice (should/shouldn't)
-
-### ✅ Unit 10: Present Tenses Contrast
-
-- Present Simple vs Present Continuous vs Present Perfect
-- Stative vs dynamic verbs
-- Time expressions and appropriate usage
-
-### ✅ Unit 11: Past Continuous
-
-- Past Continuous formation and usage
-- Contrast with Past Simple
-- Interrupted actions and background events
-
-### ✅ Unit 12: Review and Consolidation
-
-- Comprehensive review of all A2 grammar
-- Mixed structure practice
-- Final assessment and B1 preparation
-
-## Quality Assurance Completed
-
-- ✅ All content reviewed for consistency
-- ✅ Answer keys cross-checked with exercises
-- ✅ Lithuanian translations verified for accuracy
-- ✅ Exercises tested for appropriate difficulty level
-- ✅ Cultural notes added where relevant
-
-## Publishing Ready
-
-- ✅ Comprehensive table of contents (in README)
-- ✅ Complete methodology and structure
-- ✅ Professional formatting throughout
-- ✅ Digital version ready
-- ✅ Print-ready format
-
----
+The complete A2 learning sequence is present and usable. It remains an actively maintained digital course: answer alignment, language accuracy, accessibility, and rendered mobile behaviour must pass the gates above after every material change. Do not call it print-ready unless a separate print artifact and print-layout review have been completed.

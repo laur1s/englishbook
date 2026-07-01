@@ -37,15 +37,15 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
   <div class="mission-progress-strip">
     <div>
       <span>Status</span>
-      <strong data-progress-status>Not completed yet</strong>
+      <strong data-progress-status aria-live="polite">Not completed yet</strong>
     </div>
     <div>
       <span>Last confidence</span>
-      <strong data-progress-confidence>Not rated</strong>
+      <strong data-progress-confidence aria-live="polite">Not rated</strong>
     </div>
     <div>
       <span>Last played</span>
-      <strong data-progress-played>Never</strong>
+      <strong data-progress-played aria-live="polite">Never</strong>
     </div>
   </div>
 
@@ -71,7 +71,7 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
         </div>
 
         <p class="mission-step-prompt">{step.prompt}</p>
-        {step.ltPrompt && <p class="mission-step-translation lt-text">{step.ltPrompt}</p>}
+        {step.ltPrompt && <p class="mission-step-translation lt-text" lang="lt">{step.ltPrompt}</p>}
 
         {step.support?.length ? (
           <ul class="mission-support-list">
@@ -85,16 +85,25 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
             <button type="button" class="secondary-button" data-start-timer hidden>
               Start timer
             </button>
-            <p class="mission-timer-status" data-timer-status hidden>Timer ready.</p>
+            <p class="mission-timer-status" data-timer-status aria-live="polite" hidden>Timer ready.</p>
           </div>
         ) : null}
 
         {step.kind === "reflect" ? (
           <div class="mission-reflect">
+            <fieldset class="mission-self-check">
+              <legend>Quick accuracy and fluency check</legend>
+              <label><input type="checkbox" /> I used the target grammar at least twice.</label>
+              <label><input type="checkbox" /> I spoke in full phrases without reading every word.</label>
+              <label><input type="checkbox" /> I noticed and corrected at least one mistake.</label>
+            </fieldset>
+            <p class="mission-time-note">
+              Second-attempt goal: repeat the hardest step once, with one clearer sentence and fewer pauses.
+            </p>
             <p class="mission-time-note">Rate the run: 1 = very hard, 5 = smooth and natural.</p>
             <div class="confidence-row" data-confidence-row hidden>
               {[1, 2, 3, 4, 5].map((score) => (
-                <button type="button" class="confidence-button" data-confidence={String(score)} aria-pressed="false">
+                <button type="button" class="confidence-button" data-confidence={String(score)} aria-label={`Confidence ${score} out of 5`} aria-pressed="false">
                   {score}
                 </button>
               ))}
@@ -133,7 +142,7 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       }
 
       const parsed = JSON.parse(raw);
-      return parsed && typeof parsed === "object" ? parsed : {};
+      return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
     } catch {
       return {};
     }
@@ -189,6 +198,32 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
     let timerId = null;
     let progress = readSpeakingProgress();
 
+    const updateProgress = (updates) => {
+      const previousRecord = progress[slug] && typeof progress[slug] === "object"
+        ? progress[slug]
+        : {};
+
+      progress = {
+        ...progress,
+        [slug]: {
+          ...previousRecord,
+          ...updates,
+        },
+      };
+
+      writeSpeakingProgress(progress);
+      syncProgressUi();
+    };
+
+    const markStarted = () => {
+      const record = progress[slug];
+      const now = new Date().toISOString();
+      updateProgress({
+        startedAt: record?.startedAt || now,
+        lastPlayedAt: now,
+      });
+    };
+
     const clearTimer = () => {
       if (timerId !== null) {
         window.clearInterval(timerId);
@@ -223,7 +258,7 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
     const syncProgressUi = () => {
       const record = progress[slug];
       const lastConfidence = Number(record?.lastConfidence);
-      const hasConfidence = Number.isFinite(lastConfidence);
+      const hasConfidence = Number.isInteger(lastConfidence) && lastConfidence >= 1 && lastConfidence <= 5;
 
       if (statusValue) {
         statusValue.textContent = record?.completed ? "Completed" : "Not completed yet";
@@ -260,9 +295,8 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       });
 
       prevButton.disabled = activeIndex === 0;
-      nextButton.disabled = activeIndex === steps.length - 1;
-      nextButton.textContent =
-        activeIndex === steps.length - 1 ? "Finish on reflection" : "Next step";
+      nextButton.disabled = false;
+      nextButton.textContent = activeIndex === steps.length - 1 ? "Finish mission" : "Next step";
     };
 
     controls.hidden = false;
@@ -272,11 +306,27 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
     }
 
     prevButton.addEventListener("click", () => {
+      markStarted();
       showStep(activeIndex - 1);
     });
 
     nextButton.addEventListener("click", () => {
-      showStep(activeIndex + 1);
+      if (activeIndex === steps.length - 1) {
+        const now = new Date().toISOString();
+        markStarted();
+        updateProgress({
+          completed: true,
+          completedAt: progress[slug]?.completedAt || now,
+          lastPlayedAt: now,
+        });
+        nextButton.textContent = "Mission completed";
+        nextButton.disabled = true;
+        return;
+      }
+
+      const nextIndex = activeIndex + 1;
+      markStarted();
+      showStep(nextIndex);
     });
 
     steps.forEach((step) => {
@@ -290,6 +340,7 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       }
 
       timerButton.addEventListener("click", () => {
+        markStarted();
         clearTimer();
         let remaining = seconds;
 
@@ -319,21 +370,18 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       button.addEventListener("click", () => {
         const confidence = Number(button.dataset.confidence);
 
-        if (!Number.isFinite(confidence)) {
+        if (!Number.isInteger(confidence) || confidence < 1 || confidence > 5) {
           return;
         }
 
-        progress = {
-          ...progress,
-          [slug]: {
-            completed: true,
-            lastConfidence: confidence,
-            lastPlayedAt: new Date().toISOString(),
-          },
-        };
-
-        writeSpeakingProgress(progress);
-        syncProgressUi();
+        const now = new Date().toISOString();
+        updateProgress({
+          completed: true,
+          completedAt: progress[slug]?.completedAt || now,
+          lastConfidence: confidence,
+          ratedAt: now,
+          lastPlayedAt: now,
+        });
       });
     });
 

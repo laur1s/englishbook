@@ -1,9 +1,9 @@
 ---
-title: "Mission 8: Advice or Maybe"
-ltTitle: "Misija 8: Patarimas ar galimybė"
+title: "Mission 9: Advice or Maybe"
+ltTitle: "Misija 9: Patarimas ar galimybė"
 slug: "advice-or-maybe"
 collection: "speaking-missions"
-order: 8
+order: 9
 contentType: "speaking-mission"
 level: "A2.2"
 grammarFocus:
@@ -27,7 +27,7 @@ steps:
     ltPrompt: "Pirmiausia nuspręskite reikšmę: patarimas, galimybė ar išvada, tada raskite klaidą."
     support:
       - "Wrong sentence: You must to sleep more."
-      - "Wrong sentence: She can't be at home. The lights are on and her car is outside."
+      - "Wrong sentence: She can't be at home. I can see her through the window."
   - kind: "prep"
     prompt: "Fix the modal verb and the logic."
     ltPrompt: "Ištaisykite modalinį veiksmažodį ir logiką."
@@ -55,6 +55,8 @@ steps:
     support:
       - "1 = I confuse the meanings."
       - "5 = I can choose the right modal quickly."
+      - "Accuracy: Did the modal match both the meaning and the evidence?"
+      - "Second attempt: make one advice sentence and one evidence-based deduction."
 ---
 
 This mission makes Unit 9 more tactical. The first step is not grammar form. The first step is meaning: am I advising, guessing, or making a strong conclusion from evidence?

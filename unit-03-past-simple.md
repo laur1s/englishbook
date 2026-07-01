@@ -43,14 +43,14 @@ status: "published"
 - in the past - praeityje
 
 ### Life Events (Gyvenimo įvykiai)
-- be born - gimti
+- be born - gimti (**I was born... - Aš gimiau...**)
 - grow up - augti, užaugti
-- start school - pradėti mokyklą
+- start school - pradėti lankyti mokyklą
 - finish school - baigti mokyklą
-- go to university - eiti į universitetą
+- go to university - studijuoti universitete / įstoti į universitetą
 - graduate - baigti studijas
 - get a job - gauti darbą
-- get married - vesti/tekėti
+- get married - susituokti (vesti - vyrui; ištekėti - moteriai)
 - have children - turėti vaikų
 - move to - persikelti į
 - travel to - keliauti į
@@ -90,7 +90,13 @@ status: "published"
 1. Most verbs: add **-ed** → work + ed = worked
 2. Verbs ending in -e: add **-d** → live + d = lived
 3. Verbs ending in consonant + y: **y → ied** → study → studied
-4. Verbs ending in one vowel + one consonant: **double consonant + ed** → stop → stopped
+4. In many one-syllable verbs ending in consonant + vowel + consonant, double the final consonant: **stop → stopped**, **plan → planned**. Do not double **w, x,** or **y**: **snowed, fixed, played**. In longer verbs, stress matters: **prefer → preferred**, but **visit → visited**.
+
+### Pronouncing **-ed**
+
+- /t/ after an unvoiced sound: **worked, watched**
+- /d/ after a voiced sound: **played, lived**
+- /ɪd/ after /t/ or /d/: **started, needed**
 
 ### Irregular Verbs (Netaisyklingi veiksmažodžiai)
 
@@ -112,7 +118,7 @@ status: "published"
 | eat | ate | valgė |
 | drink | drank | gėrė |
 | write | wrote | rašė |
-| read | read (same spelling!) | skaitė |
+| read | read (same spelling, past pronunciation /red/) | skaitė |
 | meet | met | sutiko |
 | leave | left | išvyko |
 | say | said | pasakė |
@@ -144,6 +150,17 @@ status: "published"
 | We | were |
 | You (plural) | were |
 | They | were |
+
+**Negative:** **was not/wasn't** or **were not/weren't**
+
+- I wasn't at home. - Manęs nebuvo namuose.
+- They weren't tired. - Jie nebuvo pavargę.
+
+**Questions:** **Was/Were + subject...?**
+
+- Was she at work? - Yes, she was. / No, she wasn't.
+- Were you at home? - Yes, I was. / No, I wasn't.
+- Where were they yesterday? - Kur jie buvo vakar?
 
 ---
 
@@ -284,7 +301,7 @@ My name is Jurgis. I was born in Šiauliai in 1990. I lived there with my family
 
 In 2008, I finished school. Then I went to university in Vilnius. I studied computer science. I graduated in 2012. After university, I got a job at a tech company. The work was interesting.
 
-In 2015, I met my wife, Laura. We got married in 2017. It was a beautiful wedding. We moved to Klaipėda because Laura got a new job there. In 2019, we had our first child, a daughter. We named her Emilija.
+In 2015, I met my wife, Laura. We got married in 2017. It was a beautiful wedding. We moved to Klaipėda because Laura got a new job there. In 2019, we had our daughter, Emilija. She is our only child.
 
 Last year, I changed my job. Now I work for an international company. I like my new job very much. We are happy in Klaipėda.
 
@@ -344,7 +361,7 @@ _____________________________________________
 3. _____________________ → They arrived **at 6 PM**.
 4. _____________________ → I bought **a book**.
 5. _____________________ → He left **because he was tired**.
-6. _____________________ → **My sister** called you.
+6. _____________________ → **My sister** called me.
 7. _____________________ → We stayed there for **two weeks**.
 8. _____________________ → The concert was **fantastic**.
 
@@ -375,7 +392,7 @@ Find and correct the mistakes:
 2. She didn't came to the party. _____________________
 3. Did you went to school? _____________________
 4. They was at home. _____________________
-5. He don't finish his work. _____________________
+5. He didn't finished his work yesterday. _____________________
 6. We buyed a new car. _____________________
 7. Did she liked the film? _____________________
 8. I didn't saw you. _____________________
@@ -412,7 +429,7 @@ Find and correct the mistakes:
 - Happy - Laimingas
 - Sad - Liūdnas
 - Angry - Piktas
-- Proud - Didžiuojasi
+- Proud - Besididžiuojantis/besididžiuojanti
 
 **Exercise:** Match the words with their Lithuanian translations.
 
@@ -427,22 +444,22 @@ Find and correct the mistakes:
 ## Exercise 12: Extended Dialogues / Pratimas 12: Išplėsti dialogai
 
 **Dialogue 1: Talking about Childhood**
-A: What _____ you _____ when you were a child?
-B: I _____ a lot of sports. I _____ football every day.
-C: _____ you _____ any hobbies?
-D: Yes, I _____ painting and drawing. I _____ many pictures.
+A: What _____ you _____ (**do**) when you were a child?
+B: I _____ (**play**) a lot of sports. I _____ (**play**) football every day.
+A: _____ you _____ (**have**) any hobbies?
+B: Yes, I _____ (**like**) painting and drawing. I _____ (**draw**) many pictures.
 
 **Complete the dialogue:**
-A: Where _____ you _____ on holiday last year?
-B: I _____ to Spain. It _____ amazing.
-A: What _____ you _____ there?
-B: I _____ the beach and _____ many photos. I _____ delicious food too.
+A: Where _____ you _____ (**go**) on holiday last year?
+B: I _____ (**go**) to Spain. It _____ (**be**) amazing.
+A: What _____ you _____ (**do**) there?
+B: I _____ (**visit**) the beach and _____ (**take**) many photos. I _____ (**eat**) delicious food too.
 
 **Dialogue 2: A Bad Day**
-A: What _____ wrong yesterday?
-B: I _____ up late and _____ my bus. Then I _____ my wallet at home.
-C: Oh no! What _____ you _____?
-D: I _____ back home to get it, but I _____ late for work.
+A: What _____ (**go**) wrong yesterday?
+B: I _____ (**wake**) up late and _____ (**miss**) my bus. Then I _____ (**leave**) my wallet at home.
+A: Oh no! What _____ you _____ (**do**)?
+B: I _____ (**go**) back home to get it, but I _____ (**be**) late for work.
 
 **Questions:**
 1. What happened to the person?
@@ -495,13 +512,13 @@ In pairs, tell your partner about three important events from your past. Ask fol
 Think of 10 things you did last week. Share them with the group without repeating.
 
 ### Activity 3: Role-Play - Time Travel
-Imagine you traveled back in time. Describe what you saw and did.
+Imagine you travelled back in time. Describe what you saw and did.
 
 ---
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
-- **Past vs Present:** English speakers often use Past Simple for completed actions, even recent ones. Lithuanian uses present for storytelling sometimes.
+- **Past Simple:** Use Past Simple for a completed action at a finished past time: **yesterday, last week, in 2020**. A recent action can still use Past Simple when its time is finished: **I called her ten minutes ago.**
 - **Irregular Verbs:** Many common verbs are irregular in English. Learning them by heart is essential.
 - **Time Expressions:** Words like "ago" are used differently than in Lithuanian. "Two years ago" = "prieš dvejus metus".
 
@@ -594,8 +611,25 @@ Imagine you traveled back in time. Describe what you saw and did.
 4. All subjects use the same past form (except was/were)
 
 **Lithuanian vs English:**
-- Lithuanian has more past tenses, English Past Simple is simpler
+- Lithuanian and English divide past meanings differently: Lithuanian has a past frequentative form, while English uses progressive and perfect forms for other contrasts
 - Lithuanian verbs change more, English regular verbs just add -ed
+
+---
+
+## Cumulative Review / Kaupiamasis kartojimas
+
+1. Complete: I usually _____ at 7, but yesterday I _____ at 8. (**get up**)
+2. Complete: We _____ at home last night. (**be**)
+3. Make this negative: She bought a ticket. → _____________________
+4. Make a question: They went to Klaipėda. → Where _____________________?
+5. Complete: He never _____ coffee, but yesterday he _____ two cups. (**drink**)
+
+### Can-Do Self-Check / Įsivertinimas
+
+- [ ] I can describe a completed event in the past.
+- [ ] I can use common regular and irregular Past Simple forms.
+- [ ] I can make Past Simple negatives and questions with **did**.
+- [ ] I can use **was/were** in statements, negatives, and questions.
 
 ---
 

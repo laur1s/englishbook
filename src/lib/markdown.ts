@@ -1,6 +1,6 @@
 import { marked } from "marked";
 
-import { REVEAL_SECTION_PATTERN } from "./constants";
+import { REVEAL_SECTION_PATTERN } from "./constants.ts";
 
 export type ParsedSection = {
   id: string;
@@ -46,7 +46,7 @@ const looksLithuanian = (value: string) =>
   /[ąčęėįšųūž]/i.test(value) || LITHUANIAN_HINTS.test(value);
 
 const wrapLithuanian = (value: string) =>
-  `<span class="lt-text">${value.trim()}</span>`;
+  `<span class="lt-text" lang="lt">${value.trim()}</span>`;
 
 const transformParentheticalGlosses = (line: string) =>
   line.replace(/\(([^)]+)\)/g, (full, inner) =>
@@ -54,7 +54,7 @@ const transformParentheticalGlosses = (line: string) =>
   );
 
 const transformSlashLabel = (text: string) => {
-  const slashIndex = text.indexOf(" / ");
+  const slashIndex = text.lastIndexOf(" / ");
 
   if (slashIndex === -1) {
     return text;
@@ -86,8 +86,7 @@ const transformLine = (line: string) => {
 
   if (headingMatch) {
     const [, prefix, text] = headingMatch;
-    const transformed = transformParentheticalGlosses(transformSlashLabel(text));
-    return looksLithuanian(text) ? `${prefix}${wrapLithuanian(text)}` : `${prefix}${transformed}`;
+    return `${prefix}${transformHeadingTitle(text)}`;
   }
 
   return transformParentheticalGlosses(
@@ -95,10 +94,40 @@ const transformLine = (line: string) => {
   );
 };
 
+const transformHeadingTitle = (title: string) => {
+  if (looksLithuanian(title)) {
+    const slashIndex = title.lastIndexOf(" / ");
+
+    if (slashIndex === -1) {
+      return wrapLithuanian(title);
+    }
+  }
+
+  return transformParentheticalGlosses(transformSlashLabel(title));
+};
+
+const getPrimaryHeadingTitle = (title: string) => {
+  const slashIndex = title.lastIndexOf(" / ");
+
+  if (slashIndex === -1 || !looksLithuanian(title.slice(slashIndex + 3))) {
+    return title;
+  }
+
+  return title.slice(0, slashIndex);
+};
+
+const wrapScrollableTables = (html: string) =>
+  html.replace(
+    /(<table(?:\s[^>]*)?>)([\s\S]*?<\/table>)/g,
+    '<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0">$1$2</div>',
+  );
+
 export const renderMarkdown = (markdown: string) =>
-  marked.parse(markdown.split("\n").map(transformLine).join("\n"), {
-    renderer: markdownRenderer,
-  }) as string;
+  wrapScrollableTables(
+    marked.parse(markdown.split("\n").map(transformLine).join("\n"), {
+      renderer: markdownRenderer,
+    }) as string,
+  );
 
 const stripLeadingTitleLines = (markdown: string, title: string, ltTitle: string) => {
   const lines = markdown.split("\n");
@@ -139,15 +168,32 @@ const splitSections = (markdown: string, level: number) => {
   const headingPrefix = "#".repeat(level);
   const headingPattern = new RegExp(`^${headingPrefix}\\s+(.+)$`);
 
+  const hasContent = (lines: string[]) => lines.some((line) => line.trim().length > 0);
+  const isBilingualHeadingPair = (englishTitle: string, lithuanianTitle: string) =>
+    !looksLithuanian(englishTitle) && looksLithuanian(lithuanianTitle);
+
+  const pushCurrentSection = () => {
+    if (!currentTitle || !hasContent(currentLines)) {
+      return;
+    }
+
+    sections.push({
+      title: currentTitle,
+      markdown: currentLines.join("\n").trim(),
+    });
+  };
+
   for (const line of lines) {
     const headingMatch = line.match(headingPattern);
 
     if (headingMatch) {
       if (currentTitle) {
-        sections.push({
-          title: currentTitle,
-          markdown: currentLines.join("\n").trim(),
-        });
+        if (!hasContent(currentLines) && isBilingualHeadingPair(currentTitle, headingMatch[1])) {
+          currentTitle = `${currentTitle} / ${headingMatch[1].trim()}`;
+          continue;
+        }
+
+        pushCurrentSection();
       }
 
       currentTitle = headingMatch[1].trim();
@@ -162,12 +208,7 @@ const splitSections = (markdown: string, level: number) => {
     }
   }
 
-  if (currentTitle) {
-    sections.push({
-      title: currentTitle,
-      markdown: currentLines.join("\n").trim(),
-    });
-  }
+  pushCurrentSection();
 
   return {
     introMarkdown: introLines.join("\n").trim(),
@@ -205,9 +246,9 @@ export const parseDocument = ({
     excerpt: getExcerpt(excerptSource),
     introHtml: introMarkdown ? renderMarkdown(introMarkdown) : "",
     sections: sections.map((section) => ({
-      id: slugify(stripMarkdown(section.title)),
+      id: slugify(stripMarkdown(getPrimaryHeadingTitle(section.title))),
       title: stripMarkdown(section.title),
-      titleHtml: transformLine(section.title),
+      titleHtml: transformHeadingTitle(section.title),
       html: renderMarkdown(section.markdown),
       collapsible: REVEAL_SECTION_PATTERN.test(section.title),
     })),

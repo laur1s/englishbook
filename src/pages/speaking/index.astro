@@ -25,7 +25,7 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
   <section class="collection-hero">
     <p class="eyebrow">Speaking-First Support Track</p>
     <h1>Speaking Lab</h1>
-    <p class="hero-subtitle lt-text">Trumpa kalbėjimo praktika A2 mokiniams</p>
+    <p class="hero-subtitle lt-text" lang="lt">Trumpa kalbėjimo praktika A2 mokiniams</p>
     <p class="collection-description">
       Use short rehearsal missions when you want to turn a grammar unit into real speech instead of
       another silent exercise.
@@ -39,22 +39,22 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
     </article>
     <article class="summary-chip">
       <span>Completed locally</span>
-      <strong data-speaking-completed>0</strong>
+      <strong data-speaking-completed aria-live="polite">0</strong>
     </article>
     <article class="summary-chip">
       <span>Average confidence</span>
-      <strong data-speaking-confidence>Not rated</strong>
+      <strong data-speaking-confidence aria-live="polite">Not rated</strong>
     </article>
     <article class="summary-chip">
       <span>Visible now</span>
-      <strong data-speaking-visible>{entries.length}</strong>
+      <strong data-speaking-visible aria-live="polite">{entries.length}</strong>
     </article>
   </section>
 
   <section class="speaking-filter-shell" data-speaking-root>
     <div class="speaking-filter-bar">
-      <div class="filter-group">
-        <p>Mission Type</p>
+      <fieldset class="filter-group">
+        <legend>Mission type</legend>
         <div class="chip-row">
           {availableMissionTypes.map((missionType) => (
             <button
@@ -63,15 +63,16 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
               data-speaking-filter-button
               data-filter-group="missionType"
               data-filter-value={missionType}
+              aria-pressed="false"
             >
               {MISSION_TYPE_LABELS[missionType]}
             </button>
           ))}
         </div>
-      </div>
+      </fieldset>
 
-      <div class="filter-group">
-        <p>Duration</p>
+      <fieldset class="filter-group">
+        <legend>Duration</legend>
         <div class="chip-row">
           {durations.map((minutes) => (
             <button
@@ -80,15 +81,16 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
               data-speaking-filter-button
               data-filter-group="duration"
               data-filter-value={String(minutes)}
+              aria-pressed="false"
             >
               {minutes} min
             </button>
           ))}
         </div>
-      </div>
+      </fieldset>
 
-      <div class="filter-group">
-        <p>Topics</p>
+      <fieldset class="filter-group">
+        <legend>Topics</legend>
         <div class="chip-row">
           {topics.map((topic) => (
             <button
@@ -97,11 +99,17 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
               data-speaking-filter-button
               data-filter-group="topic"
               data-filter-value={topic}
+              aria-pressed="false"
             >
               {topic}
             </button>
           ))}
         </div>
+      </fieldset>
+
+      <div class="filter-results-bar">
+        <p role="status" aria-live="polite">Use one or more filters to find a focused rehearsal.</p>
+        <button type="button" class="text-button" data-speaking-filter-clear hidden>Clear filters</button>
       </div>
     </div>
 
@@ -113,6 +121,10 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
         />
       ))}
     </div>
+
+    <p class="empty-state" data-speaking-empty role="status" hidden>
+      No speaking missions match these filters. Try clearing one or more choices.
+    </p>
   </section>
 
   <script is:inline define:vars={{ progressKey: SPEAKING_PROGRESS_KEY }}>
@@ -125,7 +137,7 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
         }
 
         const parsed = JSON.parse(raw);
-        return parsed && typeof parsed === "object" ? parsed : {};
+        return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
       } catch {
         return {};
       }
@@ -146,6 +158,8 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
       const completedValue = document.querySelector("[data-speaking-completed]");
       const confidenceValue = document.querySelector("[data-speaking-confidence]");
       const visibleValue = document.querySelector("[data-speaking-visible]");
+      const clearButton = root.querySelector("[data-speaking-filter-clear]");
+      const emptyState = root.querySelector("[data-speaking-empty]");
       const active = {
         missionType: new Set(),
         duration: new Set(),
@@ -166,14 +180,21 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
             completedCount += 1;
           }
 
-          if (Number.isFinite(Number(record?.lastConfidence))) {
-            confidenceScores.push(Number(record.lastConfidence));
+          const confidence = Number(record?.lastConfidence);
+          const hasValidConfidence = Number.isInteger(confidence) && confidence >= 1 && confidence <= 5;
+
+          if (hasValidConfidence) {
+            confidenceScores.push(confidence);
           }
 
           if (label) {
             label.textContent = record?.completed
-              ? `Done • ${record.lastConfidence}/5`
-              : "Not started";
+              ? hasValidConfidence
+                ? `Done • ${confidence}/5`
+                : "Completed"
+              : record?.startedAt
+                ? "In progress"
+                : "Not started";
           }
         });
 
@@ -210,6 +231,16 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
         if (visibleValue) {
           visibleValue.textContent = String(visibleCount);
         }
+
+        const activeCount = Object.values(active).reduce((count, values) => count + values.size, 0);
+
+        if (clearButton) {
+          clearButton.hidden = activeCount === 0;
+        }
+
+        if (emptyState) {
+          emptyState.hidden = visibleCount !== 0;
+        }
       };
 
       buttons.forEach((button) => {
@@ -224,13 +255,24 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
           if (active[group].has(value)) {
             active[group].delete(value);
             button.classList.remove("selected");
+            button.setAttribute("aria-pressed", "false");
           } else {
             active[group].add(value);
             button.classList.add("selected");
+            button.setAttribute("aria-pressed", "true");
           }
 
           applyFilters();
         });
+      });
+
+      clearButton?.addEventListener("click", () => {
+        Object.values(active).forEach((values) => values.clear());
+        buttons.forEach((button) => {
+          button.classList.remove("selected");
+          button.setAttribute("aria-pressed", "false");
+        });
+        applyFilters();
       });
 
       syncProgress();

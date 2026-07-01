@@ -45,7 +45,7 @@ steps:
       - "Then I..."
       - "In the evening, I..."
   - kind: "compare"
-    prompt: "Check this model: I usually wake up at seven and I make coffee straight away. I start work at nine, and I often have lunch with my team. In the evening, I cook dinner, watch something online, and go to bed around eleven."
+    prompt: "Check this model: I usually wake up at seven and make coffee straight away. I start work at nine, and I often have lunch with my team. In the afternoon, I answer emails and plan the next day. I finish work at about five. In the evening, I cook dinner, watch something online, and sometimes call my sister. I usually go to bed around eleven."
     ltPrompt: "Palyginkite su pavyzdžiu ir pažiūrėkite, ar jūsų pasakojimas buvo aiškus."
     support:
       - "Did you use usually, often, or always naturally?"
@@ -56,6 +56,8 @@ steps:
     support:
       - "1 = I stopped many times."
       - "5 = I could describe my routine smoothly."
+      - "Accuracy: Did he/she/it verbs have -s where needed?"
+      - "Second attempt: use one frequency adverb and two time links without reading."
 ---
 
 This mission makes Unit 2 more conversational. A2 learners often know the grammar, but they freeze when they need to tell a simple story about everyday life without writing first.

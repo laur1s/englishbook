@@ -1,9 +1,9 @@
 ---
-title: "Mission 6: Life Experience Sprint"
-ltTitle: "Misija 6: Gyvenimo patirtys"
+title: "Mission 7: Life Experience Sprint"
+ltTitle: "Misija 7: Gyvenimo patirtys"
 slug: "life-experience-sprint"
 collection: "speaking-missions"
-order: 6
+order: 7
 contentType: "speaking-mission"
 level: "A2.2"
 grammarFocus:
@@ -45,7 +45,7 @@ steps:
       - "I've never tried..."
       - "I did that in..."
   - kind: "compare"
-    prompt: "Check this model: I've visited Poland and Germany, and I've worked in two different offices. I've also learned basic Spanish, but I've never tried scuba diving. I went to Berlin in 2023, and that trip gave me more confidence."
+    prompt: "Check this model: I've visited Poland and Germany, and I've worked in two different offices. I've also learned basic Spanish, but I've never tried scuba diving. My favourite experience was a trip to Berlin in 2023. I travelled there with two friends, visited several museums, and spoke English every day. That trip gave me more confidence, and I've used English more often since then."
     ltPrompt: "Palyginkite savo pasakojimą su pavyzdžiu."
     support:
       - "Did you avoid specific past time with present perfect?"
@@ -56,6 +56,8 @@ steps:
     support:
       - "1 = I mixed present perfect and past simple."
       - "5 = I could separate them clearly."
+      - "Accuracy: Did specific finished times use Past Simple?"
+      - "Second attempt: add one follow-up detail with when, where, or who."
 ---
 
 This mission pushes Unit 7 into real speech. The learner has to manage meaning first and grammar second: what is my experience, and when do I need a finished past detail?

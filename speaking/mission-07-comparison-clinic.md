@@ -1,9 +1,9 @@
 ---
-title: "Mission 7: Comparison Clinic"
-ltTitle: "Misija 7: Palyginimų praktika"
+title: "Mission 8: Comparison Clinic"
+ltTitle: "Misija 8: Palyginimų praktika"
 slug: "comparison-clinic"
 collection: "speaking-missions"
-order: 7
+order: 8
 contentType: "speaking-mission"
 level: "A2.2"
 grammarFocus:
@@ -42,7 +42,7 @@ steps:
       - "Vilnius is smaller than Warsaw."
       - "My brother is the tallest in our family."
   - kind: "compare"
-    prompt: "Check the explanation: short adjectives usually take -er and -est, while more is common with longer adjectives. Superlatives need the before the adjective."
+    prompt: "Check the explanation: short adjectives usually take -er and -est, while more is common with longer adjectives. In these adjective patterns, superlatives normally use the before the adjective."
     ltPrompt: "Palyginkite su taisykle ir patikrinkite, ar tikrai ištaisėte abu modelius."
     support:
       - "Can you make one more comparison with your own city?"
@@ -53,6 +53,8 @@ steps:
     support:
       - "1 = I still guess the forms."
       - "5 = I can hear the error quickly."
+      - "Accuracy: Did you use than only with the comparative sentence?"
+      - "Second attempt: make one new comparison and one new superlative without support."
 ---
 
 This mission trains your ear. Many learners can fill in comparative tables, but they do not notice mistakes quickly when they need to speak.
@@ -68,4 +70,4 @@ This mission trains your ear. Many learners can fill in comparative tables, but 
 
 - Compare two restaurants, cities, or phones.
 - Make one sentence with as...as.
-- Record the corrected sentence later if you want extra repetition.
+- Repeat the corrected sentences later if you want extra practice.

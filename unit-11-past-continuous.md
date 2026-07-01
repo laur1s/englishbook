@@ -30,7 +30,7 @@ status: "published"
 
 ## Part 1: Essential Vocabulary / Pagrindinis žodynas
 
-### Past Time Expressions (Būtojo laiko išraiškos)
+### General Past Time Expressions (Bendrosios būtojo laiko išraiškos)
 - yesterday - vakar
 - last night/week/month/year - praėjusią naktį/savaitę/mėnesį/metus
 - when - kai
@@ -39,6 +39,8 @@ status: "published"
 - all day yesterday - visą vakardieną
 - from 2 to 4 PM - nuo 2 iki 4 valandos
 - in 2010 - 2010 metais
+
+These expressions do not choose a tense by themselves. Use Past Continuous only when the action was in progress at the reference time.
 
 ### Actions and Background (Veiksmai ir fonas)
 - walk, run, drive - eiti, bėgti, vairuoti
@@ -102,7 +104,7 @@ status: "published"
 
 ### Past Continuous (Ongoing Actions)
 - Used for actions in progress at a specific time in the past
-- Focus on the duration of the action
+- Shows that the action was in progress around a past reference time
 - Often with time expressions: at 5 PM, while, when, all day
 
 **Examples:**
@@ -119,7 +121,7 @@ status: "published"
    - It was raining while we were playing football.
    - The sun was shining when I woke up.
 
-3. **Specific time:** Past Continuous
+3. **Action in progress at a specific time:** Past Continuous
    - At 5 PM yesterday, I was working.
    - Last night at 10 PM, she was sleeping.
 
@@ -203,7 +205,7 @@ Use Past Continuous to describe background and Past Simple for the main event:
 ## Exercise 6: Story Completion
 ## Pratimas 6: Istorijos užbaigimas
 
-Complete the story with Past Simple or Past Continuous:
+Complete the story with Past Simple or Past Continuous only:
 
 Last night, I _____ (watch) TV when suddenly the phone _____ (ring). I _____ (pick) it up and _____ (hear) my friend's voice. She _____ (sound) excited. She _____ (say) that she _____ (win) the lottery!
 
@@ -276,11 +278,11 @@ Correct the mistakes:
 
 1. I was ate dinner when you called. _____________________
 2. She was study English last night. _____________________
-3. They were playing football when it rained. _____________________
-4. He was worked yesterday. _____________________
+3. They were play football when it started to rain. _____________________
+4. At 3 PM yesterday, he was worked. _____________________
 5. We were watching TV when the phone ringed. _____________________
 6. You were slept when I arrived. _____________________
-7. It was raining while we played tennis. _____________________
+7. It was rain while we were playing tennis. _____________________
 8. She was wrote a letter when the door bell rang. _____________________
 
 ---
@@ -288,7 +290,7 @@ Correct the mistakes:
 ## Useful Phrases / Naudingi posakiai
 
 - What were you doing...? - Ką tu darei...?
-- I was just... - Aš ką tik...
+- I was just... - Aš kaip tik... / Aš tik...
 - While I was... - Kol aš...
 - When suddenly... - Kai staiga...
 - All day/night/week... - Visą dieną/naktį/savaitę...
@@ -298,7 +300,7 @@ Correct the mistakes:
 
 ---
 
-## Exercise 8: Extended Vocabulary / Pratimas 8: Išplėstas žodynas
+## Exercise 11: Extended Vocabulary / Pratimas 11: Išplėstas žodynas
 
 ### Past Continuous Time Expressions (Būtojo tęstinio laiko išraiškos)
 
@@ -323,7 +325,7 @@ Correct the mistakes:
 
 ---
 
-## Exercise 9: Extended Dialogues / Pratimas 9: Išplėsti dialogai
+## Exercise 12: Extended Dialogues / Pratimas 12: Išplėsti dialogai
 
 **Dialogue 1: Interrupted Actions**
 
@@ -337,7 +339,7 @@ B: Yes, I was eating when it rang.
 A: Where were you yesterday at 3 PM?
 B: I _____ (shop) in the city center.
 A: What happened?
-B: I _____ (buy) clothes when I met an old friend.
+B: I _____ (shop) for clothes when I met an old friend.
 
 **Dialogue 2: Background Events**
 
@@ -347,13 +349,13 @@ A: Were you enjoying it?
 B: Yes, everyone was having fun.
 
 **Questions:**
-1. What was the person doing when called?
+1. What was the person doing when the phone rang?
 2. What was happening when the friend arrived?
 3. Was everyone having fun?
 
 ---
 
-## Exercise 10: Extended Reading Comprehension 2 / Pratimas 10: Skaitymo suvokimas 2
+## Exercise 13: Extended Reading Comprehension 2 / Pratimas 13: Skaitymo suvokimas 2
 
 **Read the text:**
 
@@ -381,7 +383,7 @@ She was walking home from work when it happened. She was listening to music and 
 
 ---
 
-## Exercise 11: Writing Practice / Pratimas 11: Rašymo praktika
+## Exercise 14: Writing Practice / Pratimas 14: Rašymo praktika
 
 Write about an interrupted event from your past.
 
@@ -417,7 +419,7 @@ Describe two things happening at the same time.
 
 - **Storytelling:** Past Continuous sets the scene, Past Simple advances the plot.
 - **Emphasis:** It shows actions were in progress, not completed.
-- **Lithuanian Difference:** Lithuanian often uses present for vivid past narration.
+- **Lithuanian Difference:** Lithuanian often leaves the completed/in-progress contrast to context, while English frequently marks it through the tense choice.
 
 ---
 
@@ -425,8 +427,26 @@ Describe two things happening at the same time.
 
 - English speakers use Past Continuous to set the scene in stories
 - "What were you doing when...?" is a common way to ask about specific moments
-- In Lithuanian, present tense can describe past events; English needs specific past tenses
-- Past Continuous emphasizes the duration and interruption of actions
+- English normally uses past tenses for a past narrative, although a historic present is possible as a special storytelling style
+- Past Continuous presents an action as in progress and often provides background for another event
+
+---
+
+## Quick Retrieval and Can-do Check / Greitas kartojimas ir gebėjimų įsivertinimas
+
+Complete without looking back:
+
+1. At 8 PM, I _____ (read) a book.
+2. We _____ (walk) home when it _____ (start) to snow.
+3. While Marta _____ (cook), Jonas _____ (set) the table. Both actions were in progress.
+4. The lights _____ (go) out while I _____ (work).
+
+After checking your answers, rate each statement: **Not yet / Almost / Yes**.
+
+- I can form Past Continuous statements, negatives, questions, and short answers.
+- I can use Past Continuous for a background action and Past Simple for a completed event.
+- I can describe two actions that were happening at the same time.
+- I can tell a short interrupted-event story with a clear beginning and ending.
 
 ---
 
