@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatorVersion": 3,
-  "sourceHash": "sha256-ba86c351c9fe9424d92493814af2ab34688536f13551dcb676e13603946fa1a4",
+  "sourceHash": "sha256-23e2d9f500de355eed82fa2d34ca9ed5adac1ccc61b8b1a393cd93d9209f9de3",
   "units": [
     {
       "schemaVersion": 1,
@@ -7253,7 +7253,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-13",
-      "contentVersion": 1,
+      "contentVersion": 2,
       "title": "Unit 13: Determiners and Everyday Objects",
       "objectives": [
         {
@@ -7663,7 +7663,7 @@
           "revision": 1,
           "objectiveId": "u13.objects",
           "type": "single-choice",
-          "difficulty": 2,
+          "difficulty": 3,
           "prompt": {
             "en": "Which item was NOT listed inside the backpack?",
             "lt": "Kuris daiktas nebuvo paminėtas krepšyje?"
@@ -7728,7 +7728,7 @@
           "revision": 1,
           "objectiveId": "u13.objects",
           "type": "single-choice",
-          "difficulty": 2,
+          "difficulty": 3,
           "prompt": {
             "en": "Why must the owner describe another item?",
             "lt": "Kodėl savininkas turi apibūdinti dar vieną daiktą?"
@@ -7793,7 +7793,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-14",
-      "contentVersion": 1,
+      "contentVersion": 2,
       "title": "Unit 14: Pronouns and Personal Connections",
       "objectives": [
         {
@@ -8023,7 +8023,7 @@
           "revision": 1,
           "objectiveId": "u14.pronouns",
           "type": "fill-blank",
-          "difficulty": 2,
+          "difficulty": 3,
           "prompt": {
             "en": "Correct one word: Come with we.",
             "lt": "Ištaisykite vieną žodį: Come with we."
@@ -9012,13 +9012,13 @@
         },
         {
           "id": "u16.health.005",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u16.health",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "How long has the pharmacy customer had a cough?",
-            "lt": "Kiek laiko klientas kosėja?"
+            "en": "A pharmacy customer says, “I've had a cough for three days.” How long have they had it?",
+            "lt": "Vaistinės klientas sako: „Kosėju jau tris dienas.“ Kiek laiko jis kosėja?"
           },
           "choices": [
             {
@@ -9034,8 +9034,8 @@
             "choiceId": "three-days"
           },
           "rationale": {
-            "en": "The customer says three days.",
-            "lt": "Klientas sako, kad tris dienas."
+            "en": "The customer directly says that the cough has lasted for three days.",
+            "lt": "Klientas tiesiogiai pasako, kad kosulys trunka tris dienas."
           },
           "sourceRefs": [
             {
@@ -9150,7 +9150,7 @@
             },
             {
               "id": "professional",
-              "text": "Contact a doctor if severe pain continues."
+              "text": "Contact a doctor if the pain is severe or continues."
             }
           ],
           "answer": {
@@ -9709,13 +9709,13 @@
         },
         {
           "id": "u17.weather.004",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u17.weather",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "Strong winds will arrive ___ lunch.",
-            "lt": "Stiprūs vėjai prasidės po pietų."
+            "en": "The morning is calm, but the forecast says strong winds will arrive later than lunchtime. Complete: Strong winds will arrive ___ lunch.",
+            "lt": "Rytas ramus, bet prognozėje sakoma, kad stiprus vėjas prasidės po pietų. Užbaikite sakinį: „Strong winds will arrive ___ lunch.“"
           },
           "answer": {
             "accepted": [
@@ -9724,8 +9724,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The forecast says after lunch.",
-            "lt": "Prognozėje sakoma after lunch."
+            "en": "After means later than a named time or event, matching later than lunchtime.",
+            "lt": "„After“ reiškia vėliau už nurodytą laiką ar įvykį, todėl atitinka reikšmę „po pietų“."
           },
           "sourceRefs": [
             {
@@ -9803,8 +9803,8 @@
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "What should Saturday hikers bring?",
-            "lt": "Ką šeštadienio žygeiviai turėtų pasiimti?"
+            "en": "The Saturday forecast warns of strong wind after lunch. What should the hikers bring?",
+            "lt": "Šeštadienio prognozėje po pietų numatomas stiprus vėjas. Ką žygeiviai turėtų pasiimti?"
           },
           "choices": [
             {
@@ -10317,8 +10317,8 @@
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "How often are the computer classes?",
-            "lt": "Kaip dažnai vyksta kompiuterių pamokos?"
+            "en": "The course email says classes run on Tuesdays and Thursdays. How often are the classes?",
+            "lt": "Kurso laiške sakoma, kad pamokos vyksta antradieniais ir ketvirtadieniais. Kaip dažnai jos vyksta?"
           },
           "choices": [
             {
@@ -10931,7 +10931,7 @@
         },
         {
           "id": "u19.tech.010",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u19.tech",
           "type": "fill-blank",
           "difficulty": 3,
@@ -11458,7 +11458,7 @@
         },
         {
           "id": "u20.social.010",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u20.social",
           "type": "fill-blank",
           "difficulty": 3,
@@ -11983,7 +11983,7 @@
         },
         {
           "id": "u21.environment.010",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u21.environment",
           "type": "fill-blank",
           "difficulty": 3,
@@ -12195,18 +12195,19 @@
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Complete the fallback request: If that isn't possible, I'd like a ___.",
-            "lt": "Užbaikite atsarginį prašymą: jei tai neįmanoma, norėčiau atgauti pinigus."
+            "en": "Complete the polite fallback: If a replacement isn't possible, I ___ a refund.",
+            "lt": "Užbaikite mandagų atsarginį prašymą: jei prekės pakeisti neįmanoma, norėčiau atgauti pinigus."
           },
           "answer": {
             "accepted": [
-              "refund"
+              "'d like",
+              "would like"
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Refund is the specific alternative requested when replacement is not possible.",
-            "lt": "Refund yra konkretus kitas sprendimas, kai prekės pakeisti neįmanoma."
+            "en": "Would like makes the alternative request polite and specific.",
+            "lt": "Would like padeda mandagiai ir konkrečiai paprašyti kito sprendimo."
           },
           "sourceRefs": [
             {
@@ -12708,19 +12709,19 @@
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "For live travel information, I recommend an app ___ shows departure times.",
-            "lt": "Tiesioginei kelionių informacijai rekomenduoju programėlę, kuri rodo išvykimo laikus."
+            "en": "Complete the recommendation: I recommend the bus app ___ live departure times.",
+            "lt": "Užbaikite rekomendaciją: rekomenduoju autobusų programėlę, kuri rodo išvykimo laikus realiuoju laiku."
           },
           "answer": {
             "accepted": [
-              "that",
-              "which"
+              "that shows",
+              "which shows"
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "That or which introduces the identifying information about the app.",
-            "lt": "That arba which įveda programėlę apibūdinančią informaciją."
+            "en": "The relative clause needs that or which plus the verb shows.",
+            "lt": "Santykiniam sakiniui reikia žodžio that arba which ir veiksmažodžio shows."
           },
           "sourceRefs": [
             {
@@ -13070,7 +13071,7 @@
           "difficulty": 1,
           "prompt": {
             "en": "Which list contains all six planning constraints from Maya's profile?",
-            "lt": "Kuriame sąraše pateikti visi šeši Mayos profilio planavimo apribojimai?"
+            "lt": "Kuriame sąraše pateikti visi šeši svečio profilio planavimo apribojimai?"
           },
           "choices": [
             {
@@ -13238,8 +13239,8 @@
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Correct the future plan and time phrase: I meet her yesterday at the station. (Friday plan)",
-            "lt": "Ištaisykite būsimo plano laiką ir laiko aplinkybę: I meet her yesterday at the station. (penktadienio planas)"
+            "en": "Correct the future plan and time phrase using will or Present Continuous: I meet her yesterday at the station. (Friday plan)",
+            "lt": "Vartodami will arba Present Continuous ištaisykite būsimo plano laiką ir laiko aplinkybę: I meet her yesterday at the station. (penktadienio planas)"
           },
           "answer": {
             "accepted": [
@@ -13255,8 +13256,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Use a future form and replace yesterday with on Friday to match the guest profile.",
-            "lt": "Vartokite būsimo laiko formą ir yesterday pakeiskite į on Friday, kad sakinys atitiktų svečio profilį."
+            "en": "Use will or Present Continuous for the future plan and replace yesterday with on Friday to match the guest profile.",
+            "lt": "Būsimam planui vartokite will arba Present Continuous, o yesterday pakeiskite į on Friday, kad sakinys atitiktų svečio profilį."
           },
           "sourceRefs": [
             {
@@ -13557,8 +13558,8 @@
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Complete the relative clause: a café ___ serves local dishes",
-            "lt": "Kavinė, kuri tiekia vietinius patiekalus."
+            "en": "Complete the corrected phrase: I have booked a table at a vegetarian café ___ serves local dishes.",
+            "lt": "Užbaikite pataisytą frazę: užsakiau staliuką vegetariškoje kavinėje, kurioje tiekiami vietiniai patiekalai."
           },
           "answer": {
             "accepted": [
@@ -13568,8 +13569,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "That or which introduces identifying information about the café.",
-            "lt": "That arba which įveda kavinę apibūdinančią informaciją."
+            "en": "That or which introduces identifying information about the café; book a table at is the natural service phrase.",
+            "lt": "That arba which įveda kavinę apibūdinančią informaciją; natūralus junginys yra book a table at."
           },
           "sourceRefs": [
             {
