@@ -430,6 +430,23 @@ My name is Jonas. I am 25 years old. I am from Vilnius. I am a student. My siste
 
 ---
 
+## Exercise 12: People and Their Things / Pratimas 12: Žmonės ir jų daiktai
+
+English uses a possessive adjective before a noun: **my, your, his, her, its, our, their**. Use **'s** with a person's name: **Milda's phone**. Do not use an article before a possessive adjective: **my job**, not *the my job*.
+
+Complete the sentences.
+
+1. I am Lukas. _____ surname is Petrauskas.
+2. Rūta is a doctor. _____ workplace is a clinic.
+3. We are new students. _____ teacher is Mr Brown.
+4. Tomas and Lina are from Kaunas. _____ flat is near the station.
+5. This is _____ notebook. (Agnė)
+6. You are Ema, right? Is this _____ bag?
+
+Now introduce a real or imaginary friend in four sentences. Model: **This is my friend Domas. His home is in Šiauliai. Domas's job is interesting. Our favourite café is near his office.**
+
+---
+
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 4: Speed Introductions
@@ -476,6 +493,7 @@ Tick the statements that are true for you:
 - [ ] I can introduce myself and another person.
 - [ ] I can use **am, is, are** in statements, negatives, and questions.
 - [ ] I can ask for someone's name, home country, age, and job.
+- [ ] I can use possessive adjectives and **'s** to say who something belongs to.
 
 ---
 **End of Expanded Unit 1 / Išplėsto pirmojo skyriaus pabaiga**

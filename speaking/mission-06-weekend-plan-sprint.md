@@ -19,7 +19,7 @@ missionType: "one-minute-mission"
 durationMinutes: 3
 sourceRefs:
   - "unit-06"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Tell a friend about your weekend plan and sound genuinely enthusiastic."

@@ -19,7 +19,7 @@ missionType: "role-flip-dialogue"
 durationMinutes: 4
 sourceRefs:
   - "unit-05"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "First ask for directions. Then switch roles and guide the tourist clearly."

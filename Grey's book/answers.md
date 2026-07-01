@@ -294,6 +294,34 @@ status: "published"
 - Complete the sentences: 1 must have hurt, 2 might have eaten, 3 couldn't have been, 4 might have made, 5 must have seen, 6 must have known
 - Rewrite the clues: 1 Lily must have kept the secret because she wanted to continue helping. 2 Her mother couldn't have understood the real problem before Lily spoke. 3 The doctors must have needed more information before surgery. 4 The pain might have gotten worse during the flight. 5 The team couldn't have found the answer without Lily's honesty.
 
+### Chapter 11 Understanding
+
+1. At a small mountain clinic. 2. A possible serious allergy with swollen lips and difficult breathing. 3. To confirm the correct medicine dose. 4. The signal broke. 5. The dose, second medicine, and warning signs. 6. Mateo's father spoke little English, so Ana interpreted. 7. Four hours. 8. Transport home and food for his other children. 9. The swelling decreased and he asked for water. 10. Ask clearly, check important information, and help people understand one another.
+
+### Chapter 11 Fun Activities
+
+- Telephone Handover: answers vary; the listener should ask for repetition and repeat the age, weight, symptoms, and dose back.
+- Pass On the Message: the model in the chapter is one suitable answer.
+
+### Chapter 11 Grammar Practice
+
+- Past forms: 1 was checking, arrived 2 was translating, was watching 3 broke, was speaking 4 was drawing, checked
+- Rules: 1 has to 2 doesn't have to 3 can 4 mustn't
+
+### Chapter 12 Understanding
+
+1. A village vaccination day. 2. The team was travelling in two vehicles and needed to share updates. 3. A landslide. 4. Start later or move the event to Sunday. 5. Families were already arriving. 6. Only one jeep was available. 7. The large table, two heavy bags, and the third cool box. 8. Leave at 8:30 in one jeep with two cool boxes and arrive about 10:45. 9. She shared updates and changed the appointment order. 10. Share useful information, listen, and change the plan together.
+
+### Chapter 12 Fun Activities
+
+- Message Sort: confirm safety; explain the problem; offer options; confirm the decision; send the arrival time.
+- Plan B Meeting: answers vary, but the medicine and required cool boxes must remain safe.
+
+### Chapter 12 Grammar Practice
+
+- Arrangements: 1 are meeting 2 is leaving 3 is bringing 4 am collecting
+- First conditional: 1 is 2 will arrive 3 will carry on 4 sends
+
 ---
 
 **Vocabulary List / Žodynas:**

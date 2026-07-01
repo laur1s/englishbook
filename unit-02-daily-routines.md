@@ -464,6 +464,23 @@ Example questions:
 
 ---
 
+## Exercise 13: Likes and Object Pronouns / Pratimas 13: Pomėgiai ir objektiniai įvardžiai
+
+After **like, love, enjoy, hate**, an activity often takes **-ing**: **I enjoy cooking.** Object pronouns replace a person or thing after a verb or preposition: **me, you, him, her, it, us, them**.
+
+Choose the correct form.
+
+1. I enjoy **read / reading** before bed.
+2. Greta likes music. She listens to **it / her** every day.
+3. My friends play tennis. I sometimes play with **they / them**.
+4. Mantas loves **cook / cooking** for his family.
+5. Our teacher gives **we / us** short tasks.
+6. I know Laura, but I do not work with **she / her**.
+
+Write three true sentences. Model: **I enjoy walking. My sister sometimes walks with me. She doesn't like getting up early.**
+
+---
+
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Routine Comparison
@@ -517,6 +534,7 @@ Pretend you are a personal assistant. Create a daily schedule for a busy person 
 - [ ] I can use Present Simple statements, negatives, and questions.
 - [ ] I can use **always, usually, often, sometimes, rarely,** and **never**.
 - [ ] I can ask and answer simple questions about another person's routine.
+- [ ] I can talk about activities with **like + -ing** and use object pronouns.
 
 ---
 

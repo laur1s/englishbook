@@ -15,6 +15,7 @@ type SharedSession = {
   id: string;
   title: string;
   stage: CourseSessionStage;
+  revision: number;
   minutes: number;
   required: boolean;
   skillRefs: string[];
@@ -68,6 +69,18 @@ const EXPECTED_MODULE_TITLES = [
   "Present tenses",
   "Storytelling",
   "A2 checkpoint",
+  "Everyday objects",
+  "Personal connections",
+  "Home responsibilities",
+  "Health & wellbeing",
+  "Weather & clothing",
+  "Work & learning",
+  "Technology",
+  "Social plans",
+  "Environment",
+  "Services & solutions",
+  "Descriptions & recommendations",
+  "A2 communication project",
 ] as const;
 
 const EXPECTED_MISSION_SLUGS = [
@@ -83,6 +96,18 @@ const EXPECTED_MISSION_SLUGS = [
   "habit-now-experience",
   "when-it-happened",
   "a2-real-life-challenge",
+  "lost-property-desk",
+  "whose-is-it",
+  "house-rules-meeting",
+  "pharmacy-conversation",
+  "weather-backup-plan",
+  "course-help-desk",
+  "tech-support-call",
+  "invitation-switch",
+  "eco-choice-challenge",
+  "calm-complaint",
+  "recommendation-chain",
+  "host-a-weekend",
 ] as const;
 
 const RESOURCE_CONTEXT_HREFS = new Set([
@@ -198,6 +223,9 @@ const parseSession = (
   }
 
   const minutes = requiredPositiveInteger(record, "minutes", id);
+  const revision = record.revision === undefined
+    ? 1
+    : requiredPositiveInteger(record, "revision", id);
 
   if (typeof record.required !== "boolean") {
     fail(`${id}.required must be a boolean`);
@@ -226,7 +254,13 @@ const parseSession = (
       fail(`${id}.href must reference ${expectedHref}`);
     }
 
-    if (stage === "context" && !module.storySlug && !RESOURCE_CONTEXT_HREFS.has(href)) {
+    if (
+      stage === "context" &&
+      !module.storySlug &&
+      !RESOURCE_CONTEXT_HREFS.has(href) &&
+      href !== `/a2/${module.unitSlug}` &&
+      !href.startsWith(`/a2/${module.unitSlug}#`)
+    ) {
       fail(`${id}.href is not an approved resource context`);
     }
 
@@ -235,6 +269,7 @@ const parseSession = (
       title,
       kind: "content",
       stage: stage as CourseSessionStage,
+      revision,
       minutes,
       href,
       required,
@@ -257,7 +292,7 @@ const parseSession = (
     }
 
     const unitIds = record.unitIds.map((unitId, index) => {
-      if (typeof unitId !== "string" || !/^unit-(0[1-9]|1[0-2])$/.test(unitId)) {
+      if (typeof unitId !== "string" || !/^unit-(0[1-9]|1[0-9]|2[0-4])$/.test(unitId)) {
         fail(`${id}.unitIds[${index}] must be a valid unit ID`);
       }
       return unitId;
@@ -276,7 +311,21 @@ const parseSession = (
     }
 
     const moduleOrder = Number(module.id.slice(-2));
-    const firstOrder = moduleOrder === 9 ? 7 : 1;
+    const checkpointStarts: Record<number, number> = {
+      3: 1,
+      6: 1,
+      9: 7,
+      12: 1,
+      15: 13,
+      18: 13,
+      21: 19,
+      24: 1,
+    };
+    const firstOrder = checkpointStarts[moduleOrder];
+
+    if (!firstOrder) {
+      fail(`${id}.mode checkpoint is not scheduled for module ${moduleOrder}`);
+    }
     const expectedUnitIds = Array.from(
       { length: moduleOrder - firstOrder + 1 },
       (_, index) => `unit-${String(firstOrder + index).padStart(2, "0")}`,
@@ -291,6 +340,7 @@ const parseSession = (
       title,
       kind: "practice",
       stage: stage as CourseSessionStage,
+      revision,
       minutes,
       unitIds,
       mode: mode as PracticeMode,
@@ -311,6 +361,7 @@ const parseSession = (
     title,
     kind: "practice",
     stage: stage as CourseSessionStage,
+    revision,
     minutes,
     unitId,
     mode: mode as PracticeMode,
@@ -357,8 +408,8 @@ export const validateCoursePath = (value: unknown): CoursePath => {
     fail(`Duplicate session id “${duplicateSessionId}”`);
   }
 
-  if (rawModules.length !== 12) {
-    fail("must contain exactly 12 modules with no order gaps");
+  if (rawModules.length !== 24) {
+    fail("must contain exactly 24 modules with no order gaps");
   }
 
   const parsedModules = rawModules.map((item, sourceIndex) => {
@@ -383,7 +434,7 @@ export const validateCoursePath = (value: unknown): CoursePath => {
     if (order >= 1 && order <= EXPECTED_MODULE_TITLES.length) {
       const suffix = String(order).padStart(2, "0");
       const expectedUnitSlug = `unit-${suffix}`;
-      const expectedStorySlug = order <= 10 ? `chapter-${suffix}` : undefined;
+      const expectedStorySlug = order <= 12 ? `chapter-${suffix}` : undefined;
 
       if (unitSlug !== expectedUnitSlug) {
         fail(`${moduleId}.unitSlug must reference ${expectedUnitSlug}`);
@@ -450,7 +501,7 @@ export const validateCoursePath = (value: unknown): CoursePath => {
     const suffix = String(order).padStart(2, "0");
     const expectedId = `module-${suffix}`;
     const expectedUnitSlug = `unit-${suffix}`;
-    const expectedStorySlug = order <= 10 ? `chapter-${suffix}` : undefined;
+    const expectedStorySlug = order <= 12 ? `chapter-${suffix}` : undefined;
 
     if (module.order !== order) {
       fail(`module order has a gap before ${module.id}`);

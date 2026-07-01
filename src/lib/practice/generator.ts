@@ -15,6 +15,8 @@ type GeneratePracticePackCommonOptions = {
   count?: number;
   attempt?: number;
   recentItemIds?: readonly string[];
+  targetObjectiveIds?: readonly string[];
+  priorityItemIds?: readonly string[];
 };
 
 export type GeneratePracticePackOptions = GeneratePracticePackCommonOptions &
@@ -34,6 +36,8 @@ export type PracticePack = {
   contentVersions: Record<string, number>;
   mode: PracticeMode;
   attempt: number;
+  targetObjectiveIds: string[];
+  priorityItemIds: string[];
   seed: string;
   items: PracticeItem[];
 };
@@ -118,6 +122,35 @@ const resolveUnits = (
     .map((unitId) => findUnit(catalog, unitId));
 };
 
+const normalizePreferenceIds = (
+  value: unknown,
+  optionName: "targetObjectiveIds" | "priorityItemIds",
+) => {
+  if (value === undefined) return [];
+
+  if (!Array.isArray(value)) {
+    throw new TypeError(`${optionName} must be an array of non-empty strings`);
+  }
+
+  const seen = new Set<string>();
+  const normalized = value.map((item, index) => {
+    if (typeof item !== "string" || !item.trim()) {
+      throw new TypeError(`${optionName}[${index}] must be a non-empty string`);
+    }
+
+    const id = item.trim();
+
+    if (seen.has(id)) {
+      throw new RangeError(`${optionName} must not contain duplicate IDs`);
+    }
+
+    seen.add(id);
+    return id;
+  });
+
+  return normalized.sort();
+};
+
 const cloneItem = (item: PracticeItem): PracticeItem => {
   const common = {
     ...item,
@@ -164,6 +197,8 @@ const chooseCandidate = ({
   selectedIds,
   objectiveCounts,
   recentItemIds,
+  targetObjectiveIds,
+  priorityItemIds,
   seed,
 }: {
   candidates: readonly PracticeItem[];
@@ -171,11 +206,16 @@ const chooseCandidate = ({
   selectedIds: ReadonlySet<string>;
   objectiveCounts: ReadonlyMap<string, number>;
   recentItemIds: ReadonlySet<string>;
+  targetObjectiveIds: ReadonlySet<string>;
+  priorityItemIds: ReadonlySet<string>;
   seed: string;
 }) => {
   const remaining = candidates.filter((item) => !selectedIds.has(item.id));
-  const fresh = remaining.filter((item) => !recentItemIds.has(item.id));
-  const recencyPool = fresh.length ? fresh : remaining;
+  const priority = remaining.filter((item) => priorityItemIds.has(item.id));
+  const targeted = remaining.filter((item) => targetObjectiveIds.has(item.objectiveId));
+  const preferencePool = priority.length ? priority : targeted.length ? targeted : remaining;
+  const fresh = preferencePool.filter((item) => !recentItemIds.has(item.id));
+  const recencyPool = fresh.length ? fresh : preferencePool;
   const preferred = recencyPool.filter((item) => item.difficulty === preferredDifficulty);
   const pool = preferred.length ? preferred : recencyPool;
 
@@ -241,6 +281,22 @@ export const generatePracticePackFromCatalog = (
 ): PracticePack => {
   const units = resolveUnits(catalog, options);
   const { count, attempt } = validateOptions(units, options);
+  const requestedTargetObjectiveIds = normalizePreferenceIds(
+    options.targetObjectiveIds,
+    "targetObjectiveIds",
+  );
+  const requestedPriorityItemIds = normalizePreferenceIds(
+    options.priorityItemIds,
+    "priorityItemIds",
+  );
+  const availableObjectiveIds = new Set(
+    units.flatMap((unit) => unit.objectives.map((objective) => objective.id)),
+  );
+  const availableItemIds = new Set(units.flatMap((unit) => unit.items.map((item) => item.id)));
+  const targetObjectiveIds = requestedTargetObjectiveIds.filter((id) =>
+    availableObjectiveIds.has(id)
+  );
+  const priorityItemIds = requestedPriorityItemIds.filter((id) => availableItemIds.has(id));
   const unitIds = units.map((unit) => unit.unitId);
   const contentVersions = Object.fromEntries(
     units.map((unit) => [unit.unitId, unit.contentVersion]),
@@ -257,13 +313,29 @@ export const generatePracticePackFromCatalog = (
     options.mode,
     `count-${count}`,
     `attempt-${attempt}`,
+    `targets-${JSON.stringify(targetObjectiveIds)}`,
+    `priority-${JSON.stringify(priorityItemIds)}`,
   ].join("|");
   const recentItemIds = new Set(options.recentItemIds ?? []);
+  const targetObjectiveIdSet = new Set(targetObjectiveIds);
+  const priorityItemIdSet = new Set(priorityItemIds);
   const selectedIds = new Set<string>();
   const objectiveCounts = new Map<string, number>();
   const selected: PracticeItem[] = [];
   const pattern = DIFFICULTY_PATTERNS[options.mode];
-  const unitOrder = seededShuffle(units, `${seed}|unit-order`);
+  const shuffledUnits = seededShuffle(units, `${seed}|unit-order`);
+  const shuffledUnitIndex = new Map(
+    shuffledUnits.map((unit, index) => [unit.unitId, index] as const),
+  );
+  const unitPreferenceRank = (unit: PracticeUnitSource) => {
+    if (unit.items.some((item) => priorityItemIdSet.has(item.id))) return 0;
+    if (unit.items.some((item) => targetObjectiveIdSet.has(item.objectiveId))) return 1;
+    return 2;
+  };
+  const unitOrder = [...shuffledUnits].sort((left, right) =>
+    unitPreferenceRank(left) - unitPreferenceRank(right) ||
+    (shuffledUnitIndex.get(left.unitId) ?? 0) - (shuffledUnitIndex.get(right.unitId) ?? 0)
+  );
 
   for (let index = 0; index < count; index += 1) {
     const preferredDifficulty = pattern[index % pattern.length];
@@ -278,6 +350,8 @@ export const generatePracticePackFromCatalog = (
         selectedIds,
         objectiveCounts,
         recentItemIds,
+        targetObjectiveIds: targetObjectiveIdSet,
+        priorityItemIds: priorityItemIdSet,
         seed: `${seed}|position-${index}|unit-${unit.unitId}`,
       });
     }
@@ -323,6 +397,8 @@ export const generatePracticePackFromCatalog = (
     contentVersions,
     mode: options.mode,
     attempt,
+    targetObjectiveIds,
+    priorityItemIds,
     seed,
     items: selected,
   };

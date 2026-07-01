@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-09",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "title": "Unit 9: Modal Verbs",
   "objectives": [
     { "id": "u09.deduction", "label": { "en": "Make deductions with must and can't", "lt": "Daryti išvadas su must ir can't" } },
     { "id": "u09.possibility", "label": { "en": "Express possibility with may and might", "lt": "Reikšti galimybę su may ir might" } },
     { "id": "u09.advice", "label": { "en": "Give advice with should", "lt": "Patarti su should" } },
-    { "id": "u09.modal-form", "label": { "en": "Use the base verb after a modal", "lt": "Po modalinių veiksmažodžių vartoti bendratį be to" } }
+    { "id": "u09.modal-form", "label": { "en": "Use the base verb after a modal", "lt": "Po modalinių veiksmažodžių vartoti bendratį be to" } },
+    { "id": "u09.ability-permission-necessity", "label": { "en": "Distinguish ability, permission, and necessity", "lt": "Skirti gebėjimą, leidimą ir būtinybę" } }
   ],
   "items": [
     {
@@ -225,6 +226,49 @@
       "answer": { "accepted": ["They should arrive early.", "They should arrive early"], "caseSensitive": false },
       "rationale": { "en": "Use the base verb arrive directly after should.", "lt": "Po „should“ iš karto vartojame bendratį „arrive“." },
       "sourceRefs": [{ "lesson": "unit-09", "exercise": 9 }]
+    },
+    {
+      "id": "u09.ability-permission-necessity.017",
+      "revision": 1,
+      "objectiveId": "u09.ability-permission-necessity",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Your phone battery is dead, so you politely ask a friend for permission. Which sentence is the genuine request?", "lt": "Jūsų telefono baterija išsikrovė, todėl mandagiai prašote draugo leidimo. Kuris sakinys yra tikras prašymas?" },
+      "choices": [
+        { "id": "permission", "text": "Can I use your phone for a moment?" },
+        { "id": "ability", "text": "I can swim." },
+        { "id": "necessity", "text": "You have to show your ticket." }
+      ],
+      "answer": { "choiceId": "permission" },
+      "rationale": { "en": "Can I ...? asks another person for permission; the other sentences describe ability and necessity.", "lt": "Klausimu „Can I ...?“ prašoma leidimo; kiti sakiniai nusako gebėjimą ir būtinybę." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 14 }]
+    },
+    {
+      "id": "u09.ability-permission-necessity.018",
+      "revision": 1,
+      "objectiveId": "u09.ability-permission-necessity",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "The uniform is optional. Complete: “We ___ wear a uniform on Fridays.”", "lt": "Uniforma neprivaloma. Užbaikite: „We ___ wear a uniform on Fridays.“" },
+      "answer": { "accepted": ["don't have to", "do not have to"], "caseSensitive": false },
+      "rationale": { "en": "Don't have to means something is not necessary. Mustn't would mean it is forbidden.", "lt": "„Don't have to“ reiškia, kad veiksmas nebūtinas. „Mustn't“ reikštų, kad jis draudžiamas." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 14 }]
+    },
+    {
+      "id": "u09.ability-permission-necessity.019",
+      "revision": 1,
+      "objectiveId": "u09.ability-permission-necessity",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Choose the modal for past ability: “My grandmother ___ speak three languages when she was young.”", "lt": "Pasirinkite modalinį veiksmažodį gebėjimui praeityje: „My grandmother ___ speak three languages when she was young.“" },
+      "choices": [
+        { "id": "could", "text": "could" },
+        { "id": "can", "text": "can" },
+        { "id": "has-to", "text": "has to" }
+      ],
+      "answer": { "choiceId": "could" },
+      "rationale": { "en": "Could expresses a general ability in the past.", "lt": "„Could“ reiškia bendrą gebėjimą praeityje." },
+      "sourceRefs": [{ "lesson": "unit-09", "exercise": 14 }]
     }
   ]
 }

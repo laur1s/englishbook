@@ -618,6 +618,23 @@ Talk about traditional Lithuanian foods vs. foods from other countries. What are
 
 ---
 
+## Exercise 15: A, An, The, or No Article / Pratimas 15: A, an, the arba be artikelio
+
+Use **a/an** for one non-specific singular countable person or thing: **an apple**. Use **the** when the context makes the person or thing specific: **the menu on our table**. Use no article for plural or uncountable nouns when speaking generally or about a non-specific amount: **I like apples. Rice is cheap. We need bread.** Context matters, so read the whole situation before choosing.
+
+Complete with **a, an, the**, or **—** (no article).
+
+1. Can I have _____ orange, please?
+2. There are two oranges: one on this plate and one in the bag. _____ orange on this plate is for you.
+3. In general, _____ bread is cheaper than cake.
+4. My brother is _____ chef.
+5. In general, I drink _____ coffee rather than tea after lunch.
+6. The waiter says there is one menu on our table. Could we see _____ menu, please?
+
+Role-play a café order. Model: **Could I have a sandwich and some tea, please? Is the soup vegetarian? That's all, thank you.** Include a polite request and one question.
+
+---
+
 ## Cumulative Review / Kaupiamasis kartojimas
 
 1. Complete: Yesterday I bought _____ apples, but I didn't buy _____ milk. (**some/any**)
@@ -632,6 +649,7 @@ Talk about traditional Lithuanian foods vs. foods from other countries. What are
 - [ ] I can use **some, any, much, many, a few, a little,** and **a lot of**.
 - [ ] I can ask about prices and quantities.
 - [ ] I can order a simple meal and make a shopping request politely.
+- [ ] I can choose **a/an, the**, or no article in common food situations.
 
 ---
 

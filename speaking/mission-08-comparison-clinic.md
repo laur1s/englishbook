@@ -19,7 +19,7 @@ missionType: "mistake-detective"
 durationMinutes: 2
 sourceRefs:
   - "unit-08"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Find the mistake, fix it, and then say the corrected idea aloud."

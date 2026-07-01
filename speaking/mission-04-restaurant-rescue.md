@@ -19,7 +19,7 @@ missionType: "role-flip-dialogue"
 durationMinutes: 4
 sourceRefs:
   - "unit-04"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "You are in a cafe. First play the customer, then switch and play the waiter."

@@ -369,6 +369,29 @@ body:has(.learning-shell) .site-nav a.active {
   grid-area: map;
 }
 
+.course-map-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.course-map-heading h2 {
+  margin-bottom: 0.15rem;
+}
+
+.course-map-heading p {
+  margin: 0;
+  color: var(--muted);
+  font: 500 0.76rem/1.35 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.course-map-toggle {
+  flex: 0 0 auto;
+  min-height: 2.75rem;
+}
+
 .course-map {
   position: relative;
   margin: 0;
@@ -996,6 +1019,631 @@ body:has(.learning-shell) .site-nav a.active {
 @media (prefers-reduced-motion: reduce) {
   .course-module-progress-fill,
   .question-progress-fill {
+    transition: none;
+  }
+}
+
+/* Adaptive learning dashboard */
+.momentum-rail {
+  display: grid;
+  grid-template-columns: auto minmax(17rem, 1.35fr) minmax(12rem, 0.8fr) minmax(14rem, 0.9fr) minmax(18rem, 1.15fr);
+  align-items: center;
+  min-width: 0;
+  margin-bottom: 1rem;
+  padding: 0.95rem 1.25rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.65rem;
+  background: var(--learning-surface);
+}
+
+.momentum-rail h2 {
+  margin: 0;
+  padding-right: 1.4rem;
+  font: 650 1.03rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.momentum-stat {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.72rem;
+  align-items: center;
+  min-width: 0;
+  min-height: 3.2rem;
+  padding: 0 1.25rem;
+  border-left: 1px solid var(--learning-line);
+}
+
+.momentum-stat-icon {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--learning-navy);
+}
+
+.momentum-stat-icon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.55;
+}
+
+.momentum-chart-icon svg path {
+  fill: var(--learning-navy);
+  stroke: none;
+}
+
+.momentum-stat-copy {
+  display: block;
+  min-width: 0;
+  color: var(--muted);
+  font: 500 0.74rem/1.25 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.momentum-stat-copy > span,
+.momentum-stat-copy > strong {
+  display: block;
+}
+
+.momentum-stat-copy > strong {
+  margin-top: 0.18rem;
+  color: var(--learning-navy);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.momentum-week-stat {
+  grid-template-columns: auto minmax(6rem, auto) minmax(8.6rem, 1fr);
+}
+
+.momentum-week {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.28rem;
+  align-items: end;
+  height: 2.65rem;
+  min-width: 0;
+}
+
+.momentum-day {
+  display: grid;
+  grid-template-rows: 1.7rem auto;
+  justify-items: center;
+  gap: 0.12rem;
+  height: 100%;
+}
+
+.momentum-day i {
+  align-self: end;
+  width: 0.32rem;
+  min-height: 0.18rem;
+  border-radius: 999px;
+  background: rgba(18, 33, 58, 0.16);
+  transition: height 180ms ease, background 180ms ease;
+}
+
+.momentum-day small {
+  color: var(--muted);
+  font: 650 0.57rem/1 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.momentum-day.is-active i {
+  background: var(--learning-rust);
+}
+
+.momentum-day.is-today small {
+  color: var(--learning-rust);
+}
+
+.momentum-progress {
+  grid-column: 2;
+  display: block;
+  height: 0.24rem;
+  margin-top: -0.2rem;
+  border-radius: 999px;
+  background: rgba(18, 33, 58, 0.14);
+  overflow: hidden;
+}
+
+.momentum-progress > span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--learning-rust);
+  transition: width 180ms ease;
+}
+
+.momentum-goal-stat {
+  grid-template-columns: auto minmax(6.7rem, 1fr) auto;
+}
+
+.momentum-goal-stat .momentum-progress {
+  grid-column: 2 / -1;
+}
+
+.goal-options {
+  display: inline-flex;
+  gap: 0.22rem;
+  padding: 0.18rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.35rem;
+}
+
+.goal-options button {
+  min-width: 1.85rem;
+  min-height: 1.6rem;
+  padding: 0.1rem 0.32rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.goal-options button[aria-pressed="true"] {
+  background: var(--learning-navy);
+  color: #fff;
+}
+
+.goal-options button:focus-visible {
+  outline: 2px solid var(--learning-rust);
+  outline-offset: 2px;
+}
+
+.learning-dashboard-grid {
+  grid-template-columns: minmax(0, 2.05fr) minmax(20rem, 0.95fr);
+  grid-template-areas:
+    "next today"
+    "map insights";
+  gap: 0.85rem 1rem;
+}
+
+.next-session-panel,
+.today-loop-panel {
+  min-height: 16.8rem;
+}
+
+.today-loop-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.today-plan-list,
+.skill-queue-list {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.55rem;
+  list-style: none;
+  overflow: hidden;
+}
+
+.today-plan-list li + li,
+.skill-queue-item + .skill-queue-item {
+  border-top: 1px solid var(--learning-line);
+}
+
+.today-plan-row {
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr) auto;
+  gap: 0.7rem;
+  align-items: center;
+  min-height: 4.2rem;
+  padding: 0.68rem 0.8rem;
+  color: var(--learning-navy);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  transition: background 150ms ease;
+}
+
+.today-plan-row:hover {
+  background: rgba(18, 33, 58, 0.035);
+}
+
+.today-plan-number {
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: var(--learning-navy);
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 750;
+}
+
+.today-plan-icon {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--learning-navy);
+}
+
+.today-plan-icon svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.today-plan-copy {
+  display: block;
+  min-width: 0;
+}
+
+.today-plan-copy > strong,
+.today-plan-copy > span {
+  display: block;
+}
+
+.today-plan-copy > strong {
+  font-size: 0.84rem;
+  font-weight: 650;
+}
+
+.today-plan-copy > strong em {
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.today-plan-copy > span {
+  display: flex;
+  gap: 0.4rem;
+  align-items: baseline;
+  margin-top: 0.22rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.25;
+}
+
+.today-plan-copy > span em {
+  flex: 0 0 auto;
+  color: var(--learning-success);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.today-plan-row > svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.today-plan-row.is-disabled,
+.learning-outline-button.is-disabled,
+.skill-queue-row.is-disabled,
+.course-module-main.is-disabled,
+a[aria-disabled="true"] {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.today-plan-row.is-disabled {
+  color: rgba(18, 33, 58, 0.5);
+}
+
+.today-plan-row.is-disabled .today-plan-number {
+  background: #70777c;
+}
+
+.today-plan-row.is-disabled .today-plan-copy > span em {
+  color: var(--muted);
+}
+
+.today-plan-row.is-disabled > svg {
+  opacity: 0.25;
+}
+
+.learning-insight-column {
+  grid-area: insights;
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+  min-width: 0;
+}
+
+.learning-insight-column .review-queue-panel,
+.learning-insight-column .mistakes-panel {
+  grid-area: auto;
+}
+
+.skill-queue-list:empty {
+  display: none;
+}
+
+.skill-queue-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.72rem;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0.65rem 0.75rem;
+  color: var(--learning-navy);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.skill-queue-row:hover {
+  background: rgba(18, 33, 58, 0.035);
+}
+
+.skill-queue-icon,
+.repair-summary-icon,
+.insight-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  color: var(--learning-success);
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.skill-queue-icon.is-weak {
+  color: #31589b;
+}
+
+.skill-queue-copy,
+.skill-queue-copy strong,
+.skill-queue-copy > span {
+  display: block;
+  min-width: 0;
+}
+
+.skill-queue-copy strong {
+  overflow: hidden;
+  font-size: 0.78rem;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.skill-queue-copy strong em {
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.skill-queue-copy > span {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.66rem;
+}
+
+.skill-queue-arrow {
+  font: 400 1.5rem/1 Georgia, serif;
+}
+
+.insight-empty-state,
+.repair-summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: center;
+  min-height: 4.6rem;
+  padding: 0.75rem;
+  border: 1px solid var(--learning-line);
+  border-radius: 0.5rem;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.insight-empty-state strong,
+.insight-empty-state span,
+.repair-summary strong,
+.repair-summary span {
+  display: block;
+}
+
+.insight-empty-state strong,
+.repair-summary strong {
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.insight-empty-state span span,
+.repair-summary span span {
+  margin-top: 0.2rem;
+  color: var(--muted);
+  font-size: 0.67rem;
+  line-height: 1.35;
+}
+
+.insight-empty-icon {
+  color: var(--learning-success);
+}
+
+.repair-summary-icon {
+  color: var(--learning-rust);
+}
+
+.review-queue-panel .learning-outline-button,
+.mistakes-panel .learning-outline-button {
+  min-height: 2.55rem;
+  margin-top: 0.65rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.learning-outline-button.is-disabled {
+  border-color: var(--learning-line);
+  color: var(--muted);
+  opacity: 0.78;
+}
+
+.learning-footer-note {
+  padding-top: 0.2rem;
+}
+
+@media (max-width: 1180px) {
+  .momentum-rail {
+    grid-template-columns: auto minmax(15rem, 1.2fr) minmax(11rem, 0.8fr) minmax(13rem, 0.9fr);
+  }
+
+  .momentum-goal-stat {
+    grid-column: 2 / -1;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--learning-line);
+  }
+}
+
+@media (max-width: 1000px) {
+  .learning-dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "next"
+      "today"
+      "map"
+      "insights";
+  }
+
+  .next-session-panel,
+  .today-loop-panel {
+    min-height: auto;
+  }
+
+  .learning-insight-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .momentum-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0.8rem;
+  }
+
+  .momentum-rail h2 {
+    grid-column: 1 / -1;
+    padding: 0 0 0.7rem;
+  }
+
+  .momentum-stat,
+  .momentum-goal-stat {
+    grid-column: auto;
+    margin: 0;
+    padding: 0.7rem;
+    border-top: 1px solid var(--learning-line);
+    border-left: 0;
+  }
+
+  .momentum-week-stat {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .momentum-week-stat .momentum-week {
+    grid-column: 1 / -1;
+  }
+
+  .momentum-goal-stat {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .momentum-goal-stat .goal-options {
+    grid-column: 1 / -1;
+  }
+
+  .momentum-goal-stat .momentum-progress {
+    grid-column: 1 / -1;
+  }
+
+  .learning-insight-column {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .momentum-rail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .momentum-stat,
+  .momentum-goal-stat {
+    grid-column: 1;
+  }
+
+  .momentum-week-stat {
+    grid-template-columns: auto minmax(0, 1fr) minmax(7.7rem, 1fr);
+  }
+
+  .momentum-week-stat .momentum-week {
+    grid-column: auto;
+  }
+
+  .momentum-goal-stat {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .momentum-goal-stat .goal-options {
+    grid-column: auto;
+  }
+
+  .momentum-goal-stat .momentum-progress {
+    grid-column: 2 / -1;
+  }
+
+  .today-plan-row {
+    grid-template-columns: auto auto minmax(0, 1fr);
+    gap: 0.48rem;
+    padding: 0.65rem 0.6rem;
+  }
+
+  .today-plan-row > svg {
+    display: none;
+  }
+
+  .today-plan-number {
+    width: 1.55rem;
+    height: 1.55rem;
+  }
+
+  .today-plan-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .today-plan-icon svg {
+    width: 1.45rem;
+    height: 1.45rem;
+  }
+
+  .today-plan-copy > span {
+    display: block;
+  }
+
+  .today-plan-copy > span > span {
+    display: block;
+    margin-top: 0.15rem;
+  }
+
+  .course-module-row.current .course-module-main {
+    align-items: start;
+  }
+
+  .course-module-title span {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .momentum-day i,
+  .momentum-progress > span,
+  .today-plan-row {
     transition: none;
   }
 }

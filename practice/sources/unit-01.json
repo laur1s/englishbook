@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-01",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "title": "Greetings and Introductions",
   "objectives": [
     {
@@ -30,6 +30,13 @@
       "label": {
         "en": "Understand simple personal information",
         "lt": "Suprasti paprastą asmeninę informaciją"
+      }
+    },
+    {
+      "id": "u01.possessives",
+      "label": {
+        "en": "Use possessive adjectives and 's",
+        "lt": "Vartoti savybinius įvardžius ir „'s“ priklausomybei reikšti"
       }
     }
   ],
@@ -369,6 +376,68 @@
         "lt": "Visas klausimas yra „Where are you from?“"
       },
       "sourceRefs": [{"lesson": "unit-01", "exercise": 4}]
+    },
+    {
+      "id": "u01.possessives.017",
+      "revision": 1,
+      "objectiveId": "u01.possessives",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Lukas says, “I am Lukas. ___ surname is Petrauskas.” Choose the correct word.",
+        "lt": "Lukas sako: „I am Lukas. ___ surname is Petrauskas.“ Pasirinkite tinkamą žodį."
+      },
+      "choices": [
+        {"id": "my", "text": "My"},
+        {"id": "your", "text": "Your"},
+        {"id": "his", "text": "His"}
+      ],
+      "answer": {"choiceId": "my"},
+      "rationale": {
+        "en": "Lukas is speaking about his own surname, so he uses my before the noun surname.",
+        "lt": "Lukas kalba apie savo pavardę, todėl prieš daiktavardį „surname“ vartoja „my“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 12}]
+    },
+    {
+      "id": "u01.possessives.018",
+      "revision": 1,
+      "objectiveId": "u01.possessives",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Use the name Agnė to complete the sentence: “This is ___ notebook.”",
+        "lt": "Pavartokite vardą Agnė ir užbaikite sakinį: „This is ___ notebook.“"
+      },
+      "answer": {
+        "accepted": ["Agnė's"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Add 's to a person's name to show possession: Agnė's notebook.",
+        "lt": "Norint parodyti priklausomybę, prie asmens vardo pridedama „'s“: „Agnė's notebook“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 12}]
+    },
+    {
+      "id": "u01.possessives.019",
+      "revision": 1,
+      "objectiveId": "u01.possessives",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete with a possessive adjective: “Tomas and Lina are from Kaunas. ___ flat is near the station.”",
+        "lt": "Įrašykite savybinį įvardį: „Tomas and Lina are from Kaunas. ___ flat is near the station.“"
+      },
+      "answer": {
+        "accepted": ["Their"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "Tomas and Lina are two people, so use their before the noun flat.",
+        "lt": "Tomas ir Lina yra du žmonės, todėl prieš daiktavardį „flat“ vartojama „their“."
+      },
+      "sourceRefs": [{"lesson": "unit-01", "exercise": 12}]
     }
   ]
 }

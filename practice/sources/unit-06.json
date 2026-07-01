@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-06",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "title": "Future Plans",
   "objectives": [
     {
@@ -30,6 +30,13 @@
       "label": {
         "en": "Understand a text about future plans",
         "lt": "Suprasti tekstą apie ateities planus"
+      }
+    },
+    {
+      "id": "u06.first-conditional",
+      "label": {
+        "en": "Form real future conditions",
+        "lt": "Sudaryti realios ateities sąlygos sakinius"
       }
     }
   ],
@@ -324,6 +331,49 @@
       "answer": { "accepted": ["tired"], "caseSensitive": false },
       "rationale": { "en": "Such a full weekend supports his prediction that he will be very tired.", "lt": "Toks užimtas savaitgalis pagrindžia jo prognozę, kad pirmadienį jis bus labai pavargęs." },
       "sourceRefs": [{ "lesson": "unit-06", "exercise": 6 }]
+    },
+    {
+      "id": "u06.first-conditional.017",
+      "revision": 1,
+      "objectiveId": "u06.first-conditional",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Choose the correct result: “If Greta finishes work early, she ___ us.”", "lt": "Pasirinkite tinkamą rezultatą: „If Greta finishes work early, she ___ us.“" },
+      "choices": [
+        { "id": "will-join", "text": "will join" },
+        { "id": "will-joins", "text": "will joins" },
+        { "id": "joining", "text": "joining" }
+      ],
+      "answer": { "choiceId": "will-join" },
+      "rationale": { "en": "This predicted result uses will plus the base verb: will join. A result clause can instead use may, might, or can when the meaning requires it.", "lt": "Šiam numatomam rezultatui vartojama „will“ ir bendratis: „will join“. Kai to reikalauja reikšmė, rezultato dalyje galima vartoti ir „may“, „might“ arba „can“." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 17 }]
+    },
+    {
+      "id": "u06.first-conditional.018",
+      "revision": 1,
+      "objectiveId": "u06.first-conditional",
+      "type": "fill-blank",
+      "difficulty": 3,
+      "prompt": { "en": "Use miss to complete the if-clause: “What will you do if you ___ the last bus?”", "lt": "Pavartokite „miss“ ir užbaikite sąlygos sakinį: „What will you do if you ___ the last bus?“" },
+      "answer": { "accepted": ["miss"], "caseSensitive": false },
+      "rationale": { "en": "Use the Present Simple in the if-clause: if you miss, not if you will miss.", "lt": "Po „if“ vartojamas esamasis paprastasis laikas: „if you miss“, ne „if you will miss“." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 17 }]
+    },
+    {
+      "id": "u06.first-conditional.019",
+      "revision": 1,
+      "objectiveId": "u06.first-conditional",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": { "en": "Choose the correct form in the if-clause: “If the weather ___ good, we will have a picnic.”", "lt": "Pasirinkite tinkamą formą sąlygos sakinyje: „If the weather ___ good, we will have a picnic.“" },
+      "choices": [
+        { "id": "is", "text": "is" },
+        { "id": "will-be", "text": "will be" },
+        { "id": "be", "text": "be" }
+      ],
+      "answer": { "choiceId": "is" },
+      "rationale": { "en": "The if-clause uses the Present Simple: If the weather is good.", "lt": "Po „if“ vartojamas esamasis paprastasis laikas: „If the weather is good“." },
+      "sourceRefs": [{ "lesson": "unit-06", "exercise": 17 }]
     }
   ]
 }

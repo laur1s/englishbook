@@ -19,7 +19,7 @@ missionType: "one-minute-mission"
 durationMinutes: 3
 sourceRefs:
   - "unit-02"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Tell a new friend about your usual weekday from morning to evening."

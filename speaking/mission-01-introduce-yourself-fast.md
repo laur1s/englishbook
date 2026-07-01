@@ -20,7 +20,7 @@ missionType: "one-minute-mission"
 durationMinutes: 3
 sourceRefs:
   - "unit-01"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "You meet a new colleague at an international company. Introduce yourself in a warm, natural way."

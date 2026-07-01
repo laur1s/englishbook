@@ -20,7 +20,7 @@ import {
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 export const defaultRoot = path.resolve(scriptDirectory, "..");
 export const EXPECTED_UNIT_IDS = Array.from(
-  { length: 12 },
+  { length: 24 },
   (_, index) => `unit-${String(index + 1).padStart(2, "0")}`,
 );
 

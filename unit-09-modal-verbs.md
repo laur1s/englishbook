@@ -433,6 +433,23 @@ For a trip: You should pack light. You might need warm clothes. You must have a 
 
 ---
 
+## Exercise 14: Ability, Permission, and Necessity / Pratimas 14: Gebėjimas, leidimas ir būtinybė
+
+Use **can/can't** for present ability and common permission; **could/couldn't** for past ability; **have to** for a rule or practical necessity; and **don't have to** when something is not necessary. **Mustn't** means that something is forbidden.
+
+Choose the best answer.
+
+1. I _____ swim now, but I couldn't swim when I was five. (**can / have to**)
+2. You _____ show your ticket before you enter. It is a rule. (**have to / might**)
+3. We _____ wear a uniform on Fridays; it is optional. (**don't have to / mustn't**)
+4. You _____ take photos here. It is forbidden. (**mustn't / don't have to**)
+5. _____ I use your phone for a moment? (**Can / Must**)
+6. My grandmother _____ speak three languages when she was young. (**could / should**)
+
+Write a message with one rule, one optional action, and one permission question. Model: **You have to sign in. You don't have to bring food. Can I use the kitchen?**
+
+---
+
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Advice Column
@@ -495,6 +512,7 @@ After checking your answers, rate each statement: **Not yet / Almost / Yes**.
 - I can separate advice, possibility, deduction, prohibition, and lack of necessity.
 - I can explain what evidence supports **must** or **can't**.
 - I can give useful advice without making it sound like a command.
+- I can distinguish ability, permission, necessity, prohibition, and lack of necessity.
 
 ---
 

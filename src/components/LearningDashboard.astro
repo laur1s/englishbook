@@ -1,12 +1,29 @@
 ---
 import LearningCycle from "./LearningCycle.astro";
-import { coursePath, modules, sessions } from "../lib/course-path";
+import { modules, sessions } from "../lib/course-path";
 import { withBase } from "../lib/constants";
+import { practiceCatalog } from "../lib/practice";
 
 const firstModule = modules[0];
 const firstSession = firstModule.sessions[0];
 const sessionHref = (sessionId: string) => withBase(`/learn/${sessionId}`);
 const serializeForScript = (value: unknown) => JSON.stringify(value).replace(/</g, "\\u003c");
+const objectives = Object.fromEntries(
+  practiceCatalog.units.flatMap((unit) => unit.objectives.map((objective) => [
+    objective.id,
+    {
+      label: objective.label.en,
+      unitId: unit.unitId,
+      itemCount: unit.items.filter((item) => item.objectiveId === objective.id).length,
+    },
+  ])),
+);
+const items = Object.fromEntries(
+  practiceCatalog.units.flatMap((unit) => unit.items.map((item) => [
+    item.id,
+    { objectiveId: item.objectiveId, unitId: unit.unitId },
+  ])),
+);
 const dashboardData = serializeForScript({
   modules: modules.map((module) => ({
     id: module.id,
@@ -20,16 +37,18 @@ const dashboardData = serializeForScript({
       title: session.title,
       stage: session.stage,
       minutes: session.minutes,
-      revision: coursePath.version,
+      revision: session.revision,
       required: session.required,
       href: sessionHref(session.id),
     })),
   })),
   sessions: sessions.map((session) => ({
     id: session.id,
-    revision: coursePath.version,
+    revision: session.revision,
     required: session.required,
   })),
+  objectives,
+  items,
 });
 
 const chevronIcon = '<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>';
@@ -42,6 +61,75 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     <h1>Your English path</h1>
     <p>One focused session at a time.</p>
   </header>
+
+  <section class="momentum-rail" aria-labelledby="momentum-title">
+    <h2 id="momentum-title">Momentum</h2>
+
+    <div class="momentum-stat momentum-week-stat">
+      <span class="momentum-stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="4" y="5.5" width="16" height="14" rx="1.5" /><path d="M8 3v5M16 3v5M4 10h16" /></svg>
+      </span>
+      <span class="momentum-stat-copy">
+        <span>This week</span>
+        <strong data-active-days>0 active days</strong>
+      </span>
+      <span class="momentum-week" data-momentum-week aria-label="Activity during the last seven days">
+        {Array.from({ length: 7 }, (_, index) => (
+          <span class="momentum-day" data-momentum-day={String(index)}>
+            <i aria-hidden="true"></i>
+            <small>–</small>
+          </span>
+        ))}
+      </span>
+    </div>
+
+    <div class="momentum-stat">
+      <span class="momentum-stat-icon momentum-chart-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M12 3.5V12h8.5" /></svg>
+      </span>
+      <span class="momentum-stat-copy">
+        <span>Course</span>
+        <strong><span data-course-percent>0</span>%</strong>
+      </span>
+      <span class="momentum-progress" role="progressbar" aria-label="Course completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-course-progress>
+        <span data-course-progress-fill></span>
+      </span>
+    </div>
+
+    <div class="momentum-stat">
+      <span class="momentum-stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 20v-4M8 20v-8M12 20V9M16 20V5M20 20V2" /></svg>
+      </span>
+      <span class="momentum-stat-copy">
+        <span>Skills</span>
+        <strong><span data-strong-skills>0</span> strong · <span data-developing-skills>0</span> developing</strong>
+      </span>
+    </div>
+
+    <div class="momentum-stat momentum-goal-stat">
+      <span class="momentum-stat-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M12 7.5V12l3 2" /></svg>
+      </span>
+      <span class="momentum-stat-copy">
+        <span>Daily goal</span>
+        <strong data-goal-progress>0 / 10 min</strong>
+      </span>
+      <span class="goal-options" role="group" aria-label="Choose a daily learning goal">
+        {[5, 10, 15].map((minutes) => (
+          <button
+            type="button"
+            data-daily-minutes={String(minutes)}
+            aria-pressed={minutes === 10 ? "true" : "false"}
+          >
+            {minutes}
+          </button>
+        ))}
+      </span>
+      <span class="momentum-progress" role="progressbar" aria-label="Today’s goal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-goal-meter>
+        <span data-goal-progress-fill></span>
+      </span>
+    </div>
+  </section>
 
   <div class="learning-dashboard-grid">
     <section class="learning-panel next-session-panel" aria-labelledby="next-session-title">
@@ -75,53 +163,69 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
 
     <section class="learning-panel learning-side-panel today-loop-panel" aria-labelledby="today-loop-title">
       <h2 id="today-loop-title">Today’s loop</h2>
-      <ul class="learning-list">
+      <ol class="today-plan-list">
         <li>
-          <a class="learning-row" data-loop-context href={sessionHref(firstSession.id)}>
-            <span class="learning-row-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3 18.5h18M5 15a7 7 0 0 1 14 0M12 3v3M4.5 7.5l2 2M19.5 7.5l-2 2" /></svg>
-            </span>
-            <span class="learning-row-copy">
-              <strong data-loop-context-label>Warm up · {firstSession.minutes} min</strong>
-              <span>Get your brain ready</span>
-            </span>
-            <span class="learning-row-time"><span data-loop-context-time>{firstSession.minutes} min</span><Fragment set:html={chevronIcon} /></span>
-          </a>
-        </li>
-        <li>
-          <a class="learning-row" data-loop-core href={sessionHref(firstSession.id)}>
-            <span class="learning-row-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M3.5 5.5c3.2-1.4 6-1 8.5 1.2v13c-2.5-2.2-5.3-2.6-8.5-1.2zM20.5 5.5c-3.2-1.4-6-1-8.5 1.2v13c2.5-2.2 5.3-2.6 8.5-1.2z" /></svg>
-            </span>
-            <span class="learning-row-copy">
-              <strong data-loop-core-label>Core lesson · {firstSession.minutes} min</strong>
-              <span>Continue your recommended step</span>
-            </span>
-            <span class="learning-row-time"><span data-loop-core-time>{firstSession.minutes} min</span><Fragment set:html={chevronIcon} /></span>
-          </a>
-        </li>
-        <li>
-          <a class="learning-row" data-loop-review href={sessionHref(firstSession.id)}>
-            <span class="learning-row-icon" aria-hidden="true">
+          <a class="today-plan-row is-disabled" data-today-review aria-disabled="true" tabindex="-1">
+            <span class="today-plan-number">1</span>
+            <span class="today-plan-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M20 8V4l-2 2a8 8 0 1 0 1.1 10.1M4 16v4l2-2" /></svg>
             </span>
-            <span class="learning-row-copy">
-              <strong data-loop-review-label>Continue · {firstSession.minutes} min</strong>
-              <span data-loop-review-copy>Unlock recall by following the path</span>
+            <span class="today-plan-copy">
+              <strong><span data-today-review-title>Adaptive review</span> <em>·</em> <span data-today-review-minutes>—</span></strong>
+              <span><em data-today-review-status>Caught up</em><span data-today-review-copy>No skills are due today</span></span>
             </span>
-            <span class="learning-row-time"><span data-loop-review-time>{firstSession.minutes} min</span><Fragment set:html={chevronIcon} /></span>
+            <Fragment set:html={chevronIcon} />
           </a>
         </li>
-      </ul>
+        <li>
+          <a class="today-plan-row" data-today-core href={sessionHref(firstSession.id)}>
+            <span class="today-plan-number">2</span>
+            <span class="today-plan-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3.5 5.5c3.2-1.4 6-1 8.5 1.2v13c-2.5-2.2-5.3-2.6-8.5-1.2zM20.5 5.5c-3.2-1.4-6-1-8.5 1.2v13c2.5-2.2 5.3-2.6 8.5-1.2z" /></svg>
+            </span>
+            <span class="today-plan-copy">
+              <strong>Next path step <em>·</em> <span data-today-core-minutes>{firstSession.minutes} min</span></strong>
+              <span><em data-today-core-status>Ready</em><span data-today-core-copy>{firstSession.title}</span></span>
+            </span>
+            <Fragment set:html={chevronIcon} />
+          </a>
+        </li>
+        <li>
+          <a class="today-plan-row is-disabled" data-today-speak aria-disabled="true" tabindex="-1">
+            <span class="today-plan-number">3</span>
+            <span class="today-plan-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="12" rx="4" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6" /></svg>
+            </span>
+            <span class="today-plan-copy">
+              <strong>Speaking transfer <em>·</em> <span data-today-speak-minutes>—</span></strong>
+              <span><em data-today-speak-status>Locked</em><span data-today-speak-copy>Complete the core step first</span></span>
+            </span>
+            <Fragment set:html={chevronIcon} />
+          </a>
+        </li>
+      </ol>
     </section>
 
     <section class="learning-panel course-map-panel" aria-labelledby="course-map-title">
-      <h2 id="course-map-title">Course map</h2>
-      <ol class="course-map">
+      <div class="course-map-heading">
+        <div>
+          <h2 id="course-map-title">Course map</h2>
+          <p data-course-range>Modules 1–6 of {modules.length}</p>
+        </div>
+        <button
+          class="learning-text-action course-map-toggle"
+          type="button"
+          data-course-map-toggle
+          aria-expanded="false"
+          aria-controls="course-map-list"
+        >Show all {modules.length}</button>
+      </div>
+      <ol class="course-map" id="course-map-list">
         {modules.map((module, index) => (
           <li
             class:list={["course-module-row", index === 0 && "current"]}
             data-course-module={module.id}
+            data-course-order={String(module.order)}
           >
             <span class="course-module-number">{module.order}</span>
             <a
@@ -138,7 +242,7 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
               <span class="course-module-progress" data-module-progress hidden={index !== 0}>
                 <span data-module-progress-copy>0 / {module.sessions.length} sessions</span>
                 <span class="course-module-progress-track" aria-hidden="true">
-                  <span class="course-module-progress-fill" data-module-progress-fill style="width: 0%" />
+                  <span class="course-module-progress-fill" data-module-progress-fill style="width: 0%"></span>
                 </span>
               </span>
               <span class="course-module-state" data-module-state>
@@ -151,36 +255,38 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       </ol>
     </section>
 
-    <section class="learning-panel learning-side-panel review-queue-panel" aria-labelledby="review-queue-title">
-      <h2 id="review-queue-title">Review queue</h2>
-      <div class="review-summary">
-        <span class="review-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M3.5 5.5c3.2-1.4 6-1 8.5 1.2v13c-2.5-2.2-5.3-2.6-8.5-1.2zM20.5 5.5c-3.2-1.4-6-1-8.5 1.2v13c2.5-2.2 5.3-2.6 8.5-1.2z" /></svg>
-        </span>
-        <span>
-          <strong data-review-count>0 skills due</strong>
-          <span data-review-copy>You are caught up. A short recall still keeps the path fresh.</span>
-        </span>
-      </div>
-      <a class="learning-outline-button" data-review-link href={sessionHref(firstSession.id)}>
-        <span data-review-action>Practice recall</span>
-        <Fragment set:html={chevronIcon} />
-      </a>
-    </section>
+    <div class="learning-insight-column">
+      <section class="learning-panel learning-side-panel review-queue-panel" aria-labelledby="review-queue-title">
+        <h2 id="review-queue-title">Review queue</h2>
+        <ul class="skill-queue-list" data-skill-list></ul>
+        <div class="insight-empty-state" data-review-empty>
+          <span class="insight-empty-icon" aria-hidden="true">✓</span>
+          <span>
+            <strong>Your recall queue is clear</strong>
+            <span>Complete practice and weak skills will appear here at the right time.</span>
+          </span>
+        </div>
+        <a class="learning-outline-button is-disabled" data-review-link aria-disabled="true" tabindex="-1">
+          <span data-review-action>You’re caught up</span>
+          <Fragment set:html={chevronIcon} />
+        </a>
+      </section>
 
-    <section class="learning-panel learning-side-panel more-practice-panel" aria-labelledby="more-practice-title">
-      <h2 id="more-practice-title">More practice</h2>
-      <a class="more-practice-link" data-more-practice-link href={sessionHref(firstSession.id)}>
-        <span class="more-practice-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
-        </span>
-        <span>
-          <strong data-more-practice-title>Continue to unlock practice</strong>
-          <span data-more-practice-copy>Follow the next step in your path first.</span>
-        </span>
-        <Fragment set:html={chevronIcon} />
-      </a>
-    </section>
+      <section class="learning-panel learning-side-panel mistakes-panel" aria-labelledby="mistakes-title">
+        <h2 id="mistakes-title">Mistakes to repair</h2>
+        <div class="repair-summary">
+          <span class="repair-summary-icon" aria-hidden="true">!</span>
+          <span>
+            <strong data-mistake-count>No answers waiting</strong>
+            <span data-mistake-copy>Mistakes you repair will disappear from this list.</span>
+          </span>
+        </div>
+        <a class="learning-outline-button is-disabled" data-mistake-link aria-disabled="true" tabindex="-1">
+          <span data-mistake-action>Nothing to repair</span>
+          <Fragment set:html={chevronIcon} />
+        </a>
+      </section>
+    </div>
   </div>
 
   <p class="learning-footer-note">Short sessions. Steady progress. Real English.</p>
@@ -190,12 +296,22 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
 
 <script>
   import {
-    getDueSkills,
+    LEARNING_PROGRESS_KEY,
     getNextLearningSessionId,
     isLearningSessionUnlocked,
     migrateLegacyLearningProgress,
     readLearningProgress,
+    setDailyMinutes,
+    writeLearningProgress,
   } from "../lib/learning-progress";
+  import {
+    buildMistakeSummary,
+    buildMomentumSummary,
+    buildSkillQueue,
+    type ItemInsightMeta,
+    type ObjectiveInsightMeta,
+    type SkillInsight,
+  } from "../lib/learning-insights";
 
   type DashboardSession = {
     id: string;
@@ -220,6 +336,8 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
   type DashboardData = {
     modules: DashboardModule[];
     sessions: Array<{ id: string; revision: number; required: boolean }>;
+    objectives: Record<string, ObjectiveInsightMeta>;
+    items: Record<string, ItemInsightMeta>;
   };
 
   const focusCopy: Record<DashboardSession["stage"], string> = {
@@ -235,35 +353,79 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     if (element) element.textContent = value;
   };
 
-  const setHref = (root: Element, selector: string, value: string) => {
-    const element = root.querySelector(selector);
-    if (element instanceof HTMLAnchorElement) element.href = value;
+  const setActionState = (
+    element: HTMLAnchorElement | null,
+    href: string | null,
+    enabled: boolean,
+  ) => {
+    if (!element) return;
+    element.classList.toggle("is-disabled", !enabled);
+    if (enabled && href) {
+      element.href = href;
+      element.removeAttribute("aria-disabled");
+      element.removeAttribute("tabindex");
+    } else {
+      element.removeAttribute("href");
+      element.setAttribute("aria-disabled", "true");
+      element.tabIndex = -1;
+    }
+  };
+
+  const withPracticeMode = (href: string, mode: "adaptive" | "repair" | "repeat") => {
+    const url = new URL(href, window.location.origin);
+    url.searchParams.set("fresh", "1");
+    if (mode !== "repeat") url.searchParams.set(mode, "1");
+    return `${url.pathname}${url.search}${url.hash}`;
   };
 
   document.querySelectorAll("[data-learning-dashboard]").forEach((root) => {
     const dataElement = root.querySelector("[data-dashboard-data]");
-    let data: DashboardData | null = null;
+    let parsedData: DashboardData | null = null;
 
     try {
-      data = JSON.parse(dataElement?.textContent || "null") as DashboardData | null;
+      parsedData = JSON.parse(dataElement?.textContent || "null") as DashboardData | null;
     } catch {
-      data = null;
+      parsedData = null;
     }
 
-    if (!data?.modules.length || !data.sessions.length) return;
-
+    if (!parsedData?.modules.length || !parsedData.sessions.length) return;
+    const data = parsedData;
+    const allSessions = data.modules.flatMap((module) => module.sessions);
     const sessionById = new Map(
       data.modules.flatMap((module) =>
         module.sessions.map((session) => [session.id, { module, session }] as const),
       ),
     );
+    const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    let courseMapExpanded = false;
+
+    const syncCourseMapVisibility = (activeOrder: number) => {
+      const groupStart = Math.floor((activeOrder - 1) / 6) * 6 + 1;
+      const groupEnd = Math.min(data.modules.length, groupStart + 5);
+      root.querySelectorAll<HTMLElement>("[data-course-order]").forEach((row) => {
+        const order = Number(row.dataset.courseOrder);
+        row.hidden = !courseMapExpanded && (order < groupStart || order > groupEnd);
+      });
+      setText(
+        root,
+        "[data-course-range]",
+        courseMapExpanded
+          ? `${data.modules.length} modules · ${data.sessions.length} sessions`
+          : `Modules ${groupStart}–${groupEnd} of ${data.modules.length}`,
+      );
+      const toggle = root.querySelector<HTMLButtonElement>("[data-course-map-toggle]");
+      if (toggle) {
+        toggle.hidden = data.modules.length <= 6;
+        toggle.setAttribute("aria-expanded", String(courseMapExpanded));
+        toggle.textContent = courseMapExpanded ? "Show current phase" : `Show all ${data.modules.length}`;
+      }
+    };
 
     migrateLegacyLearningProgress(
       window.localStorage,
       data.modules.flatMap((module) => {
         const learnSession = module.sessions.find((session) => session.stage === "learn");
         const speakSession = module.sessions.find((session) => session.stage === "speak");
-
         return learnSession && speakSession
           ? [{
               unitSlug: module.unitSlug,
@@ -277,12 +439,13 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
 
     const syncDashboard = () => {
       const progress = readLearningProgress(window.localStorage);
+      const now = new Date().toISOString();
       const nextSessionId = getNextLearningSessionId(data.sessions, progress) ?? data.sessions[0].id;
       const nextEntry = sessionById.get(nextSessionId) ?? sessionById.get(data.sessions[0].id);
-
       if (!nextEntry) return;
 
       const { module: activeModule, session: activeSession } = nextEntry;
+      syncCourseMapVisibility(activeModule.order);
       const isCompleted = (session: Pick<DashboardSession, "id" | "revision">) => {
         const record = progress.sessions[session.id];
         return record?.status === "completed" && record.revision === session.revision;
@@ -297,17 +460,13 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       };
       const isUnlocked = (session: Pick<DashboardSession, "id">) =>
         isLearningSessionUnlocked(data.sessions, progress, session.id);
-      const getPracticeHref = (target: DashboardSession) =>
-        (target.stage === "practice" || target.stage === "review") &&
-        isUnlocked(target) &&
-        isCompleted(target) &&
-        !hasActivePracticeRun(target)
-          ? `${target.href}?fresh=1`
-          : target.href;
+      const practiceHref = (
+        target: DashboardSession,
+        mode: "adaptive" | "repair" | "repeat" = "adaptive",
+      ) => hasActivePracticeRun(target) ? target.href : withPracticeMode(target.href, mode);
       const allComplete = data.sessions
         .filter((item) => item.required !== false)
         .every((item) => isCompleted(item));
-      const sessionStarted = isStarted(activeSession);
 
       setText(root, "[data-next-label]", allComplete ? "Course complete" : "Next session");
       setText(root, "[data-next-module]", `Module ${activeModule.order} · ${activeModule.title}`);
@@ -318,18 +477,16 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         root,
         "[data-next-action]",
         allComplete
-          ? hasActivePracticeRun(activeSession)
-            ? "Continue final review"
-            : "Review the final step"
-          : sessionStarted
-            ? "Continue session"
-            : "Start session",
+          ? hasActivePracticeRun(activeSession) ? "Continue final review" : "Review the final step"
+          : isStarted(activeSession) ? "Continue session" : "Start session",
       );
       setText(root, "[data-step-focus]", focusCopy[activeSession.stage]);
-      setHref(
-        root,
-        "[data-next-link]",
-        allComplete ? getPracticeHref(activeSession) : activeSession.href,
+      setActionState(
+        root.querySelector<HTMLAnchorElement>("[data-next-link]"),
+        allComplete && (activeSession.stage === "practice" || activeSession.stage === "review")
+          ? practiceHref(activeSession)
+          : activeSession.href,
+        true,
       );
 
       const cycle = root.querySelector("[data-learning-cycle]");
@@ -338,184 +495,293 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         if (moduleSession) (step as HTMLElement).dataset.cycleSession = moduleSession.id;
         const sessionId = (step as HTMLElement).dataset.cycleSession || "";
         const cycleSession = activeModule.sessions.find((item) => item.id === sessionId);
-        const cycleCompleted = cycleSession ? isCompleted(cycleSession) : false;
-        const isCurrent = !cycleCompleted && sessionId === activeSession.id;
+        const completed = cycleSession ? isCompleted(cycleSession) : false;
+        const current = !completed && sessionId === activeSession.id;
         const status = step.querySelector("[data-cycle-status]");
-        step.classList.toggle("completed", cycleCompleted);
-        step.classList.toggle("current", isCurrent);
+        step.classList.toggle("completed", completed);
+        step.classList.toggle("current", current);
         if (status) {
-          status.textContent = cycleCompleted
+          status.textContent = completed
             ? "Done"
-            : isCurrent
-              ? "In progress"
-              : cycleSession?.required === false
-                ? "Optional"
-                : "Upcoming";
+            : current ? "In progress" : cycleSession?.required === false ? "Optional" : "Upcoming";
         }
       });
 
-      const contextSession = activeModule.sessions.find((session) => session.stage === "context") ?? activeSession;
-      const reviewSession = activeModule.sessions.find((session) => session.stage === "review") ?? activeSession;
-      const practiceSession = activeModule.sessions.find((session) => session.stage === "practice") ?? activeSession;
-      const replayPracticeSession = data.modules
-        .flatMap((item) => item.sessions)
-        .find((item) =>
-          (item.stage === "practice" || item.stage === "review") &&
-          hasActivePracticeRun(item),
+      const momentum = buildMomentumSummary(progress, data.sessions, now, timeZone);
+      setText(root, "[data-active-days]", `${momentum.activeDayCount} active ${momentum.activeDayCount === 1 ? "day" : "days"}`);
+      setText(root, "[data-course-percent]", String(momentum.coursePercent));
+      setText(root, "[data-strong-skills]", String(momentum.strongSkills));
+      setText(root, "[data-developing-skills]", String(momentum.developingSkills));
+      setText(root, "[data-goal-progress]", `${momentum.todayMinutes} / ${momentum.dailyMinutes} min`);
+      const courseProgress = root.querySelector<HTMLElement>("[data-course-progress]");
+      const courseProgressFill = root.querySelector<HTMLElement>("[data-course-progress-fill]");
+      const goalMeter = root.querySelector<HTMLElement>("[data-goal-meter]");
+      const goalProgressFill = root.querySelector<HTMLElement>("[data-goal-progress-fill]");
+      if (courseProgress) courseProgress.setAttribute("aria-valuenow", String(momentum.coursePercent));
+      if (courseProgressFill) courseProgressFill.style.width = `${momentum.coursePercent}%`;
+      const goalPercent = Math.round(momentum.dailyProgress * 100);
+      if (goalMeter) goalMeter.setAttribute("aria-valuenow", String(goalPercent));
+      if (goalProgressFill) goalProgressFill.style.width = `${goalPercent}%`;
+      root.querySelectorAll<HTMLElement>("[data-momentum-day]").forEach((element, index) => {
+        const day = momentum.days[index];
+        if (!day) return;
+        element.classList.toggle("is-active", day.active);
+        element.classList.toggle("is-today", day.isToday);
+        element.title = `${day.key}: ${day.minutes} learning minutes`;
+        element.setAttribute("role", "img");
+        element.setAttribute(
+          "aria-label",
+          `${day.key}: ${day.minutes} learning ${day.minutes === 1 ? "minute" : "minutes"}${day.isToday ? ", today" : ""}`,
         );
-      const reviewUnlocked = isUnlocked(reviewSession);
-      const practiceCandidate = replayPracticeSession && isUnlocked(replayPracticeSession)
-        ? replayPracticeSession
-        : practiceSession;
-      const practiceUnlocked = isUnlocked(practiceCandidate);
-      const recallTarget = reviewUnlocked ? reviewSession : activeSession;
-      const practiceTarget = practiceUnlocked ? practiceCandidate : activeSession;
-      const practiceRunActive = hasActivePracticeRun(practiceTarget);
+        const bar = element.querySelector<HTMLElement>("i");
+        const label = element.querySelector("small");
+        if (bar) bar.style.height = `${Math.max(day.active ? 28 : 12, Math.min(100, day.minutes * 7))}%`;
+        if (label) label.textContent = day.label;
+      });
+      root.querySelectorAll<HTMLButtonElement>("[data-daily-minutes]").forEach((button) => {
+        button.setAttribute("aria-pressed", String(Number(button.dataset.dailyMinutes) === momentum.dailyMinutes));
+      });
 
-      setHref(root, "[data-loop-context]", contextSession.href);
-      setText(root, "[data-loop-context-label]", `Warm up · ${contextSession.minutes} min`);
-      setText(root, "[data-loop-context-time]", `${contextSession.minutes} min`);
-      setHref(root, "[data-loop-core]", activeSession.href);
-      setText(root, "[data-loop-core-label]", `Core lesson · ${activeSession.minutes} min`);
-      setText(root, "[data-loop-core-time]", `${activeSession.minutes} min`);
-      setHref(root, "[data-loop-review]", getPracticeHref(recallTarget));
-      setText(
-        root,
-        "[data-loop-review-label]",
-        reviewUnlocked ? `Recall · ${reviewSession.minutes} min` : `Continue · ${activeSession.minutes} min`,
+      const skillQueue = buildSkillQueue(progress, data.objectives, now, timeZone, 2);
+      const mistakes = buildMistakeSummary(progress, data.items, data.objectives);
+      const findPracticeTarget = (
+        unitId: string | undefined,
+        sourceSessionId: string | undefined,
+        purpose: "adaptive" | "repair",
+      ) => {
+        const sourceEntry = sourceSessionId ? sessionById.get(sourceSessionId) : undefined;
+        const module = (unitId ? data.modules.find((candidate) => candidate.unitSlug === unitId) : undefined)
+          ?? sourceEntry?.module;
+        if (!module) return undefined;
+        const review = module.sessions.find((session) => session.stage === "review");
+        const practice = module.sessions.find((session) => session.stage === "practice");
+        const candidates = purpose === "repair" ? [practice, review] : [review, practice];
+        return candidates.find((candidate) => candidate && isUnlocked(candidate));
+      };
+      const activeRepairEntry = Object.entries(progress.sessions)
+        .find(([, record]) => record.practiceRun?.phase === "repair");
+      const activeRepairSession = activeRepairEntry
+        ? sessionById.get(activeRepairEntry[0])?.session
+        : undefined;
+      const firstMistake = mistakes.groups[0];
+      const firstSkill = skillQueue[0];
+      const reviewTarget = activeRepairSession
+        ?? (firstMistake
+          ? findPracticeTarget(firstMistake.unitId, undefined, "repair")
+          : firstSkill
+            ? findPracticeTarget(firstSkill.unitId, firstSkill.sourceSessionId, "adaptive")
+            : undefined);
+      const reviewMode = activeRepairSession || firstMistake ? "repair" : "adaptive";
+      const reviewIsCore = reviewTarget?.id === activeSession.id;
+      const reviewEnabled = Boolean(reviewTarget && isUnlocked(reviewTarget));
+      const reviewLink = root.querySelector<HTMLAnchorElement>("[data-today-review]");
+      setActionState(
+        reviewLink,
+        reviewTarget ? practiceHref(reviewTarget, reviewMode) : null,
+        reviewEnabled,
       );
+      reviewLink?.classList.toggle("is-ready", reviewEnabled);
       setText(
         root,
-        "[data-loop-review-time]",
-        `${reviewUnlocked ? reviewSession.minutes : activeSession.minutes} min`,
+        "[data-today-review-title]",
+        activeRepairSession || firstMistake ? "Mistake repair" : "Adaptive review",
       );
+      setText(root, "[data-today-review-minutes]", reviewTarget ? `${reviewTarget.minutes} min` : "—");
+      setText(root, "[data-today-review-status]", reviewEnabled ? "Ready" : skillQueue.length || mistakes.count ? "Locked" : "Caught up");
       setText(
         root,
-        "[data-loop-review-copy]",
-        reviewUnlocked ? "Strengthen your memory" : "Unlock recall by following the path",
+        "[data-today-review-copy]",
+        activeRepairSession
+          ? "Resume the correction loop you started"
+          : firstMistake
+            ? `${mistakes.count} ${mistakes.count === 1 ? "answer needs" : "answers need"} another try`
+            : firstSkill
+              ? firstSkill.label
+              : "No skills are due today",
       );
-      setHref(root, "[data-more-practice-link]", getPracticeHref(practiceTarget));
+
+      const coreLink = root.querySelector<HTMLAnchorElement>("[data-today-core]");
+      setActionState(coreLink, activeSession.href, !reviewIsCore);
+      setText(root, "[data-today-core-minutes]", reviewIsCore ? "—" : `${activeSession.minutes} min`);
+      setText(root, "[data-today-core-status]", reviewIsCore ? "Next" : "Ready");
       setText(
         root,
-        "[data-more-practice-title]",
-        practiceRunActive
-          ? "Resume your extra practice set"
-          : practiceUnlocked
-          ? isCompleted(practiceTarget)
-            ? "Create another practice set"
-            : "Continue your practice set"
-          : "Continue to unlock practice",
+        "[data-today-core-copy]",
+        reviewIsCore ? "Finish the review above to continue" : activeSession.title,
       );
+
+      const previousSpeaking = [...allSessions]
+        .reverse()
+        .find((session) =>
+          session.stage === "speak" &&
+          session.id !== activeSession.id &&
+          session.id !== reviewTarget?.id &&
+          isCompleted(session) &&
+          isUnlocked(session)
+        );
+      const moduleSpeaking = activeModule.sessions.find((session) =>
+        session.stage === "speak" &&
+        session.id !== activeSession.id &&
+        session.id !== reviewTarget?.id &&
+        isUnlocked(session)
+      );
+      const speakingTarget = previousSpeaking ?? moduleSpeaking;
+      const speakLink = root.querySelector<HTMLAnchorElement>("[data-today-speak]");
+      setActionState(
+        speakLink,
+        speakingTarget
+          ? isCompleted(speakingTarget) ? withPracticeMode(speakingTarget.href, "repeat") : speakingTarget.href
+          : null,
+        Boolean(speakingTarget),
+      );
+      speakLink?.classList.toggle("is-ready", Boolean(speakingTarget));
+      setText(root, "[data-today-speak-minutes]", speakingTarget ? `${speakingTarget.minutes} min` : "—");
+      setText(root, "[data-today-speak-status]", speakingTarget ? "Ready" : "Locked");
       setText(
         root,
-        "[data-more-practice-copy]",
-        practiceRunActive
-          ? "Continue with the same saved questions and answers."
-          : practiceUnlocked
-          ? isCompleted(practiceTarget)
-            ? "Make a fresh set from what you are learning."
-            : "Resume the guided questions in your path."
-          : "Follow the next step in your path first.",
+        "[data-today-speak-copy]",
+        speakingTarget?.title ?? (activeSession.stage === "speak"
+          ? "Speaking is today’s core step"
+          : "Complete the core steps to unlock speaking"),
       );
 
       data.modules.forEach((module) => {
         const row = root.querySelector(`[data-course-module="${module.id}"]`);
         if (!(row instanceof HTMLElement)) return;
-
         const requiredSessions = module.sessions.filter((session) => session.required !== false);
         const completedCount = requiredSessions.filter((session) => isCompleted(session)).length;
         const moduleCompleted = requiredSessions.every((session) => isCompleted(session));
-        const isCurrent = module.id === activeModule.id;
+        const current = module.id === activeModule.id;
         const firstIncomplete = requiredSessions.find((session) => !isCompleted(session))
           ?? requiredSessions.at(-1)
           ?? module.sessions.at(-1);
         const moduleUnlocked = firstIncomplete ? isUnlocked(firstIncomplete) : moduleCompleted;
-        const summary = row.querySelector("[data-module-summary]");
-        const progressElement = row.querySelector("[data-module-progress]");
-        const lockElement = row.querySelector("[data-module-lock]");
-        const chevronElement = row.querySelector("[data-module-chevron]");
-        const moduleLink = row.querySelector("[data-module-link]");
-        const progressFill = row.querySelector("[data-module-progress-fill]");
-        const isLocked = !moduleCompleted && !moduleUnlocked;
-
-        row.classList.toggle("current", isCurrent);
+        const summary = row.querySelector<HTMLElement>("[data-module-summary]");
+        const progressElement = row.querySelector<HTMLElement>("[data-module-progress]");
+        const lockElement = row.querySelector<HTMLElement>("[data-module-lock]");
+        const chevronElement = row.querySelector<HTMLElement>("[data-module-chevron]");
+        const moduleLink = row.querySelector<HTMLAnchorElement>("[data-module-link]");
+        const progressFill = row.querySelector<HTMLElement>("[data-module-progress-fill]");
+        const locked = !moduleCompleted && !moduleUnlocked;
+        row.classList.toggle("current", current);
         row.classList.toggle("completed", moduleCompleted);
-        if (summary instanceof HTMLElement) summary.hidden = !isCurrent;
-        if (progressElement instanceof HTMLElement) progressElement.hidden = !isCurrent;
-        if (lockElement instanceof HTMLElement) lockElement.hidden = !isLocked;
-        if (chevronElement instanceof HTMLElement) chevronElement.hidden = isLocked;
+        if (summary) summary.hidden = !current;
+        if (progressElement) progressElement.hidden = !current;
+        if (lockElement) lockElement.hidden = !locked;
+        if (chevronElement) chevronElement.hidden = locked;
         setText(row, "[data-module-progress-copy]", `${completedCount} / ${requiredSessions.length} sessions`);
-        if (progressFill instanceof HTMLElement) {
+        if (progressFill) {
           progressFill.style.width = `${requiredSessions.length ? (completedCount / requiredSessions.length) * 100 : 100}%`;
         }
-        if (moduleLink instanceof HTMLAnchorElement) {
-          if (isLocked) {
-            moduleLink.removeAttribute("href");
-            moduleLink.setAttribute("aria-disabled", "true");
-            moduleLink.tabIndex = -1;
-          } else if (firstIncomplete) {
-            moduleLink.href = firstIncomplete.href;
-            moduleLink.removeAttribute("aria-disabled");
-            moduleLink.removeAttribute("tabindex");
-          }
-        }
+        setActionState(moduleLink, firstIncomplete?.href ?? null, !locked && Boolean(firstIncomplete));
       });
 
-      const dueSkills = getDueSkills(progress).filter(([, skill]) => {
-        const source = sessionById.get(skill.sourceSessionId)?.session;
-        return source?.stage === "practice" || source?.stage === "review";
-      });
-      const dueCount = dueSkills.length;
-      const dueSourceId = dueSkills[0]?.[1].sourceSessionId;
-      const dueEntry = dueSourceId ? sessionById.get(dueSourceId) : undefined;
-      const dueReviewCandidate = dueEntry?.module.sessions.find((session) => session.stage === "review");
-      const dueReviewUnlocked = Boolean(dueReviewCandidate && isUnlocked(dueReviewCandidate));
-      const dueReview = dueReviewCandidate && dueReviewUnlocked
-        ? dueReviewCandidate
-        : activeSession;
+      const skillList = root.querySelector<HTMLElement>("[data-skill-list]");
+      const reviewEmpty = root.querySelector<HTMLElement>("[data-review-empty]");
+      if (skillList) skillList.replaceChildren();
+      if (reviewEmpty) reviewEmpty.hidden = skillQueue.length > 0;
 
-      setText(root, "[data-review-count]", `${dueCount} ${dueCount === 1 ? "skill" : "skills"} due`);
-      setText(
-        root,
-        "[data-review-copy]",
-        dueCount
-          ? "Language you have learned is ready for another recall."
-          : reviewUnlocked
-            ? "You are caught up. A short recall still keeps the path fresh."
-            : "Complete the next steps to unlock your first recall.",
+      const makeSkillRow = (skill: SkillInsight) => {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        const icon = document.createElement("span");
+        const copy = document.createElement("span");
+        const title = document.createElement("strong");
+        const status = document.createElement("em");
+        const detail = document.createElement("span");
+        const arrow = document.createElement("span");
+        const target = findPracticeTarget(skill.unitId, skill.sourceSessionId, "adaptive");
+        item.className = "skill-queue-item";
+        link.className = "skill-queue-row";
+        icon.className = `skill-queue-icon ${skill.due ? "is-due" : "is-weak"}`;
+        icon.textContent = skill.due ? "?" : "↗";
+        copy.className = "skill-queue-copy";
+        title.textContent = skill.label;
+        status.textContent = skill.status;
+        detail.textContent = `${skill.lastSeenLabel}${skill.itemCount ? ` · ${skill.itemCount} items` : ""}`;
+        arrow.className = "skill-queue-arrow";
+        arrow.textContent = "›";
+        title.append(" · ", status);
+        copy.append(title, detail);
+        link.append(icon, copy, arrow);
+        setActionState(link, target ? practiceHref(target, "adaptive") : null, Boolean(target));
+        item.append(link);
+        return item;
+      };
+      skillQueue.forEach((skill) => skillList?.append(makeSkillRow(skill)));
+
+      const reviewActionTarget = skillQueue
+        .map((skill) => findPracticeTarget(skill.unitId, skill.sourceSessionId, "adaptive"))
+        .find(Boolean);
+      const reviewAction = root.querySelector<HTMLAnchorElement>("[data-review-link]");
+      setActionState(
+        reviewAction,
+        reviewActionTarget ? practiceHref(reviewActionTarget, "adaptive") : null,
+        Boolean(reviewActionTarget),
       );
       setText(
         root,
         "[data-review-action]",
-        dueCount
-          ? (dueReviewUnlocked ? "Start review" : "Continue path first")
-          : reviewUnlocked
-            ? "Practice recall"
-            : "Continue path first",
+        reviewActionTarget
+          ? skillQueue.some((skill) => skill.due) ? "Start adaptive review" : "Strengthen weak skills"
+          : skillQueue.length ? "Continue the path first" : "You’re caught up",
       );
-      setHref(
+
+      const mistakeTarget = activeRepairSession
+        ?? (firstMistake ? findPracticeTarget(firstMistake.unitId, undefined, "repair") : undefined);
+      setText(
         root,
-        "[data-review-link]",
-        dueCount ? getPracticeHref(dueReview) : getPracticeHref(recallTarget),
+        "[data-mistake-count]",
+        mistakes.count
+          ? `${mistakes.count} ${mistakes.count === 1 ? "answer needs" : "answers need"} another try`
+          : "No answers waiting",
+      );
+      setText(
+        root,
+        "[data-mistake-copy]",
+        firstMistake
+          ? `${firstMistake.label}${mistakes.groups.length > 1 ? ` + ${mistakes.groups.length - 1} more` : ""}`
+          : "Mistakes you repair will disappear from this list.",
+      );
+      const mistakeLink = root.querySelector<HTMLAnchorElement>("[data-mistake-link]");
+      setActionState(
+        mistakeLink,
+        mistakeTarget ? practiceHref(mistakeTarget, "repair") : null,
+        Boolean(mistakeTarget && mistakes.count),
+      );
+      setText(
+        root,
+        "[data-mistake-action]",
+        mistakes.count
+          ? mistakeTarget ? activeRepairSession ? "Resume repair" : "Repair mistakes" : "Complete the path first"
+          : "Nothing to repair",
       );
     };
 
+    root.querySelectorAll<HTMLButtonElement>("[data-daily-minutes]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const minutes = Number(button.dataset.dailyMinutes);
+        if (minutes !== 5 && minutes !== 10 && minutes !== 15) return;
+        const next = setDailyMinutes(readLearningProgress(window.localStorage), minutes);
+        writeLearningProgress(window.localStorage, next);
+        window.dispatchEvent(new CustomEvent("english-library:progress"));
+        syncDashboard();
+      });
+    });
+
+    root.querySelector<HTMLButtonElement>("[data-course-map-toggle]")?.addEventListener("click", () => {
+      courseMapExpanded = !courseMapExpanded;
+      syncDashboard();
+    });
+
     syncDashboard();
     window.addEventListener("storage", (event) => {
-      if (event.key === "english-library.learning.v1") syncDashboard();
+      if (event.key === LEARNING_PROGRESS_KEY) syncDashboard();
     });
+    window.addEventListener("english-library:progress", syncDashboard);
     window.addEventListener("pageshow", syncDashboard);
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible") syncDashboard();
     });
   });
 </script>
-
-<style>
-  .learning-row-time {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    white-space: nowrap;
-  }
-</style>

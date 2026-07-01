@@ -20,7 +20,7 @@ missionType: "one-minute-mission"
 durationMinutes: 3
 sourceRefs:
   - "unit-10"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Describe one usual habit, one temporary activity now, and one relevant life experience."

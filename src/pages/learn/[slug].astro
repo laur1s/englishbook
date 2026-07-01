@@ -7,6 +7,7 @@ import {
   getSessionById,
   sessions,
 } from "../../lib/course-path";
+import { getSpeakingMissionEntries } from "../../lib/content";
 import "../../styles/learning.css";
 
 export function getStaticPaths() {
@@ -26,11 +27,19 @@ if (!session || !module) {
 }
 
 const nextSessionId = getNextSessionId(session.id);
+const speakingEntry = session.stage === "speak"
+  ? (await getSpeakingMissionEntries()).find((entry) => entry.data.slug === module.missionSlug)
+  : undefined;
 ---
 
 <BaseLayout
   title={`${session.title} | English Library`}
   description={`Complete the ${session.title} session in your guided A2 English path.`}
 >
-  <SessionRunner module={module} session={session} nextSessionId={nextSessionId} />
+  <SessionRunner
+    module={module}
+    session={session}
+    nextSessionId={nextSessionId}
+    speakingEntry={speakingEntry}
+  />
 </BaseLayout>

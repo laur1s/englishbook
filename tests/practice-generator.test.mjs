@@ -149,6 +149,106 @@ test("recent items are deferred when enough alternatives exist", () => {
   assert.equal(pack.items.some((item) => recentItemIds.includes(item.id)), false);
 });
 
+test("target objectives are strongly preferred and normalized deterministically", () => {
+  const options = {
+    unitId: "unit-01",
+    mode: "standard",
+    count: 4,
+    targetObjectiveIds: [" u01.questions "],
+  };
+  const pack = generatePracticePackFromCatalog(catalog, options);
+
+  assert.deepEqual(pack.targetObjectiveIds, ["u01.questions"]);
+  assert.ok(pack.items.every((item) => item.objectiveId === "u01.questions"));
+  assert.deepEqual(pack, generatePracticePackFromCatalog(catalog, options));
+  assert.deepEqual(
+    generatePracticePackFromCatalog(catalog, {
+      ...options,
+      targetObjectiveIds: ["u99.not-in-this-scope"],
+    }),
+    generatePracticePackFromCatalog(catalog, {
+      ...options,
+      targetObjectiveIds: [],
+    }),
+  );
+});
+
+test("explicit priority items override recency avoidance", () => {
+  const priorityItemId = makeItems()[0].id;
+  const pack = generatePracticePackFromCatalog(catalog, {
+    unitId: "unit-01",
+    mode: "standard",
+    count: 1,
+    recentItemIds: [priorityItemId],
+    priorityItemIds: [priorityItemId],
+  });
+
+  assert.equal(pack.items[0].id, priorityItemId);
+  assert.deepEqual(pack.priorityItemIds, [priorityItemId]);
+});
+
+test("targeting preferences participate in the deterministic pack fingerprint", () => {
+  const base = {
+    unitId: "unit-01",
+    mode: "standard",
+    count: 4,
+    attempt: 3,
+  };
+  const questions = generatePracticePackFromCatalog(catalog, {
+    ...base,
+    targetObjectiveIds: ["u01.questions"],
+  });
+  const agreement = generatePracticePackFromCatalog(catalog, {
+    ...base,
+    targetObjectiveIds: ["u01.be-agreement"],
+  });
+
+  assert.notEqual(questions.seed, agreement.seed);
+  assert.notEqual(questions.id, agreement.id);
+  const prioritized = generatePracticePackFromCatalog(catalog, {
+    ...base,
+    priorityItemIds: ["u01.practice.001"],
+  });
+  assert.notEqual(prioritized.seed, questions.seed);
+  assert.notEqual(prioritized.id, questions.id);
+  assert.deepEqual(
+    generatePracticePackFromCatalog(catalog, {
+      ...base,
+      targetObjectiveIds: ["u01.questions", "u01.be-agreement"],
+    }),
+    generatePracticePackFromCatalog(catalog, {
+      ...base,
+      targetObjectiveIds: ["u01.be-agreement", "u01.questions"],
+    }),
+  );
+});
+
+test("targeting options reject empty and duplicate IDs", () => {
+  const base = { unitId: "unit-01", mode: "standard", count: 4 };
+
+  assert.throws(
+    () => generatePracticePackFromCatalog(catalog, {
+      ...base,
+      targetObjectiveIds: ["u01.questions", "u01.questions"],
+    }),
+    /targetObjectiveIds must not contain duplicate IDs/,
+  );
+  assert.throws(
+    () => generatePracticePackFromCatalog(catalog, {
+      ...base,
+      priorityItemIds: ["u01.practice.001", " u01.practice.001 "],
+    }),
+    /priorityItemIds must not contain duplicate IDs/,
+  );
+  assert.throws(
+    () => generatePracticePackFromCatalog(catalog, {
+      ...base,
+      targetObjectiveIds: [""],
+    }),
+    /must be a non-empty string/,
+  );
+});
+
 test("seeded choice shuffling preserves IDs and the correct answer", () => {
   const original = makeItems()[0];
   const pack = generatePracticePackFromCatalog(catalog, {

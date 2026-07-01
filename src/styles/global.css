@@ -879,6 +879,16 @@ html[data-lt="hidden"] .lt-text {
   line-height: 1.6;
 }
 
+.mission-live-status {
+  margin: 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--muted);
+  font: 600 0.9rem/1.45 "Avenir Next", "Segoe UI", sans-serif;
+}
+
 .mission-progress-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -919,6 +929,12 @@ html[data-lt="hidden"] .lt-text {
   font-size: 1.45rem;
 }
 
+.mission-step h3:focus-visible {
+  outline: 3px solid rgba(178, 75, 49, 0.32);
+  outline-offset: 0.3rem;
+  border-radius: 0.2rem;
+}
+
 .mission-step-prompt {
   margin: 0.8rem 0 0;
   font-size: 1.08rem;
@@ -940,6 +956,129 @@ html[data-lt="hidden"] .lt-text {
   padding-left: 1.25rem;
   display: grid;
   gap: 0.45rem;
+}
+
+.mission-prep-notes {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 1rem;
+  color: var(--ink);
+  font: 700 0.92rem/1.4 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.mission-prep-notes textarea {
+  width: 100%;
+  min-height: 5rem;
+  resize: vertical;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--ink);
+  font: 500 1rem/1.5 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.mission-prep-notes textarea:focus-visible {
+  outline: 3px solid rgba(178, 75, 49, 0.3);
+  outline-offset: 2px;
+  border-color: var(--accent);
+}
+
+.mission-prep-notes small {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.mission-tool-panel {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.mission-tool-panel h4 {
+  margin: 0.15rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.mission-tool-label {
+  margin: 0;
+  color: var(--accent);
+  font: 800 0.75rem/1.2 "Avenir Next", "Segoe UI", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.mission-privacy-note,
+.mission-recording-fallback,
+.mission-listened-state {
+  margin: 0;
+  color: var(--muted);
+  font: 600 0.9rem/1.5 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.mission-recording-controls,
+.mission-listening-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.mission-recording-controls button,
+.mission-listening-controls button {
+  min-height: 2.75rem;
+}
+
+.mission-recording-panel audio {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 34rem;
+}
+
+.mission-recording-panel audio[hidden] {
+  display: none;
+}
+
+.mission-no-recording-option {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  width: fit-content;
+  font: 650 0.94rem/1.45 "Avenir Next", "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+.mission-no-recording-option input {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.12rem;
+}
+
+.mission-listened-state {
+  padding: 0.42rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(31, 36, 48, 0.07);
+}
+
+.mission-model-transcript {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 0.8rem 0.8rem 0;
+  background: rgba(178, 75, 49, 0.07);
+}
+
+.mission-model-transcript p:last-child {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
 }
 
 .mission-timer-shell {
@@ -1017,6 +1156,17 @@ html[data-lt="hidden"] .lt-text {
   width: 1.15rem;
   height: 1.15rem;
   margin-top: 0.1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mission-player *,
+  .mission-player *::before,
+  .mission-player *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 .filter-bar {

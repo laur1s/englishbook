@@ -19,7 +19,7 @@ missionType: "role-flip-dialogue"
 durationMinutes: 5
 sourceRefs:
   - "unit-12"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Plan a weekend visit with a friend. Discuss experience, compare two options, choose a plan, and solve one problem."

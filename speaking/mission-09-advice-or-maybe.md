@@ -20,7 +20,7 @@ missionType: "mistake-detective"
 durationMinutes: 2
 sourceRefs:
   - "unit-09"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Spot the modal mistake and choose the meaning first: advice, possibility, or deduction."

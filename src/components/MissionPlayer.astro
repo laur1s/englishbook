@@ -15,9 +15,18 @@ type Props = {
 };
 
 const { entry, relatedHref, relatedTitle } = Astro.props;
+
+const modelPrefix = /^(?:check your version against this model|compare with this model exchange|compare with this model|check this model exchange|check this model|check the explanation|check the rule)\s*:\s*/i;
+const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
 ---
 
-<section class="mission-player" id="mission-player" data-mission-player data-mission-slug={entry.data.slug}>
+<section
+  class="mission-player"
+  id="mission-player"
+  data-mission-player
+  data-mission-slug={entry.data.slug}
+  data-supports-recording={String(entry.data.supportsRecording)}
+>
   <div class="mission-player-head">
     <div>
       <p class="eyebrow">Run The Rehearsal</p>
@@ -30,36 +39,43 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
     <div class="badge-row">
       <span class="badge soft">{MISSION_TYPE_LABELS[entry.data.missionType]}</span>
       <span class="badge">{formatDurationMinutes(entry.data.durationMinutes)}</span>
-      <span class="badge">{entry.data.supportsRecording ? "Recording ready" : "Speak aloud only"}</span>
+      <span class="badge" data-recording-badge>
+        {entry.data.supportsRecording ? "Recording ready" : "Speak aloud only"}
+      </span>
     </div>
   </div>
 
   <div class="mission-progress-strip">
     <div>
       <span>Status</span>
-      <strong data-progress-status aria-live="polite">Not completed yet</strong>
+      <strong data-progress-status>Not completed yet</strong>
     </div>
     <div>
       <span>Last confidence</span>
-      <strong data-progress-confidence aria-live="polite">Not rated</strong>
+      <strong data-progress-confidence>Not rated</strong>
     </div>
     <div>
-      <span>Last played</span>
-      <strong data-progress-played aria-live="polite">Never</strong>
+      <span>Last practised</span>
+      <strong data-progress-played>Never</strong>
     </div>
   </div>
+
+  <p class="mission-live-status" data-mission-status role="status" aria-live="polite" aria-atomic="true">
+    Mission ready.
+  </p>
 
   <ol class="mission-step-list">
     {entry.data.steps.map((step, index) => (
       <li
         class="mission-step"
         data-mission-step
+        data-step-kind={step.kind}
         data-step-seconds={step.seconds ? String(step.seconds) : ""}
       >
         <div class="mission-step-top">
           <div>
             <p class="eyebrow">Step {index + 1}</p>
-            <h3>{STEP_KIND_LABELS[step.kind]}</h3>
+            <h3 data-step-heading tabindex="-1">{STEP_KIND_LABELS[step.kind]}</h3>
           </div>
 
           {step.seconds ? (
@@ -79,13 +95,75 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
           </ul>
         ) : null}
 
+        {step.kind === "prep" ? (
+          <label class="mission-prep-notes">
+            <span>Your three keywords</span>
+            <textarea
+              data-prep-notes
+              rows="2"
+              maxlength="180"
+              placeholder="Write keywords only — not a full script"
+            ></textarea>
+            <small>Saved on this device. Audio is never stored here.</small>
+          </label>
+        ) : null}
+
+        {step.kind === "speak" ? (
+          <section class="mission-tool-panel mission-recording-panel" data-recording-panel aria-label="Speaking recorder">
+            <div>
+              <p class="mission-tool-label">Your take</p>
+              <h4>Record, replay, and try again</h4>
+            </div>
+            <p class="mission-privacy-note">Audio stays in this tab and is never uploaded.</p>
+            <div class="mission-recording-controls">
+              <button type="button" class="primary-button" data-record hidden>Record</button>
+              <button type="button" class="primary-button" data-stop-recording hidden disabled>Stop</button>
+              <button type="button" class="secondary-button" data-replace-recording hidden>Replace</button>
+            </div>
+            <audio data-recording-playback controls preload="metadata" aria-label="Your recorded speaking take" hidden></audio>
+            <p class="mission-recording-fallback" data-recording-fallback hidden>
+              Recording is not available here. Use the timer and speak aloud instead.
+            </p>
+            <label class="mission-no-recording-option">
+              <input type="checkbox" data-no-recording />
+              <span>Practise without recording</span>
+            </label>
+          </section>
+        ) : null}
+
+        {step.kind === "compare" ? (
+          <section
+            class="mission-tool-panel mission-listening-panel"
+            data-listening-panel
+            data-model-text={getModelText(step.prompt)}
+            aria-label="Listen to the model"
+          >
+            <div>
+              <p class="mission-tool-label">Model listening</p>
+              <h4>Listen, then compare with your take</h4>
+            </div>
+            <div class="mission-listening-controls">
+              <button type="button" class="primary-button" data-listen-model hidden>Listen</button>
+              <button type="button" class="secondary-button" data-listen-slow hidden>Slow</button>
+              <span class="mission-listened-state" data-listened-state>Not listened yet</span>
+            </div>
+            <p class="mission-recording-fallback" data-listening-fallback hidden>
+              Voice playback is not available here. Read the transcript aloud instead.
+            </p>
+            <div class="mission-model-transcript">
+              <p class="mission-tool-label">Visible transcript</p>
+              <p data-model-transcript>{getModelText(step.prompt)}</p>
+            </div>
+          </section>
+        ) : null}
+
         {step.seconds ? (
           <div class="mission-timer-tools">
             <p class="mission-time-note">Suggested time: {step.seconds} seconds.</p>
             <button type="button" class="secondary-button" data-start-timer hidden>
               Start timer
             </button>
-            <p class="mission-timer-status" data-timer-status aria-live="polite" hidden>Timer ready.</p>
+            <p class="mission-timer-status" data-timer-status hidden>Timer ready.</p>
           </div>
         ) : null}
 
@@ -93,9 +171,9 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
           <div class="mission-reflect">
             <fieldset class="mission-self-check">
               <legend>Quick accuracy and fluency check</legend>
-              <label><input type="checkbox" /> I used the target grammar at least twice.</label>
-              <label><input type="checkbox" /> I spoke in full phrases without reading every word.</label>
-              <label><input type="checkbox" /> I noticed and corrected at least one mistake.</label>
+              <label><input type="checkbox" data-self-check value="target-grammar" /> I used the target grammar at least twice.</label>
+              <label><input type="checkbox" data-self-check value="full-phrases" /> I spoke in full phrases without reading every word.</label>
+              <label><input type="checkbox" data-self-check value="self-correction" /> I noticed and corrected at least one mistake.</label>
             </fieldset>
             <p class="mission-time-note">
               Second-attempt goal: repeat the hardest step once, with one clearer sentence and fewer pauses.
@@ -109,7 +187,7 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
               ))}
             </div>
             <p class="mission-reflect-note" data-confidence-note>
-              Select a score to save this mission in your local progress.
+              Choose a confidence score or save one self-check, then use Finish mission.
             </p>
             {relatedHref && relatedTitle ? (
               <a class="inline-link" href={relatedHref}>Return to {relatedTitle}</a>
@@ -127,7 +205,8 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
 
   <noscript>
     <p class="mission-noscript">
-      JavaScript is off, so the steps stay open and the timers work as suggested timings only.
+      JavaScript is off, so every step stays open. Use the suggested timings, read the model transcript,
+      and practise aloud without recording.
     </p>
   </noscript>
 </section>
@@ -186,22 +265,50 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
     const statusValue = root.querySelector("[data-progress-status]");
     const confidenceValue = root.querySelector("[data-progress-confidence]");
     const playedValue = root.querySelector("[data-progress-played]");
+    const liveStatus = root.querySelector("[data-mission-status]");
     const confidenceButtons = [...root.querySelectorAll("[data-confidence]")];
     const confidenceRow = root.querySelector("[data-confidence-row]");
     const confidenceNote = root.querySelector("[data-confidence-note]");
+    const prepNotes = root.querySelector("[data-prep-notes]");
+    const selfChecks = [...root.querySelectorAll("[data-self-check]")];
+    const recordingPanel = root.querySelector("[data-recording-panel]");
+    const recordingBadge = root.querySelector("[data-recording-badge]");
 
     if (!slug || !steps.length || !controls || !prevButton || !nextButton) {
       return;
     }
 
-    let activeIndex = 0;
-    let timerId = null;
     let progress = readSpeakingProgress();
+    const initialRecord = progress[slug] && typeof progress[slug] === "object" && !Array.isArray(progress[slug])
+      ? progress[slug]
+      : {};
+    const savedStep = Number(initialRecord.activeStep);
+    let activeIndex = Number.isInteger(savedStep) && savedStep >= 0 && savedStep < steps.length
+      ? savedStep
+      : 0;
+    let timerId = null;
+    let timerDeadline = 0;
+    let timerStep = null;
+    let mediaRecorder = null;
+    let mediaStream = null;
+    let audioUrl = null;
+    let recordedChunks = [];
+    let currentUtterance = null;
+    let disposing = false;
+
+    const getRecord = () => {
+      const record = progress[slug];
+      return record && typeof record === "object" && !Array.isArray(record) ? record : {};
+    };
+
+    const announce = (message) => {
+      if (liveStatus) {
+        liveStatus.textContent = message;
+      }
+    };
 
     const updateProgress = (updates) => {
-      const previousRecord = progress[slug] && typeof progress[slug] === "object"
-        ? progress[slug]
-        : {};
+      const previousRecord = getRecord();
 
       progress = {
         ...progress,
@@ -215,11 +322,12 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       syncProgressUi();
     };
 
-    const markStarted = () => {
-      const record = progress[slug];
+    const markStarted = (updates = {}) => {
+      const record = getRecord();
       const now = new Date().toISOString();
       updateProgress({
-        startedAt: record?.startedAt || now,
+        ...updates,
+        startedAt: record.startedAt || now,
         lastPlayedAt: now,
       });
     };
@@ -229,6 +337,8 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
         window.clearInterval(timerId);
         timerId = null;
       }
+      timerDeadline = 0;
+      timerStep = null;
     };
 
     const resetTimers = () => {
@@ -255,13 +365,233 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       });
     };
 
+    const startTimer = (step) => {
+      const seconds = Number(step?.dataset.stepSeconds || 0);
+      const countdown = step?.querySelector("[data-timer-countdown]");
+      const timerStatus = step?.querySelector("[data-timer-status]");
+
+      if (!seconds || !countdown) {
+        return;
+      }
+
+      clearTimer();
+      timerStep = step;
+      timerDeadline = Date.now() + seconds * 1000;
+      countdown.textContent = formatCountdown(seconds);
+
+      if (timerStatus) {
+        timerStatus.hidden = false;
+        timerStatus.textContent = "Timer running.";
+      }
+
+      announce(`Timer started for ${seconds} seconds.`);
+
+      const tick = () => {
+        if (!timerStep || !timerDeadline) {
+          return;
+        }
+
+        const remaining = Math.max(0, Math.ceil((timerDeadline - Date.now()) / 1000));
+        countdown.textContent = formatCountdown(remaining);
+
+        if (remaining <= 0) {
+          clearTimer();
+          if (timerStatus) {
+            timerStatus.textContent = "Time is up. Finish the sentence and move on.";
+          }
+          announce("Time is up. Finish your sentence, then move on.");
+        }
+      };
+
+      tick();
+      timerId = window.setInterval(tick, 250);
+    };
+
+    const hasSpeechPlayback =
+      "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+    const hasRecording = Boolean(
+      root.dataset.supportsRecording === "true" &&
+      navigator.mediaDevices?.getUserMedia &&
+      "MediaRecorder" in window,
+    );
+
+    const stopStream = () => {
+      if (mediaStream) {
+        mediaStream.getTracks().forEach((track) => track.stop());
+        mediaStream = null;
+      }
+    };
+
+    const revokeAudio = () => {
+      if (audioUrl) {
+        URL.revokeObjectURL(audioUrl);
+        audioUrl = null;
+      }
+    };
+
+    const cancelSpeech = () => {
+      if (hasSpeechPlayback) {
+        window.speechSynthesis.cancel();
+      }
+      currentUtterance = null;
+    };
+
+    const syncRecordingUi = (state = "idle") => {
+      if (!recordingPanel) {
+        return;
+      }
+
+      const recordButton = recordingPanel.querySelector("[data-record]");
+      const stopButton = recordingPanel.querySelector("[data-stop-recording]");
+      const replaceButton = recordingPanel.querySelector("[data-replace-recording]");
+      const playback = recordingPanel.querySelector("[data-recording-playback]");
+      const fallback = recordingPanel.querySelector("[data-recording-fallback]");
+      const hasAudio = Boolean(audioUrl && playback?.getAttribute("src"));
+      const isRecording = state === "recording";
+
+      if (recordButton) {
+        recordButton.hidden = !hasRecording || hasAudio || isRecording;
+        recordButton.disabled = isRecording;
+      }
+      if (stopButton) {
+        stopButton.hidden = !isRecording;
+        stopButton.disabled = !isRecording;
+      }
+      if (replaceButton) {
+        replaceButton.hidden = !hasRecording || !hasAudio || isRecording;
+        replaceButton.disabled = isRecording;
+      }
+      if (fallback) {
+        fallback.hidden = hasRecording;
+      }
+    };
+
+    const pickRecordingMimeType = () => {
+      if (!("MediaRecorder" in window) || typeof window.MediaRecorder.isTypeSupported !== "function") {
+        return "";
+      }
+
+      return [
+        "audio/webm;codecs=opus",
+        "audio/webm",
+        "audio/mp4",
+        "audio/ogg;codecs=opus",
+      ].find((type) => {
+        try {
+          return window.MediaRecorder.isTypeSupported(type);
+        } catch {
+          return false;
+        }
+      }) || "";
+    };
+
+    const stopRecording = () => {
+      if (mediaRecorder && mediaRecorder.state !== "inactive") {
+        mediaRecorder.stop();
+        announce("Recording stopped. Your take is ready to replay.");
+      } else {
+        stopStream();
+      }
+    };
+
+    const startRecording = async () => {
+      if (!recordingPanel || !hasRecording) {
+        markStarted({ noRecording: true });
+        const noRecording = recordingPanel?.querySelector("[data-no-recording]");
+        if (noRecording) noRecording.checked = true;
+        announce("Recording is unavailable. Practise aloud with the timer instead.");
+        return;
+      }
+
+      const recordButton = recordingPanel.querySelector("[data-record]");
+      const replaceButton = recordingPanel.querySelector("[data-replace-recording]");
+      if (recordButton) recordButton.disabled = true;
+      if (replaceButton) replaceButton.disabled = true;
+
+      try {
+        mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+
+        if (disposing) {
+          stopStream();
+          return;
+        }
+
+        const mimeType = pickRecordingMimeType();
+        mediaRecorder = mimeType
+          ? new window.MediaRecorder(mediaStream, { mimeType })
+          : new window.MediaRecorder(mediaStream);
+        recordedChunks = [];
+
+        mediaRecorder.addEventListener("dataavailable", (event) => {
+          if (event.data?.size) {
+            recordedChunks.push(event.data);
+          }
+        });
+
+        mediaRecorder.addEventListener("stop", () => {
+          const recorderType = mediaRecorder?.mimeType || mimeType || recordedChunks[0]?.type || "audio/webm";
+          const playback = recordingPanel.querySelector("[data-recording-playback]");
+
+          stopStream();
+          mediaRecorder = null;
+
+          if (!disposing && recordedChunks.length && playback) {
+            revokeAudio();
+            const recording = new Blob(recordedChunks, { type: recorderType });
+            audioUrl = URL.createObjectURL(recording);
+            playback.src = audioUrl;
+            playback.hidden = false;
+          }
+
+          recordedChunks = [];
+          syncRecordingUi();
+        }, { once: true });
+
+        revokeAudio();
+        const playback = recordingPanel.querySelector("[data-recording-playback]");
+        if (playback) {
+          playback.pause();
+          playback.removeAttribute("src");
+          playback.load();
+          playback.hidden = true;
+        }
+
+        mediaRecorder.start();
+        const noRecording = recordingPanel.querySelector("[data-no-recording]");
+        if (noRecording) noRecording.checked = false;
+        markStarted({ noRecording: false });
+        syncRecordingUi("recording");
+        const speakingStep = recordingPanel.closest("[data-mission-step]");
+        startTimer(speakingStep);
+        announce("Recording started. Speak naturally; press Stop when you finish.");
+      } catch (error) {
+        stopStream();
+        mediaRecorder = null;
+        const noRecording = recordingPanel.querySelector("[data-no-recording]");
+        if (noRecording) noRecording.checked = true;
+        markStarted({ noRecording: true });
+        syncRecordingUi();
+        const fallback = recordingPanel.querySelector("[data-recording-fallback]");
+        if (fallback) {
+          fallback.hidden = false;
+          fallback.textContent = error?.name === "NotAllowedError"
+            ? "Microphone permission was not granted. Use the timer and speak aloud instead."
+            : "The microphone could not start. Use the timer and speak aloud instead.";
+        }
+        announce("Microphone unavailable. Practise aloud with the timer instead.");
+      }
+    };
+
     const syncProgressUi = () => {
-      const record = progress[slug];
-      const lastConfidence = Number(record?.lastConfidence);
+      const record = getRecord();
+      const lastConfidence = Number(record.lastConfidence);
       const hasConfidence = Number.isInteger(lastConfidence) && lastConfidence >= 1 && lastConfidence <= 5;
+      const savedChecks = Array.isArray(record.selfChecks)
+        ? record.selfChecks.filter((value) => typeof value === "string")
+        : [];
 
       if (statusValue) {
-        statusValue.textContent = record?.completed ? "Completed" : "Not completed yet";
+        statusValue.textContent = record.completed ? "Completed" : "Not completed yet";
       }
 
       if (confidenceValue) {
@@ -269,13 +599,15 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       }
 
       if (playedValue) {
-        playedValue.textContent = formatLastPlayed(record?.lastPlayedAt);
+        playedValue.textContent = formatLastPlayed(record.lastPlayedAt);
       }
 
       if (confidenceNote) {
         confidenceNote.textContent = hasConfidence
-          ? `Saved confidence: ${lastConfidence}/5.`
-          : "Select a score to save this mission in your local progress.";
+          ? `Saved confidence: ${lastConfidence}/5. Use Finish mission when you are ready.`
+          : savedChecks.length
+            ? "Self-check saved. Add a confidence score if useful, then finish the mission."
+            : "Choose a confidence score or save one self-check, then use Finish mission.";
       }
 
       confidenceButtons.forEach((button) => {
@@ -283,12 +615,35 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
         button.classList.toggle("selected", isSelected);
         button.setAttribute("aria-pressed", String(isSelected));
       });
+
+      selfChecks.forEach((input) => {
+        input.checked = savedChecks.includes(input.value);
+      });
+
+      if (prepNotes && document.activeElement !== prepNotes) {
+        prepNotes.value = typeof record.prepNotes === "string" ? record.prepNotes.slice(0, 180) : "";
+      }
+
+      const noRecording = recordingPanel?.querySelector("[data-no-recording]");
+      if (noRecording) {
+        noRecording.checked = record.noRecording === true;
+      }
+
+      root.querySelectorAll("[data-listened-state]").forEach((value) => {
+        value.textContent = record.listened === true ? "Listened" : "Not listened yet";
+      });
     };
 
-    const showStep = (index) => {
-      activeIndex = Math.max(0, Math.min(index, steps.length - 1));
+    const showStep = (index, shouldFocus = true, shouldPersist = true) => {
+      const nextIndex = Math.max(0, Math.min(index, steps.length - 1));
+      if (mediaRecorder?.state === "recording" && nextIndex !== activeIndex) {
+        stopRecording();
+      }
       clearTimer();
       resetTimers();
+      cancelSpeech();
+      root.querySelectorAll("audio").forEach((audio) => audio.pause());
+      activeIndex = nextIndex;
 
       steps.forEach((step, stepIndex) => {
         step.hidden = stepIndex !== activeIndex;
@@ -297,6 +652,18 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       prevButton.disabled = activeIndex === 0;
       nextButton.disabled = false;
       nextButton.textContent = activeIndex === steps.length - 1 ? "Finish mission" : "Next step";
+
+      if (shouldPersist) {
+        markStarted({ activeStep: activeIndex });
+      }
+
+      const heading = steps[activeIndex]?.querySelector("[data-step-heading]");
+      const headingText = heading?.textContent?.trim() || `Step ${activeIndex + 1}`;
+      announce(`Step ${activeIndex + 1} of ${steps.length}: ${headingText}.`);
+
+      if (shouldFocus && heading) {
+        window.requestAnimationFrame(() => heading.focus({ preventScroll: true }));
+      }
     };
 
     controls.hidden = false;
@@ -305,64 +672,137 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
       confidenceRow.hidden = false;
     }
 
+    if (recordingBadge && !hasRecording) {
+      recordingBadge.textContent = "Timer-only fallback";
+    }
+
+    syncRecordingUi();
+
+    root.querySelectorAll("[data-listening-panel]").forEach((panel) => {
+      const listenButton = panel.querySelector("[data-listen-model]");
+      const slowButton = panel.querySelector("[data-listen-slow]");
+      const fallback = panel.querySelector("[data-listening-fallback]");
+
+      if (listenButton) listenButton.hidden = !hasSpeechPlayback;
+      if (slowButton) slowButton.hidden = !hasSpeechPlayback;
+      if (fallback) fallback.hidden = hasSpeechPlayback;
+
+      const playModel = (rate) => {
+        const text = panel.dataset.modelText?.trim();
+
+        if (!hasSpeechPlayback || !text) {
+          if (fallback) fallback.hidden = false;
+          announce("Voice playback is unavailable. Use the visible transcript instead.");
+          return;
+        }
+
+        cancelSpeech();
+        const utterance = new window.SpeechSynthesisUtterance(text);
+        utterance.lang = "en-GB";
+        utterance.rate = rate;
+        utterance.onstart = () => {
+          currentUtterance = utterance;
+          markStarted({ listened: true });
+          announce(rate < 1 ? "Playing the model slowly." : "Playing the model.");
+        };
+        utterance.onend = () => {
+          if (currentUtterance === utterance) {
+            currentUtterance = null;
+            announce("Model finished. Compare it with your own take.");
+          }
+        };
+        utterance.onerror = (event) => {
+          if (event.error !== "canceled" && event.error !== "interrupted") {
+            if (fallback) fallback.hidden = false;
+            announce("Voice playback failed. Use the visible transcript instead.");
+          }
+        };
+        window.speechSynthesis.speak(utterance);
+      };
+
+      listenButton?.addEventListener("click", () => playModel(1));
+      slowButton?.addEventListener("click", () => playModel(0.78));
+    });
+
     prevButton.addEventListener("click", () => {
-      markStarted();
       showStep(activeIndex - 1);
     });
 
     nextButton.addEventListener("click", () => {
       if (activeIndex === steps.length - 1) {
+        const record = getRecord();
+        const confidence = Number(record.lastConfidence);
+        const hasConfidence = Number.isInteger(confidence) && confidence >= 1 && confidence <= 5;
+        const savedChecks = Array.isArray(record.selfChecks)
+          ? record.selfChecks.filter((value) => typeof value === "string")
+          : [];
+
+        if (!hasConfidence && !savedChecks.length) {
+          announce("Before finishing, choose a confidence score or save at least one self-check.");
+          const focusTarget = confidenceButtons[0] || selfChecks[0];
+          focusTarget?.focus();
+          return;
+        }
+
         const now = new Date().toISOString();
-        markStarted();
-        updateProgress({
+        markStarted({
+          activeStep: activeIndex,
           completed: true,
-          completedAt: progress[slug]?.completedAt || now,
-          lastPlayedAt: now,
+          completedAt: record.completedAt || now,
         });
         nextButton.textContent = "Mission completed";
         nextButton.disabled = true;
+        announce("Mission completed. Your progress is saved on this device.");
+        root.dispatchEvent(new CustomEvent("english-library:speaking-complete", {
+          bubbles: true,
+          detail: {
+            slug,
+            confidence: hasConfidence ? confidence : null,
+          },
+        }));
         return;
       }
 
-      const nextIndex = activeIndex + 1;
-      markStarted();
-      showStep(nextIndex);
+      showStep(activeIndex + 1);
     });
 
     steps.forEach((step) => {
       const seconds = Number(step.dataset.stepSeconds || 0);
       const timerButton = step.querySelector("[data-start-timer]");
-      const timerStatus = step.querySelector("[data-timer-status]");
-      const countdown = step.querySelector("[data-timer-countdown]");
 
-      if (!seconds || !timerButton || !countdown) {
+      if (!seconds || !timerButton) {
         return;
       }
 
       timerButton.addEventListener("click", () => {
         markStarted();
-        clearTimer();
-        let remaining = seconds;
+        startTimer(step);
+      });
+    });
 
-        countdown.textContent = formatCountdown(remaining);
+    recordingPanel?.querySelector("[data-record]")?.addEventListener("click", startRecording);
+    recordingPanel?.querySelector("[data-stop-recording]")?.addEventListener("click", stopRecording);
+    recordingPanel?.querySelector("[data-replace-recording]")?.addEventListener("click", startRecording);
+    recordingPanel?.querySelector("[data-no-recording]")?.addEventListener("change", (event) => {
+      const selected = event.currentTarget.checked;
+      if (selected && mediaRecorder?.state === "recording") {
+        stopRecording();
+      }
+      markStarted({ noRecording: selected });
+      announce(selected
+        ? "Timer-only practice selected. Speak aloud when you are ready."
+        : "Recording practice selected.");
+    });
 
-        if (timerStatus) {
-          timerStatus.hidden = false;
-          timerStatus.textContent = "Timer running.";
-        }
+    prepNotes?.addEventListener("input", (event) => {
+      markStarted({ prepNotes: event.currentTarget.value.slice(0, 180) });
+    });
 
-        timerId = window.setInterval(() => {
-          remaining -= 1;
-          countdown.textContent = formatCountdown(Math.max(remaining, 0));
-
-          if (remaining <= 0) {
-            clearTimer();
-
-            if (timerStatus) {
-              timerStatus.textContent = "Time is up. Finish the sentence and move on.";
-            }
-          }
-        }, 1000);
+    selfChecks.forEach((input) => {
+      input.addEventListener("change", () => {
+        const checked = selfChecks.filter((item) => item.checked).map((item) => item.value);
+        markStarted({ selfChecks: checked });
+        announce(checked.length ? "Self-check saved." : "Self-check cleared.");
       });
     });
 
@@ -375,18 +815,29 @@ const { entry, relatedHref, relatedTitle } = Astro.props;
         }
 
         const now = new Date().toISOString();
-        updateProgress({
-          completed: true,
-          completedAt: progress[slug]?.completedAt || now,
+        markStarted({
           lastConfidence: confidence,
           ratedAt: now,
-          lastPlayedAt: now,
         });
+        announce(`Confidence ${confidence} out of 5 saved. Use Finish mission when you are ready.`);
       });
     });
 
+    window.addEventListener("pagehide", () => {
+      disposing = true;
+      clearTimer();
+      cancelSpeech();
+      root.querySelectorAll("audio").forEach((audio) => audio.pause());
+      if (mediaRecorder && mediaRecorder.state !== "inactive") {
+        mediaRecorder.onstop = null;
+        mediaRecorder.stop();
+      }
+      stopStream();
+      revokeAudio();
+    }, { once: true });
+
     resetTimers();
-    showStep(0);
     syncProgressUi();
+    showStep(activeIndex, false, false);
   });
 </script>

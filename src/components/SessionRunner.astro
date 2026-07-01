@@ -1,6 +1,8 @@
 ---
 import LearningCycle from "./LearningCycle.astro";
+import MissionPlayer from "./MissionPlayer.astro";
 import type { CourseModule, CourseSession } from "../lib/course-path";
+import type { SpeakingMissionEntry } from "../lib/content";
 import { coursePath } from "../lib/course-path";
 import { withBase } from "../lib/constants";
 
@@ -8,9 +10,10 @@ type Props = {
   module: CourseModule;
   session: CourseSession;
   nextSessionId?: string;
+  speakingEntry?: SpeakingMissionEntry;
 };
 
-const { module, session, nextSessionId } = Astro.props;
+const { module, session, nextSessionId, speakingEntry } = Astro.props;
 const nextHref = nextSessionId ? withBase(`/learn/${nextSessionId}`) : withBase("/learn");
 const contentHref = session.kind === "content" ? withBase(session.href) : undefined;
 const stageDescriptions = {
@@ -36,17 +39,18 @@ const completeActionLabels = {
 } as const;
 const serializeForScript = (value: unknown) => JSON.stringify(value).replace(/</g, "\\u003c");
 const runnerData = serializeForScript({
-  revision: coursePath.version,
+  revision: session.revision,
   module: { id: module.id, order: module.order, title: module.title },
   moduleSessions: module.sessions.map((item) => ({
     id: item.id,
     stage: item.stage,
+    revision: item.revision,
     required: item.required,
   })),
   pathSessions: coursePath.modules.flatMap((courseModule) =>
     courseModule.sessions.map((item) => ({
       id: item.id,
-      revision: coursePath.version,
+      revision: item.revision,
       required: item.required,
     })),
   ),
@@ -93,7 +97,14 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     <a class="runner-exit-link" href={withBase("/learn")}>Exit session</a>
   </header>
 
-  {session.kind === "content" ? (
+  {session.kind === "content" && session.stage === "speak" && speakingEntry ? (
+    <section class="embedded-speaking-session" data-speaking-session aria-label={session.title}>
+      <MissionPlayer entry={speakingEntry} relatedHref={withBase(`/a2/${module.unitSlug}`)} relatedTitle={module.title} />
+      <p class="runner-saved-note" data-saved-note>
+        Your step, notes, and result are saved on this device. Audio stays in this tab only.
+      </p>
+    </section>
+  ) : session.kind === "content" ? (
     <section class="content-session-card" data-content-session aria-labelledby="content-session-title">
       <p class="learning-label">{session.stage === "speak" ? "Speak aloud" : "Open the source"}</p>
       <h2 id="content-session-title">{session.title}</h2>
@@ -113,7 +124,15 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     <section class="runner-question-card" data-practice-session aria-labelledby="practice-question">
       <div class="question-progress">
         <span data-question-count>Preparing your practice set…</span>
-        <div class="question-progress-track" aria-hidden="true">
+        <div
+          class="question-progress-track"
+          role="progressbar"
+          aria-label="Practice progress"
+          aria-valuemin="1"
+          aria-valuemax="1"
+          aria-valuenow="1"
+          data-question-progress-track
+        >
           <span class="question-progress-fill" data-question-progress style="width: 0%" />
         </div>
       </div>
@@ -124,9 +143,9 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
       <p class="question-objective" data-question-objective>Get ready to answer</p>
       <h2 id="practice-question" data-question-prompt tabindex="-1">Loading your first question…</h2>
-      <p lang="lt" data-question-lt hidden></p>
+      <p id="practice-question-lt" lang="lt" data-question-lt hidden></p>
 
-      <div data-answer-container></div>
+      <fieldset class="answer-fieldset" data-answer-container aria-labelledby="practice-question"></fieldset>
 
       <div class="feedback-panel" data-feedback role="status" aria-live="polite" hidden>
         <strong data-feedback-title></strong>
@@ -135,7 +154,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       </div>
 
       <div class="runner-actions">
-        <button class="learning-outline-button" type="button" data-toggle-hint aria-expanded="false">
+        <button class="learning-outline-button" type="button" data-toggle-hint aria-expanded="false" aria-controls="practice-question-lt">
           LT&nbsp; Show hint
         </button>
         <button class="learning-text-action" type="button" data-skip-item>Skip for now</button>
@@ -149,6 +168,22 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       <noscript>
         <p>Interactive practice needs JavaScript. Open the related A2 lesson from the course map instead.</p>
       </noscript>
+    </section>
+  )}
+
+  {session.kind === "practice" && (
+    <section class="session-complete-card repair-card" data-repair-card aria-labelledby="repair-title" tabindex="-1" hidden>
+      <div class="session-score" data-repair-score>0 / 0</div>
+      <p class="learning-label">One short repair loop</p>
+      <h2 id="repair-title">Make the mistakes stick</h2>
+      <p data-repair-copy>Correct the answers you missed, then the next step will unlock.</p>
+      <div class="complete-actions">
+        <button class="learning-primary-button" type="button" data-start-repair>
+          <span data-repair-action>Repair mistakes</span>
+          <Fragment set:html={chevronIcon} />
+        </button>
+        <a class="learning-text-action" href={withBase("/learn")}>Save and return later</a>
+      </div>
     </section>
   )}
 
@@ -179,6 +214,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
 <script>
   import {
+    beginPracticeRepair,
     beginPracticeRun,
     completeLearningSession,
     isLearningSessionUnlocked,
@@ -217,6 +253,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     moduleSessions: Array<{
       id: string;
       stage: RunnerSession["stage"];
+      revision: number;
       required: boolean;
     }>;
     pathSessions: Array<{ id: string; revision: number; required: boolean }>;
@@ -250,6 +287,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
     const session = data.session;
     const contentView = asElement<HTMLElement>(root, "[data-content-session]");
+    const speakingView = asElement<HTMLElement>(root, "[data-speaking-session]");
     const practiceView = asElement<HTMLElement>(root, "[data-practice-session]");
     const completeView = asElement<HTMLElement>(root, "[data-session-complete]");
     const completeButton = asElement<HTMLButtonElement>(root, "[data-complete-content]");
@@ -257,6 +295,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     const continueLink = asElement<HTMLAnchorElement>(root, "[data-continue-link]");
     const continueLabel = asElement<HTMLElement>(root, "[data-continue-label]");
     const savedNotes = [...root.querySelectorAll("[data-saved-note]")];
+    const pageStartedAt = Date.now();
     const isFreshRequest = new URL(window.location.href).searchParams.get("fresh") === "1";
     let progress = readLearningProgress(window.localStorage);
     const sessionIsUnlocked = isLearningSessionUnlocked(
@@ -290,12 +329,24 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       window.dispatchEvent(new CustomEvent("english-library:progress"));
     };
 
+    const completedMinutes = () => {
+      const record = progress.sessions[session.id];
+      const startedAt = record?.practiceRun?.startedAt ?? (
+        sessionWasCompletedOnEntry ? new Date(pageStartedAt).toISOString() : record?.startedAt
+      );
+      const elapsedMinutes = startedAt
+        ? Math.ceil(Math.max(0, Date.now() - Date.parse(startedAt)) / 60_000)
+        : 1;
+      return Math.max(1, Math.min(session.minutes, elapsedMinutes));
+    };
+
     const syncCycle = () => {
       root.querySelectorAll("[data-cycle-session]").forEach((step) => {
         const stepId = (step as HTMLElement).dataset.cycleSession || "";
         const stepProgress = progress.sessions[stepId];
+        const stepRevision = data.moduleSessions.find((item) => item.id === stepId)?.revision;
         const completed = stepProgress?.status === "completed" &&
-          stepProgress.revision === data.revision;
+          stepProgress.revision === stepRevision;
         const current = !completed && stepId === session.id;
         const status = step.querySelector("[data-cycle-status]");
         step.classList.toggle("completed", completed);
@@ -306,6 +357,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
     const showCompletion = (score?: number, total?: number) => {
       if (contentView) contentView.hidden = true;
+      if (speakingView) speakingView.hidden = true;
       if (practiceView) practiceView.hidden = true;
       if (completeView) completeView.hidden = false;
       if (scoreElement) {
@@ -329,7 +381,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         .slice(currentModuleIndex + 1)
         .find((item) => item.required && (
           progress.sessions[item.id]?.status !== "completed" ||
-          progress.sessions[item.id]?.revision !== data.revision
+          progress.sessions[item.id]?.revision !== item.revision
         ));
       if (continueLink && (!canAdvancePath || sessionWasCompletedOnEntry)) {
         continueLink.href = data.dashboardHref;
@@ -356,6 +408,27 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
           session.id,
           {
             revision: data?.revision,
+            minutes: completedMinutes(),
+            activityType: session.stage === "speak" ? "speaking" : "content",
+            ...(!sessionWasCompletedOnEntry && canAdvancePath
+              ? { nextSessionId: data?.nextSessionId }
+              : {}),
+          },
+        );
+        persist();
+        showCompletion();
+        completeView?.focus({ preventScroll: true });
+      });
+
+      root.addEventListener("english-library:speaking-complete", () => {
+        if (session.stage !== "speak") return;
+        progress = completeLearningSession(
+          progress,
+          session.id,
+          {
+            revision: data?.revision,
+            minutes: completedMinutes(),
+            activityType: "speaking",
             ...(!sessionWasCompletedOnEntry && canAdvancePath
               ? { nextSessionId: data?.nextSessionId }
               : {}),
@@ -375,6 +448,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     const promptElement = asElement<HTMLElement>(root, "[data-question-prompt]");
     const ltPromptElement = asElement<HTMLElement>(root, "[data-question-lt]");
     const progressFill = asElement<HTMLElement>(root, "[data-question-progress]");
+    const progressTrack = asElement<HTMLElement>(root, "[data-question-progress-track]");
     const feedback = asElement<HTMLElement>(root, "[data-feedback]");
     const feedbackLt = asElement<HTMLElement>(root, "[data-feedback-lt]");
     const hintButton = asElement<HTMLButtonElement>(root, "[data-toggle-hint]");
@@ -384,6 +458,8 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     const retryButton = asElement<HTMLButtonElement>(root, "[data-retry-pack]");
     const newPackButton = asElement<HTMLButtonElement>(root, "[data-new-pack]");
     const packUpdateNotice = asElement<HTMLElement>(root, "[data-pack-update-notice]");
+    const repairView = asElement<HTMLElement>(root, "[data-repair-card]");
+    const startRepairButton = asElement<HTMLButtonElement>(root, "[data-start-repair]");
     const supportedMode: PracticeMode = session.mode;
     const requestedUnitIds = session.unitIds?.length
       ? session.unitIds
@@ -393,15 +469,35 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       0,
     );
     const requestedCount = Math.min(session.count ?? availableCount, availableCount);
+    const availableItems = requestedUnitIds.flatMap((unitId) => getPracticeItems(unitId));
+    const availableItemIds = new Set(availableItems.map((item) => item.id));
+    const availableObjectiveIds = new Set(availableItems.map((item) => item.objectiveId));
+    const initialPriorityItemIds = progress.mistakeItemIds.filter((id) => availableItemIds.has(id));
+    const initialTargetObjectiveIds = Object.entries(progress.skills)
+      .filter(([id, skill]) =>
+        availableObjectiveIds.has(id) &&
+        (skill.strength < 0.8 || Date.parse(skill.dueAt) <= Date.now())
+      )
+      .sort((left, right) => {
+        const dueDifference = Date.parse(left[1].dueAt) - Date.parse(right[1].dueAt);
+        return dueDifference || left[1].strength - right[1].strength || right[1].lapses - left[1].lapses;
+      })
+      .map(([id]) => id);
     let pack!: PracticePack;
     let packRecentItemIds: string[] = [];
     let packWasUpdated = false;
     let currentIndex = 0;
     let selectedResponse = "";
     let checked = false;
+    let answerWasCorrect = false;
     let runResponses: Record<string, string> = {};
 
-    const createPack = (attempt: number, recentItemIds: readonly string[]) =>
+    const createPack = (
+      attempt: number,
+      recentItemIds: readonly string[],
+      targetObjectiveIds: readonly string[] = initialTargetObjectiveIds,
+      priorityItemIds: readonly string[] = initialPriorityItemIds,
+    ) =>
       generatePracticePack({
         ...(session.unitIds?.length
           ? { unitIds: session.unitIds }
@@ -410,6 +506,8 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         count: requestedCount,
         attempt,
         recentItemIds,
+        targetObjectiveIds,
+        priorityItemIds,
       });
 
     const resetToPack = (targetPack: PracticePack, recentItemIds: readonly string[]) => {
@@ -425,6 +523,8 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
             id: item.id,
             revision: item.revision,
           })),
+          targetObjectiveIds: targetPack.targetObjectiveIds,
+          priorityItemIds: targetPack.priorityItemIds,
         },
         data?.revision ?? 1,
       );
@@ -457,7 +557,12 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       pack = createPack(attempt, packRecentItemIds);
     } else if (savedRun) {
       packRecentItemIds = [...savedRun.recentItemIds];
-      pack = createPack(savedRun.attempt, packRecentItemIds);
+      pack = createPack(
+        savedRun.attempt,
+        packRecentItemIds,
+        savedRun.targetObjectiveIds,
+        savedRun.priorityItemIds,
+      );
       if (pack.id !== savedRun.packId) {
         const itemsById = new Map(
           requestedUnitIds
@@ -477,6 +582,8 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
             ...pack,
             id: savedRun.packId,
             attempt: savedRun.attempt,
+            targetObjectiveIds: [...savedRun.targetObjectiveIds],
+            priorityItemIds: [...savedRun.priorityItemIds],
             items: restoredItems,
           };
         } else {
@@ -496,7 +603,15 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         .find((objective) => objective.id === item.objectiveId)?.label.en
       ?? (item.type === "single-choice" ? "Choose the best answer" : "Complete the sentence");
 
-    const currentItem = () => pack.items[currentIndex];
+    const currentRun = () => progress.sessions[session.id]?.practiceRun;
+    const isRepairPhase = () => currentRun()?.phase === "repair";
+    const activeItems = () => {
+      const run = currentRun();
+      if (run?.phase !== "repair") return pack.items;
+      const repairIds = new Set(run.repairItemIds);
+      return pack.items.filter((item) => repairIds.has(item.id));
+    };
+    const currentItem = () => activeItems()[currentIndex];
 
     const setChoiceState = (input: HTMLInputElement, item: PracticeItem, resultCorrect?: boolean) => {
       const choiceId = input.dataset.choiceId || "";
@@ -560,6 +675,11 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         selectedResponse = input.value;
         if (checkButton) checkButton.disabled = !selectedResponse.trim();
       });
+      input.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" || !selectedResponse.trim()) return;
+        event.preventDefault();
+        checkButton?.click();
+      });
       label.appendChild(input);
       answerContainer.appendChild(label);
       window.requestAnimationFrame(() => input.focus());
@@ -570,7 +690,10 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       if (!item) return;
       selectedResponse = "";
       checked = false;
-      setText(root, "[data-question-count]", `Question ${currentIndex + 1} of ${pack.items.length}`);
+      answerWasCorrect = false;
+      const items = activeItems();
+      const phaseLabel = isRepairPhase() ? "Repair" : "Question";
+      setText(root, "[data-question-count]", `${phaseLabel} ${currentIndex + 1} of ${items.length}`);
       setText(root, "[data-question-objective]", objectiveLabel(item));
       setText(root, "[data-question-prompt]", item.prompt.en);
       if (ltPromptElement) {
@@ -586,10 +709,15 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         feedback.classList.remove("correct");
       }
       if (feedbackLt) feedbackLt.textContent = "";
-      if (progressFill) progressFill.style.width = `${((currentIndex + 1) / pack.items.length) * 100}%`;
+      if (progressFill) progressFill.style.width = `${((currentIndex + 1) / items.length) * 100}%`;
+      if (progressTrack) {
+        progressTrack.setAttribute("aria-valuemax", String(items.length));
+        progressTrack.setAttribute("aria-valuenow", String(currentIndex + 1));
+        progressTrack.setAttribute("aria-valuetext", `${phaseLabel} ${currentIndex + 1} of ${items.length}`);
+      }
       if (checkButton) checkButton.disabled = true;
       if (checkButtonLabel) checkButtonLabel.textContent = "Check answer";
-      if (skipButton) skipButton.hidden = false;
+      if (skipButton) skipButton.hidden = isRepairPhase();
       renderAnswers(item);
       promptElement?.focus({ preventScroll: true });
     };
@@ -615,30 +743,109 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       return { score, skillResults };
     };
 
-    const finishPack = () => {
-      const { score, skillResults } = scoreRun();
+    const completePack = (
+      score: number,
+      total: number,
+      skillResults: Record<string, { score: number; total: number }>,
+      missedItemIds: string[],
+      repaired = false,
+    ) => {
+      const missedSet = new Set(missedItemIds);
       progress = completeLearningSession(
         progress,
         session.id,
         {
           revision: data?.revision,
           score,
-          total: pack.items.length,
+          total,
           skillRefs: Object.keys(skillResults),
           skillResults,
-          itemIds: pack.items.map((item) => item.id),
+          itemIds: pack.items
+            .filter((item) => repaired || !missedSet.has(item.id))
+            .map((item) => item.id),
+          mistakeItemIds: repaired ? [] : missedItemIds,
+          minutes: completedMinutes(),
+          activityType: "practice",
           ...(!sessionWasCompletedOnEntry && canAdvancePath
             ? { nextSessionId: data?.nextSessionId }
             : {}),
         },
       );
       persist();
-      showCompletion(score, pack.items.length);
+      if (repairView) repairView.hidden = true;
+      showCompletion(score, total);
+      if (missedItemIds.length) {
+        setText(root, "[data-complete-title]", "Mistakes repaired");
+        setText(
+          root,
+          "[data-complete-copy]",
+          `You corrected ${missedItemIds.length} ${missedItemIds.length === 1 ? "answer" : "answers"}. We will bring ${missedItemIds.length === 1 ? "it" : "them"} back in a future review so the learning lasts.`,
+        );
+      }
       completeView?.focus({ preventScroll: true });
     };
 
+    const finishPack = () => {
+      if (isRepairPhase()) {
+        const run = currentRun();
+        if (!run?.firstPassSkillResults || run.firstPassScore === undefined || run.firstPassTotal === undefined) {
+          resetToPack(pack, packRecentItemIds);
+          runResponses = {};
+          currentIndex = 0;
+          renderItem();
+          return;
+        }
+        completePack(
+          run.firstPassScore,
+          run.firstPassTotal,
+          run.firstPassSkillResults,
+          run.repairItemIds,
+          true,
+        );
+        return;
+      }
+
+      const { score, skillResults } = scoreRun();
+      const missedItemIds = pack.items
+        .filter((item) => {
+          const response = runResponses[item.id];
+          return !response || response === SKIPPED_RESPONSE || !scorePracticeItem(item, response).correct;
+        })
+        .map((item) => item.id);
+
+      if (missedItemIds.length) {
+        progress = beginPracticeRepair(
+          progress,
+          session.id,
+          {
+            repairItemIds: missedItemIds,
+            firstPassScore: score,
+            firstPassTotal: pack.items.length,
+            firstPassSkillResults: skillResults,
+          },
+        );
+        persist();
+        runResponses = {};
+        currentIndex = 0;
+        practiceView.hidden = true;
+        if (repairView) {
+          repairView.hidden = false;
+          setText(root, "[data-repair-score]", `${score} / ${pack.items.length}`);
+          setText(
+            root,
+            "[data-repair-copy]",
+            `${missedItemIds.length} ${missedItemIds.length === 1 ? "answer needs" : "answers need"} one more try. Correct ${missedItemIds.length === 1 ? "it" : "them"} now to unlock the next step.`,
+          );
+          repairView.focus({ preventScroll: true });
+        }
+        return;
+      }
+
+      completePack(score, pack.items.length, skillResults, []);
+    };
+
     const continuePractice = () => {
-      if (currentIndex >= pack.items.length - 1) {
+      if (currentIndex >= activeItems().length - 1) {
         finishPack();
         return;
       }
@@ -654,7 +861,11 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
     checkButton?.addEventListener("click", () => {
       if (checked) {
-        continuePractice();
+        if (isRepairPhase() && !answerWasCorrect) {
+          renderItem();
+        } else {
+          continuePractice();
+        }
         return;
       }
 
@@ -662,7 +873,10 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       if (!item || !selectedResponse.trim()) return;
       const result = scorePracticeItem(item, selectedResponse);
       checked = true;
-      saveResponse(item, selectedResponse);
+      answerWasCorrect = result.correct;
+      if (!isRepairPhase() || result.correct) {
+        saveResponse(item, selectedResponse);
+      }
       if (feedback) {
         feedback.hidden = false;
         feedback.classList.toggle("correct", result.correct);
@@ -682,12 +896,17 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         }
       }
       if (checkButtonLabel) {
-        checkButtonLabel.textContent = currentIndex === pack.items.length - 1 ? "See results" : "Continue";
+        checkButtonLabel.textContent = isRepairPhase() && !result.correct
+          ? "Try again"
+          : currentIndex === activeItems().length - 1
+            ? (isRepairPhase() ? "Finish repair" : "See results")
+            : "Continue";
       }
       if (skipButton) skipButton.hidden = true;
     });
 
     skipButton?.addEventListener("click", () => {
+      if (isRepairPhase()) return;
       const item = currentItem();
       if (!item) return;
       saveResponse(item, SKIPPED_RESPONSE);
@@ -707,6 +926,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       runResponses = {};
       currentIndex = 0;
       if (completeView) completeView.hidden = true;
+      if (repairView) repairView.hidden = true;
       practiceView.hidden = false;
       renderItem();
     });
@@ -718,6 +938,23 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       runResponses = {};
       currentIndex = 0;
       if (completeView) completeView.hidden = true;
+      if (repairView) repairView.hidden = true;
+      practiceView.hidden = false;
+      renderItem();
+    });
+
+    startRepairButton?.addEventListener("click", () => {
+      const repairItems = activeItems();
+      if (!repairItems.length) return;
+      const savedResponses = progress.sessions[session.id]?.responses ?? {};
+      runResponses = Object.fromEntries(
+        repairItems
+          .filter((item) => typeof savedResponses[item.id] === "string")
+          .map((item) => [item.id, savedResponses[item.id]]),
+      );
+      const firstUnansweredIndex = repairItems.findIndex((item) => !(item.id in runResponses));
+      currentIndex = Math.max(0, firstUnansweredIndex);
+      if (repairView) repairView.hidden = true;
       practiceView.hidden = false;
       renderItem();
     });
@@ -729,13 +966,26 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       );
     } else {
       const savedResponses = progress.sessions[session.id]?.responses ?? {};
+      const items = activeItems();
       runResponses = Object.fromEntries(
-        pack.items
+        items
           .filter((item) => typeof savedResponses[item.id] === "string")
           .map((item) => [item.id, savedResponses[item.id]]),
       );
-      const firstUnansweredIndex = pack.items.findIndex((item) => !(item.id in runResponses));
-      if (firstUnansweredIndex < 0 && pack.items.length > 0) {
+      const firstUnansweredIndex = items.findIndex((item) => !(item.id in runResponses));
+      if (isRepairPhase() && !Object.keys(runResponses).length) {
+        practiceView.hidden = true;
+        if (repairView) {
+          repairView.hidden = false;
+          const run = currentRun();
+          setText(root, "[data-repair-score]", `${run?.firstPassScore ?? 0} / ${run?.firstPassTotal ?? pack.items.length}`);
+          setText(
+            root,
+            "[data-repair-copy]",
+            `${items.length} ${items.length === 1 ? "answer needs" : "answers need"} one more try. Correct ${items.length === 1 ? "it" : "them"} to unlock the next step.`,
+          );
+        }
+      } else if (firstUnansweredIndex < 0 && items.length > 0) {
         finishPack();
       } else {
         currentIndex = Math.max(0, firstUnansweredIndex);
@@ -755,6 +1005,22 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
   [data-answer-container] .question-objective {
     display: grid;
     gap: 0.55rem;
+  }
+
+  .answer-fieldset {
+    min-inline-size: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .embedded-speaking-session {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .repair-card {
+    border-color: color-mix(in srgb, var(--accent) 28%, var(--line));
   }
 
   .runner-actions > .learning-outline-button {

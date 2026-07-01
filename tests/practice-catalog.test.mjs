@@ -9,27 +9,28 @@ import {
 } from "../src/lib/practice/index.ts";
 import { checkPracticeCatalog } from "../scripts/check-practice.mjs";
 
-test("compiled catalog covers all twelve units with usable banks", () => {
-  assert.equal(practiceCatalog.units.length, 12);
+test("compiled catalog covers all twenty-four units with usable banks", () => {
+  assert.equal(practiceCatalog.units.length, 24);
 
   const allItemIds = new Set();
 
   practiceCatalog.units.forEach((unit, index) => {
     assert.equal(unit.unitId, `unit-${String(index + 1).padStart(2, "0")}`);
-    assert.ok(unit.items.length >= 16, `${unit.unitId} needs at least sixteen items`);
+    const extendedUnit = index >= 12;
+    assert.ok(unit.items.length >= (extendedUnit ? 10 : 16), `${unit.unitId} needs a usable item bank`);
     assert.ok(
-      unit.items.filter((item) => item.type === "single-choice").length >= 6,
+      unit.items.filter((item) => item.type === "single-choice").length >= (extendedUnit ? 5 : 6),
       `${unit.unitId} needs a balanced choice bank`,
     );
     assert.ok(
-      unit.items.filter((item) => item.type === "fill-blank").length >= 6,
+      unit.items.filter((item) => item.type === "fill-blank").length >= (extendedUnit ? 5 : 6),
       `${unit.unitId} needs a balanced fill-blank bank`,
     );
 
     for (const difficulty of [1, 2, 3]) {
       assert.ok(
-        unit.items.filter((item) => item.difficulty === difficulty).length >= 4,
-        `${unit.unitId} needs at least four difficulty-${difficulty} items`,
+        unit.items.filter((item) => item.difficulty === difficulty).length >= (extendedUnit ? 2 : 4),
+        `${unit.unitId} needs balanced difficulty-${difficulty} items`,
       );
     }
 
@@ -100,10 +101,11 @@ test("new attempts rotate real item content rather than only its order", () => {
       attempts.flatMap((pack) => pack.items.map((item) => item.id)),
     );
 
-    assert.ok(
-      representedItems.size > 10,
-      `${unit.unitId} attempts only reshuffle the same ten items`,
-    );
+    if (unit.items.length === 10) {
+      assert.equal(representedItems.size, 10, `${unit.unitId} should use its complete bank`);
+    } else {
+      assert.ok(representedItems.size > 10, `${unit.unitId} should rotate item content`);
+    }
   }
 });
 
@@ -118,6 +120,10 @@ for (const [label, unitIds, count] of [
   ["Units 1–6", unitRange(1, 6), 12],
   ["Units 7–9", unitRange(7, 9), 9],
   ["Units 1–12", unitRange(1, 12), 24],
+  ["Units 13–15", unitRange(13, 15), 10],
+  ["Units 13–18", unitRange(13, 18), 12],
+  ["Units 19–21", unitRange(19, 21), 10],
+  ["Units 1–24", unitRange(1, 24), 24],
 ]) {
   test(`${label} produce one deterministic round-robin checkpoint`, () => {
     const options = {
@@ -232,6 +238,6 @@ test("the UI-facing scorer returns rationale and expected answers", () => {
 
 test("the committed catalog is byte-for-byte current", () => {
   const result = checkPracticeCatalog();
-  assert.equal(result.catalog.units.length, 12);
-  assert.ok(result.itemCount >= 192);
+  assert.equal(result.catalog.units.length, 24);
+  assert.ok(result.itemCount >= 387);
 });

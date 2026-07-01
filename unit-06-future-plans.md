@@ -606,6 +606,23 @@ Role-play an interview for your dream job. Describe why you want it and your pla
 
 ---
 
+## Exercise 17: Real Future Conditions / Pratimas 17: Pirmojo tipo sąlyginiai sakiniai
+
+Use **if + Present Simple** for the condition and commonly **will + base verb** for a possible future result: **If it rains, we will stay home.** The result can also use **may, might,** or **can** when the meaning needs it: **If we book late, the tickets may cost more.** The clauses can appear in either order, but do not normally put **will** directly after **if**.
+
+Complete the sentences.
+
+1. If the weather _____ (be) good, we will have a picnic.
+2. I _____ (call) you if the train is late.
+3. If Greta finishes work early, she _____ (join) us.
+4. We will take the bus if it _____ (rain).
+5. If you _____ (not book) today, the tickets may cost more.
+6. What will you do if you _____ (miss) the last bus?
+
+Make a weekend backup plan. Model: **If it is sunny, we will go cycling. If it rains, we will visit a museum.** Write two conditions and two results.
+
+---
+
 ## Cumulative Review / Kaupiamasis kartojimas
 
 1. Complete the plan: We _____ going to visit Klaipėda next weekend.
@@ -620,6 +637,7 @@ Role-play an interview for your dream job. Describe why you want it and your pla
 - [ ] I can use **will** for predictions, offers, promises, and decisions made now.
 - [ ] I can ask and answer questions about future plans.
 - [ ] I can recognise Present Simple for a fixed future schedule.
+- [ ] I can use **if + Present Simple** for a real future possibility.
 
 ---
 

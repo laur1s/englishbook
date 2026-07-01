@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-02",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "title": "Daily Routines and Present Simple",
   "objectives": [
     {
@@ -30,6 +30,13 @@
       "label": {
         "en": "Understand a daily routine",
         "lt": "Suprasti kasdienės rutinos aprašymą"
+      }
+    },
+    {
+      "id": "u02.likes-pronouns",
+      "label": {
+        "en": "Use preference verbs with -ing and object pronouns",
+        "lt": "Vartoti pomėgio veiksmažodžius su „-ing“ ir objektinius įvardžius"
       }
     }
   ],
@@ -369,6 +376,70 @@
         "lt": "Su „we“ vartojama bendratis „watch“ be galūnės „-s“."
       },
       "sourceRefs": [{"lesson": "unit-02", "exercise": 9}]
+    },
+    {
+      "id": "u02.likes-pronouns.017",
+      "revision": 1,
+      "objectiveId": "u02.likes-pronouns",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct form: “Mantas loves ___ for his family.”",
+        "lt": "Pasirinkite tinkamą formą: „Mantas loves ___ for his family.“"
+      },
+      "choices": [
+        {"id": "cook", "text": "cook"},
+        {"id": "cooking", "text": "cooking"},
+        {"id": "cooks", "text": "cooks"}
+      ],
+      "answer": {"choiceId": "cooking"},
+      "rationale": {
+        "en": "An activity after loves can use the -ing form: loves cooking.",
+        "lt": "Po „loves“ veiklai nusakyti vartojama „-ing“ forma: „loves cooking“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 13}]
+    },
+    {
+      "id": "u02.likes-pronouns.018",
+      "revision": 1,
+      "objectiveId": "u02.likes-pronouns",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Complete with an object pronoun: “My friends play tennis. I sometimes play with ___.”",
+        "lt": "Įrašykite objektinį įvardį: „My friends play tennis. I sometimes play with ___.“"
+      },
+      "answer": {
+        "accepted": ["them"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "After the preposition with, replace my friends with the object pronoun them.",
+        "lt": "Po prielinksnio „with“ žodžiai „my friends“ pakeičiami objektiniu įvardžiu „them“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 13}]
+    },
+    {
+      "id": "u02.likes-pronouns.019",
+      "revision": 1,
+      "objectiveId": "u02.likes-pronouns",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "Choose the correct object pronoun: “Our teacher gives ___ short tasks.”",
+        "lt": "Pasirinkite tinkamą objektinį įvardį: „Our teacher gives ___ short tasks.“"
+      },
+      "choices": [
+        {"id": "we", "text": "we"},
+        {"id": "us", "text": "us"},
+        {"id": "our", "text": "our"}
+      ],
+      "answer": {"choiceId": "us"},
+      "rationale": {
+        "en": "The pronoun is the object of gives, so use us rather than the subject form we.",
+        "lt": "Įvardis yra veiksmažodžio „gives“ objektas, todėl vartojama forma „us“, o ne veiksnio forma „we“."
+      },
+      "sourceRefs": [{"lesson": "unit-02", "exercise": 13}]
     }
   ]
 }

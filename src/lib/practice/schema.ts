@@ -1,5 +1,5 @@
 export const PRACTICE_SCHEMA_VERSION = 1 as const;
-export const PRACTICE_GENERATOR_VERSION = 2 as const;
+export const PRACTICE_GENERATOR_VERSION = 3 as const;
 
 export type PracticeDifficulty = 1 | 2 | 3;
 export type PracticeMode = "guided" | "standard" | "review" | "checkpoint";
@@ -79,9 +79,9 @@ export class PracticeValidationError extends Error {
   }
 }
 
-const UNIT_ID_PATTERN = /^unit-(0[1-9]|1[0-2])$/;
-const OBJECTIVE_ID_PATTERN = /^u(0[1-9]|1[0-2])\.[a-z0-9]+(?:[.-][a-z0-9]+)*$/;
-const ITEM_ID_PATTERN = /^u(0[1-9]|1[0-2])\.[a-z0-9]+(?:[.-][a-z0-9]+)*\.\d{3}$/;
+const UNIT_ID_PATTERN = /^unit-(0[1-9]|1[0-9]|2[0-4])$/;
+const OBJECTIVE_ID_PATTERN = /^u(0[1-9]|1[0-9]|2[0-4])\.[a-z0-9]+(?:[.-][a-z0-9]+)*$/;
+const ITEM_ID_PATTERN = /^u(0[1-9]|1[0-9]|2[0-4])\.[a-z0-9]+(?:[.-][a-z0-9]+)*\.\d{3}$/;
 const CHOICE_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
@@ -287,7 +287,7 @@ export const validatePracticeSource = (
   }
 
   if (!isNonEmptyString(input.unitId) || !UNIT_ID_PATTERN.test(input.unitId)) {
-    addIssue(issues, `${path}.unitId`, "must be unit-01 through unit-12");
+    addIssue(issues, `${path}.unitId`, "must be unit-01 through unit-24");
   }
 
   if (!isPositiveInteger(input.contentVersion)) {
@@ -333,8 +333,8 @@ export const validatePracticeSource = (
 
   const itemIds = new Set<string>();
 
-  if (!Array.isArray(input.items) || input.items.length < 16) {
-    addIssue(issues, `${path}.items`, "must contain at least sixteen practice items");
+  if (!Array.isArray(input.items) || input.items.length < 10) {
+    addIssue(issues, `${path}.items`, "must contain at least ten practice items");
   } else {
     input.items.forEach((item, index) => {
       validateItem(item, `${path}.items[${index}]`, String(input.unitId ?? ""), objectiveIds, issues);

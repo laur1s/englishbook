@@ -19,7 +19,7 @@ missionType: "one-minute-mission"
 durationMinutes: 3
 sourceRefs:
   - "unit-07"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Tell someone about three life experiences you have had and one experience you have not had yet."

@@ -14,12 +14,12 @@ import {
 
 const clonePath = () => structuredClone(coursePath);
 
-test("the A2 course exposes 12 ordered modules and 60 stable sessions", () => {
-  assert.equal(modules.length, 12);
-  assert.equal(sessions.length, 60);
+test("the A2 course exposes 24 ordered modules and 120 stable sessions", () => {
+  assert.equal(modules.length, 24);
+  assert.equal(sessions.length, 120);
   assert.deepEqual(
     modules.map((module) => module.id),
-    Array.from({ length: 12 }, (_, index) => `module-${String(index + 1).padStart(2, "0")}`),
+    Array.from({ length: 24 }, (_, index) => `module-${String(index + 1).padStart(2, "0")}`),
   );
 
   for (const module of modules) {
@@ -36,10 +36,20 @@ test("lookup helpers find modules, sessions, and the next linear session", () =>
   assert.equal(getSessionById("module-01-learn")?.stage, "learn");
   assert.equal(getNextSessionId("module-01-context"), "module-01-learn");
   assert.equal(getNextSessionId("module-01-review"), "module-02-context");
-  assert.equal(getNextSessionId("module-12-review"), undefined);
+  assert.equal(getNextSessionId("module-12-review"), "module-13-context");
+  assert.equal(getNextSessionId("module-24-review"), undefined);
   assert.equal(getModuleById("module-99"), undefined);
   assert.equal(getSessionById("missing-session"), undefined);
   assert.equal(getNextSessionId("missing-session"), undefined);
+});
+
+test("extension context steps deep-link to a focused reading before the full lesson", () => {
+  for (const module of modules.slice(12)) {
+    const context = module.sessions.find((session) => session.stage === "context");
+    const lesson = module.sessions.find((session) => session.stage === "learn");
+    assert.match(context?.href ?? "", new RegExp(`^/a2/${module.unitSlug}#`));
+    assert.equal(lesson?.href, `/a2/${module.unitSlug}`);
+  }
 });
 
 test("checkpoint sessions draw from the intended cumulative unit ranges", () => {
@@ -50,6 +60,13 @@ test("checkpoint sessions draw from the intended cumulative unit ranges", () => 
   assert.deepEqual(getSessionById("module-09-review")?.unitIds, ["unit-07", "unit-08", "unit-09"]);
   assert.equal(getSessionById("module-12-review")?.unitIds.length, 12);
   assert.equal(getSessionById("module-12-review")?.count, 12);
+  assert.deepEqual(getSessionById("module-15-review")?.unitIds, ["unit-13", "unit-14", "unit-15"]);
+  assert.deepEqual(getSessionById("module-18-review")?.unitIds, [
+    "unit-13", "unit-14", "unit-15", "unit-16", "unit-17", "unit-18",
+  ]);
+  assert.deepEqual(getSessionById("module-21-review")?.unitIds, ["unit-19", "unit-20", "unit-21"]);
+  assert.equal(getSessionById("module-24-review")?.unitIds.length, 24);
+  assert.equal(getSessionById("module-24-review")?.count, 24);
 });
 
 test("the next-session helper skips optional enrichment", () => {
@@ -94,7 +111,7 @@ test("validation rejects missing modules and stage gaps", async (t) => {
   await t.test("module gap", () => {
     const invalid = clonePath();
     invalid.modules.splice(5, 1);
-    assert.throws(() => validateCoursePath(invalid), /exactly 12 modules with no order gaps/);
+    assert.throws(() => validateCoursePath(invalid), /exactly 24 modules with no order gaps/);
   });
 
   await t.test("session stage gap", () => {

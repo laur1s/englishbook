@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-04",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "title": "Food and Shopping",
   "objectives": [
     {
@@ -30,6 +30,13 @@
       "label": {
         "en": "Understand a shopping text",
         "lt": "Suprasti tekstą apie apsipirkimą"
+      }
+    },
+    {
+      "id": "u04.articles",
+      "label": {
+        "en": "Choose a, an, the, or no article",
+        "lt": "Pasirinkti „a“, „an“, „the“ arba nevartoti artikelio"
       }
     }
   ],
@@ -368,6 +375,70 @@
         "lt": "Nedideliam neskaičiuojamo daiktavardžio, pavyzdžiui, cukraus, kiekiui vartojama „a little“."
       },
       "sourceRefs": [{"lesson": "unit-04", "exercise": 4}]
+    },
+    {
+      "id": "u04.articles.017",
+      "revision": 1,
+      "objectiveId": "u04.articles",
+      "type": "single-choice",
+      "difficulty": 1,
+      "prompt": {
+        "en": "You want any one orange, not a particular orange. Choose the correct article: “Can I have ___ orange, please?”",
+        "lt": "Norite bet kurio vieno, o ne konkretaus apelsino. Pasirinkite tinkamą artikelį: „Can I have ___ orange, please?“"
+      },
+      "choices": [
+        {"id": "a", "text": "a"},
+        {"id": "an", "text": "an"},
+        {"id": "the", "text": "the"}
+      ],
+      "answer": {"choiceId": "an"},
+      "rationale": {
+        "en": "Use an before the vowel sound at the beginning of orange when asking for one non-specific orange.",
+        "lt": "Prašant bet kurio vieno apelsino prieš balsiu prasidedantį „orange“ vartojama „an“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 15}]
+    },
+    {
+      "id": "u04.articles.018",
+      "revision": 1,
+      "objectiveId": "u04.articles",
+      "type": "fill-blank",
+      "difficulty": 2,
+      "prompt": {
+        "en": "There is one orange on the plate, and both speakers can see it. Complete: “___ orange on this plate is for you.”",
+        "lt": "Lėkštėje yra vienas apelsinas, kurį mato abu pašnekovai. Užbaikite: „___ orange on this plate is for you.“"
+      },
+      "answer": {
+        "accepted": ["The"],
+        "caseSensitive": false
+      },
+      "rationale": {
+        "en": "The phrase on this plate identifies a specific orange, so use the.",
+        "lt": "Žodžiai „on this plate“ nurodo konkretų apelsiną, todėl vartojama „the“."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 15}]
+    },
+    {
+      "id": "u04.articles.019",
+      "revision": 1,
+      "objectiveId": "u04.articles",
+      "type": "single-choice",
+      "difficulty": 2,
+      "prompt": {
+        "en": "Choose the correct option for coffee in general: “I usually drink ___ coffee after lunch.”",
+        "lt": "Pasirinkite tinkamą variantą, kai apie kavą kalbama bendrai: „I usually drink ___ coffee after lunch.“"
+      },
+      "choices": [
+        {"id": "no-article", "text": "— (no article)"},
+        {"id": "a", "text": "a"},
+        {"id": "the", "text": "the"}
+      ],
+      "answer": {"choiceId": "no-article"},
+      "rationale": {
+        "en": "Coffee is uncountable here and is used in a general sense, so no article is needed.",
+        "lt": "Čia „coffee“ yra neskaičiuojamas daiktavardis, vartojamas bendra reikšme, todėl artikelio nereikia."
+      },
+      "sourceRefs": [{"lesson": "unit-04", "exercise": 15}]
     }
   ]
 }

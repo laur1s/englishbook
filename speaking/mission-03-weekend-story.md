@@ -19,7 +19,7 @@ missionType: "one-minute-mission"
 durationMinutes: 3
 sourceRefs:
   - "unit-03"
-supportsRecording: false
+supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Tell a friend about one real or invented weekend event. Give it a clear beginning, middle, and end."
