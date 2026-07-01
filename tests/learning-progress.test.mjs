@@ -15,6 +15,7 @@ import {
   nextPracticeAttempt,
   parseLearningProgress,
   readLearningProgress,
+  saveLearningResponse,
   startLearningSession,
 } from "../src/lib/learning-progress.ts";
 
@@ -328,6 +329,58 @@ test("a new practice run preserves prior completion and the active linear step",
     parseLearningProgress(JSON.stringify(replay)).sessions["m01-practice"].practiceRun.packId,
     "pack-2",
   );
+});
+
+test("daily recall updates practice evidence without moving the linear path", () => {
+  let progress = startLearningSession(
+    createLearningProgress(),
+    "module-01-context",
+    2,
+    "2026-07-01T08:00:00.000Z",
+  );
+  progress = beginPracticeRun(
+    progress,
+    "daily-recall",
+    {
+      attempt: 1,
+      recentItemIds: [],
+      packId: "daily-pack-1",
+      itemRefs: [{ id: "u01.be.001", revision: 1 }],
+      scope: "daily",
+      unitIds: ["unit-01"],
+      hostSessionId: "module-01-review",
+      preserveActiveSession: true,
+    },
+    1,
+    "2026-07-01T08:01:00.000Z",
+  );
+  progress = saveLearningResponse(
+    progress,
+    "daily-recall",
+    "u01.be.001",
+    "am",
+    "2026-07-01T08:02:00.000Z",
+    true,
+  );
+  progress = completeLearningSession(
+    progress,
+    "daily-recall",
+    {
+      revision: 1,
+      score: 1,
+      total: 1,
+      skillRefs: ["u01.be"],
+      skillResults: { "u01.be": { score: 1, total: 1 } },
+      itemIds: ["u01.be.001"],
+      preserveActiveSession: true,
+    },
+    "2026-07-01T08:03:00.000Z",
+  );
+
+  assert.equal(progress.activeSessionId, "module-01-context");
+  assert.equal(progress.sessions["module-01-context"].status, "started");
+  assert.equal(progress.sessions["daily-recall"].status, "completed");
+  assert.equal(progress.skills["u01.be"].sourceSessionId, "daily-recall");
 });
 
 test("resume selection respects revisions and skips optional sessions", () => {

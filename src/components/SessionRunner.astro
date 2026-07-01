@@ -363,7 +363,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       session.id,
     );
 
-    if (!sessionIsUnlocked) {
+    if (!sessionIsUnlocked && !dailyRecallActive) {
       window.location.replace(data.dashboardHref);
       return;
     }
@@ -672,6 +672,8 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       setText(root, "[data-runner-module]", "Today’s loop · Spaced review");
       setText(root, "[data-runner-title]", "Daily recall");
       setText(root, "[data-runner-meta]", `Review · ${requestedCount} items · ${runtimeMinutes} min`);
+      const learningCycle = root.querySelector<HTMLElement>("[data-learning-cycle]");
+      if (learningCycle) learningCycle.hidden = true;
     }
     let pack!: PracticePack;
     let packRecentItemIds: string[] = [];

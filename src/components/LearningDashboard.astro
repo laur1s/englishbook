@@ -790,7 +790,9 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       const mistakeLink = root.querySelector<HTMLAnchorElement>("[data-mistake-link]");
       setActionState(
         mistakeLink,
-        mistakeTarget ? practiceHref(mistakeTarget, "repair") : null,
+        mistakeTarget
+          ? practiceHref(mistakeTarget, activeRepairSession ? "repair" : "daily")
+          : null,
         Boolean(mistakeTarget && mistakes.count),
       );
       setText(
