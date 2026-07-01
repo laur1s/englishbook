@@ -100,6 +100,7 @@ test("version 1 progress migrates to version 2 without losing valid learning evi
   assert.deepEqual(migrated.mistakeItemIds, []);
   assert.deepEqual(migrated.activity, []);
   assert.deepEqual(migrated.preferences, { dailyMinutes: 10 });
+  assert.deepEqual(migrated.migrations, { legacyStandaloneImported: false });
 });
 
 test("parse normalizes parseable timestamps and drops invalid timestamp records", () => {
@@ -272,6 +273,28 @@ test("mixed practice schedules each objective from its own answers", () => {
   assert.equal(completed.skills["u01.be-forms"].intervalDays, 1);
   assert.equal(completed.skills["u12.integration"].strength, 1);
   assert.equal(completed.skills["u12.integration"].intervalDays, 7);
+});
+
+test("speaking completion can schedule listening comprehension from scored checks", () => {
+  const completed = completeLearningSession(
+    createLearningProgress(),
+    "module-01-speak",
+    {
+      revision: 2,
+      skillRefs: ["listening.a2-comprehension"],
+      skillResults: { "listening.a2-comprehension": { score: 1, total: 2 } },
+      minutes: 5,
+      activityType: "speaking",
+    },
+    "2026-07-01T08:05:00.000Z",
+  );
+
+  assert.equal(completed.skills["listening.a2-comprehension"].strength, 0.5);
+  assert.equal(
+    completed.skills["listening.a2-comprehension"].sourceSessionId,
+    "module-01-speak",
+  );
+  assert.equal(completed.activity[0].type, "speaking");
 });
 
 test("a new practice run preserves prior completion and the active linear step", () => {
@@ -565,7 +588,7 @@ test("new practice attempts increment without mutating the previous state", () =
   assert.equal(next.practiceAttempts["m01-practice"], 1);
 });
 
-test("legacy lesson and speaking completions migrate into the unified path", () => {
+test("legacy standalone completions never bypass the unified path", () => {
   const values = new Map([
     ["english-library.lesson-progress", JSON.stringify({ "unit-01": { completedAt: "2026-06-01T08:00:00.000Z" } })],
     ["english-library.speaking.progress", JSON.stringify({ "introduce-yourself-fast": { completed: true, completedAt: "2026-06-02T08:00:00.000Z" } })],
@@ -578,10 +601,76 @@ test("legacy lesson and speaking completions migrate into the unified path", () 
   const migrated = migrateLegacyLearningProgress(storage, [{
     unitSlug: "unit-01",
     learnSessionId: "module-01-learn",
+    learnRevision: 1,
     missionSlug: "introduce-yourself-fast",
     speakSessionId: "module-01-speak",
+    speakRevision: 1,
   }]);
 
-  assert.equal(migrated.sessions["module-01-learn"].status, "completed");
-  assert.equal(migrated.sessions["module-01-speak"].status, "completed");
+  assert.equal(migrated.sessions["module-01-learn"], undefined);
+  assert.equal(migrated.sessions["module-01-speak"], undefined);
+  assert.equal(migrated.migrations.legacyStandaloneImported, true);
+});
+
+test("legacy import is one-shot and ignores current checklist records and stale revisions", () => {
+  const values = new Map([
+    ["english-library.lesson-progress", JSON.stringify({
+      "unit-01": {
+        schemaVersion: 2,
+        revision: 1,
+        completedAt: "2026-06-01T08:00:00.000Z",
+        steps: { notice: true, retrieve: true, produce: true, correct: true },
+      },
+      "unit-12": { completedAt: "2026-06-01T08:00:00.000Z" },
+    })],
+    ["english-library.speaking.progress", JSON.stringify({
+      "introduce-yourself-fast": {
+        completed: true,
+        completedAt: "2026-06-02T08:00:00.000Z",
+      },
+    })],
+  ]);
+  const storage = {
+    getItem: (key) => values.get(key) ?? null,
+    setItem: (key, value) => values.set(key, value),
+  };
+  const mappings = [
+    {
+      unitSlug: "unit-01",
+      learnSessionId: "module-01-learn",
+      learnRevision: 1,
+      missionSlug: "introduce-yourself-fast",
+      speakSessionId: "module-01-speak",
+      speakRevision: 2,
+    },
+    {
+      unitSlug: "unit-12",
+      learnSessionId: "module-12-learn",
+      learnRevision: 3,
+      missionSlug: "a2-real-life-challenge",
+      speakSessionId: "module-12-speak",
+      speakRevision: 1,
+    },
+  ];
+
+  const first = migrateLegacyLearningProgress(storage, mappings);
+  assert.equal(first.sessions["module-01-learn"], undefined);
+  assert.equal(first.sessions["module-12-learn"], undefined);
+  assert.equal(first.sessions["module-01-speak"], undefined);
+  assert.equal(first.migrations.legacyStandaloneImported, true);
+
+  values.set(
+    "english-library.lesson-progress",
+    JSON.stringify({ "unit-02": { completedAt: "2026-06-03T08:00:00.000Z" } }),
+  );
+  const second = migrateLegacyLearningProgress(storage, [{
+    unitSlug: "unit-02",
+    learnSessionId: "module-02-learn",
+    learnRevision: 1,
+    missionSlug: "my-ordinary-day",
+    speakSessionId: "module-02-speak",
+    speakRevision: 1,
+  }]);
+
+  assert.equal(second.sessions["module-02-learn"], undefined);
 });

@@ -153,6 +153,19 @@ export const runContentAudit = ({ root = defaultRoot } = {}) => {
   const resourceFiles = [
     path.join(root, "grammar-reference.md"),
     path.join(root, "vocabulary-lists.md"),
+    path.join(root, "a2-practice-workbook.md"),
+    path.join(root, "a2-lithuanian-error-clinic.md"),
+    path.join(root, "a2-real-life-phrasebook.md"),
+    path.join(root, "a2-listening-dictation-pack.md"),
+    path.join(root, "a2-couples-conversation-pack.md"),
+    path.join(root, "a2-workplace-english-pack.md"),
+    path.join(root, "a2-travel-english-pack.md"),
+    path.join(root, "a2-services-english-pack.md"),
+    path.join(root, "a2-vocabulary-game-bank.md"),
+    path.join(root, "a2-30-day-study-plan.md"),
+    path.join(root, "a2-self-study-routes.md"),
+    path.join(root, "a2-partner-study-guide.md"),
+    path.join(root, "a2-can-do-portfolio.md"),
   ];
 
   const units = unitFiles.map((filePath) => ({ filePath, document: load(filePath) }));

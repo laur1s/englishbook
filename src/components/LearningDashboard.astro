@@ -312,6 +312,11 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     type ObjectiveInsightMeta,
     type SkillInsight,
   } from "../lib/learning-insights";
+  import {
+    DAILY_RECALL_SESSION_ID,
+    buildDailyRecallPlan,
+  } from "../lib/daily-recall";
+  import { practiceCatalog } from "../lib/practice";
 
   type DashboardSession = {
     id: string;
@@ -371,10 +376,18 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     }
   };
 
-  const withPracticeMode = (href: string, mode: "adaptive" | "repair" | "repeat") => {
+  const withPracticeMode = (
+    href: string,
+    mode: "adaptive" | "daily" | "repair" | "repeat",
+    fresh = true,
+  ) => {
     const url = new URL(href, window.location.origin);
-    url.searchParams.set("fresh", "1");
-    if (mode !== "repeat") url.searchParams.set(mode, "1");
+    if (fresh) url.searchParams.set("fresh", "1");
+    if (mode === "daily") {
+      url.searchParams.set("daily", "1");
+    } else if (mode !== "repeat") {
+      url.searchParams.set(mode, "1");
+    }
     return `${url.pathname}${url.search}${url.hash}`;
   };
 
@@ -430,8 +443,10 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
           ? [{
               unitSlug: module.unitSlug,
               learnSessionId: learnSession.id,
+              learnRevision: learnSession.revision,
               missionSlug: module.missionSlug,
               speakSessionId: speakSession.id,
+              speakRevision: speakSession.revision,
             }]
           : [];
       }),
@@ -458,12 +473,17 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         const record = progress.sessions[session.id];
         return record?.revision === session.revision && Boolean(record.practiceRun);
       };
+      const activeDailyRun = progress.sessions[DAILY_RECALL_SESSION_ID]?.practiceRun?.scope === "daily"
+        ? progress.sessions[DAILY_RECALL_SESSION_ID].practiceRun
+        : undefined;
       const isUnlocked = (session: Pick<DashboardSession, "id">) =>
         isLearningSessionUnlocked(data.sessions, progress, session.id);
       const practiceHref = (
         target: DashboardSession,
-        mode: "adaptive" | "repair" | "repeat" = "adaptive",
-      ) => hasActivePracticeRun(target) ? target.href : withPracticeMode(target.href, mode);
+        mode: "adaptive" | "daily" | "repair" | "repeat" = "adaptive",
+      ) => mode === "daily"
+        ? withPracticeMode(target.href, mode, !activeDailyRun)
+        : hasActivePracticeRun(target) ? target.href : withPracticeMode(target.href, mode);
       const allComplete = data.sessions
         .filter((item) => item.required !== false)
         .every((item) => isCompleted(item));
@@ -544,10 +564,11 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
 
       const skillQueue = buildSkillQueue(progress, data.objectives, now, timeZone, 2);
       const mistakes = buildMistakeSummary(progress, data.items, data.objectives);
+      const dailyRecallPlan = buildDailyRecallPlan(practiceCatalog, progress, now);
       const findPracticeTarget = (
         unitId: string | undefined,
         sourceSessionId: string | undefined,
-        purpose: "adaptive" | "repair",
+        purpose: "adaptive" | "daily" | "repair",
       ) => {
         const sourceEntry = sourceSessionId ? sessionById.get(sourceSessionId) : undefined;
         const module = (unitId ? data.modules.find((candidate) => candidate.unitSlug === unitId) : undefined)
@@ -556,24 +577,40 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         const review = module.sessions.find((session) => session.stage === "review");
         const practice = module.sessions.find((session) => session.stage === "practice");
         const candidates = purpose === "repair" ? [practice, review] : [review, practice];
-        return candidates.find((candidate) => candidate && isUnlocked(candidate));
+        return candidates.find((candidate) =>
+          candidate && (purpose === "daily" || isUnlocked(candidate))
+        );
       };
       const activeRepairEntry = Object.entries(progress.sessions)
-        .find(([, record]) => record.practiceRun?.phase === "repair");
+        .find(([sessionId, record]) =>
+          sessionId !== DAILY_RECALL_SESSION_ID && record.practiceRun?.phase === "repair"
+        );
       const activeRepairSession = activeRepairEntry
         ? sessionById.get(activeRepairEntry[0])?.session
         : undefined;
       const firstMistake = mistakes.groups[0];
       const firstSkill = skillQueue[0];
+      const activeDailyTarget = activeDailyRun?.hostSessionId
+        ? sessionById.get(activeDailyRun.hostSessionId)?.session
+        : undefined;
+      const plannedDailyTarget = dailyRecallPlan.emptyReason === null
+        ? dailyRecallPlan.unitIds
+            .map((unitId) => findPracticeTarget(unitId, undefined, "daily"))
+            .find(Boolean)
+        : undefined;
+      const dailyReviewTarget = activeDailyTarget ?? plannedDailyTarget;
       const reviewTarget = activeRepairSession
-        ?? (firstMistake
-          ? findPracticeTarget(firstMistake.unitId, undefined, "repair")
-          : firstSkill
-            ? findPracticeTarget(firstSkill.unitId, firstSkill.sourceSessionId, "adaptive")
-            : undefined);
-      const reviewMode = activeRepairSession || firstMistake ? "repair" : "adaptive";
-      const reviewIsCore = reviewTarget?.id === activeSession.id;
-      const reviewEnabled = Boolean(reviewTarget && isUnlocked(reviewTarget));
+        ?? dailyReviewTarget;
+      const reviewMode: "daily" | "repair" = activeRepairSession ? "repair" : "daily";
+      const reviewIsCore = reviewMode !== "daily" && reviewTarget?.id === activeSession.id;
+      const reviewEnabled = Boolean(
+        reviewTarget && (reviewMode === "daily" || isUnlocked(reviewTarget)),
+      );
+      const dailyItemCount = activeDailyRun?.itemRefs.length ||
+        (dailyRecallPlan.emptyReason === null ? dailyRecallPlan.count : 0);
+      const dailyMinutes = activeDailyRun
+        ? Math.min(progress.preferences.dailyMinutes, Math.max(1, Math.ceil(dailyItemCount * 1.25)))
+        : dailyRecallPlan.emptyReason === null ? dailyRecallPlan.minutes : 0;
       const reviewLink = root.querySelector<HTMLAnchorElement>("[data-today-review]");
       setActionState(
         reviewLink,
@@ -584,20 +621,28 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       setText(
         root,
         "[data-today-review-title]",
-        activeRepairSession || firstMistake ? "Mistake repair" : "Adaptive review",
+        activeRepairSession
+          ? "Mistake repair"
+          : activeDailyRun?.phase === "repair" ? "Finish daily repair" : "Daily recall",
       );
-      setText(root, "[data-today-review-minutes]", reviewTarget ? `${reviewTarget.minutes} min` : "—");
+      setText(
+        root,
+        "[data-today-review-minutes]",
+        reviewTarget ? `${reviewMode === "daily" ? dailyMinutes : reviewTarget.minutes} min` : "—",
+      );
       setText(root, "[data-today-review-status]", reviewEnabled ? "Ready" : skillQueue.length || mistakes.count ? "Locked" : "Caught up");
       setText(
         root,
         "[data-today-review-copy]",
         activeRepairSession
           ? "Resume the correction loop you started"
-          : firstMistake
-            ? `${mistakes.count} ${mistakes.count === 1 ? "answer needs" : "answers need"} another try`
-            : firstSkill
-              ? firstSkill.label
-              : "No skills are due today",
+          : activeDailyRun
+            ? `Continue your ${dailyItemCount}-item cross-unit review`
+            : firstMistake
+              ? `${mistakes.count} ${mistakes.count === 1 ? "answer" : "answers"} first, then due skills`
+              : firstSkill
+                ? `${dailyItemCount} items from ${dailyRecallPlan.unitIds.length} ${dailyRecallPlan.unitIds.length === 1 ? "unit" : "units"}`
+                : "No skills are due today",
       );
 
       const coreLink = root.querySelector<HTMLAnchorElement>("[data-today-core]");
@@ -690,7 +735,8 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         const status = document.createElement("em");
         const detail = document.createElement("span");
         const arrow = document.createElement("span");
-        const target = findPracticeTarget(skill.unitId, skill.sourceSessionId, "adaptive");
+        const target = dailyReviewTarget
+          ?? findPracticeTarget(skill.unitId, skill.sourceSessionId, "daily");
         item.className = "skill-queue-item";
         link.className = "skill-queue-row";
         icon.className = `skill-queue-icon ${skill.due ? "is-due" : "is-weak"}`;
@@ -704,31 +750,29 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         title.append(" · ", status);
         copy.append(title, detail);
         link.append(icon, copy, arrow);
-        setActionState(link, target ? practiceHref(target, "adaptive") : null, Boolean(target));
+        setActionState(link, target ? practiceHref(target, "daily") : null, Boolean(target));
         item.append(link);
         return item;
       };
       skillQueue.forEach((skill) => skillList?.append(makeSkillRow(skill)));
 
-      const reviewActionTarget = skillQueue
-        .map((skill) => findPracticeTarget(skill.unitId, skill.sourceSessionId, "adaptive"))
-        .find(Boolean);
+      const reviewActionTarget = dailyReviewTarget;
       const reviewAction = root.querySelector<HTMLAnchorElement>("[data-review-link]");
       setActionState(
         reviewAction,
-        reviewActionTarget ? practiceHref(reviewActionTarget, "adaptive") : null,
+        reviewActionTarget ? practiceHref(reviewActionTarget, "daily") : null,
         Boolean(reviewActionTarget),
       );
       setText(
         root,
         "[data-review-action]",
         reviewActionTarget
-          ? skillQueue.some((skill) => skill.due) ? "Start adaptive review" : "Strengthen weak skills"
+          ? activeDailyRun ? "Resume daily recall" : "Start daily recall"
           : skillQueue.length ? "Continue the path first" : "You’re caught up",
       );
 
       const mistakeTarget = activeRepairSession
-        ?? (firstMistake ? findPracticeTarget(firstMistake.unitId, undefined, "repair") : undefined);
+        ?? dailyReviewTarget;
       setText(
         root,
         "[data-mistake-count]",

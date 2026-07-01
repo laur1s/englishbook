@@ -541,10 +541,16 @@ export const sessions = modules.flatMap((module) => module.sessions);
 
 const moduleById = new Map(modules.map((module) => [module.id, module]));
 const sessionById = new Map(sessions.map((session) => [session.id, session]));
+const contentSessionByHref = new Map(
+  sessions.flatMap((session) =>
+    session.kind === "content" ? [[session.href, session] as const] : [],
+  ),
+);
 const sessionIndexById = new Map(sessions.map((session, index) => [session.id, index]));
 
 export const getModuleById = (id: string) => moduleById.get(id);
 export const getSessionById = (id: string) => sessionById.get(id);
+export const getContentSessionByHref = (href: string) => contentSessionByHref.get(href);
 export const getNextSessionId = (id: string) => {
   const index = sessionIndexById.get(id);
   return index === undefined

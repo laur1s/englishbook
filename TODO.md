@@ -2,10 +2,26 @@
 
 ## Now
 
-- [ ] 56. Run build/check QA after tasks 41-45 and log any follow-up work.
+- [ ] 78. Build a bilingual micro-reading pack with notices, messages, forms, menus, and timetables.
 
 ## Next
 
+- [ ] 79. Build an A2 pronunciation clinic for Lithuanian speakers with minimal-pair and sentence drills.
+- [ ] 80. Build an A2 writing clinic with messages, forms, emails, stories, and guided correction.
+- [ ] 81. Build a set of cumulative A2 review games for Units 1–6, 7–12, 13–18, and 19–24.
+- [ ] 82. Build a Lithuanian-supported A2 survival vocabulary deck grouped by real-life action.
+- [ ] 83. Build a bilingual A2 grammar transformation bank with cumulative mixed practice.
+- [ ] 84. Build 24 bilingual lesson warm-ups and exit tickets for quick daily review.
+- [ ] 85. Build an A2 confidence-recovery pack for learners returning after a break.
+- [ ] 86. Build a bilingual set of A2 picture-free description challenges for speaking practice.
+- [ ] 87. Build an A2 mini-assessment bank with four parallel versions for repeat practice.
+- [ ] 88. Build an A2 functional phrase review deck with spaced-repetition prompts.
+- [ ] 91. Build a resumable cross-unit daily recall session from due skills and unresolved mistakes without advancing the linear path.
+- [ ] 92. Add a bilingual “how to choose your next exercise” decision card to the learning dashboard.
+
+## Deferred QA
+
+- [ ] 56. Run build/check QA after tasks 41-45 and log any follow-up work.
 - [ ] 57. Run build/check QA after tasks 46-50 and log any follow-up work.
 - [ ] 58. Audit the Chapter 10 grammar labels after the final key alignment.
 - [ ] 59. Audit the Chapter 6 answer labels after the final lesson restoration.
@@ -74,6 +90,19 @@
 - [x] 53. Audit the Chapter 8 answer bundle after the final lesson restoration.
 - [x] 54. Audit the Chapter 4 answer bundle after the final answer-key alignment.
 - [x] 55. Audit the Chapter 5 answer bundle after the final answer-key alignment.
+- [x] 67. Build a bilingual A2 real-life phrasebook with 20 situations, model dialogues, repair drills, and answers.
+- [x] 68. Build a 24-day read-cover-recall listening and dictation pack with Lithuanian support.
+- [x] 69. Build a home-and-family conversation pack for couples learning together.
+- [x] 70. Build an A2 workplace English pack with messages, calls, schedules, and problem-solving.
+- [x] 71. Build an A2 travel pack covering transport, accommodation, directions, changes, and emergencies.
+- [x] 72. Build an A2 services pack covering appointments, shops, deliveries, pharmacy language, and complaints.
+- [x] 73. Build a vocabulary recycling game bank that needs no teacher or special materials.
+- [x] 74. Build a Lithuanian-supported 30-day study plan using the existing units and new practice resources.
+- [x] 75. Build three self-study routes: gentle, standard, and intensive.
+- [x] 76. Build a partner-study guide with role cards, turn-taking rules, and supportive correction language.
+- [x] 77. Build an A2 can-do portfolio with evidence prompts and repeatable progress checks.
+- [x] 89. Build a Lithuanian resource chooser so the expanded practice library is easy to navigate.
+- [x] 90. Add a compact “recommended next resource” route at the end of every new practice pack.
 
 ## Rules
 

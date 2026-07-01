@@ -4,6 +4,7 @@ import type { ParsedSection } from "../lib/markdown";
 
 import BaseLayout from "./BaseLayout.astro";
 import { getCollectionHref, getEntryHref } from "../lib/content";
+import { getContentSessionByHref } from "../lib/course-path";
 
 type Props = {
   entry: LibraryEntry;
@@ -46,6 +47,26 @@ const collectionTitle =
         ? "Resources"
         : "Library";
 const isTrackLesson = entry.data.collection === "grey-book" || entry.data.collection === "a2-units";
+const lessonCourseHref = entry.data.collection === "grey-book"
+  ? `/grey-book/${entry.data.slug}`
+  : entry.data.collection === "a2-units"
+    ? `/a2/${entry.data.slug}`
+    : undefined;
+const lessonSession = lessonCourseHref ? getContentSessionByHref(lessonCourseHref) : undefined;
+const lessonRevision = lessonSession?.revision ?? 1;
+const studySteps = entry.data.collection === "grey-book"
+  ? [
+      { id: "notice", label: "Notice", copy: "I read the story and said two useful lines aloud.", ltCopy: "Perskaičiau istoriją ir garsiai pasakiau dvi naudingas eilutes." },
+      { id: "retrieve", label: "Retrieve", copy: "I closed the story and answered one question from memory.", ltCopy: "Užverčiau istoriją ir į vieną klausimą atsakiau iš atminties." },
+      { id: "produce", label: "Produce", copy: "I retold three events in my own words.", ltCopy: "Savais žodžiais papasakojau tris įvykius." },
+      { id: "correct", label: "Check", copy: "I checked one detail, corrected it if needed, and tried again without looking.", ltCopy: "Patikrinau vieną detalę ir prireikus ją pataisiau. Tada užverčiau tekstą ir pabandžiau dar kartą." },
+    ]
+  : [
+      { id: "notice", label: "Notice", copy: "I read the examples and said two aloud.", ltCopy: "Perskaičiau pavyzdžius ir du iš jų pasakiau garsiai." },
+      { id: "retrieve", label: "Retrieve", copy: "I closed the notes and did one exercise without help.", ltCopy: "Užverčiau užrašus ir vieną pratimą atlikau be pagalbos." },
+      { id: "produce", label: "Produce", copy: "I made three sentences of my own using the lesson language.", ltCopy: "Sukūriau tris savo sakinius su pamokos žodžiais ar gramatika." },
+      { id: "correct", label: "Check", copy: "I checked one answer, corrected it if needed, and tried again without looking.", ltCopy: "Patikrinau vieną atsakymą ir prireikus jį pataisiau. Tada užverčiau užrašus ir pabandžiau dar kartą." },
+    ];
 const sequenceLabel =
   entry.data.collection === "grey-book"
     ? `Chapter ${entry.data.order}${totalEntries ? ` of ${totalEntries}` : ""}`
@@ -121,27 +142,51 @@ const sequenceLabel =
 
     <article class="reader-content">
       {isTrackLesson && (
-        <section class="study-coach" data-lesson-progress data-lesson-slug={entry.data.slug}>
+        <section
+          class="study-coach"
+          data-lesson-progress
+          data-lesson-slug={entry.data.slug}
+          data-lesson-revision={lessonRevision}
+        >
           <div class="study-coach-head">
             <div>
               <p class="eyebrow">Active study loop</p>
-              <h2>Try first. Check later.</h2>
-              <p class="lt-text" lang="lt">Pirmiausia pabandykite, tada tikrinkite atsakymus.</p>
+              <h2>Show what you did</h2>
+              <p>Tick each step after you really do it. This study loop is ready when all four are checked.</p>
+              <p class="lt-text" lang="lt">Pažymėkite tik atliktus žingsnius. Mokymosi ciklas baigtas, kai atlikti visi keturi.</p>
             </div>
-            <button type="button" class="secondary-button" data-lesson-complete aria-pressed="false">
-              Mark lesson complete
-            </button>
+            <div class="study-coach-actions">
+              <strong class="study-step-count" data-lesson-step-count>0 of 4 steps</strong>
+              <button type="button" class="secondary-button" data-lesson-complete disabled>
+                Complete study loop
+              </button>
+              <button type="button" class="text-button" data-lesson-reset hidden>
+                Start again
+              </button>
+            </div>
           </div>
 
-          <ol class="study-step-list">
-            <li><strong>Notice:</strong> read the examples and say two of them aloud.</li>
-            <li><strong>Retrieve:</strong> close the notes and complete one exercise without help.</li>
-            <li><strong>Produce:</strong> make three true sentences about your own life.</li>
-            <li><strong>Correct:</strong> check the key, fix one error, and retry it tomorrow.</li>
-          </ol>
+          <fieldset class="study-step-list">
+            <legend class="sr-only">Lesson study evidence</legend>
+            {studySteps.map((step) => (
+              <label class="study-step">
+                <input type="checkbox" data-study-step={step.id} />
+                <span>
+                  <strong>{step.label}:</strong> {step.copy}
+                  <small class="lt-text" lang="lt">{step.ltCopy}</small>
+                </span>
+              </label>
+            ))}
+          </fieldset>
 
-          <p class="study-progress-note" data-lesson-completion-status aria-live="polite">
-            Progress is saved only on this device.
+          <p
+            class="study-progress-note"
+            data-lesson-completion-status
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            Complete the four steps to finish this study loop. Progress is saved on this device.
           </p>
         </section>
       )}

@@ -16,10 +16,50 @@ topics:
 hasAnswerKey: false
 status: "published"
 missionType: "role-flip-dialogue"
-durationMinutes: 4
+durationMinutes: 6
 sourceRefs:
   - "unit-04"
 supportsRecording: true
+listening:
+  modelText: >-
+    Customer: Could I have the chicken soup and a cup of tea, please? Waiter: Of course. Anything else? Customer: No, thank you. Later, the customer says: Sorry, I ordered tea, not water. Waiter: I'm sorry about that. I'll bring your tea in a minute. Customer: Thank you.
+  speechText: >-
+    Could I have the chicken soup and a cup of tea, please? Of course. Anything else? No, thank you. Sorry, I ordered tea, not water. I'm sorry about that. I'll bring your tea in a minute. Thank you.
+  checks:
+    - id: "mission-04.gist"
+      kind: "gist"
+      prompt: "Why does the customer speak to the waiter again?"
+      ltPrompt: "Kodėl klientas dar kartą kreipiasi į padavėją?"
+      hint: "Notice what the customer asks for the second time and how “not” shows the contrast."
+      ltHint: "Atkreipkite dėmesį, ko klientas prašo antrą kartą ir kaip pavartoja žodį „not“."
+      options:
+        - id: "wrong-drink"
+          text: "The customer received the wrong drink."
+        - id: "cold-soup"
+          text: "The soup is cold."
+        - id: "pay-the-bill"
+          text: "The customer wants to pay."
+      answerId: "wrong-drink"
+      feedback: "The customer ordered tea but received water, so the problem is the wrong drink."
+      ltFeedback: "Klientas užsisakė arbatos, bet gavo vandens, todėl problema – ne tas gėrimas."
+    - id: "mission-04.detail"
+      kind: "detail"
+      prompt: "What will the waiter bring in a minute?"
+      ltPrompt: "Ką padavėjas netrukus atneš?"
+      hint: "Find the waiter's promise after “I'll bring”."
+      ltHint: "Raskite padavėjo pažadą po žodžių „I'll bring“."
+      options:
+        - id: "cup-of-tea"
+          text: "A cup of tea"
+        - id: "bowl-of-soup"
+          text: "A bowl of soup"
+        - id: "glass-of-water"
+          text: "A glass of water"
+      answerId: "cup-of-tea"
+      feedback: "The waiter says, “I'll bring your tea in a minute.” The promised drink is tea."
+      ltFeedback: "Padavėjas sako: „I'll bring your tea in a minute.“ Jis pažada atnešti arbatos."
+  shadowLine: "Sorry, I ordered tea, not water."
+  shadowLineLt: "Atsiprašau, užsisakiau arbatos, o ne vandens."
 steps:
   - kind: "brief"
     prompt: "You are in a cafe. First play the customer, then switch and play the waiter."

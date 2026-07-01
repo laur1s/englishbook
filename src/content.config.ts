@@ -30,6 +30,72 @@ const speakingStepSchema = z.object({
   support: z.array(z.string()).optional(),
 });
 
+const listeningOptionSchema = z.object({
+  id: z.string().regex(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/),
+  text: z.string(),
+});
+
+const listeningCheckSchema = z
+  .object({
+    id: z.string().regex(/^[a-z0-9]+(?:[.-][a-z0-9]+)*$/),
+    kind: z.enum(["gist", "detail"]),
+    prompt: z.string(),
+    ltPrompt: z.string(),
+    hint: z.string(),
+    ltHint: z.string(),
+    options: z.array(listeningOptionSchema).length(3),
+    answerId: z.string(),
+    feedback: z.string(),
+    ltFeedback: z.string(),
+  })
+  .superRefine((check, context) => {
+    const optionIds = check.options.map((option) => option.id);
+
+    if (new Set(optionIds).size !== optionIds.length) {
+      context.addIssue({
+        code: "custom",
+        message: "Listening option IDs must be unique within a check.",
+        path: ["options"],
+      });
+    }
+
+    if (!optionIds.includes(check.answerId)) {
+      context.addIssue({
+        code: "custom",
+        message: "Listening answerId must match one of the option IDs.",
+        path: ["answerId"],
+      });
+    }
+  });
+
+const listeningSchema = z
+  .object({
+    modelText: z.string(),
+    speechText: z.string(),
+    checks: z.array(listeningCheckSchema).length(2),
+    shadowLine: z.string(),
+    shadowLineLt: z.string(),
+  })
+  .superRefine((listening, context) => {
+    const checkIds = listening.checks.map((check) => check.id);
+    if (new Set(checkIds).size !== checkIds.length) {
+      context.addIssue({
+        code: "custom",
+        message: "Listening check IDs must be unique within a mission.",
+        path: ["checks"],
+      });
+    }
+
+    const kinds = listening.checks.map((check) => check.kind);
+    if (!kinds.includes("gist") || !kinds.includes("detail")) {
+      context.addIssue({
+        code: "custom",
+        message: "Listening checks must include one gist check and one detail check.",
+        path: ["checks"],
+      });
+    }
+  });
+
 const greyBook = defineCollection({
   loader: glob({ base: "./Grey's book", pattern: "chapter-*.md" }),
   schema: sharedSchema.extend({
@@ -49,7 +115,7 @@ const a2Units = defineCollection({
 const resources = defineCollection({
   loader: glob({
     base: ".",
-    pattern: "{grammar-reference.md,vocabulary-lists.md}",
+    pattern: "{grammar-reference.md,vocabulary-lists.md,a2-practice-workbook.md,a2-lithuanian-error-clinic.md,a2-real-life-phrasebook.md,a2-listening-dictation-pack.md,a2-couples-conversation-pack.md,a2-workplace-english-pack.md,a2-travel-english-pack.md,a2-services-english-pack.md,a2-vocabulary-game-bank.md,a2-30-day-study-plan.md,a2-self-study-routes.md,a2-partner-study-guide.md,a2-can-do-portfolio.md}",
   }),
   schema: sharedSchema.extend({
     collection: z.literal("resources"),
@@ -84,6 +150,7 @@ const speakingMissions = defineCollection({
     sourceRefs: z.array(z.string()).min(1),
     supportsRecording: z.boolean(),
     steps: z.array(speakingStepSchema).length(5),
+    listening: listeningSchema.optional(),
   }),
 });
 

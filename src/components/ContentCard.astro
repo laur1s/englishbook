@@ -2,6 +2,7 @@
 import type { LibraryEntry } from "../lib/content";
 
 import { getEntryBody, getEntryHref } from "../lib/content";
+import { getContentSessionByHref } from "../lib/course-path";
 import { parseDocument } from "../lib/markdown";
 
 type Props = {
@@ -15,6 +16,12 @@ const parsed = parseDocument({
   ltTitle: entry.data.ltTitle,
 });
 const tracksProgress = entry.data.collection === "grey-book" || entry.data.collection === "a2-units";
+const lessonCourseHref = entry.data.collection === "grey-book"
+  ? `/grey-book/${entry.data.slug}`
+  : entry.data.collection === "a2-units"
+    ? `/a2/${entry.data.slug}`
+    : undefined;
+const lessonSession = lessonCourseHref ? getContentSessionByHref(lessonCourseHref) : undefined;
 ---
 
 <article
@@ -25,10 +32,11 @@ const tracksProgress = entry.data.collection === "grey-book" || entry.data.colle
   data-topics={entry.data.topics.join("|")}
   data-lesson-card={tracksProgress ? "" : undefined}
   data-lesson-slug={tracksProgress ? entry.data.slug : undefined}
+  data-lesson-revision={tracksProgress ? lessonSession?.revision ?? 1 : undefined}
 >
   <div class="card-meta-row">
     <p class="card-kicker">{entry.data.contentType}</p>
-    {tracksProgress && <span class="progress-pill" data-lesson-card-status>Not completed</span>}
+    {tracksProgress && <span class="progress-pill" data-lesson-card-status>Study checks open</span>}
   </div>
   <h2>
     <a href={getEntryHref(entry)}>{entry.data.title}</a>

@@ -558,6 +558,15 @@ body:has(.learning-shell) .site-nav a.active {
   background: rgba(189, 62, 30, 0.06);
 }
 
+.learning-outline-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.learning-outline-button:disabled:hover {
+  background: transparent;
+}
+
 .more-practice-link {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;

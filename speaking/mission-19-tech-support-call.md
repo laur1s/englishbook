@@ -15,6 +15,46 @@ durationMinutes: 5
 sourceRefs:
   - "unit-19"
 supportsRecording: true
+listening:
+  modelText: >-
+    User: People can't hear me on the call. Helper: First, check that your headset is connected. Next, make sure the microphone is not muted. Then open the sound settings. User: Do you mean the camera settings? Helper: No, the sound settings—the menu with the speaker symbol. Select your headset under Microphone. Finally, join the call again. You never need to send me a password or private code. Can people hear you now?
+  speechText: >-
+    People can't hear me on the call. First, check that your headset is connected. Next, make sure the microphone is not muted. Then open the sound settings. Do you mean the camera settings? No, the sound settings—the menu with the speaker symbol. Select your headset under Microphone. Finally, join the call again. You never need to send me a password or private code. Can people hear you now?
+  checks:
+    - id: "mission-19.gist"
+      kind: "gist"
+      prompt: "What problem does the user have?"
+      ltPrompt: "Kokia naudotojo problema?"
+      hint: "Focus on the user's first sentence and the word “hear”."
+      ltHint: "Atkreipkite dėmesį į pirmą naudotojo sakinį ir žodį „hear“."
+      options:
+        - id: "microphone-not-heard"
+          text: "Other people cannot hear the user."
+        - id: "camera-not-working"
+          text: "Other people cannot see the user."
+        - id: "password-forgotten"
+          text: "The user cannot remember a password."
+      answerId: "microphone-not-heard"
+      feedback: "The user says, “People can't hear me,” so the call has a microphone or sound problem."
+      ltFeedback: "Naudotojas sako „People can't hear me“, todėl skambučio problema susijusi su mikrofonu arba garsu."
+    - id: "mission-19.detail"
+      kind: "detail"
+      prompt: "Which settings should the user open?"
+      ltPrompt: "Kuriuos nustatymus naudotojas turi atidaryti?"
+      hint: "The user guesses one menu. Notice how the helper corrects that guess."
+      ltHint: "Naudotojas spėja vieną meniu. Atkreipkite dėmesį, kaip pagalbos darbuotojas pataiso šį spėjimą."
+      options:
+        - id: "camera-settings"
+          text: "The camera settings"
+        - id: "sound-settings"
+          text: "The sound settings"
+        - id: "account-settings"
+          text: "The account settings"
+      answerId: "sound-settings"
+      feedback: "The helper corrects the misunderstanding: open the sound settings, with the speaker symbol."
+      ltFeedback: "Pagalbos darbuotojas pataiso nesusipratimą: reikia atidaryti garso nustatymus su garsiakalbio simboliu."
+  shadowLine: "No, the sound settings—the menu with the speaker symbol."
+  shadowLineLt: "Ne, garso nustatymus – meniu su garsiakalbio simboliu."
 steps:
   - kind: "brief"
     prompt: "Explain a device problem and guide a user through five safe support steps."
@@ -36,7 +76,7 @@ steps:
       - "Could you say that again?"
       - "Do not share your password."
   - kind: "compare"
-    prompt: "Compare with this model: User: People can't hear me in the call. Helper: First, check that your headset is connected. Next, make sure the microphone is not muted. Then open the sound settings. User: Do you mean the camera settings? Helper: No, the sound settings—the menu with the speaker symbol. Choose your headset as the microphone, close the settings, and join the call again. Those are the last two steps. You never need to send me a password or private code. Can people hear you now?"
+    prompt: "Compare with this model: User: People can't hear me on the call. Helper: First, check that your headset is connected. Next, make sure the microphone is not muted. Then open the sound settings. User: Do you mean the camera settings? Helper: No, the sound settings—the menu with the speaker symbol. Select your headset under Microphone. Finally, join the call again. You never need to send me a password or private code. Can people hear you now?"
     ltPrompt: "Paklausykite pavyzdžio ir patikrinkite veiksmų tvarką bei saugumo kalbą."
     support:
       - "Were the steps safe and in a usable order?"

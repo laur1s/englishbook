@@ -124,17 +124,6 @@ const resumeContext =
           localStorage.setItem(key, value);
         } catch {}
       };
-      const getStoredJson = (key, fallback = {}) => {
-        try {
-          const raw = localStorage.getItem(key);
-          const parsed = raw ? JSON.parse(raw) : fallback;
-          return parsed && typeof parsed === "object" && !Array.isArray(parsed)
-            ? parsed
-            : fallback;
-        } catch {
-          return fallback;
-        }
-      };
       const translationDictionary = JSON.parse(
         document.getElementById("translation-dictionary-data")?.textContent || "{}",
       );
@@ -312,61 +301,6 @@ const resumeContext =
 
         applyFilters();
       });
-
-      const lessonProgressKey = "english-library.lesson-progress";
-      const lessonProgress = getStoredJson(lessonProgressKey);
-
-      const syncLessonCards = () => {
-        document.querySelectorAll("[data-lesson-card]").forEach((card) => {
-          const slug = card.dataset.lessonSlug;
-          const label = card.querySelector("[data-lesson-card-status]");
-
-          if (label && slug) {
-            const isComplete = Boolean(lessonProgress[slug]?.completedAt);
-            label.textContent = isComplete ? "Completed" : "Not completed";
-            label.classList.toggle("complete", isComplete);
-          }
-        });
-      };
-
-      document.querySelectorAll("[data-lesson-progress]").forEach((progressRoot) => {
-        const slug = progressRoot.dataset.lessonSlug;
-        const completeButton = progressRoot.querySelector("[data-lesson-complete]");
-        const completionStatus = progressRoot.querySelector("[data-lesson-completion-status]");
-
-        if (!slug || !completeButton) {
-          return;
-        }
-
-        const syncLessonProgress = () => {
-          const isComplete = Boolean(lessonProgress[slug]?.completedAt);
-          completeButton.setAttribute("aria-pressed", String(isComplete));
-          completeButton.classList.toggle("is-complete", isComplete);
-          completeButton.textContent = isComplete ? "Completed — mark incomplete" : "Mark lesson complete";
-
-          if (completionStatus) {
-            completionStatus.textContent = isComplete
-              ? "Completed on this device. Reopen the lesson later for spaced review."
-              : "Progress is saved only on this device.";
-          }
-        };
-
-        completeButton.addEventListener("click", () => {
-          if (lessonProgress[slug]?.completedAt) {
-            delete lessonProgress[slug];
-          } else {
-            lessonProgress[slug] = { completedAt: new Date().toISOString() };
-          }
-
-          setStoredValue(lessonProgressKey, JSON.stringify(lessonProgress));
-          syncLessonProgress();
-          syncLessonCards();
-        });
-
-        syncLessonProgress();
-      });
-
-      syncLessonCards();
 
       const MAX_SELECTION_WORDS = 4;
       let selectionTimer = null;
@@ -550,6 +484,188 @@ const resumeContext =
         }
       });
 
+    </script>
+
+    <script>
+      import {
+        LESSON_PROGRESS_KEY,
+        completeLessonStudy,
+        getLessonStudyState,
+        isLessonStudyCompleted,
+        parseLessonProgress,
+        resetLessonStudy,
+        setLessonStudyStep,
+        uncompleteLessonStudy,
+        type LessonProgress,
+        type StudyStepId,
+      } from "../lib/lesson-progress";
+
+      const readLessonProgress = (): LessonProgress => {
+        try {
+          return parseLessonProgress(window.localStorage.getItem(LESSON_PROGRESS_KEY));
+        } catch {
+          return {};
+        }
+      };
+
+      let lessonProgress = readLessonProgress();
+
+      const writeLessonProgress = () => {
+        try {
+          window.localStorage.setItem(LESSON_PROGRESS_KEY, JSON.stringify(lessonProgress));
+          window.dispatchEvent(new CustomEvent("english-library:lesson-progress"));
+          return true;
+        } catch {
+          return false;
+        }
+      };
+
+      const lessonRevision = (element: HTMLElement) => {
+        const revision = Number(element.dataset.lessonRevision);
+        return Number.isInteger(revision) && revision > 0 ? revision : 1;
+      };
+
+      const syncLessonCards = () => {
+        document.querySelectorAll<HTMLElement>("[data-lesson-card]").forEach((card) => {
+          const slug = card.dataset.lessonSlug;
+          const label = card.querySelector<HTMLElement>("[data-lesson-card-status]");
+          if (!label || !slug) return;
+
+          const isComplete = isLessonStudyCompleted(lessonProgress, slug, lessonRevision(card));
+          label.textContent = isComplete ? "Study checks done" : "Study checks open";
+          label.classList.toggle("complete", isComplete);
+        });
+      };
+
+      const lessonRoots = [
+        ...document.querySelectorAll<HTMLElement>("[data-lesson-progress]"),
+      ];
+
+      const syncLessonRoot = (progressRoot: HTMLElement, announcement?: string) => {
+        const slug = progressRoot.dataset.lessonSlug;
+        if (!slug) return;
+
+        const revision = lessonRevision(progressRoot);
+        const state = getLessonStudyState(lessonProgress, slug, revision);
+        const completeButton = progressRoot.querySelector<HTMLButtonElement>("[data-lesson-complete]");
+        const resetButton = progressRoot.querySelector<HTMLButtonElement>("[data-lesson-reset]");
+        const completionStatus = progressRoot.querySelector<HTMLElement>(
+          "[data-lesson-completion-status]",
+        );
+        const stepCount = progressRoot.querySelector<HTMLElement>("[data-lesson-step-count]");
+
+        progressRoot.querySelectorAll<HTMLInputElement>("[data-study-step]").forEach((checkbox) => {
+          const stepId = checkbox.dataset.studyStep as StudyStepId | undefined;
+          if (stepId) checkbox.checked = state.steps[stepId];
+        });
+
+        if (stepCount) {
+          stepCount.textContent = state.isCompleted
+            ? `${state.checkedCount} of ${state.totalCount} · complete`
+            : `${state.checkedCount} of ${state.totalCount} steps`;
+        }
+
+        if (completeButton) {
+          completeButton.disabled = !state.isReady;
+          completeButton.classList.toggle("is-complete", state.isCompleted);
+          completeButton.textContent = state.isCompleted
+            ? "Mark study loop incomplete"
+            : "Complete study loop";
+        }
+
+        if (resetButton) resetButton.hidden = state.checkedCount === 0;
+
+        if (completionStatus) {
+          completionStatus.textContent = announcement ?? (
+            state.isCompleted
+              ? "Study loop complete. Return to your guided path to continue."
+              : state.isReady
+                ? "All four steps are checked. Complete the study loop when you are ready."
+                : state.checkedCount
+                  ? `${state.totalCount - state.checkedCount} step${state.totalCount - state.checkedCount === 1 ? "" : "s"} left. Progress is saved on this device.`
+                  : "Complete the four steps to finish this study loop. Progress is saved on this device."
+          );
+        }
+      };
+
+      const syncAllLessonProgress = () => {
+        lessonRoots.forEach((root) => syncLessonRoot(root));
+        syncLessonCards();
+      };
+
+      lessonRoots.forEach((progressRoot) => {
+        const slug = progressRoot.dataset.lessonSlug;
+        if (!slug) return;
+        const revision = lessonRevision(progressRoot);
+
+        progressRoot.querySelectorAll<HTMLInputElement>("[data-study-step]").forEach((checkbox) => {
+          checkbox.addEventListener("change", () => {
+            const stepId = checkbox.dataset.studyStep as StudyStepId | undefined;
+            if (!stepId) return;
+            lessonProgress = setLessonStudyStep(
+              lessonProgress,
+              slug,
+              stepId,
+              checkbox.checked,
+              { revision },
+            );
+            const saved = writeLessonProgress();
+            syncLessonRoot(
+              progressRoot,
+              saved ? undefined : "This browser did not allow your study checks to be saved.",
+            );
+            syncLessonCards();
+          });
+        });
+
+        progressRoot.querySelector<HTMLButtonElement>("[data-lesson-complete]")
+          ?.addEventListener("click", () => {
+            const state = getLessonStudyState(lessonProgress, slug, revision);
+            lessonProgress = state.isCompleted
+              ? uncompleteLessonStudy(lessonProgress, slug, { revision })
+              : completeLessonStudy(lessonProgress, slug, { revision });
+            const saved = writeLessonProgress();
+            syncLessonRoot(
+              progressRoot,
+              saved
+                ? state.isCompleted
+                  ? "Study loop marked incomplete. Your four checks are still saved."
+                  : "Study loop complete. Return to your guided path to continue."
+                : "This browser did not allow your study checks to be saved.",
+            );
+            syncLessonCards();
+          });
+
+        progressRoot.querySelector<HTMLButtonElement>("[data-lesson-reset]")
+          ?.addEventListener("click", () => {
+            lessonProgress = resetLessonStudy(lessonProgress, slug);
+            const saved = writeLessonProgress();
+            syncLessonRoot(
+              progressRoot,
+              saved
+                ? "Study checks cleared. Start again when you are ready."
+                : "This browser did not allow your study checks to be saved.",
+            );
+            syncLessonCards();
+            progressRoot.querySelector<HTMLInputElement>("[data-study-step]")?.focus();
+          });
+      });
+
+      window.addEventListener("storage", (event) => {
+        if (event.key !== LESSON_PROGRESS_KEY) return;
+        lessonProgress = readLessonProgress();
+        syncAllLessonProgress();
+      });
+      window.addEventListener("english-library:lesson-progress", () => {
+        lessonProgress = readLessonProgress();
+        syncAllLessonProgress();
+      });
+      window.addEventListener("pageshow", () => {
+        lessonProgress = readLessonProgress();
+        syncAllLessonProgress();
+      });
+
+      syncAllLessonProgress();
     </script>
   </body>
 </html>

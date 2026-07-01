@@ -69,6 +69,32 @@ test("checkpoint sessions draw from the intended cumulative unit ranges", () => 
   assert.equal(getSessionById("module-24-review")?.count, 24);
 });
 
+test("active-listening pilot sessions carry current revisions and listening evidence", () => {
+  const expectedRevisions = new Map([
+    ["module-01-speak", 2],
+    ["module-04-speak", 2],
+    ["module-19-speak", 3],
+  ]);
+
+  for (const [sessionId, revision] of expectedRevisions) {
+    const session = getSessionById(sessionId);
+    assert.equal(session?.revision, revision);
+    assert.equal(session?.skillRefs.includes("listening.a2-comprehension"), true);
+  }
+});
+
+test("study-evidence gates invalidate old trust-based content completions", () => {
+  for (const module of modules) {
+    const learn = module.sessions.find((session) => session.stage === "learn");
+    assert.equal(learn?.revision, module.id === "module-12" ? 3 : 2);
+
+    if (module.order <= 12) {
+      const context = module.sessions.find((session) => session.stage === "context");
+      assert.equal(context?.revision, 2);
+    }
+  }
+});
+
 test("the next-session helper skips optional enrichment", () => {
   const original = sessions[1].required;
   sessions[1].required = false;

@@ -17,10 +17,50 @@ topics:
 hasAnswerKey: false
 status: "published"
 missionType: "one-minute-mission"
-durationMinutes: 3
+durationMinutes: 5
 sourceRefs:
   - "unit-01"
 supportsRecording: true
+listening:
+  modelText: >-
+    Hi, I'm Rasa. I'm from Kaunas, but I live in Vilnius now. I work in marketing for a small technology company. In my free time, I really like hiking and taking photos. At weekends, I often visit my family or meet friends for coffee. It's nice to meet you. What do you do in your free time?
+  speechText: >-
+    Hi, I'm Rasa. I'm from Kaunas, but I live in Vilnius now. I work in marketing for a small technology company. In my free time, I really like hiking and taking photos. At weekends, I often visit my family or meet friends for coffee. It's nice to meet you. What do you do in your free time?
+  checks:
+    - id: "mission-01.gist"
+      kind: "gist"
+      prompt: "What is Rasa mainly doing?"
+      ltPrompt: "Ką Rasa daro šiame įraše?"
+      hint: "Notice the personal information Rasa gives and her final question."
+      ltHint: "Atkreipkite dėmesį, kokią asmeninę informaciją Rasa pateikia ir kokį klausimą užduoda pabaigoje."
+      options:
+        - id: "ordering-lunch"
+          text: "She is ordering lunch."
+        - id: "introducing-herself"
+          text: "She is introducing herself."
+        - id: "asking-for-directions"
+          text: "She is asking for directions."
+      answerId: "introducing-herself"
+      feedback: "Rasa introduces herself: she gives personal information and ends with a question for her new colleague."
+      ltFeedback: "Rasa prisistato: pateikia asmeninės informacijos ir pabaigoje užduoda klausimą naujai kolegei ar kolegai."
+    - id: "mission-01.detail"
+      kind: "detail"
+      prompt: "What does Rasa enjoy doing in her free time?"
+      ltPrompt: "Ką Rasa mėgsta veikti laisvalaikiu?"
+      hint: "Notice the words after “In my free time”."
+      ltHint: "Atkreipkite dėmesį į žodžius po „In my free time“."
+      options:
+        - id: "cooking-and-tennis"
+          text: "Cooking and playing tennis"
+        - id: "hiking-and-photos"
+          text: "Hiking and taking photos"
+        - id: "reading-and-languages"
+          text: "Reading and learning languages"
+      answerId: "hiking-and-photos"
+      feedback: "Rasa says that she likes hiking and taking photos. Notice the words after “In my free time”."
+      ltFeedback: "Rasa sako, kad mėgsta leistis į žygius ir fotografuoti. Atkreipkite dėmesį į žodžius po „In my free time“."
+  shadowLine: "Hi, I'm Rasa. I'm from Kaunas, but I live in Vilnius now."
+  shadowLineLt: "Sveiki, aš Rasa. Esu iš Kauno, bet dabar gyvenu Vilniuje."
 steps:
   - kind: "brief"
     prompt: "You meet a new colleague at an international company. Introduce yourself in a warm, natural way."
@@ -45,7 +85,7 @@ steps:
       - "Start with: Hi, I'm..."
       - "Finish with a return question."
   - kind: "compare"
-    prompt: "Check your version against this model: Hi, I'm Rasa. I'm from Kaunas, but I live in Vilnius now. I moved here three years ago. I work in marketing for a small technology company. In my free time, I really like hiking and taking photos. At weekends, I often visit my family or meet friends for coffee. It's nice to meet you. What do you do, and what do you enjoy outside work?"
+    prompt: "Check your version against this model: Hi, I'm Rasa. I'm from Kaunas, but I live in Vilnius now. I work in marketing for a small technology company. In my free time, I really like hiking and taking photos. At weekends, I often visit my family or meet friends for coffee. It's nice to meet you. What do you do in your free time?"
     ltPrompt: "Palyginkite savo variantą su pavyzdžiu."
     support:
       - "Did you use complete sentences?"

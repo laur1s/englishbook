@@ -1,5 +1,6 @@
 ---
 import type { SpeakingMissionEntry } from "../lib/content";
+import { getContentSessionByHref } from "../lib/course-path";
 
 import {
   MISSION_TYPE_LABELS,
@@ -12,9 +13,34 @@ type Props = {
   entry: SpeakingMissionEntry;
   relatedHref?: string;
   relatedTitle?: string;
+  resetOnFreshRequest?: boolean;
 };
 
-const { entry, relatedHref, relatedTitle } = Astro.props;
+const { entry, relatedHref, relatedTitle, resetOnFreshRequest = false } = Astro.props;
+
+type ListeningCheck = {
+  id: string;
+  kind: string;
+  prompt: string;
+  ltPrompt: string;
+  hint: string;
+  ltHint: string;
+  options: Array<{ id: string; text: string }>;
+  answerId: string;
+  feedback: string;
+  ltFeedback: string;
+};
+
+type ActiveListening = {
+  modelText: string;
+  speechText: string;
+  checks: ListeningCheck[];
+  shadowLine: string;
+  shadowLineLt: string;
+};
+
+const activeListening = (entry.data as typeof entry.data & { listening?: ActiveListening }).listening;
+const missionRevision = getContentSessionByHref(`/speaking/${entry.data.slug}`)?.revision ?? 1;
 
 const modelPrefix = /^(?:check your version against this model|compare with this model exchange|compare with this model|check this model exchange|check this model|check the explanation|check the rule)\s*:\s*/i;
 const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
@@ -25,6 +51,8 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
   id="mission-player"
   data-mission-player
   data-mission-slug={entry.data.slug}
+  data-mission-revision={String(missionRevision)}
+  data-reset-on-fresh-request={String(resetOnFreshRequest)}
   data-supports-recording={String(entry.data.supportsRecording)}
 >
   <div class="mission-player-head">
@@ -86,8 +114,18 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
           ) : null}
         </div>
 
-        <p class="mission-step-prompt">{step.prompt}</p>
-        {step.ltPrompt && <p class="mission-step-translation lt-text" lang="lt">{step.ltPrompt}</p>}
+        <p class="mission-step-prompt">
+          {step.kind === "compare" && activeListening
+            ? "Listen for the main idea and one important detail. Keep the transcript hidden for your first try."
+            : step.prompt}
+        </p>
+        {step.kind === "compare" && activeListening ? (
+          <p class="mission-step-translation lt-text" lang="lt">
+            Klausykitės pagrindinės minties ir vienos svarbios detalės. Pirmą kartą stenkitės neskaityti teksto.
+          </p>
+        ) : step.ltPrompt ? (
+          <p class="mission-step-translation lt-text" lang="lt">{step.ltPrompt}</p>
+        ) : null}
 
         {step.support?.length ? (
           <ul class="mission-support-list">
@@ -131,7 +169,137 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
           </section>
         ) : null}
 
-        {step.kind === "compare" ? (
+        {step.kind === "compare" && activeListening ? (
+          <section
+            class="mission-tool-panel mission-active-listening"
+            data-active-listening
+            data-model-text={activeListening.modelText}
+            data-speech-text={activeListening.speechText}
+            data-shadow-text={activeListening.shadowLine}
+            aria-labelledby={`listening-title-${entry.data.slug}`}
+          >
+            <div class="mission-listening-heading">
+              <div>
+                <p class="mission-tool-label">Active listening</p>
+                <h4 id={`listening-title-${entry.data.slug}`}>Listen. Then check what you understood.</h4>
+                <p class="lt-text" lang="lt">Klausykitės. Tada patikrinkite, ką supratote.</p>
+              </div>
+              <span class="mission-listening-stage" data-active-listening-stage>Ready to listen</span>
+            </div>
+
+            <p class="mission-listening-instruction">
+              Listen at normal or slow speed. The two questions open when the model ends.
+              <span class="lt-text" lang="lt"> Klausykitės įprastu arba lėtesniu greičiu. Du klausimai atsivers įrašui pasibaigus.</span>
+            </p>
+
+            <div class="mission-listening-controls">
+              <button type="button" class="primary-button" data-active-listen hidden>Listen · Klausyti</button>
+              <button type="button" class="secondary-button" data-active-listen-slow hidden>Slow · Lėčiau</button>
+              <button type="button" class="secondary-button" data-use-listening-transcript>
+                Read transcript · Skaityti tekstą
+              </button>
+            </div>
+
+            <p class="mission-recording-fallback" data-active-listening-fallback hidden>
+              Voice is not available here. Read the transcript to continue.
+              <span class="lt-text" lang="lt"> Čia balso įrašas nepasiekiamas. Tęskite skaitydami tekstą.</span>
+            </p>
+
+            <div class="mission-model-transcript mission-assist-transcript" data-listening-assist-transcript tabindex="-1" hidden>
+              <p class="mission-tool-label">Transcript option · Teksto variantas</p>
+              <p>{activeListening.modelText}</p>
+            </div>
+
+            <div class="mission-listening-checks" data-active-listening-checks hidden>
+              <div class="mission-listening-checks-head">
+                <div>
+                  <p class="mission-tool-label">Comprehension check</p>
+                  <h5>Answer both before you reveal the transcript</h5>
+                </div>
+                <span data-listening-score>0/{activeListening.checks.length} correct</span>
+              </div>
+
+              {activeListening.checks.map((check, checkIndex) => (
+                <fieldset
+                  class="mission-listening-check"
+                  data-listening-check
+                  data-check-id={check.id}
+                  data-answer-id={check.answerId}
+                  data-hint={check.hint}
+                  data-hint-lt={check.ltHint}
+                  data-feedback={check.feedback}
+                  data-feedback-lt={check.ltFeedback}
+                >
+                  <legend>
+                    <span class="mission-check-kind">
+                      {check.kind === "gist" ? "Main idea" : check.kind === "detail" ? "Detail" : check.kind}
+                    </span>
+                    <span>{checkIndex + 1}. {check.prompt}</span>
+                    <span class="lt-text" lang="lt">{check.ltPrompt}</span>
+                  </legend>
+                  <div class="mission-listening-options">
+                    {check.options.map((option) => (
+                      <label>
+                        <input
+                          type="radio"
+                          name={`${entry.data.slug}-${check.id}`}
+                          value={option.id}
+                        />
+                        <span>{option.text}</span>
+                      </label>
+                    ))}
+                  </div>
+                  <p
+                    class="mission-listening-feedback"
+                    data-listening-feedback
+                    role="status"
+                    aria-live="polite"
+                    aria-atomic="true"
+                    hidden
+                  >
+                    <span data-listening-feedback-en></span>
+                    <span class="lt-text" data-listening-feedback-lt lang="lt"></span>
+                  </p>
+                </fieldset>
+              ))}
+            </div>
+
+            <div class="mission-listening-reveal">
+              <button type="button" class="secondary-button" data-reveal-listening-transcript hidden disabled>
+                Show transcript · Rodyti tekstą
+              </button>
+              <p class="mission-time-note" data-listening-reveal-note>
+                Listen and try both questions. Then you can show the transcript.
+                <span class="lt-text" lang="lt"> Išklausykite ir atsakykite į abu klausimus. Tada galėsite parodyti tekstą.</span>
+              </p>
+            </div>
+
+            <div class="mission-model-transcript mission-active-transcript" data-active-transcript tabindex="-1" hidden>
+              <p class="mission-tool-label">Model transcript</p>
+              <p>{activeListening.modelText}</p>
+            </div>
+
+            <div class="mission-shadow-check" data-listening-shadow-panel hidden>
+              <p class="mission-tool-label">Read or listen, then repeat · Perskaitykite arba klausykitės, tada pakartokite</p>
+              <p>
+                Listen to or read the line, then repeat it aloud and copy the rhythm.
+                <span class="lt-text" lang="lt"> Išklausykite arba perskaitykite sakinį, tada garsiai jį pakartokite ir pamėgdžiokite ritmą.</span>
+              </p>
+              <blockquote>{activeListening.shadowLine}</blockquote>
+              <p class="lt-text" lang="lt">{activeListening.shadowLineLt}</p>
+              <button type="button" class="secondary-button" data-play-shadow-line hidden>
+                Play line · Klausyti sakinio
+              </button>
+              <label>
+                <input type="checkbox" data-listening-shadowed />
+                <span>
+                  I read or listened to this line, then repeated it aloud and copied the rhythm.
+                  <small class="lt-text" lang="lt">Perskaičiau arba išklausiau šį sakinį, tada garsiai jį pakartojau ir pamėgdžiojau ritmą.</small>
+                </span>
+              </label>
+            </div>
+          </section>
+        ) : step.kind === "compare" ? (
           <section
             class="mission-tool-panel mission-listening-panel"
             data-listening-panel
@@ -230,7 +398,10 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
   const writeSpeakingProgress = (value) => {
     try {
       localStorage.setItem(progressKey, JSON.stringify(value));
-    } catch {}
+      return true;
+    } catch {
+      return false;
+    }
   };
 
   const formatCountdown = (seconds) => {
@@ -258,6 +429,7 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
 
   document.querySelectorAll("[data-mission-player]").forEach((root) => {
     const slug = root.dataset.missionSlug;
+    const revision = Number(root.dataset.missionRevision || 1);
     const steps = [...root.querySelectorAll("[data-mission-step]")];
     const controls = root.querySelector("[data-player-controls]");
     const prevButton = root.querySelector("[data-prev-step]");
@@ -278,10 +450,50 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
       return;
     }
 
+    const selectCurrentRecord = (value) => {
+      const record = value && typeof value === "object" && !Array.isArray(value) ? value : {};
+      const savedRevision = Number(record.revision ?? 1);
+      return savedRevision === revision ? record : {};
+    };
+
     let progress = readSpeakingProgress();
-    const initialRecord = progress[slug] && typeof progress[slug] === "object" && !Array.isArray(progress[slug])
-      ? progress[slug]
-      : {};
+    const shouldStartFreshRun = root.dataset.resetOnFreshRequest === "true" &&
+      new URL(window.location.href).searchParams.get("fresh") === "1";
+
+    if (shouldStartFreshRun) {
+      const storedRecord = progress[slug] && typeof progress[slug] === "object" && !Array.isArray(progress[slug])
+        ? progress[slug]
+        : {};
+      const completedRuns = Array.isArray(storedRecord.completedRuns)
+        ? storedRecord.completedRuns.filter((run) => run && typeof run === "object" && !Array.isArray(run))
+        : [];
+      let nextCompletedRuns = [...completedRuns];
+
+      if (storedRecord.completed === true) {
+        const { completedRuns: ignoredCompletedRuns, ...completedRun } = storedRecord;
+        const completedAt = typeof completedRun.completedAt === "string" ? completedRun.completedAt : "";
+        const alreadyArchived = nextCompletedRuns.some((run) =>
+          run.completedAt === completedAt &&
+          Number(run.revision ?? 1) === Number(completedRun.revision ?? 1)
+        );
+
+        if (!alreadyArchived) nextCompletedRuns.push(completedRun);
+      }
+
+      const freshRecord = {
+        revision,
+        activeStep: 0,
+        startedAt: new Date().toISOString(),
+        ...(nextCompletedRuns.length ? { completedRuns: nextCompletedRuns } : {}),
+      };
+      progress = { ...progress, [slug]: freshRecord };
+      writeSpeakingProgress(progress);
+      root.dataset.freshRunActive = "true";
+      root.__freshSpeakingRecord = freshRecord;
+    }
+
+    const initialRecord = selectCurrentRecord(progress[slug]);
+    let currentRunRecord = initialRecord;
     const savedStep = Number(initialRecord.activeStep);
     let activeIndex = Number.isInteger(savedStep) && savedStep >= 0 && savedStep < steps.length
       ? savedStep
@@ -297,8 +509,7 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
     let disposing = false;
 
     const getRecord = () => {
-      const record = progress[slug];
-      return record && typeof record === "object" && !Array.isArray(record) ? record : {};
+      return shouldStartFreshRun ? currentRunRecord : selectCurrentRecord(progress[slug]);
     };
 
     const announce = (message) => {
@@ -308,24 +519,32 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
     };
 
     const updateProgress = (updates) => {
-      const previousRecord = getRecord();
+      progress = readSpeakingProgress();
+      const storedRecord = selectCurrentRecord(progress[slug]);
+      const previousRecord = shouldStartFreshRun && storedRecord.startedAt !== currentRunRecord.startedAt
+        ? currentRunRecord
+        : storedRecord;
+      const nextRecord = {
+        ...previousRecord,
+        ...updates,
+        revision,
+      };
+      currentRunRecord = nextRecord;
 
       progress = {
         ...progress,
-        [slug]: {
-          ...previousRecord,
-          ...updates,
-        },
+        [slug]: nextRecord,
       };
 
-      writeSpeakingProgress(progress);
+      const saved = writeSpeakingProgress(progress);
       syncProgressUi();
+      return saved;
     };
 
     const markStarted = (updates = {}) => {
       const record = getRecord();
       const now = new Date().toISOString();
-      updateProgress({
+      return updateProgress({
         ...updates,
         startedAt: record.startedAt || now,
         lastPlayedAt: now,
@@ -634,6 +853,20 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
       });
     };
 
+    const syncNextControl = () => {
+      const activeStep = steps[activeIndex];
+      const needsListeningEvidence = Boolean(activeStep?.querySelector("[data-active-listening]"));
+      const listeningReady = root.dataset.listeningReady === "true";
+
+      prevButton.disabled = activeIndex === 0;
+      nextButton.disabled = needsListeningEvidence && !listeningReady;
+      nextButton.textContent = activeIndex === steps.length - 1
+        ? "Finish mission"
+        : needsListeningEvidence && !listeningReady
+          ? "Finish listening to continue"
+          : "Next step";
+    };
+
     const showStep = (index, shouldFocus = true, shouldPersist = true) => {
       const nextIndex = Math.max(0, Math.min(index, steps.length - 1));
       if (mediaRecorder?.state === "recording" && nextIndex !== activeIndex) {
@@ -649,9 +882,7 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
         step.hidden = stepIndex !== activeIndex;
       });
 
-      prevButton.disabled = activeIndex === 0;
-      nextButton.disabled = false;
-      nextButton.textContent = activeIndex === steps.length - 1 ? "Finish mission" : "Next step";
+      syncNextControl();
 
       if (shouldPersist) {
         markStarted({ activeStep: activeIndex });
@@ -745,20 +976,48 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
         }
 
         const now = new Date().toISOString();
-        markStarted({
+        const saved = markStarted({
           activeStep: activeIndex,
           completed: true,
           completedAt: record.completedAt || now,
         });
+        if (!saved) {
+          const inMemoryRecord = getRecord();
+          const unfinishedRecord = {
+            ...inMemoryRecord,
+            completed: false,
+            completedAt: undefined,
+          };
+          currentRunRecord = unfinishedRecord;
+          progress = {
+            ...progress,
+            [slug]: unfinishedRecord,
+          };
+          syncProgressUi();
+          announce("Mission finished in this tab, but the browser could not save it. Enable site storage, then finish again.");
+          return;
+        }
         nextButton.textContent = "Mission completed";
         nextButton.disabled = true;
         announce("Mission completed. Your progress is saved on this device.");
+        const detail = {
+          slug,
+          confidence: hasConfidence ? confidence : null,
+        };
+        const listeningTotal = Number(root.dataset.listeningTotal || 0);
+
+        if (Number.isInteger(listeningTotal) && listeningTotal > 0) {
+          detail.listening = {
+            score: Number(root.dataset.listeningFirstAttemptScore || 0),
+            finalScore: Number(root.dataset.listeningScore || 0),
+            total: listeningTotal,
+            assisted: root.dataset.listeningAssisted === "true",
+          };
+        }
+
         root.dispatchEvent(new CustomEvent("english-library:speaking-complete", {
           bubbles: true,
-          detail: {
-            slug,
-            confidence: hasConfidence ? confidence : null,
-          },
+          detail,
         }));
         return;
       }
@@ -823,6 +1082,25 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
       });
     });
 
+    root.addEventListener("english-library:listening-updated", () => {
+      progress = readSpeakingProgress();
+      const storedRecord = selectCurrentRecord(progress[slug]);
+      if (!shouldStartFreshRun || storedRecord.startedAt === currentRunRecord.startedAt) {
+        currentRunRecord = storedRecord;
+      }
+      syncProgressUi();
+      const listeningStepIndex = steps.findIndex((step) => step.querySelector("[data-active-listening]"));
+
+      if (
+        listeningStepIndex >= 0 &&
+        activeIndex > listeningStepIndex &&
+        root.dataset.listeningReady !== "true"
+      ) {
+        showStep(listeningStepIndex, false, true);
+      }
+      syncNextControl();
+    });
+
     window.addEventListener("pagehide", () => {
       disposing = true;
       clearTimer();
@@ -839,5 +1117,345 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
     resetTimers();
     syncProgressUi();
     showStep(activeIndex, false, false);
+  });
+</script>
+
+<script>
+  import {
+    answerListeningCheck,
+    canUnlockListeningReflect,
+    chooseListeningTranscriptAlternative,
+    getListeningState,
+    hasAttemptedAllListeningChecks,
+    revealListeningTranscript,
+    setListeningShadowed,
+    startListeningPlayback,
+  } from "../lib/listening-progress";
+  import { SPEAKING_PROGRESS_KEY } from "../lib/speaking";
+
+  type SpeakingRecord = Record<string, unknown>;
+  type SpeakingProgress = Record<string, SpeakingRecord>;
+
+  const isRecord = (value: unknown): value is SpeakingRecord =>
+    Boolean(value) && typeof value === "object" && !Array.isArray(value);
+
+  const readProgress = (): SpeakingProgress => {
+    try {
+      const raw = localStorage.getItem(SPEAKING_PROGRESS_KEY);
+      const parsed = raw ? JSON.parse(raw) : {};
+      return isRecord(parsed) ? parsed as SpeakingProgress : {};
+    } catch {
+      return {};
+    }
+  };
+
+  const writeProgress = (progress: SpeakingProgress): boolean => {
+    try {
+      localStorage.setItem(SPEAKING_PROGRESS_KEY, JSON.stringify(progress));
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
+  document.querySelectorAll<HTMLElement>("[data-mission-player]").forEach((root) => {
+    const panel = root.querySelector<HTMLElement>("[data-active-listening]");
+    const slug = root.dataset.missionSlug;
+    const revision = Number(root.dataset.missionRevision ?? 1);
+
+    if (!panel || !slug) return;
+
+    const checks = [...panel.querySelectorAll<HTMLElement>("[data-listening-check]")];
+    const requiredCheckIds = checks
+      .map((check) => check.dataset.checkId?.trim() ?? "")
+      .filter(Boolean);
+    const listenButton = panel.querySelector<HTMLButtonElement>("[data-active-listen]");
+    const slowButton = panel.querySelector<HTMLButtonElement>("[data-active-listen-slow]");
+    const transcriptButton = panel.querySelector<HTMLButtonElement>("[data-use-listening-transcript]");
+    const revealButton = panel.querySelector<HTMLButtonElement>("[data-reveal-listening-transcript]");
+    const fallback = panel.querySelector<HTMLElement>("[data-active-listening-fallback]");
+    const checksPanel = panel.querySelector<HTMLElement>("[data-active-listening-checks]");
+    const assistTranscript = panel.querySelector<HTMLElement>("[data-listening-assist-transcript]");
+    const transcript = panel.querySelector<HTMLElement>("[data-active-transcript]");
+    const shadowPanel = panel.querySelector<HTMLElement>("[data-listening-shadow-panel]");
+    const shadowCheckbox = panel.querySelector<HTMLInputElement>("[data-listening-shadowed]");
+    const playShadowButton = panel.querySelector<HTMLButtonElement>("[data-play-shadow-line]");
+    const revealNote = panel.querySelector<HTMLElement>("[data-listening-reveal-note]");
+    const stageValue = panel.querySelector<HTMLElement>("[data-active-listening-stage]");
+    const scoreValue = panel.querySelector<HTMLElement>("[data-listening-score]");
+    const liveStatus = root.querySelector<HTMLElement>("[data-mission-status]");
+    const hasSpeechPlayback =
+      "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+    const selectCurrentRecord = (value: unknown): SpeakingRecord => {
+      const record = isRecord(value) ? value : {};
+      const savedRevision = Number(record.revision ?? 1);
+      return savedRevision === revision ? record : {};
+    };
+    const freshRunActive = root.dataset.freshRunActive === "true";
+    const freshRecord = (root as HTMLElement & { __freshSpeakingRecord?: unknown }).__freshSpeakingRecord;
+    let localRecord: SpeakingRecord = selectCurrentRecord(
+      freshRunActive && isRecord(freshRecord) ? freshRecord : readProgress()[slug],
+    );
+    let currentUtterance: SpeechSynthesisUtterance | null = null;
+
+    const announce = (message: string) => {
+      if (liveStatus) liveStatus.textContent = message;
+    };
+
+    const getStoredRecord = (): SpeakingRecord => {
+      const record = selectCurrentRecord(readProgress()[slug]);
+      return Object.keys(record).length ? record : localRecord;
+    };
+
+    const persist = (
+      transition: (record: SpeakingRecord) => SpeakingRecord,
+      message?: string,
+    ) => {
+      const progress = readProgress();
+      const stored = selectCurrentRecord(progress[slug]);
+      const storedMatchesFreshRun = stored.startedAt === localRecord.startedAt;
+      const previous = freshRunActive && !storedMatchesFreshRun
+        ? localRecord
+        : Object.keys(stored).length ? stored : localRecord;
+      const now = new Date().toISOString();
+      const transitioned = transition(previous);
+      localRecord = {
+        ...transitioned,
+        revision,
+        startedAt: typeof previous.startedAt === "string" ? previous.startedAt : now,
+        lastPlayedAt: now,
+      };
+      const saved = writeProgress({ ...progress, [slug]: localRecord });
+
+      sync(localRecord);
+      announce(saved ? (message ?? "Listening progress saved.") : "Progress changed, but this browser could not save it.");
+    };
+
+    const sync = (record: SpeakingRecord = getStoredRecord()) => {
+      localRecord = record;
+      const state = getListeningState(record);
+      const canStartChecks = state.played || state.assisted;
+      const attemptedAll = hasAttemptedAllListeningChecks(record, requiredCheckIds);
+      const ready = canUnlockListeningReflect(record, requiredCheckIds);
+      const score = requiredCheckIds.filter((checkId) => state.correctIds.includes(checkId)).length;
+      const firstAttemptScore = requiredCheckIds.filter((checkId) =>
+        state.firstAttemptCorrectIds.includes(checkId)
+      ).length;
+
+      if (checksPanel) checksPanel.hidden = !canStartChecks;
+      if (assistTranscript) assistTranscript.hidden = !state.assisted || state.revealed;
+      if (transcript) transcript.hidden = !state.revealed;
+      if (shadowPanel) shadowPanel.hidden = !state.revealed;
+      if (shadowCheckbox) shadowCheckbox.checked = state.shadowed;
+
+      if (transcriptButton) {
+        transcriptButton.disabled = state.assisted;
+        transcriptButton.textContent = state.assisted
+          ? "Transcript open · Tekstas atvertas"
+          : "Read transcript · Skaityti tekstą";
+      }
+
+      if (revealButton) {
+        revealButton.hidden = state.revealed || !attemptedAll;
+        revealButton.disabled = !attemptedAll;
+      }
+
+      if (scoreValue) scoreValue.textContent = `${score}/${requiredCheckIds.length} correct`;
+
+      checks.forEach((check) => {
+        const checkId = check.dataset.checkId ?? "";
+        const responseId = state.responses[checkId];
+        const attempted = state.attemptedIds.includes(checkId);
+        const correct = state.correctIds.includes(checkId);
+        const feedback = check.querySelector<HTMLElement>("[data-listening-feedback]");
+        const feedbackEn = check.querySelector<HTMLElement>("[data-listening-feedback-en]");
+        const feedbackLt = check.querySelector<HTMLElement>("[data-listening-feedback-lt]");
+
+        check.querySelectorAll<HTMLInputElement>('input[type="radio"]').forEach((input) => {
+          input.checked = input.value === responseId;
+        });
+
+        check.classList.toggle("is-correct", attempted && correct);
+        check.classList.toggle("is-incorrect", attempted && !correct);
+
+        if (feedback) {
+          feedback.hidden = !attempted;
+          feedback.classList.toggle("is-correct", correct);
+        }
+        if (feedbackEn) {
+          const explanation = correct || state.revealed
+            ? check.dataset.feedback
+            : check.dataset.hint;
+          feedbackEn.textContent = attempted
+            ? `${correct ? "Correct." : "Try again."} ${explanation ?? ""}`
+            : "";
+        }
+        if (feedbackLt) {
+          const explanation = correct || state.revealed
+            ? check.dataset.feedbackLt
+            : check.dataset.hintLt;
+          feedbackLt.textContent = attempted
+            ? `${correct ? "Teisingai." : "Bandykite dar kartą."} ${explanation ?? ""}`
+            : "";
+        }
+      });
+
+      if (revealNote) {
+        revealNote.textContent = ready
+          ? "Listening step complete. Continue to Reflect. / Klausymo žingsnis baigtas. Tęskite apmąstymo žingsnį."
+          : state.revealed && score < requiredCheckIds.length
+            ? "Use the hints and transcript to correct both answers. / Pasinaudokite užuominomis ir tekstu, tada pataisykite abu atsakymus."
+            : state.revealed && !state.shadowed
+              ? "Read or listen to the highlighted line, then repeat it aloud. / Perskaitykite arba išklausykite pažymėtą sakinį, tada garsiai jį pakartokite."
+              : attemptedAll
+                ? "Both answers tried. Show the transcript. / Abu atsakymai pažymėti. Parodykite tekstą."
+                : canStartChecks
+                  ? `Try both questions: ${state.attemptedIds.length}/${requiredCheckIds.length}. / Atsakykite į abu klausimus.`
+                  : "Listen or read the transcript to open the questions. / Klausykitės arba skaitykite tekstą.";
+      }
+
+      if (stageValue) {
+        stageValue.textContent = ready
+          ? "Complete · Baigta"
+          : state.revealed
+            ? `${score}/${requiredCheckIds.length} correct · read or listen, then repeat`
+            : attemptedAll
+              ? "Text ready · Tekstas paruoštas"
+              : canStartChecks
+                ? "Questions open · Klausimai atverti"
+                : "Ready · Pasiruošta";
+      }
+
+      root.dataset.listeningReady = String(ready);
+      root.dataset.listeningScore = String(score);
+      root.dataset.listeningFirstAttemptScore = String(firstAttemptScore);
+      root.dataset.listeningTotal = String(requiredCheckIds.length);
+      root.dataset.listeningAssisted = String(state.assisted);
+      root.dispatchEvent(new CustomEvent("english-library:listening-updated"));
+    };
+
+    if (listenButton) listenButton.hidden = !hasSpeechPlayback;
+    if (slowButton) slowButton.hidden = !hasSpeechPlayback;
+    if (playShadowButton) playShadowButton.hidden = !hasSpeechPlayback;
+    if (fallback) fallback.hidden = hasSpeechPlayback;
+
+    const playModel = (rate: number) => {
+      const modelText = panel.dataset.speechText?.trim();
+
+      if (!hasSpeechPlayback || !modelText) {
+        if (fallback) fallback.hidden = false;
+        announce("Voice is unavailable. Read the transcript to continue.");
+        transcriptButton?.focus();
+        return;
+      }
+
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(modelText);
+      utterance.lang = "en-GB";
+      utterance.rate = rate;
+      utterance.onstart = () => {
+        currentUtterance = utterance;
+        announce(rate < 1 ? "Playing slowly. Listen to the end." : "Playing the model. Listen to the end.");
+      };
+      utterance.onend = () => {
+        if (currentUtterance === utterance) {
+          currentUtterance = null;
+          persist(
+            (record) => startListeningPlayback(record),
+            "Model finished. Answer the two questions. / Įrašas baigtas. Atsakykite į du klausimus.",
+          );
+        }
+      };
+      utterance.onerror = (event) => {
+        if (event.error !== "canceled" && event.error !== "interrupted") {
+          if (fallback) fallback.hidden = false;
+          announce("Voice failed. Read the transcript to continue.");
+        }
+      };
+      window.speechSynthesis.speak(utterance);
+    };
+
+    listenButton?.addEventListener("click", () => playModel(1));
+    slowButton?.addEventListener("click", () => playModel(0.78));
+
+    transcriptButton?.addEventListener("click", () => {
+      if (hasSpeechPlayback) window.speechSynthesis.cancel();
+      currentUtterance = null;
+      persist(
+        (record) => chooseListeningTranscriptAlternative(record),
+        "Transcript opened. Answer the two questions. / Tekstas atvertas. Atsakykite į du klausimus.",
+      );
+      window.requestAnimationFrame(() => assistTranscript?.focus?.());
+    });
+
+    checks.forEach((check) => {
+      check.querySelectorAll<HTMLInputElement>('input[type="radio"]').forEach((input) => {
+        input.addEventListener("change", () => {
+          if (!input.checked) return;
+          const checkId = check.dataset.checkId ?? "";
+          const answerId = check.dataset.answerId ?? "";
+          const isCorrect = input.value === answerId;
+          persist(
+            (record) => answerListeningCheck(record, checkId, input.value, answerId),
+            isCorrect
+              ? "Correct. Read the feedback, then continue."
+              : "Not yet. Read the feedback and try another answer.",
+          );
+        });
+      });
+    });
+
+    revealButton?.addEventListener("click", () => {
+      persist(
+        (record) => revealListeningTranscript(record, requiredCheckIds),
+        "Transcript shown. Correct the answers, then read or listen to the highlighted line and repeat it aloud.",
+      );
+      window.requestAnimationFrame(() => transcript?.focus?.());
+    });
+
+    shadowCheckbox?.addEventListener("change", () => {
+      persist(
+        (record) => setListeningShadowed(record, shadowCheckbox.checked),
+        shadowCheckbox.checked
+          ? "Repeat practice saved. Correct both answers to continue."
+          : "Repeat practice cleared. Finish it again before you continue.",
+      );
+    });
+
+    playShadowButton?.addEventListener("click", () => {
+      const shadowText = panel.dataset.shadowText?.trim();
+      if (!hasSpeechPlayback || !shadowText) return;
+
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(shadowText);
+      utterance.lang = "en-GB";
+      utterance.rate = 0.86;
+      utterance.onstart = () => {
+        currentUtterance = utterance;
+        announce("Listen to the line, then repeat it immediately.");
+      };
+      utterance.onend = () => {
+        if (currentUtterance === utterance) {
+          currentUtterance = null;
+          announce("Now repeat the line aloud and copy the rhythm.");
+        }
+      };
+      window.speechSynthesis.speak(utterance);
+    });
+
+    window.addEventListener("storage", (event) => {
+      if (event.key !== SPEAKING_PROGRESS_KEY) return;
+      const stored = selectCurrentRecord(readProgress()[slug]);
+      if (freshRunActive && stored.startedAt !== localRecord.startedAt) return;
+      localRecord = stored;
+      sync(stored);
+    });
+
+    window.addEventListener("pagehide", () => {
+      if (currentUtterance) window.speechSynthesis.cancel();
+      currentUtterance = null;
+    }, { once: true });
+
+    sync(localRecord);
   });
 </script>

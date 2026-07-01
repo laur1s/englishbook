@@ -16,6 +16,9 @@ export type PracticeRunProgress = {
   firstPassScore?: number;
   firstPassTotal?: number;
   firstPassSkillResults?: Record<string, { score: number; total: number }>;
+  scope?: "daily";
+  unitIds?: string[];
+  hostSessionId?: string;
   startedAt: string;
 };
 
@@ -58,6 +61,10 @@ export type LearningPreferences = {
   dailyMinutes: 5 | 10 | 15;
 };
 
+export type LearningMigrations = {
+  legacyStandaloneImported: boolean;
+};
+
 export type LearningProgress = {
   version: 2;
   activeSessionId: string | null;
@@ -69,6 +76,7 @@ export type LearningProgress = {
   activeDays: string[];
   activity: LearningActivity[];
   preferences: LearningPreferences;
+  migrations: LearningMigrations;
 };
 
 export type SessionRef = { id: string; revision?: number; required?: boolean };
@@ -76,8 +84,10 @@ export type SessionRef = { id: string; revision?: number; required?: boolean };
 export type LegacyProgressMapping = {
   unitSlug: string;
   learnSessionId: string;
+  learnRevision: number;
   missionSlug: string;
   speakSessionId: string;
+  speakRevision: number;
 };
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
@@ -150,6 +160,11 @@ const sanitizePracticeRun = (value: unknown): PracticeRunProgress | undefined =>
     ? Number(value.firstPassTotal)
     : undefined;
   const firstPassSkillResults = sanitizeSkillResults(value.firstPassSkillResults);
+  const dailyScope = value.scope === "daily";
+  const unitIds = uniqueStrings(value.unitIds, 24);
+  const hostSessionId = typeof value.hostSessionId === "string" && value.hostSessionId
+    ? value.hostSessionId
+    : undefined;
 
   return {
     attempt: Number(value.attempt),
@@ -162,6 +177,9 @@ const sanitizePracticeRun = (value: unknown): PracticeRunProgress | undefined =>
     ...(firstPassScore !== undefined ? { firstPassScore } : {}),
     ...(firstPassTotal !== undefined ? { firstPassTotal } : {}),
     ...(firstPassSkillResults ? { firstPassSkillResults } : {}),
+    ...(dailyScope && unitIds.length && hostSessionId
+      ? { scope: "daily" as const, unitIds, hostSessionId }
+      : {}),
     itemRefs: Array.isArray(value.itemRefs)
       ? value.itemRefs.flatMap((item) =>
           isRecord(item) &&
@@ -304,6 +322,10 @@ const sanitizePreferences = (value: unknown): LearningPreferences => ({
     : 10,
 });
 
+const sanitizeMigrations = (value: unknown): LearningMigrations => ({
+  legacyStandaloneImported: isRecord(value) && value.legacyStandaloneImported === true,
+});
+
 export const createLearningProgress = (): LearningProgress => ({
   version: LEARNING_PROGRESS_VERSION,
   activeSessionId: null,
@@ -315,6 +337,7 @@ export const createLearningProgress = (): LearningProgress => ({
   activeDays: [],
   activity: [],
   preferences: { dailyMinutes: 10 },
+  migrations: { legacyStandaloneImported: false },
 });
 
 export const parseLearningProgress = (value: string | null): LearningProgress => {
@@ -352,6 +375,7 @@ export const parseLearningProgress = (value: string | null): LearningProgress =>
         : [],
       activity: sanitizeActivity(parsed.activity),
       preferences: sanitizePreferences(parsed.preferences),
+      migrations: sanitizeMigrations(parsed.migrations),
     };
   } catch {
     return createLearningProgress();
@@ -377,55 +401,19 @@ export const writeLearningProgress = (storage: StorageLike, progress: LearningPr
   }
 };
 
-const readLegacyRecord = (storage: StorageLike, key: string) => {
-  try {
-    const raw = storage.getItem(key);
-    const parsed = raw ? JSON.parse(raw) : {};
-    return isRecord(parsed) ? parsed : {};
-  } catch {
-    return {};
-  }
-};
-
 export const migrateLegacyLearningProgress = (
   storage: StorageLike,
-  mappings: LegacyProgressMapping[],
-  now = new Date().toISOString(),
+  _mappings: LegacyProgressMapping[],
+  _now = new Date().toISOString(),
 ) => {
-  const lessonProgress = readLegacyRecord(storage, "english-library.lesson-progress");
-  const speakingProgress = readLegacyRecord(storage, "english-library.speaking.progress");
   let progress = readLearningProgress(storage);
-  let changed = false;
+  if (progress.migrations.legacyStandaloneImported) return progress;
 
-  for (const mapping of mappings) {
-    const lessonRecord = lessonProgress[mapping.unitSlug];
-    const speakingRecord = speakingProgress[mapping.missionSlug];
-
-    if (
-      isRecord(lessonRecord) &&
-      typeof lessonRecord.completedAt === "string" &&
-      progress.sessions[mapping.learnSessionId]?.status !== "completed"
-    ) {
-      progress = completeLearningSession(progress, mapping.learnSessionId, {}, lessonRecord.completedAt || now);
-      changed = true;
-    }
-
-    if (
-      isRecord(speakingRecord) &&
-      speakingRecord.completed === true &&
-      progress.sessions[mapping.speakSessionId]?.status !== "completed"
-    ) {
-      const completedAt = typeof speakingRecord.completedAt === "string"
-        ? speakingRecord.completedAt
-        : now;
-      progress = completeLearningSession(progress, mapping.speakSessionId, {}, completedAt);
-      changed = true;
-    }
-  }
-
-  if (changed) {
-    writeLearningProgress(storage, progress);
-  }
+  progress = {
+    ...progress,
+    migrations: { ...progress.migrations, legacyStandaloneImported: true },
+  };
+  writeLearningProgress(storage, progress);
 
   return progress;
 };
@@ -500,16 +488,24 @@ export const beginPracticeRun = (
     firstPassScore?: number;
     firstPassTotal?: number;
     firstPassSkillResults?: Record<string, { score: number; total: number }>;
+    scope?: "daily";
+    unitIds?: string[];
+    hostSessionId?: string;
+    preserveActiveSession?: boolean;
     startedAt?: string;
   },
   revision = 1,
   now = new Date().toISOString(),
 ): LearningProgress => {
+  const previousActiveSessionId = progress.activeSessionId;
   const started = startLearningSession(progress, sessionId, revision, now);
   const existing = started.sessions[sessionId];
 
   return {
     ...started,
+    activeSessionId: run.preserveActiveSession
+      ? previousActiveSessionId
+      : started.activeSessionId,
     sessions: {
       ...started.sessions,
       [sessionId]: {
@@ -530,6 +526,13 @@ export const beginPracticeRun = (
           ...(run.firstPassTotal !== undefined ? { firstPassTotal: run.firstPassTotal } : {}),
           ...(run.firstPassSkillResults
             ? { firstPassSkillResults: structuredClone(run.firstPassSkillResults) }
+            : {}),
+          ...(run.scope === "daily" && run.unitIds?.length && run.hostSessionId
+            ? {
+                scope: "daily" as const,
+                unitIds: [...new Set(run.unitIds)].slice(0, 24),
+                hostSessionId: run.hostSessionId,
+              }
             : {}),
           startedAt: run.startedAt ?? now,
         },
@@ -584,13 +587,18 @@ export const saveLearningResponse = (
   itemId: string,
   response: string,
   now = new Date().toISOString(),
+  preserveActiveSession = false,
 ): LearningProgress => {
+  const previousActiveSessionId = progress.activeSessionId;
   const revision = progress.sessions[sessionId]?.revision ?? 1;
   const started = startLearningSession(progress, sessionId, revision, now);
   const session = started.sessions[sessionId];
 
   return {
     ...started,
+    activeSessionId: preserveActiveSession
+      ? previousActiveSessionId
+      : started.activeSessionId,
     sessions: {
       ...started.sessions,
       [sessionId]: {
@@ -647,9 +655,11 @@ export const completeLearningSession = (
     minutes?: number;
     activityType?: LearningActivity["type"];
     mistakeItemIds?: string[];
+    preserveActiveSession?: boolean;
   } = {},
   now = new Date().toISOString(),
 ): LearningProgress => {
+  const previousActiveSessionId = progress.activeSessionId;
   const started = startLearningSession(progress, sessionId, options.revision ?? 1, now);
   const existing = started.sessions[sessionId];
   const score = Number.isFinite(options.score) ? Math.max(0, Number(options.score)) : undefined;
@@ -688,7 +698,9 @@ export const completeLearningSession = (
 
   const completed: LearningProgress = {
     ...started,
-    activeSessionId: hasNextSession ? options.nextSessionId ?? null : started.activeSessionId,
+    activeSessionId: options.preserveActiveSession
+      ? previousActiveSessionId
+      : hasNextSession ? options.nextSessionId ?? null : started.activeSessionId,
     sessions: {
       ...started.sessions,
       [sessionId]: {
