@@ -253,12 +253,12 @@ Complete the dialogue with comparative or superlative forms:
 
 A: Which is _____ (big), Vilnius or Kaunas?
 B: Vilnius is _____ (big) than Kaunas. It's the _____ (big) city in Lithuania.
-A: Is Vilnius _____ (beautiful) than other cities?
-B: Yes, it's one of the _____ (beautiful) cities in Europe.
-A: Which is _____ (expensive), living in the city or in the countryside?
-B: Living in the city is _____ (expensive) than in the countryside.
-A: Is the food in restaurants _____ (good) than homemade food?
-B: Homemade food is _____ (good). Restaurant food is _____ (expensive), but not always _____ (good).
+A: In your opinion, is Vilnius _____ (beautiful) than other cities?
+B: Yes. I think it's one of the _____ (beautiful) cities in Europe.
+A: According to this price report, which is _____ (expensive), living in the city or in the countryside?
+B: The report says living in the city is _____ (expensive) than in the countryside.
+A: In your opinion, is the food in restaurants _____ (good) than homemade food?
+B: For me, homemade food is _____ (good). Restaurant food is often _____ (expensive), but not always _____ (good).
 
 ---
 
@@ -271,7 +271,7 @@ Lithuania is a beautiful country in Northern Europe. Vilnius is the capital and 
 
 Lithuanian summers are warmer than winters, but not as hot as in Southern Europe. The warmest month is July, when temperatures can reach 25°C. Winters are colder, with temperatures around -5°C.
 
-Lithuanian food is very good and healthy. Traditional dishes like cepelinai are more popular than fast food. People think cepelinai are the best Lithuanian food.
+A class in Vilnius discussed local food. Most learners said Lithuanian food was good. In their survey, traditional dishes such as cepelinai were more popular than fast food. Cepelinai received the most votes as a favourite Lithuanian dish.
 
 **Answer the questions:**
 
@@ -280,9 +280,9 @@ Lithuanian food is very good and healthy. Traditional dishes like cepelinai are 
 3. Which is warmer, Lithuanian summer or winter? _____________________
 4. Which is the warmest month in Lithuania? _____________________
 5. Which is colder, Lithuanian summer or winter? _____________________
-6. What is more popular in Lithuania, cepelinai or fast food? _____________________
-7. What do people think is the best Lithuanian food? _____________________
-8. Is Lithuanian food good and healthy? _____________________
+6. According to the class survey, what was more popular, cepelinai or fast food? _____________________
+7. Which dish received the most votes as a favourite? _____________________
+8. What did most learners say about Lithuanian food? _____________________
 
 ---
 
@@ -382,7 +382,7 @@ A: No, it's cheaper but has more features.
 
 **Read the text:**
 
-Lithuania has many beautiful places. Vilnius is the biggest city in Lithuania. Kaunas is smaller but has many parks. Klaipėda is the smallest of the three main cities but is closer to the sea.
+Lithuania has many beautiful places. Vilnius is the biggest city in Lithuania. In this travel guide, Kaunas is smaller than Vilnius and has more listed parks than Klaipėda. Klaipėda is the smallest of these three cities and the closest to the sea.
 
 The weather in Lithuania varies. Summer is the warmest season. Winter is colder than summer but more beautiful with snow. Autumn is wetter than spring. Spring is the most colorful with flowers.
 
@@ -391,7 +391,7 @@ Lithuanian food is delicious. Cepelinai are bigger than kibinai. Beer is cheaper
 **Answer the questions:**
 
 1. Which is the biggest city?
-2. Which city has more parks?
+2. Which city has more listed parks than Klaipėda?
 3. Which city is closest to the sea?
 4. Which season is the warmest?
 5. Which season is colder than summer?

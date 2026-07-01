@@ -29,8 +29,7 @@ test("a fresh speaking run archives completion evidence but resets current-run s
   const resetSource = missionPlayer.slice(resetStart, restoreStart);
 
   assert.ok(resetStart >= 0 && restoreStart > resetStart, "fresh reset must run before restoration");
-  assert.match(resetSource, /storedRecord\.completed === true/);
-  assert.match(resetSource, /nextCompletedRuns\.push\(completedRun\)/);
+  assert.match(resetSource, /archiveCompletedRun\(storedRecord\.completedRuns, storedRecord\)/);
   assert.match(resetSource, /completedRuns: nextCompletedRuns/);
   assert.match(resetSource, /activeStep: 0/);
   assert.doesNotMatch(resetSource, /listening:\s*storedRecord\.listening/);

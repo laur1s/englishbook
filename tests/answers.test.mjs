@@ -1,10 +1,16 @@
 import assert from "node:assert/strict";
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import path from "node:path";
 import test from "node:test";
 
 import {
   extractA2AnswerSnippet,
   extractGreyAnswerSnippet,
+  requireA2AnswerSnippet,
+  requireGreyAnswerSnippet,
 } from "../src/lib/answers.ts";
+import { runContentAudit } from "../scripts/audit-content.mjs";
 
 test("A2 extraction tolerates heading punctuation and removes the outer unit heading", () => {
   const snippet = extractA2AnswerSnippet(
@@ -71,4 +77,85 @@ test("missing answer headings return an empty snippet", () => {
     ),
     "",
   );
+});
+
+test("required answer snippets throw when their entry or section is absent", () => {
+  const unit = { data: { order: 1, hasAnswerKey: true } };
+  const chapter = { data: { order: 1, hasAnswerKey: true } };
+
+  assert.throws(
+    () => requireA2AnswerSnippet(undefined, unit),
+    /answer-key entry.*missing.*Unit 1/i,
+  );
+  assert.throws(
+    () => requireA2AnswerSnippet(
+      { body: "## Unit 2: Other\nAnswers", data: { slug: "a2" } },
+      unit,
+    ),
+    /answer snippet is missing for Unit 1/i,
+  );
+  assert.throws(
+    () => requireGreyAnswerSnippet(undefined, chapter),
+    /answer-key entry.*missing.*Chapter 1/i,
+  );
+  assert.throws(
+    () => requireGreyAnswerSnippet(
+      { body: "### Chapter 2 Understanding\nAnswers", data: { slug: "grey-book" } },
+      chapter,
+    ),
+    /answer snippet is missing for Chapter 1/i,
+  );
+});
+
+test("content audit reports a required unit whose answer snippet is absent", () => {
+  const root = mkdtempSync(path.join(tmpdir(), "englishbook-answer-audit-"));
+  const frontmatter = ({ title, slug, order, hasAnswerKey }) => `---
+title: "${title}"
+ltTitle: "LT ${title}"
+slug: "${slug}"
+order: ${order}
+hasAnswerKey: ${hasAnswerKey}
+---
+`;
+
+  try {
+    mkdirSync(path.join(root, "Grey's book"));
+    mkdirSync(path.join(root, "speaking"));
+    writeFileSync(
+      path.join(root, "unit-01-test.md"),
+      `${frontmatter({ title: "Unit 1", slug: "unit-01", order: 1, hasAnswerKey: true })}
+# Unit 1
+## Learning Objectives
+- Read.
+- Write.
+- Speak.
+## Exercise 1
+1. Test.
+`,
+    );
+    writeFileSync(
+      path.join(root, "answer-key.md"),
+      `${frontmatter({ title: "Answers", slug: "a2", order: 1, hasAnswerKey: false })}
+## Unit 2: Other
+### Exercise 1
+1. Other.
+`,
+    );
+    writeFileSync(
+      path.join(root, "Grey's book", "answers.md"),
+      `${frontmatter({ title: "Grey answers", slug: "grey-book", order: 2, hasAnswerKey: false })}
+## Answers
+`,
+    );
+
+    const result = runContentAudit({ root });
+    assert.ok(
+      result.errors.some((error) =>
+        /unit-01-test\.md: Required answer snippet is missing for Unit 1\./.test(error)
+      ),
+      result.errors.join("\n"),
+    );
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
 });

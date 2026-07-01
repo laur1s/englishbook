@@ -389,7 +389,7 @@ Lithuanian forms below agree with the feminine noun **spalva**. With another nou
 - worried - susirūpinęs
 - surprised - nustebęs
 - proud - išdidus
-- nervous - nervingas, susinervinęs
+- nervous - nerimaujantis, įsitempęs
 - relaxed - atsipalaidavęs
 
 ### Character (Charakteris)

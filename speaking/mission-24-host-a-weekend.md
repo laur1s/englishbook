@@ -17,11 +17,11 @@ sourceRefs:
 supportsRecording: true
 steps:
   - kind: "brief"
-    prompt: "Present and negotiate a practical two-day plan for a guest."
-    ltPrompt: "Pristatykite ir suderinkite praktišką dviejų dienų planą svečiui."
+    prompt: "Maya arrives on Friday at 18:20. She is vegetarian, likes nature and local history, cannot walk long distances, and has a €90 budget. Heavy rain is possible on Saturday. Present and negotiate her two-day plan."
+    ltPrompt: "Maya atvyksta penktadienį 18.20. Ji yra vegetarė, mėgsta gamtą ir vietos istoriją, negali ilgai vaikščioti, o jos biudžetas – 90 €. Šeštadienį gali smarkiai lyti. Pristatykite ir suderinkite jos dviejų dienų planą."
   - kind: "prep"
-    prompt: "Choose the arrival, food, activity, budget, transport, and backup details."
-    ltPrompt: "Pasirinkite atvykimo, maisto, veiklos, biudžeto, transporto ir atsarginio plano detales."
+    prompt: "Choose from these prices: station bus €3 or taxi €18; hostel €32 or hotel €55; free market or park, €12 castle, or €10 museum; vegetarian food allowance €25. Include accommodation in the total."
+    ltPrompt: "Rinkitės pagal šias kainas: autobusas iš stoties – 3 €, taksi – 18 €; nakvynės namai – 32 €, viešbutis – 55 €; turgus arba parkas – nemokamai, pilis – 12 €, muziejus – 10 €; vegetariškam maistui – 25 €. Į bendrą sumą įtraukite nakvynę."
     seconds: 45
     support:
       - "arrangement"
@@ -36,7 +36,7 @@ steps:
       - "Would you prefer...?"
       - "Could you repeat that?"
   - kind: "compare"
-    prompt: "Compare with this model: I'll meet you at the station at 18:20 on Friday. Because your knee is sore, we can take the bus to my flat, or we can take a taxi if you feel tired. The taxi is easier with your luggage, but the bus is cheaper. On Saturday morning, we'll take a short walk in the old town and stop for lunch, which will cost about fifteen euros. If it rains heavily, we'll visit the history museum instead. The local restaurant is closed, so would you prefer vegetarian pizza or soup at the market café? On Sunday, we can visit the lake before your train. With transport and food, the full plan stays under ninety euros. Let me confirm: I meet you on Friday, and you leave on Sunday afternoon."
+    prompt: "Compare with this model: I'll meet you at the station at 18:20 on Friday. We'll take the €3 bus to the €32 hostel. A taxi is easier with luggage, but the bus is cheaper. We have €25 for vegetarian food. On Saturday morning, we'll visit the park for free and take a short route with breaks. If it rains heavily, we'll visit the €10 history museum instead. The local restaurant is closed, so would you prefer vegetarian pizza or soup? Both fit our food allowance. On Sunday, we can visit the free market before your train. With the museum backup, the total is €70: €3 for transport, €32 for the hostel, €25 for food, and €10 for the museum. Let me confirm: I meet you on Friday, and you leave on Sunday afternoon."
     ltPrompt: "Paklausykite pavyzdžio ir patikrinkite, ar pasirinkimai atitinka svečio poreikius."
     support:
       - "Did the choices respect the guest's needs, mobility, and budget?"
@@ -51,6 +51,27 @@ steps:
       - "response"
       - "repair"
 ---
+
+## Scenario Card / Situacijos kortelė
+
+Maya arrives on Friday at 18:20. She is vegetarian, enjoys nature and local history, and cannot walk long distances. Her full weekend budget is **€90**. Heavy rain is possible on Saturday.
+
+Maya atvyksta penktadienį 18.20. Ji yra vegetarė, mėgsta gamtą ir vietos istoriją, bet negali ilgai vaikščioti. Visas jos savaitgalio biudžetas – **90 €**. Šeštadienį gali smarkiai lyti.
+
+| Choice / Pasirinkimas | Price / Kaina |
+| --- | ---: |
+| station bus / autobusas iš stoties | €3 |
+| station taxi / taksi iš stoties | €18 |
+| hostel / nakvynės namai | €32 |
+| hotel / viešbutis | €55 |
+| market or park / turgus arba parkas | free / nemokamai |
+| castle / pilis | €12 |
+| museum / muziejus | €10 |
+| vegetarian food allowance / vegetariško maisto suma | €25 |
+
+The rain backup replaces the outdoor activity; count only the activity you will actually do. Include transport, accommodation, food, and any paid activity in the total.
+
+Jei lyja, atsarginė veikla pakeičia veiklą lauke, todėl skaičiuokite tik tą veiklą, kurią iš tikrų pasirinksite. Į bendrą sumą įtraukite transportą, nakvynę, maistą ir visas mokamas veiklas.
 
 ## Useful Building Blocks / Naudingi sakiniai
 

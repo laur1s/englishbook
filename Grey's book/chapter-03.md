@@ -202,7 +202,7 @@ Work in groups of three. One learner is Meredith, one is Derek, and one is Dr. W
 
 Choose the best modal verb for each sentence.
 
-1. Meredith and Derek ______ keep the relationship hidden because hospital rules were strict. `(must / might / should)`
+1. Derek says, "We ______ tell Dr. Webber about the work conflict." `(must / might / mustn't)`
 2. They ______ report the work conflict to Dr. Webber. `(should / can't / mustn't)`
 3. Dr. Webber ______ change Meredith's supervisor. `(can / can't / mustn't)`
 4. Meredith thought they ______ be more careful after Izzie noticed them. `(should / can't / mustn't)`

@@ -7,6 +7,8 @@ import {
   beginPracticeRun,
   completeLearningSession,
   createLearningProgress,
+  filterLearningPracticeEvidence,
+  getCurrentPracticeItemIds,
   getDueSkills,
   getNextLearningSessionId,
   isLearningSessionUnlocked,
@@ -48,7 +50,8 @@ test("malformed nested progress is sanitized without breaking resume logic", () 
   assert.deepEqual(parsed.sessions.valid.responses, { answer: "yes" });
   assert.deepEqual(parsed.skills, {});
   assert.deepEqual(parsed.practiceAttempts, { valid: 2 });
-  assert.deepEqual(parsed.recentItemIds, ["one"]);
+  assert.deepEqual(parsed.recentItemIds, []);
+  assert.deepEqual(parsed.recentItemRefs, []);
   assert.deepEqual(parsed.activeDays, ["2026-07-01"]);
   assert.equal(parsed.activeSessionId, null);
   assert.equal(getDueSkills(parsed).length, 0);
@@ -102,6 +105,82 @@ test("version 1 progress migrates to version 2 without losing valid learning evi
   assert.deepEqual(migrated.activity, []);
   assert.deepEqual(migrated.preferences, { dailyMinutes: 10 });
   assert.deepEqual(migrated.migrations, { legacyStandaloneImported: false });
+});
+
+test("legacy bare item IDs recover revisions only from unambiguous saved runs", () => {
+  const saved = {
+    version: 2,
+    activeSessionId: "module-01-practice",
+    sessions: {
+      "module-01-practice": {
+        revision: 1,
+        status: "started",
+        responses: {},
+        attempts: 0,
+        startedAt: "2026-07-01T08:00:00.000Z",
+        updatedAt: "2026-07-01T08:01:00.000Z",
+        practiceRun: {
+          attempt: 1,
+          recentItemIds: [],
+          priorityItemIds: [],
+          targetObjectiveIds: [],
+          packId: "legacy-pack",
+          itemRefs: [{ id: "u01.be.001", revision: 3 }],
+          phase: "practice",
+          repairItemIds: [],
+          startedAt: "2026-07-01T08:00:00.000Z",
+        },
+      },
+    },
+    recentItemIds: ["u01.be.001", "unrecoverable"],
+    mistakeItemIds: ["u01.be.001", "unrecoverable"],
+  };
+
+  const migrated = parseLearningProgress(JSON.stringify(saved));
+
+  assert.deepEqual(migrated.recentItemRefs, [{ id: "u01.be.001", revision: 3 }]);
+  assert.deepEqual(migrated.mistakeItemRefs, [{ id: "u01.be.001", revision: 3 }]);
+  assert.deepEqual(migrated.recentItemIds, ["u01.be.001"]);
+  assert.deepEqual(migrated.mistakeItemIds, ["u01.be.001"]);
+
+  const afterItemChange = parseLearningProgress(
+    JSON.stringify(saved),
+    [{ id: "u01.be.001", revision: 4 }],
+  );
+  assert.deepEqual(afterItemChange.recentItemRefs, []);
+  assert.deepEqual(afterItemChange.mistakeItemRefs, []);
+});
+
+test("catalog-aware evidence filtering drops changed and removed item revisions", () => {
+  const progress = createLearningProgress();
+  progress.recentItemRefs = [
+    { id: "current", revision: 2 },
+    { id: "changed", revision: 1 },
+    { id: "removed", revision: 1 },
+  ];
+  progress.mistakeItemRefs = [
+    { id: "current", revision: 2 },
+    { id: "changed", revision: 1 },
+  ];
+  progress.recentItemIds = progress.recentItemRefs.map((item) => item.id);
+  progress.mistakeItemIds = progress.mistakeItemRefs.map((item) => item.id);
+  const currentCatalogRefs = [
+    { id: "current", revision: 2 },
+    { id: "changed", revision: 2 },
+    { id: "new", revision: 1 },
+  ];
+
+  const filtered = filterLearningPracticeEvidence(progress, currentCatalogRefs);
+
+  assert.deepEqual(filtered.recentItemRefs, [{ id: "current", revision: 2 }]);
+  assert.deepEqual(filtered.mistakeItemRefs, [{ id: "current", revision: 2 }]);
+  assert.deepEqual(filtered.recentItemIds, ["current"]);
+  assert.deepEqual(filtered.mistakeItemIds, ["current"]);
+  assert.deepEqual(
+    getCurrentPracticeItemIds(progress.recentItemRefs, currentCatalogRefs),
+    ["current"],
+  );
+  assert.deepEqual(progress.recentItemIds, ["current", "changed", "removed"]);
 });
 
 test("parse normalizes parseable timestamps and drops invalid timestamp records", () => {
@@ -450,11 +529,25 @@ test("mistake items persist until each item is successfully repaired", () => {
       score: 1,
       total: 3,
       itemIds: ["good", "mistake-a", "mistake-b"],
+      itemRefs: [
+        { id: "good", revision: 1 },
+        { id: "mistake-a", revision: 1 },
+        { id: "mistake-b", revision: 1 },
+      ],
       mistakeItemIds: ["mistake-a", "mistake-b"],
     },
     "2026-07-01T08:00:00.000Z",
   );
   assert.deepEqual(firstPass.mistakeItemIds, ["mistake-a", "mistake-b"]);
+  assert.deepEqual(firstPass.mistakeItemRefs, [
+    { id: "mistake-a", revision: 1 },
+    { id: "mistake-b", revision: 1 },
+  ]);
+  assert.deepEqual(firstPass.recentItemRefs, [
+    { id: "good", revision: 1 },
+    { id: "mistake-a", revision: 1 },
+    { id: "mistake-b", revision: 1 },
+  ]);
 
   let repairRun = beginPracticeRun(
     firstPass,

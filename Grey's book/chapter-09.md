@@ -20,6 +20,8 @@ status: "published"
 
 ## 9 Skyrius: Tėvo Širdis
 
+> **Content note / Turinio pastaba:** This chapter includes a heart transplant, family fear, and medical risk. / Šiame skyriuje kalbama apie širdies transplantaciją, šeimos baimę ir gydymo riziką. **Gentler route / Švelnesnis kelias:** if this topic feels too difficult today, skip the story and practise [Past Continuous in the Grammar Reference](/resources/grammar-reference#past-continuous). Return when you choose. / Jei ši tema šiandien per sunki, praleiskite pasakojimą ir pakartokite [Past Continuous gramatikos vadove](/resources/grammar-reference#past-continuous). Sugrįžkite, kai būsite pasirengę.
+
 ### Phrasal Verbs
 
 *Fraziniai veiksmažodžiai*
@@ -83,7 +85,7 @@ The specialist answered each question without making a promise. He also gave Dan
 
 Daniel called the team back. "I understand that both choices have risks," he said. "I want to accept this heart." He signed the consent form himself.
 
-The operation was long and difficult. An experienced transplant surgeon led it, and Cristina assisted. Alex's careful reading had given the team important information before the operation. Meredith waited with Sarah and gave her updates when the surgical team sent them.
+The operation was long and difficult. An experienced transplant surgeon led it, and Cristina assisted. Before the operation, Alex read the records carefully, so the team had important information. Meredith waited with Sarah and gave her updates when the surgical team sent them.
 
 After eight hours, the operation was over. The new heart was beating, and Daniel was stable. The surgeon explained that this was encouraging, but the first days after a transplant still required very close care.
 

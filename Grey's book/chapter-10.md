@@ -21,6 +21,8 @@ status: "published"
 
 ## 10 Skyrius: Kitoks Pašaukimas
 
+> **Content note / Turinio pastaba:** This chapter includes an unconscious young person, internal bleeding, and an emergency operation. / Šiame skyriuje aprašoma sąmonės netekusi jauna pacientė, vidinis kraujavimas ir skubi operacija. **Gentler route / Švelnesnis kelias:** if this topic feels too difficult today, skip the story and practise [Past Simple in the Grammar Reference](/resources/grammar-reference#past-simple). Return when you choose. / Jei ši tema šiandien per sunki, praleiskite pasakojimą ir pakartokite [Past Simple gramatikos vadove](/resources/grammar-reference#past-simple). Sugrįžkite, kai būsite pasirengę.
+
 ### Phrasal Verbs
 
 *Fraziniai veiksmažodžiai*
@@ -57,7 +59,7 @@ status: "published"
 
 *Pasakojimas*
 
-Seattle Grace was unusually quiet on Monday morning. That changed when a visiting surgeon, Dr. Elena Marquez, arrived to speak about her work in remote clinics around the world. She had spent years traveling with medical teams to places where people had very little equipment and almost no access to doctors.
+Seattle Grace was unusually quiet on Monday morning. That changed when a visiting surgeon, Dr. Elena Marquez, arrived to speak about her work in remote clinics around the world. Before this visit, she spent years traveling with medical teams to places where people had very little equipment and almost no access to doctors.
 
 Dr. Izzie Stevens sat in the front row of the small lecture room. While other doctors checked their pagers, Izzie listened to every word. Elena showed pictures of a tiny clinic in the mountains, a tent hospital after an earthquake, and a crowded waiting room full of tired families. "In some places," Elena said, "people walk for hours just to see a nurse. You learn to do a lot with very little."
 
@@ -181,7 +183,7 @@ Some journeys begin when you leave home. Others begin when you finally tell the 
 4. What did Alex, Cristina, and Elena first think about Lily's condition?
 5. What happened to Lily during the volunteer trip?
 6. Why did Lily hide the truth about her injury?
-7. Which organ had Lily injured?
+7. Which organ did Lily injure?
 8. Who led Lily's surgery?
 9. What offer did Elena make to Izzie?
 10. What did Izzie realize at the end of the chapter?

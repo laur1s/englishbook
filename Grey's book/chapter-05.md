@@ -20,6 +20,8 @@ status: "published"
 
 ## 5 Skyrius: Kai Pacientas Miršta - Blogiausia Diena
 
+> **Content note / Turinio pastaba:** This chapter includes a patient's death, grief, crying, and strong self-blame. / Šiame skyriuje kalbama apie paciento mirtį, gedulą, verkimą ir stiprų savęs kaltinimą. **Gentler route / Švelnesnis kelias:** if this topic feels too difficult today, skip the story and practise [Past Continuous in the Grammar Reference](/resources/grammar-reference#past-continuous). Return when you choose. / Jei ši tema šiandien per sunki, praleiskite pasakojimą ir pakartokite [Past Continuous gramatikos vadove](/resources/grammar-reference#past-continuous). Sugrįžkite, kai būsite pasirengę.
+
 ### Phrasal Verbs
 
 *Fraziniai veiksmažodžiai*
@@ -55,7 +57,7 @@ status: "published"
 
 *Pasakojimas*
 
-Cristina Yang was always the strongest doctor at the hospital. She never cried. She never showed fear. She was like a machine - strong, smart, and perfect. But today, everything changed.
+Cristina Yang was known as a calm and focused doctor. Some colleagues thought she never felt afraid because she did not often talk about her feelings. But Cristina had difficult feelings too, like every person.
 
 Today, Cristina's patient died.
 
@@ -77,9 +79,9 @@ In the scrub room, Cristina finally broke down. She fell against the wall and st
 
 "I killed him!" Cristina was sobbing. "It's my fault! I did something wrong! I killed him!"
 
-Her hands were shaking. She couldn't stop crying. Strong, perfect Cristina was completely broken.
+Her hands were shaking, and she couldn't stop crying. Cristina felt shocked and full of grief. Crying did not make her weak.
 
-Meredith was walking past when she heard the crying. She ran into the scrub room and saw her best friend on the floor, crying like a child.
+Meredith was walking past when she heard the crying. She ran into the scrub room and saw her close friend on the floor, crying very hard.
 
 "Cristina!" Meredith sat down next to her on the floor. "What happened?"
 
@@ -154,13 +156,13 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
    - *Example answer:* "We do not know all the facts yet. The team can review what happened."
    - *Your answer:* "We do not know _______________. The team can _______________."
 
-3. Why do you think sharing fears with friends helps people feel better?
-   - *Example answer:* "When you share your fears, you realize you're not alone. Your friends understand you. Talking about problems makes them feel smaller."
-   - *Your answer:* "When you share your fears, you _______________. Your friends _______________. Talking about _______________."
+3. Why can sharing fears with a trusted person help some people?
+   - *Example answer:* "A trusted person can listen and help you feel less alone. Different people need different kinds of support."
+   - *Your answer:* "A trusted person can _______________. Some people feel _______________."
 
-4. Who is your best friend? How do they help you when you're sad?
-   - *Example answer:* "My best friend is Maria. When I'm sad, she listens to me. She makes me laugh. She tells me that tomorrow will be better."
-   - *Your answer:* "My best friend is _______________. When I'm sad, _______________. She/He _______________."
+4. Think of a real or fictional supportive person. Who are they, and how do they help someone who is sad? You do not need to share private information.
+   - *Example answer:* "In my story, Lina is a supportive colleague. When a friend is sad, Lina listens and asks what help they want."
+   - *Your answer:* "In my story, _______________ is supportive. They _______________ and _______________."
 
 5. Write one supportive sentence to Cristina after her patient died.
    - *Example answer:* "Cristina, I am sorry. I am here to listen, and the team will review the case with you."
@@ -170,7 +172,7 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
 
 ### Fun Activities
 
-*Smagios užduotys*
+*Praktikos užduotys / Practice activities*
 
 #### Activity 1: Emotions Vocabulary / Emocijų Žodynas
 
@@ -179,7 +181,7 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
 1. shocked (šokiruotas) ___
 2. guilty (kaltas) ___
 3. supportive (palaikantis) ___
-4. broken (palūžęs) ___
+4. very upset (labai nuliūdęs / nuliūdusi) ___
 5. grateful (dėkingas) ___
 
 a) When Cristina thanked her friends
@@ -194,9 +196,9 @@ e) When Cristina cried on the floor
 
 **Practice with a partner:**
 
-**Student A (Sad friend):** "I failed my test. I studied so hard, but I still failed. I'm so stupid!"
+**Student A (Sad friend):** "I failed my test. I studied hard, and now I feel terrible. I don't know what to do next."
 
-**Student B (Comforting friend):** "You're not stupid! Everyone fails sometimes. You can try again. I'll help you study."
+**Student B (Comforting friend):** "I'm sorry it was difficult. One test does not say everything about you. You can try again, and I'll help you study."
 
 **Student A:** "Really? You'll help me?"
 

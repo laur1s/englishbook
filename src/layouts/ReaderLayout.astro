@@ -73,6 +73,14 @@ const sequenceLabel =
     : entry.data.collection === "a2-units"
       ? `Unit ${entry.data.order}${totalEntries ? ` of ${totalEntries}` : ""}`
       : entry.data.collection.replace("-", " ");
+const readerNavigationLabel = entry.data.collection === "grey-book"
+  ? "Chapter navigation"
+  : entry.data.collection === "a2-units"
+    ? "Unit navigation"
+    : entry.data.collection === "resources"
+      ? "Resource navigation"
+      : "Reader navigation";
+const outlineStartsCollapsed = sections.length > 24;
 ---
 
 <BaseLayout title={`${entry.data.title} | English Library`} description={description} enableTranslation>
@@ -92,7 +100,7 @@ const sequenceLabel =
     </p>
   </section>
 
-  <nav class="reader-nav-bar" aria-label="Chapter navigation">
+  <nav class="reader-nav-bar" aria-label={readerNavigationLabel}>
     <a class="reader-nav-link reader-nav-back" href={getCollectionHref(entry.data.collection)}>
       <span class="pager-label">Back to collection</span>
       <strong>{collectionTitle}</strong>
@@ -125,10 +133,16 @@ const sequenceLabel =
   </nav>
 
   <div class="reader-shell">
-    <aside class="reader-sidebar">
-      <div class="toc-card">
-        <h2>On this page</h2>
-        <p class="lt-text sidebar-subtitle" lang="lt">Šio puslapio turinys</p>
+    <aside class="reader-sidebar" aria-label="Page outline">
+      <a class="reader-skip-outline" href="#reader-lesson-content">Skip outline and start reading</a>
+      <details class="toc-card reader-toc" open={!outlineStartsCollapsed}>
+        <summary>
+          <span>
+            <strong>On this page</strong>
+            <small class="lt-text sidebar-subtitle" lang="lt">Šio puslapio turinys</small>
+          </span>
+          <span class="toc-summary-count">{sections.length + (answerSnippetHtml ? 1 : 0)} sections</span>
+        </summary>
         <ul>
           {sections.map((section) => (
             <li>
@@ -137,10 +151,10 @@ const sequenceLabel =
           ))}
           {answerSnippetHtml && <li><a href="#answer-preview">Answer preview</a></li>}
         </ul>
-      </div>
+      </details>
     </aside>
 
-    <article class="reader-content">
+    <article class="reader-content" id="reader-lesson-content" tabindex="-1">
       <aside class="translation-guide" aria-label="Dictionary help">
         <p><span class="translation-guide-sample">Dotted underline</span> = Lithuanian translation. Click or tap a word, or select up to four words.</p>
         <p class="lt-text" lang="lt"><span class="translation-guide-sample">Punktyrinis pabraukimas</span> = vertimas į lietuvių kalbą. Spustelėkite arba bakstelėkite žodį arba pažymėkite iki keturių žodžių.</p>

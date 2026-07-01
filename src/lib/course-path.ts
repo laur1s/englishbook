@@ -223,9 +223,7 @@ const parseSession = (
   }
 
   const minutes = requiredPositiveInteger(record, "minutes", id);
-  const revision = record.revision === undefined
-    ? 1
-    : requiredPositiveInteger(record, "revision", id);
+  const revision = requiredPositiveInteger(record, "revision", id);
 
   if (typeof record.required !== "boolean") {
     fail(`${id}.required must be a boolean`);

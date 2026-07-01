@@ -20,6 +20,8 @@ status: "published"
 
 ## 4 Skyrius: Mažas kūdikis - atsargi viltis
 
+> **Content note / Turinio pastaba:** This chapter describes a very ill premature baby and an uncertain medical outcome. / Šiame skyriuje aprašomas sunkiai sergantis neišnešiotas kūdikis ir neaiški gydymo baigtis. **Gentler route / Švelnesnis kelias:** if this topic feels too difficult today, skip the story and practise [Present Perfect in the Grammar Reference](/resources/grammar-reference#present-perfect). Return when you choose. / Jei ši tema šiandien per sunki, praleiskite pasakojimą ir pakartokite [Present Perfect gramatikos vadove](/resources/grammar-reference#present-perfect). Sugrįžkite, kai būsite pasirengę.
+
 ### Phrasal Verbs
 
 *Fraziniai veiksmažodžiai*

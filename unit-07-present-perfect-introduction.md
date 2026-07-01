@@ -46,10 +46,10 @@ status: "published"
 - ever - kada nors
 - never - niekada
 - since - nuo (laiko momento)
-- for - (laiko trukmė)
+- for - trukmei nusakyti; anglų kalboje vartojamas prieš laikotarpį (*for two years* - dvejus metus)
 - just - ką tik
 - already - jau
-- yet - dar (neiginiuose sakiniuose ir klausimuose)
+- yet - dar (neiginiuose sakiniuose), jau (klausimuose)
 - recently - neseniai
 - before - anksčiau
 
@@ -109,6 +109,8 @@ status: "published"
 
 - **have/has + just/already + past participle:** *She has just arrived. We have already eaten.*
 - **yet** normally comes at the end of a negative sentence or question: *I haven't finished yet. Have you finished yet?*
+
+<p class="lt-text" lang="lt"><strong>Yet</strong> vertimas priklauso nuo sakinio: <em>I haven't finished yet</em> - <strong>Dar nebaigiau</strong>, bet <em>Have you finished yet?</em> - <strong>Ar jau baigei?</strong></p>
 
 ---
 
@@ -258,8 +260,8 @@ Correct the mistakes in these sentences:
 - Never - Niekada
 - Just - Ką tik
 - Already - Jau
-- Yet - Dar
-- For - (laikotarpiui)
+- Yet - Dar (neiginiuose sakiniuose), jau (klausimuose)
+- For - Trukmei nusakyti (*for three months* - tris mėnesius)
 - Since - Nuo
 
 **Exercise:** Complete with the correct time expression.

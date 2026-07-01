@@ -986,7 +986,7 @@ d. I would like to request a refund.
 
 ## Exercise 39 — Memory Grid
 
-> **LT pagalba:** Vieną minutę sąmoningai grupuokite informaciją: žmogus + planas + laikas + detalė. Uždengę lentelę atsakykite pilnais sakiniais.
+> **LT pagalba:** Vieną minutę sąmoningai grupuokite informaciją: žmogus + planas + laikas + detalė. Uždengę lentelę atsakykite užbaigtais sakiniais.
 
 Study the grid for one minute. Cover it and answer the questions. / Minutę įsiminkite lentelę, tada ją uždenkite ir atsakykite.
 

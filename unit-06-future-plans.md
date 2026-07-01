@@ -9,6 +9,7 @@ level: "A2.1"
 grammarFocus:
   - "Going to"
   - "Will"
+  - "First conditional (introduction)"
 topics:
   - "future plans"
   - "predictions"
@@ -25,6 +26,7 @@ status: "published"
 - Use "going to" for intentions / Naudoti "going to" ketinimams
 - Use "will" for predictions and decisions / Naudoti "will" prognozėms ir sprendimams
 - Learn time expressions for future / Išmokti ateities laiko išraiškų
+- Use a simple first conditional for a backup plan / Vartoti paprastą pirmojo tipo sąlyginį sakinį atsarginiam planui
 
 ---
 
@@ -364,7 +366,7 @@ In 2050...
 ## Exercise 9: Dialogue - Making Plans
 ## Pratimas 9: Dialogas - Planų kūrimas
 
-**Complete the dialogue:**
+**Complete the dialogue with a natural future form.** Use **going to** or **will** where they fit. Present Continuous is also possible for a fixed arrangement, and **may/might** can express an uncertain possibility. More than one answer can be correct when the meaning fits.
 
 Anna: What _____________ you _____________ (do) this weekend?
 Tomas: I _____________ (visit) my parents in Šiauliai. What about you?
@@ -566,9 +568,21 @@ In pairs, make predictions about each other's future. Use "I think you will..." 
 
 Share your goals with the group. Discuss how you will achieve them.
 
+**Model:** **My goal is to speak English with confidence. I'm going to practise for ten minutes on Monday, Wednesday, and Friday. I'm also going to record one short talk each week. I think this plan will help me notice my progress.**
+
+**Sentence starters:** **My goal is to... / I'm going to... / I plan to... on... / I think this will... / What are you going to do first?**
+
+**Success checklist:** state one clear goal; give two planned actions with **going to**; add a time or frequency; explain the expected result with **will**; ask or answer one follow-up question.
+
 ### Activity 3: Dream Job Interview
 
 Role-play an interview for your dream job. Describe why you want it and your plans.
+
+**Model:** **Interviewer: What job would you like to do? Applicant: I'd like to be a designer because I enjoy creative work. Interviewer: How are you going to prepare? Applicant: I'm going to take a course and build a small portfolio. I think these steps will help me find work.**
+
+**Interview starters:** **Why do you want this job? / What skills do you need? / How are you going to prepare? / I'd like to... because... / I'm going to...**
+
+**Success checklist:** name the job and one reason; describe two preparation plans; use **going to** for intentions and **will** for an expected result; ask at least two interview questions. If you study alone, record both roles with a pause before each answer.
 
 ---
 
@@ -626,7 +640,9 @@ Role-play an interview for your dream job. Describe why you want it and your pla
 
 ---
 
-## Exercise 17: Real Future Conditions / Pratimas 17: Pirmojo tipo sąlyginiai sakiniai
+## Exercise 17: Real Future Conditions — Introduction / Pratimas 17: Pirmojo tipo sąlyginių sakinių įvadas
+
+This is a short introduction for making backup plans. Unit 21 returns to the first conditional and gives more practice with its meaning and form.
 
 Use **if + Present Simple** for the condition and commonly **will + base verb** for a possible future result: **If it rains, we will stay home.** The result can also use **may, might,** or **can** when the meaning needs it: **If we book late, the tickets may cost more.** The clauses can appear in either order, but do not normally put **will** directly after **if**.
 

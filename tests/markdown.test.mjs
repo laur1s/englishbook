@@ -75,3 +75,60 @@ test("root-relative content links can be scoped to a deployed base path", () => 
     /href="\/resources\/a2-practice-workbook"/,
   );
 });
+
+test("unsafe Markdown URL schemes are rendered as text instead of links or images", () => {
+  const html = renderMarkdown([
+    "[bad link](javascript:alert(1))",
+    "[encoded bad link](&#x6a;avascript&colon;alert(1))",
+    "[bad data](data:text/html,unsafe)",
+    "![bad image](data:image/svg+xml,unsafe)",
+  ].join("\n\n"));
+
+  assert.doesNotMatch(html, /href=(?:"|')(?:javascript|data):/i);
+  assert.doesNotMatch(html, /src=(?:"|')data:/i);
+  assert.match(html, /bad link/);
+  assert.match(html, /encoded bad link/);
+  assert.match(html, /bad data/);
+  assert.match(html, /bad image/);
+});
+
+test("out-of-range numeric URL entities are rejected without aborting rendering", () => {
+  let html = "";
+  assert.doesNotThrow(() => {
+    html = renderMarkdown([
+      "[decimal overflow](https://example.com/&#1114112;)",
+      "[hex surrogate](https://example.com/&#xD800;)",
+      "![huge numeric image](https://example.com/&#999999999999999999999999999999;)",
+    ].join("\n\n"));
+  });
+
+  assert.match(html, /decimal overflow/);
+  assert.match(html, /hex surrogate/);
+  assert.match(html, /huge numeric image/);
+  assert.doesNotMatch(html, /<a\b/i);
+  assert.doesNotMatch(html, /<img\b/i);
+});
+
+test("raw scripts, frames, and event handlers cannot reach rendered HTML", () => {
+  const html = renderMarkdown([
+    '<script>alert("unsafe")</script>',
+    '<iframe src="https://example.com"></iframe>',
+    '<img src="x" onerror="alert(1)">',
+    '<p class="lt-text" lang="lt" onclick="alert(1)">Unsafe note</p>',
+  ].join("\n"));
+
+  assert.doesNotMatch(html, /<\/?(?:script|iframe|img)\b/i);
+  assert.doesNotMatch(html, /<[^>]*\son\w+=/i);
+  assert.match(html, /&lt;script&gt;/);
+  assert.match(html, /Unsafe note/);
+});
+
+test("the raw HTML allowlist preserves Lithuanian support markup only", () => {
+  const html = renderMarkdown(
+    '<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> <em>pavyzdys</em>.</p>',
+  );
+
+  assert.match(html, /<p class="lt-text" lang="lt">/);
+  assert.match(html, /<strong>Lietuviška atrama:<\/strong>/);
+  assert.match(html, /<em>pavyzdys<\/em>/);
+});

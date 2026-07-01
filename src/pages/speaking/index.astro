@@ -2,6 +2,7 @@
 import SpeakingMissionCard from "../../components/SpeakingMissionCard.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getA2Entries, getSpeakingMissionEntries } from "../../lib/content";
+import { getContentSessionByHref } from "../../lib/course-path";
 import { SPEAKING_PROGRESS_KEY, MISSION_TYPE_LABELS } from "../../lib/speaking";
 
 const entries = await getSpeakingMissionEntries();
@@ -117,6 +118,7 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
       {entries.map((entry) => (
         <SpeakingMissionCard
           entry={entry}
+          missionRevision={getContentSessionByHref(`/speaking/${entry.data.slug}`)?.revision ?? 1}
           sourceTitle={sourceTitleMap.get(entry.data.sourceRefs[0]) ?? "A2 unit"}
         />
       ))}
@@ -173,10 +175,16 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
 
         cards.forEach((card) => {
           const slug = card.dataset.missionSlug;
+          const revision = Number(card.dataset.missionRevision || 1);
           const label = card.querySelector("[data-progress-label]");
-          const record = slug ? progress[slug] : undefined;
+          const storedValue = slug ? progress[slug] : undefined;
+          const storedRecord = storedValue && typeof storedValue === "object" && !Array.isArray(storedValue)
+            ? storedValue
+            : undefined;
+          const storedRevision = Number(storedRecord?.revision ?? 1);
+          const record = storedRevision === revision ? storedRecord : undefined;
 
-          if (record?.completed) {
+          if (record?.completed === true) {
             completedCount += 1;
           }
 
@@ -188,7 +196,7 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
           }
 
           if (label) {
-            label.textContent = record?.completed
+            label.textContent = record?.completed === true
               ? hasValidConfidence
                 ? `Done • ${confidence}/5`
                 : "Completed"
@@ -273,6 +281,16 @@ const sourceTitleMap = new Map(sourceUnits.map((entry) => [entry.data.slug, entr
           button.setAttribute("aria-pressed", "false");
         });
         applyFilters();
+      });
+
+      window.addEventListener("storage", (event) => {
+        if (event.key === progressKey || event.key === null) syncProgress();
+      });
+      window.addEventListener("pageshow", syncProgress);
+      window.addEventListener("focus", syncProgress);
+      window.addEventListener("english-library:speaking-progress", syncProgress);
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") syncProgress();
       });
 
       syncProgress();

@@ -211,7 +211,7 @@ bread, rice, pasta, flour, meat, fish, cheese, butter, milk, water, juice, coffe
 ## Exercise 1: Countable or Uncountable?
 ## Pratimas 1: Skaičiuojamas ar neskaičiuojamas?
 
-Write C (countable) or U (uncountable):
+Write C (countable) or U (uncountable). Use the food or drink meaning shown here, not a café order for a cup or serving:
 
 1. banana _____
 2. water _____
@@ -223,7 +223,7 @@ Write C (countable) or U (uncountable):
 8. bread _____
 9. cheese _____
 10. tomato _____
-11. coffee _____
+11. coffee as a drink in a pot _____
 12. orange _____
 13. sugar _____
 14. biscuit _____
@@ -241,7 +241,7 @@ Write C (countable) or U (uncountable):
 5. We don't have _______ eggs.
 6. Can I have _______ water, please?
 7. There are _______ oranges on the table.
-8. Do you want _______ sugar in your tea?
+8. I am offering you sugar. Do you want _______ sugar in your tea?
 9. I don't want _______ cheese.
 10. She has _______ friends in Vilnius.
 
@@ -396,6 +396,10 @@ _____________________
 **Other:**
 _____________________
 _____________________
+
+**Model list:** **Vegetables:** three tomatoes, a few potatoes. **Fruits:** some apples, two bananas. **Meat/Fish:** some chicken. **Dairy:** a bottle of milk, some cheese. **Other:** a loaf of bread, a little rice.
+
+**Self-check:** include at least one item in every category; use a number or **a few** with plural countable items; use **some/a little** or a container phrase with uncountable food; keep the list realistic for one shopping trip. There is no single correct list.
 
 ---
 
@@ -581,6 +585,14 @@ Discuss your food preferences with a partner. Use expressions like "I love...", 
 ### Activity 3: Cultural Food Exchange
 
 Talk about traditional Lithuanian foods vs. foods from other countries. What are the differences?
+
+**Model:** **Cepelinai are a Lithuanian potato dish. Last year, I tried Italian gnocchi. Both dishes use potatoes, but they have different shapes and sauces. For me, cepelinai are a main meal. Recipes and preferences vary.**
+
+**Sentence starters:** **One Lithuanian dish is... / Last year, I tried... / A book or website says... / Both dishes... / One difference is... / In my experience...**
+
+**Success checklist:** name two specific dishes; describe one ingredient or serving detail for each; give one similarity or difference; say whether your information comes from experience, reading, or another person; avoid saying that everyone in a country eats or likes the same food.
+
+<p class="lt-text" lang="lt"><strong>Kalbėjimo atrama:</strong> lyginkite konkrečius patiekalus, o ne visus žmones ar visą šalies virtuvę. Tinka frazės <strong>in my experience, some people, this recipe, can be</strong>.</p>
 
 ---
 

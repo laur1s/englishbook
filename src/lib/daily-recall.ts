@@ -15,7 +15,7 @@ export type DailyRecallEmptyReason =
 
 export type DailyRecallProgress = Pick<
   LearningProgress,
-  "mistakeItemIds" | "skills" | "preferences"
+  "mistakeItemRefs" | "skills" | "preferences"
 >;
 
 type DailyRecallPlanBase = {
@@ -42,6 +42,7 @@ export type DailyRecallPlan = ReadyDailyRecallPlan | EmptyDailyRecallPlan;
 
 type CatalogItemMeta = {
   id: string;
+  revision: number;
   objectiveId: string;
   unitId: string;
 };
@@ -136,6 +137,7 @@ export const buildDailyRecallPlan = (
       if (!itemById.has(item.id)) {
         itemById.set(item.id, {
           id: item.id,
+          revision: item.revision,
           objectiveId: item.objectiveId,
           unitId: unit.unitId,
         });
@@ -150,9 +152,14 @@ export const buildDailyRecallPlan = (
     }
   }
 
-  const priorityItems = uniqueInOrder(progress.mistakeItemIds)
-    .map((itemId) => itemById.get(itemId))
-    .filter((item): item is CatalogItemMeta => Boolean(item))
+  const mistakeRevisionById = new Map(
+    progress.mistakeItemRefs.map((item) => [item.id, item.revision] as const),
+  );
+  const priorityItems = uniqueInOrder([...mistakeRevisionById.keys()])
+    .flatMap((itemId) => {
+      const item = itemById.get(itemId);
+      return item && mistakeRevisionById.get(itemId) === item.revision ? [item] : [];
+    })
     .sort((left, right) => compareIds(left.id, right.id));
 
   const rankedSkills = Object.entries(progress.skills)
@@ -184,7 +191,7 @@ export const buildDailyRecallPlan = (
 
   if (unitIds.length === 0) {
     const hasReviewSignal =
-      progress.mistakeItemIds.length > 0 ||
+      progress.mistakeItemRefs.length > 0 ||
       Object.values(progress.skills).some((skill) => needsRecall(skill, nowMs));
 
     return {

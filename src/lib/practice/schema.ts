@@ -1,5 +1,5 @@
 export const PRACTICE_SCHEMA_VERSION = 1 as const;
-export const PRACTICE_GENERATOR_VERSION = 3 as const;
+export const PRACTICE_GENERATOR_VERSION = 4 as const;
 
 export type PracticeDifficulty = 1 | 2 | 3;
 export type PracticeMode = "guided" | "standard" | "review" | "checkpoint";
@@ -64,7 +64,7 @@ export type PracticeUnitSource = {
 
 export type PracticeCatalog = {
   schemaVersion: typeof PRACTICE_SCHEMA_VERSION;
-  generatorVersion: number;
+  generatorVersion: typeof PRACTICE_GENERATOR_VERSION;
   sourceHash: string;
   units: PracticeUnitSource[];
 };
@@ -83,6 +83,10 @@ const UNIT_ID_PATTERN = /^unit-(0[1-9]|1[0-9]|2[0-4])$/;
 const OBJECTIVE_ID_PATTERN = /^u(0[1-9]|1[0-9]|2[0-4])\.[a-z0-9]+(?:[.-][a-z0-9]+)*$/;
 const ITEM_ID_PATTERN = /^u(0[1-9]|1[0-9]|2[0-4])\.[a-z0-9]+(?:[.-][a-z0-9]+)*\.\d{3}$/;
 const CHOICE_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const EXPECTED_CATALOG_UNIT_IDS = Array.from(
+  { length: 24 },
+  (_, index) => `unit-${String(index + 1).padStart(2, "0")}`,
+);
 
 const isRecord = (value: unknown): value is Record<string, unknown> =>
   Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -367,8 +371,12 @@ export const validatePracticeCatalog = (input: unknown): PracticeCatalog => {
     addIssue(issues, "practice catalog.schemaVersion", `must equal ${PRACTICE_SCHEMA_VERSION}`);
   }
 
-  if (!isPositiveInteger(input.generatorVersion)) {
-    addIssue(issues, "practice catalog.generatorVersion", "must be a positive integer");
+  if (input.generatorVersion !== PRACTICE_GENERATOR_VERSION) {
+    addIssue(
+      issues,
+      "practice catalog.generatorVersion",
+      `must equal ${PRACTICE_GENERATOR_VERSION}`,
+    );
   }
 
   if (
@@ -382,11 +390,16 @@ export const validatePracticeCatalog = (input: unknown): PracticeCatalog => {
   const objectiveIds = new Set<string>();
   const itemIds = new Set<string>();
 
-  if (!Array.isArray(input.units) || input.units.length === 0) {
-    addIssue(issues, "practice catalog.units", "must contain at least one unit");
+  if (!Array.isArray(input.units) || input.units.length !== EXPECTED_CATALOG_UNIT_IDS.length) {
+    addIssue(issues, "practice catalog.units", "must contain exactly 24 ordered units");
   } else {
     input.units.forEach((unit, unitIndex) => {
       const unitPath = `practice catalog.units[${unitIndex}]`;
+      const expectedUnitId = EXPECTED_CATALOG_UNIT_IDS[unitIndex];
+
+      if (!isRecord(unit) || unit.unitId !== expectedUnitId) {
+        addIssue(issues, `${unitPath}.unitId`, `must equal ${expectedUnitId}`);
+      }
 
       try {
         const validated = validatePracticeSource(unit, unitPath);

@@ -24,12 +24,21 @@ status: "published"
 
 Complete the project in four short rounds:
 
-1. **Understand:** list the guest's needs and the limits.
-2. **Decide:** compare options and calculate the cost.
-3. **Communicate:** create the schedule, message, and spoken explanation.
-4. **Repair:** respond to a change and improve unclear language.
+1. **Understand (suprask):** write what the guest needs and what the plan must respect.
+2. **Decide (pasirink):** compare the choices and add the prices.
+3. **Communicate (pranešk planą):** make a timetable, write a message, and explain the plan aloud.
+4. **Repair (pataisyk):** change the plan when new information arrives and make unclear language clearer.
 
 Do not try to write the final message immediately. Keep your notes, first draft, corrections, and final version: together they show what you can do.
+
+**Plain-language project words / Paprasti projekto žodžiai:**
+
+- **need** — something Maya requires / ko Mayai reikia;
+- **limit** — a fact the plan must respect, such as the budget / sąlyga, į kurią būtina atsižvelgti, pvz., biudžetas;
+- **backup** — another plan to use if the first plan cannot happen / atsarginis planas, jei pirmojo įgyvendinti nepavyksta;
+- **trade-off** — one choice gives an advantage but also a disadvantage / pasirinkimo privalumas ir trūkumas;
+- **evidence** — an example from your own work that shows a skill / jūsų darbo pavyzdys, parodantis gebėjimą;
+- **repair** — a useful correction or clearer second attempt / naudingas pataisymas arba aiškesnis antras bandymas.
 
 ## Project Brief / Projekto aprašas
 
@@ -85,7 +94,7 @@ Use this weekend price guide:
 | --- | ---: |
 | Bus from the station | €3 |
 | Taxi from the station | €18 |
-| Hostel | €32 |
+| Hostel (2 km from the station) | €32 |
 | Hotel | €55 |
 | Market | Free |
 | Castle | €12 |
@@ -99,11 +108,11 @@ Choose one from each pair and give a reason: **bus/taxi from the station; hostel
 
 One acceptable decision may differ from another. Your choice succeeds when the calculation is correct, it respects Maya's needs, and the reason matches the information.
 
-Show the calculation. Remember that a rain option replaces the outdoor activity; do not add the price twice unless your plan actually includes both activities. Explain one trade-off: *The taxi is more comfortable, but it is too expensive for this budget.*
+Show the calculation. Remember that a rain option replaces the outdoor activity; do not add the price twice unless your plan actually includes both activities. Explain one **trade-off** (one advantage and one disadvantage): *The taxi is more comfortable, but it is too expensive for this budget.*
 
 ## Exercise 3: Build the Schedule / Pratimas 3
 
-Put these functions into a logical two-day order: **arrival; check-in; dinner; Saturday activity; lunch; backup activity; departure**. Add realistic times and transport.
+Put these parts into a clear two-day order: **arrival; check-in; dinner; Saturday activity; lunch; backup activity; departure**. Add realistic times and transport.
 
 Check travel time between activities. Avoid an activity that conflicts with arrival, meals, accessibility needs, or the weather information.
 
@@ -111,7 +120,9 @@ Include at least 30 minutes between the station arrival and dinner. Maya cannot 
 
 ## Exercise 4: Read and Repair the Plan / Pratimas 4
 
-> Maya arrive at 18:20 and I meet her yesterday at the station. We going to take a taxi because the hostel is enough far. On Saturday, if it will rain, we visit the history museum. She don't have to eat meat because I booked a vegetarian café who serves local dishes.
+Use the guest profile and price guide above. Correct the language without adding new facts.
+
+> Maya arrive at 18:20 and I meet her yesterday at the station. We going to take a taxi because the hostel is enough far. On Saturday, if it will rain, we visit the history museum. She don't have to eat meat because I have book a table at a vegetarian café who serves local dishes.
 
 Find and correct all the errors.
 
@@ -126,7 +137,7 @@ At 12:00 on Saturday, the activity is cancelled and the guest's phone battery is
 > A: We could visit the museum or have lunch first. Would you prefer the museum?
 > B: Yes, let's go there. We'll charge my phone at the café afterwards.
 
-Your details may differ, but all four communication functions must be present.
+Your details may differ, but the dialogue must do all four things: explain, offer, check, and confirm.
 
 Do not assume that Maya can receive a long online message. Include a practical communication solution such as writing down the address, using your phone, asking at an information desk, or agreeing on a meeting point.
 
@@ -152,7 +163,7 @@ Use six keywords instead of reading the final message. Record two attempts. In t
 
 ## Exercise 8: Final Self-Check / Pratimas 8
 
-Give evidence for each statement: I can describe routine and current action; narrate a past event; discuss experience; plan a future action; compare choices; give advice; explain a rule; solve a problem; connect sentences.
+Give **evidence** (one example from your work) for each statement: I can describe routine and current action; narrate a past event; discuss experience; plan a future action; compare choices; give advice; explain a rule; solve a problem; connect sentences.
 
 For each claim, quote or point to one sentence from your project. If this project does not demonstrate a skill such as narrating a past event, write one short extra example. A checked box without evidence is not yet a useful assessment.
 
@@ -176,7 +187,7 @@ Update three parts of your work after reading Maya's message:
 2. Move the outdoor activity to a realistic time and show where lunch fits.
 3. Recalculate the budget only if your choices have changed.
 
-**Model short message:** *Thanks for the update. I'll meet you at 18:55 inside the station, beside the information desk. I'm wearing a green jacket. Please save your battery. See you soon!* (31 words)
+**Model short message:** *Thanks for the update. I'll meet you at 18:55 inside the station, beside the information desk. I'm wearing a green jacket. Please save your battery. See you soon!* (28 words)
 
 ## Exercise 11: Final A2 Portfolio / Pratimas 11
 
@@ -184,8 +195,8 @@ Submit or present four pieces of evidence:
 
 - **Plan:** a timetable and budget with a labelled backup.
 - **Message:** the 100–130-word message from Exercise 6, revised after feedback.
-- **Interaction:** the problem-solving dialogue from Exercise 5 or a recording of it.
-- **Reflection:** 60–80 words about one successful strategy and one next step.
+- **Interaction (pokalbis):** the problem-solving dialogue from Exercise 5 or a recording of it.
+- **Reflection (apmąstymas):** 60–80 words about one thing that worked and one next step.
 
 Reflection model: *My plan is easy to follow because I used times and sequence words. I also gave Maya two choices when the activity was cancelled. I sometimes forgot the word after “if”, so I checked every conditional. Next, I want to practise speaking without reading every sentence.*
 

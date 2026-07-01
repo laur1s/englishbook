@@ -24,6 +24,14 @@ const items = Object.fromEntries(
     { objectiveId: item.objectiveId, unitId: unit.unitId },
   ])),
 );
+const listeningRecallSessions = modules.flatMap((module) =>
+  module.sessions.flatMap((session) => {
+    const skillRefs = session.skillRefs.filter((skillId) => skillId.startsWith("listening."));
+    return session.stage === "speak" && skillRefs.length
+      ? [{ id: session.id, stage: session.stage, skillRefs }]
+      : [];
+  })
+);
 const dashboardData = serializeForScript({
   modules: modules.map((module) => ({
     id: module.id,
@@ -49,6 +57,7 @@ const dashboardData = serializeForScript({
   })),
   objectives,
   items,
+  listeningRecallSessions,
 });
 
 const chevronIcon = '<svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>';
@@ -309,8 +318,10 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     buildMistakeSummary,
     buildMomentumSummary,
     buildSkillQueue,
+    getListeningRecallSourceSessionId,
     type ItemInsightMeta,
     type ObjectiveInsightMeta,
+    type SkillRecallSourceSession,
     type SkillInsight,
   } from "../lib/learning-insights";
   import {
@@ -345,7 +356,12 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     sessions: Array<{ id: string; revision: number; required: boolean }>;
     objectives: Record<string, ObjectiveInsightMeta>;
     items: Record<string, ItemInsightMeta>;
+    listeningRecallSessions: SkillRecallSourceSession[];
   };
+
+  const currentPracticeItemRefs = practiceCatalog.units.flatMap((unit) =>
+    unit.items.map((item) => ({ id: item.id, revision: item.revision })),
+  );
 
   const focusCopy: Record<DashboardSession["stage"], string> = {
     context: "Meet the language in context, notice useful details, and get ready to learn.",
@@ -455,7 +471,7 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
     );
 
     const syncDashboard = () => {
-      const progress = readLearningProgress(window.localStorage);
+      const progress = readLearningProgress(window.localStorage, currentPracticeItemRefs);
       const now = new Date().toISOString();
       const nextSessionId = getNextLearningSessionId(data.sessions, progress) ?? data.sessions[0].id;
       const nextEntry = sessionById.get(nextSessionId) ?? sessionById.get(data.sessions[0].id);
@@ -569,6 +585,15 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       const skillQueue = buildSkillQueue(progress, data.objectives, now, timeZone, 2);
       const mistakes = buildMistakeSummary(progress, data.items, data.objectives);
       const dailyRecallPlan = buildDailyRecallPlan(practiceCatalog, progress, now);
+      const listeningRecall = skillQueue
+        .map((skill) => ({
+          skill,
+          sessionId: getListeningRecallSourceSessionId(skill, data.listeningRecallSessions),
+        }))
+        .find((candidate) => candidate.sessionId);
+      const listeningRecallTarget = listeningRecall?.sessionId
+        ? sessionById.get(listeningRecall.sessionId)?.session
+        : undefined;
       const findPracticeTarget = (
         unitId: string | undefined,
         sourceSessionId: string | undefined,
@@ -605,8 +630,15 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         : undefined;
       const dailyReviewTarget = activeDailyTarget ?? plannedDailyTarget;
       const reviewTarget = activeRepairSession
-        ?? dailyReviewTarget;
-      const reviewMode: "daily" | "repair" = activeRepairSession ? "repair" : "daily";
+        ?? dailyReviewTarget
+        ?? listeningRecallTarget;
+      const reviewMode: "daily" | "repair" | "listening" = activeRepairSession
+        ? "repair"
+        : dailyReviewTarget
+          ? "daily"
+          : listeningRecallTarget
+            ? "listening"
+            : "daily";
       const reviewIsCore = reviewMode !== "daily" && reviewTarget?.id === activeSession.id;
       const reviewEnabled = Boolean(
         reviewTarget && (reviewMode === "daily" || isUnlocked(reviewTarget)),
@@ -619,7 +651,11 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       const reviewLink = root.querySelector<HTMLAnchorElement>("[data-today-review]");
       setActionState(
         reviewLink,
-        reviewTarget ? practiceHref(reviewTarget, reviewMode) : null,
+        reviewTarget
+          ? reviewMode === "listening"
+            ? withPracticeMode(reviewTarget.href, "repeat")
+            : practiceHref(reviewTarget, reviewMode)
+          : null,
         reviewEnabled,
       );
       reviewLink?.classList.toggle("is-ready", reviewEnabled);
@@ -628,6 +664,7 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         "[data-today-review-title]",
         activeRepairSession
           ? "Mistake repair"
+          : reviewMode === "listening" ? "Listening recall"
           : activeDailyRun?.phase === "repair" ? "Finish daily repair" : "Daily recall",
       );
       setText(
@@ -643,6 +680,8 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
           ? "Resume the correction loop you started"
           : activeDailyRun
             ? `Continue your ${dailyItemCount}-item cross-unit review`
+            : reviewMode === "listening" && listeningRecallTarget
+              ? `Repeat “${listeningRecallTarget.title}” and answer before opening the transcript`
             : firstMistake
               ? `${mistakes.count} ${mistakes.count === 1 ? "answer" : "answers"} first, then due skills`
               : firstSkill
@@ -744,8 +783,23 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         const status = document.createElement("em");
         const detail = document.createElement("span");
         const arrow = document.createElement("span");
-        const target = dailyReviewTarget
-          ?? findPracticeTarget(skill.unitId, skill.sourceSessionId, "daily");
+        const listeningSourceSessionId = getListeningRecallSourceSessionId(
+          skill,
+          data.listeningRecallSessions,
+        );
+        const listeningTarget = listeningSourceSessionId
+          ? sessionById.get(listeningSourceSessionId)?.session
+          : undefined;
+        const isListeningSkill = skill.id.startsWith("listening.");
+        const target = isListeningSkill
+          ? listeningTarget
+          : dailyReviewTarget ?? findPracticeTarget(skill.unitId, skill.sourceSessionId, "daily");
+        const targetHref = target
+          ? isListeningSkill
+            ? withPracticeMode(target.href, "repeat")
+            : practiceHref(target, "daily")
+          : null;
+        const targetEnabled = Boolean(target && (!isListeningSkill || isUnlocked(target)));
         item.className = "skill-queue-item";
         link.className = "skill-queue-row";
         icon.className = `skill-queue-icon ${skill.due ? "is-due" : "is-weak"}`;
@@ -753,30 +807,42 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
         copy.className = "skill-queue-copy";
         title.textContent = skill.label;
         status.textContent = skill.status;
-        detail.textContent = `${skill.lastSeenLabel}${skill.itemCount ? ` · ${skill.itemCount} items` : ""}`;
+        detail.textContent = `${skill.lastSeenLabel}${isListeningSkill
+          ? " · 2 listening checks"
+          : skill.itemCount ? ` · ${skill.itemCount} items` : ""}`;
         arrow.className = "skill-queue-arrow";
         arrow.textContent = "›";
         title.append(" · ", status);
         copy.append(title, detail);
         link.append(icon, copy, arrow);
-        setActionState(link, target ? practiceHref(target, "daily") : null, Boolean(target));
+        setActionState(link, targetHref, targetEnabled);
         item.append(link);
         return item;
       };
       skillQueue.forEach((skill) => skillList?.append(makeSkillRow(skill)));
 
-      const reviewActionTarget = dailyReviewTarget;
+      const reviewActionTarget = dailyReviewTarget ?? listeningRecallTarget;
+      const reviewActionIsListening = !dailyReviewTarget && Boolean(listeningRecallTarget);
+      const reviewActionEnabled = Boolean(
+        reviewActionTarget && (!reviewActionIsListening || isUnlocked(reviewActionTarget)),
+      );
       const reviewAction = root.querySelector<HTMLAnchorElement>("[data-review-link]");
       setActionState(
         reviewAction,
-        reviewActionTarget ? practiceHref(reviewActionTarget, "daily") : null,
-        Boolean(reviewActionTarget),
+        reviewActionTarget
+          ? reviewActionIsListening
+            ? withPracticeMode(reviewActionTarget.href, "repeat")
+            : practiceHref(reviewActionTarget, "daily")
+          : null,
+        reviewActionEnabled,
       );
       setText(
         root,
         "[data-review-action]",
-        reviewActionTarget
-          ? activeDailyRun ? "Resume daily recall" : "Start daily recall"
+        reviewActionEnabled
+          ? reviewActionIsListening
+            ? "Repeat listening checks"
+            : activeDailyRun ? "Resume daily recall" : "Start daily recall"
           : skillQueue.length ? "Continue the path first" : "You’re caught up",
       );
 
@@ -817,7 +883,10 @@ const lockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="1
       button.addEventListener("click", () => {
         const minutes = Number(button.dataset.dailyMinutes);
         if (minutes !== 5 && minutes !== 10 && minutes !== 15) return;
-        const next = setDailyMinutes(readLearningProgress(window.localStorage), minutes);
+        const next = setDailyMinutes(
+          readLearningProgress(window.localStorage, currentPracticeItemRefs),
+          minutes,
+        );
         writeLearningProgress(window.localStorage, next);
         window.dispatchEvent(new CustomEvent("english-library:progress"));
         syncDashboard();

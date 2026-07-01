@@ -191,11 +191,25 @@ const shuffleItemChoices = (item: PracticeItem, seed: string): PracticeItem => {
   } satisfies SingleChoicePracticeItem;
 };
 
+const sourceExerciseKeys = (item: PracticeItem) => [...new Set(
+  item.sourceRefs.map((sourceRef) => `${sourceRef.lesson}#${sourceRef.exercise}`),
+)].sort((left, right) => left.localeCompare(right, "en"));
+
+const sourceExerciseRank = (
+  item: PracticeItem,
+  sourceExerciseCounts: ReadonlyMap<string, number>,
+) => Math.min(
+  ...sourceExerciseKeys(item).map((key) => sourceExerciseCounts.get(key) ?? 0),
+);
+
 const chooseCandidate = ({
   candidates,
   preferredDifficulty,
   selectedIds,
   objectiveCounts,
+  sourceExerciseCounts,
+  attempt,
+  rotationSeed,
   recentItemIds,
   targetObjectiveIds,
   priorityItemIds,
@@ -205,6 +219,9 @@ const chooseCandidate = ({
   preferredDifficulty: PracticeDifficulty;
   selectedIds: ReadonlySet<string>;
   objectiveCounts: ReadonlyMap<string, number>;
+  sourceExerciseCounts: ReadonlyMap<string, number>;
+  attempt: number;
+  rotationSeed: string;
   recentItemIds: ReadonlySet<string>;
   targetObjectiveIds: ReadonlySet<string>;
   priorityItemIds: ReadonlySet<string>;
@@ -218,6 +235,19 @@ const chooseCandidate = ({
   const recencyPool = fresh.length ? fresh : preferencePool;
   const preferred = recencyPool.filter((item) => item.difficulty === preferredDifficulty);
   const pool = preferred.length ? preferred : recencyPool;
+  const stablePool = [...pool].sort((left, right) => {
+    const rankDifference =
+      hashPracticeSeed(`${rotationSeed}|${left.id}`) -
+      hashPracticeSeed(`${rotationSeed}|${right.id}`);
+    return rankDifference || left.id.localeCompare(right.id, "en");
+  });
+  const rotationOffset = stablePool.length ? (attempt - 1) % stablePool.length : 0;
+  const attemptRanks = new Map(
+    stablePool.map((item, index) => [
+      item.id,
+      (index - rotationOffset + stablePool.length) % stablePool.length,
+    ] as const),
+  );
 
   return [...pool].sort((left, right) => {
     const recentDifference = Number(recentItemIds.has(left.id)) - Number(recentItemIds.has(right.id));
@@ -232,6 +262,22 @@ const chooseCandidate = ({
 
     if (objectiveDifference !== 0) {
       return objectiveDifference;
+    }
+
+    const sourceExerciseDifference =
+      sourceExerciseRank(left, sourceExerciseCounts) -
+      sourceExerciseRank(right, sourceExerciseCounts);
+
+    if (sourceExerciseDifference !== 0) {
+      return sourceExerciseDifference;
+    }
+
+    const attemptDifference =
+      (attemptRanks.get(left.id) ?? 0) -
+      (attemptRanks.get(right.id) ?? 0);
+
+    if (attemptDifference !== 0) {
+      return attemptDifference;
     }
 
     const leftRank = hashPracticeSeed(`${seed}|${left.id}`);
@@ -305,22 +351,23 @@ export const generatePracticePackFromCatalog = (
   const unitScope = units
     .map((unit) => `${unit.unitId}@${unit.contentVersion}`)
     .join(",");
-  const seed = [
+  const seedScope = [
     `schema-${catalog.schemaVersion}`,
     `generator-${catalog.generatorVersion}`,
     catalog.sourceHash,
     `units-${unitScope}`,
     options.mode,
     `count-${count}`,
-    `attempt-${attempt}`,
     `targets-${JSON.stringify(targetObjectiveIds)}`,
     `priority-${JSON.stringify(priorityItemIds)}`,
   ].join("|");
+  const seed = `${seedScope}|attempt-${attempt}`;
   const recentItemIds = new Set(options.recentItemIds ?? []);
   const targetObjectiveIdSet = new Set(targetObjectiveIds);
   const priorityItemIdSet = new Set(priorityItemIds);
   const selectedIds = new Set<string>();
   const objectiveCounts = new Map<string, number>();
+  const sourceExerciseCounts = new Map<string, number>();
   const selected: PracticeItem[] = [];
   const pattern = DIFFICULTY_PATTERNS[options.mode];
   const shuffledUnits = seededShuffle(units, `${seed}|unit-order`);
@@ -349,6 +396,9 @@ export const generatePracticePackFromCatalog = (
         preferredDifficulty,
         selectedIds,
         objectiveCounts,
+        sourceExerciseCounts,
+        attempt,
+        rotationSeed: `${seedScope}|position-${index}|unit-${unit.unitId}`,
         recentItemIds,
         targetObjectiveIds: targetObjectiveIdSet,
         priorityItemIds: priorityItemIdSet,
@@ -365,6 +415,9 @@ export const generatePracticePackFromCatalog = (
       candidate.objectiveId,
       (objectiveCounts.get(candidate.objectiveId) ?? 0) + 1,
     );
+    sourceExerciseKeys(candidate).forEach((key) => {
+      sourceExerciseCounts.set(key, (sourceExerciseCounts.get(key) ?? 0) + 1);
+    });
     selected.push(
       shuffleItemChoices(candidate, `${seed}|${candidate.id}|choices`),
     );

@@ -4,13 +4,18 @@ export const LEARNING_PROGRESS_VERSION = 2;
 
 export type StorageLike = Pick<Storage, "getItem" | "setItem">;
 
+export type PracticeItemRef = {
+  id: string;
+  revision: number;
+};
+
 export type PracticeRunProgress = {
   attempt: number;
   recentItemIds: string[];
   priorityItemIds: string[];
   targetObjectiveIds: string[];
   packId: string;
-  itemRefs: Array<{ id: string; revision: number }>;
+  itemRefs: PracticeItemRef[];
   phase: "practice" | "repair";
   repairItemIds: string[];
   firstPassScore?: number;
@@ -71,6 +76,8 @@ export type LearningProgress = {
   sessions: Record<string, SessionProgress>;
   skills: Record<string, SkillProgress>;
   practiceAttempts: Record<string, number>;
+  recentItemRefs: PracticeItemRef[];
+  mistakeItemRefs: PracticeItemRef[];
   recentItemIds: string[];
   mistakeItemIds: string[];
   activeDays: string[];
@@ -129,6 +136,90 @@ const uniqueStrings = (value: unknown, limit = 40) => Array.isArray(value)
       .slice(-limit)
   : [];
 
+const upsertItemRefs = (
+  values: readonly PracticeItemRef[],
+  limit = 40,
+): PracticeItemRef[] => {
+  const refsById = new Map<string, PracticeItemRef>();
+
+  for (const value of values) {
+    if (!value.id || !Number.isInteger(value.revision) || value.revision <= 0) continue;
+    refsById.delete(value.id);
+    refsById.set(value.id, { id: value.id, revision: value.revision });
+  }
+
+  return [...refsById.values()].slice(-limit);
+};
+
+const sanitizeItemRefs = (value: unknown, limit = 40): PracticeItemRef[] =>
+  Array.isArray(value)
+    ? upsertItemRefs(
+        value.flatMap((item) =>
+          isRecord(item) &&
+          typeof item.id === "string" &&
+          item.id &&
+          Number.isInteger(item.revision) &&
+          Number(item.revision) > 0
+            ? [{ id: item.id, revision: Number(item.revision) }]
+            : [],
+        ),
+        limit,
+      )
+    : [];
+
+const filterCurrentItemRefs = (
+  refs: readonly PracticeItemRef[],
+  currentItemRefs: readonly PracticeItemRef[],
+) => {
+  const currentRevisionById = new Map(
+    currentItemRefs.map((item) => [item.id, item.revision] as const),
+  );
+  return upsertItemRefs(
+    refs.filter((item) => currentRevisionById.get(item.id) === item.revision),
+  );
+};
+
+const recoverLegacyItemRefs = (
+  value: unknown,
+  runItemRefs: readonly PracticeItemRef[],
+) => {
+  const revisionsById = new Map<string, Set<number>>();
+
+  for (const item of runItemRefs) {
+    const revisions = revisionsById.get(item.id) ?? new Set<number>();
+    revisions.add(item.revision);
+    revisionsById.set(item.id, revisions);
+  }
+
+  return uniqueStrings(value).flatMap((id) => {
+    const revisions = revisionsById.get(id);
+    return revisions?.size === 1
+      ? [{ id, revision: [...revisions][0] }]
+      : [];
+  });
+};
+
+export const getCurrentPracticeItemIds = (
+  refs: readonly PracticeItemRef[],
+  currentItemRefs: readonly PracticeItemRef[],
+) => filterCurrentItemRefs(refs, currentItemRefs).map((item) => item.id);
+
+export const filterLearningPracticeEvidence = (
+  progress: LearningProgress,
+  currentItemRefs: readonly PracticeItemRef[],
+): LearningProgress => {
+  const recentItemRefs = filterCurrentItemRefs(progress.recentItemRefs, currentItemRefs);
+  const mistakeItemRefs = filterCurrentItemRefs(progress.mistakeItemRefs, currentItemRefs);
+
+  return {
+    ...progress,
+    recentItemRefs,
+    mistakeItemRefs,
+    recentItemIds: recentItemRefs.map((item) => item.id),
+    mistakeItemIds: mistakeItemRefs.map((item) => item.id),
+  };
+};
+
 const sanitizeSkillResults = (value: unknown) => {
   if (!isRecord(value)) return undefined;
   const entries = Object.entries(value).flatMap(([id, result]) => {
@@ -180,17 +271,7 @@ const sanitizePracticeRun = (value: unknown): PracticeRunProgress | undefined =>
     ...(dailyScope && unitIds.length && hostSessionId
       ? { scope: "daily" as const, unitIds, hostSessionId }
       : {}),
-    itemRefs: Array.isArray(value.itemRefs)
-      ? value.itemRefs.flatMap((item) =>
-          isRecord(item) &&
-          typeof item.id === "string" &&
-          item.id &&
-          Number.isInteger(item.revision) &&
-          Number(item.revision) > 0
-            ? [{ id: item.id, revision: Number(item.revision) }]
-            : [],
-        ).slice(0, 40)
-      : [],
+    itemRefs: sanitizeItemRefs(value.itemRefs),
     recentItemIds: uniqueStrings(value.recentItemIds),
   };
 };
@@ -332,6 +413,8 @@ export const createLearningProgress = (): LearningProgress => ({
   sessions: {},
   skills: {},
   practiceAttempts: {},
+  recentItemRefs: [],
+  mistakeItemRefs: [],
   recentItemIds: [],
   mistakeItemIds: [],
   activeDays: [],
@@ -340,7 +423,10 @@ export const createLearningProgress = (): LearningProgress => ({
   migrations: { legacyStandaloneImported: false },
 });
 
-export const parseLearningProgress = (value: string | null): LearningProgress => {
+export const parseLearningProgress = (
+  value: string | null,
+  currentItemRefs?: readonly PracticeItemRef[],
+): LearningProgress => {
   if (!value) {
     return createLearningProgress();
   }
@@ -357,17 +443,28 @@ export const parseLearningProgress = (value: string | null): LearningProgress =>
       Object.prototype.hasOwnProperty.call(sessions, parsed.activeSessionId)
       ? parsed.activeSessionId
       : null;
+    const runItemRefs = Object.values(sessions).flatMap(
+      (session) => session.practiceRun?.itemRefs ?? [],
+    );
+    const recentItemRefs = upsertItemRefs([
+      ...recoverLegacyItemRefs(parsed.recentItemIds, runItemRefs),
+      ...sanitizeItemRefs(parsed.recentItemRefs),
+    ]);
+    const mistakeItemRefs = upsertItemRefs([
+      ...recoverLegacyItemRefs(parsed.mistakeItemIds, runItemRefs),
+      ...sanitizeItemRefs(parsed.mistakeItemRefs),
+    ]);
 
-    return {
+    const progress: LearningProgress = {
       version: LEARNING_PROGRESS_VERSION,
       activeSessionId,
       sessions,
       skills: sanitizeSkills(parsed.skills),
       practiceAttempts: sanitizeAttemptCounts(parsed.practiceAttempts),
-      recentItemIds: Array.isArray(parsed.recentItemIds)
-        ? parsed.recentItemIds.filter((item): item is string => typeof item === "string").slice(-40)
-        : [],
-      mistakeItemIds: uniqueStrings(parsed.mistakeItemIds),
+      recentItemRefs,
+      mistakeItemRefs,
+      recentItemIds: recentItemRefs.map((item) => item.id),
+      mistakeItemIds: mistakeItemRefs.map((item) => item.id),
       activeDays: Array.isArray(parsed.activeDays)
         ? parsed.activeDays.filter(
             (item): item is string => typeof item === "string" && /^\d{4}-\d{2}-\d{2}$/.test(item),
@@ -377,15 +474,23 @@ export const parseLearningProgress = (value: string | null): LearningProgress =>
       preferences: sanitizePreferences(parsed.preferences),
       migrations: sanitizeMigrations(parsed.migrations),
     };
+
+    return currentItemRefs
+      ? filterLearningPracticeEvidence(progress, currentItemRefs)
+      : progress;
   } catch {
     return createLearningProgress();
   }
 };
 
-export const readLearningProgress = (storage: StorageLike): LearningProgress => {
+export const readLearningProgress = (
+  storage: StorageLike,
+  currentItemRefs?: readonly PracticeItemRef[],
+): LearningProgress => {
   try {
     return parseLearningProgress(
       storage.getItem(LEARNING_PROGRESS_KEY) ?? storage.getItem(LEGACY_LEARNING_PROGRESS_KEY),
+      currentItemRefs,
     );
   } catch {
     return createLearningProgress();
@@ -554,13 +659,22 @@ export const beginPracticeRepair = (
 ): LearningProgress => {
   const existing = progress.sessions[sessionId];
   if (!existing?.practiceRun) return progress;
+  const runItemRefById = new Map(
+    existing.practiceRun.itemRefs.map((item) => [item.id, item] as const),
+  );
+  const repairItemRefs = repair.repairItemIds.flatMap((itemId) => {
+    const itemRef = runItemRefById.get(itemId);
+    return itemRef ? [itemRef] : [];
+  });
+  const mistakeItemRefs = upsertItemRefs([
+    ...progress.mistakeItemRefs,
+    ...repairItemRefs,
+  ]);
 
   return {
     ...progress,
-    mistakeItemIds: [...new Set([
-      ...progress.mistakeItemIds,
-      ...repair.repairItemIds,
-    ])].slice(-40),
+    mistakeItemRefs,
+    mistakeItemIds: mistakeItemRefs.map((item) => item.id),
     sessions: {
       ...progress.sessions,
       [sessionId]: {
@@ -650,11 +764,13 @@ export const completeLearningSession = (
     total?: number;
     skillRefs?: string[];
     itemIds?: string[];
+    itemRefs?: PracticeItemRef[];
     nextSessionId?: string | null;
     skillResults?: Record<string, { score: number; total: number }>;
     minutes?: number;
     activityType?: LearningActivity["type"];
     mistakeItemIds?: string[];
+    mistakeItemRefs?: PracticeItemRef[];
     preserveActiveSession?: boolean;
   } = {},
   now = new Date().toISOString(),
@@ -691,10 +807,37 @@ export const completeLearningSession = (
 
   const hasNextSession = Object.prototype.hasOwnProperty.call(options, "nextSessionId");
 
+  const evidenceItemRefs = upsertItemRefs([
+    ...(existing.practiceRun?.itemRefs ?? []),
+    ...(options.itemRefs ?? []),
+    ...(options.mistakeItemRefs ?? []),
+  ]);
+  const evidenceItemRefById = new Map(
+    evidenceItemRefs.map((item) => [item.id, item] as const),
+  );
   const successfulItemIds = new Set(options.itemIds ?? []);
-  const mistakeItemIds = new Set(started.mistakeItemIds);
-  successfulItemIds.forEach((itemId) => mistakeItemIds.delete(itemId));
-  (options.mistakeItemIds ?? []).forEach((itemId) => mistakeItemIds.add(itemId));
+  const successfulItemRefs = [...successfulItemIds].flatMap((itemId) => {
+    const itemRef = evidenceItemRefById.get(itemId);
+    return itemRef ? [itemRef] : [];
+  });
+  const requestedMistakeItemIds = new Set([
+    ...(options.mistakeItemIds ?? []),
+    ...(options.mistakeItemRefs ?? []).map((item) => item.id),
+  ]);
+  const requestedMistakeItemRefs = [...requestedMistakeItemIds].flatMap((itemId) => {
+    const itemRef = evidenceItemRefById.get(itemId);
+    return itemRef ? [itemRef] : [];
+  });
+  const mistakeItemRefById = new Map(
+    started.mistakeItemRefs.map((item) => [item.id, item] as const),
+  );
+  successfulItemIds.forEach((itemId) => mistakeItemRefById.delete(itemId));
+  requestedMistakeItemRefs.forEach((item) => mistakeItemRefById.set(item.id, item));
+  const recentItemRefs = upsertItemRefs([
+    ...started.recentItemRefs,
+    ...successfulItemRefs,
+  ]);
+  const mistakeItemRefs = upsertItemRefs([...mistakeItemRefById.values()]);
 
   const completed: LearningProgress = {
     ...started,
@@ -716,8 +859,10 @@ export const completeLearningSession = (
       },
     },
     skills,
-    recentItemIds: [...new Set([...started.recentItemIds, ...(options.itemIds ?? [])])].slice(-40),
-    mistakeItemIds: [...mistakeItemIds].slice(-40),
+    recentItemRefs,
+    mistakeItemRefs,
+    recentItemIds: recentItemRefs.map((item) => item.id),
+    mistakeItemIds: mistakeItemRefs.map((item) => item.id),
   };
 
   return options.minutes

@@ -103,7 +103,7 @@ Later, Meredith asked her friends about their dreams. Cristina answered first. S
 
 Cristina closed her book. "I am working on that. A tired surgeon is not a better surgeon."
 
-Alex's answer surprised Meredith. When he was a new intern, he often tried to look stronger and cleverer than everyone else. He had become kinder with patients, even if he still made rude jokes with friends.
+Alex's answer surprised Meredith. When he was a new intern, he often tried to look stronger and cleverer than everyone else. Over time, he became kinder with patients, even if he still made rude jokes with friends.
 
 "I want to be the doctor people trust when everything goes wrong," he said. "Trauma care is faster and less predictable than many other areas. I cannot control every result, but I can keep going when a patient needs me."
 
@@ -113,7 +113,7 @@ Izzie's dream was different. She wanted to join medical missions and work in pla
 
 Meredith noticed that none of her friends had exactly the same goal. Cristina wanted deep knowledge of the heart. Alex wanted to be calm in emergencies. Izzie wanted to bring care to people who could not easily get it. One dream was not better than another.
 
-The next morning, a young intern named Sam asked Meredith for advice. He had made a small mistake in a patient report and felt terrible.
+The next morning, a young intern named Sam asked Meredith for advice. Earlier that morning, he made a small mistake in a patient report and felt terrible.
 
 "I am the worst intern here," he said.
 
@@ -143,13 +143,13 @@ Meredith felt peaceful as the sun went down. She was learning that success did n
 
 *Supratimo klausimai*
 
-1. How long had Meredith been working at the hospital?
+1. For how many years was Meredith at the hospital before this conference?
 2. What was Dr. Catherine Avery known for?
 3. What did Catherine say about Meredith's surgical technique?
 4. What did Catherine teach Meredith about greatness?
 5. What did Derek tell Meredith about her career?
 6. What was Cristina's dream?
-7. How had Alex changed from his intern days?
+7. How was Alex different from his intern days?
 8. What did Izzie want to do with her medical career?
 9. What did Meredith learn about success?
 10. How did Meredith feel at the end of the chapter?

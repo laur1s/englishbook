@@ -46,8 +46,9 @@ test("Unit 12 is an interim A2.2 checkpoint and cannot claim completion when ope
 
   assert.equal(module12.title, "A2.2 checkpoint");
   assert.equal(learnSession.title, "Consolidate Units 1–12");
-  assert.equal(learnSession.revision, 3);
+  assert.ok(learnSession.revision >= 6, "Unit 12 content changes must invalidate revision 5 evidence");
   assert.equal(reviewSession.title, "Complete the A2.2 checkpoint");
+  assert.equal(reviewSession.revision, 2);
   assert.equal(manifest.modules[manifest.modules.indexOf(module12) + 1].id, "module-13");
 
   assert.match(unit12, /Opening this lesson does not complete the checkpoint/);

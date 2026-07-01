@@ -6,8 +6,12 @@ import {
   buildMomentumSummary,
   buildSkillQueue,
   formatLastSeen,
+  getListeningRecallSourceSessionId,
 } from "../src/lib/learning-insights.ts";
-import { createLearningProgress } from "../src/lib/learning-progress.ts";
+import {
+  completeLearningSession,
+  createLearningProgress,
+} from "../src/lib/learning-progress.ts";
 
 test("momentum uses a seven-day local calendar window and current revisions", () => {
   const progress = createLearningProgress();
@@ -109,6 +113,53 @@ test("skill queue names catalog objectives and puts overdue skills first", () =>
   assert.equal(queue[0].status, "Due");
   assert.equal(queue[0].lastSeenLabel, "2 days ago");
   assert.equal(queue[1].status, "Developing");
+});
+
+test("due listening evidence resolves to its current source speaking mission", () => {
+  const learned = completeLearningSession(
+    createLearningProgress(),
+    "module-01-speak",
+    {
+      revision: 2,
+      skillRefs: ["listening.a2-comprehension"],
+      skillResults: { "listening.a2-comprehension": { score: 1, total: 2 } },
+      minutes: 5,
+      activityType: "speaking",
+    },
+    "2026-07-01T08:00:00.000Z",
+  );
+  const [skill] = buildSkillQueue(
+    learned,
+    {},
+    "2026-07-02T08:00:00.000Z",
+    "Europe/Vilnius",
+  );
+  const currentSessions = [{
+    id: "module-01-speak",
+    stage: "speak",
+    skillRefs: ["speaking.introduction", "listening.a2-comprehension"],
+  }];
+
+  assert.equal(skill.label, "Listening comprehension");
+  assert.equal(skill.status, "Due");
+  assert.equal(
+    getListeningRecallSourceSessionId(skill, currentSessions),
+    "module-01-speak",
+  );
+  assert.equal(
+    getListeningRecallSourceSessionId(skill, [{
+      ...currentSessions[0],
+      skillRefs: ["speaking.introduction"],
+    }]),
+    null,
+  );
+  assert.equal(
+    getListeningRecallSourceSessionId(
+      { id: "u01.be-forms", sourceSessionId: "module-01-speak" },
+      currentSessions,
+    ),
+    null,
+  );
 });
 
 test("mistake summary groups stable item IDs by named objective", () => {

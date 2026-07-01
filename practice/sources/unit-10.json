@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-10",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "title": "Unit 10: Present Tenses Contrast",
   "objectives": [
     { "id": "u10.present-simple", "label": { "en": "Use Present Simple for routines and facts", "lt": "Vartoti Present Simple įpročiams ir faktams" } },
@@ -109,18 +109,18 @@
     },
     {
       "id": "u10.present-continuous.008",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u10.present-continuous",
       "type": "single-choice",
       "difficulty": 3,
-      "prompt": { "en": "Which tense does “at the moment” most clearly signal in this unit?", "lt": "Kurį laiką šiame skyriuje aiškiausiai nurodo at the moment?" },
+      "prompt": { "en": "Mina is speaking to a client at the moment. Which tense shows that the action is in progress now?", "lt": "Mina šiuo metu kalbasi su klientu. Kuris laikas parodo, kad veiksmas vyksta dabar?" },
       "choices": [
         { "id": "present-continuous", "text": "Present Continuous" },
         { "id": "present-simple", "text": "Present Simple" },
         { "id": "past-simple", "text": "Past Simple" }
       ],
       "answer": { "choiceId": "present-continuous" },
-      "rationale": { "en": "At the moment points to an action in progress now.", "lt": "At the moment nurodo dabar vykstantį veiksmą." },
+      "rationale": { "en": "The intended meaning is an action in progress now, so use Present Continuous; at the moment supports that meaning.", "lt": "Norima pasakyti, kad veiksmas vyksta dabar, todėl vartojamas Present Continuous; žodžiai at the moment padeda patvirtinti šią reikšmę." },
       "sourceRefs": [{ "lesson": "unit-10", "exercise": 5 }]
     },
     {

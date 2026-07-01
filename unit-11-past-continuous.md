@@ -36,7 +36,7 @@ status: "published"
 - when - kai
 - while - kol, tuo metu kai
 - at 5 o'clock yesterday - vakar 5 valandą
-- all day yesterday - visą vakardieną
+- all day yesterday - visą vakarykštę dieną
 - from 2 to 4 PM - nuo 2 iki 4 valandos
 - in 2010 - 2010 metais
 
@@ -240,7 +240,7 @@ Check that every answer has **was/were + verb-ing** and a clear subject.
 
 **Read the text:**
 
-Yesterday was a very interesting day. I was walking home from work when I saw an accident. Two cars were trying to park when one of them hit the other. The drivers were shouting at each other while people were watching. A police officer was talking to the drivers when I walked past.
+Yesterday was a very interesting day. I was walking home from work when I saw an accident. Two drivers were trying to park their cars when one car hit the other. The drivers were shouting at each other while people were watching. A police officer was talking to the drivers when I walked past.
 
 Later, I was having dinner when my phone rang. It was my sister calling from London. She was very excited because she was getting married next month. While we were talking, my food was getting cold!
 
@@ -249,7 +249,7 @@ In the evening, I was watching a film when the electricity went out. The whole n
 **Answer the questions:**
 
 1. What was the writer doing when he saw the accident? _____________________
-2. What were the two cars doing? _____________________
+2. What were the two drivers doing? _____________________
 3. What were the drivers doing? _____________________
 4. What was the police officer doing? _____________________
 5. What was the writer doing when his phone rang? _____________________
@@ -281,7 +281,7 @@ Translate from Lithuanian to English:
 Correct the mistakes:
 
 1. I was ate dinner when you called. _____________________
-2. She was study English last night. _____________________
+2. At 8 p.m. last night, she was study English. _____________________
 3. They were play football when it started to rain. _____________________
 4. At 3 PM yesterday, he was worked. _____________________
 5. We were watching TV when the phone ringed. _____________________
@@ -341,9 +341,9 @@ B: Yes, I was eating when it rang.
 **Complete the dialogue:**
 
 A: Where were you yesterday at 3 PM?
-B: I _____ (shop) in the city center.
+B: I was at the shopping mall. I _____ (shop) for clothes.
 A: What happened?
-B: I _____ (shop) for clothes when I met an old friend.
+B: While I _____ (shop), I met an old friend.
 
 **Dialogue 2: Background Events**
 

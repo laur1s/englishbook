@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-02",
-  "contentVersion": 4,
+  "contentVersion": 5,
   "title": "Daily Routines and Present Simple",
   "objectives": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "id": "u02.routine-reading.009",
-      "revision": 3,
+      "revision": 4,
       "objectiveId": "u02.routine-reading",
       "type": "fill-blank",
       "difficulty": 3,
@@ -220,12 +220,12 @@
         "lt": "Darbo dienų rytais išėjusi iš namų Ona įlipa į autobusą. Prieš 8.30 val. ji išlipa netoli mokyklos. Užbaikite: „She goes to school ___.“"
       },
       "answer": {
-        "accepted": ["by bus"],
+        "accepted": ["by bus", "on the bus"],
         "caseSensitive": false
       },
       "rationale": {
-        "en": "Getting on a bus to reach school means she travels by bus.",
-        "lt": "Jei ji į mokyklą vyksta autobusu, angliškai sakome „by bus“."
+        "en": "Both by bus and on the bus are natural here: they say which transport Ona uses.",
+        "lt": "Čia natūralu sakyti ir „by bus“, ir „on the bus“: abu variantai nurodo, kokiu transportu Ona vyksta."
       },
       "sourceRefs": [{"lesson": "unit-02", "exercise": 5}]
     },

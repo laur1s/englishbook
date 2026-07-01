@@ -21,14 +21,115 @@ const LITHUANIAN_HINTS =
 
 const markdownRenderer = new marked.Renderer();
 const renderLink = markdownRenderer.link.bind(markdownRenderer);
+const renderImage = markdownRenderer.image.bind(markdownRenderer);
 
-markdownRenderer.link = (token) =>
-  renderLink({
+const escapeHtml = (value: string) =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+const ALLOWED_URL_SCHEMES = new Set(["http", "https", "mailto", "tel"]);
+
+const decodeUrlCharacterReferences = (value: string) => {
+  let invalidCodePoint = false;
+  const decodeNumericReference = (reference: string, code: string, radix: number) => {
+    const codePoint = Number.parseInt(code, radix);
+    const isUnicodeScalar = Number.isInteger(codePoint) &&
+      codePoint >= 0 &&
+      codePoint <= 0x10ffff &&
+      !(codePoint >= 0xd800 && codePoint <= 0xdfff);
+
+    if (!isUnicodeScalar) {
+      invalidCodePoint = true;
+      return reference;
+    }
+
+    return String.fromCodePoint(codePoint);
+  };
+
+  const decoded = value
+    .replace(/&#(\d+);?/g, (reference, code) => decodeNumericReference(reference, code, 10))
+    .replace(/&#x([\da-f]+);?/gi, (reference, code) => decodeNumericReference(reference, code, 16))
+    .replace(/&colon;/gi, ":")
+    .replace(/&tab;/gi, "\t")
+    .replace(/&newline;/gi, "\n")
+    .replace(/&amp;/gi, "&");
+
+  return invalidCodePoint ? null : decoded;
+};
+
+const isSafeMarkdownUrl = (value: string) => {
+  const decodedHref = decodeUrlCharacterReferences(value);
+  if (decodedHref === null) return false;
+  const href = decodedHref.trim();
+
+  if (!href || href.startsWith("//")) {
+    return false;
+  }
+
+  const compactPrefix = href.slice(0, 64).replace(/[\u0000-\u0020\u007f]+/g, "");
+  const scheme = compactPrefix.match(/^([a-z][a-z0-9+.-]*):/i)?.[1]?.toLowerCase();
+
+  return !scheme || ALLOWED_URL_SCHEMES.has(scheme);
+};
+
+const sanitizeAllowedRawTag = (tag: string) => {
+  if (/^<\/?(?:strong|em)>$/i.test(tag) || /^<br\s*\/?>$/i.test(tag)) {
+    return tag.toLowerCase();
+  }
+
+  if (/^<\/(?:p|span)>$/i.test(tag)) {
+    return tag.toLowerCase();
+  }
+
+  if (/^<(?:p|span) class=(?:"lt-text"|'lt-text') lang=(?:"lt"|'lt')>$/i.test(tag)) {
+    const element = tag.match(/^<(p|span)\b/i)?.[1]?.toLowerCase();
+    return element ? `<${element} class="lt-text" lang="lt">` : escapeHtml(tag);
+  }
+
+  return escapeHtml(tag);
+};
+
+const sanitizeRawHtml = (value: string) => {
+  let output = "";
+  let cursor = 0;
+
+  for (const match of value.matchAll(/<[^>]*>/g)) {
+    const index = match.index ?? 0;
+    output += escapeHtml(value.slice(cursor, index));
+    output += sanitizeAllowedRawTag(match[0]);
+    cursor = index + match[0].length;
+  }
+
+  return output + escapeHtml(value.slice(cursor));
+};
+
+markdownRenderer.link = (token) => {
+  if (!isSafeMarkdownUrl(token.href)) {
+    return escapeHtml(token.text);
+  }
+
+  return renderLink({
     ...token,
-    href: token.href.startsWith("/") && !token.href.startsWith("//")
-      ? withBase(token.href)
-      : token.href,
+    href: token.href.startsWith("/") ? withBase(token.href) : token.href,
   });
+};
+
+markdownRenderer.image = (token) => {
+  if (!isSafeMarkdownUrl(token.href)) {
+    return escapeHtml(token.text);
+  }
+
+  return renderImage({
+    ...token,
+    href: token.href.startsWith("/") ? withBase(token.href) : token.href,
+  });
+};
+
+markdownRenderer.html = (token) => sanitizeRawHtml(token.text);
 
 marked.setOptions({
   gfm: true,
@@ -257,7 +358,7 @@ export const parseDocument = ({
     sections: sections.map((section) => ({
       id: slugify(stripMarkdown(getPrimaryHeadingTitle(section.title))),
       title: stripMarkdown(section.title),
-      titleHtml: transformHeadingTitle(section.title),
+      titleHtml: sanitizeRawHtml(transformHeadingTitle(section.title)),
       html: renderMarkdown(section.markdown),
       collapsible: REVEAL_SECTION_PATTERN.test(section.title),
     })),

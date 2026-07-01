@@ -4,6 +4,7 @@ import { getContentSessionByHref } from "../lib/course-path";
 
 import {
   MISSION_TYPE_LABELS,
+  SPEAKING_COMPLETED_RUN_LIMIT,
   SPEAKING_PROGRESS_KEY,
   STEP_KIND_LABELS,
   formatDurationMinutes,
@@ -379,7 +380,10 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
   </noscript>
 </section>
 
-<script is:inline define:vars={{ progressKey: SPEAKING_PROGRESS_KEY }}>
+<script is:inline define:vars={{
+  progressKey: SPEAKING_PROGRESS_KEY,
+  completedRunLimit: SPEAKING_COMPLETED_RUN_LIMIT,
+}}>
   const readSpeakingProgress = () => {
     try {
       const raw = localStorage.getItem(progressKey);
@@ -398,10 +402,105 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
   const writeSpeakingProgress = (value) => {
     try {
       localStorage.setItem(progressKey, JSON.stringify(value));
+      window.dispatchEvent(new CustomEvent("english-library:speaking-progress"));
       return true;
     } catch {
       return false;
     }
+  };
+
+  const isSpeakingRecord = (value) =>
+    Boolean(value) && typeof value === "object" && !Array.isArray(value);
+
+  const normalizeStoredDate = (value) => {
+    if (typeof value !== "string" || !Number.isFinite(Date.parse(value))) return null;
+    return new Date(value).toISOString();
+  };
+
+  const sanitizeStringIds = (value) => Array.isArray(value)
+    ? [...new Set(value.flatMap((item) => {
+        if (typeof item !== "string") return [];
+        const normalized = item.trim().slice(0, 120);
+        return normalized ? [normalized] : [];
+      }))].slice(0, 12)
+    : [];
+
+  const sanitizeCompletedRun = (value) => {
+    if (!isSpeakingRecord(value) || value.completed !== true) return null;
+    const completedAt = normalizeStoredDate(value.completedAt);
+    if (!completedAt) return null;
+
+    const storedRevision = Number(value.revision ?? 1);
+    const run = {
+      revision: Number.isInteger(storedRevision) && storedRevision > 0 ? storedRevision : 1,
+      completed: true,
+      completedAt,
+    };
+    const startedAt = normalizeStoredDate(value.startedAt);
+    const lastPlayedAt = normalizeStoredDate(value.lastPlayedAt);
+    const ratedAt = normalizeStoredDate(value.ratedAt);
+    const activeStep = Number(value.activeStep);
+    const confidence = Number(value.lastConfidence);
+    const selfChecks = sanitizeStringIds(value.selfChecks);
+
+    if (startedAt) run.startedAt = startedAt;
+    if (lastPlayedAt) run.lastPlayedAt = lastPlayedAt;
+    if (ratedAt) run.ratedAt = ratedAt;
+    if (Number.isInteger(activeStep) && activeStep >= 0) run.activeStep = activeStep;
+    if (Number.isInteger(confidence) && confidence >= 1 && confidence <= 5) {
+      run.lastConfidence = confidence;
+    }
+    if (selfChecks.length) run.selfChecks = selfChecks;
+    if (value.noRecording === true) run.noRecording = true;
+    if (value.listened === true) run.listened = true;
+
+    if (isSpeakingRecord(value.listening)) {
+      run.listening = {
+        assisted: value.listening.assisted === true,
+        played: value.listening.played === true,
+        revealed: value.listening.revealed === true,
+        shadowed: value.listening.shadowed === true,
+        correctIds: sanitizeStringIds(value.listening.correctIds),
+        firstAttemptCorrectIds: sanitizeStringIds(value.listening.firstAttemptCorrectIds),
+        attemptedIds: sanitizeStringIds(value.listening.attemptedIds),
+      };
+    }
+
+    return run;
+  };
+
+  // Keep only compact, valid evidence for the five most recent completed runs.
+  const sanitizeCompletedRuns = (value) => {
+    if (!Array.isArray(value)) return [];
+    const uniqueRuns = new Map();
+
+    value.forEach((run) => {
+      const sanitized = sanitizeCompletedRun(run);
+      if (!sanitized) return;
+      uniqueRuns.set(`${sanitized.revision}:${sanitized.completedAt}`, sanitized);
+    });
+
+    return [...uniqueRuns.values()]
+      .sort((left, right) => Date.parse(left.completedAt) - Date.parse(right.completedAt))
+      .slice(-completedRunLimit);
+  };
+
+  const archiveCompletedRun = (runs, value) => {
+    const completedRun = sanitizeCompletedRun(value);
+    return sanitizeCompletedRuns([
+      ...sanitizeCompletedRuns(runs),
+      ...(completedRun ? [completedRun] : []),
+    ]);
+  };
+
+  const sanitizeRecordHistory = (value) => {
+    if (!isSpeakingRecord(value)) return {};
+    const { completedRuns: storedRuns, ...record } = value;
+    const completedRuns = sanitizeCompletedRuns(storedRuns);
+    return {
+      ...record,
+      ...(completedRuns.length ? { completedRuns } : {}),
+    };
   };
 
   const formatCountdown = (seconds) => {
@@ -457,28 +556,22 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
     };
 
     let progress = readSpeakingProgress();
+    const recordWithHistory = isSpeakingRecord(progress[slug]) ? progress[slug] : null;
+
+    if (recordWithHistory && Object.prototype.hasOwnProperty.call(recordWithHistory, "completedRuns")) {
+      progress = {
+        ...progress,
+        [slug]: sanitizeRecordHistory(recordWithHistory),
+      };
+      writeSpeakingProgress(progress);
+    }
+
     const shouldStartFreshRun = root.dataset.resetOnFreshRequest === "true" &&
       new URL(window.location.href).searchParams.get("fresh") === "1";
 
     if (shouldStartFreshRun) {
-      const storedRecord = progress[slug] && typeof progress[slug] === "object" && !Array.isArray(progress[slug])
-        ? progress[slug]
-        : {};
-      const completedRuns = Array.isArray(storedRecord.completedRuns)
-        ? storedRecord.completedRuns.filter((run) => run && typeof run === "object" && !Array.isArray(run))
-        : [];
-      let nextCompletedRuns = [...completedRuns];
-
-      if (storedRecord.completed === true) {
-        const { completedRuns: ignoredCompletedRuns, ...completedRun } = storedRecord;
-        const completedAt = typeof completedRun.completedAt === "string" ? completedRun.completedAt : "";
-        const alreadyArchived = nextCompletedRuns.some((run) =>
-          run.completedAt === completedAt &&
-          Number(run.revision ?? 1) === Number(completedRun.revision ?? 1)
-        );
-
-        if (!alreadyArchived) nextCompletedRuns.push(completedRun);
-      }
+      const storedRecord = sanitizeRecordHistory(progress[slug]);
+      const nextCompletedRuns = archiveCompletedRun(storedRecord.completedRuns, storedRecord);
 
       const freshRecord = {
         revision,
@@ -507,6 +600,7 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
     let recordedChunks = [];
     let currentUtterance = null;
     let disposing = false;
+    let shouldRestoreRecordingFocus = false;
 
     const getRecord = () => {
       return shouldStartFreshRun ? currentRunRecord : selectCurrentRecord(progress[slug]);
@@ -520,15 +614,23 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
 
     const updateProgress = (updates) => {
       progress = readSpeakingProgress();
-      const storedRecord = selectCurrentRecord(progress[slug]);
-      const previousRecord = shouldStartFreshRun && storedRecord.startedAt !== currentRunRecord.startedAt
-        ? currentRunRecord
-        : storedRecord;
-      const nextRecord = {
+      const storedValue = sanitizeRecordHistory(progress[slug]);
+      const storedRecord = sanitizeRecordHistory(selectCurrentRecord(progress[slug]));
+      const storedRevision = Number(storedValue.revision ?? 1);
+      const carriedRuns = storedRevision === revision
+        ? sanitizeCompletedRuns(storedRecord.completedRuns)
+        : archiveCompletedRun(storedValue.completedRuns, storedValue);
+      const revisionRecord = storedRevision === revision
+        ? storedRecord
+        : carriedRuns.length ? { completedRuns: carriedRuns } : {};
+      const previousRecord = shouldStartFreshRun && revisionRecord.startedAt !== currentRunRecord.startedAt
+        ? sanitizeRecordHistory(currentRunRecord)
+        : revisionRecord;
+      const nextRecord = sanitizeRecordHistory({
         ...previousRecord,
         ...updates,
         revision,
-      };
+      });
       currentRunRecord = nextRecord;
 
       progress = {
@@ -704,7 +806,8 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
       }) || "";
     };
 
-    const stopRecording = () => {
+    const stopRecording = (restoreFocus = false) => {
+      shouldRestoreRecordingFocus = restoreFocus;
       if (mediaRecorder && mediaRecorder.state !== "inactive") {
         mediaRecorder.stop();
         announce("Recording stopped. Your take is ready to replay.");
@@ -764,6 +867,17 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
 
           recordedChunks = [];
           syncRecordingUi();
+          if (shouldRestoreRecordingFocus && !disposing) {
+            const recordButton = recordingPanel.querySelector("[data-record]");
+            const replaceButton = recordingPanel.querySelector("[data-replace-recording]");
+            const focusTarget = audioUrl && playback && !playback.hidden
+              ? playback
+              : recordButton && !recordButton.hidden
+                ? recordButton
+                : replaceButton;
+            window.requestAnimationFrame(() => focusTarget?.focus());
+          }
+          shouldRestoreRecordingFocus = false;
         }, { once: true });
 
         revokeAudio();
@@ -780,6 +894,8 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
         if (noRecording) noRecording.checked = false;
         markStarted({ noRecording: false });
         syncRecordingUi("recording");
+        const stopButton = recordingPanel.querySelector("[data-stop-recording]");
+        window.requestAnimationFrame(() => stopButton?.focus());
         const speakingStep = recordingPanel.closest("[data-mission-step]");
         startTimer(speakingStep);
         announce("Recording started. Speak naturally; press Stop when you finish.");
@@ -997,9 +1113,6 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
           announce("Mission finished in this tab, but the browser could not save it. Enable site storage, then finish again.");
           return;
         }
-        nextButton.textContent = "Mission completed";
-        nextButton.disabled = true;
-        announce("Mission completed. Your progress is saved on this device.");
         const detail = {
           slug,
           confidence: hasConfidence ? confidence : null,
@@ -1015,10 +1128,20 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
           };
         }
 
-        root.dispatchEvent(new CustomEvent("english-library:speaking-complete", {
+        const completionAccepted = root.dispatchEvent(new CustomEvent("english-library:speaking-complete", {
           bubbles: true,
+          cancelable: true,
           detail,
         }));
+        if (!completionAccepted) {
+          nextButton.textContent = "Retry saving course step";
+          nextButton.disabled = false;
+          announce("Mission saved, but course progress could not be saved. Try Finish mission again.");
+          return;
+        }
+        nextButton.textContent = "Mission completed";
+        nextButton.disabled = true;
+        announce("Mission completed. Your progress is saved on this device.");
         return;
       }
 
@@ -1040,7 +1163,7 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
     });
 
     recordingPanel?.querySelector("[data-record]")?.addEventListener("click", startRecording);
-    recordingPanel?.querySelector("[data-stop-recording]")?.addEventListener("click", stopRecording);
+    recordingPanel?.querySelector("[data-stop-recording]")?.addEventListener("click", () => stopRecording(true));
     recordingPanel?.querySelector("[data-replace-recording]")?.addEventListener("click", startRecording);
     recordingPanel?.querySelector("[data-no-recording]")?.addEventListener("change", (event) => {
       const selected = event.currentTarget.checked;
@@ -1152,6 +1275,7 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
   const writeProgress = (progress: SpeakingProgress): boolean => {
     try {
       localStorage.setItem(SPEAKING_PROGRESS_KEY, JSON.stringify(progress));
+      window.dispatchEvent(new CustomEvent("english-library:speaking-progress"));
       return true;
     } catch {
       return false;
@@ -1417,7 +1541,7 @@ const getModelText = (prompt: string) => prompt.replace(modelPrefix, "").trim();
       persist(
         (record) => setListeningShadowed(record, shadowCheckbox.checked),
         shadowCheckbox.checked
-          ? "Repeat practice saved. Correct both answers to continue."
+          ? "Repeat practice saved. Finish any corrections, then continue to Reflect."
           : "Repeat practice cleared. Finish it again before you continue.",
       );
     });

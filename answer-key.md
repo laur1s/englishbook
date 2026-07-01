@@ -430,7 +430,7 @@ Answers will vary. Check Past Simple forms, chronological order, and past-time e
 8. U
 9. U
 10. C
-11. U
+11. U (coffee as the drink in a pot; **a coffee/two coffees** can mean a cup or cups in a café)
 12. C
 13. U
 14. C
@@ -444,7 +444,7 @@ Answers will vary. Check Past Simple forms, chronological order, and past-time e
 5. any
 6. some
 7. some
-8. some
+8. some (the speaker is offering sugar)
 9. any
 10. some
 
@@ -583,7 +583,7 @@ The café role-play varies. It should contain a polite request and a clear quest
 ## Unit 5: Travel and Directions
 
 ### Exercise 1: Prepositions of Place
-1. next to
+1. next to / beside / by
 2. on
 3. opposite
 4. between
@@ -605,11 +605,11 @@ The café role-play varies. It should contain a polite request and a clear quest
 10. There are
 
 ### Exercise 3: Make negative sentences
-1. There isn't a bank here.
-2. There aren't any shops on this street.
-3. There isn't a bus to the airport.
-4. There aren't any hotels in the village.
-5. There isn't a pharmacy near here.
+1. There isn't a bank here. / There is no bank here.
+2. There aren't any shops on this street. / There are no shops on this street.
+3. There isn't a bus to the airport. / There is no bus to the airport.
+4. There aren't any hotels in the village. / There are no hotels in the village.
+5. There isn't a pharmacy near here. / There is no pharmacy near here.
 
 ### Exercise 4: Giving Directions
 straight, turn, on, opposite
@@ -651,7 +651,7 @@ Answers will vary. Check that each answer matches the question form. Example: **
 1. Where is the nearest bank?
 2. Go straight and turn right.
 3. Is it far to the airport?
-4. The hotel is next to the museum.
+4. The hotel is next to / beside / by the museum.
 5. There are many restaurants on this street.
 6. How do I get to the train station?
 7. The pharmacy is opposite the park.
@@ -800,7 +800,18 @@ Answers will vary. Check for **am/is/are going to + base verb** and clear time e
 **Own predictions:** Answers will vary. Check for **will/won't + base verb**.
 
 ### Exercise 9: Dialogue - Making Plans
-are, going to do, am going to visit, am not going to do, will watch, will be, will come, are going to leave, will be
+Natural completions include:
+
+1. **are ... going to do / are ... doing**
+2. **am going to visit / am visiting**
+3. **am not going to do / am not doing**
+4. **will watch / may watch / might watch**
+5. **will be**
+6. **will come / am coming**
+7. **are going to leave / are leaving**
+8. **will be**
+
+Use Present Continuous only when the speaker treats the plan as a fixed arrangement. **May/might** makes the film only a possibility.
 
 ### Exercise 10: Translation
 1. I'm going to study/learn English.
@@ -1010,7 +1021,7 @@ Checklist: three places; two learned skills; one **never** sentence; a reason; c
 2. the most beautiful
 3. the easiest
 4. the worst
-5. the furthest
+5. the farthest/furthest
 6. the best
 7. the smallest
 8. the most expensive
@@ -1050,12 +1061,12 @@ The sentence already contains **the**, so write only the missing form:
 ### Exercise 6: Comparison Dialogue
 A: Which is bigger, Vilnius or Kaunas?
 B: Vilnius is bigger than Kaunas. It's the biggest city in Lithuania.
-A: Is Vilnius more beautiful than other cities?
-B: Yes, it's one of the most beautiful cities in Europe.
-A: Which is more expensive, living in the city or in the countryside?
-B: Living in the city is more expensive than in the countryside.
-A: Is the food in restaurants better than homemade food?
-B: Homemade food is better. Restaurant food is more expensive, but not always better.
+A: In your opinion, is Vilnius more beautiful than other cities?
+B: Yes. I think it's one of the most beautiful cities in Europe.
+A: According to this price report, which is more expensive, living in the city or in the countryside?
+B: The report says living in the city is more expensive than in the countryside.
+A: In your opinion, is the food in restaurants better than homemade food?
+B: For me, homemade food is better. Restaurant food is often more expensive, but not always better.
 
 ### Exercise 7: Reading Comprehension
 1. Vilnius is bigger.
@@ -1063,9 +1074,9 @@ B: Homemade food is better. Restaurant food is more expensive, but not always be
 3. Lithuanian summer.
 4. July.
 5. Lithuanian winter.
-6. Cepelinai/traditional dishes.
+6. Cepelinai/traditional dishes, according to the class survey.
 7. Cepelinai.
-8. Yes, it is.
+8. Most learners said it was good.
 
 ### Exercise 8: Translation Practice
 Possible answers:
@@ -1106,7 +1117,7 @@ Dialogue blanks: **hotter, hotter, most beautiful, most beautiful**.
 
 ### Exercise 12: Extended Reading Comprehension 2
 1. Vilnius.
-2. Kaunas.
+2. Kaunas; the travel guide lists more parks there than in Klaipėda.
 3. Klaipėda.
 4. Summer.
 5. Winter.
@@ -1138,7 +1149,7 @@ Checklist: at least two correct comparatives; one superlative with **the**; one 
 2. must (the speaker can hear people inside)
 3. must (studying all night is strong evidence of tiredness)
 4. can't (heavy rain means the ground is not dry)
-5. must (winning is strong evidence that she is happy)
+5. must (her smile, cheering, and words are strong evidence that she is pleased)
 6. can't (a car without an engine cannot move)
 7. must (the reservations and reviews are strong evidence of popularity)
 8. can't (the key does not fit)
@@ -1174,27 +1185,31 @@ Checklist: at least two correct comparatives; one superlative with **the**; one 
 8. may/might
 
 ### Exercise 5: Advice Dialogue
-B: You **should** see a doctor. It **may/might** be serious.
-B: You **shouldn't** drink coffee before bed. And you **should** exercise more.
-A: What **should** I do in the evening?
-B: You **shouldn't** watch TV in bed. You **should** read a book instead.
-A: Thanks for the advice. I **will** follow your suggestions.
+One safe completion:
+
+B: You **should** speak to a doctor or nurse. I **can't** say what the cause is.
+A: What **should** I say at the appointment?
+B: You **should** explain how long you have felt this way. You **shouldn't** hide any symptoms.
+A: **Can** a regular bedtime help too?
+B: It **may/might** help, but professional advice should come first.
 
 ### Exercise 6: Problem-Solving Scenarios
+Possible answers:
+
 Situation 1: He should study more. He shouldn't watch TV all day.
 Situation 2: She should eat more vegetables. She shouldn't eat fast food.
-Situation 3: He should go to bed earlier. He shouldn't work so late.
+Situation 3: He should go to bed earlier. He shouldn't stay up so late.
 Situation 4: I shouldn't buy expensive clothes. I should save money.
 
 ### Exercise 7: Reading Comprehension
-1. She should exercise more, eat healthier food, and drink more water.
-2. So much junk food.
-3. She should go to bed earlier.
-4. She may be stressed from work.
-5. Because she is very busy.
-6. He thinks she should see a specialist.
-7. He says it might be something serious.
-8. She shouldn't work so late.
+1. An appointment with her doctor.
+2. When the headaches happen and how long they last.
+3. Her sleep problems.
+4. No, she doesn't.
+5. So she can finish work earlier.
+6. He offers to go to the appointment with her.
+7. She should get urgent medical help.
+8. Professional advice.
 
 ### Exercise 8: Translation Practice
 Possible answers:
@@ -1228,8 +1243,8 @@ Possible answers:
 ### Exercise 11: Extended Dialogues
 Dialogue blanks: **should, might, Should, should**.
 
-1. They should take some medicine and rest.
-2. They shouldn't drink coffee.
+1. They should rest and drink some water.
+2. If the headache is severe or does not improve.
 3. It might rain later.
 4. An umbrella.
 
@@ -1238,8 +1253,8 @@ Dialogue blanks: **should, might, Should, should**.
 2. You shouldn't use your phone.
 3. An adapter.
 4. Plenty of water.
-5. You can't smoke in enclosed public places.
-6. Punctual.
+5. Smoking inside the hotel.
+6. On time / punctual.
 7. Meetings.
 8. Whether service is included.
 
@@ -1305,15 +1320,15 @@ The visitor message varies. It should distinguish a rule, an optional action, an
 7. It tastes good. (Present Simple)
 8. We belong to a club. (Present Simple)
 
-### Exercise 5: Time Expressions
-1. Present Continuous
-2. Present Simple
-3. Present Perfect
-4. Present Continuous
-5. Past Simple
-6. Present Perfect
-7. Present Simple
-8. Present Continuous
+### Exercise 5: Meaning and Context
+1. am writing — Present Continuous: happening now
+2. write — Present Simple: a routine
+3. have worked — Present Perfect: started in 2020 and continues now
+4. is coming — Present Continuous: happening now
+5. visited — Past Simple: a finished visit last week
+6. Have, travelled — Present Perfect: life experience without a finished date
+7. drinks — Present Simple: a usual action
+8. are waiting — Present Continuous: happening at the moment
 
 ### Exercise 6: Error Correction
 1. I have lived in Vilnius since 2010.
@@ -1500,7 +1515,7 @@ Answers will vary. Possible answers:
 
 ### Exercise 8: Reading Comprehension
 1. walking home from work
-2. trying to park
+2. trying to park their cars
 3. shouting at each other
 4. talking to the drivers
 5. having dinner
@@ -1520,7 +1535,7 @@ Answers will vary. Possible answers:
 
 ### Exercise 10: Error Correction
 1. I was eating dinner when you called.
-2. She was studying English last night.
+2. At 8 p.m. last night, she was studying English.
 3. They were playing football when it started to rain.
 4. At 3 PM yesterday, he was working.
 5. We were watching TV when the phone rang.
@@ -1651,7 +1666,7 @@ Future Forms:
 4. He was working when I called.
 5. You should eat more vegetables.
 6. It may rain tomorrow.
-7. She is happier than her sister.
+7. She is happier than her sister. (The prompt explicitly compares two sisters.)
 8. I saw that film yesterday.
 
 ### Exercise 3: Reading Comprehension
@@ -1660,7 +1675,7 @@ Future Forms:
 3. meeting a client in the city center
 4. No, she hasn't
 5. Big Ben and the Thames River
-6. practiced speaking with native speakers and watched English films
+6. practised speaking with English-speaking partners and watched English films
 7. at 9 AM
 8. reading and playing tennis
 
@@ -1701,7 +1716,7 @@ Test 1:
 
 Test 2:
 1. have lived, has lived
-2. was studying, arrived, studies
+2. was studying, arrived, studies (the time words fix the past background event and the usual routine)
 3. were, worked
 4. has never seen, Have you ever seen
 5. were waiting, started
@@ -1711,7 +1726,7 @@ Test 2:
 9. are
 10. much
 
-Test 3: Answers will vary. Use this 8-point checklist (one point each):
+Test 3: Open writing self-check in two short rounds. Answers will vary. Do not auto-grade this task or assign a point total. Learners should compare each round with its local model and use this checklist as evidence:
 
 1. A clear daily routine in Present Simple.
 2. A current or temporary detail in Present Continuous.
@@ -2030,7 +2045,7 @@ Answers vary. Check invitation, time/place, useful detail, and responsive reply.
 1. Would you like to 2. I'd love to 3. Thanks, but 4. How about 5. Let's 6. Could we
 
 ### Exercise 9: Negotiate a Plan
-Answers vary. A workable agreement places the shared activity after 14:00 and before the museum closes at 17:00, with the likely rain considered. Check two suggestion forms, a reason, time/place details, and a final confirmation.
+Answers vary. One workable plan is to meet near the museum at 14:00, have lunch until 14:45, and visit the museum from 15:00 to 16:30. The indoor museum also avoids the rain expected after 16:00. Accept any plan that fits the shared 14:00–17:00 window and all stated constraints. Check two suggestion forms, a reason, time/place details, and a final confirmation.
 
 ## Unit 21: Nature and the Environment
 
@@ -2082,7 +2097,7 @@ Answers vary. Check purchase, problem, evidence, and a polite preferred solution
 Answers vary. Check calm factual language and a clear request.
 
 ### Exercise 7: Read an Email and the Service Reply
-1. On 6 June. 2. Part C is missing. 3. A photo of the parts and her receipt. 4. She needs the bookcase before that date. 5. It has sent part C by express delivery. 6. If the parcel has not arrived by 10 June.
+1. On 6 June. 2. Part C is missing. 3. A photo of the parts and her receipt. 4. She needs the bookcase before that date. 5. The company has sent part C by express delivery. 6. If the parcel has not arrived by 10 June.
 
 ### Exercise 8: Choose the Most Effective Sentence
 1-b, 2-a, 3-a, 4-a, 5-a, 6-a

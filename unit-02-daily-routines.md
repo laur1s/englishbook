@@ -32,7 +32,7 @@ status: "published"
 
 ## Part 1: Essential Vocabulary / Pagrindinis žodynas
 
-### Daily Activities (Kasdieninė veikla)
+### Daily Activities (Kasdienė veikla)
 
 - wake up - pabusti
 - get up - keltis
@@ -229,7 +229,7 @@ Put the adverb in the correct position:
 
 ## Exercise 5: Daily Routine - Read and Answer
 
-## Pratimas 5: Kasdieninė rutina - Skaitykite ir atsakykite
+## Pratimas 5: Kasdienė rutina - Skaitykite ir atsakykite
 
 **Read about Ona's daily routine:**
 
@@ -514,6 +514,12 @@ In pairs, compare your daily routines. Use phrases like:
 
 Discuss: How do you manage your time? What routines help you stay organised? Share tips with the group.
 
+**Model:** **I write three important tasks every morning. I usually do one difficult task first, and I check my calendar after lunch. This routine helps me because I don't forget appointments. What helps you on a busy day?**
+
+**Sentence starters:** **Every morning, I... / I usually... / I never... / This helps because... / How often do you...?**
+
+**Success checklist:** describe two real or imaginary routines in Present Simple; use one frequency adverb; explain why one routine helps; ask one follow-up question. Different time-management methods are valid.
+
 ### Activity 3: Cultural Routines
 
 Compare routines that you have personally experienced, read about, or discussed with someone. Avoid saying that everyone in a country follows the same routine. Use careful phrases such as:
@@ -527,6 +533,12 @@ How are these routines different from yours?
 ### Activity 4: Role-Play - Daily Schedule
 
 Pretend you are a personal assistant. Create a daily schedule for a busy person (actor, doctor, student). Present it to the group.
+
+**Model:** **Marta is a doctor. She starts work at 8:00. At 10:30, she meets a new patient. She has lunch at 12:30, writes reports at 2:00, and finishes work at 5:00. In the evening, she usually rests at home.**
+
+**Planning frame:** **Person and role:... / At... he/she... / After that,... / He/She usually finishes...**
+
+**Success checklist:** include at least five activities with clear times; use **he/she + verb-s** accurately; put the activities in a realistic order; answer one question about the schedule. If you study alone, record the presentation and then ask and answer one question yourself.
 
 ---
 

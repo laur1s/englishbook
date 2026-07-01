@@ -20,6 +20,8 @@ status: "published"
 
 ## 2 Skyrius: Skubios Pagalbos Skyrius - Gyvenimo ir Mirties Naktis
 
+> **Content note / Turinio pastaba:** This chapter describes a serious road crash, blood, and emergency treatment. / Šiame skyriuje aprašoma sunki eismo nelaimė, kraujas ir skubi pagalba. **Gentler route / Švelnesnis kelias:** if this topic feels too difficult today, skip the story and practise [Past Simple in the Grammar Reference](/resources/grammar-reference#past-simple). Return when you choose. / Jei ši tema šiandien per sunki, praleiskite pasakojimą ir pakartokite [Past Simple gramatikos vadove](/resources/grammar-reference#past-simple). Sugrįžkite, kai būsite pasirengę.
+
 ### Phrasal Verbs
 
 *Fraziniai veiksmažodžiai*
@@ -59,7 +61,7 @@ It was Friday night. The emergency room was always busy on Fridays, but tonight 
 
 "We need help NOW!" a nurse shouted.
 
-An ambulance had brought in a young woman on a stretcher. Her name was Sarah. She was only 28 years old. She was a teacher. She had two small children at home. Blood was everywhere - on her clothes, on her face, on the stretcher. She was screaming.
+Paramedics brought in a young woman on a stretcher. Her name was Sarah. She was only 28 years old. She was a teacher. She had two small children at home. Blood was everywhere - on her clothes, on her face, on the stretcher. She was screaming.
 
 "My leg! Oh God, my leg!" Sarah was crying so hard. "Please help me! It hurts so much!"
 

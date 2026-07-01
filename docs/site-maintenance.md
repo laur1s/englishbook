@@ -22,8 +22,9 @@ Every published Markdown file needs frontmatter with these fields:
 
 - `grey-book`: `Grey's book/chapter-*.md`
 - `a2-units`: `unit-*.md`
-- `resources`: `grammar-reference.md`, `vocabulary-lists.md`
+- `resources`: `grammar-reference.md`, `vocabulary-lists.md`, and published `a2-*.md` resource packs
 - `answer-keys`: `answer-key.md`, `Grey's book/answers.md`
+- `speaking-missions`: `speaking/*.md`
 
 ## Adding new content
 
@@ -31,7 +32,8 @@ Every published Markdown file needs frontmatter with these fields:
 2. Set a unique `slug` and the correct `order`.
 3. Keep the Markdown source in the existing repo location instead of creating a second content copy.
 4. For Grey's Book chapters, keep section order consistent: `Phrasal Verbs`, `Word Bank`, `Story`, then question/activity sections.
-5. Run `pnpm check` and `pnpm build` before pushing.
+5. Run `pnpm qa` before pushing. It checks Astro types, helper regressions, content integrity, the generated practice catalog, the production build, and generated internal routes/fragments.
+6. For a material learner-facing change, smoke-test the dashboard, one content session, choice and fill-blank scoring, saved resume, a cumulative checkpoint, home, one lesson, and one speaking mission on desktop and mobile.
 
 ## GitHub Pages
 

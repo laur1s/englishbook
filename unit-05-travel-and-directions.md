@@ -169,6 +169,10 @@ status: "published"
 ### Negative (Neigiamasis)
 - **There isn't** (is not) a hospital near here.
 - **There aren't** (are not) any buses on Sunday.
+- **There is no** hospital near here.
+- **There are no** buses on Sunday.
+
+Both negative patterns are natural. Use either **not + any** or **no**, but not both together.
 
 ### Questions (Klausimai)
 - **Is there** a bank near here? - Yes, there is. / No, there isn't.
@@ -179,7 +183,7 @@ status: "published"
 ## Exercise 1: Prepositions of Place
 ## Pratimas 1: Vietos prielinksniai
 
-Complete with the correct preposition:
+Complete with a correct preposition. More than one phrase can be natural when it expresses the same place relationship:
 
 1. The bank is _______ the post office. (šalia)
 2. The hotel is _______ the main square. (pagrindinėje aikštėje)
@@ -518,13 +522,31 @@ Last year I went to the seaside by train. I swam in the sea and ate ice cream. I
 
 In pairs, give directions to a place in the classroom or school. The other person follows the directions.
 
+**Model:** **Start at the classroom door. Go straight to the stairs. Turn left, walk past the library, and stop next to the office. Where are you?**
+
+**Sentence starters:** **Start at... / Go straight... / Turn left/right... / Walk past... / It is next to/opposite...**
+
+**Success checklist:** name a clear starting point and destination; give at least four steps in order; use two direction verbs and two place phrases; let the listener repeat the destination before moving. If you study alone, draw a small map, wait five minutes, and follow only your written directions.
+
 ### Activity 2: Travel Stories
 
 Share a travel story with the group. Describe the journey, places visited, and any interesting events.
 
+**Model:** **Last summer, I travelled to Klaipėda by train. First, I walked from the station to my hotel. Then I visited the old town and ate lunch near the river. In the evening, I missed my bus, but a local person showed me the right stop.**
+
+**Sentence starters:** **Last... I travelled to... by... / First,... / Then I visited... / There was/were... / An interesting thing happened when...**
+
+**Success checklist:** say where and when the trip happened; name the transport and two places; include one interesting event; use Past Simple and at least two sequence words. Real or clearly imaginary stories are both valid.
+
 ### Activity 3: Transportation Debate
 
 Discuss: Which is better, travelling by car or by train? Why?
+
+At this point in the course, keep the comparison simple; Unit 8 teaches comparative adjective forms. Use **I prefer... because... / A car is useful when... / A train is good for...**.
+
+**Model:** **For a city trip, I prefer the train because I can rest during the journey. A car is useful when the station is far away, but parking can be difficult. My choice depends on the route and the people travelling.**
+
+**Success checklist:** state a preference; give one advantage of each option; support your choice with **because**; acknowledge that a different choice can fit a different trip. Do not treat one answer as correct for every traveller.
 
 ---
 

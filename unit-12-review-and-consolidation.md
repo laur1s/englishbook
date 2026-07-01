@@ -162,7 +162,7 @@ When we _____ (arrive), my grandmother _____ (wait) for us. She _____ (prepare) 
 4. He was worked when I called. _____________________
 5. You should to eat more vegetables. _____________________
 6. It may rains tomorrow. _____________________
-7. She is the happiest than her sister. _____________________
+7. She is the happiest than her sister. (Compare the two sisters.) _____________________
 8. I have saw that film yesterday. _____________________
 
 ### Exercise 3: Reading Comprehension Test
@@ -173,7 +173,7 @@ Anna is a 25-year-old graphic designer from Vilnius. She has worked in design fo
 
 Anna has lived in Vilnius since she was born. She has visited several European cities, including Paris and Berlin, but she has never been to Asia. Last year, she traveled to London and saw Big Ben and the Thames River.
 
-When Anna was a student, she studied English intensively. She practiced speaking with native speakers and watched English films. Now she speaks English fluently and often uses it at work.
+When Anna was a student, she studied English intensively. She practised speaking with English-speaking partners and watched English films. Now she speaks English fluently and often uses it at work.
 
 Anna's daily routine includes waking up at 7 AM, exercising for 30 minutes, and having breakfast. She starts work at 9 AM and usually finishes by 6 PM. In her free time, she enjoys reading and playing tennis.
 
@@ -257,7 +257,7 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 **Complete with the correct form:**
 
 1. I _____ (live) here for 10 years. My sister _____ (live) here since she was born.
-2. She _____ (study) when I _____ (arrive). She _____ (study) English.
+2. Yesterday, she _____ (study) when I _____ (arrive). She usually _____ (study) English after dinner.
 3. They _____ (be) tired yesterday because they _____ (work) from 8 AM to 6 PM.
 4. He _____ (never/see) snow. _____ you _____ (ever/see) snow?
 5. We _____ (wait) for the bus when it _____ (start) to rain.
@@ -267,25 +267,45 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 9. There _____ (be) two banks near the station.
 10. How _____ water do you drink every day?
 
-### Test 3: Writing Assessment
+### Test 3: Writing Self-Check
 
-**Write a short paragraph (8-10 sentences) about:**
+Write **two short rounds of 4–5 sentences**. Check Round A before you start Round B. You may take a short break between them.
 
-- Your daily routine
-- Something you did last weekend
-- Your plans for next year
-- Advice you would give to a friend learning English
+**Round A — Everyday life and now / Kasdienybė ir dabartis**
 
-**Use all eight of these grammar structures:**
+Write about your routine, this week, and your English experience. Use:
 
-1. Present Simple for a routine
-2. Present Continuous for something happening now or around now
-3. Present Perfect for a life experience
-4. Past Simple for a finished weekend event
-5. Past Continuous for background or an interrupted action
-6. **going to** or **will** for a future plan or prediction
-7. **should** for advice
-8. a comparative or superlative
+1. Present Simple for a routine;
+2. Present Continuous for something happening now or around now;
+3. Present Perfect for a life experience or continuing situation;
+4. a comparative or superlative.
+
+**Round A model:** *I usually study English after dinner. This month, I am practising speaking with a friend. I have already learned many useful travel phrases. Speaking is more difficult than reading for me.*
+
+**Round A starters:** *I usually... / This week, I am... / I have... / ...is easier than...*
+
+**Round B — A past event and a next step / Praeities įvykis ir kitas žingsnis**
+
+Write about last weekend, a future plan, and advice for a learner. Use:
+
+5. Past Simple for a finished weekend event;
+6. Past Continuous for background or an interrupted action;
+7. **going to** or **will** for a future plan or prediction;
+8. **should** for advice.
+
+**Round B model:** *Last weekend, I watched a film in English. While I was watching it, my friend called me. Next year, I am going to join an evening course. A friend who is learning English should practise a little every day.*
+
+**Round B starters:** *Last weekend... / While I was..., I... / Next year, I am going to... / A learner should...*
+
+This is an open writing task. Do not auto-grade it or turn the checklist into a point score. Use the two models, then check your own evidence.
+
+**Self-check — find and underline your own example of each form:**
+
+- [ ] Round A has a Present Simple routine and a current or temporary Present Continuous detail.
+- [ ] Round A has a Present Perfect experience or continuing situation and one comparison.
+- [ ] Round B has a finished Past Simple event and Past Continuous background or interruption.
+- [ ] Round B has a future plan or prediction and advice with **should/shouldn't**.
+- [ ] Each round has 4–5 connected sentences.
 
 ---
 
@@ -352,7 +372,7 @@ Units 1–12 have covered:
 ### All Topics Vocabulary (Visų temų žodynas)
 
 - Greetings and introductions - Pasisveikinimai ir prisistatymai
-- Daily routines - Kasdieninė rutina
+- Daily routines - Kasdienė rutina
 - Past events - Praeities įvykiai
 - Food and shopping - Maistas ir apsipirkimas
 - Travel and directions - Kelionės ir kryptys
@@ -479,7 +499,7 @@ Tell a four-part story:
 3. Explain how you felt.
 4. Say what you are going to do next time.
 
-**Speaking self-check / Kalbėjimo įsivertinimas:** I spoke in complete sentences; I used clear time words; I corrected or repeated an unclear idea; I included every requested part. / Kalbėjau pilnais sakiniais; vartojau aiškius laiko žodžius; pataisiau arba pakartojau neaiškią mintį; įtraukiau visas prašytas dalis.
+**Speaking self-check / Kalbėjimo įsivertinimas:** I spoke in complete sentences; I used clear time words; I corrected or repeated an unclear idea; I included every requested part. / Kalbėjau užbaigtais sakiniais; vartojau aiškius laiko žodžius; pataisiau arba pakartojau neaiškią mintį; įtraukiau visas prašytas dalis.
 
 ---
 

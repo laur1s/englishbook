@@ -73,11 +73,11 @@ const makeSkill = (overrides = {}) => ({
 test("mistakes become item priorities before due and developing objectives", () => {
   const progress = createLearningProgress();
   progress.preferences.dailyMinutes = 10;
-  progress.mistakeItemIds = [
-    "stale-item",
-    "u02.routines.003",
-    "u02.routines.001",
-    "u02.routines.003",
+  progress.mistakeItemRefs = [
+    { id: "stale-item", revision: 1 },
+    { id: "u02.routines.003", revision: 1 },
+    { id: "u02.routines.001", revision: 1 },
+    { id: "u02.routines.003", revision: 1 },
   ];
   progress.skills = {
     "u04.places": makeSkill(),
@@ -117,13 +117,19 @@ test("mistakes become item priorities before due and developing objectives", () 
 
 test("planning is deterministic across catalog and skill insertion order", () => {
   const firstProgress = createLearningProgress();
-  firstProgress.mistakeItemIds = ["u02.routines.003", "u01.be-forms.002"];
+  firstProgress.mistakeItemRefs = [
+    { id: "u02.routines.003", revision: 1 },
+    { id: "u01.be-forms.002", revision: 1 },
+  ];
   firstProgress.skills = {
     "u03.past": makeSkill({ strength: 0.7, lastGrade: "hard" }),
     "u01.questions": makeSkill({ strength: 0.7, lastGrade: "hard" }),
   };
   const secondProgress = createLearningProgress();
-  secondProgress.mistakeItemIds = ["u01.be-forms.002", "u02.routines.003"];
+  secondProgress.mistakeItemRefs = [
+    { id: "u01.be-forms.002", revision: 1 },
+    { id: "u02.routines.003", revision: 1 },
+  ];
   secondProgress.skills = {
     "u01.questions": firstProgress.skills["u01.questions"],
     "u03.past": firstProgress.skills["u03.past"],
@@ -175,7 +181,7 @@ test("small represented pools lower both count and time estimate", () => {
   };
   const progress = createLearningProgress();
   progress.preferences.dailyMinutes = 15;
-  progress.mistakeItemIds = ["u01.be-forms.001"];
+  progress.mistakeItemRefs = [{ id: "u01.be-forms.001", revision: 1 }];
 
   const plan = buildDailyRecallPlan(
     tinyCatalog,
@@ -209,6 +215,50 @@ test("stale IDs are ignored and never pull unrelated catalog units into scope", 
   );
 });
 
+test("listening evidence is not misrepresented by an unrelated catalog practice pack", () => {
+  const progress = createLearningProgress();
+  progress.skills["listening.a2-comprehension"] = makeSkill({
+    dueAt: "2026-06-30T08:00:00.000Z",
+    sourceSessionId: "module-01-speak",
+  });
+
+  assert.deepEqual(
+    buildDailyRecallPlan(catalog, progress, "2026-07-01T08:00:00.000Z"),
+    {
+      mode: "review",
+      unitIds: [],
+      targetObjectiveIds: [],
+      priorityItemIds: [],
+      count: 0,
+      minutes: 0,
+      emptyReason: "no-matching-catalog-content",
+    },
+  );
+});
+
+test("a revised catalog item does not inherit stale mistake priority", () => {
+  const revisedCatalog = structuredClone(catalog);
+  const revisedItem = revisedCatalog.units
+    .flatMap((unit) => unit.items)
+    .find((item) => item.id === "u02.routines.001");
+  revisedItem.revision = 2;
+  const progress = createLearningProgress();
+  progress.mistakeItemRefs = [{ id: revisedItem.id, revision: 1 }];
+
+  assert.deepEqual(
+    buildDailyRecallPlan(revisedCatalog, progress, "2026-07-01T08:00:00.000Z"),
+    {
+      mode: "review",
+      unitIds: [],
+      targetObjectiveIds: [],
+      priorityItemIds: [],
+      count: 0,
+      minutes: 0,
+      emptyReason: "no-matching-catalog-content",
+    },
+  );
+});
+
 test("a learner with no actionable review receives a distinct caught-up reason", () => {
   const progress = createLearningProgress();
   progress.skills["u04.places"] = makeSkill();
@@ -225,7 +275,7 @@ test("a learner with no actionable review receives a distinct caught-up reason",
 
 test("the planner is pure and rejects an invalid clock", () => {
   const progress = createLearningProgress();
-  progress.mistakeItemIds = ["u01.be-forms.001"];
+  progress.mistakeItemRefs = [{ id: "u01.be-forms.001", revision: 1 }];
   const before = structuredClone(progress);
 
   buildDailyRecallPlan(catalog, progress, "2026-07-01T08:00:00.000Z");

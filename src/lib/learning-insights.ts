@@ -48,6 +48,12 @@ export type SkillInsight = {
   lastSeenLabel: string;
 };
 
+export type SkillRecallSourceSession = {
+  id: string;
+  stage: string;
+  skillRefs: readonly string[];
+};
+
 export type MistakeGroup = {
   objectiveId: string;
   label: string;
@@ -63,6 +69,10 @@ export type MistakeSummary = {
 
 const clamp = (value: number, minimum = 0, maximum = 1) =>
   Math.min(maximum, Math.max(minimum, value));
+
+const NON_CATALOG_SKILL_LABELS: Readonly<Record<string, string>> = {
+  "listening.a2-comprehension": "Listening comprehension",
+};
 
 const localDayKey = (isoDate: string, timeZone?: string) => {
   const date = new Date(isoDate);
@@ -206,7 +216,7 @@ export const buildSkillQueue = (
       const due = Date.parse(skill.dueAt) <= nowMs;
       return {
         id,
-        label: objective?.label ?? humanizeSkillId(id),
+        label: objective?.label ?? NON_CATALOG_SKILL_LABELS[id] ?? humanizeSkillId(id),
         ...(objective?.unitId ? { unitId: objective.unitId } : {}),
         itemCount: objective?.itemCount ?? 0,
         status: due ? "Due" : "Developing",
@@ -216,6 +226,19 @@ export const buildSkillQueue = (
         lastSeenLabel: formatLastSeen(skill.lastSeenAt, now, timeZone),
       };
     });
+};
+
+export const getListeningRecallSourceSessionId = (
+  skill: Pick<SkillInsight, "id" | "sourceSessionId">,
+  sessions: readonly SkillRecallSourceSession[],
+) => {
+  if (!skill.id.startsWith("listening.")) return null;
+
+  return sessions.find((session) =>
+    session.id === skill.sourceSessionId &&
+    session.stage === "speak" &&
+    session.skillRefs.includes(skill.id)
+  )?.id ?? null;
 };
 
 export const buildMistakeSummary = (

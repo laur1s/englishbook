@@ -68,6 +68,7 @@ test("substantially rebuilt speaking tasks invalidate only their old completions
     ["module-08-speak", 2],
     ["module-09-speak", 2],
     ["module-19-speak", 3],
+    ["module-24-speak", 2],
   ]);
 
   for (const [sessionId, revision] of rebuiltRevisions) {

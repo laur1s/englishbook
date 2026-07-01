@@ -359,7 +359,7 @@ Paruoškite:
 1. The earliest delivery is Friday. 2. Would you like **me to arrange it**? 3. Yes, that would **be** helpful.
 
 ## Workday 11
-1. *I won't be able to come.* 2. *I have already told.* 3. *by two*.
+1. *I won't be able to come.* 2. *I have already told the team.* 3. *by two*.
 
 ## Workday 13
 1. I will **be** online from eight. 2. I have **a** video call **at** ten. 3. I **will message you when I finish**.

@@ -154,7 +154,7 @@ status: "published"
 
 **Words:** journey, receipt, colleague, forecast, password, neighbour.  
 **Example:** *receipt → Do you still have the receipt?*  
-**Level up:** partneris turi atsakyti pilnu sakiniu ir pridėti vieną detalę.
+**Level up:** partneris turi atsakyti užbaigtu sakiniu ir pridėti vieną detalę.
 
 ---
 

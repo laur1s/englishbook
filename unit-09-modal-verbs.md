@@ -51,9 +51,12 @@ status: "published"
 - They can't be serious. - Jie negali kalbėti rimtai.
 
 ### Obligation and Necessity (Pareiga ir būtinybė)
-- You must wear a seatbelt. - Turi užsisegti saugos diržą.
-- Students must do homework. - Studentai turi daryti namų darbus.
-- You mustn't park here. - Čia negalima statyti automobilio.
+
+Rules depend on the place and can change. In real situations, check current official information, local signs, or the rules for that school or workplace. / Taisyklės priklauso nuo vietos ir gali keistis. Tikrose situacijose patikrinkite naujausią oficialią informaciją, vietos ženklus arba konkrečios mokyklos ar darbovietės taisykles.
+
+- The current road rules for this trip say you must wear a seatbelt. - Pagal šiai kelionei galiojančias kelių eismo taisykles turite užsisegti saugos diržą.
+- In this class, students must do homework. - Šioje klasėje mokiniai turi atlikti namų darbus.
+- The sign says you mustn't park here. - Ženklas nurodo, kad čia negalima statyti automobilio.
 
 ---
 
@@ -67,7 +70,7 @@ status: "published"
 
 **Examples:**
 - I can hear her snoring. She must be asleep. (strong evidence)
-- He has a new car. He must be rich. (Logical conclusion)
+- Her coat and bag are on the chair. She must be in the building. (strong evidence)
 - I can hear Marta speaking in the next room. She must be here. (Strong evidence)
 
 ### Can't for Impossibility (Neįmanomumas)
@@ -154,7 +157,7 @@ status: "published"
 
 **Examples:**
 - You should wear warm clothes. (good idea)
-- You must wear a seatbelt. (law/requirement)
+- The current road rules say you must wear a seatbelt. (a requirement in this example)
 
 ### Questions with Should
 - Should I...? (asking for advice)
@@ -175,7 +178,7 @@ Complete with must or can't. Explain why:
 2. I can hear people talking inside. Someone _____ be home.
 3. He's been studying all night. He _____ be tired.
 4. It's raining heavily. The ground _____ be dry.
-5. She has just won the competition. She _____ be happy.
+5. She is smiling, cheering, and saying, "I did it!" She _____ be pleased with the result.
 6. This car has no engine. It _____ move.
 7. Every table is reserved and the reviews are excellent. The restaurant _____ be popular.
 8. This key does not fit the lock. It _____ be the right key.
@@ -233,15 +236,14 @@ Complete with must, can't, may, might, should, or shouldn't:
 ## Exercise 5: Advice Dialogue
 ## Pratimas 5: Patarimų dialogas
 
-Complete the dialogue with appropriate modal verbs:
+Complete the dialogue with appropriate modal verbs. Do not diagnose the cause:
 
-A: I have a problem. I feel very tired all the time.
-B: You _____ see a doctor. It _____ be serious.
-A: Maybe. I also have trouble sleeping.
-B: You _____ drink coffee before bed. And you _____ exercise more.
-A: What _____ I do in the evening?
-B: You _____ watch TV in bed. You _____ read a book instead.
-A: Thanks for the advice. I _____ follow your suggestions.
+A: I feel very tired all the time, and I also have trouble sleeping.
+B: You _____ speak to a doctor or nurse. I _____ say what the cause is.
+A: What _____ I say at the appointment?
+B: You _____ explain how long you have felt this way. You _____ hide any symptoms.
+A: _____ a regular bedtime help too?
+B: It _____ help, but professional advice should come first.
 
 ---
 
@@ -273,20 +275,20 @@ Give advice for these situations using should/shouldn't:
 
 **Read the text:**
 
-Laura is worried about her health. She feels tired all the time and has headaches. Her doctor says she should exercise more and eat healthier food. She shouldn't eat so much junk food and she should drink more water. Laura's friend Anna gives her advice too. Anna says Laura should go to bed earlier and she shouldn't work so late. Anna thinks Laura may be stressed from work.
+Laura is worried about her health. She feels tired all the time and has headaches, so she has made an appointment with her doctor. Before the appointment, she is writing down when the headaches happen and how long they last. She has also asked a colleague for help so she can finish work earlier.
 
-Laura's husband thinks she should see a specialist. He says it might be something serious. But Laura can't go to the doctor this week because she's very busy.
+Laura's friend Anna says she should rest and tell the doctor about her sleep problems. Anna does not try to guess the cause. Laura's husband offers to go to the appointment with her. He says that if her symptoms suddenly get worse, she should get urgent medical help. Laura agrees that she shouldn't delay professional advice because she is busy.
 
 **Answer the questions:**
 
-1. What should Laura do according to her doctor? _____________________
-2. What shouldn't she eat? _____________________
-3. What does Anna think Laura should do? _____________________
-4. What might be wrong with Laura? _____________________
-5. Why can't Laura go to the doctor this week? _____________________
-6. What does Laura's husband think she should do? _____________________
-7. What does he say about her health problem? _____________________
-8. What shouldn't Laura do at night? _____________________
+1. What appointment has Laura made? _____________________
+2. What two details is she writing down? _____________________
+3. What does Anna think Laura should tell the doctor about? _____________________
+4. Does Anna try to guess the cause? _____________________
+5. Why has Laura asked a colleague for help? _____________________
+6. What help does Laura's husband offer? _____________________
+7. What should Laura do if her symptoms suddenly get worse? _____________________
+8. What shouldn't Laura delay because she is busy? _____________________
 
 ---
 
@@ -357,9 +359,9 @@ Correct the mistakes. Some sentences may already be correct:
 **Dialogue 1: Giving Advice**
 
 A: I have a headache.
-B: You should take some medicine and rest.
-A: What else should I do?
-B: You shouldn't drink coffee.
+B: You should rest and drink some water.
+A: When should I speak to a health professional?
+B: If the headache is severe or does not improve, you should ask for professional advice.
 
 **Complete the dialogue:**
 
@@ -376,8 +378,8 @@ A: Can I borrow yours?
 B: Yes, of course.
 
 **Questions:**
-1. What should the person do for headache?
-2. What shouldn't they do?
+1. Which two simple steps does the speaker suggest for the headache?
+2. When should the person ask for professional advice?
 3. What might happen to the weather?
 4. What can the person borrow?
 
@@ -387,11 +389,13 @@ B: Yes, of course.
 
 **Read the text:**
 
-When traveling to England, there are some rules you should follow. You must drive on the left side. You shouldn't use your phone while driving. You may need an adapter for electricity.
+This is a language-practice travel note. Road, phone, smoking, and workplace rules can change. Before a real trip, check current official guidance and signs where you are.
 
-For health, you should drink plenty of water. You might get jet lag, so you should rest. You can't smoke in enclosed public places.
+For today's driving lesson in England, the instructor says, "Drive on the left. Do not use your phone while driving; stop in a safe place first." You may need an adapter for electricity.
 
-At work, you should be punctual. You may have meetings. You shouldn't interrupt others.
+After a long journey, you might feel tired. Drinking water and resting may help with ordinary travel tiredness. If you feel unwell or are unsure what to do, ask a health professional. A sign at the hotel says, "No smoking inside," so you mustn't smoke inside that building.
+
+At Mina's workplace, visitors have to sign in. Her team asks people to arrive on time. Mina may have meetings, and colleagues should let a speaker finish before they reply.
 
 In restaurants, you should check the bill to see whether service is included before you leave a tip. You should also try traditional food.
 
@@ -401,7 +405,7 @@ In restaurants, you should check the bill to see whether service is included bef
 2. What shouldn't you do while driving?
 3. What might you need for electricity?
 4. What should you drink for health?
-5. What can't you do in public places?
+5. What does the hotel sign prohibit inside the building?
 6. What should you be at work?
 7. What may you have at work?
 8. What should you check before you leave a tip?
@@ -411,7 +415,7 @@ In restaurants, you should check the bill to see whether service is included bef
 1. You must drive on the right in England. _____
 2. You may use your phone while driving. _____
 3. You should drink coffee for health. _____
-4. You can smoke in public places. _____
+4. You can smoke inside this hotel. _____
 5. You should check whether service is included before leaving a tip. _____
 
 ---
@@ -503,10 +507,9 @@ Discuss future possibilities: "It might..." "It could..."
 
 ## Cultural Notes / Kultūrinės pastabos
 
-- English speakers use "should" frequently to give polite advice
-- "May I...?" is more formal; "Can I...?" is common in everyday requests
-- In English, we often use modals to be indirect when giving advice
-- When speaking English, choose a direct command for an urgent instruction and **should/could** for ordinary advice
+- In many everyday English conversations, **should** presents an idea as advice rather than a command.
+- **May I...?** can sound more formal; **Can I...?** is common in everyday requests. The best choice depends on the situation and relationship.
+- A clear direct command can be useful in an urgent safety instruction; **should/could** often suit ordinary advice. Follow the trained person's or local authority's instructions in a real emergency.
 
 ---
 

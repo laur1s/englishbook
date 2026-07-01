@@ -469,9 +469,23 @@ Now introduce a real or imaginary friend in four sentences. Model: **This is my 
 
 In pairs, introduce yourselves as quickly as possible, then switch partners. Try to remember and introduce your previous partner's information to the new one.
 
+**20-second model:** **Hi, I'm Lina. I'm from Kaunas. I'm a student, and I like music. Nice to meet you.** When you switch, say: **This is Lina. She's from Kaunas. She's a student, and she likes music.**
+
+**Sentence starters:** **Hi, I'm... / I'm from... / I'm a... / I like... / This is... / He/She is from... / They are from...**
+
+**Success checklist:** include a name, place, role, and interest; use **am/is/are** accurately; introduce the previous partner without adding private information; close politely. If you study alone, record two imaginary speakers and leave a pause between them.
+
 ### Activity 5: Cultural Exchange
 
 Discuss: How do people greet each other in different countries? Share what you know about Lithuanian greetings vs. other cultures.
+
+**Model:** **In my experience in Lithuania, I usually say “Labas” to friends and “Laba diena” in a formal situation. In another country, some people greet close friends differently. I know this from a book. Both greetings can be friendly, but the situation matters. Customs vary between people and places.**
+
+**Sentence starters:** **In my experience... / I know this from... / Some people... / With close friends... / In a formal situation... / One similarity is... / One difference is...**
+
+**Success checklist:** describe one greeting you know from experience and one from experience, reading, or another person; give one similarity or difference; use careful language such as **some people, often, can, in my experience**; avoid claims about everyone in a country.
+
+<p class="lt-text" lang="lt"><strong>Kalbėjimo atrama:</strong> kalbėkite apie savo patirtį arba aiškiai pasakykite, kad informaciją skaitėte ar girdėjote. Vietoj teiginio apie visus šalies žmones vartokite <strong>some people, often, in my experience</strong>.</p>
 
 ### Activity 6: Pronunciation Practice
 

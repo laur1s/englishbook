@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-05",
-  "contentVersion": 3,
+  "contentVersion": 5,
   "title": "Travel and Directions",
   "objectives": [
     {
@@ -36,21 +36,21 @@
   "items": [
     {
       "id": "u05.place-prepositions.001",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u05.place-prepositions",
       "type": "fill-blank",
       "difficulty": 1,
       "prompt": {
         "en": "Complete with the phrase meaning šalia: “The bank is ___ the post office.”",
-        "lt": "Įrašykite anglišką žodžio „šalia“ atitikmenį: „The bank is ___ the post office.“"
+        "lt": "Įrašykite vieną tinkamą žodžio „šalia“ atitikmenį: „The bank is ___ the post office.“"
       },
       "answer": {
-        "accepted": ["next to"],
+        "accepted": ["next to", "beside", "by"],
         "caseSensitive": false
       },
       "rationale": {
-        "en": "Next to means beside or šalia.",
-        "lt": "„Next to“ reiškia „šalia“."
+        "en": "Next to, beside, and by can all express šalia in this location sentence.",
+        "lt": "Šiame vietos sakinyje „next to“, „beside“ ir „by“ gali reikšti „šalia“."
       },
       "sourceRefs": [{"lesson": "unit-05", "exercise": 1}]
     },
@@ -226,7 +226,7 @@
     },
     {
       "id": "u05.place-prepositions.010",
-      "revision": 2,
+      "revision": 3,
       "objectiveId": "u05.place-prepositions",
       "type": "fill-blank",
       "difficulty": 3,
@@ -235,12 +235,17 @@
         "lt": "Išverskite į anglų kalbą vartodami „pharmacy“ ir „opposite“: „Vaistinė yra priešais parką.“"
       },
       "answer": {
-        "accepted": ["The pharmacy is opposite the park", "The pharmacy is opposite the park."],
+        "accepted": [
+          "A pharmacy is opposite the park",
+          "A pharmacy is opposite the park.",
+          "The pharmacy is opposite the park",
+          "The pharmacy is opposite the park."
+        ],
         "caseSensitive": false
       },
       "rationale": {
-        "en": "Pharmacy means vaistinė, and opposite means priešais.",
-        "lt": "„Pharmacy“ reiškia „vaistinė“, o „opposite“ – „priešais“."
+        "en": "Pharmacy means vaistinė, and opposite means priešais. Without earlier context, either a pharmacy or the pharmacy is possible.",
+        "lt": "„Pharmacy“ reiškia „vaistinė“, o „opposite“ – „priešais“. Be ankstesnio konteksto galimi ir „a pharmacy“, ir „the pharmacy“."
       },
       "sourceRefs": [{"lesson": "unit-05", "exercise": 9}]
     },
@@ -352,7 +357,7 @@
     },
     {
       "id": "u05.there-be.016",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u05.there-be",
       "type": "fill-blank",
       "difficulty": 3,
@@ -361,12 +366,19 @@
         "lt": "Išverskite į anglų kalbą: „Šioje gatvėje yra daug restoranų.“"
       },
       "answer": {
-        "accepted": ["There are many restaurants on this street", "There are many restaurants on this street."],
+        "accepted": [
+          "There are a lot of restaurants on this street",
+          "There are a lot of restaurants on this street.",
+          "There are lots of restaurants on this street",
+          "There are lots of restaurants on this street.",
+          "There are many restaurants on this street",
+          "There are many restaurants on this street."
+        ],
         "caseSensitive": false
       },
       "rationale": {
-        "en": "Use There are with the plural noun restaurants, followed by on this street.",
-        "lt": "Su daugiskaitos daiktavardžiu „restaurants“ vartokite „There are“, po to – „on this street“."
+        "en": "Use There are with plural restaurants. Many, a lot of, and lots of can all express daug in this sentence.",
+        "lt": "Su daugiskaitos daiktavardžiu „restaurants“ vartojame „There are“. Šiame sakinyje „daug“ galima perteikti „many“, „a lot of“ arba „lots of“."
       },
       "sourceRefs": [{"lesson": "unit-05", "exercise": 9}]
     }

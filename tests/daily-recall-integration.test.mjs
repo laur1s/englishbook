@@ -48,6 +48,10 @@ test("daily recall plans, persists, resumes, and completes without moving the pa
   );
   progress = {
     ...progress,
+    mistakeItemRefs: priorityItems.map((item) => ({
+      id: item.id,
+      revision: item.revision,
+    })),
     mistakeItemIds: priorityItems.map((item) => item.id),
   };
 
@@ -117,6 +121,10 @@ test("daily recall plans, persists, resumes, and completes without moving the pa
   assert.equal(completed.activeSessionId, "module-01-practice");
   assert.equal(completed.sessions[DAILY_RECALL_SESSION_ID].status, "completed");
   assert.equal(completed.skills[firstItem.objectiveId].sourceSessionId, DAILY_RECALL_SESSION_ID);
+  assert.deepEqual(completed.recentItemRefs, [{
+    id: firstItem.id,
+    revision: firstItem.revision,
+  }]);
 });
 
 test("repair selection ignores stale revisions and finds the next valid repair", () => {

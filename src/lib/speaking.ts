@@ -2,6 +2,9 @@ import type { A2UnitEntry, SpeakingMissionEntry } from "./content";
 
 export const SPEAKING_PROGRESS_KEY = "english-library.speaking.progress";
 
+/** Maximum number of compact historical runs retained for one mission. */
+export const SPEAKING_COMPLETED_RUN_LIMIT = 5;
+
 export const MISSION_TYPE_LABELS = {
   "one-minute-mission": "One-minute mission",
   "role-flip-dialogue": "Role-flip dialogue",

@@ -529,8 +529,20 @@ In pairs, tell your partner about three important events from your past. Ask fol
 ### Activity 2: Memory Game
 Think of 10 things you did last week. Share them with the group without repeating.
 
+**Model opening:** **Last Monday, I cooked dinner. On Tuesday, I walked to work. I also called my sister and watched a film.** Continue until you have ten different actions. If you cannot remember ten real actions, invent safe imaginary details and say that they are imaginary.
+
+**Sentence starters:** **Last Monday,... / On Tuesday,... / At the weekend,... / I also... / I didn't...**
+
+**Success checklist:** give ten different actions; use a Past Simple form in every sentence; add at least three finished-time expressions; listen and avoid repeating an action already used.
+
 ### Activity 3: Role-Play - Time Travel
 Imagine you travelled back in time. Describe what you saw and did.
+
+**Model:** **In my imaginary trip, I travelled to Vilnius in 1920. First, I walked through the old streets. Then I saw a busy market and met a shopkeeper. I bought some bread and listened to music in the square. I felt excited, but I was happy to return home.**
+
+**Sentence starters:** **I travelled to... in... / First, I... / Then I saw... / I met... / I felt... / Finally,...**
+
+**Success checklist:** name the imagined time and place; use at least four Past Simple verbs; put events in order with **first, then, finally**; include one feeling; make it clear that the story is imaginary.
 
 ---
 

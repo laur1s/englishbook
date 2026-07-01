@@ -91,7 +91,7 @@ status: "published"
 
 ### Chapter 3 Grammar Practice
 
-1) must
+1) must — they need to report the work conflict.
 2) should
 3) can
 4) should
@@ -339,7 +339,7 @@ status: "published"
 
 **Emotions / Emocijos:**
 
-- Nervous (nervingas / nervinga)
+- Nervous (nerimaujantis / nerimaujanti)
 - Excited (susijaudinęs / susijaudinusi)
 - Worried (susirūpinęs / susirūpinusi)
 - Proud (besididžiuojantis / besididžiuojanti)

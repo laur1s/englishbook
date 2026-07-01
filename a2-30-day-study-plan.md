@@ -41,7 +41,7 @@ Nedvigubinkite kitos dienos. Tęskite nuo praleistos dienos arba atlikite tik tr
 ### Day 1 — Introduce Yourself / Prisistatykite
 
 1. ⭐ Open [Unit 1](/a2/unit-01): **to be**, greetings, personal information.
-2. ⭐ Do [Practice Workbook Exercise 1](/resources/a2-practice-workbook#exercise-1--meeting-a-new-neighbour).
+2. ⭐ Do [Practice Workbook Exercise 1](/resources/a2-practice-workbook#exercise-1-meeting-a-new-neighbour).
 3. Hear: [Listening Day 1](/resources/a2-listening-dictation-pack#day-1--a-new-colleague-nauja-kolegė).
 4. ⭐ Record 30 seconds: name, town, work/study, one interest.
 5. Repair: patikrinkite **am/is/are** ir klausimo tvarką.
@@ -75,7 +75,7 @@ Nedvigubinkite kitos dienos. Tęskite nuo praleistos dienos arba atlikite tik tr
 1. ⭐ Open [Unit 5](/a2/unit-05): directions and place prepositions.
 2. ⭐ Do Workbook Exercise 5.
 3. Hear: Listening Day 5.
-4. ⭐ Give directions from your home to one useful place.
+4. ⭐ Give a real or imaginary route from a public place, such as a station, to one useful place. Do not share your home address or another exact private location. / Paaiškinkite tikrą arba išgalvotą maršrutą nuo viešos vietos, pvz., stoties, iki naudingos vietos. Nenurodykite namų adreso ar kitos tikslios privačios vietos.
 5. Repair: patikrinkite *at the lights, past the bank, opposite the library*.
 
 ### Day 6 — Plans and Backup Plans / Planai ir atsarginiai planai

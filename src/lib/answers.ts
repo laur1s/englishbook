@@ -59,3 +59,43 @@ export const extractGreyAnswerSnippet = (
     "### ",
   );
 };
+
+export const requireA2AnswerSnippet = (
+  answerEntry: AnswerKeyEntry | undefined,
+  unit: A2UnitEntry,
+) => {
+  if (!unit.data.hasAnswerKey) return "";
+
+  if (!answerEntry || answerEntry.data.slug !== "a2") {
+    throw new Error(
+      `Required A2 answer-key entry “a2” is missing for Unit ${unit.data.order}.`,
+    );
+  }
+
+  const snippet = extractA2AnswerSnippet(answerEntry, unit);
+  if (!snippet) {
+    throw new Error(`Required answer snippet is missing for Unit ${unit.data.order}.`);
+  }
+
+  return snippet;
+};
+
+export const requireGreyAnswerSnippet = (
+  answerEntry: AnswerKeyEntry | undefined,
+  chapter: GreyBookEntry,
+) => {
+  if (!chapter.data.hasAnswerKey) return "";
+
+  if (!answerEntry || answerEntry.data.slug !== "grey-book") {
+    throw new Error(
+      `Required Grey's Book answer-key entry “grey-book” is missing for Chapter ${chapter.data.order}.`,
+    );
+  }
+
+  const snippet = extractGreyAnswerSnippet(answerEntry, chapter);
+  if (!snippet) {
+    throw new Error(`Required answer snippet is missing for Chapter ${chapter.data.order}.`);
+  }
+
+  return snippet;
+};

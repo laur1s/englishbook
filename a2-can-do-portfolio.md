@@ -34,6 +34,8 @@ status: "published"
 
 **Svarbu:** „3“ nereiškia „be klaidų“. Tai reiškia, kad veiksmas atliktas aiškiai, pateikta būtina informacija, o klaidos paprastai netrukdo suprasti.
 
+**Self-assessment only / Tik įsivertinimui:** the 0–3 numbers are the learner's own reflection, not test grades. They are never auto-graded. / 0–3 skaičius įrašo pats besimokantysis: tai įsivertinimas, o ne testo pažymys. Svetainė jų niekada nevertina automatiškai.
+
 ## Įrodymo kokybės patikra
 
 Geras įrodymas turi:

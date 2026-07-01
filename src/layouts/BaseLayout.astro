@@ -84,12 +84,12 @@ const resumeContext =
       </button>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <slot />
     </main>
 
     {enableTranslation && (
-      <div class="translation-popover" data-translation-popover role="region" aria-label="Lithuanian translation" aria-live="polite" hidden>
+      <div id="translation-popover" class="translation-popover" data-translation-popover role="region" aria-label="Lithuanian translation" aria-live="polite" hidden>
         <button class="translation-close" type="button" data-translation-close aria-label="Close translation">×</button>
         <p class="translation-kicker">Lithuanian translation</p>
         <strong data-translation-word></strong>
@@ -112,6 +112,7 @@ const resumeContext =
       const siteNavigation = document.getElementById("primary-navigation");
       const button = document.querySelector("[data-lt-toggle]");
       const state = document.querySelector("[data-lt-state]");
+      const mobileNavigation = window.matchMedia("(max-width: 680px)");
       const getStoredValue = (key) => {
         try {
           return localStorage.getItem(key);
@@ -141,18 +142,37 @@ const resumeContext =
         setState(root.dataset.lt !== "shown");
       });
 
+      const setNavigationOpen = (isOpen, { focusMenu = false, restoreFocus = false } = {}) => {
+        siteHeader?.classList.toggle("nav-open", isOpen);
+        navButton?.setAttribute("aria-expanded", String(isOpen));
+        navButton?.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+
+        if (focusMenu) {
+          window.requestAnimationFrame(() => siteNavigation?.querySelector("a")?.focus());
+        } else if (restoreFocus) {
+          navButton?.focus();
+        }
+      };
+
       navButton?.addEventListener("click", () => {
-        const isOpen = siteHeader?.classList.toggle("nav-open") ?? false;
-        navButton.setAttribute("aria-expanded", String(isOpen));
-        navButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+        const willOpen = !siteHeader?.classList.contains("nav-open");
+        setNavigationOpen(willOpen, { focusMenu: willOpen });
       });
 
       siteNavigation?.addEventListener("click", (event) => {
         if (event.target instanceof Element && event.target.closest("a")) {
-          siteHeader?.classList.remove("nav-open");
-          navButton?.setAttribute("aria-expanded", "false");
-          navButton?.setAttribute("aria-label", "Open navigation");
+          setNavigationOpen(false);
         }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && siteHeader?.classList.contains("nav-open")) {
+          setNavigationOpen(false, { restoreFocus: true });
+        }
+      });
+
+      mobileNavigation.addEventListener("change", (event) => {
+        if (!event.matches) setNavigationOpen(false);
       });
 
       if (resumeContext) {
@@ -331,6 +351,8 @@ const resumeContext =
         const excludedDecorationSelector = `${excludedTranslationSelector}, [data-translation-term]`;
         let selectionTimer: number | undefined;
         let suppressSelectionClickUntil = 0;
+        let activeTranslationTrigger: HTMLElement | null = null;
+        let translationTermIndex = 0;
 
         const isEligibleTarget = (
           target: EventTarget | Node | null,
@@ -344,8 +366,16 @@ const resumeContext =
           return Boolean(element && !element.closest(excludedSelector));
         };
 
-        const closeTranslationPopover = () => {
+        const closeTranslationPopover = ({ restoreFocus = false } = {}) => {
+          const trigger = activeTranslationTrigger;
           translationPopover.setAttribute("hidden", "");
+          translationPopover.removeAttribute("aria-labelledby");
+          trigger?.setAttribute("aria-expanded", "false");
+          activeTranslationTrigger = null;
+
+          if (restoreFocus && trigger?.isConnected) {
+            window.requestAnimationFrame(() => trigger.focus({ preventScroll: true }));
+          }
         };
 
         const showTranslationPopover = ({
@@ -354,13 +384,25 @@ const resumeContext =
           x,
           topY,
           bottomY,
+          trigger,
         }: {
           word: string;
           translations: string[];
           x: number;
           topY: number;
           bottomY: number;
+          trigger?: HTMLElement;
         }) => {
+          if (activeTranslationTrigger && activeTranslationTrigger !== trigger) {
+            activeTranslationTrigger.setAttribute("aria-expanded", "false");
+          }
+          activeTranslationTrigger = trigger ?? null;
+          if (trigger) {
+            trigger.setAttribute("aria-expanded", "true");
+            translationPopover.setAttribute("aria-labelledby", trigger.id);
+          } else {
+            translationPopover.removeAttribute("aria-labelledby");
+          }
           translationWord.textContent = word;
           translationList.replaceChildren(
             ...translations.slice(0, 6).map((translation) => {
@@ -411,6 +453,7 @@ const resumeContext =
             x: rect.left + rect.width / 2,
             topY: rect.top,
             bottomY: rect.bottom,
+            trigger: marker,
           });
         };
 
@@ -448,9 +491,12 @@ const resumeContext =
                 const visibleTerm = text.slice(match.start, match.end);
                 const marker = document.createElement("span");
                 marker.className = "translation-term";
+                marker.id = `translation-term-${++translationTermIndex}`;
                 marker.dataset.translationTerm = match.key;
                 marker.setAttribute("role", "button");
-                marker.setAttribute("tabindex", "0");
+                marker.setAttribute("tabindex", "-1");
+                marker.setAttribute("aria-controls", translationPopover.id);
+                marker.setAttribute("aria-expanded", "false");
                 marker.setAttribute(
                   "aria-label",
                   `${visibleTerm}. Show Lithuanian translation`,
@@ -536,8 +582,10 @@ const resumeContext =
           selectionTimer = window.setTimeout(syncSelectionTranslation, 50);
         });
 
-        window.addEventListener("scroll", closeTranslationPopover, { passive: true });
-        translationClose?.addEventListener("click", closeTranslationPopover);
+        window.addEventListener("scroll", () => closeTranslationPopover(), { passive: true });
+        translationClose?.addEventListener("click", () => {
+          closeTranslationPopover({ restoreFocus: true });
+        });
 
         document.addEventListener("keydown", (event) => {
           const marker = event.target instanceof Element
@@ -550,8 +598,8 @@ const resumeContext =
             return;
           }
 
-          if (event.key === "Escape") {
-            closeTranslationPopover();
+          if (event.key === "Escape" && !translationPopover.hidden) {
+            closeTranslationPopover({ restoreFocus: true });
           }
         });
 

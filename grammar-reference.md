@@ -20,7 +20,9 @@ status: "published"
 # Grammar Reference Guide - A2 Level
 ## Gramatikos vadovas - A2 lygis
 
-Complete grammar reference for Lithuanian speakers learning English at A2 level.
+A practical reference to the main grammar patterns taught in this 24-unit A2 course. It focuses on frequent forms, meanings, and common repairs; it is not an exhaustive grammar of English.
+
+<p class="lt-text" lang="lt">Tai praktinis šiame 24 skyrių A2 kurse mokomų pagrindinių gramatikos modelių vadovas. Jame trumpai aptariamos dažnos formos, reikšmės ir klaidų taisymas; tai nėra išsamus visos anglų kalbos gramatikos aprašas.</p>
 
 ---
 
@@ -42,6 +44,18 @@ Complete grammar reference for Lithuanian speakers learning English at A2 level.
 14. [Question Formation](#question-formation)
 15. [Modal Verbs](#modal-verbs)
 16. [Comparison](#comparison)
+17. [Determiners: one and ones](#determiners-one-and-ones)
+18. [Pronouns: object, possessive, and reflexive](#pronouns-object-possessive-and-reflexive)
+19. [Verb Patterns and Purpose](#verb-patterns-and-purpose)
+20. [Adverbs, Imperatives, and Sequence Words](#adverbs-imperatives-and-sequence-words)
+21. [Suggestions: Let's and How about](#suggestions-let-s-and-how-about)
+22. [First Conditional](#first-conditional)
+23. [Reasons and Results: because and so](#reasons-and-results-because-and-so)
+24. [Less and Fewer](#less-and-fewer)
+25. [Too and Enough](#too-and-enough)
+26. [Defining Relative Clauses](#defining-relative-clauses)
+27. [Common Lithuanian-English Grammar Differences](#common-lithuanian-english-grammar-differences)
+28. [Tips for Lithuanian Learners](#tips-for-lithuanian-learners)
 
 ---
 
@@ -274,9 +288,11 @@ Regular past participles usually end in **-ed**. Common irregular forms include:
 
 ### Present Perfect or Past Simple?
 
-- Use Present Perfect when the time is not finished or not stated: *I have seen that film.*
-- Use Past Simple with a finished past time: *I saw it last Friday.*
-- Do not combine Present Perfect with **yesterday, last..., ...ago, in 2020**.
+- Choose by meaning, not only by whether a time phrase is written. Use Present Perfect for an experience, continuing situation, unfinished period, or current result: *I have seen that film. She has lived here for two years.*
+- Use Past Simple when you present an event as finished in the past: *I saw it last Friday. I saw that film, but I don't remember when.* The second example has no exact time phrase, but the event is still treated as finished.
+- In the meanings taught here, Present Perfect is not normally used with a finished past expression such as **yesterday, last..., ...ago, in 2020**. Use Past Simple: *I finished it yesterday.* An open period such as **today** or **this week** can use Present Perfect when it is still continuing: *I have had two meetings today.*
+
+<p class="lt-text" lang="lt"><strong>Reikšmės atrama:</strong> laiką rinkitės ne vien pagal tai, ar parašytas laiko žodis. Present Perfect sieja patirtį, tęsiamą situaciją ar rezultatą su dabartimi. Past Simple pateikia įvykį kaip užbaigtą praeityje, net jei tikslaus laiko nepasakome.</p>
 
 ---
 
@@ -362,12 +378,18 @@ Regular past participles usually end in **-ed**. Common irregular forms include:
 
 ### Going To vs Will
 
-| Going To | Will |
+Both forms refer to the future. Choose the form that matches the meaning you want; distance in time and certainty do not decide the form by themselves.
+
+| Meaning with **going to** | Meaning with **will** |
 |----------|------|
-| Planned future | Unplanned/spontaneous |
-| Evidence-based predictions | General predictions |
-| I'm going to visit Paris. (decided) | I'll visit Paris! (just decided now) |
-| It's going to rain. (dark clouds) | I think it will rain. (opinion) |
+| an intention that exists before speaking | a decision made while speaking |
+| a prediction based on present evidence | a prediction presented as an opinion or belief |
+| *I'm going to visit Paris; I bought the ticket yesterday.* | *The phone is ringing. I'll answer it.* |
+| *Look at those clouds. It's going to rain.* | *I think it will rain tomorrow.* |
+
+Use Present Continuous for a fixed arrangement when the details are agreed: *We're meeting at the station at six.* **Will** is also common for offers and promises: *I'll carry that. I'll call you tonight.*
+
+<p class="lt-text" lang="lt"><strong>Reikšmės atrama:</strong> <strong>going to</strong> dažnai rodo jau turimą ketinimą arba prognozę pagal matomus požymius. <strong>Will</strong> dažnai vartojamas sprendimui kalbėjimo metu, pasiūlymui, pažadui ar nuomone paremtai prognozei. Tai reikšmės pasirinkimas, ne vien taisyklė „suplanuota / nesuplanuota“.</p>
 
 ---
 
@@ -661,7 +683,7 @@ Compare:
 - She **couldn't** come yesterday.
 
 **Polite requests (present):**
-- **Could** you help me? (more polite than "can")
+- **Could** you help me? This often sounds softer or less direct than **Can you help me?** Tone, context, and **please** also affect politeness, and both forms can be polite.
 
 ### May / Might
 
@@ -695,11 +717,19 @@ For an uncertain conclusion, use **may/might** instead: *She isn't answering. Sh
 **Question:**
 - **Should** I call him?
 
-### Must / Mustn't
+### Must, Have to, and Mustn't
 
 **Strong obligation:**
-- I **must** go now. (internal obligation)
-- You **must** wear a seatbelt. (rule/law)
+- I **must** remember to call Ana.
+- You **must** wear a seatbelt.
+
+**Must** and **have to** often overlap. **Must** often emphasises the speaker's instruction or strong feeling; **have to** is common for a practical requirement or rule. These are tendencies, not absolute differences:
+
+- I **must** finish this today. (the speaker stresses the need)
+- We **have to** show ID at reception. (a practical rule)
+- You **must/have to** wear a seatbelt. (both can express the obligation)
+
+Use **had to** for past obligation and **will have to** for future obligation: *We had to wait. I'll have to leave early.*
 
 **Prohibition:**
 - You **mustn't** smoke here. (= it's forbidden)
@@ -783,6 +813,207 @@ Many adjectives with three or more syllables use **more**. Two-syllable adjectiv
 - Equality: **as + base adjective + as** — *This task is as easy as that one.*
 - Inequality: **not as + base adjective + as** — *Vilnius is not as big as London.*
 - Top-group membership: **one of the + superlative + plural noun** — *one of the best restaurants*
+
+---
+
+## Determiners: One and Ones
+
+Determiners come before a noun and help identify it. The article section above covers **a/an, the,** and no article. These forms add distance, number, or ownership:
+
+| Meaning | Singular | Plural |
+| --- | --- | --- |
+| near the speaker | **this key** | **these keys** |
+| farther from the speaker | **that bag** | **those bags** |
+
+Possessive determiners also come before a noun: **my, your, his, her, its, our, their**. Compare *my coat* with the possessive pronoun *mine* in the next section.
+
+Use **one** or **ones** to avoid repeating a countable noun when the meaning is clear:
+
+- Which charger do you need? — The white **one**.
+- I don't want the large shoes. I prefer the small **ones**.
+- Is this your umbrella? — No, mine is the blue **one**.
+
+Use **one** for a singular item and **ones** for plural items. A possessive pronoun already replaces the noun: say *These are mine*, not *These are my ones*.
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> <strong>this/these</strong> dažniausiai rodo arti esantį daiktą ar daiktus, o <strong>that/those</strong> – toliau esančius. <strong>One/ones</strong> pakeičia aiškų skaičiuojamą daiktavardį, kad jo nekartotume: <strong>the blue one, the small ones</strong>.</p>
+
+---
+
+## Pronouns: Object, Possessive, and Reflexive
+
+| Subject | Object | Possessive determiner + noun | Possessive pronoun | Reflexive |
+| --- | --- | --- | --- | --- |
+| I | me | my bag | mine | myself |
+| you | you | your bag | yours | yourself / yourselves |
+| he | him | his bag | his | himself |
+| she | her | her bag | hers | herself |
+| it | it | its cover | — | itself |
+| we | us | our bag | ours | ourselves |
+| they | them | their bag | theirs | themselves |
+
+Use an **object pronoun** after a verb or preposition: *Call her. Come with us.* Use a **possessive pronoun** without a following noun: *This coat is hers. Those seats are ours.*
+
+Use a **reflexive pronoun** when the subject and object are the same person or thing: *He taught himself. She looked at herself in the mirror.* It can also add emphasis: *I made the card myself.* **By myself** can mean “alone”: *I travelled by myself.*
+
+Compare:
+
+- Marta called **me**. (Marta called another person.)
+- Marta called **herself**. (Marta called Marta.)
+- That phone is **hers**. (The phone belongs to Marta.)
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> objektinis įvardis eina po veiksmažodžio ar prielinksnio: <strong>call her, with us</strong>. Savybinis įvardis vartojamas be daiktavardžio: <strong>It is mine</strong>. Sangrąžinis įvardis rodo, kad veikėjas veiksmą atlieka sau: <strong>He taught himself</strong>.</p>
+
+---
+
+## Verb Patterns and Purpose
+
+Learn the first verb together with the form that normally follows it. There is no single rule that predicts every verb pattern.
+
+| **to + base verb** | **verb + -ing** |
+| --- | --- |
+| want **to improve** | enjoy **learning** |
+| need **to practise** | finish **writing** |
+| hope **to find** | avoid **driving** |
+| plan **to apply** | practise **speaking** |
+| decide **to start** | keep **working** |
+
+After a preposition, use **-ing**: *good at organising, interested in learning, before sending*. **Like, love,** and **hate** can often take either **to + verb** or **-ing** with little difference at this level: *I like to read. I like reading.*
+
+Use **to + base verb** to explain purpose—why someone does something:
+
+- I practise speaking **to improve** my English.
+- She went to the library **to study**.
+- We use this app **to check** bus times.
+
+Compare **to + verb** for an action and **for + noun** for a thing or use: *I went out to buy bread. This bag is for bread.*
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> po <strong>want, need, hope, plan, decide</strong> dažnai vartojama <strong>to + veiksmažodis</strong>, o po <strong>enjoy, finish, avoid, practise</strong> – <strong>-ing</strong> forma. Tikslo <strong>to</strong> reiškia „tam, kad“: <strong>I study to learn</strong> – mokausi tam, kad išmokčiau.</p>
+
+---
+
+## Adverbs, Imperatives, and Sequence Words
+
+An adjective describes a noun; an adverb of manner describes how an action happens:
+
+- a **careful** user / She checks links **carefully**.
+- a **clear** message / He explains the problem **clearly**.
+- a **good** plan / The plan works **well**.
+
+Many adverbs add **-ly**. Common forms that do not are **fast, hard, late, early**. **Hardly** has a different meaning: *I can hardly hear you* means “I can almost not hear you.”
+
+Use the base verb for an imperative instruction: *Open Settings. Check the address.* Use **don't + base verb** for a negative instruction or warning: *Don't share your password.* **Please** can make a request sound more courteous: *Please send the link again.*
+
+Put steps in a clear order with **first, next, then, after that, finally**:
+
+> First, open the message. Next, check the sender carefully. Then download the file. Finally, save it in the correct folder.
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> būdo prieveiksmis atsako į klausimą „kaip?“: <strong>carefully, clearly, well</strong>. Nurodymą pradėkite paprastąja veiksmažodžio forma, o draudimą – <strong>don't</strong>. Veiksmų seką žymėkite <strong>first, next, then, finally</strong>.</p>
+
+---
+
+## Suggestions: Let's and How about
+
+Use these common patterns to suggest a shared action:
+
+- **Let's + base verb:** *Let's meet outside.*
+- **Let's not + base verb:** *Let's not drive in heavy traffic.*
+- **How about + noun:** *How about Saturday?*
+- **How about + verb-ing:** *How about meeting at six?*
+
+Do not use **to** or **-ing** after **Let's**: *Let's meet* ✓. Do not use **to + verb** after **How about**: *How about meeting?* ✓.
+
+Possible replies include *Good idea*, *That sounds good*, or a polite alternative: *I can't on Saturday. How about Sunday?*
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> po <strong>Let's</strong> vartokite paprastąją veiksmažodžio formą: <strong>Let's go</strong>. Po <strong>How about</strong> vartokite daiktavardį arba <strong>-ing</strong> formą: <strong>How about Sunday? How about going?</strong></p>
+
+---
+
+## First Conditional
+
+Use the first conditional for a possible future situation and a likely or practical result:
+
+**if + Present Simple, will + base verb**
+
+- If it **rains**, we **will stay** home.
+- We **will take** the bus if the train **is** late.
+
+The result can also use **may, might, can,** or an imperative when that meaning fits:
+
+- If we book late, the tickets **may cost** more.
+- If the bin is full, **take** your rubbish home.
+
+The clauses can change order. Use a comma when the **if** clause comes first. In this basic future pattern, do not normally put **will** directly after **if**: *If it rains...*, not *If it will rain...*.
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> pirmojo tipo sąlygos sakinys nusako galimą ateities situaciją ir tikėtiną ar praktišką rezultatą. Po <strong>if</strong> vartokite Present Simple, o rezultato dalyje dažnai – <strong>will + bendratis</strong>: <strong>If it rains, we will stay home</strong>.</p>
+
+---
+
+## Reasons and Results: Because and So
+
+Use **because** before a reason and **so** before a result:
+
+- We took the bus **because** it was raining. (Why did we take the bus? It was raining.)
+- It was raining, **so** we took the bus. (What happened as a result? We took the bus.)
+
+In a simple two-clause sentence, choose one connector. Avoid *Because it was raining, so we took the bus.* Say either *Because it was raining, we took the bus* or *It was raining, so we took the bus*.
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> <strong>because</strong> įveda priežastį („nes“, „kadangi“), o <strong>so</strong> – rezultatą („todėl“, „taigi“). To paties priežasties ir rezultato ryšio paprastame sakinyje nejunkite abiem žodžiais iš karto.</p>
+
+---
+
+## Less and Fewer
+
+Use **less** with an uncountable noun and **fewer** with a plural countable noun:
+
+| Noun type | Example |
+| --- | --- |
+| uncountable: water, traffic, waste | **less water, less traffic, less waste** |
+| plural countable: bottles, cars, journeys | **fewer bottles, fewer cars, fewer journeys** |
+
+Everyday English sometimes uses **less** with plural nouns, but this course teaches the standard distinction for clear A2 writing: *fewer plastic bags; less plastic*.
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> <strong>less</strong> vartokite su neskaičiuojamu daiktavardžiu, o <strong>fewer</strong> – su daugiskaitiniu skaičiuojamu daiktavardžiu: <strong>less water, fewer bottles</strong>.</p>
+
+---
+
+## Too and Enough
+
+Use **too** when something is more than acceptable or suitable. Use **enough** for the amount or degree that is sufficient.
+
+| Pattern | Example |
+| --- | --- |
+| **too + adjective** | The shoes are **too small**. |
+| **adjective + enough** | The shoes aren't **wide enough**. |
+| **enough + noun** | We have **enough chairs**. |
+| **too much + uncountable noun** | There is **too much noise**. |
+| **too many + plural noun** | There are **too many delays**. |
+
+**Too** is not simply a stronger **very**. *The room is very small* describes it; *The room is too small* means its size causes a problem. You can add a result with **to + verb**: *The bag is too heavy to carry. The box is strong enough to use.*
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> prieš būdvardį <strong>too</strong> dažniausiai reiškia „per“: <strong>too small – per mažas</strong>. <strong>Enough</strong> eina prieš daiktavardį, bet po būdvardžio: <strong>enough chairs, wide enough</strong>.</p>
+
+---
+
+## Defining Relative Clauses
+
+A defining relative clause identifies exactly which person, thing, or place you mean. In these A2 patterns, do not separate it with commas.
+
+| Refers to | Relative word | Example |
+| --- | --- | --- |
+| a person | **who** | a guide **who speaks English** |
+| a thing | **that / which** | an app **that works offline** |
+| a place | **where** | a café **where we can talk** |
+
+Put the relative clause directly after the noun it describes. Do not repeat its subject: *a guide who speaks English* ✓, not *a guide who she speaks English*.
+
+Compare:
+
+- This is the library **that opens late**. (The library performs the action.)
+- This is the library **where I study**. (I study in that place.)
+
+At this level, keep the relative word in the sentence. This makes the description easier to build and understand.
+
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> <strong>who</strong> sieja informaciją apie žmogų, <strong>that/which</strong> – apie daiktą, o <strong>where</strong> – apie vietą. Šalutinis sakinys eina iškart po žodžio, kurį tikslina.</p>
 
 ---
 

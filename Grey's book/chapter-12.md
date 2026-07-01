@@ -85,7 +85,7 @@ The south road was open, but only one jeep was available. The team could not tak
 
 "We can borrow tables there," Luis added in the chat.
 
-Izzie removed the table and two heavy bags. Then she noticed another problem: one cool-box battery had not charged.
+Izzie removed the table and two heavy bags. Then she noticed another problem: one cool-box battery did not charge overnight.
 
 "We have three cool boxes, but only two are cold enough," she said.
 
@@ -109,11 +109,9 @@ At one point, the signal returned after a long break. Three messages arrived tog
 
 They reached the village at 10:50. Families were waiting in the community hall, but no one was angry. Rosa passed on the team's messages and changed the appointment order. Children who lived farthest away went first.
 
-The team set up two small tables. Izzie explained each step to the families, and Ana answered questions. By late afternoon, the team gave care to all forty children.
+The team set up two small tables. Before they began, Ana checked the cool-box temperature again. It was in the safe range. Rosa invited families in small groups so the hall did not become too crowded. Izzie explained each step, and Ana answered questions. Each parent received information and could ask questions before agreeing to care. One father wanted more time to read the information, so the team moved his appointment later. They did not hurry him.
 
-Before they began, Ana checked the cool-box temperature again. It was in the safe range. Rosa invited families in small groups so the hall did not become too crowded. Each parent received information and could ask questions before agreeing to care. One father wanted more time to read the information, so the team moved his appointment later. They did not hurry him.
-
-At noon, a family arrived without an appointment. Their village was farther away, and they had not seen the original notice. The team checked the supplies and found that there was enough medicine. Rosa added the child to the end of the list and explained the change to the waiting families.
+At noon, a family arrived without an appointment. Their village was farther away, and they did not see the original notice. The team checked the supplies and found that there was enough medicine. Rosa added the child to the end of the list and explained the change to the waiting families.
 
 "A plan also needs to be fair," Izzie said. "We can be flexible when it is safe."
 
@@ -125,7 +123,7 @@ On the drive home, Elena looked at the long group-chat history. "You gave clear 
 
 "But you didn't," Elena said. "You worked with the people who were affected. That is why the plan worked out."
 
-Izzie watched the mountains through the wet window. The day had not followed the first plan, but it had still succeeded. Good teamwork was not about controlling every problem. It was about sharing useful information, listening to replies, and changing the plan together.
+Izzie watched the mountains through the wet window. The day did not follow the first plan, but it still succeeded. Good teamwork was not about controlling every problem. It was about sharing useful information, listening to replies, and changing the plan together.
 
 She opened the group chat one last time and wrote: **We are leaving the village now. All patients have been seen, and the supplies are safe. Thank you for helping us change the plan.** Rosa replied with a heart and the words: **Thank you for listening to our community.**
 

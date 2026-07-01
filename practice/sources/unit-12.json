@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-12",
-  "contentVersion": 3,
+  "contentVersion": 4,
   "title": "Unit 12: Review and Consolidation",
   "objectives": [
     { "id": "u12.tense-review", "label": { "en": "Choose and form A2 tenses", "lt": "Pasirinkti ir sudaryti A2 laikus" } },
@@ -178,11 +178,11 @@
     },
     {
       "id": "u12.structure-review.013",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u12.structure-review",
       "type": "fill-blank",
       "difficulty": 3,
-      "prompt": { "en": "Correct the sentence: She is the happiest than her sister.", "lt": "Ištaisykite sakinį: „She is the happiest than her sister.“" },
+      "prompt": { "en": "Compare the two sisters and correct the sentence: She is the happiest than her sister.", "lt": "Palyginkite dvi seseris ir ištaisykite sakinį: „She is the happiest than her sister.“" },
       "answer": { "accepted": ["She is happier than her sister.", "She is happier than her sister"], "caseSensitive": false },
       "rationale": { "en": "A comparison between two people uses the comparative happier + than.", "lt": "Lyginant du žmones vartojamas lyginamasis laipsnis „happier“ + „than“." },
       "sourceRefs": [{ "lesson": "unit-12", "exercise": 2 }]

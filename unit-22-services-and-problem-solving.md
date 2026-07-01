@@ -22,13 +22,13 @@ status: "published"
 
 ### Your route through this unit / Kaip mokytis
 
-A successful service conversation follows four steps: **greet → give evidence → describe the problem → request a solution**. Practise calm, specific language even when the problem is frustrating.
+A successful service conversation follows four steps: **greet → describe the purchase and problem → give evidence → request a solution**. Practise calm, specific language even when the problem is frustrating.
 
 ## Language Focus / Kalbos pagrindai
 
 Use **too** before an adjective for more than acceptable: *The shoes are too small.* Use **enough** after an adjective: *They aren't wide enough.* Present Perfect can describe a current result: *The screen has stopped working.*
 
-<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> <strong>Too</strong> eina prieš būdvardį ir reiškia „per daug“: <strong>too small</strong>. <strong>Enough</strong> eina po būdvardžio ir reiškia „pakankamai“: <strong>wide enough</strong>. Skundą pradėkite faktais, tada mandagiai paprašykite sprendimo.</p>
+<p class="lt-text" lang="lt"><strong>Lietuviška atrama:</strong> <strong>Too</strong> eina prieš būdvardį ir reiškia „per“: <strong>too small</strong> - <strong>per mažas</strong>, <strong>too noisy</strong> - <strong>per triukšmingas</strong>. <strong>Enough</strong> eina po būdvardžio ir reiškia „pakankamai“: <strong>wide enough</strong> - <strong>pakankamai platus</strong>. Pirmiausia apibūdinkite pirkinį ir problemą, tada pateikite įrodymą ir mandagiai paprašykite sprendimo.</p>
 
 ### When the first solution is unavailable / Kai pirmas sprendimas netinka
 

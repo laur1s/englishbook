@@ -149,6 +149,30 @@ test("recent items are deferred when enough alternatives exist", () => {
   assert.equal(pack.items.some((item) => recentItemIds.includes(item.id)), false);
 });
 
+test("selection deterministically spreads items across source exercises", () => {
+  const diverseCatalog = structuredClone(catalog);
+  diverseCatalog.units[0].items.forEach((item, index) => {
+    item.difficulty = 2;
+    item.sourceRefs = [{
+      lesson: "unit-01",
+      exercise: Math.floor(index / 4) + 1,
+    }];
+  });
+  const options = {
+    unitId: "unit-01",
+    mode: "standard",
+    count: 3,
+    attempt: 2,
+  };
+  const pack = generatePracticePackFromCatalog(diverseCatalog, options);
+
+  assert.equal(
+    new Set(pack.items.map((item) => item.sourceRefs[0].exercise)).size,
+    3,
+  );
+  assert.deepEqual(pack, generatePracticePackFromCatalog(diverseCatalog, options));
+});
+
 test("target objectives are strongly preferred and normalized deterministically", () => {
   const options = {
     unitId: "unit-01",

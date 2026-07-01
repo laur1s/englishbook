@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "unitId": "unit-09",
-  "contentVersion": 4,
+  "contentVersion": 5,
   "title": "Unit 9: Modal Verbs",
   "objectives": [
     { "id": "u09.deduction", "label": { "en": "Make deductions with must and can't", "lt": "Daryti išvadas su must ir can't" } },
@@ -175,18 +175,18 @@
     },
     {
       "id": "u09.advice.013",
-      "revision": 1,
+      "revision": 2,
       "objectiveId": "u09.advice",
       "type": "single-choice",
       "difficulty": 1,
-      "prompt": { "en": "You ___ eat so much sugar. It is not healthy.", "lt": "Neturėtumėte valgyti tiek daug cukraus, nes tai nesveika." },
+      "prompt": { "en": "Your friend has an important exam tomorrow but has not studied. Choose the most helpful advice.", "lt": "Draugo rytoj laukia svarbus egzaminas, bet jis dar nesimokė. Pasirinkite naudingiausią patarimą." },
       "choices": [
-        { "id": "shouldnt", "text": "shouldn't" },
-        { "id": "must", "text": "must" },
-        { "id": "may", "text": "may" }
+        { "id": "shouldnt", "text": "You shouldn't open your notes." },
+        { "id": "must", "text": "You must know every answer already." },
+        { "id": "may", "text": "You should review the main topics tonight." }
       ],
-      "answer": { "choiceId": "shouldnt" },
-      "rationale": { "en": "Shouldn't gives advice against an unhealthy action.", "lt": "„Shouldn't“ vartojamas patariant nedaryti sveikatai žalingo veiksmo." },
+      "answer": { "choiceId": "may" },
+      "rationale": { "en": "You should review the main topics tonight gives practical advice that fits the situation.", "lt": "„You should review the main topics tonight“ yra praktiškas, situacijai tinkamas patarimas." },
       "sourceRefs": [{ "lesson": "unit-09", "exercise": 4 }]
     },
     {

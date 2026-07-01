@@ -6,7 +6,7 @@ import {
   getGreyBookEntries,
   getPrevNextEntries,
 } from "../../lib/content";
-import { extractGreyAnswerSnippet } from "../../lib/answers";
+import { requireGreyAnswerSnippet } from "../../lib/answers";
 import { parseDocument, renderMarkdown } from "../../lib/markdown";
 import { withBase } from "../../lib/constants";
 
@@ -29,7 +29,7 @@ const { previous, next } = getPrevNextEntries(entries, entry.data.slug);
 const answerEntry = (await getAnswerKeyEntries()).find(
   (item) => item.data.slug === "grey-book",
 );
-const answerSnippet = answerEntry ? extractGreyAnswerSnippet(answerEntry, entry) : "";
+const answerSnippet = requireGreyAnswerSnippet(answerEntry, entry);
 ---
 
 <ReaderLayout

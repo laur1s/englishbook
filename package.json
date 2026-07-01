@@ -15,7 +15,8 @@
     "practice:generate": "node --experimental-strip-types scripts/build-practice.mjs",
     "practice:check": "node --experimental-strip-types scripts/check-practice.mjs",
     "practice:stats": "node --experimental-strip-types scripts/practice-stats.mjs",
-    "qa": "pnpm check && pnpm test && pnpm audit:content && pnpm practice:check && pnpm build"
+    "links:check": "node scripts/check-site-links.mjs",
+    "qa": "pnpm check && pnpm test && pnpm audit:content && pnpm practice:check && pnpm build && pnpm links:check"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.8",

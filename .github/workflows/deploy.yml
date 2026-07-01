@@ -55,6 +55,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Generated-site link integrity
+        run: pnpm links:check
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

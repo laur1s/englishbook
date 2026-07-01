@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getA2Entries, getAnswerKeyEntries } from "../../lib/content";
-import { extractA2AnswerSnippet } from "../../lib/answers";
+import { requireA2AnswerSnippet } from "../../lib/answers";
 import { renderMarkdown } from "../../lib/markdown";
 import { withBase } from "../../lib/constants";
 
@@ -20,28 +20,27 @@ const answerEntry = answerEntries.find((entry) => entry.data.slug === "a2");
   </section>
 
   <section class="answer-stack">
-    {answerEntry &&
-      units.map((unit) => {
-        const snippet = extractA2AnswerSnippet(answerEntry, unit);
-        return (
-          <details
-            class="content-panel collapsible"
-            id={unit.data.slug}
-            data-persist-key={`answers:${unit.data.slug}`}
-          >
-            <summary>
-              {unit.data.title}
-              <span class="lt-text summary-subtitle" lang="lt">{unit.data.ltTitle}</span>
-            </summary>
-            <div class="prose" set:html={renderMarkdown(snippet)} />
-            <p class="answer-link-row">
-              <a class="inline-link" href={withBase(`/a2/${unit.data.slug}`)}>
-                Back to lesson
-                <span class="lt-text" lang="lt">Grįžti į skyrių</span>
-              </a>
-            </p>
-          </details>
-        );
-      })}
+    {units.map((unit) => {
+      const snippet = requireA2AnswerSnippet(answerEntry, unit);
+      return (
+        <details
+          class="content-panel collapsible"
+          id={unit.data.slug}
+          data-persist-key={`answers:${unit.data.slug}`}
+        >
+          <summary>
+            {unit.data.title}
+            <span class="lt-text summary-subtitle" lang="lt">{unit.data.ltTitle}</span>
+          </summary>
+          <div class="prose" set:html={renderMarkdown(snippet)} />
+          <p class="answer-link-row">
+            <a class="inline-link" href={withBase(`/a2/${unit.data.slug}`)}>
+              Back to lesson
+              <span class="lt-text" lang="lt">Grįžti į skyrių</span>
+            </a>
+          </p>
+        </details>
+      );
+    })}
   </section>
 </BaseLayout>

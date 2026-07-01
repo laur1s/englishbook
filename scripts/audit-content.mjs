@@ -3,8 +3,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import {
-  extractA2AnswerSnippet,
-  extractGreyAnswerSnippet,
+  requireA2AnswerSnippet,
+  requireGreyAnswerSnippet,
 } from "../src/lib/answers.ts";
 import { parseDocument } from "../src/lib/markdown.ts";
 
@@ -253,11 +253,15 @@ export const runContentAudit = ({ root = defaultRoot } = {}) => {
         continue;
       }
 
-      const snippet = extractA2AnswerSnippet(a2Answers, document);
+      let snippet = "";
+      try {
+        snippet = requireA2AnswerSnippet(a2Answers, document);
+      } catch (error) {
+        report(filePath, error instanceof Error ? error.message : String(error));
+        continue;
+      }
 
-      if (!snippet) {
-        report(filePath, `no answer snippet found for Unit ${document.data.order}`);
-      } else if (/^##\s+Unit\b/im.test(snippet)) {
+      if (/^##\s+Unit\b/im.test(snippet)) {
         report(filePath, "answer snippet still includes its duplicated outer Unit heading");
       } else {
         const lessonNumbers = new Set(
@@ -284,6 +288,8 @@ export const runContentAudit = ({ root = defaultRoot } = {}) => {
         }
       }
     }
+  } else if (units.some(({ document }) => document?.data.hasAnswerKey)) {
+    report(a2AnswerPath, "required A2 answer-key entry is missing or invalid");
   }
 
   if (greyAnswers) {
@@ -306,11 +312,15 @@ export const runContentAudit = ({ root = defaultRoot } = {}) => {
         continue;
       }
 
-      const snippet = extractGreyAnswerSnippet(greyAnswers, document);
+      let snippet = "";
+      try {
+        snippet = requireGreyAnswerSnippet(greyAnswers, document);
+      } catch (error) {
+        report(filePath, error instanceof Error ? error.message : String(error));
+        continue;
+      }
 
-      if (!snippet) {
-        report(filePath, `no answer snippet found for Chapter ${document.data.order}`);
-      } else if (!/^###\s+Understanding\b/im.test(snippet)) {
+      if (!/^###\s+Understanding\b/im.test(snippet)) {
         report(filePath, "answer snippet does not begin with a normalized Understanding heading");
       } else {
         const questionCount = numberedItemCount(
@@ -328,6 +338,8 @@ export const runContentAudit = ({ root = defaultRoot } = {}) => {
         }
       }
     }
+  } else if (greyChapters.some(({ document }) => document?.data.hasAnswerKey)) {
+    report(greyAnswerPath, "required Grey's Book answer-key entry is missing or invalid");
   }
 
   for (const { filePath, document } of greyChapters) {

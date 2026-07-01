@@ -84,13 +84,45 @@ test("active-listening pilot sessions carry current revisions and listening evid
 });
 
 test("study-evidence gates invalidate old trust-based content completions", () => {
+  const changedLearnRevisions = new Map([
+    ["module-01", 3],
+    ["module-02", 3],
+    ["module-03", 3],
+    ["module-04", 4],
+    ["module-05", 4],
+    ["module-06", 5],
+    ["module-07", 3],
+    ["module-08", 4],
+    ["module-09", 5],
+    ["module-10", 4],
+    ["module-11", 3],
+    ["module-12", 7],
+    ["module-20", 3],
+    ["module-22", 3],
+    ["module-24", 3],
+  ]);
+  const changedContextRevisions = new Map([
+    ["module-01", 3],
+    ["module-02", 4],
+    ["module-03", 3],
+    ["module-06", 3],
+    ["module-04", 3],
+    ["module-05", 3],
+    ["module-07", 4],
+    ["module-08", 3],
+    ["module-09", 4],
+    ["module-10", 4],
+    ["module-11", 3],
+    ["module-12", 4],
+  ]);
+
   for (const module of modules) {
     const learn = module.sessions.find((session) => session.stage === "learn");
-    assert.equal(learn?.revision, module.id === "module-12" ? 3 : 2);
+    assert.equal(learn?.revision, changedLearnRevisions.get(module.id) ?? 2);
 
     if (module.order <= 12) {
       const context = module.sessions.find((session) => session.stage === "context");
-      assert.equal(context?.revision, 2);
+      assert.equal(context?.revision, changedContextRevisions.get(module.id) ?? 2);
     }
   }
 });
@@ -144,6 +176,20 @@ test("validation rejects missing modules and stage gaps", async (t) => {
     const invalid = clonePath();
     invalid.modules[0].sessions.splice(2, 1);
     assert.throws(() => validateCoursePath(invalid), /exactly five sessions/);
+  });
+});
+
+test("validation requires an explicit positive revision on every session", async (t) => {
+  await t.test("missing revision", () => {
+    const invalid = clonePath();
+    delete invalid.modules[0].sessions[0].revision;
+    assert.throws(() => validateCoursePath(invalid), /revision must be a positive integer/);
+  });
+
+  await t.test("zero revision", () => {
+    const invalid = clonePath();
+    invalid.modules[0].sessions[0].revision = 0;
+    assert.throws(() => validateCoursePath(invalid), /revision must be a positive integer/);
   });
 });
 

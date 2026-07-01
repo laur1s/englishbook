@@ -172,7 +172,7 @@ Choose from: **I'd love to · Would you like to · How about · Thanks, but · L
 
 ## Exercise 9: Negotiate a Plan / Pratimas 9
 
-Work with these constraints: Ana is free Saturday morning; Mantas is free after 14:00; the museum closes at 17:00; rain is expected after 16:00; both want lunch and one activity. Write or perform an 8-line exchange that reaches a realistic agreement.
+Work with these constraints: Ana is free on Saturday from 12:00 to 17:00; Mantas is free after 14:00; the museum closes at 17:00; rain is expected after 16:00; both want lunch and one activity. Write or perform an 8-line exchange that reaches a realistic agreement.
 
 **Model pattern:** invitation → problem → alternative → preference → practical question → confirmation.
 

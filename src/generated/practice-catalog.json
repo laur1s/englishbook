@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatorVersion": 3,
-  "sourceHash": "sha256-23e2d9f500de355eed82fa2d34ca9ed5adac1ccc61b8b1a393cd93d9209f9de3",
+  "generatorVersion": 4,
+  "sourceHash": "sha256-956f01dfd7e45a9ea77905d340add29beb4ae60190dfa662f1dfbeae7782545f",
   "units": [
     {
       "schemaVersion": 1,
@@ -665,7 +665,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-02",
-      "contentVersion": 4,
+      "contentVersion": 5,
       "title": "Daily Routines and Present Simple",
       "objectives": [
         {
@@ -1266,7 +1266,7 @@
         },
         {
           "id": "u02.routine-reading.009",
-          "revision": 3,
+          "revision": 4,
           "objectiveId": "u02.routine-reading",
           "type": "fill-blank",
           "difficulty": 3,
@@ -1276,13 +1276,14 @@
           },
           "answer": {
             "accepted": [
-              "by bus"
+              "by bus",
+              "on the bus"
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Getting on a bus to reach school means she travels by bus.",
-            "lt": "Jei ji į mokyklą vyksta autobusu, angliškai sakome „by bus“."
+            "en": "Both by bus and on the bus are natural here: they say which transport Ona uses.",
+            "lt": "Čia natūralu sakyti ir „by bus“, ir „on the bus“: abu variantai nurodo, kokiu transportu Ona vyksta."
           },
           "sourceRefs": [
             {
@@ -2571,7 +2572,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-05",
-      "contentVersion": 3,
+      "contentVersion": 5,
       "title": "Travel and Directions",
       "objectives": [
         {
@@ -2709,23 +2710,25 @@
         },
         {
           "id": "u05.place-prepositions.001",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u05.place-prepositions",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
             "en": "Complete with the phrase meaning šalia: “The bank is ___ the post office.”",
-            "lt": "Įrašykite anglišką žodžio „šalia“ atitikmenį: „The bank is ___ the post office.“"
+            "lt": "Įrašykite vieną tinkamą žodžio „šalia“ atitikmenį: „The bank is ___ the post office.“"
           },
           "answer": {
             "accepted": [
+              "beside",
+              "by",
               "next to"
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Next to means beside or šalia.",
-            "lt": "„Next to“ reiškia „šalia“."
+            "en": "Next to, beside, and by can all express šalia in this location sentence.",
+            "lt": "Šiame vietos sakinyje „next to“, „beside“ ir „by“ gali reikšti „šalia“."
           },
           "sourceRefs": [
             {
@@ -2801,7 +2804,7 @@
         },
         {
           "id": "u05.place-prepositions.010",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u05.place-prepositions",
           "type": "fill-blank",
           "difficulty": 3,
@@ -2811,14 +2814,16 @@
           },
           "answer": {
             "accepted": [
+              "A pharmacy is opposite the park",
+              "A pharmacy is opposite the park.",
               "The pharmacy is opposite the park",
               "The pharmacy is opposite the park."
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Pharmacy means vaistinė, and opposite means priešais.",
-            "lt": "„Pharmacy“ reiškia „vaistinė“, o „opposite“ – „priešais“."
+            "en": "Pharmacy means vaistinė, and opposite means priešais. Without earlier context, either a pharmacy or the pharmacy is possible.",
+            "lt": "„Pharmacy“ reiškia „vaistinė“, o „opposite“ – „priešais“. Be ankstesnio konteksto galimi ir „a pharmacy“, ir „the pharmacy“."
           },
           "sourceRefs": [
             {
@@ -2997,7 +3002,7 @@
         },
         {
           "id": "u05.there-be.016",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u05.there-be",
           "type": "fill-blank",
           "difficulty": 3,
@@ -3007,14 +3012,18 @@
           },
           "answer": {
             "accepted": [
+              "There are a lot of restaurants on this street",
+              "There are a lot of restaurants on this street.",
+              "There are lots of restaurants on this street",
+              "There are lots of restaurants on this street.",
               "There are many restaurants on this street",
               "There are many restaurants on this street."
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Use There are with the plural noun restaurants, followed by on this street.",
-            "lt": "Su daugiskaitos daiktavardžiu „restaurants“ vartokite „There are“, po to – „on this street“."
+            "en": "Use There are with plural restaurants. Many, a lot of, and lots of can all express daug in this sentence.",
+            "lt": "Su daugiskaitos daiktavardžiu „restaurants“ vartojame „There are“. Šiame sakinyje „daug“ galima perteikti „many“, „a lot of“ arba „lots of“."
           },
           "sourceRefs": [
             {
@@ -4906,7 +4915,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-09",
-      "contentVersion": 4,
+      "contentVersion": 5,
       "title": "Unit 9: Modal Verbs",
       "objectives": [
         {
@@ -5118,34 +5127,34 @@
         },
         {
           "id": "u09.advice.013",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u09.advice",
           "type": "single-choice",
           "difficulty": 1,
           "prompt": {
-            "en": "You ___ eat so much sugar. It is not healthy.",
-            "lt": "Neturėtumėte valgyti tiek daug cukraus, nes tai nesveika."
+            "en": "Your friend has an important exam tomorrow but has not studied. Choose the most helpful advice.",
+            "lt": "Draugo rytoj laukia svarbus egzaminas, bet jis dar nesimokė. Pasirinkite naudingiausią patarimą."
           },
           "choices": [
             {
               "id": "may",
-              "text": "may"
+              "text": "You should review the main topics tonight."
             },
             {
               "id": "must",
-              "text": "must"
+              "text": "You must know every answer already."
             },
             {
               "id": "shouldnt",
-              "text": "shouldn't"
+              "text": "You shouldn't open your notes."
             }
           ],
           "answer": {
-            "choiceId": "shouldnt"
+            "choiceId": "may"
           },
           "rationale": {
-            "en": "Shouldn't gives advice against an unhealthy action.",
-            "lt": "„Shouldn't“ vartojamas patariant nedaryti sveikatai žalingo veiksmo."
+            "en": "You should review the main topics tonight gives practical advice that fits the situation.",
+            "lt": "„You should review the main topics tonight“ yra praktiškas, situacijai tinkamas patarimas."
           },
           "sourceRefs": [
             {
@@ -5582,7 +5591,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-10",
-      "contentVersion": 3,
+      "contentVersion": 4,
       "title": "Unit 10: Present Tenses Contrast",
       "objectives": [
         {
@@ -5644,13 +5653,13 @@
         },
         {
           "id": "u10.present-continuous.008",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u10.present-continuous",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "Which tense does “at the moment” most clearly signal in this unit?",
-            "lt": "Kurį laiką šiame skyriuje aiškiausiai nurodo at the moment?"
+            "en": "Mina is speaking to a client at the moment. Which tense shows that the action is in progress now?",
+            "lt": "Mina šiuo metu kalbasi su klientu. Kuris laikas parodo, kad veiksmas vyksta dabar?"
           },
           "choices": [
             {
@@ -5670,8 +5679,8 @@
             "choiceId": "present-continuous"
           },
           "rationale": {
-            "en": "At the moment points to an action in progress now.",
-            "lt": "At the moment nurodo dabar vykstantį veiksmą."
+            "en": "The intended meaning is an action in progress now, so use Present Continuous; at the moment supports that meaning.",
+            "lt": "Norima pasakyti, kad veiksmas vyksta dabar, todėl vartojamas Present Continuous; žodžiai at the moment padeda patvirtinti šią reikšmę."
           },
           "sourceRefs": [
             {
@@ -6700,7 +6709,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-12",
-      "contentVersion": 3,
+      "contentVersion": 4,
       "title": "Unit 12: Review and Consolidation",
       "objectives": [
         {
@@ -7065,13 +7074,13 @@
         },
         {
           "id": "u12.structure-review.013",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u12.structure-review",
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Correct the sentence: She is the happiest than her sister.",
-            "lt": "Ištaisykite sakinį: „She is the happiest than her sister.“"
+            "en": "Compare the two sisters and correct the sentence: She is the happiest than her sister.",
+            "lt": "Palyginkite dvi seseris ir ištaisykite sakinį: „She is the happiest than her sister.“"
           },
           "answer": {
             "accepted": [
@@ -7253,7 +7262,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-13",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 13: Determiners and Everyday Objects",
       "objectives": [
         {
@@ -7377,13 +7386,13 @@
         },
         {
           "id": "u13.determiners.004",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u13.determiners",
           "type": "fill-blank",
           "difficulty": 2,
           "prompt": {
-            "en": "Complete: ___ charger I left here is missing.",
-            "lt": "Įrašykite artikelį: įkroviklis, kurį čia palikau, dingo."
+            "en": "The speaker means one specific charger that they left here. Complete with a/an or the: “___ charger I left here is missing.”",
+            "lt": "Kalbėtojas turi omenyje vieną konkretų čia paliktą įkroviklį. Įrašykite „a/an“ arba „the“: „___ charger I left here is missing.“"
           },
           "answer": {
             "accepted": [
@@ -7392,8 +7401,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The identifies the specific charger already described.",
-            "lt": "The nurodo konkretų jau apibūdintą įkroviklį."
+            "en": "The relative clause I left here identifies a specific charger, so use the.",
+            "lt": "Šalutinis sakinys „I left here“ nurodo konkretų įkroviklį, todėl vartojame „the“."
           },
           "sourceRefs": [
             {
@@ -7503,13 +7512,13 @@
         },
         {
           "id": "u13.determiners.008",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u13.determiners",
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Complete: Is ___ black backpack by the door yours?",
-            "lt": "Ar tas juodas krepšys prie durų tavo?"
+            "en": "Both speakers can see one specific black backpack by the door. Complete with a/an or the: “Is ___ black backpack by the door yours?”",
+            "lt": "Abu pašnekovai mato vieną konkretų juodą krepšį prie durų. Įrašykite „a/an“ arba „the“: „Is ___ black backpack by the door yours?“"
           },
           "answer": {
             "accepted": [
@@ -7518,8 +7527,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The location makes the backpack identifiable.",
-            "lt": "Vieta leidžia atpažinti konkretų krepšį, todėl vartojame the."
+            "en": "The phrase by the door identifies the specific backpack both speakers can see, so use the.",
+            "lt": "Žodžiai „by the door“ nurodo konkretų abiem pašnekovams matomą krepšį, todėl vartojame „the“."
           },
           "sourceRefs": [
             {
@@ -7595,13 +7604,13 @@
         },
         {
           "id": "u13.objects.011",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u13.objects",
           "type": "single-choice",
           "difficulty": 1,
           "prompt": {
-            "en": "The lost backpack was found...",
-            "lt": "Pamestas krepšys buvo rastas..."
+            "en": "A notice says, “I found a small black backpack on the 8:15 bus to Kaunas.” Where was the backpack found?",
+            "lt": "Skelbime rašoma: „Kauno 8.15 val. autobuse radau mažą juodą krepšį.“ Kur rastas krepšys?"
           },
           "choices": [
             {
@@ -7621,8 +7630,8 @@
             "choiceId": "bus"
           },
           "rationale": {
-            "en": "The notice says it was found on the 8:15 bus.",
-            "lt": "Skelbime nurodyta, kad jis rastas 8:15 autobuse."
+            "en": "The notice directly says that the backpack was found on the 8:15 bus.",
+            "lt": "Skelbime tiesiogiai nurodyta, kad krepšys rastas 8.15 val. autobuse."
           },
           "sourceRefs": [
             {
@@ -7633,13 +7642,13 @@
         },
         {
           "id": "u13.objects.012",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u13.objects",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "The lost backpack is small and ___.",
-            "lt": "Pamestas krepšys yra mažas ir juodas."
+            "en": "A notice describes “a small black backpack”. Complete: “The backpack is small and ___.”",
+            "lt": "Skelbime aprašytas „mažas juodas krepšys“. Užbaikite: „The backpack is small and ___.“"
           },
           "answer": {
             "accepted": [
@@ -7648,8 +7657,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The notice describes a small black backpack.",
-            "lt": "Skelbime aprašytas mažas juodas krepšys."
+            "en": "The notice gives two details: the backpack is small and black.",
+            "lt": "Skelbime pateiktos dvi detalės: krepšys yra mažas ir juodas."
           },
           "sourceRefs": [
             {
@@ -7660,13 +7669,13 @@
         },
         {
           "id": "u13.objects.013",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u13.objects",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "Which item was NOT listed inside the backpack?",
-            "lt": "Kuris daiktas nebuvo paminėtas krepšyje?"
+            "en": "The notice lists a green notebook, two chargers, and a pair of glasses inside the backpack. Which item was NOT listed?",
+            "lt": "Skelbime nurodyta, kad krepšyje yra žalia užrašų knygelė, du įkrovikliai ir akiniai. Kuris daiktas nepaminėtas?"
           },
           "choices": [
             {
@@ -7686,8 +7695,8 @@
             "choiceId": "wallet"
           },
           "rationale": {
-            "en": "The notice lists a notebook, chargers, and glasses, not a wallet.",
-            "lt": "Paminėti užrašų knygelė, įkrovikliai ir akiniai, bet ne piniginė."
+            "en": "The notice lists a notebook, chargers, and glasses, but it does not list a wallet.",
+            "lt": "Skelbime paminėti užrašų knygelė, įkrovikliai ir akiniai, bet nepaminėta piniginė."
           },
           "sourceRefs": [
             {
@@ -7725,13 +7734,13 @@
         },
         {
           "id": "u13.objects.015",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u13.objects",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "Why must the owner describe another item?",
-            "lt": "Kodėl savininkas turi apibūdinti dar vieną daiktą?"
+            "en": "The notice asks the owner to describe one other item inside the bag before collecting it. Why is that detail needed?",
+            "lt": "Skelbime savininko prašoma prieš atsiimant krepšį apibūdinti dar vieną jame esantį daiktą. Kam reikia šios detalės?"
           },
           "choices": [
             {
@@ -7751,8 +7760,8 @@
             "choiceId": "prove"
           },
           "rationale": {
-            "en": "An extra detail helps confirm ownership.",
-            "lt": "Papildoma detalė padeda patvirtinti nuosavybę."
+            "en": "Knowing an extra detail about the contents helps confirm that the person owns the bag.",
+            "lt": "Papildomos krepšio turinio detalės žinojimas padeda patvirtinti, kad žmogus yra jo savininkas."
           },
           "sourceRefs": [
             {
@@ -7763,13 +7772,13 @@
         },
         {
           "id": "u13.objects.016",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u13.objects",
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Complete naturally: The leather ___ with a silver button is mine.",
-            "lt": "Odinė su sidabrine saga yra mano."
+            "en": "Two wallets are on the desk. Use one to avoid repeating wallet: “The leather ___ with a silver button is mine.”",
+            "lt": "Ant stalo yra dvi piniginės. Pavartokite „one“, kad nekartotumėte žodžio „wallet“: „The leather ___ with a silver button is mine.“"
           },
           "answer": {
             "accepted": [
@@ -7778,8 +7787,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "One replaces a singular item after an identifying description.",
-            "lt": "One pakeičia vienaskaitos daiktą po apibūdinimo."
+            "en": "One replaces the singular noun wallet after the identifying description leather.",
+            "lt": "Po apibūdinimo „leather“ žodis „one“ pakeičia vienaskaitos daiktavardį „wallet“."
           },
           "sourceRefs": [
             {
@@ -7793,7 +7802,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-14",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 14: Pronouns and Personal Connections",
       "objectives": [
         {
@@ -8204,13 +8213,13 @@
         },
         {
           "id": "u14.reflexive.013",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u14.reflexive",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "Who made dinner after Ugnė was hurt?",
-            "lt": "Kas pagamino vakarienę, kai Ugnė susižeidė?"
+            "en": "The shared-flat text says, “Ugnė hurt herself, so Sam and I made dinner ourselves.” Who made dinner?",
+            "lt": "Tekste apie bendrą butą sakoma: „Ugnė susižeidė, todėl Samas ir aš patys pagaminome vakarienę.“ Kas pagamino vakarienę?"
           },
           "choices": [
             {
@@ -8230,8 +8239,8 @@
             "choiceId": "sam-writer"
           },
           "rationale": {
-            "en": "The text says Sam and the writer made dinner themselves.",
-            "lt": "Tekste sakoma, kad Samas ir pasakotojas patys pagamino vakarienę."
+            "en": "Sam and I means Sam and the writer made dinner.",
+            "lt": "Žodžiai „Samas ir aš“ reiškia, kad vakarienę pagamino Samas ir pasakotojas."
           },
           "sourceRefs": [
             {
@@ -8868,7 +8877,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-16",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 16: Health and Wellbeing",
       "objectives": [
         {
@@ -9073,13 +9082,13 @@
         },
         {
           "id": "u16.health.007",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u16.urgent-help",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "A customer has had a cough for three days. When should the customer contact a doctor?",
-            "lt": "Klientas kosėja tris dienas. Kada jis turėtų kreiptis į gydytoją?"
+            "en": "A pharmacist says, “Try a lozenge, and contact a doctor if the cough gets worse. Get urgent help if breathing is difficult.” When should the customer contact a doctor about the cough?",
+            "lt": "Vaistininkas sako: „Pabandykite pastilę, o jei kosulys stiprėja, kreipkitės į gydytoją. Jei sunku kvėpuoti, skubiai ieškokite pagalbos.“ Kada dėl kosulio reikėtų kreiptis į gydytoją?"
           },
           "choices": [
             {
@@ -9095,8 +9104,8 @@
             "choiceId": "worse"
           },
           "rationale": {
-            "en": "The customer should contact a doctor if the cough gets worse; breathing difficulty needs more urgent help.",
-            "lt": "Jei kosulys stiprėja, klientas turėtų kreiptis į gydytoją; pasunkėjus kvėpavimui reikia skubesnės pagalbos."
+            "en": "The pharmacist directly says to contact a doctor if the cough gets worse; breathing difficulty needs more urgent help.",
+            "lt": "Vaistininkas tiesiogiai sako kreiptis į gydytoją, jei kosulys stiprėja; pasunkėjus kvėpavimui reikia skubesnės pagalbos."
           },
           "sourceRefs": [
             {
@@ -9924,7 +9933,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-18",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 18: Work, Study, and Learning",
       "objectives": [
         {
@@ -10068,13 +10077,13 @@
         },
         {
           "id": "u18.course-skills.015",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u18.course-skills",
           "type": "single-choice",
           "difficulty": 3,
           "prompt": {
-            "en": "Which order makes the clarification dialogue logical?",
-            "lt": "Kokia tvarka paaiškinimo dialogas tampa logiškas?"
+            "en": "Put these dialogue lines in a logical order: a. Certainly. First, open the shared folder. b. Sorry, could you explain the first step again? c. Thanks. Do I need to rename the file? d. Yes, please use today's date.",
+            "lt": "Sudėliokite dialogo eilutes logiška tvarka: a. Žinoma. Pirmiausia atidarykite bendrą aplanką. b. Atsiprašau, ar galėtumėte dar kartą paaiškinti pirmą žingsnį? c. Ačiū. Ar reikia pervadinti failą? d. Taip, įrašykite šiandienos datą."
           },
           "choices": [
             {
@@ -10090,8 +10099,8 @@
             "choiceId": "bacd"
           },
           "rationale": {
-            "en": "The learner first asks for the step again (b), receives the first instruction (a), asks about renaming (c), and receives the answer (d).",
-            "lt": "Pirmiausia besimokantysis prašo pakartoti pirmą žingsnį (b), gauna nurodymą (a), paklausia apie failo pervadinimą (c) ir gauna atsakymą (d)."
+            "en": "The learner first asks for the step again (b), receives the instruction (a), asks about renaming (c), and receives the answer (d).",
+            "lt": "Pirmiausia besimokantysis prašo pakartoti žingsnį (b), gauna nurodymą (a), paklausia apie failo pervadinimą (c) ir gauna atsakymą (d)."
           },
           "sourceRefs": [
             {
@@ -10102,13 +10111,13 @@
         },
         {
           "id": "u18.course-skills.016",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u18.course-skills",
           "type": "fill-blank",
           "difficulty": 3,
           "prompt": {
-            "en": "Complete the clarification question: Do I need to ___ the file?",
-            "lt": "Užbaikite patikslinamąjį klausimą: ar reikia pervadinti failą?"
+            "en": "Use the verb meaning pervadinti to complete the clarification question: “Do I need to ___ the file?”",
+            "lt": "Įrašykite anglišką veiksmažodį, reiškiantį „pervadinti“: „Do I need to ___ the file?“"
           },
           "answer": {
             "accepted": [
@@ -10117,8 +10126,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The ordered dialogue asks whether the learner needs to rename the file.",
-            "lt": "Sudėliotame dialoge besimokantysis klausia, ar reikia pervadinti failą."
+            "en": "Rename means pervadinti, so the complete question is Do I need to rename the file?",
+            "lt": "„Rename“ reiškia „pervadinti“, todėl visas klausimas yra „Do I need to rename the file?“"
           },
           "sourceRefs": [
             {
@@ -10312,30 +10321,30 @@
         },
         {
           "id": "u18.patterns.007",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u18.course-skills",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "The course email says classes run on Tuesdays and Thursdays. How often are the classes?",
-            "lt": "Kurso laiške sakoma, kad pamokos vyksta antradieniais ir ketvirtadieniais. Kaip dažnai jos vyksta?"
+            "en": "The course email says, “Please bring a laptop. You need to install the free program before the first class.” What must Rasa bring?",
+            "lt": "Kurso laiške rašoma: „Prašome atsinešti nešiojamąjį kompiuterį. Prieš pirmą pamoką reikia įdiegti nemokamą programą.“ Ką Rasa turi atsinešti?"
           },
           "choices": [
             {
               "id": "daily",
-              "text": "every day"
+              "text": "a paper dictionary"
             },
             {
               "id": "twice",
-              "text": "twice a week"
+              "text": "a laptop"
             }
           ],
           "answer": {
             "choiceId": "twice"
           },
           "rationale": {
-            "en": "They run on Tuesdays and Thursdays, which is twice a week.",
-            "lt": "Pamokos vyksta antradieniais ir ketvirtadieniais, taigi du kartus per savaitę."
+            "en": "The email directly tells Rasa to bring a laptop.",
+            "lt": "Laiške Rasai tiesiogiai nurodoma atsinešti nešiojamąjį kompiuterį."
           },
           "sourceRefs": [
             {
@@ -10961,7 +10970,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-20",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 20: Invitations and Social Plans",
       "objectives": [
         {
@@ -11020,13 +11029,13 @@
         },
         {
           "id": "u20.event-details.012",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u20.event-details",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "Complete the event day: “The board-game evening is on ___.”",
-            "lt": "Įrašykite renginio dieną: „The board-game evening is on ___.“"
+            "en": "The invitation says, “Come to my board-game evening on Saturday.” Complete: “The board-game evening is on ___.”",
+            "lt": "Kvietime parašyta: „Ateikite į mano stalo žaidimų vakarą šeštadienį.“ Įrašykite dieną angliškame sakinyje: „The board-game evening is on ___.“"
           },
           "answer": {
             "accepted": [
@@ -11035,8 +11044,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The event message says the board-game evening is on Saturday.",
-            "lt": "Renginio žinutėje nurodyta, kad stalo žaidimų vakaras vyks šeštadienį."
+            "en": "The invitation says the board-game evening is on Saturday.",
+            "lt": "Kvietime nurodyta, kad stalo žaidimų vakaras vyks šeštadienį."
           },
           "sourceRefs": [
             {
@@ -11047,13 +11056,13 @@
         },
         {
           "id": "u20.event-details.013",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u20.event-details",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "What can guests bring to the board-game evening?",
-            "lt": "Ką svečiai gali atsinešti į stalo žaidimų vakarą?"
+            "en": "The invitation says, “Please bring a small snack if you can.” What can guests bring to the board-game evening?",
+            "lt": "Kvietime parašyta: „Jei galite, atsineškite nedidelį užkandį.“ Ką svečiai gali atsinešti į stalo žaidimų vakarą?"
           },
           "choices": [
             {
@@ -11073,8 +11082,8 @@
             "choiceId": "snack"
           },
           "rationale": {
-            "en": "The event message asks guests to bring a small snack if they can.",
-            "lt": "Renginio žinutėje svečių prašoma, jei gali, atsinešti nedidelį užkandį."
+            "en": "The invitation asks guests to bring a small snack if they can.",
+            "lt": "Kvietime svečių prašoma, jei gali, atsinešti nedidelį užkandį."
           },
           "sourceRefs": [
             {
@@ -11085,13 +11094,13 @@
         },
         {
           "id": "u20.event-details.014",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u20.event-details",
           "type": "fill-blank",
           "difficulty": 2,
           "prompt": {
-            "en": "Complete the reply deadline: “Please let the host know by ___.”",
-            "lt": "Įrašykite atsakymo terminą: „Please let the host know by ___.“"
+            "en": "The host writes, “Please let me know by Thursday.” Complete the reply deadline: “Please let the host know by ___.”",
+            "lt": "Šeimininkas rašo: „Praneškite man iki ketvirtadienio.“ Įrašykite terminą angliškame sakinyje: „Please let the host know by ___.“"
           },
           "answer": {
             "accepted": [
@@ -11100,8 +11109,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The host asks guests to reply by Thursday to plan the food.",
-            "lt": "Šeimininkas prašo atsakyti iki ketvirtadienio, kad galėtų suplanuoti maistą."
+            "en": "The host asks guests to reply by Thursday.",
+            "lt": "Šeimininkas prašo atsakyti iki ketvirtadienio."
           },
           "sourceRefs": [
             {
@@ -11333,13 +11342,13 @@
         },
         {
           "id": "u20.social.006",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u20.social",
           "type": "fill-blank",
           "difficulty": 2,
           "prompt": {
-            "en": "The board-game evening starts at ___.",
-            "lt": "Stalo žaidimų vakaras prasideda 18:30."
+            "en": "The invitation says, “We are meeting at my flat at 6:30.” Complete: “The board-game evening starts at ___.”",
+            "lt": "Kvietime parašyta: „Susitinkame mano bute 18.30 val.“ Įrašykite laiką angliškame sakinyje: „The board-game evening starts at ___.“"
           },
           "answer": {
             "accepted": [
@@ -11351,8 +11360,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The invitation gives 6:30.",
-            "lt": "Kvietime nurodyta 18:30."
+            "en": "The invitation gives the start time as 6:30.",
+            "lt": "Kvietime nurodyta, kad renginys prasideda 18.30 val."
           },
           "sourceRefs": [
             {
@@ -11363,13 +11372,13 @@
         },
         {
           "id": "u20.social.007",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u20.social",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "Why should guests reply by Thursday?",
-            "lt": "Kodėl svečiai turėtų atsakyti iki ketvirtadienio?"
+            "en": "The host writes, “Please let me know by Thursday because I need to prepare enough food.” Why should guests reply by Thursday?",
+            "lt": "Šeimininkas rašo: „Praneškite man iki ketvirtadienio, nes turiu paruošti pakankamai maisto.“ Kodėl svečiai turėtų atsakyti iki ketvirtadienio?"
           },
           "choices": [
             {
@@ -11385,8 +11394,8 @@
             "choiceId": "food"
           },
           "rationale": {
-            "en": "The host needs to know how much food to prepare.",
-            "lt": "Šeimininkui reikia žinoti, kiek maisto paruošti."
+            "en": "The message directly says the host needs to prepare enough food.",
+            "lt": "Žinutėje aiškiai parašyta, kad šeimininkui reikia paruošti pakankamai maisto."
           },
           "sourceRefs": [
             {
@@ -11488,7 +11497,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-21",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 21: Nature and the Environment",
       "objectives": [
         {
@@ -11547,13 +11556,13 @@
         },
         {
           "id": "u21.community-action.012",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u21.community-action",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "Complete the meeting place: “Volunteers will meet at the ___.”",
-            "lt": "Įrašykite susitikimo vietą: „Volunteers will meet at the ___.“"
+            "en": "The notice says, “Meet at the footbridge on Sunday at 10 a.m.” Complete: “Volunteers will meet at the ___.”",
+            "lt": "Skelbime parašyta: „Susitikime prie pėsčiųjų tilto sekmadienį 10 val.“ Įrašykite vietą angliškame sakinyje: „Volunteers will meet at the ___.“"
           },
           "answer": {
             "accepted": [
@@ -11562,8 +11571,8 @@
             "caseSensitive": false
           },
           "rationale": {
-            "en": "The community notice says to meet at the footbridge.",
-            "lt": "Bendruomenės skelbime nurodyta susitikti prie pėsčiųjų tilto."
+            "en": "The notice says to meet at the footbridge.",
+            "lt": "Skelbime nurodyta susitikti prie pėsčiųjų tilto."
           },
           "sourceRefs": [
             {
@@ -11574,13 +11583,13 @@
         },
         {
           "id": "u21.community-action.013",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u21.community-action",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "Which pair should volunteers bring themselves?",
-            "lt": "Kuriuos du daiktus savanoriai turėtų atsinešti patys?"
+            "en": "The notice says, “We provide gloves and rubbish bags. Wear strong shoes and bring enough water.” Which pair should volunteers bring themselves?",
+            "lt": "Skelbime parašyta: „Duodame pirštines ir šiukšlių maišus. Avėkite tvirtus batus ir atsineškite pakankamai vandens.“ Kuriais dviem dalykais savanoriai turėtų pasirūpinti patys?"
           },
           "choices": [
             {
@@ -11600,8 +11609,8 @@
             "choiceId": "shoes-water"
           },
           "rationale": {
-            "en": "The notice tells volunteers to wear strong shoes and bring water; gloves and rubbish bags are provided.",
-            "lt": "Skelbime prašoma avėti tvirtus batus ir atsinešti vandens; pirštinės ir šiukšlių maišai bus duoti."
+            "en": "Volunteers need their own strong shoes and water; gloves and rubbish bags are provided.",
+            "lt": "Savanoriams reikia savo tvirtų batų ir vandens; pirštinės ir šiukšlių maišai bus duoti."
           },
           "sourceRefs": [
             {
@@ -11612,13 +11621,13 @@
         },
         {
           "id": "u21.community-action.014",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u21.community-action",
           "type": "fill-blank",
           "difficulty": 2,
           "prompt": {
-            "en": "Children under 14 must come with an ___.",
-            "lt": "Vaikai iki 14 metų turi atvykti su ___."
+            "en": "The notice says, “Children under 14 must come with an adult.” Complete: “Children under 14 must come with an ___.”",
+            "lt": "Skelbime parašyta: „Vaikai iki 14 metų turi atvykti su suaugusiuoju.“ Įrašykite žodį angliškame sakinyje: „Children under 14 must come with an ___.“"
           },
           "answer": {
             "accepted": [
@@ -11772,13 +11781,13 @@
         },
         {
           "id": "u21.environment.003",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u21.environment",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "If we walk instead of making a suitable short journey by car, we ___ reduce traffic pollution.",
-            "lt": "Jei tinkamą trumpą kelionę eisime pėsčiomis, o ne važiuosime automobiliu, sumažinsime eismo taršą. Angliškame sakinyje įrašykite trūkstamą žodį prieš „reduce“."
+            "en": "Complete this first conditional with will: If we walk instead of making a suitable short journey by car, we ___ reduce traffic pollution.",
+            "lt": "Užbaikite pirmojo tipo sąlygos sakinį įrašydami „will“: If we walk instead of making a suitable short journey by car, we ___ reduce traffic pollution."
           },
           "answer": {
             "accepted": [
@@ -11826,13 +11835,13 @@
         },
         {
           "id": "u21.environment.005",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u21.environment",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "If the weather is dangerous, the event...",
-            "lt": "Jei oras pavojingas, renginys..."
+            "en": "The notice says, “If the weather is dangerous, we will move the event to the following Sunday.” If the weather is dangerous, the event...",
+            "lt": "Skelbime parašyta: „Jei oras bus pavojingas, renginį perkelsime į kitą sekmadienį.“ Jei oras pavojingas, renginys..."
           },
           "choices": [
             {
@@ -11848,8 +11857,8 @@
             "choiceId": "moves"
           },
           "rationale": {
-            "en": "The notice gives a later date.",
-            "lt": "Skelbime nurodyta vėlesnė data."
+            "en": "The notice says the event moves to the following Sunday.",
+            "lt": "Skelbime nurodyta, kad renginys perkeliamas į kitą sekmadienį."
           },
           "sourceRefs": [
             {
@@ -11888,13 +11897,13 @@
         },
         {
           "id": "u21.environment.007",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u21.environment",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "What equipment is provided?",
-            "lt": "Kokia įranga suteikiama?"
+            "en": "The clean-up notice says, “We will provide gloves and rubbish bags.” What equipment is provided?",
+            "lt": "Švarinimo akcijos skelbime parašyta: „Duosime pirštines ir šiukšlių maišus.“ Kokia įranga suteikiama?"
           },
           "choices": [
             {
@@ -11910,8 +11919,8 @@
             "choiceId": "bags"
           },
           "rationale": {
-            "en": "The notice provides gloves and bags.",
-            "lt": "Skelbime suteikiamos pirštinės ir maišai."
+            "en": "The notice says gloves and rubbish bags are provided.",
+            "lt": "Skelbime nurodyta, kad bus duotos pirštinės ir šiukšlių maišai."
           },
           "sourceRefs": [
             {
@@ -11922,13 +11931,13 @@
         },
         {
           "id": "u21.environment.008",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u21.environment",
           "type": "fill-blank",
           "difficulty": 2,
           "prompt": {
-            "en": "We ___ save energy if we turn off lights.",
-            "lt": "Taupysime energiją, jei išjungsime šviesas."
+            "en": "Complete this first conditional with will: We ___ save energy if we turn off lights.",
+            "lt": "Užbaikite pirmojo tipo sąlygos sakinį įrašydami „will“: We ___ save energy if we turn off lights."
           },
           "answer": {
             "accepted": [
@@ -11938,7 +11947,7 @@
           },
           "rationale": {
             "en": "Will states the likely future result.",
-            "lt": "Will nusako tikėtiną rezultatą."
+            "lt": "Will nusako tikėtiną ateities rezultatą."
           },
           "sourceRefs": [
             {
@@ -12013,7 +12022,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-22",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 22: Services and Problem-Solving",
       "objectives": [
         {
@@ -12136,23 +12145,24 @@
         },
         {
           "id": "u22.service-solutions.004",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u22.service-solutions",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "Could you help ___ this problem?",
-            "lt": "Ar galėtumėte padėti išspręsti šią problemą?"
+            "en": "Complete the polite request. Two natural answers are possible: “Could you help ___ this problem?”",
+            "lt": "Užbaikite mandagų prašymą. Galimi du natūralūs atsakymai: „Could you help ___ this problem?“"
           },
           "answer": {
             "accepted": [
+              "solve",
               "with"
             ],
             "caseSensitive": false
           },
           "rationale": {
-            "en": "Use help with before the problem or task.",
-            "lt": "Prieš problemą ar užduotį vartojame junginį help with."
+            "en": "Both help solve this problem and help with this problem are natural.",
+            "lt": "Natūraliai sakoma ir „help solve this problem“, ir „help with this problem“."
           },
           "sourceRefs": [
             {
@@ -12313,13 +12323,13 @@
         },
         {
           "id": "u22.services.004",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u22.services",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "Could you replace it, ___?",
-            "lt": "Ar galėtumėte jį pakeisti?"
+            "en": "Complete with the polite word please: “Could you replace it, ___?”",
+            "lt": "Įrašykite mandagų žodį „please“: „Could you replace it, ___?“"
           },
           "answer": {
             "accepted": [
@@ -12340,13 +12350,13 @@
         },
         {
           "id": "u22.services.005",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u22.services",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "What has happened to the headphones?",
-            "lt": "Kas nutiko ausinėms?"
+            "en": "The customer says, “The left side of these headphones has stopped working.” What has happened to the headphones?",
+            "lt": "Klientas sako: „Kairioji šių ausinių pusė nustojo veikti.“ Kas nutiko ausinėms?"
           },
           "choices": [
             {
@@ -12362,8 +12372,8 @@
             "choiceId": "left"
           },
           "rationale": {
-            "en": "The customer identifies the left side.",
-            "lt": "Klientas nurodo kairiąją pusę."
+            "en": "The customer says the left side has stopped working.",
+            "lt": "Klientas sako, kad kairioji pusė nustojo veikti."
           },
           "sourceRefs": [
             {
@@ -12401,13 +12411,13 @@
         },
         {
           "id": "u22.services.007",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u22.services",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "Which two solutions are available?",
-            "lt": "Kokie du sprendimai galimi?"
+            "en": "The assistant says, “You can choose the black headphones or receive a refund.” Which two solutions are available?",
+            "lt": "Darbuotojas sako: „Galite pasirinkti juodas ausines arba atgauti pinigus.“ Kokie du sprendimai galimi?"
           },
           "choices": [
             {
@@ -12526,7 +12536,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-23",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 23: People, Places, and Relative Clauses",
       "objectives": [
         {
@@ -12581,13 +12591,13 @@
         },
         {
           "id": "u23.recommendations.002",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u23.recommendations",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "A family wants a safe outdoor place where children can play. Which recommendation fits?",
-            "lt": "Šeima ieško saugios vietos lauke, kur galėtų žaisti vaikai. Kuri rekomendacija tinka?"
+            "en": "Green Table serves local food indoors. River Park is a safe outdoor place where children can play. A family wants a safe outdoor place for children. Which recommendation fits?",
+            "lt": "Green Table vietinis maistas tiekiamas patalpoje. River Park yra saugi vieta lauke, kur gali žaisti vaikai. Šeima ieško saugios vietos vaikams lauke. Kuri rekomendacija tinka?"
           },
           "choices": [
             {
@@ -12603,8 +12613,8 @@
             "choiceId": "river-park"
           },
           "rationale": {
-            "en": "The text says children can play safely at River Park.",
-            "lt": "Tekste nurodyta, kad River Park parke vaikai gali saugiai žaisti."
+            "en": "River Park is described as a safe outdoor place where children can play.",
+            "lt": "River Park apibūdinamas kaip saugi vieta lauke, kur gali žaisti vaikai."
           },
           "sourceRefs": [
             {
@@ -12855,13 +12865,13 @@
         },
         {
           "id": "u23.relative.005",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u23.relative",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "Who is Dalia?",
-            "lt": "Kas yra Dalia?"
+            "en": "The text says, “Dalia is a guide who tells clear and lively stories about local history.” Who is Dalia?",
+            "lt": "Tekste parašyta: „Dalia yra gidė, kuri aiškiai ir gyvai pasakoja apie vietos istoriją.“ Kas yra Dalia?"
           },
           "choices": [
             {
@@ -12878,7 +12888,7 @@
           },
           "rationale": {
             "en": "The text describes Dalia as a guide who tells clear and lively stories.",
-            "lt": "Tekste Dalia apibūdinama kaip gidė, kuri pasakoja aiškias ir gyvas istorijas."
+            "lt": "Tekste Dalia apibūdinama kaip gidė, kuri aiškiai ir gyvai pasakoja."
           },
           "sourceRefs": [
             {
@@ -12917,13 +12927,13 @@
         },
         {
           "id": "u23.relative.007",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u23.relative",
           "type": "single-choice",
           "difficulty": 2,
           "prompt": {
-            "en": "Which place serves local food?",
-            "lt": "Kuri vieta tiekia vietinį maistą?"
+            "en": "Green Table serves simple local food. River Park is an outdoor place where children can play safely near the water. Which place serves local food?",
+            "lt": "Green Table tiekia paprastą vietinį maistą. River Park yra vieta lauke, kur vaikai gali saugiai žaisti prie vandens. Kuri vieta tiekia vietinį maistą?"
           },
           "choices": [
             {
@@ -12939,8 +12949,8 @@
             "choiceId": "green"
           },
           "rationale": {
-            "en": "Green Table serves simple local food.",
-            "lt": "Green Table tiekia paprastą vietinį maistą."
+            "en": "The description says Green Table serves simple local food.",
+            "lt": "Aprašyme nurodyta, kad Green Table tiekia paprastą vietinį maistą."
           },
           "sourceRefs": [
             {
@@ -13044,7 +13054,7 @@
     {
       "schemaVersion": 1,
       "unitId": "unit-24",
-      "contentVersion": 2,
+      "contentVersion": 3,
       "title": "Unit 24: A2 Communication Project",
       "objectives": [
         {
@@ -13065,13 +13075,13 @@
       "items": [
         {
           "id": "u24.constraints.001",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u24.constraints",
           "type": "single-choice",
           "difficulty": 1,
           "prompt": {
-            "en": "Which list contains all six planning constraints from Maya's profile?",
-            "lt": "Kuriame sąraše pateikti visi šeši svečio profilio planavimo apribojimai?"
+            "en": "Maya arrives on Friday at 18:20. She is vegetarian, enjoys nature and local history, has a €90 budget, cannot walk long distances, and heavy rain is possible on Saturday. Which list contains all six planning constraints?",
+            "lt": "Maya atvyksta penktadienį 18.20 val. Ji yra vegetarė, domisi gamta ir vietos istorija, turi 90 € biudžetą, negali nueiti didelių atstumų, o šeštadienį gali smarkiai lyti. Kuriame sąraše pateikti visi šeši planavimo apribojimai?"
           },
           "choices": [
             {
@@ -13087,8 +13097,8 @@
             "choiceId": "all-six"
           },
           "rationale": {
-            "en": "The lesson groups nature and local history as one interests category, giving six planning constraints.",
-            "lt": "Pamokoje gamta ir vietos istorija sujungiamos į vieną pomėgių kategoriją, todėl gaunami šeši planavimo apribojimai."
+            "en": "The six categories are arrival, diet, interests, budget, mobility, and weather.",
+            "lt": "Šešios kategorijos yra atvykimas, mityba, pomėgiai, biudžetas, judumas ir oras."
           },
           "sourceRefs": [
             {
@@ -13272,13 +13282,13 @@
         },
         {
           "id": "u24.project.001",
-          "revision": 1,
+          "revision": 2,
           "objectiveId": "u24.project",
           "type": "single-choice",
           "difficulty": 1,
           "prompt": {
-            "en": "Which food constraint affects the plan?",
-            "lt": "Koks maisto apribojimas svarbus planui?"
+            "en": "Maya's profile says, “Maya is vegetarian.” Which food constraint affects the plan?",
+            "lt": "Mayos profilyje parašyta: „Maya yra vegetarė.“ Koks maisto apribojimas svarbus planui?"
           },
           "choices": [
             {
@@ -13306,13 +13316,13 @@
         },
         {
           "id": "u24.project.002",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u24.project",
           "type": "single-choice",
           "difficulty": 1,
           "prompt": {
-            "en": "When does Maya arrive?",
-            "lt": "Kada Maya atvyksta?"
+            "en": "Maya's profile says, “Arrival: Friday at 18:20.” When does Maya arrive?",
+            "lt": "Mayos profilyje parašyta: „Atvykimas: penktadienį 18.20 val.“ Kada Maya atvyksta?"
           },
           "choices": [
             {
@@ -13340,13 +13350,13 @@
         },
         {
           "id": "u24.project.003",
-          "revision": 2,
+          "revision": 3,
           "objectiveId": "u24.project",
           "type": "fill-blank",
           "difficulty": 1,
           "prompt": {
-            "en": "Maya's weekend budget is €___.",
-            "lt": "Savaitgalio biudžetas – 90 eurų."
+            "en": "Maya's profile says, “Weekend budget: €90.” Complete: “Maya's weekend budget is €___.”",
+            "lt": "Mayos profilyje parašyta: „Savaitgalio biudžetas – 90 eurų.“ Įrašykite sumą angliškame sakinyje: „Maya's weekend budget is €___.“"
           },
           "answer": {
             "accepted": [

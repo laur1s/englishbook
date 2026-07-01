@@ -824,6 +824,41 @@ body:has(.learning-shell) .site-nav a.active {
   margin: 0.3rem 0 0;
 }
 
+.runner-controller-error {
+  max-width: 44rem;
+  margin: 2rem auto;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(189, 62, 30, 0.32);
+  border-radius: 1.25rem;
+  background: rgba(189, 62, 30, 0.07);
+}
+
+.runner-controller-error h2 {
+  margin: 0.35rem 0 0.7rem;
+  color: var(--learning-navy);
+}
+
+.runner-controller-error > p:not(.learning-label) {
+  color: var(--muted);
+  font: 500 1rem/1.6 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.runner-storage-warning {
+  display: flex;
+  gap: 0.35rem 0.65rem;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 64rem;
+  margin: 0 auto 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(189, 62, 30, 0.35);
+  border-radius: 0.8rem;
+  background: rgba(189, 62, 30, 0.08);
+  color: var(--learning-rust);
+  font: 600 0.86rem/1.45 "Avenir Next", "Segoe UI", sans-serif;
+}
+
 .content-session-card {
   display: grid;
   align-content: center;
@@ -889,6 +924,11 @@ body:has(.learning-shell) .site-nav a.active {
   color: var(--muted);
   text-align: center;
   font: 500 0.76rem/1.4 "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.runner-saved-note.is-save-warning {
+  color: var(--learning-rust);
+  font-weight: 700;
 }
 
 [hidden] {

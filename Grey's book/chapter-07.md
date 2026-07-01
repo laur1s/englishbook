@@ -20,6 +20,8 @@ status: "published"
 
 ## 7 Skyrius: Didžioji Audra
 
+> **Content note / Turinio pastaba:** This chapter includes a dangerous storm, serious injuries, and hospital emergencies. / Šiame skyriuje aprašoma pavojinga audra, sunkūs sužeidimai ir skubios situacijos ligoninėje. **Gentler route / Švelnesnis kelias:** if this topic feels too difficult today, skip the story and practise [modal verbs in the Grammar Reference](/resources/grammar-reference#modal-verbs). Return when you choose. / Jei ši tema šiandien per sunki, praleiskite pasakojimą ir pakartokite [modalinius veiksmažodžius gramatikos vadove](/resources/grammar-reference#modal-verbs). Sugrįžkite, kai būsite pasirengę.
+
 ### Phrasal Verbs
 
 *Fraziniai veiksmažodžiai*
@@ -88,7 +90,7 @@ After he agreed to the operation, the team prepared to move him. The main lamps 
 
 The operation was long, but it went as planned. Cristina treated the injury. The worker needed more checks and a recovery plan, and the team could not promise that his arm would be exactly the same.
 
-While Cristina was operating, Izzie looked after frightened patients. A young boy named Ben was crying near the front desk. He had become separated from his parents when an ambulance brought him to the hospital.
+While Cristina was operating, Izzie looked after frightened patients. A young boy named Ben was crying near the front desk. He became separated from his parents when an ambulance brought him to the hospital.
 
 Izzie sat beside him. "You are safe inside the hospital," she said. "We are looking for your parents. Can you tell me their names?"
 

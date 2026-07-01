@@ -105,6 +105,32 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     <a class="runner-exit-link" href={withBase("/learn")}>Exit session</a>
   </header>
 
+  <section
+    class="runner-controller-error"
+    data-runner-controller-error
+    role="alert"
+    aria-labelledby="runner-controller-error-title"
+    tabindex="-1"
+    hidden
+  >
+    <p class="learning-label">Session unavailable</p>
+    <h2 id="runner-controller-error-title">This guided step could not start</h2>
+    <p data-runner-controller-error-copy>
+      Reload the page. If the problem continues, return to your learning path and open the step again.
+    </p>
+    <div class="content-session-actions">
+      <button class="learning-primary-button" type="button" data-reload-session>Reload page</button>
+      <a class="learning-outline-button" href={withBase("/learn")}>Return to learning path</a>
+    </div>
+  </section>
+
+  <aside class="runner-storage-warning" data-storage-warning role="alert" hidden>
+    <strong>Progress cannot be saved in this browser.</strong>
+    <span>
+      Allow site storage, leave private browsing if needed, then reload before guided work.
+    </span>
+  </aside>
+
   {session.kind === "content" && session.stage === "speak" && speakingEntry ? (
     <section class="embedded-speaking-session" data-speaking-session aria-label={session.title}>
       <MissionPlayer
@@ -113,7 +139,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         relatedTitle={module.title}
         resetOnFreshRequest
       />
-      <p class="runner-saved-note" data-saved-note>
+      <p class="runner-saved-note" data-saved-note role="status" aria-live="polite" aria-atomic="true">
         Your step, notes, and result are saved on this device. Audio stays in this tab only.
       </p>
     </section>
@@ -141,9 +167,9 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         class="runner-saved-note"
         data-saved-note
         data-content-evidence-note={studyEvidence ? "" : undefined}
-        role={studyEvidence ? "status" : undefined}
-        aria-live={studyEvidence ? "polite" : undefined}
-        aria-atomic={studyEvidence ? "true" : undefined}
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
       >
         {studyEvidence
           ? `Open the ${studyEvidence.sourceLabel}, finish its four study checks, then return here.`
@@ -177,7 +203,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
       <fieldset class="answer-fieldset" data-answer-container aria-labelledby="practice-question"></fieldset>
 
-      <div class="feedback-panel" data-feedback role="status" aria-live="polite" hidden>
+      <div id="practice-feedback" class="feedback-panel" data-feedback role="status" aria-live="polite" hidden>
         <strong data-feedback-title></strong>
         <p data-feedback-copy></p>
         <p class="lt-text" lang="lt" data-feedback-lt></p>
@@ -193,7 +219,9 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
           <Fragment set:html={chevronIcon} />
         </button>
       </div>
-      <p class="runner-saved-note" data-saved-note>Each answer is saved on this device.</p>
+      <p class="runner-saved-note" data-saved-note role="status" aria-live="polite" aria-atomic="true">
+        Each answer is saved on this device.
+      </p>
 
       <noscript>
         <p>Interactive practice needs JavaScript. Open the related A2 lesson from the course map instead.</p>
@@ -247,6 +275,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     beginPracticeRepair,
     beginPracticeRun,
     completeLearningSession,
+    createLearningProgress,
     isLearningSessionUnlocked,
     nextPracticeAttempt,
     readLearningProgress,
@@ -254,6 +283,12 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     startLearningSession,
     writeLearningProgress,
   } from "../lib/learning-progress";
+  import { createVisibleTimeTracker } from "../lib/active-time";
+  import {
+    canUsePersistentStorage,
+    commitPersistedValue,
+  } from "../lib/persistence";
+  import { parseRunnerData } from "../lib/runner-data";
   import {
     LESSON_PROGRESS_KEY,
     isLessonStudyCompleted,
@@ -274,41 +309,10 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     type PracticePack,
   } from "../lib/practice";
 
-  type RunnerSession = {
-    id: string;
-    kind: "content" | "practice";
-    stage: "context" | "learn" | "practice" | "speak" | "review";
-    title: string;
-    minutes: number;
-    skillRefs: string[];
-    unitId?: string;
-    unitIds?: string[];
-    mode?: "guided" | "standard" | "review" | "checkpoint";
-    count?: number;
-  };
-
-  type RunnerData = {
-    revision: number;
-    module: { id: string; order: number; title: string };
-    moduleSessions: Array<{
-      id: string;
-      stage: RunnerSession["stage"];
-      revision: number;
-      required: boolean;
-    }>;
-    pathSessions: Array<{ id: string; revision: number; required: boolean }>;
-    session: RunnerSession;
-    nextSessionId: string | null;
-    nextHref: string;
-    dashboardHref: string;
-    studyEvidence: {
-      slug: string;
-      revision: number;
-      sourceLabel: "lesson" | "reading";
-    } | null;
-  };
-
   const SKIPPED_RESPONSE = "__skipped__";
+  const currentPracticeItemRefs = practiceCatalog.units.flatMap((unit) =>
+    unit.items.map((item) => ({ id: item.id, revision: item.revision })),
+  );
 
   const setText = (root: Element, selector: string, value: string) => {
     const element = root.querySelector(selector);
@@ -320,15 +324,32 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
 
   document.querySelectorAll("[data-session-runner]").forEach((root) => {
     const dataElement = root.querySelector("[data-runner-data]");
-    let data: RunnerData | null = null;
+    const controllerError = asElement<HTMLElement>(root, "[data-runner-controller-error]");
+    const reloadButton = asElement<HTMLButtonElement>(root, "[data-reload-session]");
+    const parsedRunnerData = parseRunnerData(dataElement?.textContent);
 
-    try {
-      data = JSON.parse(dataElement?.textContent || "null") as RunnerData | null;
-    } catch {
-      data = null;
+    reloadButton?.addEventListener("click", () => window.location.reload());
+
+    if (!parsedRunnerData.ok) {
+      root.querySelectorAll<HTMLElement>(
+        "[data-content-session], [data-speaking-session], [data-practice-session], [data-repair-card], [data-session-complete]",
+      ).forEach((view) => {
+        view.hidden = true;
+      });
+      if (controllerError) {
+        controllerError.hidden = false;
+        controllerError.dataset.errorReason = parsedRunnerData.reason;
+        setText(
+          controllerError,
+          "[data-runner-controller-error-copy]",
+          `${parsedRunnerData.message} Reload the page. If the problem continues, return to your learning path and open the step again.`,
+        );
+        window.requestAnimationFrame(() => controllerError.focus({ preventScroll: true }));
+      }
+      return;
     }
 
-    if (!data) return;
+    const data = parsedRunnerData.data;
 
     const session = data.session;
     const contentView = asElement<HTMLElement>(root, "[data-content-session]");
@@ -341,7 +362,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
     const continueLink = asElement<HTMLAnchorElement>(root, "[data-continue-link]");
     const continueLabel = asElement<HTMLElement>(root, "[data-continue-label]");
     const savedNotes = [...root.querySelectorAll("[data-saved-note]")];
-    const pageStartedAt = Date.now();
+    const storageWarning = asElement<HTMLElement>(root, "[data-storage-warning]");
     const requestUrl = new URL(window.location.href);
     const isFreshRequest = requestUrl.searchParams.get("fresh") === "1";
     const dailyRecallActive = session.kind === "practice" &&
@@ -353,10 +374,36 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       window.history.replaceState({}, "", `${cleanUrl.pathname}${cleanUrl.search}${cleanUrl.hash}`);
     }
 
-    let progress = readLearningProgress(window.localStorage);
+    let persistentStorage: Storage | null = null;
+    try {
+      persistentStorage = window.localStorage;
+    } catch {
+      persistentStorage = null;
+    }
+    const storageAvailable = persistentStorage
+      ? canUsePersistentStorage(persistentStorage)
+      : false;
+    const storageFailureMessage =
+      "Progress cannot be saved in this browser. Allow site storage, then reload before guided work.";
+
+    if (!storageAvailable) {
+      if (storageWarning) storageWarning.hidden = false;
+      savedNotes.forEach((note) => {
+        note.textContent = storageFailureMessage;
+        note.classList.add("is-save-warning");
+      });
+    }
+
+    let progress = persistentStorage
+      ? readLearningProgress(persistentStorage, currentPracticeItemRefs)
+      : createLearningProgress();
     const runtimeSessionId = dailyRecallActive ? DAILY_RECALL_SESSION_ID : session.id;
     const runtimeRevision = dailyRecallActive ? DAILY_RECALL_REVISION : data.revision;
     let runtimeMinutes = session.minutes;
+    const activeTime = createVisibleTimeTracker(
+      Date.now,
+      document.visibilityState === "visible",
+    );
     const sessionIsUnlocked = isLearningSessionUnlocked(
       data.pathSessions,
       progress,
@@ -378,21 +425,54 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       progress.activeSessionId === session.id ||
       activeRecordOnEntry?.status === "completed");
 
-    const persist = () => {
-      const saved = writeLearningProgress(window.localStorage, progress);
+    const persistValue = (
+      value: typeof progress,
+      failureMessage = "This browser did not allow progress to be saved. Keep this page open and try again.",
+    ) => {
+      const saved = storageAvailable && persistentStorage
+        ? writeLearningProgress(persistentStorage, value)
+        : false;
       savedNotes.forEach((note) => {
         note.textContent = saved
           ? "Progress is saved on this device."
-          : "This browser did not allow progress to be saved.";
+          : failureMessage;
+        note.classList.toggle("is-save-warning", !saved);
       });
+      return saved;
+    };
+
+    const announcePersistedProgress = () => {
       window.dispatchEvent(new CustomEvent("english-library:progress"));
+    };
+
+    const persist = (
+      failureMessage = "This browser did not allow progress to be saved. Keep this page open and try again.",
+    ) => {
+      const saved = persistValue(progress, failureMessage);
+      if (saved) announcePersistedProgress();
+      return saved;
+    };
+
+    const commitCompletion = (nextProgress: typeof progress) => {
+      const committed = commitPersistedValue(
+        progress,
+        nextProgress,
+        (candidate) => persistValue(
+          candidate,
+          "Completion was not saved. Keep this page open and try again.",
+        ),
+      );
+      progress = committed.value;
+      if (committed.saved) announcePersistedProgress();
+      return committed.saved;
     };
 
     const hasCurrentStudyEvidence = () => {
       if (!data.studyEvidence) return true;
+      if (!persistentStorage) return false;
       try {
         const lessonProgress = parseLessonProgress(
-          window.localStorage.getItem(LESSON_PROGRESS_KEY),
+          persistentStorage.getItem(LESSON_PROGRESS_KEY),
         );
         return isLessonStudyCompleted(
           lessonProgress,
@@ -418,16 +498,14 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       }
     };
 
-    const completedMinutes = () => {
-      const record = progress.sessions[runtimeSessionId];
-      const startedAt = record?.practiceRun?.startedAt ?? (
-        sessionWasCompletedOnEntry ? new Date(pageStartedAt).toISOString() : record?.startedAt
-      );
-      const elapsedMinutes = startedAt
-        ? Math.ceil(Math.max(0, Date.now() - Date.parse(startedAt)) / 60_000)
-        : 1;
-      return Math.max(1, Math.min(runtimeMinutes, elapsedMinutes));
+    const completedMinutes = () => activeTime.completedMinutes(runtimeMinutes);
+
+    const syncActiveTime = () => {
+      activeTime.setVisible(document.visibilityState === "visible");
     };
+    document.addEventListener("visibilitychange", syncActiveTime);
+    window.addEventListener("pageshow", syncActiveTime);
+    window.addEventListener("pagehide", () => activeTime.setVisible(false));
 
     const syncCycle = () => {
       root.querySelectorAll("[data-cycle-session]").forEach((step) => {
@@ -507,7 +585,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
           syncContentCompletionGate();
           return;
         }
-        progress = completeLearningSession(
+        const nextProgress = completeLearningSession(
           progress,
           session.id,
           {
@@ -519,7 +597,10 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
               : {}),
           },
         );
-        persist();
+        if (!commitCompletion(nextProgress)) {
+          completeButton?.focus({ preventScroll: true });
+          return;
+        }
         showCompletion();
         completeView?.focus({ preventScroll: true });
       });
@@ -547,7 +628,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         const listeningSkillRefs = hasListeningEvidence && listening.assisted !== true
           ? session.skillRefs.filter((skillId) => skillId.startsWith("listening."))
           : [];
-        progress = completeLearningSession(
+        const nextProgress = completeLearningSession(
           progress,
           session.id,
           {
@@ -570,7 +651,10 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
               : {}),
           },
         );
-        persist();
+        if (!commitCompletion(nextProgress)) {
+          event.preventDefault();
+          return;
+        }
         showCompletion();
         completeView?.focus({ preventScroll: true });
       });
@@ -833,6 +917,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
           input.name = `answer-${session.id}-${item.id}`;
           input.value = choice.id;
           input.dataset.choiceId = choice.id;
+          input.setAttribute("aria-describedby", "practice-feedback");
           marker.className = "answer-choice-marker";
           marker.setAttribute("aria-hidden", "true");
           choiceText.textContent = choice.text;
@@ -860,6 +945,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       input.autocomplete = "off";
       input.spellcheck = false;
       input.setAttribute("aria-label", "Your answer");
+      input.setAttribute("aria-describedby", "practice-feedback");
       input.addEventListener("input", () => {
         if (checked) return;
         selectedResponse = input.value;
@@ -941,7 +1027,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
       repaired = false,
     ) => {
       const missedSet = new Set(missedItemIds);
-      progress = completeLearningSession(
+      const nextProgress = completeLearningSession(
         progress,
         runtimeSessionId,
         {
@@ -962,7 +1048,9 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
             : {}),
         },
       );
-      persist();
+      if (!commitCompletion(nextProgress)) {
+        return false;
+      }
       if (repairView) repairView.hidden = true;
       showCompletion(score, total);
       if (missedItemIds.length) {
@@ -975,6 +1063,7 @@ const clockIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" c
         );
       }
       completeView?.focus({ preventScroll: true });
+      return true;
     };
 
     const finishPack = () => {

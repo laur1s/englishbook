@@ -1,5 +1,9 @@
 # TODO
 
+## Full-project release review
+
+The 2026-07-01 end-to-end audit and its 185-task remediation checklist are tracked in [`docs/full-project-review-2026-07-01.md`](docs/full-project-review-2026-07-01.md). Keep that checklist active alongside this product-growth ledger until its release blockers and required browser gates are closed.
+
 ## Now
 
 - [ ] 78. Build a bilingual micro-reading pack with notices, messages, forms, menus, and timetables.

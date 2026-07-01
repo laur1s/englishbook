@@ -16,6 +16,8 @@ status: "published"
 
 ## 11 Skyrius: Skambutis per kalnus
 
+> **Content note / Turinio pastaba:** This chapter includes a child's severe allergic reaction and an emergency transfer. / Šiame skyriuje aprašoma stipri vaiko alerginė reakcija ir skubus pervežimas į ligoninę. **Gentler route / Švelnesnis kelias:** if this topic feels too difficult today, skip the story and practise [Past Continuous in the Grammar Reference](/resources/grammar-reference#past-continuous). Return when you choose. / Jei ši tema šiandien per sunki, praleiskite pasakojimą ir pakartokite [Past Continuous gramatikos vadove](/resources/grammar-reference#past-continuous). Sugrįžkite, kai būsite pasirengę.
+
 ### Phrasal Verbs
 
 *Fraziniai veiksmažodžiai*

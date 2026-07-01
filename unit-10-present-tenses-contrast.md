@@ -31,7 +31,7 @@ status: "published"
 
 ## Part 1: Essential Vocabulary / Pagrindinis žodynas
 
-### Time Expressions for Present Simple (Present Simple laiko išraiškos)
+### Common Clues for Present Simple (Dažni Present Simple orientyrai)
 - every day/week/month/year - kiekvieną dieną/savaitę/mėnesį/metus
 - always, usually, often, sometimes - visada, paprastai, dažnai, kartais
 - never, rarely - niekada, retai
@@ -39,7 +39,7 @@ status: "published"
 - in the morning/afternoon/evening - ryte/dieną/vakare
 - at night, at the weekend - naktį, savaitgaliais
 
-### Time Expressions for Present Continuous (Present Continuous laiko išraiškos)
+### Common Clues for Present Continuous (Dažni Present Continuous orientyrai)
 - now, at the moment - dabar, šiuo metu
 - today, this week/month/year - šiandien, šią savaitę/mėnesį/metus
 - Look!/Listen!/Watch! - Žiūrėk!/Klausyk!/Stebėk!
@@ -47,7 +47,7 @@ status: "published"
 
 **Note:** **just now** usually refers to the immediate past: *I saw him just now.*
 
-### Time Expressions for Present Perfect (Present Perfect laiko išraiškos)
+### Common Clues for Present Perfect (Dažni Present Perfect orientyrai)
 - ever, never - kada nors, niekada
 - just, already, yet - ką tik, jau, dar
 - since + point in time - nuo (laiko momento)
@@ -56,9 +56,20 @@ status: "published"
 - How long...? - Kaip ilgai...?
 - in my life, so far - gyvenime, iki šiol
 
+**Meaning first / Pirmiausia – reikšmė:** these expressions are clues, not automatic rules. First ask what the speaker means: a routine, an action in progress, an experience connected to now, or a finished past event. Then use the time expression to check your choice. For example, **for two years** can describe a continuing situation (*I have lived here for two years*) or a finished one (*I lived there for two years, but I moved in 2024*). / Šios laiko išraiškos yra orientyrai, o ne automatinės taisyklės. Pirmiausia nustatykite, ką kalbėtojas nori pasakyti: įprotį, dabar vykstantį veiksmą, su dabartimi susijusią patirtį ar baigtą praeities įvykį. Tada laiko išraiška padės patikrinti pasirinkimą.
+
 ---
 
 ## Part 2: Grammar - Tense Contrast and Usage / Gramatika - Laikų palyginimas ir naudojimas
+
+Choose from meaning in this order:
+
+1. Is it a habit, routine, fact, or timetable? → **Present Simple**.
+2. Is it happening now or temporary around now? → **Present Continuous**.
+3. Did it begin before now and continue, or is the present result/experience important without a finished past time? → **Present Perfect**.
+4. Did it finish at a stated or understood past time? → **Past Simple**.
+
+<p class="lt-text" lang="lt"><strong>Pasirinkimo tvarka:</strong> pirmiausia nustatykite reikšmę – įprotis ar faktas; dabar vykstantis ar laikinas veiksmas; su dabartimi susijusi patirtis ar rezultatas; arba baigtas praeities įvykis. Tik tada tikrinkite laiko žodžius.</p>
 
 ### Present Simple (Esamasis paprastasis)
 **When to use:**
@@ -88,7 +99,7 @@ status: "published"
 1. **Life experiences:** I have visited Paris.
 2. **Unfinished time periods:** I have had three lessons this week. (this week is not finished)
 3. **Recent actions with present results:** I have lost my keys. (still lost)
-4. **With time expressions:** ever, never, since, for, just, already
+4. **Past connected to now:** common clues include *ever, never, since, for, just,* and *already*, but the intended meaning still decides the tense.
 
 **Structure:**
 - have/has + past participle
@@ -187,19 +198,19 @@ Correct the mistakes if necessary:
 
 ---
 
-## Exercise 5: Time Expressions
-## Pratimas 5: Laiko išraiškos
+## Exercise 5: Meaning and Context
+## Pratimas 5: Reikšmė ir kontekstas
 
-Match each time expression with the tense it most clearly signals here:
+Complete each sentence. Then name the tense and the meaning: **routine**, **happening now**, **continuing until now**, **life experience**, or **finished past event**.
 
-1. right now → _____________________
-2. every day → _____________________
-3. since 2020 → _____________________
-4. Look! → _____________________
-5. yesterday, last week → _____________________
-6. ever → _____________________
-7. usually → _____________________
-8. at the moment → _____________________
+1. I am at my desk right now. I _____ (write) an email. → _____________________
+2. Writing emails is part of my job. I _____ (write) to clients every day. → _____________________
+3. I started this job in 2020 and I still work here. I _____ (work) here since 2020. → _____________________
+4. Look! Our bus _____ (come) around the corner. → _____________________
+5. The trip is over. We _____ (visit) Riga last week. → _____________________
+6. Ask about life experience without a finished date: _____ you ever _____ (travel) alone? → _____________________
+7. This is Lina's usual morning habit: she _____ (drink) tea before work. → _____________________
+8. We are at the stop and the bus is late. We _____ (wait) for it at the moment. → _____________________
 
 ---
 
@@ -420,16 +431,28 @@ Describe a real or imaginary friend using all three tenses. Give one habit, one 
 
 Compare what you usually do vs what you're doing now.
 
+**Model:** **I usually work in an office, but this week I'm working at home. I normally eat lunch at twelve, but right now I'm drinking coffee because I have a late meeting.**
+
+**Sentence starters:** **I usually... but today I'm... / I normally... but right now I'm... / Every week I... / This week I'm...**
+
+**Success checklist:** give two habit/current pairs; use Present Simple for each routine and Present Continuous for each current or temporary action; add clear time expressions; explain one contrast with **but**.
+
 ### Activity 3: Experience Sharing
 
 Talk about things you've never done but want to try.
+
+**Model:** **I've never tried kayaking, but I'd like to try it on a calm lake because I enjoy being outdoors. I've also never taken a cooking class. Have you ever taken one?** If your partner says yes, ask a Past Simple follow-up such as **When did you do it?**
+
+**Sentence starters:** **I've never... / I'd like to... because... / Have you ever...? / When did you...?**
+
+**Success checklist:** name two experiences with **have never + past participle**; explain why you want to try one; ask one Present Perfect question; use a Past Simple follow-up only when the other person gives a finished past experience.
 
 ---
 
 ## Additional Cultural Notes / Papildomos kultūrinės pastabos
 
 - **Temporary Actions:** English commonly uses Present Continuous to mark a temporary situation; Lithuanian often expresses this distinction through context or extra words.
-- **Life Experiences:** Present Perfect is used for personal achievements and stories.
+- **Life Experiences:** Present Perfect can connect a past experience to now when no finished past time is given. A Past Simple follow-up gives the finished details.
 - **Polite Questions:** "Have you ever...?" shows interest in the other person.
 
 ---
@@ -451,7 +474,7 @@ Talk about things you've never done but want to try.
 
 - English can use Present Continuous for a fixed future arrangement: "I'm meeting Rasa tomorrow"
 - "Have you ever...?" is a common conversation starter
-- Stative verbs in continuous form can sound wrong to native speakers
+- In their stative meanings, these verbs are not usually used in a continuous form in standard English.
 - English grammar often marks a temporary/permanent contrast that Lithuanian can leave to context
 
 ---
@@ -476,4 +499,4 @@ After checking your answers, rate each statement: **Not yet / Almost / Yes**.
 
 **End of Expanded Unit 10 / Išplėsto dešimtojo skyriaus pabaiga**
 
-Check your answers in the Answer Key section! This unit is challenging because it combines three tenses. Review the time expressions carefully - they often determine which tense to use.
+Check your answers in the Answer Key section. This unit combines three present tenses and relevant Past Simple uses. Decide what the sentence means first, then use time expressions as supporting clues.

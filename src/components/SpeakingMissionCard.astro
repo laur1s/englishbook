@@ -7,10 +7,11 @@ import { MISSION_TYPE_LABELS, formatDurationMinutes } from "../lib/speaking";
 
 type Props = {
   entry: SpeakingMissionEntry;
+  missionRevision: number;
   sourceTitle?: string;
 };
 
-const { entry, sourceTitle = "A2 unit" } = Astro.props;
+const { entry, missionRevision, sourceTitle = "A2 unit" } = Astro.props;
 const parsed = parseDocument({
   markdown: getEntryBody(entry),
   title: entry.data.title,
@@ -22,6 +23,7 @@ const parsed = parseDocument({
   class="speaking-card"
   data-speaking-card
   data-mission-slug={entry.data.slug}
+  data-mission-revision={String(missionRevision)}
   data-mission-type={entry.data.missionType}
   data-duration={String(entry.data.durationMinutes)}
   data-topics={entry.data.topics.join("|")}

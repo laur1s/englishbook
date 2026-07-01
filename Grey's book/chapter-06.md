@@ -64,7 +64,7 @@ One cool autumn morning, a new group of interns arrived. Meredith watched them r
 
 "We looked like that too," Izzie replied.
 
-Meredith opened the new interns' files. One name made her stop: Dr. Lexie Grey. Meredith read it again. She had never met another young doctor with her family name.
+Meredith opened the new interns' files. One name made her stop: Dr. Lexie Grey. Meredith read it again. She did not know any other young doctor with her family name.
 
 During orientation, Meredith asked Lexie to speak with her in a quiet office.
 
@@ -72,7 +72,7 @@ During orientation, Meredith asked Lexie to speak with her in a quiet office.
 
 Lexie nodded. She was twenty-five and spoke with warm energy. "Yes. Thatcher Grey is my father. My mother was Susan Grey. I came to Seattle Grace because I learned that Dr. Meredith Grey works here."
 
-Meredith's heart beat faster. Thatcher Grey was Meredith's father too, but Meredith had not grown up with him. She had never met Lexie.
+Meredith's heart beat faster. Thatcher Grey was Meredith's father too, but Meredith grew up without him and did not know Lexie.
 
 "I'm Meredith," she said slowly. "Meredith Grey. I think I am your half-sister."
 
@@ -114,7 +114,7 @@ Meredith looked at him. She thought about work, family, and all the changes in h
 
 "Yes," she said. "I will."
 
-They planned a small wedding in the same garden. Cristina was Meredith's maid of honor. Izzie arranged the flowers, and Alex walked beside Derek at the start of the ceremony. Dr. Webber, who had recently retired, led the ceremony.
+They planned a small wedding in the same garden. Cristina was Meredith's maid of honor. Izzie arranged the flowers, and Alex walked beside Derek at the start of the ceremony. Dr. Webber was now retired, and he led the ceremony.
 
 Just before it began, Derek received a call. A patient needed an urgent brain operation. Another brain surgeon was available, but the case was difficult. Derek explained the situation to Meredith.
 
@@ -124,7 +124,7 @@ Just before it began, Derek received a call. A patient needed an urgent brain op
 
 "Yes. Today is important, but the patient is important too."
 
-The guests waited in the garden. Izzie brought coffee, Alex told bad jokes, and Lexie helped an older guest find a chair. Derek returned later, tired but smiling. The surgery had gone well.
+The guests waited in the garden. Izzie brought coffee, Alex told bad jokes, and Lexie helped an older guest find a chair. The surgery went well, and Derek returned later, tired but smiling.
 
 "Now," he said, "I am ready."
 
@@ -154,7 +154,7 @@ Lexie smiled. "Maybe it is where I will find myself too."
 6. What emergency happened on the wedding day?
 7. Who became the new chief of surgery?
 8. What did Meredith realize about change?
-9. How had Seattle Grace changed Meredith's life?
+9. How did Seattle Grace change Meredith's life?
 10. What did Meredith say about the hospital?
 
 ### Creative Questions

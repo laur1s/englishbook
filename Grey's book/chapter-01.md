@@ -45,7 +45,7 @@ status: "published"
 - blood pressure — kraujo spaudimas
 - pulse — pulsas
 - cafeteria — valgykla
-- nervous — nervingas / nervinga
+- nervous — nerimaujantis / nerimaujanti
 - exhausted — išsekęs
 - reports — ataskaitos
 
