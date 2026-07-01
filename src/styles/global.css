@@ -298,6 +298,10 @@ html[data-lt="hidden"] .lt-text {
   line-height: 1.45;
 }
 
+.translation-popover .lt-text {
+  color: inherit;
+}
+
 .landing-hero,
 .reader-hero,
 .collection-hero {
