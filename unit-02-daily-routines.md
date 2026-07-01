@@ -280,6 +280,15 @@ Use the questions as prompts:
 _____________________________________________
 _____________________________________________
 _____________________________________________
+
+Model opening: **On weekdays, I usually wake up at seven. I have breakfast at home, and then I go to work by bus.**
+
+**Success checklist:**
+
+- [ ] I wrote 7–9 sentences in a clear morning → day → evening order.
+- [ ] I used Present Simple and at least two frequency words.
+- [ ] I used **at** with clock times and a suitable phrase for transport.
+- [ ] I checked the third-person **-s** if I wrote about another person.
 _____________________________________________
 _____________________________________________
 
@@ -309,13 +318,13 @@ _____________________________________________
 
 **Make questions for these answers:**
 
-1. _____________________ → I live in Klaipėda.
-2. _____________________ → She starts work at 9 AM.
-3. _____________________ → They go to the cinema on Fridays.
-4. _____________________ → I have coffee for breakfast.
-5. _____________________ → He goes to work by car.
-6. _____________________ → I study English because I like it.
-7. _____________________ → My sister teaches at the school.
+1. _____________________ → I live **in Klaipėda**.
+2. _____________________ → She starts work **at 9 AM**.
+3. _____________________ → They go to the cinema **on Fridays**.
+4. _____________________ → I have **coffee** for breakfast.
+5. _____________________ → He goes to work **by car**.
+6. _____________________ → I study English **because I like it**.
+7. _____________________ → **My sister** teaches at the school.
 
 ---
 
@@ -461,6 +470,16 @@ Example questions:
 - Do you watch TV in the evening?
 
 **Write the paragraph:**
+
+Model opening: **My partner usually gets up at half past six, but at weekends she gets up later. She has...**
+
+**Interview and writing checklist:**
+
+- [ ] I asked at least eight questions and one natural follow-up.
+- [ ] I took keywords rather than writing full answers during the interview.
+- [ ] My paragraph uses **he/she + verb-s** accurately.
+- [ ] I included at least two frequency adverbs and two time expressions.
+- [ ] I checked one fact with my partner before finishing.
 
 ---
 

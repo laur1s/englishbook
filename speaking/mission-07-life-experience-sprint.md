@@ -23,14 +23,14 @@ supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "Tell someone about three life experiences you have had and one experience you have not had yet."
-    ltPrompt: "Papasakokite apie tris gyvenimo patirtis, kurias turėjote, ir vieną patirtį, kurios dar neturėjote."
+    ltPrompt: "Papasakokite apie tris dalykus, kuriuos jau esate patyrę, ir vieną, kurio dar nesate išbandę."
     support:
       - "Use have or has correctly."
       - "Add one detail with past simple if needed."
       - "Sound personal, not like a grammar exercise."
   - kind: "prep"
-    prompt: "Choose three yes experiences and one not yet experience."
-    ltPrompt: "Pasirinkite tris patirtis, kurias jau turėjote, ir vieną, kurios dar neturėjote."
+    prompt: "Choose three experiences you have had and one you have not had yet."
+    ltPrompt: "Pasirinkite tris dalykus, kuriuos jau esate patyrę, ir vieną, kurio dar nesate išbandę."
     seconds: 20
     support:
       - "travel"
@@ -45,14 +45,14 @@ steps:
       - "I've never tried..."
       - "I did that in..."
   - kind: "compare"
-    prompt: "Check this model: I've visited Poland and Germany, and I've worked in two different offices. I've also learned basic Spanish, but I've never tried scuba diving. My favourite experience was a trip to Berlin in 2023. I travelled there with two friends, visited several museums, and spoke English every day. That trip gave me more confidence, and I've used English more often since then."
+    prompt: "Check this model: I've visited Poland and Germany, and I've worked in two different offices. I've also learned basic Spanish, but I haven't tried scuba diving yet. My favourite experience was a trip to Berlin in 2023. I travelled there with two friends, visited several museums, and spoke English every day. That trip gave me more confidence, and I've used English more often since then."
     ltPrompt: "Palyginkite savo pasakojimą su pavyzdžiu."
     support:
       - "Did you avoid specific past time with present perfect?"
       - "Did you add one clear past detail where it fit?"
   - kind: "reflect"
-    prompt: "How confident did this feel?"
-    ltPrompt: "Kaip užtikrintai jautėtės?"
+    prompt: "Check each specific past time and choose one experience that needs a clearer follow-up detail on attempt two."
+    ltPrompt: "Patikrinkite kiekvieną konkretų praeities laiką ir pasirinkite vieną patirtį, kuriai antruoju bandymu pridėsite aiškesnę detalę."
     support:
       - "1 = I mixed present perfect and past simple."
       - "5 = I could separate them clearly."
@@ -64,14 +64,18 @@ This mission pushes Unit 7 into real speech. The learner has to manage meaning f
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- I've been to...
-- I've never...
-- I've already...
-- I did that in...
-- It was...
+- I've been to... — Esu buvęs / buvusi...
+- I haven't... yet. — Dar nesu...
+- I've already... — Jau esu...
+- I did that in... — Tai dariau...
+- It was... — Tai buvo...
+
+## Success Check / Sėkmės kriterijai
+
+Your talk succeeds when it includes three experiences, one experience you have not had, and one finished past detail with a clear time. On the second attempt, keep Present Perfect for general experience, use Past Simple for **when**, and add one follow-up detail about where or who.
 
 ## Push It Further / Pasunkinkite
 
 - Ask yourself one ever question and answer it.
 - Add since or for in one sentence.
-- Repeat the mission and reduce the number of pauses.
+- Ask and answer one **Have you ever...?** question as if a friend were listening.

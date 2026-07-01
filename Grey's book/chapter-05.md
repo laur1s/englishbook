@@ -22,13 +22,17 @@ status: "published"
 
 ### Phrasal Verbs
 
+*Fraziniai veiksmažodžiai*
+
 - break down — start crying (pratrūkti verkti)
 - calm down — become calm (nusiraminti)
 - open up — share personal feelings (atsiverti)
-- get over — recover emotionally (atsitiesti)
+- reach out — ask another person for support (kreiptis pagalbos)
 - carry on — continue (tęsti)
 
 ### Word Bank
+
+*Žodynėlis*
 
 - heart surgery — širdies operacija
 - patient — pacientas
@@ -49,21 +53,23 @@ status: "published"
 
 ### Story
 
+*Pasakojimas*
+
 Cristina Yang was always the strongest doctor at the hospital. She never cried. She never showed fear. She was like a machine - strong, smart, and perfect. But today, everything changed.
 
 Today, Cristina's patient died.
 
-His name was George. He was 55 years old. He had heart problems. Cristina was doing heart surgery on him. The surgery started well. Everything was going perfectly. Cristina was confident. "This will be easy," she thought.
+His name was George. He was 55 years old and had serious heart problems. An experienced heart surgeon, Dr. Thomas, led his operation. Cristina assisted and watched an important part of the procedure. The operation started well, and Cristina felt confident.
 
 But then, suddenly, George's heart stopped.
 
 "His heart stopped!" a nurse shouted. "We're losing him!"
 
-Cristina worked fast. She did CPR. She tried everything. Forty-five minutes passed. Cristina was sweating. Her hands were shaking. But nothing worked.
+The whole emergency team worked fast. Cristina followed Dr. Thomas's instructions and helped with CPR. Forty-five minutes passed. Cristina was sweating, and her hands were shaking. The team could not restart George's heart.
 
 George was dead.
 
-"Time of death: 3:47 PM," Cristina said quietly. Her voice was shaking.
+"Time of death: 3:47 PM," Dr. Thomas said quietly.
 
 She stood there, looking at George's body. The monitor showed a flat line. No heartbeat. Just silence. Cristina couldn't move. She couldn't breathe. This was her patient. And now he was dead.
 
@@ -79,13 +85,13 @@ Meredith was walking past when she heard the crying. She ran into the scrub room
 
 Cristina could barely speak. "He died... George died... on my table... I tried everything... but I couldn't save him..." She looked at Meredith with terrified eyes. "What if I'm a bad doctor? What if I kill more people? Maybe I should quit!"
 
-Meredith grabbed Cristina's hands. "No! Listen to me! You're an amazing doctor! Sometimes patients die. It's not always your fault. You did everything right."
+Meredith sat close to Cristina. "I hear that you are frightened," she said. "We do not know all the facts yet. The team will review each step with you."
 
 "But he's DEAD!" Cristina screamed. "He came here to get better, and now he's DEAD because of me!"
 
 Just then, Alex walked in. He saw Cristina crying on the floor. Usually, Alex made jokes about everything. But not today. Today, he sat down next to them.
 
-"Cristina," Alex said gently. "I looked at George's chart. His heart was too damaged. No doctor in the world could have saved him. Not even the best surgeon. You gave him a chance. That's all anyone could do."
+"Cristina," Alex said gently. "I looked at George's chart. His heart was badly damaged. We do not know the full reason yet. The team will review the case carefully. You do not have to decide the answer alone."
 
 Izzie came in with coffee and sandwiches. She heard what happened and wanted to help. She sat down on the floor with them. Now all four friends were sitting on the floor together.
 
@@ -107,38 +113,46 @@ Slowly, Cristina stopped crying. Her friends' words were helping. She wasn't alo
 
 "That's what friends are for," Meredith said, hugging her. "We're not just colleagues. We're family."
 
-Later, Cristina went back to work. She was still sad. George's death still hurt. But she felt stronger. She had friends who understood. She had friends who cared.
+Later, Cristina joined a team review with Dr. Webber, a nurse, and another surgeon. They checked the notes and each step of the operation. Dr. Webber explained that a review was not about hiding a mistake or finding someone to blame. It was about learning the facts and improving care.
+
+The review found that the team followed the plan, but George's heart was very weak. Dr. Webber also asked Cristina if she needed a short break and support after the loss. Cristina said yes. She was still sad, but she no longer carried the question alone.
+
+The next day, Cristina returned to work. George's death still hurt. But she felt steadier. She had friends who understood and a team that checked difficult events honestly.
 
 That night, as Meredith drove home, she thought about friendship. Being a doctor was so hard. Patients died. Mistakes happened. But having good friends made it possible to continue.
 
-"Friendship saves us," Meredith thought. "Not just patients. But us too."
+"Support does not remove grief," Meredith thought. "It helps us carry it and learn."
 
 ---
 
 ### Understanding Questions
+
+*Supratimo klausimai*
 
 1. What was wrong with George?
 2. What happened during Cristina's surgery?
 3. Where did Cristina cry?
 4. What did Cristina say was her fault?
 5. Who found Cristina crying?
-6. What did Alex tell Cristina about George's heart?
+6. What did Alex tell Cristina about reviewing the case?
 7. What did each friend share about their fears?
-8. How did Cristina feel after talking with her friends?
-9. What did Meredith think about as she drove home?
-10. What did Meredith learn about friendship?
+8. What was the purpose of the team review?
+9. What did the review find?
+10. What did Meredith learn about support?
 
 ### Creative Questions
 
+*Kūrybiniai klausimai*
+
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
-1. If your friend was very sad, what would you do to help them?
-   - *Example answer:* "I would sit with them and listen. I would hug them and tell them everything will be OK. I would bring them their favorite food or drink."
-   - *Your answer:* "I would sit with them and _______________. I would hug them and _______________. I would bring _______________."
+1. How can you help a friend who is very sad?
+   - *Example answer:* "I can sit with them, listen, and ask what support they want."
+   - *Your answer:* "I can _______________, _______________, and _______________."
 
-2. Imagine someone blames themselves for a mistake. What would you say to comfort them?
-   - *Example answer:* "It's not your fault. Everyone makes mistakes. You did your best. Don't be so hard on yourself."
-   - *Your answer:* "It's not your fault. Everyone _______________. You did _______________. Don't _______________."
+2. A colleague blames themself before all the facts are known. What can you say?
+   - *Example answer:* "We do not know all the facts yet. The team can review what happened."
+   - *Your answer:* "We do not know _______________. The team can _______________."
 
 3. Why do you think sharing fears with friends helps people feel better?
    - *Example answer:* "When you share your fears, you realize you're not alone. Your friends understand you. Talking about problems makes them feel smaller."
@@ -148,13 +162,15 @@ That night, as Meredith drove home, she thought about friendship. Being a doctor
    - *Example answer:* "My best friend is Maria. When I'm sad, she listens to me. She makes me laugh. She tells me that tomorrow will be better."
    - *Your answer:* "My best friend is _______________. When I'm sad, _______________. She/He _______________."
 
-5. If you could say something to Cristina after her patient died, what would you say?
-   - *Example answer:* "Cristina, you're a great doctor. Sometimes bad things happen, but it's not your fault. Your friends love you and we're here to help you."
-   - *Your answer:* "Cristina, you're _______________. Sometimes _______________, but _______________. Your friends _______________."
+5. Write one supportive sentence to Cristina after her patient died.
+   - *Example answer:* "Cristina, I am sorry. I am here to listen, and the team will review the case with you."
+   - *Your answer:* "Cristina, _______________. I am here to _______________."
 
 ---
 
 ### Fun Activities
+
+*Smagios užduotys*
 
 #### Activity 1: Emotions Vocabulary / Emocijų Žodynas
 
@@ -174,19 +190,7 @@ e) When Cristina cried on the floor
 
 **Now write your own:** "I feel _______________ when _______________."
 
-#### Activity 2: True or False? / Tiesa ar Melas?
-
-*Circle T (True) or F (False):*
-
-1. Cristina never cried before this day. **T / F**
-2. George was 45 years old. **T / F**
-3. The surgery took 45 minutes. **T / F**
-4. Meredith found Cristina crying in the cafeteria. **T / F**
-5. All four friends sat on the floor together. **T / F**
-6. Alex usually makes jokes. **T / F**
-7. Cristina's parents worked three jobs. **T / F**
-
-#### Activity 3: Role-Play - Comforting a Friend / Draugo Guodimas
+#### Activity 2: Role-Play - Comforting a Friend / Draugo guodimas
 
 **Practice with a partner:**
 
@@ -198,51 +202,17 @@ e) When Cristina cried on the floor
 
 **Student B:** "Of course! That's what friends do. We help each other."
 
-**Now create your own dialog:** Your friend is crying because something bad happened. What do you say?
+**Now create your own dialog:** One person says, "I think everything is my fault." The other person listens, avoids making a quick judgment, and suggests a fair review.
 
-#### Activity 4: Complete the Friendship Rules / Draugystės Taisyklės
-
-**Fill in the blanks with words from the box:**
-
-Good friends always _______________ to each other. When your friend is sad, you should _______________ them. Friends _______________ each other's problems. If your friend makes a mistake, don't _______________ them. Instead, offer to _______________. True friendship means being there in _______________ times and good times.
-
-*Word Box: listen, comfort, understand, blame, help, bad*
-
-#### Activity 5: Character Feelings Timeline / Jausmų Linija
-
-**Show how Cristina's feelings changed:**
-
-1. During surgery → _______________ (confident/sure)
-2. When George died → _______________
-3. In the scrub room → _______________
-4. When friends came → _______________
-5. At the end → _______________
-
-#### Activity 6: Write a Supportive Message / Parašykite Palaikantį Laišką
-
-**Imagine you're texting Cristina. Write a short message to make her feel better:**
-
-*Example:*
-"Hi Cristina. I heard what happened. I'm so sorry. You're an amazing doctor. It's not your fault. Do you want to talk? I'm here for you. ❤️"
-
-*Your message:*
-"_______________________________________________________
-_______________________________________________________"
-
-#### Activity 7: Discussion - Friendship is Important / Diskusija
-
-**Discuss with your partner:**
-
-- Why is friendship important in difficult jobs?
-- How do friends help each other during hard times?
-- Have you ever helped a friend who was very sad? What did you do?
-- What makes a good friend?
-
-**Write one sentence:** "A good friend is someone who _______________."
+- **Supporter:** "I am here with you. We do not know all the facts yet."
+- **Colleague:** "What happens next?"
+- **Supporter:** "The team will review the case, and you can ask for support."
 
 ---
 
 ### Grammar Practice
+
+*Gramatikos praktika*
 
 Past Continuous vs Past Simple:
 

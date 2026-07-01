@@ -1,6 +1,6 @@
 ---
-title: "Chapter 4: The Miracle Baby - Will He Survive?"
-ltTitle: "4 Skyrius: Stebuklingas Kūdikis - Ar Jis Išgyvens?"
+title: "Chapter 4: A Small Baby - Careful Hope"
+ltTitle: "4 Skyrius: Mažas kūdikis - atsargi viltis"
 slug: "chapter-04"
 collection: "grey-book"
 order: 4
@@ -16,11 +16,13 @@ hasAnswerKey: true
 status: "published"
 ---
 
-## Chapter 4: The Miracle Baby - Will He Survive?
+## Chapter 4: A Small Baby - Careful Hope
 
-## 4 Skyrius: Stebuklingas Kūdikis - Ar Jis Išgyvens?
+## 4 Skyrius: Mažas kūdikis - atsargi viltis
 
 ### Phrasal Verbs
+
+*Fraziniai veiksmažodžiai*
 
 - hold on — wait (palaukti)
 - pull through — survive a serious illness (išgyventi)
@@ -29,6 +31,8 @@ status: "published"
 - check on — check someone’s condition (patikrinti būklę)
 
 ### Word Bank
+
+*Žodynėlis*
 
 - baby — kūdikis
 - pregnant — nėščia
@@ -44,45 +48,41 @@ status: "published"
 - hope — viltis
 - fight — kovoti
 - alive — gyvas
-- prayer — malda
+- progress — pažanga
 
 ---
 
 ### Story
 
+*Pasakojimas*
+
 Dr. Addison Montgomery was a doctor who cared for mothers and babies - one of the best specialists at Seattle Grace Hospital. She helped mothers have babies, especially when something was wrong with a pregnancy.
 
 On Tuesday morning, a woman arrived at the hospital. Her name was Lisa Thompson. She was 32 years old and pregnant. But something was very wrong. Very, very wrong.
 
-Lisa had tried to have a baby for five years. Five long years. She had many problems. She had lost two babies before they were born. This baby was her last chance. Her only chance.
+Lisa started trying to have a baby five years earlier. She experienced two pregnancy losses, so this pregnancy carried both love and difficult memories. She wanted the team to speak honestly, but gently.
 
 When Addison looked at the ultrasound, her face became serious. The baby was too small. Much too small. The baby wasn't growing. The baby was in danger.
 
-"Please," Lisa was crying so hard. "Please save my baby. I've been waiting for five years. Five years! This is my last chance. Please, doctor, please!"
+"Please tell me what you know," Lisa said through her tears. "I am frightened, but I want the truth."
 
-Lisa's husband, Tom, was holding her hand. He was crying too. "We can't lose another baby," he said. "We just can't. Please help us."
+Lisa's husband, Tom, held her hand. "Please help us understand the choices," he said.
 
-Addison looked at Meredith. "We need to deliver this baby now. Right now. If we wait, the baby will die inside the mother."
+Addison looked at Meredith. "I believe we need to deliver this baby now. Waiting may be more dangerous."
 
 "But the baby is only 35 weeks old," Meredith said. "That's too early. The baby is too small. Can the baby survive?"
 
-"I don't know," Addison said honestly. "But if we don't try, the baby will definitely die."
+"I cannot promise a result," Addison said honestly. "I believe delivery now gives the baby a better chance. I will explain the benefits and risks, and Lisa can ask questions before she decides."
+
+Addison spoke with Lisa and Tom in simple language. Lisa asked what care the baby might need after birth. After the discussion, Lisa gave her consent for the operation.
 
 They took Lisa to the operating room. Tom couldn't come with them. He had to wait outside. He sat in the waiting room and cried. He prayed (meldėsi). He hoped for a miracle.
 
 In the operating room, Addison began the surgery. She cut very carefully. "The baby is coming," she said. "The baby is so small. So, so small."
 
-The baby came out. It was a boy. But he was so tiny. So tiny that he looked like a little doll. His skin was almost see-through (permatoma). His eyes were still closed. And he wasn't breathing.
+The baby was a boy, and he was very small. He needed help with his breathing after birth.
 
-"He's not breathing!" Meredith shouted. "The baby isn't breathing!"
-
-Addison worked fast. She cleaned the baby's mouth. She rubbed his chest. "Come on, baby. Breathe. Please breathe!"
-
-For three terrible seconds, nothing happened. The room was silent. Everyone was holding their breath.
-
-Then - suddenly - the baby made a small sound. A tiny cry.
-
-"He's breathing!" Meredith almost screamed. "He's alive!"
+The neonatal team followed the hospital's emergency procedure. They used special equipment made for newborn babies. Meredith stayed out of their way and brought the items they requested. After a tense moment, the baby made a small sound.
 
 But the baby was still in danger. He was too small. Too weak. They rushed him to the NICU - the special room for very sick babies. The baby needed machines to help him breathe. He needed special care.
 
@@ -92,37 +92,29 @@ Addison sat next to her bed. "Your baby is alive. But he's very sick, Lisa. He's
 
 Lisa started crying. "Can I see him?"
 
-"Not yet," Addison said. "He's too sick. But we're doing everything we can."
+"You can see him through the nursery window first," Addison said. "A nurse will explain the machines. We will help you touch him safely when the neonatal team says it is possible."
 
-For two days and two nights, the baby was in critical condition. Addison and Meredith didn't go home. They stayed at the hospital. They watched the baby every minute. The baby needed a breathing machine. His heart was weak. He was so small - only 1.8 kilograms.
+For two days and two nights, the baby needed close care in the NICU. Different doctors and nurses worked in shifts, so a rested team was always present. A machine helped his breathing. Lisa and Tom learned what each sound and number meant.
 
-"Fight, little one," Meredith whispered to the baby. "Your mother is waiting for you. Your father is waiting for you. Please fight."
+"Your family is here," Meredith whispered to the baby.
 
 Tom and Lisa stayed in the hospital too. They couldn't sleep. They couldn't eat. They just waited and prayed.
 
-On the morning of the third day, something amazing happened. The baby opened his eyes. His breathing got stronger. His heart rate got better.
+On the morning of the third day, the baby opened his eyes. His breathing and heart rate were more stable.
 
-"I think we can take him off the breathing machine," Addison said. Her hands were shaking. "Let's try."
+The neonatal specialist decided to reduce some breathing support slowly. The team watched every change. The baby managed the first small step, but he still needed close care.
 
-They turned off the machine. Everyone held their breath. Would the baby breathe on his own?
-
-One second. Two seconds. Three seconds.
-
-And then - the baby took a breath! All by himself! And another breath! He was breathing alone!
-
-"It's a miracle!" Meredith said. She was crying happy tears.
-
-Addison ran to tell Lisa and Tom. "Your baby is breathing on his own! He's going to be OK! He's going to survive!"
+Addison went to tell Lisa and Tom. "He has made progress today. This is good news. He still needs the NICU, and we will take one day at a time."
 
 Lisa couldn't stop crying. "Can I hold him now? Please, can I hold my baby?"
 
-They brought the tiny baby to Lisa. She held him for the first time. He was so small that he fit in her two hands. But he was alive. Her baby was alive.
+With a nurse's help, Lisa held the baby close for the first time. Tom sat beside them and touched the baby's small hand.
 
-"Hello, my miracle baby," Lisa whispered. "I waited so long for you. Welcome to the world, my little fighter."
+"Hello, little one," Lisa whispered. "We are here with you. Welcome to the world."
 
-Tom was crying and smiling at the same time. "Thank you," he told the doctors. "You gave us our family. You gave us our dream."
+Tom was crying and smiling at the same time. "Thank you for caring for him and for telling us the truth," he told the team.
 
-Meredith felt so happy. This was why she became a doctor. To save lives. To make miracles happen.
+Meredith felt hopeful. She understood that medicine was not about making promises or miracles. It was about skilled care, honest updates, and small steps.
 
 But that same afternoon, something sad happened. An old woman in the hospital died. Her name was Mrs. Patterson. She was 87 years old. She had cancer. The doctors couldn't save her.
 
@@ -130,133 +122,79 @@ Meredith held the old woman's hand as she died. The woman's children were crying
 
 "Life and death," Meredith thought. "Both in the same day. A baby is born. An old woman dies. This is a hospital. This is medicine."
 
-As Meredith walked home that night, she thought about Lisa's miracle baby. She thought about Mrs. Patterson. Hospitals have happy stories and sad stories. But today, at least one story had a happy ending. And that was enough.
+As Meredith walked home that night, she thought about Lisa's small baby and Mrs. Patterson. Hospitals held happy news and sad news on the same day. Today, one family received careful hope. For Meredith, that was enough.
 
 ---
 
 ### Understanding Questions
 
+*Supratimo klausimai*
+
 1. What kind of doctor was Addison Montgomery?
 2. How long had Lisa been trying to have a baby?
 3. What was wrong with the baby before he was born?
 4. Where was the baby taken after birth?
-5. How long was the critical period for the baby?
-6. What happened on the third day?
-7. What did Lisa call her baby?
-8. What did Tom say to thank the doctors?
-9. How did Meredith feel about her work?
-10. What did Meredith learn about medicine that day?
+5. Why did different doctors and nurses work in shifts?
+6. What progress did the baby make on the third day?
+7. What did Addison tell the parents about that progress?
+8. What did Tom thank the team for?
+9. What sad event happened later that day?
+10. What did Meredith learn about careful hope?
 
 ### Creative Questions
 
+*Kūrybiniai klausimai*
+
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
-1. If you were a parent waiting for news about your premature baby, what would you want to hear from the doctors?
-   - *Example answer:* "I would want to hear that my baby is alive and fighting. I would want the doctor to tell me the truth. I would also want to know when I can see my baby."
-   - *Your answer:* "I would want to hear _______________. I would want the doctor to _______________."
+1. What information does a worried parent need from a doctor?
+   - *Example answer:* "A parent needs an honest update and a chance to ask questions."
+   - *Your answer:* "A parent needs _______________ and _______________."
 
-2. Imagine you're a neonatal nurse. What would be the most rewarding part of your job?
-   - *Example answer:* "The most rewarding part would be seeing tiny babies get healthy and go home with their families. I would love helping families during difficult times."
-   - *Your answer:* "The most rewarding part would be _______________. I would love _______________."
+2. Imagine you are a neonatal nurse. What part of your job feels important?
+   - *Example answer:* "Helping families understand the machines feels important."
+   - *Your answer:* "Helping _______________ feels important."
 
-3. What would you do to support a family going through a difficult pregnancy?
-   - *Example answer:* "I would visit them at the hospital. I would bring them food. I would listen to their worries. I would tell them to stay positive."
-   - *Your answer:* "I would _______________. I would bring _______________. I would tell them _______________."
+3. How can a friend support a family during a difficult pregnancy?
+   - *Example answer:* "A friend can listen and offer practical help."
+   - *Your answer:* "A friend can _______________ and _______________."
 
-4. How do you think premature babies change over time?
-   - *Example answer:* "Premature babies get bigger and stronger every day. They learn to breathe on their own. Their skin becomes less see-through. They start to look like regular babies."
-   - *Your answer:* "Premature babies get _______________. They learn _______________. They start to _______________."
+4. Why should a medical team avoid promises about recovery?
+   - *Example answer:* "Every patient is different, so the team should give careful updates."
+   - *Your answer:* "The team should avoid promises because _______________."
 
-5. If you could thank someone who saved a life, what would be the most meaningful way?
-   - *Example answer:* "I would write them a letter telling them how much they mean to my family. I would hug them and cry happy tears. Maybe I would bring them flowers."
-   - *Your answer:* "I would _______________. I would hug them and _______________. Maybe I would _______________."
+5. Write one careful, hopeful update for Lisa and Tom.
+   - *Example answer:* "Your baby is more stable today, but he still needs close care."
+   - *Your answer:* "Your baby _______________, but _______________."
 
 ---
 
 ### Fun Activities
 
-#### Activity 1: True or False? / Tiesa ar Melas?
+*Smagios užduotys*
 
-*Read the statements and circle T (True) or F (False):*
+#### Activity 1: Careful Update / Atsargus informavimas
 
-1. Lisa had been trying to have a baby for 5 years. **T / F**
-2. The baby was born at 40 weeks. **T / F**
-3. The baby wasn't breathing when he was born. **T / F**
-4. Tom could go into the operating room with Lisa. **T / F**
-5. The baby started breathing on his own on the third day. **T / F**
-6. Mrs. Patterson was 75 years old. **T / F**
+Work with a partner. Student A is Addison; Student B is Lisa or Tom. Give an honest update, explain one next step, and invite a question.
 
-#### Activity 2: Role-Play Dialog / Vaidmenų Žaidimas
+- **Parent:** "Is our baby going to be all right?"
+- **Doctor:** "He has made a little progress today, but he still needs close care."
+- **Parent:** "What happens next?"
+- **Doctor:** "The NICU team will watch his breathing. What else would you like me to explain?"
 
-**Practice this conversation with a partner:**
+#### Activity 2: Small-Steps Timeline / Mažų žingsnių laiko juosta
 
-**Student A (Lisa):** "Doctor, will my baby be OK? I'm so scared."
+Put these events in order: **the ultrasound shows a problem; Lisa gives consent; the neonatal team helps the baby; the baby moves to the NICU; Lisa holds him; Addison gives a careful update**. Retell the timeline with **first, next, then, after that, finally**.
 
-**Student B (Doctor):** "Your baby is very small, but we're doing everything we can. He's a fighter."
-
-**Student A:** "Can I see him? Please, I need to see my baby."
-
-**Student B:** "Soon. Right now he needs special care. But you can see him very soon."
-
-**Now create your own dialog:** Imagine you're Tom talking to his children about their new baby brother.
-
-#### Activity 3: Fill in the Blanks / Užpildykite Tuščias Vietas
-
-*Complete the summary using words from the Word Bank:*
-
-Lisa wanted to have a __________ for five years. When the baby was born, he was very __________. He wasn't __________ at first. The doctors worked very fast. Finally, the baby made a tiny __________. After three days, the baby could __________ on his own. It was a __________!
-
-*Word Bank: baby, tiny, breathing, cry, breathe, miracle*
-
-#### Activity 4: Retelling Challenge / Pasakojimo Užduotis
-
-**Tell the story in your own words using these prompts:**
-
-- Lisa wanted...
-- The baby was born, but...
-- The doctors were worried because...
-- After three days...
-- In the end...
-
-#### Activity 5: Character Feelings Chart / Veikėjų Jausmų Lentelė
-
-**Match the character with how they felt and why:**
-
-| Character | Feeling | Why? |
-|-----------|---------|------|
-| Lisa | scared and worried | Her baby was too small and sick |
-| Tom | ___________ | ___________ |
-| Meredith | ___________ | ___________ |
-| The baby | fighting/strong | ___________ |
-
-**Your turn:** Complete the chart!
-
-#### Activity 6: Vocabulary Matching Game / Žodžių Atitikmenų Žaidimas
-
-**Match the English word with the Lithuanian meaning:**
-
-1. tiny __________          a. išgyventi
-2. miracle __________       b. kvėpavimas
-3. survive __________       c. mažytis
-4. breathing __________     d. stebuklas
-5. tears __________         e. ašaros
-
-#### Activity 7: What Happens Next? / Kas Nutiks Toliau?
-
-**Prediction activity - discuss with your partner:**
-
-- Will Lisa's baby grow up healthy?
-- How will this experience change Lisa and Tom?
-- Will Meredith want to have children after this experience?
-- Do you think Meredith will become a baby doctor like Addison?
-
-**Write your prediction:** "I think _______________ because _______________."
+*Model:* "First, the ultrasound shows a problem. Next, Addison explains the choices."
 
 ### Grammar Practice
 
+*Gramatikos praktika*
+
 Choose the best word for each sentence: `just`, `already`, or `yet`. Use the correct verb form where needed.
 
-1. The baby started breathing only a few minutes ago. He has ______ started breathing on his own.
+1. The baby made progress only a few minutes ago. He has ______ made progress.
 2. The baby has not left the NICU ______ because he still needs special care.
 3. The family knows the good news because Addison has ______ told them.
 4. The equipment is ready earlier than expected. The doctors have ______ prepared it for the next check.

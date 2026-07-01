@@ -128,7 +128,7 @@
         { "id": "module-08-context", "title": "Dreams and reality: compare choices", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-08", "required": true, "skillRefs": ["reading.viewpoints", "vocabulary.careers", "exposure.comparisons"] },
         { "id": "module-08-learn", "title": "Learn to make comparisons", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-08", "required": true, "skillRefs": ["comparison.comparative", "comparison.superlative", "comparison.as-as"] },
         { "id": "module-08-practice", "title": "Compare real choices", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-08", "mode": "standard", "count": 10, "required": true, "skillRefs": ["comparison.spelling", "comparison.irregular", "comparison.structures"] },
-        { "id": "module-08-speak", "title": "Run the comparison clinic", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/comparison-clinic", "required": true, "skillRefs": ["speaking.comparison", "error-correction.comparison"] },
+        { "id": "module-08-speak", "title": "Run the comparison clinic", "kind": "content", "stage": "speak", "revision": 2, "minutes": 5, "href": "/speaking/comparison-clinic", "required": true, "skillRefs": ["speaking.comparison", "error-correction.comparison"] },
         { "id": "module-08-review", "title": "Review comparisons", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-08", "mode": "review", "count": 6, "required": true, "skillRefs": ["comparison.comparative", "comparison.superlative", "comparison.as-as"] }
       ]
     },
@@ -144,7 +144,7 @@
         { "id": "module-09-context", "title": "A father's heart: weigh the evidence", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-09", "required": true, "skillRefs": ["reading.evidence", "vocabulary.ethics", "exposure.past-continuous"] },
         { "id": "module-09-learn", "title": "Learn advice and possibility", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-09", "required": true, "skillRefs": ["modal.advice", "modal.possibility", "modal.deduction"] },
         { "id": "module-09-practice", "title": "Choose a modal by meaning", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-09", "mode": "standard", "count": 10, "required": true, "skillRefs": ["modal.form", "modal.meaning", "modal.negative-meaning"] },
-        { "id": "module-09-speak", "title": "Decide: advice or maybe", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/advice-or-maybe", "required": true, "skillRefs": ["speaking.advice", "speaking.deduction"] },
+        { "id": "module-09-speak", "title": "Decide: advice or maybe", "kind": "content", "stage": "speak", "revision": 2, "minutes": 5, "href": "/speaking/advice-or-maybe", "required": true, "skillRefs": ["speaking.advice", "speaking.deduction"] },
         { "id": "module-09-review", "title": "Checkpoint: experience to possibility", "kind": "practice", "stage": "review", "minutes": 15, "unitIds": ["unit-07", "unit-08", "unit-09"], "mode": "checkpoint", "count": 10, "required": true, "skillRefs": ["present-perfect.vs-past", "comparison.structures", "modal.meaning"] }
       ]
     },
@@ -183,17 +183,17 @@
     {
       "id": "module-12",
       "order": 12,
-      "title": "A2 checkpoint",
+      "title": "A2.2 checkpoint",
       "unitSlug": "unit-12",
       "missionSlug": "a2-real-life-challenge",
       "storySlug": "chapter-12",
-      "summary": "Combine A2 grammar and vocabulary in a realistic decision, then identify the best next learning goal.",
+      "summary": "Consolidate Units 1–12 in a realistic decision, then choose a learning goal for Units 13–24.",
       "sessions": [
         { "id": "module-12-context", "title": "A changed plan: coordinate the team", "kind": "content", "stage": "context", "minutes": 18, "href": "/grey-book/chapter-12", "required": true, "skillRefs": ["reading.online-messages", "planning.collaboration", "communication.updates"] },
-        { "id": "module-12-learn", "title": "Consolidate the A2 course", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-12", "required": true, "skillRefs": ["grammar.mixed-a2", "writing.connected-text", "communication.repair"] },
+        { "id": "module-12-learn", "title": "Consolidate Units 1–12", "kind": "content", "stage": "learn", "revision": 2, "minutes": 20, "href": "/a2/unit-12", "required": true, "skillRefs": ["grammar.mixed-a2", "writing.connected-text", "communication.repair"] },
         { "id": "module-12-practice", "title": "Solve a mixed A2 challenge", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-12", "mode": "standard", "count": 10, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.functions"] },
         { "id": "module-12-speak", "title": "Complete the real-life challenge", "kind": "content", "stage": "speak", "minutes": 7, "href": "/speaking/a2-real-life-challenge", "required": true, "skillRefs": ["speaking.integrated-a2", "communication.repair"] },
-        { "id": "module-12-review", "title": "Final A2 checkpoint", "kind": "practice", "stage": "review", "minutes": 18, "unitIds": ["unit-01", "unit-02", "unit-03", "unit-04", "unit-05", "unit-06", "unit-07", "unit-08", "unit-09", "unit-10", "unit-11", "unit-12"], "mode": "checkpoint", "count": 12, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.integrated-a2"] }
+        { "id": "module-12-review", "title": "Complete the A2.2 checkpoint", "kind": "practice", "stage": "review", "minutes": 18, "unitIds": ["unit-01", "unit-02", "unit-03", "unit-04", "unit-05", "unit-06", "unit-07", "unit-08", "unit-09", "unit-10", "unit-11", "unit-12"], "mode": "checkpoint", "count": 12, "required": true, "skillRefs": ["grammar.mixed-a2", "vocabulary.mixed-a2", "communication.integrated-a2"] }
       ]
     },
     {
@@ -262,7 +262,7 @@
         { "id": "module-19-context", "title": "Read a support chat", "kind": "content", "stage": "context", "minutes": 10, "href": "/a2/unit-19#exercise-4-read-a-support-chat", "required": true, "skillRefs": ["reading.support-chat", "technology.vocabulary"] },
         { "id": "module-19-learn", "title": "Learn technology instructions", "kind": "content", "stage": "learn", "minutes": 20, "href": "/a2/unit-19", "required": true, "skillRefs": ["adverbs.manner", "instructions.sequence", "online.safety"] },
         { "id": "module-19-practice", "title": "Build clear technical steps", "kind": "practice", "stage": "practice", "minutes": 14, "unitId": "unit-19", "mode": "standard", "count": 10, "required": true, "skillRefs": ["adverbs.manner", "instructions.sequence"] },
-        { "id": "module-19-speak", "title": "Make a tech-support call", "kind": "content", "stage": "speak", "minutes": 5, "href": "/speaking/tech-support-call", "required": true, "skillRefs": ["speaking.instructions", "communication.repair"] },
+        { "id": "module-19-speak", "title": "Make a tech-support call", "kind": "content", "stage": "speak", "revision": 2, "minutes": 5, "href": "/speaking/tech-support-call", "required": true, "skillRefs": ["speaking.instructions", "communication.repair"] },
         { "id": "module-19-review", "title": "Review technology", "kind": "practice", "stage": "review", "minutes": 8, "unitId": "unit-19", "mode": "review", "count": 6, "required": true, "skillRefs": ["technology.vocabulary", "instructions.sequence"] }
       ]
     },

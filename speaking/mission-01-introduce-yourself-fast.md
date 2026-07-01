@@ -51,8 +51,8 @@ steps:
       - "Did you use complete sentences?"
       - "Did you sound friendly, not robotic?"
   - kind: "reflect"
-    prompt: "How confident did this feel?"
-    ltPrompt: "Kaip užtikrintai jautėtės?"
+    prompt: "Check whether a new colleague could respond, then choose one improvement for your second attempt."
+    ltPrompt: "Patikrinkite, ar naujas kolega galėtų jums atsakyti, tada pasirinkite vieną patobulinimą antrajam bandymui."
     support:
       - "1 = I needed a lot of help."
       - "5 = I sounded clear and natural."
@@ -64,15 +64,19 @@ This mission turns Unit 1 into a fast spoken introduction instead of another wri
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- Hi, I'm...
-- I'm from..., but I live in... now.
-- I work as...
-- I'm studying...
-- In my free time, I...
-- Nice to meet you.
+- Hi, I'm... — Sveiki, aš...
+- I'm from..., but I live in... now. — Esu iš..., bet dabar gyvenu...
+- I work as... — Dirbu...
+- I'm studying... — Studijuoju...
+- In my free time, I... — Laisvalaikiu...
+- Nice to meet you. What about you? — Malonu susipažinti. O jūs?
+
+## Success Check / Sėkmės kriterijai
+
+Your introduction succeeds when it includes your name, place, and one personal detail, uses complete sentences, and ends with a question the other person can answer. On the second attempt, keep those four parts but add one concrete detail without reading a full script.
 
 ## Push It Further / Pasunkinkite
 
 - Add one extra detail about your family or routine.
 - Ask one simple question at the end.
-- Repeat the mission and try to sound calmer the second time.
+- Repeat the mission once: look away from the support and make your final question sound genuinely interested.

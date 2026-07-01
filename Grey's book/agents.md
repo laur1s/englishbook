@@ -88,33 +88,38 @@ Below are activity *types* and *structures* that work well. Each chapter should 
 
 ### Grammar Progression Plan
 
-This section provides a structured overview of the grammar topics for the A2 level, tracking what has been covered and what is still planned for future chapters.
+This section records the actual focus of the 12 published chapters. It is a tracking aid, not a claim that every A2 structure must appear in the reader. The main 24-unit course controls the full grammar sequence.
 
 #### A2 Grammar Covered So Far
 
-- **Present Perfect (with `just`, `already`, `yet`)**: Introduced and practiced. (Chapter 1)
-- **Present Simple vs. Present Continuous**: Contrasted and practiced. (Chapter 1)
-- **Past Simple (regular and irregular verbs)**: Introduced and practiced. (Chapter 2)
-- **Past Continuous vs. Past Simple**: Contrasted and practiced. (Chapter 5 & 9)
-- **Modal Verbs for Advice (`should`/`shouldn't`)**: Introduced in the context of exercises. (Implicitly in Chapter 5, more formally can be reinforced).
-- **Modal Verbs for Deduction (`must`/`can't`)**: Introduced in the context of exercises. (Implicitly in Chapter 9).
-- **Modals of speculation about the past (`must have`, `might have`, `couldn't have`)**: Introduced and practiced. (Chapter 10)
+- **Present Simple vs. Present Continuous:** contrasted in Chapter 1.
+- **Past Simple:** focused practice in Chapter 2 and used for A2 event sequencing in Chapter 10.
+- **Basic modal meanings:** `must`, `mustn't`, `might`, `should`, `can`, and `can't` appear in Chapter 3.
+- **Present Perfect:** `just`, `already`, and `yet` are practised in Chapter 4; the form is reviewed in Chapter 6.
+- **Past Continuous with Past Simple:** contrasted in Chapters 5 and 11; Past Continuous receives further practice in Chapter 9.
+- **Comparatives and superlatives:** focused practice in Chapter 8.
+- **Obligation, lack of necessity, permission, and prohibition:** `have to`, `don't have to`, `can`, and `mustn't` are practised in Chapters 7 and 11.
+- **Present Continuous for future arrangements:** focused practice in Chapter 12.
+- **First Conditional:** focused practice in Chapter 12.
+
+- **Reasons and results with `because` and `so`:** focused practice in Chapter 10.
+
+Do not teach past modal speculation (`must have`, `might have`, `could have`) in this A2 reader. Use Past Simple evidence and timeline language instead.
 
 #### A2 Grammar Remaining
 
-The following topics are planned for upcoming chapters to complete the A2 syllabus.
+The following useful A2 areas are not yet a main, sustained grammar focus in the 12-chapter reader. Add them only when a future story provides a natural context and the main course progression allows it.
 
 **Tenses:**
 
 - **`be going to` for future plans and intentions.**
 - **`will` / `won't` for future predictions and spontaneous decisions.**
-- **Present Continuous for future arrangements.**
 - **Present Perfect for life experiences (with `ever` and `never`).**
 
 **Modals:**
 
-- **`have to` / `don't have to` (external obligation/necessity).**
-- **`may` / `might` (possibility).**
+- **`may` / `might` for possibility** as a dedicated focus (rather than one item in Chapter 3).
+- **`should` / `shouldn't` for advice** as a dedicated focus (rather than one item in Chapter 3).
 
 **Nouns, Pronouns, and Determiners:**
 
@@ -124,14 +129,12 @@ The following topics are planned for upcoming chapters to complete the A2 syllab
 
 **Adjectives and Adverbs:**
 
-- **Comparatives and Superlatives** (e.g., `bigger`, `the biggest`, `more interesting`, `the most interesting`).
 - **`as...as` comparisons.**
 - **Adverbs of manner** (e.g., `slowly`, `carefully`).
 
 **Conditionals:**
 
 - **Zero Conditional** (for general truths: `if` + present simple, ... present simple).
-- **First Conditional** (for future possibilities: `if` + present simple, ... `will` + infinitive).
 
 **Other Structures:**
 
@@ -156,7 +159,7 @@ The following topics are planned for upcoming chapters to complete the A2 syllab
 
 ### Answer Key Policy
 
-- Location: End of the file under “Answer Key / Atsakymų Raktas”
+- Location: The shared `answers.md` file under “Answer Key / Atsakymų Raktas”
 - Include for each chapter:
   - Understanding answers (short, factual)
   - T/F solutions
@@ -216,34 +219,39 @@ The following topics are planned for upcoming chapters to complete the A2 syllab
 
 ## Story Continuity Guide
 
-### Story Arc So Far (Chapters 1-10)
+### Story Arc So Far (Chapters 1–12)
 
 The story follows Meredith Grey and her friends from their first day as nervous interns at Seattle Grace Hospital to becoming confident surgeons.
 
-- **Chapters 1-3:** Introduction to the main characters (Meredith, Cristina, Alex, Izzie). Meredith begins a secret, forbidden romance with her boss, the brilliant surgeon Derek Shepherd.
-- **Chapters 4-5:** The team faces high-stakes medical cases, including a "miracle baby" and the emotional trauma of losing a patient on the operating table, which tests Cristina's confidence but strengthens the friends' bond.
+- **Chapters 1-3:** Meredith meets Cristina, Alex, and Izzie on her first day. The new team learns to ask for help, explain uncertainty, and report work conflicts. Meredith and Derek disclose their relationship so another senior doctor can supervise her fairly.
+- **Chapters 4-5:** A premature baby makes careful progress in the NICU, without promises about recovery. After a patient dies, Cristina receives peer support and joins a formal case review instead of carrying blame alone.
 - **Chapters 6-8:** Focus on personal growth and new beginnings. Meredith discovers her half-sister, Lexie Grey, among the new interns. Meredith and Derek get married. The hospital endures a massive storm, forcing the doctors to work under extreme pressure. The characters reflect on their dreams versus the reality of being a doctor.
-- **Chapter 9:** The team handles a difficult heart transplant case with an ethical dilemma, reinforcing the theme of teamwork and difficult choices.
+- **Chapter 9:** Daniel hears balanced transplant information and gives his own consent. The case reinforces patient voice, uncertainty, and shared team responsibility.
 - **Chapter 10:** A visiting mission doctor inspires Izzie while the team treats a teenager with a hidden spleen injury. The case connects honesty, service, and Izzie's growing wish to do humanitarian work.
+- **Chapter 11:** Izzie accepts the six-week mission and works with Elena, Ana, and a mountain-clinic team. A child's serious allergic reaction teaches her to give a clear transfer handover, use an interpreter well, and connect the child with the next safe level of care.
+- **Chapter 12:** A landslide changes a village vaccination-day plan. Izzie and the community use short updates, protect private information, keep supplies safe, and make a new plan together. Izzie returns to Seattle and begins planning a local community health day.
 
-### Character Status (as of end of Chapter 10)
+### Character Status (as of end of Chapter 12)
 
 - **Meredith Grey:** Married to Derek Shepherd. She is a capable and reflective surgeon, balancing her demanding career with her new family life. She serves as the emotional core of the group.
 - **Derek Shepherd:** A world-class neurosurgeon, now married to Meredith. He is a supportive husband and a mentor to the younger doctors.
 - **Cristina Yang:** A highly ambitious and competitive cardiac surgeon. She is brilliant and driven, and her friendship with Meredith is a key source of support.
 - **Alex Karev:** Has evolved from an arrogant and cynical intern into a surprisingly compassionate and skilled trauma surgeon. He often shows a tough exterior but cares deeply.
-- **Izzie Stevens:** A deeply empathetic doctor who values the connection with her patients. After meeting a visiting mission surgeon, she is now thinking seriously about humanitarian work.
+- **Izzie Stevens:** A deeply empathetic doctor who values connection with patients. She completed a six-week mission, returned to Seattle, and plans to use its lessons in a local community partnership.
 - **Lexie Grey:** Meredith's half-sister. She is a bright, eager, and enthusiastic intern, looking up to Meredith.
+- **Elena Marquez:** An experienced mission doctor who mentors Izzie and stresses careful verification, teamwork, and respect for local knowledge.
+- **Ana:** A mountain-clinic nurse and interpreter who helps patients and families take part in decisions.
 
-### Ideas for Chapter 11
+### Possible Directions After Chapter 12
 
-- **Focus on Alex:** A challenging pediatric case (a case with a child patient) that forces Alex to confront his own difficult childhood. This would be a good opportunity to show his compassionate side.
-- **Focus on Izzie:** Izzie could now decide whether to accept a mission offer, delay it, or bring that dream into her work at Seattle Grace. This could create a conflict between her future plans and her current responsibilities.
-- **A Professional Rivalry:** A complex and prestigious surgery is available, and both Cristina and Meredith are candidates to lead it. This could test their friendship and professional ambitions.
-- **A Personal Storyline:** A personal crisis for one of the secondary characters (e.g., Lexie Grey) that requires the team to rally around them, showing the "family" aspect of the hospital.
+- Follow the first Seattle community health day and keep local partners involved in every planning decision.
+- Follow Alex in a child-care case that shows calm explanations, consent, and family support without using childhood trauma only for drama.
+- Give Lexie a professional challenge in which she asks for help and grows through feedback.
+- If the reader continues, select one of the remaining A2 grammar areas above and check it against the main course sequence first.
 
 ### Grammar Progression
 
-- **Chapter 9 Grammar:** Past Continuous.
-- **Chapter 10 Grammar:** Modals of speculation about the past (e.g., `must have`, `might have`, `couldn't have`).
-- **Suggested Grammar for Chapter 11:** `be going to` and `will` for future plans, promises, and decisions. This would fit naturally if the story follows Izzie's possible mission plans or another major personal choice.
+- **Chapter 9:** Past Continuous, with Past Simple in combined sentences.
+- **Chapter 10:** Past Simple sequencing and reasons/results with `because` and `so`.
+- **Chapter 11:** Past Continuous with Past Simple; `have to`, `don't have to`, `can`, and `mustn't`; practical telephone language.
+- **Chapter 12:** Present Continuous for future arrangements and the First Conditional; practical online coordination language.

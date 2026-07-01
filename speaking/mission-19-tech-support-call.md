@@ -10,7 +10,7 @@ grammarFocus: ["sequence", "adverbs"]
 topics: ["technology", "instructions"]
 hasAnswerKey: false
 status: "published"
-missionType: "mistake-detective"
+missionType: "role-flip-dialogue"
 durationMinutes: 5
 sourceRefs:
   - "unit-19"
@@ -36,10 +36,11 @@ steps:
       - "Could you say that again?"
       - "Do not share your password."
   - kind: "compare"
-    prompt: "Compare with this model: First, open the settings. Next, choose the microphone carefully. Then join the call again. Never share your password or a private code."
+    prompt: "Compare with this model: User: People can't hear me in the call. Helper: First, check that your headset is connected. Next, make sure the microphone is not muted. Then open the sound settings. User: Do you mean the camera settings? Helper: No, the sound settings—the menu with the speaker symbol. Choose your headset as the microphone, close the settings, and join the call again. Those are the last two steps. You never need to send me a password or private code. Can people hear you now?"
     ltPrompt: "Paklausykite pavyzdžio ir patikrinkite veiksmų tvarką bei saugumo kalbą."
     support:
       - "Were the steps safe and in a usable order?"
+      - "Did the helper check the result at the end?"
   - kind: "reflect"
     prompt: "Correct the misunderstood step and summarise the safe solution."
     ltPrompt: "Pataisykite neteisingai suprastą veiksmą ir apibendrinkite saugų sprendimą."
@@ -49,8 +50,19 @@ steps:
       - "no private information"
 ---
 
-## Mission notes / Misijos pastabos
+## Useful Building Blocks / Naudingi sakiniai
+
+- What happens when you...? — Kas nutinka, kai...?
+- First, check... — Pirmiausia patikrinkite...
+- Next, open/choose... — Toliau atidarykite / pasirinkite...
+- Please do that carefully. — Prašau, atlikite tai atsargiai.
+- Do you mean this button? — Ar turite omenyje šį mygtuką?
+- Let me explain that step again. — Leiskite dar kartą paaiškinti tą veiksmą.
+- Never share your password or code. — Niekada neatskleiskite slaptažodžio ar kodo.
+- Is it working now? — Ar dabar veikia?
+
+## Safety and Success Check / Saugumas ir sėkmės kriterijai
 
 Good technical English is short, ordered, and easy to check. Give one action at a time and wait for confirmation before moving to the next step.
 
-Keep the scenario safe: never ask for or share passwords, verification codes, payment details, or remote access. If a step would expose private information, stop and choose a safer action.
+Your call succeeds when the problem is clear, five steps are in a usable order, one misunderstood step is repaired, and the result is checked. Never ask for or share passwords, verification codes, payment details, or remote access. On the second attempt, change the device problem and explain the repaired step with simpler words, not just more words.

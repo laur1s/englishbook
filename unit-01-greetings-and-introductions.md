@@ -216,6 +216,10 @@ Write about yourself using the prompts:
 5. My hobby is _____________________
 6. I am _____________________ (describe yourself: happy/friendly/etc.)
 
+Join your answers into a short introduction. Model: **Hello, my name is Rūta. I am 31 years old and I am from Alytus. I am a nurse. My hobby is photography, and I am happy to be here.**
+
+Check: Did you use **am** after **I**? Did you give your listener enough information to ask one follow-up question?
+
 ---
 
 ## Exercise 7: Reading Comprehension
@@ -292,6 +296,8 @@ A: I'm from [Your City/Country]. What do you do?
 B: I'm a [Your Job/Student]. What about you?
 A: ...
 
+**Role-play success:** greet appropriately for the setting, exchange names, ask four questions, answer in full short sentences, and close the conversation politely. If you study alone, record both roles and leave a pause before each reply.
+
 ### Activity 2: Discussion Questions
 
 Discuss these questions with your group.
@@ -312,12 +318,13 @@ Sit in a circle.
 
 ---
 
-### Digital Version: Interactive Ideas
+### Optional Follow-Up Ideas / Papildomos idėjos
 
-For a digital version of this book, these exercises could be even more engaging:
-- **Interactive Dialogues:** Clickable dialogues where you choose the correct response.
-- **Pronunciation Practice:** Listen to a native speaker's pronunciation of the greetings and record your own to compare.
-- **Virtual Role-Play:** An interactive scenario where you have a conversation with an AI character.
+Use one of these follow-ups after the lesson:
+
+- **Dialogue choices:** Pause after each line and choose two natural replies.
+- **Pronunciation practice:** Record the four useful phrases and compare your second attempt with your first.
+- **Role-play variation:** Repeat the meeting in a new setting, such as a class, hotel, or workplace.
 
 ---
 
@@ -427,6 +434,15 @@ Example:
 My name is Jonas. I am 25 years old. I am from Vilnius. I am a student. My sister is a doctor. My hobby is reading. I am happy today.
 
 **Your turn:**
+
+**Sentence starters:** **Hello, I'm... / I'm from... / I work as... / I study... / In my free time,... / Today I feel...**
+
+**Success checklist:**
+
+- [ ] I included all six requested details in 6–8 connected sentences.
+- [ ] I used **am/is/are** correctly.
+- [ ] I used a possessive form correctly when I mentioned another person.
+- [ ] I read the paragraph aloud and corrected one unclear pause or word.
 
 ---
 

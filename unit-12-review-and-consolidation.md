@@ -12,7 +12,7 @@ grammarFocus:
 topics:
   - "review"
   - "consolidation"
-  - "B1 preparation"
+  - "next-step planning"
 hasAnswerKey: true
 status: "published"
 ---
@@ -21,10 +21,19 @@ status: "published"
 ## Skyrius 12: Kartojimas ir įtvirtinimas
 
 ### Learning Objectives / Mokymosi tikslai
-- Review all A2 grammar points / Kartoti visus A2 gramatikos punktus
-- Practice mixed structures / Praktikuoti mišrias struktūras
-- Prepare for B1 level / Pasiruošti B1 lygiui
-- Demonstrate A2 proficiency / Pademonstruoti A2 lygio žinias
+- Review the grammar and communication skills from Units 1–12 / Kartoti 1–12 skyriuose išmoktą gramatiką ir bendravimo gebėjimus
+- Practise mixed structures in connected situations / Praktikuoti mišrias struktūras susietose situacijose
+- Identify strengths and choose a focus for Units 13–24 / Atpažinti stipriąsias puses ir pasirinkti tikslą 13–24 skyriams
+- Show evidence of progress at the A2.2 checkpoint / Pateikti pažangos įrodymų A2.2 tarpiniame patikrinime
+
+### How to Use This Checkpoint / Kaip atlikti šį tarpinį patikrinimą
+
+1. Complete Parts 1–4 without the answer key. / Atlikite 1–4 dalis nežiūrėdami į atsakymus.
+2. Check each answer and rewrite every incorrect sentence correctly. / Patikrinkite atsakymus ir kiekvieną klaidingą sakinį perrašykite taisyklingai.
+3. Complete Part 5, then choose two skills in the Progress Check to revisit. / Atlikite 5 dalį, tada pažangos patikrinime pasirinkite du gebėjimus, kuriuos pakartosite.
+4. Finish the Unit 12 practice, speaking, and review sessions on **Your English Path**. / Skiltyje **Your English Path** atlikite 12 skyriaus praktikos, kalbėjimo ir kartojimo etapus.
+
+The purpose is to find your next useful step, not to prove that you never make mistakes. / Tikslas – rasti kitą naudingą mokymosi žingsnį, o ne įrodyti, kad niekada neklystate.
 
 ---
 
@@ -62,9 +71,9 @@ status: "published"
 3. They _____ (live) in Kaunas. They _____ (live) there for 5 years.
 4. He _____ (work) in a bank. He _____ (work) there now.
 5. I _____ (see) that film. I _____ (see) it last week.
-6. We _____ (travel) to Paris. We _____ (be) there twice.
+6. We _____ (travel) to Paris last spring. We _____ (be) there twice in total.
 7. She _____ (cook) dinner every evening. She _____ (cook) now.
-8. You _____ (grow) up in Vilnius. Where _____ you _____ (grow) up?
+8. My cousin _____ (grow) up in Vilnius. Where _____ you _____ (grow) up?
 
 ### Past Simple vs Past Continuous
 
@@ -72,7 +81,7 @@ status: "published"
 
 Last summer, I _____ (decide) to visit my grandmother. I _____ (travel) by train and _____ (arrive) in the afternoon. While I _____ (wait) for the bus, I _____ (meet) an old friend. We _____ (talk) about our childhood when suddenly it _____ (start) to rain.
 
-We _____ (run) to the bus stop, but the bus _____ (leave) just as we arrived. My friend _____ (offer) to drive me home. On the way, we _____ (listen) to music and _____ (laugh) about old times.
+We _____ (run) to the bus stop, but the bus _____ (leave) just as we arrived. My friend _____ (offer) to drive me home. At 4 PM on the way, we _____ (listen) to music and _____ (laugh) about old times.
 
 When we _____ (arrive), my grandmother _____ (wait) for us. She _____ (prepare) dinner and _____ (look) happy to see me.
 
@@ -85,9 +94,9 @@ When we _____ (arrive), my grandmother _____ (wait) for us. She _____ (prepare) 
 **Complete with comparative or superlative:**
 
 1. Vilnius is _____ (big) than Kaunas, but Warsaw is the _____ (big) city in Poland.
-2. English is _____ (difficult) than Lithuanian. It's the _____ (difficult) subject for me.
+2. English is _____ (difficult) than Lithuanian for me. It's the _____ (difficult) subject for me.
 3. My sister is _____ (tall) than me. She's the _____ (tall) in our family.
-4. Summer is _____ (hot) than winter. July is the _____ (hot) month.
+4. Summer is _____ (hot) than winter in Lithuania. July is usually the _____ (hot) month there.
 5. This book is _____ (interesting) than that one. It's the _____ (interesting) I've read.
 6. He drives _____ (fast) than his brother. He's the _____ (fast) driver I know.
 
@@ -139,7 +148,7 @@ When we _____ (arrive), my grandmother _____ (wait) for us. She _____ (prepare) 
 3. They _____ (play) basketball every week. They _____ (play) now in the gym.
 4. He _____ (work) as a teacher. He _____ (teach) mathematics.
 5. We _____ (wait) for our flight when the announcement _____ (come).
-6. I _____ (see) that movie. It _____ (be) very good.
+6. I _____ (see) that movie twice. I watched it again last night, and it _____ (be) very good.
 7. She _____ (cook) dinner when the phone _____ (ring).
 8. You _____ (grow) taller since last year. You _____ (be) 170 cm now.
 
@@ -212,7 +221,7 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 
 ---
 
-## Part 5: Final Assessment / Galutinis vertinimas
+## Part 5: A2.2 Checkpoint Assessment / A2.2 tarpinis vertinimas
 
 ### Test 1: Multiple Choice
 
@@ -247,9 +256,9 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 
 **Complete with the correct form:**
 
-1. I _____ (live) here for 10 years. I _____ (live) here since 2016.
+1. I _____ (live) here for 10 years. My sister _____ (live) here since she was born.
 2. She _____ (study) when I _____ (arrive). She _____ (study) English.
-3. They _____ (be) tired because they _____ (work) all day.
+3. They _____ (be) tired yesterday because they _____ (work) from 8 AM to 6 PM.
 4. He _____ (never/see) snow. _____ you _____ (ever/see) snow?
 5. We _____ (wait) for the bus when it _____ (start) to rain.
 6. You _____ (should) eat more vegetables. They are _____ (healthy) than sweets.
@@ -298,37 +307,39 @@ B: You _____ (should) visit England. It's not _____ (expensive) than you think.
 - General vocabulary: _____
 
 **Areas to improve:** _____________________
-**Goals for B1 level:** _____________________
+**My focus for Units 13–24:** _____________________
 
 ---
 
-## Useful Phrases for B1 Preparation / Naudingi posakiai B1 pasiruošimui
+## Useful Phrases for Continuing the Course / Naudingi posakiai tęsiant kursą
 
-- I used to... - Aš anksčiau...
-- I get used to... - Aš priprantu prie...
-- Would you mind...? - Ar neprieštarausite...?
-- I'm looking forward to... - Aš laukiu...
-- It's worth... - Tai verta...
-- I suggest that... - Siūlau, kad...
+- Could you repeat that, please? - Ar galėtumėte tai pakartoti?
+- What does this word mean? - Ką reiškia šis žodis?
+- Let me check that I understand. - Leiskite patikrinti, ar supratau.
+- First..., then..., and finally... - Pirmiausia..., tada..., o galiausiai...
+- I have never tried that, but I would like to. - Niekada nesu to bandęs / bandžiusi, bet norėčiau.
+- If it rains, we can change the plan. - Jei lis, galėsime pakeisti planą.
 - In my opinion... - Mano nuomone...
-- I'm not sure about... - Nesu tikras dėl...
+- I'm not sure yet. - Dar nesu tikras / tikra.
 
 ---
 
 ## Cultural Notes / Kultūrinės pastabos
 
-- English speakers often use contractions in spoken language
-- Polite requests use modals like "could" and "would"
-- British and American English have some differences in spelling and vocabulary
-- Idioms and phrasal verbs become more important at higher levels
+- Contractions such as **I'm** and **we've** are common in conversation, but full forms are also correct. / Pokalbiuose dažni trumpiniai, pvz., **I'm** ir **we've**, tačiau pilnosios formos taip pat taisyklingos.
+- **Could you...?** often sounds softer than **Can you...?**; both can be polite with **please** and a friendly tone. / **Could you...?** dažnai skamba švelniau nei **Can you...?**; abi formos gali būti mandagios su **please** ir draugiška intonacija.
+- British and American words or spellings may differ, for example **centre/center**. Neither variety is a mistake when it is used consistently. / Britų ir amerikiečių anglų kalbos žodžiai ar rašyba gali skirtis, pvz., **centre/center**. Nuosekliai vartojamas variantas nėra klaida.
+- Clear, simple language is usually more useful than forcing an idiom into every conversation. / Aiški ir paprasta kalba paprastai naudingesnė nei bandymas kiekviename pokalbyje pavartoti idiomą.
 
 ---
 
-## Congratulations! / Sveikiname!
+## A2.2 Checkpoint Map / A2.2 tarpinio patikrinimo apžvalga
 
-**You have completed the A2 level English course!**
+Use the remaining activities to collect evidence of what you can do. Opening this lesson does not complete the checkpoint: finish its learning, practice, speaking, and review sessions on **Your English Path**. Then continue with Unit 13.
 
-This book has covered:
+Atlikite likusias užduotis ir surinkite įrodymų, ką jau gebate. Vien atvėrus šią pamoką tarpinis patikrinimas nebaigiamas: skiltyje **Your English Path** atlikite mokymosi, praktikos, kalbėjimo ir kartojimo etapus. Tada tęskite nuo 13 skyriaus.
+
+Units 1–12 have covered:
 - The core tenses taught in this course (Present Simple, Present Continuous, Present Perfect, Past Simple, and Past Continuous)
 - Future forms with **going to**, **will**, and fixed arrangements
 - Modal verbs (can, could, may, might, must, should)
@@ -425,7 +436,7 @@ Laura's daily routine includes breakfast at home and dinner with family. She oft
 
 ## Exercise 9: Writing Practice / Pratimas 9: Rašymo praktika
 
-Write a comprehensive paragraph about yourself using all grammar from A2.
+Write a connected paragraph about yourself using grammar from Units 1–12.
 
 Include:
 - Introduction and daily routine
@@ -444,33 +455,49 @@ My name is Jonas. I live in Vilnius and work as a teacher. I usually start work 
 
 ### Activity 1: Full Review Conversation
 
-Have a conversation using all tenses and structures.
+Speak for 90 seconds with a partner or record yourself. Include:
+
+- one fact about your routine;
+- one event from last weekend and what was happening at the time;
+- one life experience;
+- one plan and one reason.
+
+Start with: **I usually... Last weekend, while I was..., I... I have never... Next month, I'm going to... because...**
 
 ### Activity 2: Advice Session
 
-Give and receive advice on various topics.
+Choose one situation: **I want to speak more confidently**, **I often forget new words**, or **I have little time to study**. Ask two follow-up questions, then give two pieces of advice with **should/shouldn't**.
+
+Start with: **How often do you...? Have you tried...? I think you should... You shouldn't... because...**
 
 ### Activity 3: Story Telling
 
-Tell a complete story from past to future.
+Tell a four-part story:
+
+1. Set the scene with Past Continuous.
+2. Add the main event with Past Simple.
+3. Explain how you felt.
+4. Say what you are going to do next time.
+
+**Speaking self-check / Kalbėjimo įsivertinimas:** I spoke in complete sentences; I used clear time words; I corrected or repeated an unclear idea; I included every requested part. / Kalbėjau pilnais sakiniais; vartojau aiškius laiko žodžius; pataisiau arba pakartojau neaiškią mintį; įtraukiau visas prašytas dalis.
 
 ---
 
-## Additional Cultural Notes / Papildomos kultūrinės pastabos
+## Communication Strategy Notes / Bendravimo strategijos
 
-- **Integrated Communication:** English speakers mix tenses naturally in conversation.
-- **Politeness Levels:** Use different structures for formal vs informal situations.
-- **Cultural Awareness:** Understanding cultural differences helps communication.
+- Real conversations mix time frames. Use time phrases such as **usually**, **last weekend**, and **next month** to help the listener follow you. / Tikruose pokalbiuose laikai maišomi. Laiko posakiai **usually**, **last weekend** ir **next month** padeda klausytojui sekti mintį.
+- If you do not understand, asking **Could you say that again?** is successful communication, not failure. / Jei nesuprantate, klausimas **Could you say that again?** yra sėkmingas bendravimas, o ne nesėkmė.
+- A short accurate sentence is more useful than a long sentence that hides your meaning. / Trumpas taisyklingas sakinys naudingesnis už ilgą sakinį, kuris užgožia mintį.
 
 ---
 
 **Next steps:**
 - Practice speaking with supportive conversation partners
 - Read English books and watch English films
-- Continue to B1 level materials
+- Continue with Units 13–24 before moving to B1 materials
 - If useful for your goals, choose an official English exam at the appropriate level
 
-### Final Can-do Check / Galutinis gebėjimų įsivertinimas
+### A2.2 Can-do Check / A2.2 gebėjimų įsivertinimas
 
 Choose **Not yet / Almost / Yes**, then write one example sentence as evidence.
 
@@ -485,6 +512,6 @@ Choose **Not yet / Almost / Yes**, then write one example sentence as evidence.
 
 ---
 
-**End of Expanded Unit 12 and Complete A2 Course / Išplėsto dvyliktojo skyriaus ir viso A2 kurso pabaiga**
+**End of the Unit 12 lesson / 12 skyriaus pamokos pabaiga**
 
-Thank you for using this English learning book! Good luck with your English studies.
+After you complete the Unit 12 practice, speaking, and review sessions on **Your English Path**, continue to Unit 13, **Determiners and Everyday Objects**.

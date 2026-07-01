@@ -427,9 +427,20 @@ Write advice for a friend who is:
 Use modal verbs.
 
 Example:
-For a trip: You should pack light. You might need warm clothes. You must have a passport.
+For an international trip: You should pack light. You might need warm clothes. You have to carry the travel document required for your journey.
 
 **Your turn:**
+
+Choose one situation and write 7–9 sentences.
+
+**Sentence starters:** **You should... because... / You shouldn't... / You might need... / You have to... / You don't have to... / You mustn't...**
+
+**Success checklist:**
+
+- [ ] I separated advice, possibility, necessity, optional action, and prohibition.
+- [ ] I used a base verb after every modal.
+- [ ] My rules are accurate for the situation or clearly presented as an example.
+- [ ] I explained at least two suggestions with reasons.
 
 ---
 
@@ -448,13 +459,15 @@ Choose the best answer.
 
 Write a message with one rule, one optional action, and one permission question. Model: **You have to sign in. You don't have to bring food. Can I use the kitchen?**
 
+Add a setting and a reason so the reader can understand the message. Check especially that **don't have to** means optional and **mustn't** means forbidden.
+
 ---
 
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Advice Column
 
-Give advice to classmates about problems. Use "You should..."
+Give advice to classmates about problems. Use **You should...** and ask one question before advising. If you study alone, choose a problem, record one clarifying question and three suggestions, then listen for whether your tone sounds helpful rather than commanding.
 
 ### Activity 2: Permission Requests
 

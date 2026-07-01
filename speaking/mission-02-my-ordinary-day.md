@@ -51,8 +51,8 @@ steps:
       - "Did you use usually, often, or always naturally?"
       - "Did your verbs stay in present simple?"
   - kind: "reflect"
-    prompt: "How confident did this feel?"
-    ltPrompt: "Kaip užtikrintai jautėtės?"
+    prompt: "Check whether the listener could follow your day, then choose one part to make smoother."
+    ltPrompt: "Patikrinkite, ar klausytojas galėtų sekti jūsų dienos eigą, tada pasirinkite vieną dalį, kurią pasakysite sklandžiau."
     support:
       - "1 = I stopped many times."
       - "5 = I could describe my routine smoothly."
@@ -64,14 +64,18 @@ This mission makes Unit 2 more conversational. A2 learners often know the gramma
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- I usually wake up at...
-- I always check...
-- I often have lunch at...
-- After work, I...
-- Before bed, I...
+- I usually wake up at... — Paprastai keliuosi...
+- I always check... — Visada patikrinu...
+- I often have lunch at... — Dažnai pietauju...
+- After work, I... — Po darbo...
+- Before bed, I... — Prieš miegą...
+
+## Success Check / Sėkmės kriterijai
+
+Your talk succeeds when it moves clearly from morning to afternoon to evening, includes at least two times and one frequency adverb, and keeps the verbs in the Present Simple. On the second attempt, use **then** and **after that** to connect the day without looking at your notes.
 
 ## Push It Further / Pasunkinkite
 
 - Add one thing you do only sometimes.
 - Contrast weekdays with weekends.
-- Do the mission again, but speak a little more slowly and clearly.
+- Contrast one weekday habit with one weekend habit.

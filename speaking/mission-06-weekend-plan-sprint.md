@@ -44,14 +44,14 @@ steps:
       - "We're going to..."
       - "I think I'll..."
   - kind: "compare"
-    prompt: "Check this model: On Saturday, I'm going to have brunch with my cousin, and later we're going to the cinema. On Sunday, I'm going to visit my parents. I think the weather will be bad, so I'll take a warm coat. For a rainy afternoon, I'll stay in and cook something special."
+    prompt: "Check this model: On Saturday, I'm going to have brunch with my cousin, and later we're going to the cinema. On Sunday, I'm going to visit my parents. I think the weather will be bad, so I'll take a warm coat. If it rains all afternoon, we'll stay in and cook something special."
     ltPrompt: "Palyginkite savo pasakojimą su pavyzdžiu."
     support:
       - "Did you use time words like on Saturday and later?"
       - "Did you use going to for a plan and will for an opinion or decision?"
   - kind: "reflect"
-    prompt: "How confident did this feel?"
-    ltPrompt: "Kaip užtikrintai jautėtės?"
+    prompt: "Check whether the listener could separate your plans from your predictions or new decisions, then improve one unclear future form."
+    ltPrompt: "Patikrinkite, ar klausytojas galėtų atskirti jūsų planus nuo prognozių ar naujų sprendimų, tada patobulinkite vieną neaiškią būsimojo laiko formą."
     support:
       - "1 = Future forms still feel confusing."
       - "5 = I could talk about plans without stopping."
@@ -63,14 +63,18 @@ This mission gives Unit 6 a spoken target. Learners often understand future form
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- On Saturday, I'm going to...
-- I'm going to...
-- Later, we're going to...
-- On Sunday, I think I'll...
-- For bad weather, I think I'll...
+- On Saturday, I'm going to... — Šeštadienį ketinu...
+- Later, we're going to... — Vėliau ketiname...
+- I think it will... — Manau, kad bus...
+- In that case, I'll... — Tokiu atveju aš...
+- If the weather is bad, we can... — Jei oras bus blogas, galime...
+
+## Success Check / Sėkmės kriterijai
+
+Your plan succeeds when it includes one Saturday intention, one Sunday intention, a time or companion, and a sensible response to changing weather. On the second attempt, use **going to** for an existing plan and **will** for a prediction or decision, then add one invitation.
 
 ## Push It Further / Pasunkinkite
 
 - Add one invitation for another person.
 - Mention transport or time.
-- Do a second run and sound more spontaneous.
+- Ask the listener whether the plan suits them.

@@ -21,7 +21,7 @@ steps:
     ltPrompt: "Paklauskite apie kursą ir paaiškinkite savo mokymosi tikslus."
   - kind: "prep"
     prompt: "Choose one skill you want to learn, one schedule need, and one possible difficulty."
-    ltPrompt: "Pasirinkite vieną norimą išmokti gebėjimą, vieną tvarkaraščio poreikį ir vieną galimą sunkumą."
+    ltPrompt: "Pasirinkite vieną norimą išmokti gebėjimą, jums tinkamą laiką ir vieną galimą sunkumą."
     seconds: 30
     support:
       - "I want to..."
@@ -36,19 +36,31 @@ steps:
       - "Do I need to...?"
       - "Could you repeat that?"
   - kind: "compare"
-    prompt: "Compare with this model: I want to learn design. I enjoy working with images. Do I need to bring a laptop? Could you repeat the start date?"
+    prompt: "Compare with this model: Learner: I want to learn basic design because I enjoy working with images. When does the evening course start? Adviser: It starts on 4 September. Learner: Sorry, could you repeat the date? Do I need to bring a laptop, and is there much homework? Adviser: Bring a laptop if you have one. There is about one hour of homework a week. Learner: That schedule works for me, so I'd like to join."
     ltPrompt: "Paklausykite pavyzdžio ir patikrinkite veiksmažodžių formas bei klausimų aiškumą."
     support:
       - "Check to + verb and verb + -ing."
+      - "Did the learner ask about three practical details?"
   - kind: "reflect"
     prompt: "State your course decision and give one clear reason."
-    ltPrompt: "Pasakykite savo sprendimą dėl kurso ir pateikite vieną aiškią priežastį."
+    ltPrompt: "Pasakykite, ar lankysite kursą, ir pateikite vieną aiškią priežastį."
     support:
       - "I decided to... because..."
 ---
 
-## Mission notes / Misijos pastabos
+## Useful Building Blocks / Naudingi sakiniai
+
+- I want to learn... — Noriu išmokti...
+- I enjoy ...ing. — Man patinka...
+- When does the course start? — Kada prasideda kursas?
+- Do I need to bring...? — Ar man reikia atsinešti...?
+- How much homework is there? — Kiek yra namų darbų?
+- Could you explain that word? — Ar galėtumėte paaiškinti tą žodį?
+- Sorry, could you repeat the date? — Atsiprašau, ar galėtumėte pakartoti datą?
+- I've decided to join because... — Nusprendžiau užsirašyti, nes...
+
+## Success Check / Sėkmės kriterijai
 
 Questions should help you make a real decision about the course. Ask about practical details such as time, equipment, level, or homework instead of trying to use difficult language.
 
-On the second attempt, make the clarification request sound natural. Pause after the answer, then use **Could you explain...?** or **Could you repeat...?** before making your decision.
+Your conversation succeeds when you explain one learning goal, ask three useful questions, request clarification once, and make a decision with a reason. On the second attempt, change the schedule problem and ask a spontaneous follow-up question about the adviser's answer.

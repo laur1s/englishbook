@@ -396,13 +396,25 @@ I usually wake up at 7 AM. Today I'm getting up late because I am on holiday. I 
 
 **Your turn:**
 
+Use one clear time frame in each sentence.
+
+**Sentence starters:** **I usually... / This week, I'm... / Right now,... / I have... for/since... / I have never... / Today is different because...**
+
+**Success checklist:**
+
+- [ ] I wrote 8–10 connected sentences, not three unrelated lists.
+- [ ] I used Present Simple for a habit or fact.
+- [ ] I used Present Continuous for an action now or a temporary situation.
+- [ ] I used Present Perfect for experience or an unfinished period.
+- [ ] Every tense choice has a matching time expression or clear context.
+
 ---
 
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Tense Mix
 
-Describe a friend using all three tenses.
+Describe a real or imaginary friend using all three tenses. Give one habit, one temporary current situation, and one experience. Your listener identifies the reason for each tense choice.
 
 ### Activity 2: Current vs Habit
 

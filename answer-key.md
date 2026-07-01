@@ -1592,7 +1592,7 @@ Checklist: at least one Past Continuous background action; one Past Simple event
 3. live, have lived
 4. works, is working
 5. have seen, saw
-6. have traveled, have been
+6. travelled/traveled, have been
 7. cooks, is cooking
 8. grew, did you grow
 
@@ -1607,14 +1607,14 @@ Comparatives and Superlatives:
 5. more interesting, most interesting
 6. faster, fastest
 
-Modal Verbs:
+Modal Verbs (items 1, 3, 5, and 7 are sample advice; accept another clear answer with **should/shouldn't**):
 1. shouldn't eat so much junk food
 2. may/might
 3. should see a doctor
 4. can't
-5. should study harder
+5. should practise English regularly
 6. may/might
-7. shouldn't smoke
+7. should stop smoking
 8. can't
 
 Articles, Quantifiers, There is/are, and Questions:
@@ -1646,7 +1646,7 @@ Future Forms:
 
 ### Exercise 2: Error Correction
 1. I have lived in Vilnius since 2010.
-2. She likes coffee.
+2. She doesn't like coffee.
 3. They visited Paris last year.
 4. He was working when I called.
 5. You should eat more vegetables.
@@ -1684,7 +1684,7 @@ B: saw, met
 A: have never travelled, may go
 B: should, more expensive
 
-### Part 5: Final Assessment
+### Part 5: A2.2 Checkpoint Assessment
 Test 1:
 1. b) was listening
 2. c) has lived
@@ -1700,7 +1700,7 @@ Test 1:
 12. a) is going to
 
 Test 2:
-1. have lived, have lived
+1. have lived, has lived
 2. was studying, arrived, studies
 3. were, worked
 4. has never seen, Have you ever seen
@@ -1759,7 +1759,7 @@ Answers will vary. The model in the unit is one suitable answer. Check for:
 - one comparison and one piece of advice;
 - logical linking and understandable spelling.
 
-### Progress and Final Can-do Checks
+### Progress and A2.2 Can-do Checks
 These are self-assessments. For every **Yes**, write or say one example. If an example is difficult, choose **Almost** and repeat the related unit's Quick Retrieval task.
 
 ---
@@ -1784,6 +1784,21 @@ this, the, one, those
 ### Exercise 6: Describe a Lost Item
 Answers vary. Check for five identifying details and a clear contact request.
 
+### Exercise 7: Build Natural Descriptions
+1. a small black backpack 2. a brown leather wallet 3. grey wool gloves 4. a long white cable 5. a blue umbrella with a wooden handle. The final sentence varies; check that the complete noun phrase follows **I'm looking for...**
+
+### Exercise 8: At the Lost-Property Office
+1. On the train. 2. Wool. 3. They have small blue buttons. 4. They are dark, but hers are lighter. 5. **these ones**
+
+### Exercise 9: Choose Near, Far, Singular, or Plural
+1. This 2. that 3. These 4. those 5. this 6. those
+
+### Exercise 10: Read, Cover, and Remember
+1. A medium-sized green suitcase. 2. On platform four at 17:20. 3. A yellow ribbon is on the handle. 4. Office 2. 5. An ID card. 6. At eight o'clock.
+
+### Exercise 11: Lost-Item Role-Play
+Answers vary. Check for three useful identifying details, an article, a demonstrative, **one/ones**, and at least one checking question. Do not score a learner's real personal information.
+
 ## Unit 14: Pronouns and Personal Connections
 
 ### Exercise 1: Sort the Pronouns
@@ -1803,6 +1818,21 @@ Object pronouns: me, them, him. Possessive pronouns: hers, ours, theirs. Reflexi
 
 ### Exercise 6: Introduce Your People
 Answers vary. Check accurate object, possessive, and reflexive forms.
+
+### Exercise 7: Follow the Reference
+1. She; us 2. them; him 3. ourselves 4. hers 5. me 6. ours
+
+### Exercise 8: A Birthday Photo
+1. His cousin. 2. Beside the window. 3. Her two neighbours. 4. Leo and his cousin. 5. The salad. 6. The cake.
+
+### Exercise 9: Repair the Message
+The corrections in order are: **I, us, him, mine, yours, ourselves**.
+
+### Exercise 10: Read, Cover, and Pass On the Message
+1. café 2. brother 3. work 4. Ema 5. outside 6. quarter to seven (6:45). The retelling varies; check that every pronoun has a clear reference.
+
+### Exercise 11: Introduce and Connect People
+Answers vary. Check for two object pronouns, one possessive adjective with a noun, one possessive pronoun without a noun, and one reflexive pronoun. Accept real or imaginary people.
 
 ## Unit 15: Home and Responsibilities
 
@@ -1824,6 +1854,21 @@ have to, can, don't have to, mustn't
 ### Exercise 6: Make a Fair Home Plan
 Answers vary. Check that **don't have to** means optional and **mustn't** means forbidden.
 
+### Exercise 7: Necessary, Optional, or Forbidden?
+1. have to 2. mustn't 3. don't have to 4. can 5. have to 6. don't have to 7. mustn't 8. Can
+
+### Exercise 8: A Flatmate Meeting
+1. Their own dishes. 2. No. 3. On Saturday. 4. Mop the floor. 5. Carry the recycling downstairs. 6. Because of the cat.
+
+### Exercise 9: Make the Rule Match the Situation
+1-e, 2-a, 3-f, 4-b, 5-c, 6-d
+
+### Exercise 10: Read, Cover, and Remember the House Note
+1. A plumber. 2. On Wednesday between nine and eleven. 3. To open the door. 4. The whole bathroom. 5. Towels and bottles near the sink. 6. He can park beside the building; he mustn't use space 12.
+
+### Exercise 11: Agree on a Fair Chore Plan
+Answers vary. Check for at least three divided chores, one necessary rule, one optional action, one forbidden action, and a polite check that the plan is fair. Confirm that **don't have to** is not used to mean prohibition.
+
 ## Unit 16: Health and Wellbeing
 
 ### Exercise 1: Match Symptoms and Meanings or Body Areas
@@ -1843,6 +1888,21 @@ One sensible order is: explain the symptom; say how long you have had it; listen
 
 ### Exercise 6: Create a Safe Advice Card
 Answers vary. Check for one minor problem, three cautious suggestions, one condition for professional help, and correct advice, imperative, and purpose forms. Emergency advice must be clear and proportionate.
+
+### Exercise 7: Complete the Health Collocations
+1. feel 2. have 3. hurt 4. follow 5. take 6. contact. The two original sentences vary; check the collocation and meaning.
+
+### Exercise 8: A Call to the Health Centre
+1. A nurse. 2. Yesterday evening. 3. He feels a little sick. 4. No. 5. Yes. 6. At 10:30. 7. Get urgent medical help.
+
+### Exercise 9: Ask for the Missing Information
+1-d, 2-b, 3-f, 4-c, 5-e, 6-a
+
+### Exercise 10: Choose a Safe Next Step
+1. Ask a pharmacist. 2. Ask a pharmacist or doctor. 3. Suggest that they sit down and get help if needed. 4. Contact a doctor. 5. Call 112. 6. Tell the healthcare professional. The explanation varies; check that **because** links a clear safety reason.
+
+### Exercise 11: Pharmacy Role-Play
+Answers vary. Check that the learner describes a symptom and duration, exchanges at least two safety questions, gives cautious general advice, and includes a condition for professional help. Do not reward diagnosis or invented medicine doses.
 
 ## Unit 17: Weather, Clothes, and Plans
 
@@ -1864,6 +1924,21 @@ Strongly supported choices include a windproof jacket and an umbrella. A water b
 ### Exercise 6: Plan an Outdoor Day
 Answers vary. Check an arrangement, weather reason, clothing choice, and backup plan.
 
+### Exercise 7: Connect Reason and Result
+1. so 2. because 3. so 4. because 5. so 6. because. The rewritten sentence varies but must keep the same reason-result relationship.
+
+### Exercise 8: Messages About a Day Trip
+1. Outside the station at 8:30. 2. At 8:45. 3. After two. 4. A light waterproof jacket. 5. Because the forest path may be wet. 6. Visit the castle instead of walking by the lake.
+
+### Exercise 9: Choose the Best Future Form
+1. are meeting 2. is going to rain 3. will get 4. am seeing 5. are flying 6. will be
+
+### Exercise 10: Read, Cover, and Remember the Forecast
+1. Cloudy with light rain. 2. 9°C. 3. Around midday. 4. Strong winds from the west. 5. Saturday. 6. After five on Saturday. The three-sentence retelling may omit minor details but should not change the day or weather.
+
+### Exercise 11: Give a Weather and Plan Update
+Answers vary. Check for a time and place arrangement, two weather phrases, a clothing choice with a reason, and a realistic **if** backup plan.
+
 ## Unit 18: Work, Study, and Learning
 
 ### Exercise 1: Match Jobs and Tasks
@@ -1883,6 +1958,21 @@ b, a, c, d
 
 ### Exercise 6: Make a Learning Plan
 Answers vary. Check six complete sentences: two goals with **to + verb**, two enjoyable activities with **-ing**, one learning need, and one polite request for help.
+
+### Exercise 7: Complete the Work Collocations
+1. apply 2. meet 3. gain 4. attend 5. improve 6. ask. The original sentences vary; check that the full collocation is used naturally.
+
+### Exercise 8: The First Day at Work
+1. The safety guide. 2. In the shared folder under “Team Documents”. 3. Update the customer list. 4. Which file she needs to update. 5. Before lunch. 6. No. 7. Making calls.
+
+### Exercise 9: Choose the Pattern in Context
+1. to apply 2. writing 3. to get 4. completing 5. checking his phone 6. to attend 7. learning 8. to meet
+
+### Exercise 10: Read, Cover, and Remember the Instructions
+1. 9:15 2. Room 3 3. a notebook 4. a laptop 5. practising greeting customers 6. working in pairs and answering sample phone calls 7. Thursday evening. The final clarification question varies.
+
+### Exercise 11: Clarify a Work or Study Task
+Answers vary. Check for a clear order and deadline, at least three complete clarification questions, one **to + verb** chunk, one **verb-ing** chunk, and a final understanding check.
 
 ## Unit 19: Technology and Communication
 
@@ -1904,6 +1994,15 @@ Sending a password to a stranger is unsafe. Never share a password with a strang
 ### Exercise 6: Write Helpful Instructions
 Answers vary. Check logical sequence words, imperatives, and at least one adverb.
 
+### Exercise 7: Read a Workplace Support Exchange
+1. The file is too large for email. 2. In the team folder. 3. Only people in the team should be able to open it. 4. Lina and Ben. 5. In the public chat. 6. **I've shared it successfully.** (Ben's **It opens perfectly** also confirms that the receiver can open it.)
+
+### Exercise 8: Choose the Best Support Reply
+1-b, 2-a, 3-c, 4-a, 5-b, 6-a
+
+### Exercise 9: Give and Check Technical Help
+Answers vary. Check a specific problem, a clarifying question, safe steps in a logical order, and a final confirmation. The model or checklist supports self-assessment; do not auto-grade the dialogue.
+
 ## Unit 20: Invitations and Social Plans
 
 ### Exercise 1: Match Functions and Phrases
@@ -1923,6 +2022,15 @@ Answers vary. The acceptance needs a question; the refusal needs thanks, a reaso
 
 ### Exercise 6: Plan a Small Event
 Answers vary. Check invitation, time/place, useful detail, and responsive reply.
+
+### Exercise 7: Follow a Group Chat
+1. By the ticket office at 8:30 on Friday. 2. There may not be enough tickets at the door. 3. Something warm. 4. She is working until 9. 5. The Saturday film. 6. Coffee at Green Table at 3 p.m. on Sunday.
+
+### Exercise 8: Complete the Social Functions
+1. Would you like to 2. I'd love to 3. Thanks, but 4. How about 5. Let's 6. Could we
+
+### Exercise 9: Negotiate a Plan
+Answers vary. A workable agreement places the shared activity after 14:00 and before the museum closes at 17:00, with the likely rain considered. Check two suggestion forms, a reason, time/place details, and a final confirmation.
 
 ## Unit 21: Nature and the Environment
 
@@ -1944,6 +2052,15 @@ Answers vary. Check a supported comparison, not one forced opinion.
 ### Exercise 6: Make a Seven-Day Eco Plan
 Answers vary. Check three realistic actions and an accurate first conditional.
 
+### Exercise 7: Read a Building Notice and Two Replies
+1. Separate bins for paper, glass, food, and general waste. 2. Wash them quickly. 3. In general waste. 4. The amount of rubbish sent to landfill. 5. Beside the bicycle shed on Saturday at 11. 6. She can make a simple recycling guide for the neighbours.
+
+### Exercise 8: Correct the Environmental Advice
+1. If everyone **brings** a cup, we will use fewer plastic cups. 2. There are too **many** cars outside the school. 3. We need **less** water when we take short showers. 4. If the weather is dangerous, the event **will move** indoors. 5. Buy only enough food because you will make **less** food waste. 6. If you **see** litter, put it in a bin.
+
+### Exercise 9: Propose One Local Improvement
+Answers vary. Check one observable local problem, two realistic actions, an accurate first conditional, correct **less/fewer**, and a polite invitation. Claims should be qualified and should not blame an individual.
+
 ## Unit 22: Services and Problem-Solving
 
 ### Exercise 1: Match Problems and Solutions
@@ -1964,6 +2081,15 @@ Answers vary. Check purchase, problem, evidence, and a polite preferred solution
 ### Exercise 6: Role-Play a Service Problem
 Answers vary. Check calm factual language and a clear request.
 
+### Exercise 7: Read an Email and the Service Reply
+1. On 6 June. 2. Part C is missing. 3. A photo of the parts and her receipt. 4. She needs the bookcase before that date. 5. It has sent part C by express delivery. 6. If the parcel has not arrived by 10 June.
+
+### Exercise 8: Choose the Most Effective Sentence
+1-b, 2-a, 3-a, 4-a, 5-a, 6-a
+
+### Exercise 9: Solve a Service Problem in Writing
+Answers vary. Check 90–120 words, a subject line, facts in time order, one accurate **too/enough** phrase, evidence, a reasonable requested solution, an alternative, and a polite closing.
+
 ## Unit 23: People, Places, and Relative Clauses
 
 ### Exercise 1: Match Words and Definitions
@@ -1983,6 +2109,15 @@ Answers vary. Use **who** for dentist, **that/which** for umbrella and password,
 
 ### Exercise 6: Write a Recommendation
 Answers vary. Check one accurate person, place, and thing relative clause.
+
+### Exercise 7: Read a Neighbourhood Guide
+1. Opposite platform 2. 2. Lina, the adviser. 3. Soup, salads, and two vegetarian dishes every day. 4. People who need a quiet table. 5. Wi-Fi. 6. The upstairs reading room.
+
+### Exercise 8: Who, That, or Where?
+1. who 2. that 3. where 4. who 5. that 6. where 7. that 8. who. Accept **which** instead of **that** in items 2, 5, and 7.
+
+### Exercise 9: Make a Useful Local Recommendation
+Answers vary. Check one accurate clause each with **who**, **where**, and **that/which**, plus two practical details and a relevant reason. Descriptions should be specific and respectful.
 
 ## Unit 24: A2 Communication Project
 
@@ -2010,6 +2145,18 @@ Self-check only. Do not auto-grade. Listen for a plan, two responsive changes, a
 ### Exercise 8: Final Self-Check
 Self-assessment. Each claim should have a spoken or written example as evidence.
 
+### Exercise 9: Read the Final Update
+1. 18:55. 2. 35 minutes. 3. Maya's phone battery is at 12%. 4. She has eaten and now needs only a light snack rather than dinner. 5. At about 13:00. 6. She asks to do the outdoor activity before lunch.
+
+### Exercise 10: Revise the Plan
+Answers vary. Check a message of no more than 35 words, an identifiable meeting place, a realistic outdoor activity before the likely 13:00 rain, lunch in a logical place, and an updated budget only when choices change.
+
+### Exercise 11: Final A2 Portfolio
+Open portfolio task. Check that the four pieces of evidence are present and internally consistent. The reflection needs one successful strategy and one specific next step. Do not auto-grade open writing or speaking.
+
+### Exercise 12: Capstone Conference
+Open speaking task. The learner may use timetable and price notes. Listen for an explained reason, a workable response to change, and at least one successful clarification or repair. Use the Success Checklist and give feedback on meaning before language accuracy.
+
 **End of Answer Key / Atsakymų raktų pabaiga**
 
-Use this to check your work after completing the exercises! You have now completed the full A2 level English course.
+Use this key to check and repair your work. Course completion is recorded only after all required sessions through the Unit 24 review are finished on **Your English Path**.

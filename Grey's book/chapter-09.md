@@ -22,6 +22,8 @@ status: "published"
 
 ### Phrasal Verbs
 
+*Fraziniai veiksmažodžiai*
+
 - look into — to investigate (ištirti, išsiaiškinti)
 - rule out — to eliminate a possibility (atmesti galimybę)
 - step in — to intervene or get involved (įsikišti)
@@ -29,6 +31,8 @@ status: "published"
 - count on — to rely on or trust (pasikliauti)
 
 ### Word Bank
+
+*Žodynėlis*
 
 - transplant — transplantacija
 - donor — donoras
@@ -49,94 +53,104 @@ status: "published"
 
 ### Story
 
-A few weeks after Catherine Avery's visit, the hospital was buzzing with a new, high-stakes case. A 45-year-old man named Mr. Evans was admitted with severe heart failure. He was a kind man, a father of two young girls, and he was running out of time. His only hope was a heart transplant.
+*Pasakojimas*
 
-Dr. Cristina Yang was in charge of his case. She worked tirelessly, monitoring his condition and trying to keep him stable. "His heart is getting weaker every day," she told Meredith during a rare quiet moment in the cafeteria. "He needs a new heart, and he needs it now. He's at the top of the transplant waiting list."
+A few weeks after Catherine Avery's visit, the hospital admitted a 45-year-old man named Daniel Evans with serious heart failure. He was a kind father of two young girls. His team believed a heart transplant was an important treatment option, so he was on the national waiting list.
+
+Dr. Cristina Yang was part of his care team. She checked his condition and worked with experienced transplant specialists. "His heart is getting weaker," she told Meredith during a quiet moment. "The team is supporting him while he waits. We cannot know when a suitable heart will become available."
 
 Everyone at the hospital felt the pressure. Mr. Evans's wife, Sarah, never left his side. His two little girls would visit, their faces full of worry. Izzie Stevens often brought them coloring books and tried to make them smile, but it was hard. The whole family was living in fear.
 
-One rainy Thursday afternoon, Cristina’s pager went off. It was the news they had all been waiting for. A donor heart was available. It was a perfect match.
+One rainy Thursday afternoon, Cristina’s pager went off. A donor heart was available, and the first checks showed that it might be suitable.
 
-"We have a heart!" Cristina announced, her voice filled with excitement and relief. The team moved quickly. They had to prepare Mr. Evans for the transplant procedure immediately.
+"A heart may be available," Cristina announced. The team moved quickly, but they still had to complete important safety checks before making a final decision.
 
-Meredith found Sarah in the waiting room to tell her the good news. "We found a heart for your husband," she said gently. Sarah burst into tears, but this time, they were tears of hope. "Thank you," she sobbed. "Thank you so much."
+Meredith gave Daniel and his wife, Sarah, a careful update. "The team is checking a possible donor heart," she said. "We do not know the final answer yet." Sarah took Daniel's hand. They felt hopeful, but they understood that they had to wait.
 
-But just as the surgical team was getting ready, Dr. Alex Karev rushed in, his face pale. "There's a problem," he said, holding a file. "I was looking into the donor's history. The donor had a rare genetic condition. It wasn't serious, but it could cause complications."
+But just as the team was getting ready, Alex rushed in with a file. "There is new information," he said. "The final report describes a medical concern in the donor's history. The transplant specialists need to review it."
 
 Cristina’s face fell. "What kind of complications?"
 
-"It could slightly increase the risk of the new heart failing in the long term," Alex explained. "The risk is small, maybe 5%, but it's there."
+"It may increase a long-term risk," Alex explained. "I do not want to guess how important it is. The specialist can explain what the team knows and what it still does not know."
 
-This was a terrible ethical dilemma. The heart was a match, and Mr. Evans would die without it. But if they used this heart, there was a small but real risk. They had to tell the family.
+The team reviewed the tests and hospital rules. The heart was still an approved option, but the new information mattered. Daniel had the right to hear it and make an informed choice.
 
-Cristina and Meredith went to talk to Sarah. They explained the situation honestly. "The heart is a good match," Cristina said, "but there is a small risk. We need your consent to proceed."
+Cristina and the transplant specialist went to talk to Daniel. Daniel asked Sarah to stay for the conversation. The specialist explained the known benefits, the possible risks, and the choice to accept or refuse the heart.
 
-Sarah was desperate. "A 5% risk?" she asked, her voice shaking. "But he will 100% die if he doesn't get a heart, right?"
+Daniel listened, then asked, "What do you know for certain, and what is still uncertain?"
 
-"Yes," Meredith confirmed softly.
+The specialist answered each question without making a promise. He also gave Daniel and Sarah a few minutes to talk privately.
 
-"Then do it," Sarah said, her decision firm. "We have to take the chance. I can't lose him."
+Daniel called the team back. "I understand that both choices have risks," he said. "I want to accept this heart." He signed the consent form himself.
 
-The surgery was long and incredibly difficult. Cristina was the lead surgeon, her focus absolute. Derek, who had stepped in to assist with the complex blood-vessel connections, was amazed by her skill. "She's extraordinary," he whispered to Meredith, who was observing from the gallery. Meredith felt a surge of pride for her friend.
+The operation was long and difficult. An experienced transplant surgeon led it, and Cristina assisted. Alex's careful reading had given the team important information before the operation. Meredith waited with Sarah and gave her updates when the surgical team sent them.
 
-After eight intense hours, the surgery was over. The new heart was beating strongly in Mr. Evans's chest. The transplant was a success.
+After eight hours, the operation was over. The new heart was beating, and Daniel was stable. The surgeon explained that this was encouraging, but the first days after a transplant still required very close care.
 
-Over the next few days, Mr. Evans's recovery was remarkable. He was weak but alive. His color returned. He could talk to his wife and daughters. When he held his little girls' hands, there wasn't a dry eye among the nurses.
+Over the next few days, Daniel remained weak, but he was able to speak with Sarah and his daughters. The team watched for problems and repeated that recovery would take time.
 
 One evening, Meredith found Cristina alone in the locker room, staring at her hands.
-"You saved him, Cristina," Meredith said. "You were amazing."
+"You helped the team make a careful choice," Meredith said. "You listened and explained."
 
-"We were lucky," Cristina replied, not looking up. "That 5% risk... it could have gone the other way."
+"The result could still change," Cristina replied. "A transplant is not one perfect moment. It is a long process."
 
-"But it didn't," Meredith said. "You can't hold back because you're afraid of what might happen. You have to count on your skills. And your team. Alex did the right thing by finding that information. You did the right thing by performing the surgery. We all did our part."
+"That is why the team mattered," Meredith said. "Alex found the information. The specialist explained it. Daniel made the choice. The surgical team did its work. No one person owned the whole decision."
 
 Cristina finally looked at her. A small, tired smile touched her lips. "We make a good team, Grey."
 
 "The best," Meredith agreed.
 
-As she walked out of the hospital with Derek that night, Meredith felt a deep sense of satisfaction. It was days like this that reminded her why she chose this life. It was a life of impossible choices, of fear, and of exhaustion. But it was also a life of hope, of teamwork, and of miracles. She was exactly where she was supposed to be.
+As she walked out of the hospital with Derek that night, Meredith thought about informed consent. Honest information did not make a hard choice easy. It gave the patient a real voice in that choice. Good teamwork protected that voice and kept one person from carrying the whole decision alone.
 
 ### Understanding Questions
 
+*Supratimo klausimai*
+
 1. What was wrong with Mr. Evans?
-2. What was his only hope for survival?
-3. Who was in charge of Mr. Evans's case?
-4. What was the good news Cristina received on her pager?
-5. What problem did Alex discover about the donor heart?
-6. What was the ethical dilemma the doctors faced?
-7. What did Mr. Evans's wife decide to do?
+2. Why was Daniel on the transplant waiting list?
+3. Who worked with Cristina on Daniel's care?
+4. Why did Cristina say a heart **may** be available?
+5. What new information did Alex find?
+6. Who explained the benefits and risks to Daniel?
+7. Who gave consent for the operation?
 8. How long did the surgery take?
-9. What did Meredith say to Cristina in the locker room?
-10. How did Meredith feel at the end of the chapter?
+9. Why did Meredith say the whole team mattered?
+10. What did Meredith learn about informed consent?
 
 ### Creative Questions
 
-1. If you were in Sarah's position, would you accept the heart with the 5% risk? Why or why not?
-   - Example answer: Yes, I would accept the heart because a small risk is better than certain death. I would want to give my loved one any chance to live.
-   - Your answer: Yes/No, I would/wouldn't accept the heart because...
+*Kūrybiniai klausimai*
+
+1. Which question from Daniel helped him understand the choice?
+   - *Model:* "He asked what was certain and what was still uncertain."
+   - *Start:* "He asked _______________."
 2. Why is teamwork so important in a hospital?
-   - I think teamwork is important because...
+   - *Model:* "Different team members find and explain different information."
+   - *Start:* "Teamwork is important because _______________."
 3. What do you think is the most difficult part of being a surgeon?
-   - The most difficult part of being a surgeon is probably...
+   - *Model:* "The most difficult part may be working with uncertainty."
+   - *Start:* "The most difficult part may be _______________."
 4. How can friends support each other in a high-stress job?
-   - Friends can support each other by...
+   - *Model:* "Friends can listen and remind each other to rest."
+   - *Start:* "Friends can _______________."
 5. Imagine you are Mr. Evans after the surgery. What would you say to Dr. Yang?
-   - I would say...
+   - *Model:* "Thank you for answering my questions honestly."
+   - *Start:* "Thank you for _______________."
 
 ### Fun Activities / Smagios Užduotys
 
-#### Activity 1: Role-Play — The Ethical Discussion (Etinė Diskusija)
+#### Activity 1: Ethical Discussion / Etinė diskusija
 
-Work in pairs. One person is the doctor, and the other is a patient's family member. The doctor must explain a difficult medical situation with a small risk. The family member must ask questions and make a decision.
+Work in pairs. One person is the doctor, and the other is Daniel. The doctor explains that there is new information and avoids making promises. Daniel asks questions and makes his own choice.
 
 *Example dialogue:*
 
-- Doctor: "We have good news. We found a match, but there is a small risk."
-- Family: "What kind of risk? Can you explain?"
-- Doctor: "There is a 5% chance of complications. But without this, the risk is 100%."
-- Family: "I understand. Let's do it."
+- Doctor: "A possible donor heart is available, but there is new information."
+- Daniel: "What do you know, and what is still uncertain?"
+- Doctor: "The specialist will explain the benefits, risks, and your choices."
+- Daniel: "I want time to ask questions before I decide."
 
-#### Activity 2: Vocabulary Matching Game
+#### Activity 2: Phrasal-Verb Match / Frazinių veiksmažodžių poros
 
 Match the medical situations with the correct phrasal verb from this chapter:
 
@@ -148,13 +162,15 @@ Match the medical situations with the correct phrasal verb from this chapter:
 
 ### Grammar Practice
 
+*Gramatikos praktika*
+
 **1. Complete the sentences using the Past Continuous form of the verb in parentheses.**
 
 1. Mr. Evans's heart _______ (get) weaker every day.
 2. The whole family _______ (live) in fear.
 3. Alex _______ (look) into the donor's history when he found the problem.
-4. Meredith _______ (observe) from the gallery while Cristina was operating.
-5. The nurses _______ (cry) while Mr. Evans was holding his daughters' hands.
+4. Meredith _______ (wait) with Sarah while the team was operating.
+5. Daniel's family _______ (talk) while he was resting.
 
 **2. Write a sentence using the Past Continuous and Past Simple.**
 *Example: I was studying (Past Continuous) when my friend called (Past Simple).*

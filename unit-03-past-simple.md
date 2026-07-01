@@ -346,6 +346,15 @@ Use these prompts:
 _____________________________________________
 _____________________________________________
 _____________________________________________
+
+You may use an imaginary person or change private details. Connect the events with **first, then, after that, later, last year**.
+
+**Success checklist:**
+
+- [ ] My events are in a clear time order.
+- [ ] I used at least four Past Simple verbs, including one irregular verb.
+- [ ] Every event has a finished past time or a clear place in the sequence.
+- [ ] I checked that I did not use a past form after **did/didn't**.
 _____________________________________________
 _____________________________________________
 
@@ -501,12 +510,21 @@ Last summer I went to the seaside with my family. We swam in the sea and built s
 
 **Your turn:**
 
+**Sentence starters:** **It happened... / I was with... / First,... / Then,... / I felt... because... / I still remember it because...**
+
+**Success checklist:**
+
+- [ ] I wrote 7–9 connected sentences about one event.
+- [ ] I answered when, what, feelings, and why.
+- [ ] I used Past Simple consistently and at least two sequence words.
+- [ ] I ended by explaining why the event mattered to me.
+
 ---
 
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Past Events Sharing
-In pairs, tell your partner about three important events from your past. Ask follow-up questions.
+In pairs, tell your partner about three important events from your past. Ask follow-up questions such as **When did that happen? / Who were you with? / How did you feel?** If you study alone, record one event, listen, and add one missing detail in a second attempt.
 
 ### Activity 2: Memory Game
 Think of 10 things you did last week. Share them with the group without repeating.

@@ -46,7 +46,7 @@ The site saves the exact session, responses, attempts, skill strength, review da
 11. Past Continuous
 12. Review and consolidation
 
-### A2.3–A2.4 extension library
+### A2.3–A2.4 continued development
 
 13. Determiners and everyday objects
 14. Pronouns and personal connections

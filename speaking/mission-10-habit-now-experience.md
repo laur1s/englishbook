@@ -39,7 +39,7 @@ steps:
       - "I've... for/since..."
   - kind: "speak"
     prompt: "Speak for one minute. Signal each time frame clearly."
-    ltPrompt: "Kalbėkite vieną minutę. Aiškiai parodykite kiekvieną laiko perspektyvą."
+    ltPrompt: "Kalbėkite vieną minutę. Aiškiai parodykite, ar kalbate apie įprotį, dabartinę veiklą, ar patirtį."
     seconds: 60
     support:
       - "Usually..."
@@ -64,14 +64,18 @@ This mission trains meaning-based tense choice instead of guessing from isolated
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- I usually...
-- Today / This week, I'm...
-- I've... for...
-- I've already...
-- I know / like / want...
+- I usually... — Paprastai aš...
+- This week, I'm... — Šią savaitę aš...
+- I've... for... — Aš... jau...
+- I've already... — Jau esu...
+- I know / like / want... — Žinau / mėgstu / noriu...
+
+## Success Check / Sėkmės kriterijai
+
+Your talk succeeds when one topic connects a usual habit, a temporary current activity, and an experience or continuing duration. Use a clear time signal for each tense. On the second attempt, correct one tense choice and connect the three ideas with **but**, **so**, or **because**.
 
 ## Push It Further / Pasunkinkite
 
 - Add one stative verb correctly.
 - Add one finished Past Simple detail.
-- Explain why you chose each tense.
+- Ask a listener one question about their usual routine or current activity.

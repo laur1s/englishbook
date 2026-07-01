@@ -17,17 +17,17 @@ topics:
 hasAnswerKey: false
 status: "published"
 missionType: "mistake-detective"
-durationMinutes: 2
+durationMinutes: 3
 sourceRefs:
   - "unit-09"
 supportsRecording: true
 steps:
   - kind: "brief"
-    prompt: "Spot the modal mistake and choose the meaning first: advice, possibility, or deduction."
-    ltPrompt: "Pirmiausia nuspręskite reikšmę: patarimas, galimybė ar išvada, tada raskite klaidą."
+    prompt: "Correct two modal mistakes, then respond to two everyday situations with advice, possibility, and a deduction."
+    ltPrompt: "Ištaisykite dvi modalinių veiksmažodžių klaidas, tada sureaguokite į dvi kasdienes situacijas: patarkite, išreikškite galimybę ir padarykite išvadą."
     support:
       - "Wrong sentence: You must to sleep more."
-      - "Wrong sentence: She can't be at home. I can see her through the window."
+      - "Wrong sentence: She can't be at home. Her car is outside, and I can hear music in her room."
   - kind: "prep"
     prompt: "Fix the modal verb and the logic."
     ltPrompt: "Ištaisykite modalinį veiksmažodį ir logiką."
@@ -36,42 +36,46 @@ steps:
       - "Advice: You should sleep more."
       - "Deduction: She must be at home."
   - kind: "speak"
-    prompt: "Say both corrected sentences aloud, then add one new sentence of your own."
-    ltPrompt: "Abu ištaisytus sakinius pasakykite garsiai, tada pridėkite vieną savo sakinį."
-    seconds: 45
+    prompt: "Say both corrections. Then advise a tired friend and explain what may be happening in a noisy, brightly lit flat."
+    ltPrompt: "Pasakykite abu pataisytus sakinius. Tada patarkite pavargusiam draugui ir paaiškinkite, kas galbūt vyksta triukšmingame, ryškiai apšviestame bute."
+    seconds: 60
     support:
-      - "It might rain later."
-      - "You should call a doctor."
-      - "He can't be serious."
+      - "You should rest tonight."
+      - "They might be having a party."
+      - "Someone must be at home because..."
   - kind: "compare"
-    prompt: "Check the rule: should gives advice, may and might show possibility, and must or can't help you make strong deductions from evidence."
-    ltPrompt: "Palyginkite su taisykle ir patikrinkite, ar pasirinkote tinkamą reikšmę."
+    prompt: "Compare with this model: You look exhausted. You should have a quiet evening, and you shouldn't stay up late. You might feel better tomorrow. In the flat upstairs, the lights are on and I can hear music. Someone must be at home. They may be having a party, but I can't be sure."
+    ltPrompt: "Palyginkite su pavyzdžiu ir patikrinkite, ar kiekvienas modalinis veiksmažodis perteikia tinkamą reikšmę."
     support:
       - "Did you remove to after should?"
       - "Did your deduction match the evidence?"
   - kind: "reflect"
-    prompt: "How confident did this feel?"
-    ltPrompt: "Kaip užtikrintai jautėtės?"
+    prompt: "Name the evidence for your deduction, then repeat one weaker sentence more clearly."
+    ltPrompt: "Įvardykite, kuo remiasi jūsų išvada, tada aiškiau pakartokite vieną silpnesnį sakinį."
     support:
       - "1 = I confuse the meanings."
       - "5 = I can choose the right modal quickly."
       - "Accuracy: Did the modal match both the meaning and the evidence?"
-      - "Second attempt: make one advice sentence and one evidence-based deduction."
+      - "Second attempt: change the friend's problem and use different evidence for the deduction."
 ---
 
 This mission makes Unit 9 more tactical. The first step is not grammar form. The first step is meaning: am I advising, guessing, or making a strong conclusion from evidence?
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- You should...
-- You shouldn't...
-- It may...
-- It might...
-- He must be...
-- They can't be...
+- You should... — Turėtumėte...
+- You shouldn't... — Neturėtumėte...
+- It may / might... — Galbūt...
+- He must be... — Jis tikriausiai yra...
+- They can't be... — Negali būti, kad jie...
+- I think that because... — Taip manau, nes...
+
+## Success Check / Sėkmės kriterijai
+
+Your response succeeds when it corrects both original errors, gives one practical piece of advice, expresses one real possibility, and connects a strong deduction to visible or audible evidence. On the second attempt, change both situations instead of repeating memorised sentences.
 
 ## Push It Further / Pasunkinkite
 
-- Make one new advice sentence about health.
+- Make one new advice sentence about study, sleep, or time management.
 - Make one new deduction sentence about a room or a house.
-- Repeat the mission and decide the meaning faster than the first time.
+- Ask yourself: “Do I know this, or is it only possible?” before choosing **must** or **might**.

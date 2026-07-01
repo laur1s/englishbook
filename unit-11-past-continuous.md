@@ -229,6 +229,10 @@ Answer the questions using Past Continuous:
 7. What were people doing at the party? _____________________
 8. What was your teacher doing when you entered the class? _____________________
 
+Use an imaginary answer when a question does not match your experience. Model: **At 8 p.m. yesterday, I was making dinner. In the imaginary accident scene, people were waiting safely beside the road.**
+
+Check that every answer has **was/were + verb-ing** and a clear subject.
+
 ---
 
 ## Exercise 8: Reading Comprehension
@@ -397,13 +401,23 @@ I was sleeping when the alarm rang. I jumped up quickly. I was tired.
 
 **Your turn:**
 
+**Story frame:** **It was... and... / I was... while... / Suddenly,... / When..., I was... / After that,... / I felt... because...**
+
+**Success checklist:**
+
+- [ ] I wrote 7–9 sentences with a clear setting, interruption, and result.
+- [ ] I used Past Continuous for the action already in progress.
+- [ ] I used Past Simple for the shorter completed event.
+- [ ] I used **when** or **while** accurately.
+- [ ] I ended with a feeling or consequence.
+
 ---
 
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Story Interruption
 
-Tell a story with Past Continuous for background and Past Simple for interruption.
+Tell a story with Past Continuous for background and Past Simple for interruption. Your partner says which action was in progress and which event interrupted it. If you study alone, record the story and underline those two parts in your written notes afterwards.
 
 ### Activity 2: Memory Recall
 

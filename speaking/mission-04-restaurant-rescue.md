@@ -23,7 +23,7 @@ supportsRecording: true
 steps:
   - kind: "brief"
     prompt: "You are in a cafe. First play the customer, then switch and play the waiter."
-    ltPrompt: "Esate kavinėje. Pirma vaidinkite klientą, tada persijunkite ir vaidinkite padavėją."
+    ltPrompt: "Esate kavinėje. Pirma vaidinkite klientą, tada apsikeiskite vaidmenimis ir vaidinkite padavėją."
     support:
       - "Order food politely."
       - "Add one problem."
@@ -46,14 +46,14 @@ steps:
       - "Customer: Sorry, I think this is not my order."
       - "Waiter: I'm sorry. I'll change it right away."
   - kind: "compare"
-    prompt: "Compare with this model exchange: Could I have the chicken soup and a tea, please? Of course. Here you are. Sorry, I ordered tea, not water. I'm sorry about that. I'll bring your tea in a minute."
+    prompt: "Compare with this model exchange: Customer: Could I have the chicken soup and a cup of tea, please? Waiter: Of course. Anything else? Customer: No, thank you. Later: Sorry, I ordered tea, not water. Waiter: I'm sorry about that. I'll bring your tea in a minute. Customer: Thank you."
     ltPrompt: "Palyginkite savo dialogą su pavyzdžiu."
     support:
       - "Did both people sound polite?"
       - "Did you solve the problem instead of stopping?"
   - kind: "reflect"
-    prompt: "How confident did this feel?"
-    ltPrompt: "Kaip užtikrintai jautėtės?"
+    prompt: "Check whether the order, problem, and solution were all clear, then choose one role to improve on the second attempt."
+    ltPrompt: "Patikrinkite, ar užsakymas, problema ir sprendimas buvo aiškūs, tada pasirinkite vieną vaidmenį, kurį patobulinsite antruoju bandymu."
     support:
       - "1 = I needed the support lines all the time."
       - "5 = I could improvise naturally."
@@ -65,14 +65,17 @@ This mission pushes Unit 4 into live dialogue. The main challenge is not vocabul
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- Could I have..., please?
-- Anything else?
-- Sorry, I think...
-- That's no problem.
-- I'll bring it right away.
+- Could I have..., please? — Ar galėčiau gauti...?
+- Anything else? — Ar dar ko nors?
+- Sorry, I ordered..., not... — Atsiprašau, užsisakiau..., o ne...
+- I'm sorry about that. — Atsiprašau dėl šios klaidos.
+- I'll bring it right away. — Tuoj pat atnešiu.
+
+## Success Check / Sėkmės kriterijai
+
+Your dialogue succeeds when the customer orders a meal and drink politely, identifies one specific problem, and the waiter confirms a practical solution. On the second attempt, change both the problem and the solution, switch roles, and pause less without speaking too quickly.
 
 ## Push It Further / Pasunkinkite
 
-- Change the problem and do the dialogue again.
 - Add a price question.
 - Try one version where the waiter is very busy but still polite.

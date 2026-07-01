@@ -421,9 +421,18 @@ Write a short paragraph comparing two things you know well. For example:
 Use comparatives and superlatives.
 
 Example:
-Paris is more beautiful than London. London is bigger than Paris. Paris has the best museums in the world.
+Paris is larger than Lyon, while Lyon is quieter. For me, Lyon is as interesting as Paris because both cities have excellent food. Paris has more museums, but Lyon is easier to explore on foot. The riverside area is the most relaxing part of my visit, so Lyon is the better choice for my quiet weekend.
 
 **Your turn:**
+
+**Sentence starters:** **Both... / ... is ...-er than... / ... is more... than... / ... isn't as... as... / Of the two,... / For me,... because...**
+
+**Success checklist:**
+
+- [ ] I identified the two things and used factual or clearly personal criteria.
+- [ ] I used two comparatives, one **as...as** structure, and one superlative.
+- [ ] I used **than** after a comparative and **the** before a superlative.
+- [ ] I gave reasons and signalled personal opinion when a judgement was subjective.
 
 ---
 
@@ -439,7 +448,7 @@ Compare objects in the room: "This is bigger than that..."
 
 ### Activity 3: Cultural Comparisons
 
-Compare Lithuanian culture with another country's culture.
+Compare one specific practice you know from Lithuania with one specific practice you have experienced, read about, or researched elsewhere. Use careful language such as **in my experience, some people, often, can be**; avoid presenting every person in a country as the same.
 
 ---
 

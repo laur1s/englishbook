@@ -46,31 +46,36 @@ steps:
       - "Let's... / We could... / We should..."
       - "Sorry, I didn't understand. Could you repeat that?"
   - kind: "compare"
-    prompt: "Check this model exchange: Have you ever been to Trakai? Yes, I went last year. It was beautiful. What about Druskininkai? I've never been there. Trakai is closer, but Druskininkai has more activities. Let's go to Trakai this Saturday. We should take the early bus. The forecast may change, so we're going to take raincoats too. Great—I'll buy the tickets tonight."
+    prompt: "Check this model exchange: A: Have you ever been to Trakai? B: Yes, I went last year. It was beautiful. What about Druskininkai? A: I've never been there. Trakai is closer, but Druskininkai has more activities. Let's go to Trakai this Saturday. B: We should take the early bus. A: Sorry, did you say the eight-ten bus? B: Yes, that's right. The forecast may change, so we're going to take raincoats too. A: Great—I'll buy the tickets tonight."
     ltPrompt: "Palyginkite savo dialogą su pavyzdžiu."
     support:
       - "Did you use Present Perfect before the Past Simple detail?"
       - "Did the comparison and final plan have clear reasons?"
   - kind: "reflect"
-    prompt: "Use the final checklist and choose one goal for a second performance."
-    ltPrompt: "Pasinaudokite galutiniu sąrašu ir pasirinkite vieną tikslą antrajam atlikimui."
+    prompt: "Use the checkpoint checklist and choose one goal for a second performance."
+    ltPrompt: "Pasinaudokite tarpinio patikrinimo sąrašu ir pasirinkite vieną tikslą antrajam atlikimui."
     support:
       - "Accuracy: check one past, one present-perfect, one comparison, and one modal sentence."
       - "Fluency: did you respond to the previous line instead of reciting separate sentences?"
       - "Repair: did you use a phrase to ask for repetition or thinking time?"
-      - "Second attempt: keep the dialogue going for 15 seconds longer with fewer pauses."
+      - "Second attempt: change the travel problem and use one repair phrase before confirming the plan."
 ---
 
-This final mission combines the course grammar around one realistic decision. Clear communication and repair matter more than using every structure perfectly.
+This Unit 12 checkpoint mission combines grammar from the first 12 modules around one realistic decision. Clear communication and repair matter more than using every structure perfectly; Units 13–24 continue the A2 path with new everyday situations.
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- Have you ever...? I went there...
-- ...is cheaper / closer / more interesting than...
-- We are going to...
-- We should... / It might...
-- Could you repeat that?
-- Let me think for a moment.
+- Have you ever...? — Ar kada nors esi...?
+- I went there... — Ten buvau...
+- ...is cheaper / closer than... — ...yra pigiau / arčiau negu...
+- We're going to... — Ketiname...
+- We should... / It might... — Turėtume... / Galbūt...
+- Could you repeat that? — Ar galėtum tai pakartoti?
+- Let me think for a moment. — Leisk man akimirką pagalvoti.
+
+## Success Check / Sėkmės kriterijai
+
+Your checkpoint dialogue succeeds when both speakers respond to each other, compare two options with reasons, agree on transport or timing, solve one problem, and use one repair phrase. On the second attempt, change the problem and confirm the decision in three concise sentences.
 
 ## Push It Further / Pasunkinkite
 

@@ -322,6 +322,15 @@ Andrius thinks he will be very tired on Monday, but he's happy because he's goin
 _____________________________________________
 _____________________________________________
 _____________________________________________
+
+Model opening: **On Saturday morning, I'm going to clean the flat. At noon, I'm meeting Mantas at a café because we have already arranged it.**
+
+**Success checklist:**
+
+- [ ] I wrote 7–9 connected sentences covering both days.
+- [ ] I used **going to** for intentions and Present Continuous only for a fixed arrangement.
+- [ ] I included at least three time expressions.
+- [ ] I added one backup with **if** in case a plan changes.
 _____________________________________________
 _____________________________________________
 
@@ -423,6 +432,8 @@ Find and correct the mistakes:
 1. _____________________
 2. _____________________
 3. _____________________
+
+Choose one goal and add a first step: **I'm going to enrol in a course this month because I want to change careers.** A useful goal has a time, an action, and a reason.
 
 ---
 
@@ -534,6 +545,15 @@ In five years, I want to be a teacher. I will live in a big city. My dream is im
 
 **Your turn:**
 
+**Sentence starters:** **In five years, I hope to... / I'm going to... / I think I will... / This matters to me because... / My first step is...**
+
+**Success checklist:**
+
+- [ ] I wrote 7–9 connected sentences about a personal or imaginary future.
+- [ ] I separated an intention from a prediction.
+- [ ] I explained why at least one goal matters.
+- [ ] I included one realistic first step rather than only distant dreams.
+
 ---
 
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
@@ -641,8 +661,8 @@ Make a weekend backup plan. Model: **If it is sunny, we will go cycling. If it r
 
 ---
 
-**End of Expanded Unit 6 / Išplėsto šeštojo skyriaus pabaiga**
+**First pathway milestone / Pirmasis mokymosi kelio etapas**
 
-Congratulations! You've completed all six A2.1 units! / Sveikiname! Baigėte visus šešis A2.1 skyrius!
+Unit 6 ends the first six-unit phase. Check and repair your answers, then continue to Unit 7 to build the next A2 skills.
 
-Check your answers in the Answer Key section!
+6 skyrius užbaigia pirmąjį šešių skyrių etapą. Pasitikrinkite ir ištaisykite atsakymus, tada tęskite 7 skyriuje.

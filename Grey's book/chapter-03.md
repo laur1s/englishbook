@@ -1,6 +1,6 @@
 ---
-title: "Chapter 3: Secret Love - A Dangerous Romance"
-ltTitle: "3 Skyrius: Slapta Meilė - Pavojingas Romanas"
+title: "Chapter 3: A Private Relationship - A Fair Choice"
+ltTitle: "3 Skyrius: Privatūs santykiai - sąžiningas sprendimas"
 slug: "chapter-03"
 collection: "grey-book"
 order: 3
@@ -16,28 +16,32 @@ hasAnswerKey: true
 status: "published"
 ---
 
-## Chapter 3: Secret Love - A Dangerous Romance
+## Chapter 3: A Private Relationship - A Fair Choice
 
-## 3 Skyrius: Slapta Meilė - Pavojingas Romanas
+## 3 Skyrius: Privatūs santykiai - sąžiningas sprendimas
 
 ### Phrasal Verbs
 
+*Fraziniai veiksmažodžiai*
+
 - go out — date (susitikinėti)
 - find out — discover (sužinoti)
-- cover up — hide the truth (nuslėpti)
+- talk over — discuss a problem together (kartu aptarti problemą)
 - make up — reconcile after a problem (susitaikyti)
 - split up — end a relationship (išsiskirti)
 
 ### Word Bank
 
+*Žodynėlis*
+
 - secret — paslaptis
 - in love — įsimylėjęs / įsimylėjusi
 - brain surgeon — neurochirurgas
 - tumor — auglys
-- forbidden — draudžiamas / draudžiama
+- fair — sąžiningas / sąžininga
 - rules — taisyklės
 - kiss — bučinys
-- caught — pagautas / pagauta
+- conflict — interesų konfliktas
 - operating room — operacinė
 - dangerous — pavojingas / pavojinga
 - relationship — santykiai
@@ -49,27 +53,29 @@ status: "published"
 
 ### Story
 
-Meredith had a big secret. A very big secret. She was in love with Dr. Derek Shepherd. Derek was a brain surgeon - the best brain surgeon at Seattle Grace Hospital. He was handsome, smart, and kind. But there was a huge problem.
+*Pasakojimas*
 
-Hospital rules said doctors could not date other doctors. If their boss found out, Meredith and Derek could lose their jobs. They could be fired. So they kept their love secret. Nobody knew - not their friends, not their family, nobody.
+Meredith had a private relationship. She was in love with Dr. Derek Shepherd, an experienced brain surgeon at Seattle Grace Hospital. Derek was kind to her, but there was an important problem.
+
+The hospital did not ban every relationship between doctors. However, Derek was a senior doctor and sometimes supervised Meredith. They had to tell Dr. Webber about the relationship so he could make their work fair. They had not done this yet. Meredith was afraid of gossip, and Derek was afraid that people would doubt her good work.
 
 Every day at work was so hard. They had to act like they were just colleagues. They couldn't hold hands. They couldn't kiss. They couldn't even stand too close to each other. But sometimes, their eyes met across the room. And in those moments, Meredith felt her heart beat faster.
 
-One Wednesday morning, Derek had a very dangerous surgery. His patient was Robert, a 45-year-old man. Robert had a big brain tumor. The tumor was growing in a very bad place. If Derek made even one small mistake, Robert could die or never walk again.
+One Wednesday morning, Derek was preparing for a difficult operation. His patient was Robert, a 45-year-old man with a brain tumor. First, the team explained the benefits and risks. Robert asked questions and agreed to the operation.
 
 Meredith wasn't working on this surgery. But she was so worried about Derek. She stood outside the operating room and watched through the glass window. Her hands were shaking. Her heart was beating so fast.
 
 Derek made the first cut. The surgery began. It was so dangerous. One wrong move and everything could go wrong.
 
-"Please, Derek," Meredith whispered to the window. "Please be careful. Please come back to me safely."
+"Please be careful," Meredith whispered. Then she reminded herself that Robert, not her relationship, was the reason for the operation.
 
-The surgery took seven long hours. Meredith couldn't leave. She walked back and forth in the hallway. She drank five cups of coffee. She was so scared. What if something happened to Derek? What if the surgery went wrong?
+The surgery took seven long hours. Meredith checked her own patients, but she returned to the viewing window during a break. She was worried about Robert and about Derek. She also wondered if keeping the relationship private was making work more stressful.
 
 She loved Derek so much. He made her feel alive. He made her feel special. But their secret love was also making her crazy with worry. What if someone discovered their secret? What if they got caught?
 
 Finally, after seven hours, the operating room doors opened. Derek walked out. He looked so tired. But he was smiling!
 
-"The surgery was successful," Derek told Robert's family. "The tumor is out. He's going to be OK."
+"The operation went as planned," Derek told Robert's family. "We removed the tumor. Robert is stable, but we still need to watch him carefully."
 
 Meredith wanted to run to Derek and hug him. She wanted to kiss him. But she couldn't. Not here. Not in front of everyone. So she waited.
 
@@ -97,111 +103,111 @@ The next day at lunch, Izzie sat down next to Meredith. "We need to talk," Izzie
 
 Meredith felt sick. "About what?"
 
-"About you and Derek," Izzie said. "I know you're together. I can see it in the way you look at each other. I saw you in the lounge yesterday. You two were very close."
+"About you and Derek," Izzie said. "I think you are together. I saw you in the lounge yesterday. I am not asking for private details, but Derek sometimes supervises you."
 
 Meredith's face went red. "Izzie, please... we're not... it's not..."
 
-"Stop lying," Izzie said, but she wasn't angry. "I'm not going to tell anyone. But you need to be careful. If the chief finds out, you could both lose everything."
+"You do not have to tell me everything," Izzie said. "But you should tell the chief. He can change your supervision. Then patients and colleagues can trust that decisions are fair."
 
-Meredith started crying. "I know. I know it's dangerous. But I love him, Izzie. I really love him. What should I do?"
+Meredith looked down. "I love him, Izzie. I also want people to respect my work. What should I do?"
 
-Izzie took Meredith's hand. "I don't know. Love in a hospital is always complicated. Just be careful, OK?"
+Izzie took Meredith's hand. "Talk it over with Derek. Being honest may feel uncomfortable, but hiding a work conflict can make it worse."
 
 That night, Meredith met Derek at a restaurant far from the hospital. They sat in a dark corner where nobody could see them.
 
 "This is so hard," Meredith said. "I hate hiding. I hate lying to everyone."
 
-"I know," Derek said. "But we'll find a way. Maybe I can transfer to a different department. Or maybe hospital rules will change."
+"I know," Derek said. "We must tell Dr. Webber. He can ask another senior doctor to check your work when I am involved."
 
-"But what if they never change?" Meredith asked. "What if we have to choose between our jobs and each other?"
+"What if he is angry?" Meredith asked.
 
-Derek took her hand. "Then we'll make that choice when we need to. But right now, all I know is that I love you. And I'm not going to give up on us."
+Derek took her hand. "He may be disappointed because we waited. We still have to do the right thing now."
 
-Meredith looked into his eyes. She was scared. Their love was dangerous. Their love was forbidden. But it was also real. And beautiful.
+The next morning, they spoke to Dr. Webber together. He listened, then made a clear plan. Derek would not choose Meredith's work assignments or give her formal evaluations. Another senior surgeon would supervise her in those situations.
 
-"I love you too," she said. "No matter what happens."
+"Your private life is yours," Dr. Webber said. "My responsibility is fair patient care and a fair workplace. You needed to tell me earlier, but telling me now is the correct step."
 
-But as they left the restaurant, Meredith had a bad feeling. How long could they keep this secret? And what would happen when the secret came out?
+As Meredith left the office, she felt lighter. Honest choices did not remove every problem, but they made the next step clear. She and Derek could care about each other without asking colleagues to hide a conflict. At work, trust had to come before comfort.
 
 ---
 
 ### Understanding Questions
 
+*Supratimo klausimai*
+
 1. Who was Meredith in love with?
-2. Why did they keep their relationship secret?
+2. Why did their relationship create a work conflict?
 3. What was Robert's medical problem?
 4. Where did Meredith watch Derek's surgery from?
-5. How did Derek feel after the successful surgery?
+5. What update did Derek give Robert's family?
 6. What did Izzie notice about Meredith and Derek?
 7. What advice did Izzie give Meredith?
-8. How did their relationship affect Meredith's work?
-9. Why did Meredith continue the relationship despite the risk?
-10. Why was their relationship difficult and risky?
+8. What did Meredith and Derek decide to do?
+9. How did Dr. Webber make their work fairer?
+10. What lesson did Meredith learn about trust at work?
 
 ### Creative Questions
 
+*Kūrybiniai klausimai*
+
 **Answer using the sentence starters below / Atsakykite naudodami šiuos sakinių pradžias:**
 
-1. If you had to keep your relationship secret at work, how would you communicate with your partner?
-   - *Example answer:* "I would send text messages. We could meet outside of work. We could talk on the phone in private. It would be very difficult."
-   - *Your answer:* "I would _______________. We could _______________. It would be _______________."
+1. Why is it useful to report a work conflict?
+   - *Example answer:* "It is useful because a manager can make the work fair."
+   - *Your answer:* "It is useful because _______________."
 
-2. Imagine you're a hospital administrator. What would you do about doctor relationships?
+2. Imagine you are a hospital manager. What rule helps colleagues work fairly?
    - *Example answer:* "I think doctors can date if they don't work in the same department. They should tell the hospital about their relationship. Love is important."
    - *Your answer:* "I think doctors can _______________ if _______________. They should _______________."
 
-3. What would you do if you suspected two colleagues were dating?
-   - *Example answer:* "I wouldn't tell anyone. It's their private life. If they're doing their job well, it's OK. I would just be a good friend."
-   - *Your answer:* "I wouldn't _______________. It's _______________. If they're _______________, _______________."
+3. How can Izzie support Meredith without spreading gossip?
+   - *Example answer:* "She can listen privately and suggest an honest next step."
+   - *Your answer:* "She can _______________ and _______________."
 
 4. How do you think secret relationships affect people's happiness?
    - *Example answer:* "Secret relationships are very stressful. People always worry about getting caught. They can't be honest with friends. I think it makes them unhappy and tired."
    - *Your answer:* "Secret relationships are _______________. People always _______________. They can't _______________."
 
-5. If you were Meredith, would you risk your job for love? Why or why not?
-   - *Example answer:* "Yes, I would risk my job for love because true love is more important than work. / No, I wouldn't risk my job because I worked hard to become a doctor."
-   - *Your answer:* "Yes/No, I would/wouldn't risk my job for love because _______________."
+5. What can Meredith say to Dr. Webber at the start of the meeting?
+   - *Example answer:* "We need to tell you about a relationship that may affect our work."
+   - *Your answer:* "We need to tell you _______________."
 
 ### Fun Activities
 
-#### Activity 1: True or False?
+*Smagios užduotys*
 
-1. Meredith and Derek told all their friends about the relationship. **T / F**
-2. Robert's surgery was very dangerous. **T / F**
-3. Meredith watched the surgery through the glass window. **T / F**
-4. Izzie was angry and told the chief immediately. **T / F**
-5. Meredith and Derek felt calm and safe about their secret. **T / F**
-
-#### Activity 2: Vocabulary Matching
+#### Activity 1: Vocabulary Matching / Žodžių poros
 
 Match the English word to the correct meaning:
 
-1. secret ___
-2. rules ___
+1. conflict ___
+2. fair ___
 3. surgery ___
 4. window ___
 5. kiss ___
 
-a) bučinys  b) langas  c) operacija  d) taisyklės  e) paslaptis
+a) bučinys  b) langas  c) operacija  d) sąžiningas  e) interesų konfliktas
 
-#### Activity 3: Fill in the Blanks
+#### Activity 2: Speak to the Chief / Pokalbis su vadovu
 
-Complete the summary using words from the chapter:
+Work in groups of three. One learner is Meredith, one is Derek, and one is Dr. Webber. Explain the conflict and agree on one fair work plan.
 
-Meredith and Derek had a __________ relationship because hospital __________ were very strict. During the dangerous __________, Meredith watched through the glass __________. Later, they shared a quick __________ but knew they had to be very __________.
-
-*Word Bank: secret, rules, surgery, window, kiss, careful*
+- **Meredith:** "We need to tell you about a relationship that may affect our work."
+- **Dr. Webber:** "Thank you for telling me. What work does Derek supervise?"
+- **Derek:** "Another senior doctor can check Meredith's work."
 
 ### Grammar Practice
+
+*Gramatikos praktika*
 
 Choose the best modal verb for each sentence.
 
 1. Meredith and Derek ______ keep the relationship hidden because hospital rules were strict. `(must / might / should)`
-2. They ______ tell everyone the truth if it could cost them their jobs. `(mustn't / can't / should)`
-3. Izzie ______ tell the chief, but she is not sure. `(might / can't / must)`
+2. They ______ report the work conflict to Dr. Webber. `(should / can't / mustn't)`
+3. Dr. Webber ______ change Meredith's supervisor. `(can / can't / mustn't)`
 4. Meredith thought they ______ be more careful after Izzie noticed them. `(should / can't / mustn't)`
 5. Derek believes they ______ find another way in the future. `(can / can't / mustn't)`
-6. Hospital romance ______ be dangerous when rules are strict. `(can't / can / should)`
+6. Honest reporting ______ make a workplace fairer. `(can / can't / mustn't)`
 
 
 ---

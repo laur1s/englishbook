@@ -38,7 +38,7 @@ steps:
       - "Bridge or supermarket"
   - kind: "speak"
     prompt: "Round 1 with support. Round 2 without support. Keep the directions short and ordered."
-    ltPrompt: "1 raundas su pagalba. 2 raundas be pagalbos. Nurodymus laikykite trumpus ir nuoseklius."
+    ltPrompt: "1 raundas su pagalba. 2 raundas be pagalbos. Nurodymai turi būti trumpi ir nuoseklūs."
     seconds: 75
     support:
       - "Excuse me, how do I get to...?"
@@ -53,8 +53,8 @@ steps:
       - "Did you give directions in the right order?"
       - "Did you use one distance phrase?"
   - kind: "reflect"
-    prompt: "How confident did this feel?"
-    ltPrompt: "Kaip užtikrintai jautėtės?"
+    prompt: "Trace the route from your own directions. Fix any missing landmark, turn, or checking question before attempt two."
+    ltPrompt: "Mintyse nueikite maršrutą pagal savo nurodymus. Prieš antrąjį bandymą pridėkite trūkstamą orientyrą, posūkį arba patikslinamąjį klausimą."
     support:
       - "1 = I mixed up the route."
       - "5 = I could guide someone clearly."
@@ -66,15 +66,19 @@ This mission turns Unit 5 into spoken navigation. Good A2 directions are not lon
 
 ## Useful Building Blocks / Naudingi sakiniai
 
-- Excuse me, how do I get to...?
-- Go straight on.
-- Turn left at...
-- It's next to...
-- It's opposite...
-- You'll see it on your right.
+- Excuse me, how do I get to...? — Atsiprašau, kaip nueiti iki...?
+- Go straight on. — Eikite tiesiai.
+- Turn left at... — Pasukite į kairę ties...
+- It's next to... — Tai yra šalia...
+- It's opposite... — Tai yra priešais...
+- You'll see it on your right. — Pamatysite tai dešinėje.
+
+## Success Check / Sėkmės kriterijai
+
+Your exchange succeeds when the tourist names the destination, the guide gives at least three ordered directions with two landmarks, and one speaker checks distance or understanding. On the second attempt, change the destination and guide the tourist without looking at the support.
 
 ## Push It Further / Pasunkinkite
 
-- Give the same route in fewer sentences.
+- Give the same route in fewer sentences while keeping both landmarks.
 - Add one warning, such as Don't cross the bridge.
 - Repeat the mission while walking around the room to feel the route physically.

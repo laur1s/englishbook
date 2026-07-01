@@ -22,6 +22,8 @@ status: "published"
 
 ### Phrasal Verbs
 
+*Fraziniai veiksmažodžiai*
+
 - find out — discover (sužinoti)
 - look up to — admire (gerbti)
 - settle down — start a stable life (kurti pastovų gyvenimą)
@@ -30,51 +32,121 @@ status: "published"
 
 ### Word Bank
 
-- infectious enthusiasm — užkrečiamas entuziazmas
+*Žodynėlis*
+
 - half-sister — sesuo iš vieno bendro tėvo ar vienos bendros motinos
+- sibling — brolis arba sesuo
+- surprised — nustebęs / nustebusi
+- memory — prisiminimas
+- honest — sąžiningas / sąžininga
+- mentor — mokyti ir padėti mažiau patyrusiam žmogui
+- patient notes — paciento užrašai
+- explain — paaiškinti
 - maid of honor — vyriausioji pamergė
+- ceremony — ceremonija
+- proposal — pasiūlymas tuoktis
 - appendectomy — apendikso pašalinimas / apendektomija
 - military trauma surgeon — karo traumų chirurgas
+- retire — išeiti į pensiją
+- chief of surgery — chirurgijos skyriaus vadovas
+- welcome — priimti, pasveikinti
+- trust — pasitikėjimas
 
 ### Story
 
-Two years had passed since Meredith's first day at Seattle Grace Hospital. The nervous intern had become a confident surgeon. She had faced countless emergencies, lost patients she couldn't save, and celebrated victories that seemed miraculous. Through it all, Meredith had grown stronger, more compassionate, and deeply committed to her calling.
+*Pasakojimas*
 
-One crisp autumn morning, a new group of interns arrived. Among them was Dr. Lexie Grey, a bright-eyed 25-year-old with an infectious enthusiasm. As Meredith reviewed the interns' files, she froze. Lexie Grey. The name was familiar. Too familiar.
+Two years passed after Meredith's first day at Seattle Grace Hospital. She was not the nervous new intern from the locker room now. During that time, she worked through many long nights and difficult emergencies. She helped patients, made mistakes, and learned from more experienced doctors. She became calmer and more confident.
 
-During orientation, Meredith pulled Lexie aside. "Your last name is Grey?" she asked, trying to keep her voice steady.
+One cool autumn morning, a new group of interns arrived. Meredith watched them read maps and check room numbers. They reminded her of her own first day.
 
-Lexie nodded excitedly. "Yes! Dr. Ellis Grey was my mother. She passed away a few years ago. I came to Seattle Grace because this was her hospital."
+"They all look terrified," Alex said.
 
-Meredith's heart raced. Dr. Ellis Grey had been her mother too - a brilliant surgeon who chose her career over her family. Meredith had never known she had a half-sister. "I'm... I'm Meredith," she stammered. "Meredith Grey. Your half-sister."
+"We looked like that too," Izzie replied.
 
-Lexie's eyes widened in shock and joy. "You? My sister? This is incredible!" They embraced, both women crying happy tears.
+Meredith opened the new interns' files. One name made her stop: Dr. Lexie Grey. Meredith read it again. She had never met another young doctor with her family name.
 
-The sisters spent hours talking that night. Lexie shared stories of their mother's brilliance and occasional coldness. Meredith confessed how Ellis's abandonment had shaped her life. Despite the pain of their mother's choices, they found comfort in each other.
+During orientation, Meredith asked Lexie to speak with her in a quiet office.
 
-At work, Meredith mentored Lexie, teaching her the intricacies of surgical procedures and patient care. Lexie was eager, intelligent, and brought fresh energy to the team. "You're going to be an amazing doctor," Meredith told her.
+"Your last name is Grey?" Meredith asked.
 
-Meanwhile, Meredith's relationship with Derek had deepened. After years of secrecy and challenges, Derek planned the perfect proposal. One evening, as the sun set over the hospital garden, he got down on one knee. "Meredith Grey, will you marry me?"
+Lexie nodded. She was twenty-five and spoke with warm energy. "Yes. Thatcher Grey is my father. My mother was Susan Grey. I came to Seattle Grace because I learned that Dr. Meredith Grey works here."
 
-Tears streamed down Meredith's face as she nodded. "Yes," she whispered. "A thousand times yes."
+Meredith's heart beat faster. Thatcher Grey was Meredith's father too, but Meredith had not grown up with him. She had never met Lexie.
 
-Their wedding was intimate and beautiful, held in the very garden where they first confessed their love. Cristina was Meredith's maid of honor, Alex walked Derek down the aisle, and Izzie handled the flowers. Even Dr. Webber, though retired, officiated the ceremony.
+"I'm Meredith," she said slowly. "Meredith Grey. I think I am your half-sister."
 
-But hospital life never stopped. Even on their wedding day, there was an emergency appendectomy that Derek had to perform. "Duty calls," he said with a smile.
+Lexie stared at her. "You are Meredith Grey?"
 
-Dr. Richard Webber's retirement created another change. The board appointed Dr. Owen Hunt as the new chief of surgery. Owen was a military trauma surgeon - intense, disciplined, and sometimes intimidating.
+"Yes."
 
-Change brought growth, Meredith realized. Lexie's arrival healed old wounds. Her marriage to Derek brought stability. Owen's leadership brought new energy. Some chapters ended, but new ones began.
+Lexie smiled, then started to cry. "I have wanted to meet you for years."
 
-As Meredith looked around at her wedding reception - her new husband, her sister, her friends - she felt truly blessed. Seattle Grace had taken her in as a stranger and given her a family. The hospital wasn't just a workplace; it was home.
+Meredith did not know if she wanted to laugh or cry. She felt happy, surprised, and worried at the same time. Lexie opened her arms, but then stopped.
 
-Meredith thought about her journey. From a nervous intern to a confident doctor. From alone to having a family. The hospital had changed her life.
+"Can I hug you?" she asked.
 
-"I love this place," Meredith said. "It's where I found myself."
+Meredith was grateful that Lexie asked. "Yes," she said, and the sisters hugged.
+
+That evening, they sat in a quiet café. They talked for hours about their different childhoods. Lexie shared memories of their father, but she also said that he rarely spoke about Meredith. Meredith explained that her mother, Ellis, raised her and that she often felt alone when she was young.
+
+"I don't want to tell you how to remember Dad," Meredith said. "Your memories belong to you."
+
+"And I don't want to replace your memories with mine," Lexie replied. "Maybe we can simply get to know each other now."
+
+It was not a perfect answer, but it was an honest beginning.
+
+At work, Meredith began to mentor Lexie. She showed her how to prepare patient notes and how to speak clearly with families. On Lexie's first busy afternoon, a patient needed an appendectomy. Lexie wanted to follow the medical team into the operating room, but Meredith stopped her.
+
+"First, check that the family understands what is happening," Meredith said. "Surgery is not only about the operation."
+
+Lexie explained the plan to the patient's worried husband. She used simple words and gave him time to ask questions. Later, Meredith told her, "You listened well. That matters. You are going to become a very good doctor."
+
+Lexie smiled. "Thank you. I still have a lot to learn."
+
+"We all do," Meredith said.
+
+Meanwhile, Meredith and Derek became closer. Their relationship was not always easy, but they learned to be more honest with each other. One evening, Derek invited Meredith to the hospital garden. The sun was setting, and small lights shone in the trees.
+
+He held her hand. "We have faced many difficult days together," he said. "I want to face the next ones with you. Meredith Grey, will you marry me?"
+
+Meredith looked at him. She thought about work, family, and all the changes in her life. Then she smiled.
+
+"Yes," she said. "I will."
+
+They planned a small wedding in the same garden. Cristina was Meredith's maid of honor. Izzie arranged the flowers, and Alex walked beside Derek at the start of the ceremony. Dr. Webber, who had recently retired, led the ceremony.
+
+Just before it began, Derek received a call. A patient needed an urgent brain operation. Another brain surgeon was available, but the case was difficult. Derek explained the situation to Meredith.
+
+"The patient cannot wait," Meredith said. "Go. We will start when you come back."
+
+"Are you sure?"
+
+"Yes. Today is important, but the patient is important too."
+
+The guests waited in the garden. Izzie brought coffee, Alex told bad jokes, and Lexie helped an older guest find a chair. Derek returned later, tired but smiling. The surgery had gone well.
+
+"Now," he said, "I am ready."
+
+The wedding was simple, warm, and full of laughter. It did not follow the exact plan, but Meredith did not mind.
+
+More change came to the hospital. Dr. Webber's retirement left an important job open. The hospital board chose Dr. Owen Hunt as the new chief of surgery. Owen worked as a military trauma surgeon before this job. He was serious and organised, and some staff felt a little afraid of him. On his first day, he asked everyone to share one idea for improving patient care.
+
+Meredith expected him to give orders, but he listened and took notes. She decided not to judge him too quickly.
+
+At the wedding reception, Meredith looked around the room. Derek was talking with Dr. Webber. Cristina and Alex were arguing about music. Izzie was fixing a flower, and Lexie was laughing beside her.
+
+Seattle Grace welcomed Meredith when she was a stranger. Since then, she has found friends, a husband, and a sister. Not every relationship was easy, and new beginnings could feel uncomfortable. Still, each honest conversation helped her build a life.
+
+"I love this place," Meredith said to Lexie. "It is where I found myself."
+
+Lexie smiled. "Maybe it is where I will find myself too."
 
 ### Understanding Questions
 
-1. How long had passed since Meredith's first day at the hospital?
+*Supratimo klausimai*
+
+1. How much time passed after Meredith's first day at the hospital?
 2. How did Meredith discover Lexie was her sister?
 3. What did the sisters talk about that night?
 4. Where did Derek propose to Meredith?
@@ -87,23 +159,29 @@ Meredith thought about her journey. From a nervous intern to a confident doctor.
 
 ### Creative Questions
 
-1. If you discovered you had a sibling you never knew about, how would you feel?
-2. Imagine planning your wedding during a busy job. What challenges would you face?
-3. What would you do to help new interns feel welcome?
-4. How do you think family relationships affect doctors' work?
-5. If you could witness any family reunion, what would it be and why?
+*Kūrybiniai klausimai*
+
+1. How does Meredith feel when she meets Lexie?
+   - *Model:* "She feels surprised, happy, and worried at the same time."
+   - *Start:* "Meredith feels _______________ because _______________."
+2. What can two new sisters ask each other?
+   - *Model:* "What was your childhood like?"
+   - *Start:* "They can ask, '_______________?'"
+3. How can you help a new colleague feel welcome?
+   - *Model:* "I can show them the building and answer questions."
+   - *Start:* "I can _______________ and _______________."
+4. Why is asking before a hug a respectful choice?
+   - *Model:* "It gives the other person a choice."
+   - *Start:* "It is respectful because _______________."
+5. Write one sentence for Meredith's wedding speech.
+   - *Model:* "Thank you for being part of our new beginning."
+   - *Start:* "Thank you for _______________."
 
 ### Fun Activities
 
-#### Activity 1: True or False?
+*Smagios užduotys*
 
-1. Meredith had worked at Seattle Grace for two years. **T / F**
-2. Lexie was Meredith's daughter. **T / F**
-3. Derek proposed to Meredith in the hospital garden. **T / F**
-4. Owen Hunt became the new chief of surgery. **T / F**
-5. The wedding was huge and public. **T / F**
-
-#### Activity 2: Vocabulary Matching
+#### Activity 1: Vocabulary Matching / Žodžių poros
 
 Match the English phrase to the Lithuanian meaning:
 
@@ -111,11 +189,11 @@ Match the English phrase to the Lithuanian meaning:
 2. maid of honor ___
 3. appendectomy ___
 4. military trauma surgeon ___
-5. infectious enthusiasm ___
+5. proposal ___
 
-a) sesuo iš vieno bendro tėvo ar vienos bendros motinos  b) vyriausioji pamergė  c) apendikso pašalinimas / apendektomija  d) karo traumų chirurgas  e) užkrečiamas entuziazmas
+a) sesuo iš vieno bendro tėvo ar vienos bendros motinos  b) vyriausioji pamergė  c) apendikso pašalinimas / apendektomija  d) karo traumų chirurgas  e) pasiūlymas tuoktis
 
-#### Activity 3: Welcome Message
+#### Activity 2: Welcome Message / Sveikinimo žinutė
 
 Write a short welcome message to a new family member, new colleague, or new student.
 
@@ -124,7 +202,11 @@ Your message:
 "________________________________________________________________"
 "________________________________________________________________"
 
+*Model:* "Welcome to our team, Lexie. I can show you the ward. Please ask me when you need help."
+
 ### Grammar Practice
+
+*Gramatikos praktika*
 
 Complete the sentences with the correct present perfect form:
 

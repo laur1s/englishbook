@@ -22,55 +22,126 @@ status: "published"
 
 ### Phrasal Verbs
 
+*Fraziniai veiksmažodžiai*
+
 - work on — try to improve (tobulinti)
 - aim for — try to achieve (siekti)
 - give up — stop trying (pasiduoti)
 - figure out — understand/solve (išsiaiškinti)
-- balance out — make equal or stable (subalansuoti)
+- slow down — do something less quickly (sulėtinti)
 
 ### Word Bank
 
-- crossroads — kryžkelė
-- liver resection — kepenų rezekcija
-- impeccable — nepriekaištingas
-- compassion — užuojauta
-- single-minded dedication — visiškas atsidavimas vienam tikslui
+*Žodynėlis*
+
+- career — karjera
+- dream — svajonė
+- goal — tikslas
+- progress — pažanga
+- confident — pasitikintis / pasitikinti savimi
+- experienced — patyręs / patyrusi
+- careful — atsargus / atsargi
+- skill — įgūdis
+- wisdom — išmintis
+- compassion — atjauta
+- mentor — mentorius / mentorė
 - cardiac surgery — širdies chirurgija
-- trauma surgeon — traumos chirurgas
-- imposter — apsimetėlis
-- medical missions — medicininės misijos
+- emergency care — skubi pagalba
+- medical mission — medicininė misija
+- balance — pusiausvyra
+- meaningful — prasmingas / prasminga
 
 ### Story
 
-Dr. Meredith Grey stood at the crossroads of her career. She had dreamed of becoming a surgeon since childhood, inspired by stories of her mother's medical brilliance. Now, three years into her career, she wondered if she measured up to her own expectations.
+*Pasakojimas*
 
-A prestigious medical conference brought Dr. Catherine Avery to Seattle Grace. Catherine was a living legend - the first woman to chair surgery at a major teaching hospital, and coincidentally, Derek's mother. She observed Meredith performing a complex liver resection.
+Three years after her first day at Seattle Grace, Meredith was at an important point in her career. She wanted to be a surgeon from a young age. Her mother was a famous doctor, and Meredith often compared herself with her.
 
-"Your technique is impeccable," Catherine said afterward, her voice measured. "You have natural talent. But greatness requires more than skill. It requires wisdom, compassion, and the courage to make impossible decisions."
+"Was my mother braver than I am?" Meredith sometimes wondered. "Was she faster in the operating room?"
 
-Meredith felt a surge of pride mixed with insecurity. "I want to be the best surgeon I can be," she admitted. "But sometimes I wonder if I'm good enough."
+These questions made it difficult to see her own progress. Meredith was more confident than before, but she still worried that she was not good enough.
 
-Catherine placed a hand on her shoulder. "Medicine isn't about being the best. It's about being present for your patients when they need you most. Dreams are important, but reality teaches us that perfection is impossible. Excellence comes from accepting imperfection."
+That week, the hospital held a medical conference. Dr. Catherine Avery came to Seattle Grace to teach several sessions. She was one of the most experienced surgeons in the country and the first woman to lead surgery at a large teaching hospital. She was also Derek's mother.
 
-The words resonated with Meredith. She thought about her journey - the lives saved, the patients lost, the personal sacrifices. She wanted to be a brilliant surgeon, but she also dreamed of a family with Derek, of balance between career and personal life.
+"She asks difficult questions," Derek warned Meredith. "But she listens carefully to the answers."
 
-Derek, sensing her turmoil, supported her completely. "You're already an amazing doctor," he said. "And you'll be an even better one. Dreams evolve, Meredith. You can have a thriving career and a full life."
+Catherine watched Meredith and her team during a difficult liver operation. Before the operation, Meredith explained the plan to the patient and answered his questions. During the procedure, she worked slowly and carefully. When a monitor changed, she stopped and checked it with Cristina instead of rushing.
 
-Dr. Cristina Yang embodied single-minded dedication to her dreams. She spent every spare moment studying cardiac surgery techniques, determined to become the foremost heart surgeon in the country. "I didn't come to America to be ordinary," she told Meredith. "I came to be extraordinary."
+Afterward, Catherine met Meredith in a small office.
 
-Dr. Alex Karev, once the cocky intern, had grown into a skilled trauma surgeon. His rough exterior hid a deep commitment to his patients. "I want to be the doctor people trust when everything goes wrong," he confided. "Not because I'm the best, but because I never give up."
+"Your surgical technique is excellent," Catherine said. "You were also calm when the monitor changed."
 
-Dr. Izzie Stevens dreamed of medical missions in developing countries. "I want to help people who can't afford care," she said. "Medicine should be about compassion, not money."
+Meredith felt proud, but she did not feel relaxed. "I want to be the best surgeon I can be," she said. "Sometimes I wonder if I am good enough."
 
-Each doctor grappled with the tension between aspiration and actuality. Dreams provided motivation, but reality demanded resilience. The hospital was a crucible where ideals were tested and tempered.
+Catherine looked at her for a moment. "Who are you trying to be better than?"
 
-Meredith learned that true success wasn't about achieving perfection, but about striving for excellence while embracing humanity. Dreams inspired, but reality shaped character.
+"My mother, perhaps. Or the doctor I think I should be."
 
-As she watched the sun set over Puget Sound, Meredith felt content. She was living her dream, even as it evolved. The path to greatness wasn't straight, but it was hers to walk.
+"A career is not a race against another person," Catherine replied. "Skill is important, but wisdom and compassion are important too. A great doctor listens to patients and asks colleagues for help. No doctor is perfect."
 
-Meredith learned that being a doctor means balancing dreams and reality.
+Meredith thought about the operation. Years earlier, she saw asking Cristina for help as a weakness. Now she understood that it made the operation safer.
+
+"So how do I know if I am successful?" she asked.
+
+"Look at your choices," Catherine said. "Do your patients understand you? Does your team trust you? Do you keep learning? Those questions are more useful than 'Am I the best?'"
+
+At lunch, Meredith told Derek about the conversation.
+
+"Your mother makes me nervous," Meredith admitted.
+
+Derek smiled. "She makes everyone nervous. But I think she is right. You are already a very good doctor, and you are still learning. Your dreams can change as your life changes."
+
+Meredith looked at the busy cafeteria. "I want an exciting career, but I also want time with you. I want a family one day. Sometimes those dreams do not fit together easily."
+
+"Some weeks will be harder than others," Derek said. "We can talk, make plans, and change them when we need to. Balance does not mean every day is the same."
+
+Later, Meredith asked her friends about their dreams. Cristina answered first. She spent more time studying cardiac surgery than anyone else on the team.
+
+"I want to become one of the best heart surgeons in the country," Cristina said. "Heart surgery is more interesting to me than any other area. I know it will take years of work."
+
+"Do you ever rest?" Meredith asked.
+
+Cristina closed her book. "I am working on that. A tired surgeon is not a better surgeon."
+
+Alex's answer surprised Meredith. When he was a new intern, he often tried to look stronger and cleverer than everyone else. He had become kinder with patients, even if he still made rude jokes with friends.
+
+"I want to be the doctor people trust when everything goes wrong," he said. "Trauma care is faster and less predictable than many other areas. I cannot control every result, but I can keep going when a patient needs me."
+
+Izzie's dream was different. She wanted to join medical missions and work in places where people had less access to care.
+
+"Some patients travel much farther to see a doctor," Izzie said. "Some clinics have less equipment than we have here. I want to help, but I also need to learn how to work safely with fewer supplies."
+
+Meredith noticed that none of her friends had exactly the same goal. Cristina wanted deep knowledge of the heart. Alex wanted to be calm in emergencies. Izzie wanted to bring care to people who could not easily get it. One dream was not better than another.
+
+The next morning, a young intern named Sam asked Meredith for advice. He had made a small mistake in a patient report and felt terrible.
+
+"I am the worst intern here," he said.
+
+Meredith remembered her own first week. "One mistake does not make you the worst," she replied. "Correct the report, tell the nurse, and check the next one more carefully."
+
+"Did you make mistakes when you started?"
+
+"Of course. Everyone does. The important thing is to speak up and learn."
+
+That afternoon, Catherine saw Meredith helping Sam.
+
+"You gave him useful advice," she said.
+
+"It was advice that other people gave me," Meredith replied.
+
+"That is how a hospital becomes stronger. One person learns, then helps the next person."
+
+At the end of the conference, Catherine asked Meredith one more question. "Are you closer to your dream now?"
+
+Meredith looked through the window at the water of Puget Sound. Her career was not perfect or simple. Some days were more difficult than others. She still had questions about work and family. However, she was a better listener, a more careful surgeon, and a kinder mentor than three years earlier.
+
+"Yes," she said. "But my dream is larger now. I do not only want to do excellent surgery. I want to build a good life and help other doctors grow too."
+
+Meredith felt peaceful as the sun went down. She was learning that success did not mean being better than everyone else. It meant doing meaningful work, caring for people, and finding a balance she could live with.
 
 ### Understanding Questions
+
+*Supratimo klausimai*
 
 1. How long had Meredith been working at the hospital?
 2. What was Dr. Catherine Avery known for?
@@ -85,43 +156,49 @@ Meredith learned that being a doctor means balancing dreams and reality.
 
 ### Creative Questions
 
-1. If you could receive advice from someone successful in your field, what would you want to know?
-2. Imagine you're mentoring a young professional. What would be your most important advice?
-3. What would you do if your career dreams changed over time?
-4. How do you think balancing work and personal life affects success?
-5. If you could tell your younger self one thing about dreams and reality, what would it be?
+*Kūrybiniai klausimai*
+
+1. What career advice do you want to ask an experienced person?
+   - *Model:* "How do you keep learning after a mistake?"
+   - *Start:* "How do you _______________?"
+2. Give one useful idea to a new colleague.
+   - *Model:* "Ask questions when you are not sure."
+   - *Start:* "Remember to _______________."
+3. How has one of your goals changed?
+   - *Model:* "My goal has become more practical."
+   - *Start:* "My goal has become _______________."
+4. What helps people balance work and personal life?
+   - *Model:* "Clear plans and rest help people find balance."
+   - *Start:* "_______________ helps people find balance."
+5. Which character's dream is closest to your own?
+   - *Model:* "Izzie's dream is closest because I want to help communities."
+   - *Start:* "_______________'s dream is closest because _______________."
 
 ### Fun Activities
 
-#### Activity 1: True or False?
+*Smagios užduotys*
 
-1. Meredith had been working at the hospital for three years. **T / F**
-2. Dr. Catherine Avery was a trauma surgeon. **T / F**
-3. Derek told Meredith to give up on her dreams. **T / F**
-4. Cristina wanted to become the foremost heart surgeon in the country. **T / F**
-5. Izzie wanted to help people who could not afford care. **T / F**
-
-#### Activity 2: Matching
+#### Activity 1: Matching / Žodžių poros
 
 Match the English phrase to the Lithuanian meaning:
 
-1. crossroads ___
-2. impeccable ___
+1. career ___
+2. progress ___
 3. compassion ___
-4. trauma surgeon ___
-5. medical missions ___
+4. balance ___
+5. medical mission ___
 
-a) medicininės misijos  b) traumos chirurgas  c) užuojauta  d) nepriekaištingas  e) kryžkelė
+a) atjauta  b) karjera  c) medicininė misija  d) pusiausvyra  e) pažanga
 
-#### Activity 3: Fill in the Blanks
+#### Activity 2: Three Career Cards / Trys karjeros kortelės
 
-Complete the summary using the Word Bank:
+Choose Cristina, Alex, or Izzie. Make a three-line career card: **My goal... / I need to work on... / A healthy balance means...** Share it with a partner and compare two goals.
 
-Meredith learned that success is not about __________. It is about accepting __________, striving for __________, caring for __________, and finding __________ between work and life.
-
-Word Bank: reality, perfection, excellence, patients, balance
+*Model:* "My goal is to work in emergency care. I need to work on calm communication. A healthy balance means taking rest breaks."
 
 ### Grammar Practice
+
+*Gramatikos praktika*
 
 Complete the sentences with the correct comparative or superlative form:
 

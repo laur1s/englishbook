@@ -36,10 +36,11 @@ steps:
       - "It costs too much."
       - "This needs less time."
   - kind: "compare"
-    prompt: "Compare with this model: If we label the recycling bins clearly, people will know where to put bottles and paper. We will use fewer bags if we provide reusable ones."
+    prompt: "Compare with this model: If we label the recycling bins clearly, people will know where to put bottles and paper. Lina can make the labels by Friday. We will use fewer plastic bags if we provide reusable ones, and I can put them by the entrance on Monday. Buying new cups costs too much this month, so let's reject that idea. Let's also switch off lights in empty rooms. Tomas can make a reminder poster tomorrow."
     ltPrompt: "Paklausykite pavyzdžio ir patikrinkite, ar rezultatai konkretūs bei realistiški."
     support:
       - "Are the results realistic and clearly connected to the actions?"
+      - "Does every chosen action have a person and a time?"
   - kind: "reflect"
     prompt: "Summarise the three chosen actions, who will do them, and when."
     ltPrompt: "Apibendrinkite tris pasirinktus veiksmus: kas juos atliks ir kada."
@@ -49,8 +50,18 @@ steps:
       - "time"
 ---
 
-## Mission notes / Misijos pastabos
+## Useful Building Blocks / Naudingi sakiniai
+
+- If we..., we'll... — Jei mes..., tai...
+- This will use less... — Tam reikės mažiau...
+- We will need fewer... — Mums reikės mažiau...
+- That action costs too much. — Tas veiksmas kainuoja per daug.
+- This is easier because... — Tai lengviau, nes...
+- I can do that by Friday. — Galiu tai padaryti iki penktadienio.
+- Let's agree on these three actions. — Susitarkime dėl šių trijų veiksmų.
+
+## Success Check / Sėkmės kriterijai
 
 Prefer small actions the group can genuinely complete. Avoid claiming that one action will solve a large environmental problem; explain one likely, practical result instead.
 
-For the second attempt, make every agreement specific. Name the action, the person responsible, and a realistic time so the plan sounds usable rather than general.
+Your discussion succeeds when all four ideas are considered, one is rejected with a reason, and the other three each have a likely result, a responsible person, and a realistic time. On the second attempt, add a small budget limit and decide which action must change.

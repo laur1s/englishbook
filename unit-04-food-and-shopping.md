@@ -329,6 +329,10 @@ Waiter: Anything else?
 You: _____________________
 Waiter: Of course. I'll bring your order soon.
 
+Model customer lines: **I'd like the tomato pasta, please. / Could I have some water? / Yes, a Greek salad, please. That's all, thank you.**
+
+**Success checklist:** order a main item and a drink, use **I'd like/Could I have**, respond to **Anything else?**, and close politely. Add the prices to check that your order is within a budget of €20.
+
 ---
 
 ## Exercise 7: Reading Comprehension
@@ -553,13 +557,22 @@ I usually shop at the supermarket twice a week. I buy vegetables, milk, and brea
 
 **Your turn:**
 
+**Sentence starters:** **I usually shop... / I go there... / I often buy... / I don't buy much/many... / My favourite... is... because...**
+
+**Success checklist:**
+
+- [ ] I wrote 6–8 sentences and answered all four prompts.
+- [ ] I used a frequency expression.
+- [ ] I used **some/any, much/many,** or **a lot of** accurately.
+- [ ] I explained one preference with **because**.
+
 ---
 
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Shopping Role-Play
 
-In pairs, role-play a shopping scenario. One person is the customer, the other is the shop assistant. Use phrases like "How much is...?" and "I'd like..."
+In pairs, role-play a shopping scenario. One person is the customer, the other is the shop assistant. Use phrases like "How much is...?" and "I'd like..." Include a quantity, a price, one unavailable item, and an alternative. End by confirming the total.
 
 ### Activity 2: Food Preferences Discussion
 

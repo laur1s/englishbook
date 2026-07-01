@@ -4,10 +4,12 @@
 
 English learning library for Lithuanian speakers with:
 
-- A 12-module, 60-session continuous learning path
+- A 24-module, 120-session continuous learning path
 - Deterministic interactive practice and spaced review
 - A2.1 Units 1–6
 - A2.2 Units 7–12
+- A2.3 Units 13–18
+- A2.4 Units 19–24
 - Grey's Book reading track
 - Speaking Lab missions
 - A2 and Grey's Book answer keys
@@ -22,7 +24,7 @@ English learning library for Lithuanian speakers with:
 - Every fixed-answer exercise needs a matching answer-key entry.
 - Every open writing or speaking task needs a model, sentence starter, or success checklist.
 - Prefer qualified usage notes over rules containing “always” or “never.”
-- Preserve the grammar progression from Units 1–12.
+- Preserve the grammar progression from Units 1–24.
 - Keep interactive items self-contained, unambiguous, bilingual, and tied to a real lesson exercise.
 - Preserve stable session, objective, and item IDs; increment revisions when meaning or answers change.
 - Never auto-grade open writing or speaking. Use a model and self-check criteria instead.
@@ -42,4 +44,4 @@ Markdown remains the source of truth for long lessons. `learning/course-path.jso
 
 ## Publishing status
 
-The complete A2 learning sequence is present and usable. It remains an actively maintained digital course: answer alignment, language accuracy, accessibility, and rendered mobile behaviour must pass the gates above after every material change. Do not call it print-ready unless a separate print artifact and print-layout review have been completed.
+The complete A2 learning sequence is present and usable. Presence alone does not make a release candidate ready: answer alignment, language accuracy, accessibility, and rendered mobile behaviour must pass the gates above after every material change. Do not call it print-ready unless a separate print artifact and print-layout review have been completed.

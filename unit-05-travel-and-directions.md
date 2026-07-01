@@ -303,6 +303,12 @@ _____________________
 _____________________
 _____________________
 
+Use a familiar public starting point or an imaginary map if you do not want to share your home location.
+
+Model: **Leave the library and turn left. Go straight on for two blocks. The supermarket is on your right, opposite the bank.**
+
+Check each route: include a starting action, at least two direction verbs, one landmark or preposition, and a clear final location.
+
 ---
 
 ## Exercise 7: At the Tourist Information
@@ -371,6 +377,15 @@ Translate from Lithuanian to English:
 _____________________________________________
 _____________________________________________
 _____________________________________________
+
+Model opening: **I want to visit Edinburgh for four days. I am going to travel by plane and stay in a small hotel near the centre.**
+
+**Success checklist:**
+
+- [ ] I answered all six planning questions in 7–9 connected sentences.
+- [ ] I included transport, accommodation, duration, and two activities.
+- [ ] I used **by** for transport and correct place prepositions.
+- [ ] My plan is realistic enough that another person could follow it.
 _____________________________________________
 _____________________________________________
 
@@ -485,6 +500,15 @@ Example:
 Last year I went to the seaside by train. I swam in the sea and ate ice cream. It was memorable because the weather was perfect.
 
 **Your turn:**
+
+**Sentence starters:** **In..., I travelled to... by... / We stayed... / First,... / The most memorable part was... because...**
+
+**Success checklist:**
+
+- [ ] I wrote 7–9 sentences about one trip.
+- [ ] I included where, transport, activities, and a reason.
+- [ ] I used Past Simple and at least two sequence expressions.
+- [ ] I added one practical detail such as duration, accommodation, or cost.
 
 ---
 

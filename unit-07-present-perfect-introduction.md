@@ -348,13 +348,23 @@ I have visited Paris, Rome, and London. I have learned to cook and play guitar. 
 
 **Your turn:**
 
+**Sentence starters:** **I have visited... / I have learned... / I have never... / One experience that matters to me is... / In [year], I...**
+
+**Success checklist:**
+
+- [ ] I wrote 7–9 connected sentences and included all four requested points.
+- [ ] I used Present Perfect for unspecified life experience.
+- [ ] I changed to Past Simple when I gave a finished time or told what happened.
+- [ ] I used **been/gone, ever/never, already/yet,** or **just** accurately at least once.
+- [ ] I explained why one experience matters instead of only listing experiences.
+
 ---
 
 ## Speaking Practice: Additional Activities / Kalbėjimo praktika: Papildomos veiklos
 
 ### Activity 1: Experience Sharing
 
-In pairs, ask each other "Have you ever...?" questions. Share your answers.
+In pairs, ask each other "Have you ever...?" questions. After each **yes**, ask a Past Simple follow-up such as **When did you do it? / Where did you go? / Who were you with?** If you study alone, answer three questions aloud and add one specific past detail to each answer.
 
 ### Activity 2: Bucket List
 

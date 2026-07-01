@@ -68,7 +68,7 @@ const EXPECTED_MODULE_TITLES = [
   "Advice & possibility",
   "Present tenses",
   "Storytelling",
-  "A2 checkpoint",
+  "A2.2 checkpoint",
   "Everyday objects",
   "Personal connections",
   "Home responsibilities",
